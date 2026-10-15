@@ -1701,3 +1701,11 @@ a.ref-chip:hover { background: color-mix(in srgb, var(--accent) 12%, transparent
   .cmp-pick .select select { min-width: 0; width: 100%; max-width: 100%; text-overflow: ellipsis; }
   .cmp-table-wrap, .cmp-out { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 }
+
+/* Library filter rows (disorder library, codes, glossary, time): selects never push the page wider than the screen */
+@media (max-width: 720px) {
+  .lib-tools { gap: 10px; }
+  .lib-tools .select { display: flex; flex: 1 1 100%; min-width: 0; max-width: 100%; }
+  .lib-tools .select select { flex: 1 1 auto; min-width: 0; width: 100%; max-width: 100%; text-overflow: ellipsis; }
+  .lib-tools input[type="search"], .lib-tools input[type="text"] { min-width: 0; max-width: 100%; }
+}
