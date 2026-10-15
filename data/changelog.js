@@ -4,6 +4,19 @@
  */
 SP.changelog = [
   {
+    id: 3,
+    date: "2026-10-15",
+    title: "Chapter 4 added: Depressive Disorders",
+    summary: "The full depressive disorders chapter with two new diagnostic helpers, eight new disorder library entries and a depressive time ladder.",
+    items: [
+      { type: "chapter", ch: "ch04", text: "Chapter 4 study guide: 26 sections on DMDD, major depressive disorder (criteria, full coding table, symptom-by-symptom features, course, risk and suicide), grief and its look-alikes, persistent depressive disorder and its course specifiers, PMDD, substance- and medically caused depression, the other specified presentations, every specifier, and a step-by-step approach.", href: "#/c/ch04/guide", link: "Open the guide" },
+      { type: "chapter", ch: "ch04", text: "High yield, criteria, differential and specifier/course flashcards, and 44 board questions.", href: "#/c/ch04/high-yield", link: "High yield" },
+      { type: "feature", ch: "ch04", text: "New diagnostic helpers: “Which depressive disorder?” and “Grief, depression or something else?”", href: "#/helpers", link: "Open the helpers" },
+      { type: "feature", ch: "ch04", text: "Disorder library: DMDD, MDD, persistent depressive disorder, PMDD, substance-induced, due to another medical condition, other specified and unspecified depressive disorder, with six new compare presets and a depressive time ladder.", href: "#/dx", link: "Open the library" },
+      { type: "update", text: "Glossary: 47 new depressive terms, tap-to-define everywhere. The bipolar helper now links to the depressive helper." }
+    ]
+  },
+  {
     id: 2,
     date: "2026-10-15",
     title: "Chapter 3 added: Bipolar and Related Disorders",

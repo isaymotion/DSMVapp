@@ -55,7 +55,7 @@ SP.glossary = (SP.glossary || []).concat([
   ["active phase", "The period in which schizophrenia Criterion A symptoms are present; at least 1 month is required (less if successfully treated).", "Ch 2"],
   ["brief reactive psychosis", "Brief psychotic disorder with marked stressor(s): psychosis after events markedly stressful to almost anyone in the person’s culture.", "Ch 2"],
   ["peripartum onset", "Onset during pregnancy or within 4 weeks after delivery; a specifier for brief psychotic disorder and for bipolar and depressive mood episodes.", "Ch 2"],
-  ["provisional", "A label for schizophreniform disorder diagnosed before recovery, because the illness might still pass 6 months.", "Ch 2"],
+  ["provisional", "A label added when a diagnosis is made before all its requirements can be confirmed: schizophreniform disorder before recovery (the illness might still pass 6 months), or PMDD before two cycles of daily ratings.", "Ch 2"],
   ["good prognostic features", "Schizophreniform specifier needing two of: psychosis within 4 weeks of the first change, confusion or perplexity, good premorbid functioning, and no blunted or flat affect.", "Ch 2"],
   ["perplexity", "A bewildered, puzzled state; one of the good prognostic features of schizophreniform disorder.", "Ch 2"],
   ["premorbid", "Before the illness began. Also the label added to schizotypal personality disorder that preceded schizophrenia.", "Ch 2"],

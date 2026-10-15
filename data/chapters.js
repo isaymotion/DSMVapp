@@ -20,8 +20,9 @@ SP.manifest = [
   { id: 'ch03', number: 3, ready: true, pages: '139–176', title: 'Bipolar and Related Disorders', short: 'Bipolar and related',
     summary: 'Manic, hypomanic and major depressive episodes; bipolar I and II disorders with their coding; cyclothymic disorder; treatment-emergent, substance/medication-induced and medically caused mania; the other specified presentations; and every mood specifier, from mixed features and rapid cycling to peripartum onset and seasonal pattern.',
     files: SP.CHAPTER_FILES },
-  { id: 'ch04', number: 4, ready: false, pages: '177–214', title: 'Depressive Disorders', short: 'Depressive',
-    summary: 'Disruptive mood dysregulation disorder, major depressive disorder, persistent depressive disorder, premenstrual dysphoric disorder, and substance/medication-induced and medically caused depression.' },
+  { id: 'ch04', number: 4, ready: true, pages: '177–214', title: 'Depressive Disorders', short: 'Depressive',
+    summary: 'Disruptive mood dysregulation disorder; the major depressive episode and major depressive disorder with full coding; grief and its look-alikes; persistent depressive disorder and its course specifiers; premenstrual dysphoric disorder; substance/medication-induced and medically caused depression; the other specified presentations; and every depressive specifier, from anxious distress to seasonal pattern.',
+    files: SP.CHAPTER_FILES },
   { id: 'ch05', number: 5, ready: false, pages: '215–261', title: 'Anxiety Disorders', short: 'Anxiety',
     summary: 'Separation anxiety, selective mutism, specific phobia, social anxiety disorder, panic disorder and the panic attack specifier, agoraphobia and generalized anxiety disorder.' },
   { id: 'ch06', number: 6, ready: false, pages: '263–294', title: 'Obsessive-Compulsive and Related Disorders', short: 'Obsessive-compulsive and related',
@@ -66,5 +67,7 @@ SP.extraFiles = [
   'data/helpers/ch02-psychosis.js',
   'data/db/disorders-ch03.js',
   'data/helpers/ch03-bipolar.js',
+  'data/db/disorders-ch04.js',
+  'data/helpers/ch04-depressive.js',
   'data/changelog.js'
 ];

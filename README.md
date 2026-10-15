@@ -12,6 +12,7 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 | --- | --- |
 | 2. Schizophrenia Spectrum and Other Psychotic Disorders | Ready |
 | 3. Bipolar and Related Disorders | Ready |
+| 4. Depressive Disorders | Ready |
 | All other Section II chapters | Listed in the menu as “Soon” |
 
 ## What's in each chapter
