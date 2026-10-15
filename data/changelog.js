@@ -4,6 +4,19 @@
  */
 SP.changelog = [
   {
+    id: 2,
+    date: "2026-10-15",
+    title: "Chapter 3 added: Bipolar and Related Disorders",
+    summary: "The full bipolar chapter with two new diagnostic helpers, eight new disorder library entries and a bipolar time ladder.",
+    items: [
+      { type: "chapter", ch: "ch03", text: "Chapter 3 study guide: 23 sections on manic, hypomanic and major depressive episodes, treatment-emergent mania, bipolar I and II (with full coding tables), cyclothymic disorder, substance and medical causes, the other specified presentations, every specifier, and a step-by-step diagnostic approach.", href: "#/c/ch03/guide", link: "Open the guide" },
+      { type: "chapter", ch: "ch03", text: "High yield, criteria, differential and specifier/course flashcards, and 44 board questions.", href: "#/c/ch03/high-yield", link: "High yield" },
+      { type: "feature", ch: "ch03", text: "New diagnostic helpers: “Manic, hypomanic or neither?” and “Which bipolar disorder?”", href: "#/helpers", link: "Open the helpers" },
+      { type: "feature", ch: "ch03", text: "Disorder library: bipolar I, bipolar II, cyclothymic, substance-induced, due to another medical condition, other specified, unspecified bipolar and unspecified mood disorder, with new compare presets and a bipolar time ladder.", href: "#/dx", link: "Open the library" },
+      { type: "update", text: "Glossary: 45 new bipolar terms, tap-to-define everywhere." }
+    ]
+  },
+  {
     id: 1,
     date: "2026-10-15",
     title: "First release: Chapter 2, Schizophrenia Spectrum and Other Psychotic Disorders",

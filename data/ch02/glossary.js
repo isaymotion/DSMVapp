@@ -54,7 +54,7 @@ SP.glossary = (SP.glossary || []).concat([
   ["residual phase", "The period after active psychosis, with negative or attenuated symptoms; counts toward the 6 months for schizophrenia.", "Ch 2"],
   ["active phase", "The period in which schizophrenia Criterion A symptoms are present; at least 1 month is required (less if successfully treated).", "Ch 2"],
   ["brief reactive psychosis", "Brief psychotic disorder with marked stressor(s): psychosis after events markedly stressful to almost anyone in the person’s culture.", "Ch 2"],
-  ["peripartum onset", "Onset during pregnancy or within 4 weeks after delivery (brief psychotic disorder specifier).", "Ch 2"],
+  ["peripartum onset", "Onset during pregnancy or within 4 weeks after delivery; a specifier for brief psychotic disorder and for bipolar and depressive mood episodes.", "Ch 2"],
   ["provisional", "A label for schizophreniform disorder diagnosed before recovery, because the illness might still pass 6 months.", "Ch 2"],
   ["good prognostic features", "Schizophreniform specifier needing two of: psychosis within 4 weeks of the first change, confusion or perplexity, good premorbid functioning, and no blunted or flat affect.", "Ch 2"],
   ["perplexity", "A bewildered, puzzled state; one of the good prognostic features of schizophreniform disorder.", "Ch 2"],

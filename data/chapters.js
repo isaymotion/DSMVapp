@@ -17,8 +17,9 @@ SP.manifest = [
   { id: 'ch02', number: 2, ready: true, pages: '101–138', title: 'Schizophrenia Spectrum and Other Psychotic Disorders', short: 'Schizophrenia spectrum and other psychotic',
     summary: 'The five psychotic domains; schizotypal (personality) disorder, delusional disorder, brief psychotic disorder, schizophreniform disorder, schizophrenia and schizoaffective disorder; substance/medication-induced and medically caused psychosis; the three catatonia diagnoses; and the other specified and unspecified categories, with every time rule, specifier and code.',
     files: SP.CHAPTER_FILES },
-  { id: 'ch03', number: 3, ready: false, pages: '139–175', title: 'Bipolar and Related Disorders', short: 'Bipolar and related',
-    summary: 'Bipolar I and II disorders, cyclothymic disorder, substance/medication-induced and medically caused bipolar disorders, and the mood-episode specifiers.' },
+  { id: 'ch03', number: 3, ready: true, pages: '139–176', title: 'Bipolar and Related Disorders', short: 'Bipolar and related',
+    summary: 'Manic, hypomanic and major depressive episodes; bipolar I and II disorders with their coding; cyclothymic disorder; treatment-emergent, substance/medication-induced and medically caused mania; the other specified presentations; and every mood specifier, from mixed features and rapid cycling to peripartum onset and seasonal pattern.',
+    files: SP.CHAPTER_FILES },
   { id: 'ch04', number: 4, ready: false, pages: '177–214', title: 'Depressive Disorders', short: 'Depressive',
     summary: 'Disruptive mood dysregulation disorder, major depressive disorder, persistent depressive disorder, premenstrual dysphoric disorder, and substance/medication-induced and medically caused depression.' },
   { id: 'ch05', number: 5, ready: false, pages: '215–261', title: 'Anxiety Disorders', short: 'Anxiety',
@@ -63,5 +64,7 @@ SP.manifest = [
 SP.extraFiles = [
   'data/db/disorders-ch02.js',
   'data/helpers/ch02-psychosis.js',
+  'data/db/disorders-ch03.js',
+  'data/helpers/ch03-bipolar.js',
   'data/changelog.js'
 ];

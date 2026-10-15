@@ -233,7 +233,7 @@
       case 'updates': return renderUpdates();
       case 'bookmarks': return renderBookmarks();
       case 'print-all': return renderPrintAll();
-      case 'soon': return renderSoon(p[1]);
+      case 'soon': if (chapter(p[1])) { location.replace('#/c/' + p[1] + '/guide'); return; } return renderSoon(p[1]);
       case 'review': return renderReview(p[1]);
       case 'mistakes': return renderMistakes();
       case 'exam':
