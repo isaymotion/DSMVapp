@@ -1693,3 +1693,11 @@ a.ref-chip:hover { background: color-mix(in srgb, var(--accent) 12%, transparent
 .crit .crit__item, .crit .crit__sub li { font: 400 1rem/1.55 var(--serif); }
 .lib-sec .crit li { margin: 0; padding-top: 0; padding-bottom: 0; border: 0; }
 .lib-sec .crit ol { margin: 0; }
+
+/* Compare disorders: keep the pickers inside the screen on phones */
+@media (max-width: 720px) {
+  .cmp-pick { flex-direction: column; align-items: stretch; gap: 10px; }
+  .cmp-pick .select { display: flex; flex-direction: column; align-items: stretch; gap: 4px; max-width: 100%; min-width: 0; }
+  .cmp-pick .select select { min-width: 0; width: 100%; max-width: 100%; text-overflow: ellipsis; }
+  .cmp-table-wrap, .cmp-out { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
