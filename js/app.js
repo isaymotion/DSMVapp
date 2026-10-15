@@ -2967,4 +2967,23 @@
   if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
     window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
   }
+
+  /* Bottom tab bar auto-hide: slides away while scrolling down, returns on scroll up, at the top/bottom of the page, and on page change */
+  (function () {
+    var last = window.scrollY, ticking = false, body = document.body;
+    function show() { body.classList.remove('tabbar-hidden'); }
+    function hide() { body.classList.add('tabbar-hidden'); }
+    function update() {
+      ticking = false;
+      var y = window.scrollY, d = y - last, h = document.documentElement;
+      var nearEnd = y + window.innerHeight >= h.scrollHeight - 80;
+      if (y < 80 || nearEnd || document.getElementById('menu-btn') && document.getElementById('menu-btn').getAttribute('aria-expanded') === 'true') show();
+      else if (d > 10) { hide(); last = y; }
+      else if (d < -6) { show(); last = y; }
+      if (Math.abs(d) > 10 || y < 80) last = y;
+    }
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    window.addEventListener('hashchange', function () { last = 0; show(); });
+    document.addEventListener('focusin', function (e) { if (e.target.closest && e.target.closest('input, textarea, select')) show(); });
+  })();
 })();
