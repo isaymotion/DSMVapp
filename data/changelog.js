@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 12,
+    date: "2026-10-22",
+    title: "Practice pack for Chapter 6",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the obsessive-compulsive and related disorders, plus four new complaints in the hub.",
+    items: [
+      { type: "chapter", ch: "ch06", text: "Chapter 6: 25 board vignettes (3 in two parts), 12 “Write the diagnosis” cases (insight and tic-related specifiers, muscle dysmorphia, hoarding specifiers, the .x88 substance codes, F06.8 after a stroke, OCD with OCPD), 10 counting drills and 18 exam traps.", href: "#/c/ch06/practice", link: "Chapter 6 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges on every Chapter 6 disorder page, linking to the Stahl Study Companion, current to October 2026 (ERP and high-dose SSRIs, augmentation, deep TMS and DBS, habit reversal for hair pulling and skin picking).", href: "#/dx/ocd", link: "Obsessive-compulsive disorder" },
+      { type: "feature", text: "Start from the complaint: unwanted thoughts or rituals; preoccupied with appearance; can’t throw things away; picking skin, pulling hair or biting nails.", href: "#/complaints/intrusive", link: "Open the hub" }
+    ]
+  },
+  {
     id: 11,
     date: "2026-10-22",
     title: "Chapter 6: Obsessive-Compulsive and Related Disorders",

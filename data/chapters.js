@@ -31,7 +31,7 @@ SP.manifest = [
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch06', number: 6, ready: true, pages: '263–294', title: 'Obsessive-Compulsive and Related Disorders', short: 'Obsessive-compulsive and related',
     summary: 'Obsessions and compulsions, the OCD symptom dimensions and the insight and tic-related specifiers; body dysmorphic disorder and muscle dysmorphia; hoarding disorder; trichotillomania and excoriation disorder; substance/medication-induced and medically caused presentations, including Sydenham’s chorea and PANS; and the other specified examples, from obsessional jealousy to olfactory reference disorder and koro.',
-    files: SP.CHAPTER_FILES },
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch07', number: 7, ready: false, pages: '295–328', title: 'Trauma- and Stressor-Related Disorders', short: 'Trauma- and stressor-related',
     summary: 'Reactive attachment and disinhibited social engagement disorders, PTSD, acute stress disorder, adjustment disorders and prolonged grief disorder.' },
   { id: 'ch08', number: 8, ready: false, pages: '329–348', title: 'Dissociative Disorders', short: 'Dissociative',
@@ -82,5 +82,6 @@ SP.extraFiles = [
   'data/db/clinical-ch05.js',
   'data/db/disorders-ch06.js',
   'data/helpers/ch06-ocd.js',
+  'data/db/clinical-ch06.js',
   'data/changelog.js'
 ];
