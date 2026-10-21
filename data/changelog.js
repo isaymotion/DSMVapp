@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 8,
+    date: "2026-10-21",
+    title: "Practice packs for Chapters 2 and 3",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the psychotic and bipolar chapters, plus five new complaints in the hub.",
+    items: [
+      { type: "chapter", ch: "ch02", text: "Chapter 2: 25 board vignettes (7 in two parts), 10 “Write the diagnosis” cases (codes, course specifiers, catatonia, substance and medical causes), 10 counting drills and 16 exam traps.", href: "#/c/ch02/practice", link: "Chapter 2 drills" },
+      { type: "chapter", ch: "ch03", text: "Chapter 3: 25 board vignettes, 11 “Write the diagnosis” cases (the full bipolar I code table, bipolar II, cyclothymia, induced and medical causes), 10 counting drills and 16 exam traps.", href: "#/c/ch03/practice", link: "Chapter 3 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges on every Chapter 2 and 3 disorder page, linking to the Stahl Study Companion, current to October 2026 (including the end of the clozapine REMS and newer approvals).", href: "#/dx/bipolar-i", link: "Bipolar I disorder" },
+      { type: "feature", text: "Start from the complaint: new entries for mood swings, odd beliefs or eccentric behavior, not moving or speaking, and new psychosis in an older adult; the psychosis and elevated-mood entries now cover Chapters 2 and 3 fully.", href: "#/complaints", link: "Open the hub" }
+    ]
+  },
+  {
     id: 7,
     date: "2026-10-21",
     title: "Mnemonics PDFs",

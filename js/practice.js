@@ -27,12 +27,12 @@
       Object.keys(x).forEach(function (k) { if (k !== 'id') d[k] = x[k]; });
     });
     var by = {}, out = [];
-    (SP.complaintData || []).forEach(function (c) {
+    (SP.complaintData || []).slice().sort(function (a, b) { return (b.intro ? 1 : 0) - (a.intro ? 1 : 0); }).forEach(function (c) {
       var t = by[c.id];
       if (!t) { t = by[c.id] = { id: c.id, title: c.title, intro: c.intro || '', ask: [], mustNotMiss: [], items: [], helpers: [] }; out.push(t); }
       if (!t.intro && c.intro) t.intro = c.intro;
       ['ask', 'mustNotMiss', 'helpers'].forEach(function (k) { (c[k] || []).forEach(function (v) { if (t[k].indexOf(v) < 0) t[k].push(v); }); });
-      (c.items || []).forEach(function (it) { t.items.push(it); });
+      (c.items || []).forEach(function (it) { var k = it.ch + '|' + (it.dx || it.name); if (t.items.some(function (x) { return x.ch + '|' + (x.dx || x.name) === k; })) return; t.items.push(it); });
     });
     out.sort(function (a, b) { return a.title.localeCompare(b.title); });
     SP.complaints = out;
