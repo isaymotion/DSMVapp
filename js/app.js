@@ -192,6 +192,27 @@
     MISTAKES[key] = m; saveMistakes();
   }
   function clearMistake(key) { if (MISTAKES[key]) { delete MISTAKES[key]; saveMistakes(); } }
+  /* ---------- answer log and confidence ----------
+     LOG[key] = { n: attempts, ok: correct, t: last time, c: last confidence (0 guess, 1 unsure, 2 sure),
+     fc: times sure but wrong ("falsely confident"), lg: times guessed but right ("lucky guess") }.
+     Feeds the progress dashboard and the weak-spot drill; never changes the review schedule by itself. */
+  var LOG = store.get('log', {});
+  function logAnswer(key, ok, conf) {
+    var l = LOG[key] || { n: 0, ok: 0 };
+    l.n++; if (ok) l.ok++; l.t = Date.now();
+    if (conf === 0 || conf === 1 || conf === 2) {
+      l.c = conf;
+      if (conf === 2 && !ok) l.fc = (l.fc || 0) + 1;
+      if (conf === 0 && ok) l.lg = (l.lg || 0) + 1;
+      if (conf === 2 && ok && l.fc) l.fc = Math.max(0, l.fc - 1);
+    } else delete l.c;
+    LOG[key] = l; store.set('log', LOG);
+    var d = store.get('activity', {}), day = today(); d[day] = (d[day] || 0) + 1;
+    var ks = Object.keys(d).map(Number).sort(function (a, b) { return a - b; });
+    while (ks.length > 120) delete d[ks.shift()];
+    store.set('activity', d);
+  }
+  function confOn() { return store.get('confOn', true); }
   function mistakeKeys() { return Object.keys(MISTAKES).filter(function (k) { return CARDS[k]; }).sort(function (a, b) { return MISTAKES[b].t - MISTAKES[a].t; }); }
 
   /* ---------- router ---------- */
@@ -219,6 +240,7 @@
     closeDrawer();
     var p = parts();
     if (!p.length) return renderHome();
+    if (SP.routes && SP.routes[p[0]]) return SP.routes[p[0]](p);
     switch (p[0]) {
       case 'backup':
         renderHome();
@@ -250,6 +272,7 @@
         if (!ch) return planned(p[1]) ? renderSoon(p[1]) : renderMissing();
         var mode = p[2] || 'guide';
         if (mode === 'handout') return renderHandout(ch);
+        if (mode === 'summary' && SP.chapterRoutes && SP.chapterRoutes.summary) return SP.chapterRoutes.summary(ch);
         store.set('last', { hash: location.hash, ch: ch.id, mode: mode === 'cards' ? (p[3] || 'criteria') : mode });
         if (mode === 'guide') return renderGuide(ch, p[3]);
         if (mode === 'high-yield') return renderHY(ch, p[3]);
@@ -299,7 +322,11 @@
       bookmarks: 'M7 4h10v16l-5-4-5 4z',
       teach: 'M4 5h16v11H4z M9 20h6 M12 16v4',
       print: 'M7 9V4h10v5 M6 17H4V9h16v8h-2 M7 14h10v6H7z',
-      news: 'M5 5h11v14H7a2 2 0 0 1-2-2z M16 9h3v8a2 2 0 0 1-2 2'
+      news: 'M5 5h11v14H7a2 2 0 0 1-2-2z M16 9h3v8a2 2 0 0 1-2 2',
+      today: 'M12 3v3 M12 18v3 M3 12h3 M18 12h3 M12 8a4 4 0 1 0 0 8a4 4 0 1 0 0-8z',
+      progress: 'M4 20V10 M10 20V4 M16 20v-7 M21 20H3',
+      timer: 'M12 7a7 7 0 1 0 0 14a7 7 0 1 0 0-14z M12 11v3 M10 3h4 M12 3v4',
+      notes: 'M5 4h10l4 4v12H5z M15 4v4h4 M8 12h8 M8 16h6'
     }[name];
     return '<svg class="nav-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="' + p + '" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   }
@@ -316,7 +343,7 @@
         var active = cur[2] === 'cards' ? cur[3] : (cur[2] || 'guide');
         sub = '<ul class="nav-modes">' + chapterModes(ch).map(function (md) {
           return '<li><a class="nav-mode c-' + md.css + (md.key === active ? ' is-active' : '') + '" href="' + modeHref(ch, md) + '"' + (md.key === active ? ' aria-current="page"' : '') + '>' + esc(md.short) + '</a></li>';
-        }).join('') + '<li><a class="nav-mode c-hy' + (active === 'handout' ? ' is-active' : '') + '" href="#/c/' + ch.id + '/handout">High-yield PDF</a></li></ul>';
+        }).join('') + '<li><a class="nav-mode c-hy' + (active === 'handout' ? ' is-active' : '') + '" href="#/c/' + ch.id + '/handout">High-yield PDF</a></li><li><a class="nav-mode c-hy' + (active === 'summary' ? ' is-active' : '') + '" href="#/c/' + ch.id + '/summary">One-page summary</a></li></ul>';
       }
       var href = m.ready ? '#/c/' + m.id + '/guide' : '#/soon/' + m.id;
       return '<li class="nav-ch' + (m.ready ? '' : ' is-soon') + (open ? ' is-open' : '') + (curCh === m.id ? ' is-current' : '') + '">' +
@@ -328,10 +355,14 @@
     body.innerHTML =
       '<div class="nav-group"><ul>' +
         item('#/', 'home', 'Home', 'home') +
+        item('#/today', 'today', 'Today’s 10 minutes', 'today') +
         item('#/review', 'review', 'Daily review', 'review', 'review') +
         item('#/exam', 'exam', 'Board-style exam', 'exam') +
         item('#/mistakes', 'mistakes', 'Mistakes', 'mistakes', 'mistakes') +
+        item('#/progress', 'progress', 'My progress', 'progress') +
+        item('#/time-drill', 'time-drill', 'Time-rule drill', 'timer') +
         item('#/bookmarks', 'bookmarks', 'Bookmarks', 'bookmarks') +
+        item('#/notes', 'notes', 'Notes and highlights', 'notes') +
       '</ul></div>' +
       '<div class="nav-group"><p class="nav-label">Chapters</p><ol class="nav-chapters">' + chList + '</ol></div>' +
       '<div class="nav-group"><p class="nav-label"><a href="#/library" data-nav="library">Reference library</a></p><ul>' +
@@ -453,6 +484,9 @@
           '<ul class="today__chapters">' + perCh + '</ul>' +
         '</div>' +
         '<div class="tools">' +
+          '<a class="tool c-hy" href="#/today"><span class="tool__name">Today’s 10 minutes</span><span class="tool__meta" id="home-streak">Due cards, board questions and a time drill in one go</span></a>' +
+          '<a class="tool c-clin" href="#/progress"><span class="tool__name">My progress</span><span class="tool__meta">Weak spots by chapter and topic, and a drill that targets them</span></a>' +
+          '<a class="tool c-drug" href="#/time-drill"><span class="tool__name">Time-rule drill</span><span class="tool__meta">60 seconds of “how long?” questions</span></a>' +
           '<a class="tool" href="#/exam"><span class="tool__name">Board-style exam</span><span class="tool__meta">' + (lastExam ? 'Last score ' + pct(lastExam.score, lastExam.total) + '%' : 'Timed questions from the chapters you choose') + '</span></a>' +
           '<a class="tool" href="#/mistakes"><span class="tool__name">Mistakes</span><span class="tool__meta">' + (mk ? plural(mk, 'question') + ' to revisit' : 'Questions you miss collect here') + '</span></a>' +
           '<a class="tool c-mech" href="#/dx"><span class="tool__name">Disorder library</span><span class="tool__meta">' + plural(nDx, 'diagnosis', 'diagnoses') + ' so far</span></a>' +
@@ -504,6 +538,7 @@
       '</div></section>';
     setView('home', html);
     document.title = APP;
+    if (SP.hooks && SP.hooks.home) SP.hooks.home(main);
   }
 
   /* ---------- library hub ---------- */
@@ -700,6 +735,7 @@
       main.querySelectorAll('.g-sec').forEach(function (s) { io.observe(s); });
       view.cleanup = function () { io.disconnect(); };
     }
+    if (SP.hooks && SP.hooks.guide) SP.hooks.guide(ch, main);
     if (target) setTimeout(function () { focusTarget(target); }, 30);
   }
 
@@ -733,7 +769,7 @@
       '<div class="wrap hy-page' + (quiz ? ' quiz-on' : '') + '">' +
         '<div class="hy-tools"><label class="switch"><input type="checkbox" id="hy-quiz"' + (quiz ? ' checked' : '') + '> Hide key facts</label>' +
         '<p>With key facts hidden, each bold fact becomes a blank. Say the answer, then tap the blank to check.</p>' +
-        '<a class="btn hy-tools__print" href="#/c/' + ch.id + '/handout">Create PDF</a><a class="btn" href="#/teach" id="hy-teach">Present</a></div>' +
+        '<a class="btn hy-tools__print" href="#/c/' + ch.id + '/handout">Create PDF</a><a class="btn" href="#/c/' + ch.id + '/summary">One-page summary</a><a class="btn" href="#/teach" id="hy-teach">Present</a><span id="hy-listen-slot"></span></div>' +
         '<div class="hy-grid">' + topics + '</div>' +
       '</div>';
     setView(key, html, focusTarget);
@@ -761,6 +797,7 @@
       var s = e.target.closest && e.target.closest('strong');
       if (s && page.classList.contains('quiz-on') && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); reveal(s); }
     });
+    if (SP.hooks && SP.hooks.hy) SP.hooks.hy(ch, main);
     if (target) setTimeout(function () { focusTarget(target); }, 30);
   }
 
@@ -774,7 +811,7 @@
      o.after    called after every change (to refresh tallies) */
   var LETTERS = 'ABCDE';
   function Player(area, o) {
-    var st = { pos: o.pos || 0, flipped: false, chosen: null };
+    var st = { pos: o.pos || 0, flipped: false, chosen: null, conf: null };
     var stats = { rated: 0, again: 0, right: 0, wrong: 0, cleared: 0 };
 
     function cur() { return CARDS[o.queue[st.pos]]; }
@@ -790,7 +827,7 @@
       if (!o.queue.length || st.pos >= o.queue.length) {
         area.innerHTML = o.done(stats);
         var again = area.querySelector('[data-restart]');
-        if (again) again.addEventListener('click', function () { st.pos = 0; st.flipped = false; st.chosen = null; draw(); });
+        if (again) again.addEventListener('click', function () { st.pos = 0; st.flipped = false; st.chosen = null; st.conf = null; draw(); });
         var rr = area.querySelector('[data-rerender]');
         if (rr) rr.addEventListener('click', function () { route(); });
         return;
@@ -809,6 +846,12 @@
         front = '<p class="face__q">' + fmt(c.q) + '</p><p class="face__hint">Tap the card or press Space to see the answer.</p>';
         back = '<p class="face__q face__q--small">' + fmt(c.q) + '</p><p class="face__a">' + fmt(c.a) + '</p>' + (c.why ? '<p class="face__why">' + fmt(c.why) + '</p>' : '');
       }
+      if (confOn() && !st.flipped) {
+        var confH = '<div class="conf" role="group" aria-label="How sure are you before you answer?"><span class="conf__lbl">How sure?</span>' +
+          [[0, 'Guess'], [1, 'Unsure'], [2, 'Sure']].map(function (x) { return '<button type="button" class="conf__b' + (st.conf === x[0] ? ' is-on' : '') + '" data-conf="' + x[0] + '" aria-pressed="' + (st.conf === x[0]) + '">' + x[1] + '</button>'; }).join('') + '</div>';
+        if (isCase) front = front.replace('<ul class="choices">', confH + '<ul class="choices">'); else front += confH;
+      }
+      if (st.flipped && st.conf != null) back += '<p class="conf-note">' + confNote(isCase ? st.chosen === c.answer : null) + '</p>';
       var src = o.source ? '<span class="face__src">Ch ' + r.ch.number + ', ' + esc(r.deck.short) + '</span>' : '';
       var top = '<div class="face__top"><span class="face__tag c-' + r.deck.css + '">' + esc(c.tag || r.deck.short) + '</span>' + src + '<span class="face__status">' + esc(o.mode === 'mistakes' ? 'Missed ' + plural((MISTAKES[key] || { n: 1 }).n, 'time') : statusLabel(key)) + '</span></div>';
 
@@ -820,7 +863,7 @@
         controls = '<p class="cleared ' + (ok ? 'is-right' : 'is-wrong') + '">' + (ok ? 'Cleared from your mistakes.' : 'This question stays in your mistakes.') + '</p><button class="btn btn--solid" type="button" id="next-m">Next question</button>';
       } else {
         var s = SRS[key];
-        var suggest = isCase && st.chosen != null ? (st.chosen === c.answer ? 3 : 1) : 0;
+        var suggest = isCase && st.chosen != null ? (st.chosen === c.answer ? (st.conf === 0 ? 2 : st.conf === 2 ? 4 : 3) : 1) : (st.conf === 0 ? 2 : st.conf === 2 ? 3 : 0);
         controls = '<div class="rate" role="group" aria-label="How well did you know this?">' + [[1, 'Again'], [2, 'Hard'], [3, 'Good'], [4, 'Easy']].map(function (g) {
           return '<button class="btn rate__b rate__b--' + g[0] + (suggest === g[0] ? ' is-suggested' : '') + '" type="button" data-rate="' + g[0] + '"><span>' + g[1] + '</span><small>' + ivLabel(srsNext(s, g[0]).i) + '</small></button>';
         }).join('') + '</div>';
@@ -843,6 +886,8 @@
       var fc = area.querySelector('#fc');
       fc.addEventListener('click', function (e) {
         if (e.target.closest('.gl')) return;
+        var cb = e.target.closest('[data-conf]');
+        if (cb) { var cv = parseInt(cb.getAttribute('data-conf'), 10); st.conf = st.conf === cv ? null : cv; draw(); refocus(); return; }
         var b = e.target.closest('[data-choice]');
         if (b) { choose(parseInt(b.getAttribute('data-choice'), 10)); return; }
         if (isCase && !st.flipped) return;
@@ -862,12 +907,19 @@
         return '<li><div class="choice' + cls + '"><span class="choice__key">' + LETTERS[i] + '</span><span>' + fmt(ch2) + note + '</span></div></li>';
       }).join('') + '</ul>';
     }
+    function confNote(ok) {
+      var lbl = ['a guess', 'unsure', 'sure'][st.conf];
+      if (ok === true) return st.conf === 0 ? 'Right, but it was a guess: it stays on your weak-spot list until you get it right when sure.' : 'You were ' + lbl + ' and right.';
+      if (ok === false) return st.conf === 2 ? 'You were sure and it was wrong. These “falsely confident” answers are the most important ones to fix.' : 'You were ' + lbl + '.';
+      return 'You said ' + lbl + '. Rate honestly: Again if the answer surprised you.';
+    }
     function bind(sel, fn) { var el = area.querySelector(sel); if (el) el.addEventListener('click', fn); }
     function flip() { st.flipped = !st.flipped; draw(); refocus(); }
     function choose(i) {
       var r = cur(); st.chosen = i; st.flipped = true;
       var ok = i === r.c.answer;
       if (ok) stats.right++; else stats.wrong++;
+      logAnswer(r.key, ok, st.conf);
       if (o.mode === 'mistakes') {
         if (ok) { clearMistake(r.key); stats.cleared++; rateCard(r.key, 3); }
         else { addMistake(r.key, 'mistakes'); rateCard(r.key, 1); }
@@ -877,13 +929,14 @@
     function go(d) {
       var np = st.pos + d;
       if (np < 0 || np >= o.queue.length) return;
-      st.pos = np; st.flipped = false; st.chosen = null; draw(); refocus();
+      st.pos = np; st.flipped = false; st.chosen = null; st.conf = null; draw(); refocus();
     }
     function rate(g) {
       var r = cur(); if (!r) return;
       rateCard(r.key, g);
+      if (!r.c.choices) logAnswer(r.key, g > 1, st.conf);
       stats.rated++; if (g === 1) stats.again++;
-      st.flipped = false; st.chosen = null;
+      st.flipped = false; st.chosen = null; st.conf = null;
       if (o.consume) {
         var k = o.queue.splice(st.pos, 1)[0];
         if (g === 1) o.queue.splice(Math.min(st.pos + 4, o.queue.length), 0, k);
@@ -893,7 +946,7 @@
       draw(); refocus();
     }
     function advanceMistake() {
-      st.flipped = false; st.chosen = null;
+      st.flipped = false; st.chosen = null; st.conf = null;
       o.queue.splice(st.pos, 1);
       draw(); refocus();
     }
@@ -1219,7 +1272,7 @@
       }
       clearInterval(timer);
       var score = 0;
-      ex.items.forEach(function (x) { if (x.a === CARDS[x.k].c.answer) score++; else addMistake(x.k, 'exam'); });
+      ex.items.forEach(function (x) { var ok = x.a === CARDS[x.k].c.answer; if (ok) score++; else addMistake(x.k, 'exam'); if (x.a != null) logAnswer(x.k, ok, null); });
       var used = Math.round((Date.now() - ex.at) / 1000);
       if (ex.limit) used = Math.min(used, ex.limit);
       var rec = { id: ex.id, at: ex.at, chapters: ex.chapters, timed: ex.timed, limit: ex.limit, used: used, expired: !!expired, score: score, total: ex.items.length, items: ex.items.map(function (x) { return { k: x.k, o: x.o, a: x.a, f: x.f }; }) };
@@ -1739,6 +1792,7 @@
     if (['order', 'shuffle', 'mix'].indexOf(p.order) < 0) p.order = 'order';
     p.timer = p.timer || 0;
     p.teams = !!p.teams;
+    p.vote = !!p.vote && !p.teams;
     p.fam = p.fam || 'all';
     return p;
   }
@@ -1809,7 +1863,7 @@
         }).join('') + '</div><p class="muted tb__note" id="tb-hint"></p></section>' +
         '<section class="tb__sec tb__two"><div><h2 class="tb__h">Order</h2>' + seg('order', [['order', 'Chapter order'], ['shuffle', 'Shuffled'], ['mix', 'Mixed together']], prefs.order) + '</div>' +
           '<div><h2 class="tb__h">Countdown per slide</h2>' + seg('timer', TEACH_TIMERS, prefs.timer) + '</div>' +
-          '<div><h2 class="tb__h">Scoring</h2>' + seg('teams', [['0', 'Whole room'], ['1', 'Two teams']], prefs.teams ? '1' : '0') + '</div></section>' +
+          '<div><h2 class="tb__h">Scoring</h2>' + seg('teams', [['0', 'Whole room'], ['1', 'Two teams'], ['2', 'Show of hands']], prefs.teams ? '1' : prefs.vote ? '2' : '0') + '</div></section>' +
         '<div class="tb__go"><button class="btn btn--solid" type="button" id="t-start">Start presenting</button><button class="btn" type="button" id="t-reroll" hidden>Reshuffle</button><p class="tb__sum" id="t-count" aria-live="polite"></p></div>' +
       '</div>' +
       '<section class="teach-list"><h2>Slides in this session</h2><p class="muted">Tap any slide to start from it.</p><ol id="t-list"></ol></section></div>';
@@ -1829,7 +1883,8 @@
       });
       prefs.order = main.querySelector('input[name=order]:checked').value;
       prefs.timer = parseInt(main.querySelector('input[name=timer]:checked').value, 10);
-      prefs.teams = main.querySelector('input[name=teams]:checked').value === '1';
+      var sv = main.querySelector('input[name=teams]:checked').value;
+      prefs.teams = sv === '1'; prefs.vote = sv === '2';
       prefs.fam = main.querySelector('#tb-fam').value;
       store.set('teachPrefs', prefs);
     }
@@ -1861,7 +1916,7 @@
     }
     function start(from) {
       if (!pending.length) return;
-      store.set('teach', { chs: prefs.chs, order: pending.slice(), pos: from || 0, timer: prefs.timer, teams: prefs.teams, res: {}, team: {}, flags: {}, seed: Math.floor(Math.random() * 1e6) });
+      store.set('teach', { chs: prefs.chs, order: pending.slice(), pos: from || 0, timer: prefs.timer, teams: prefs.teams, vote: prefs.vote, votes: {}, res: {}, team: {}, flags: {}, seed: Math.floor(Math.random() * 1e6) });
       enterFullscreen();
       location.hash = '#/teach/run';
     }
@@ -1908,7 +1963,8 @@
     var cat = teachCatalog(S.chs || 'all');
     S.order = S.order.filter(function (id) { return cat.byId[id]; });
     if (!S.order.length) { location.hash = '#/teach'; return; }
-    S.res = S.res || {}; S.team = S.team || {}; S.flags = S.flags || {}; S.seed = S.seed || 1;
+    S.res = S.res || {}; S.team = S.team || {}; S.flags = S.flags || {}; S.votes = S.votes || {}; S.seed = S.seed || 1;
+    S.vote = !!S.vote && !S.teams;
     S.pos = Math.max(0, Math.min(S.pos || 0, S.order.length));   // order.length = the end-of-session review
     var size = Math.max(0, Math.min(2, store.get('teachSize', 0) || 0));
     var st, timer = { left: 0, end: 0, paused: false, iv: null, out: false };
@@ -1958,15 +2014,17 @@
       if (atEnd()) return drawEnd();
       var it = cur(), k = it.kind, body = '', done = isDone(it);
       if (k === 'mcq') {
-        var c = it.c;
-        body = '<p class="teach__stem">' + fmt(c.q) + '</p><ul class="teach__choices">' + c.choices.map(function (ch2, i) {
+        var c = it.c, vts = votesOf(it), vtot = vts.reduce(function (a, b) { return a + b; }, 0);
+        body = '<p class="teach__stem">' + fmt(c.q) + '</p>' + (S.vote && !st.revealed ? '<p class="teach__prompt teach__prompt--vote">Show of hands: tap a choice once for each hand raised.' + (vtot ? ' <button type="button" class="tbtn tbtn--small" id="t-vreset">Clear votes</button>' : '') + '</p>' : '') +
+        '<ul class="teach__choices">' + c.choices.map(function (ch2, i) {
           var cls = st.revealed ? (i === c.answer ? ' is-correct' : (i === st.picked ? ' is-wrong' : ' is-dim')) : (i === st.picked ? ' is-picked' : '');
-          return '<li><button type="button" class="tchoice' + cls + '" data-pick="' + i + '"' + (st.revealed ? ' disabled' : '') + ' aria-pressed="' + (i === st.picked) + '"><span class="tchoice__key">' + LETTERS[i] + '</span><span>' + fmt(ch2) + '</span></button></li>';
+          var vbar = S.vote && vtot ? '<span class="tvote"><span class="tvote__n">' + vts[i] + '</span>' + (st.revealed ? '<span class="tvote__bar"><span style="width:' + Math.round(vts[i] / vtot * 100) + '%"></span></span><span class="tvote__p">' + Math.round(vts[i] / vtot * 100) + '%</span>' : '') + '</span>' : '';
+          return '<li><button type="button" class="tchoice' + cls + (S.vote ? ' is-vote' : '') + '" data-pick="' + i + '"' + (st.revealed ? ' disabled' : '') + ' aria-pressed="' + (i === st.picked) + '"><span class="tchoice__key">' + LETTERS[i] + '</span><span class="tchoice__txt">' + fmt(ch2) + '</span>' + vbar + '</button></li>';
         }).join('') + '</ul>' +
-        (st.revealed ? '<div class="teach__answer"><p class="teach__label">Answer: ' + LETTERS[c.answer] + (st.picked == null ? '' : st.picked === c.answer ? ', the group got it' : ', the group chose ' + LETTERS[st.picked]) + '</p><p>' + fmt(c.why) + '</p></div>' : '');
+        (st.revealed ? '<div class="teach__answer"><p class="teach__label">Answer: ' + LETTERS[c.answer] + (S.vote && vtot ? ', ' + Math.round(vts[c.answer] / vtot * 100) + '% of ' + plural(vtot, 'vote') + ' were right' : st.picked == null ? '' : st.picked === c.answer ? ', the group got it' : ', the group chose ' + LETTERS[st.picked]) + '</p><p>' + fmt(c.why) + '</p></div>' + discussHTML(it) : '');
       } else if (k === 'case') {
         body = '<h2 class="teach__title">' + esc(it.title) + '</h2><p class="teach__stem">' + fmt(it.text) + '</p>' +
-          (st.revealed ? '<div class="teach__answer"><p class="teach__label">Teaching point</p><p>' + fmt(it.point || '') + '</p></div>' : '<p class="teach__prompt">What is the diagnosis, and which criterion or rule decides it?</p>');
+          (st.revealed ? '<div class="teach__answer"><p class="teach__label">Teaching point</p><p>' + fmt(it.point || '') + '</p></div>' + discussHTML(it) : '<p class="teach__prompt">What is the diagnosis, and which criterion or rule decides it?</p>');
       } else if (k === 'hyt') {
         body = '<div class="teach__cover"><p class="teach__kicker">High yield · Chapter ' + it.ch.number + '</p><h2 class="teach__topic">' + esc(it.topic) + '</h2><p class="teach__prompt">' + plural(it.n, 'point') + ' in this topic. What do you already know?</p></div>';
       } else if (k === 'hy') {
@@ -2006,11 +2064,12 @@
           (revealable(it) ? '<button class="tbtn tbtn--solid" type="button" id="t-reveal">' + revealLabel + '</button>' : '') +
           ((k === 'hy' && blanksOf(it) > 1 && st.shown < blanksOf(it)) || (k === 'drug' && !st.revealed && Math.max(1, st.shown) < cluesOf(it).length) ? '<button class="tbtn" type="button" id="t-all">' + (k === 'drug' ? 'Reveal the diagnosis' : 'Reveal all') + '</button>' : '') +
           '<button class="tbtn' + (revealable(it) ? '' : ' tbtn--solid') + '" type="button" id="t-next">' + (last ? 'Finish' : 'Next') + '</button></div>' +
-        '<p class="teach__keys" aria-hidden="true">Space reveal · ← → move · ' + (k === 'mcq' && !S.teams ? 'A–E mark the group’s answer · ' : S.teams ? '1 / 2 / 0 award the point · ' : 'Y got it · N missed · ') + 'R flag · + text size · ' + (S.timer ? 'P pause · ' : '') + 'F full screen · Esc close</p>';
+        '<p class="teach__keys" aria-hidden="true">Space reveal · ← → move · ' + (k === 'mcq' && !S.teams ? (S.vote ? 'A–E add a vote · ' : 'A–E mark the group’s answer · ') : S.teams ? '1 / 2 / 0 award the point · ' : 'Y got it · N missed · ') + 'R flag · + text size · ' + (S.timer ? 'P pause · ' : '') + 'F full screen · Esc close</p>';
       if (k !== 'hy' && k !== 'drug') linkTerms(box.querySelector('.teach__inner'), { skip: '.tchoice__key, .teach__label, .teach__kicker, .teach__tally' });
       box.querySelectorAll('[data-pick]').forEach(function (b) {
-        b.addEventListener('click', function () { var i = parseInt(b.getAttribute('data-pick'), 10); st.picked = st.picked === i ? null : i; draw(); });
+        b.addEventListener('click', function () { pick(parseInt(b.getAttribute('data-pick'), 10)); });
       });
+      var vr = box.querySelector('#t-vreset'); if (vr) vr.addEventListener('click', function () { delete S.votes[cur().id]; save(); draw(); });
       box.querySelectorAll('[data-blank]').forEach(function (b) {
         b.addEventListener('click', function () { var i = parseInt(b.getAttribute('data-blank'), 10); if (i >= st.shown) { st.shown = i + 1; afterReveal(); } });
       });
@@ -2046,6 +2105,10 @@
       var sc = scoreText(), headline;
       if (S.teams) headline = sc.a === sc.b ? 'It’s a tie, ' + sc.a + '–' + sc.b : (sc.a > sc.b ? 'Team A' : 'Team B') + ' wins, ' + Math.max(sc.a, sc.b) + '–' + Math.min(sc.a, sc.b);
       else { var ok = 0; S.order.forEach(function (id) { if (S.res[id] === 1) ok++; }); headline = marked ? 'The room got ' + ok + ' of ' + marked : 'Session complete'; }
+      if (S.vote) {
+        var vr = 0, vt = 0; Object.keys(S.votes).forEach(function (id) { var it2 = cat.byId[id]; if (!it2 || !it2.c) return; var v = S.votes[id]; v.forEach(function (n, i) { vt += n; if (i === it2.c.answer) vr += n; }); });
+        if (vt) headline = Math.round(vr / vt * 100) + '% of ' + plural(vt, 'vote') + ' were right';
+      }
       function list(ids) {
         return '<ol class="tend__list">' + ids.map(function (id) { var it = cat.byId[id]; return '<li><span class="tend__meta">' + esc(teachMeta(it)) + '</span><span>' + fmt(teachReviewText(it)) + '</span></li>'; }).join('') + '</ol>';
       }
@@ -2087,6 +2150,22 @@
       box.querySelector('.teach__stage').scrollTop = 0;
     }
 
+    function votesOf(it) { var v = S.votes[it.id]; if (!v) { v = it.c.choices.map(function () { return 0; }); } return v; }
+    function pick(i) {
+      var it = cur();
+      if (S.vote) { var v = votesOf(it).slice(); v[i]++; S.votes[it.id] = v; save(); draw(); return; }
+      st.picked = st.picked === i ? null : i; draw();
+    }
+    var DISCUSS = {
+      mcq: ['Which single detail in the stem decides the answer?', 'Change one fact in the vignette so that a different option becomes correct.', 'Why is the most tempting wrong option wrong?', 'Which criterion, time rule or exclusion is being tested?', 'What would you ask the patient next to confirm the diagnosis?', 'How would you code and record this diagnosis, with specifiers?'],
+      'case': ['Which criterion or rule decides this case?', 'What is the closest look-alike diagnosis, and what rules it out?', 'What one extra question would you ask this patient?', 'How would the diagnosis change if the symptoms had lasted half as long?', 'Which specifiers apply, and how would you record them?', 'What medical or substance causes must be excluded first?']
+    };
+    function discussHTML(it) {
+      var own = (it.c && it.c.discuss) || it.discuss, list;
+      if (own && own.length) list = own;
+      else { var pool = DISCUSS[it.kind] || DISCUSS.mcq, h = strHash(it.id); list = [pool[h % pool.length], pool[(h + 3) % pool.length]]; }
+      return '<details class="teach__discuss" open><summary>Discuss</summary><ul>' + list.map(function (q) { return '<li>' + fmt(q) + '</li>'; }).join('') + '</ul></details>';
+    }
     function mark(v) { var id = cur().id; if (S.res[id] === v) delete S.res[id]; else S.res[id] = v; save(); draw(); }
     function award(t) { var id = cur().id; if (S.team[id] === t) delete S.team[id]; else S.team[id] = t; save(); draw(); }
     function flag() { var it = cur(); if (!it) return; if (S.flags[it.id]) delete S.flags[it.id]; else S.flags[it.id] = 1; save(); draw(); }
@@ -2094,7 +2173,11 @@
     function afterReveal() {
       var it = cur();
       if (isDone(it)) stopTimer();
-      if (it.kind === 'mcq' && st.revealed && st.picked != null && !S.teams) { S.res[it.id] = st.picked === it.c.answer ? 1 : 0; save(); }
+      if (it.kind === 'mcq' && st.revealed && st.picked != null && !S.teams && !S.vote) { S.res[it.id] = st.picked === it.c.answer ? 1 : 0; save(); }
+      if (it.kind === 'mcq' && st.revealed && S.vote) {
+        var vv = votesOf(it), tot = vv.reduce(function (a, b) { return a + b; }, 0);
+        if (tot) { S.res[it.id] = vv[it.c.answer] * 2 >= tot ? 1 : 0; save(); }
+      }
       draw();
       var a = box.querySelector('.teach__tally') || box.querySelector('.teach__answer'); if (a) a.scrollIntoView({ block: 'nearest', behavior: reduceMotion() ? 'auto' : 'smooth' });
     }
@@ -2165,7 +2248,7 @@
       else if ((e.key === 'r' || e.key === 'R') && it.kind !== 'hyt') { e.preventDefault(); flag(); }
       else if (it.kind === 'mcq' && !st.revealed && /^[a-e]$/i.test(e.key)) {
         var i = 'abcde'.indexOf(e.key.toLowerCase());
-        if (i < it.c.choices.length) { e.preventDefault(); st.picked = st.picked === i ? null : i; draw(); }
+        if (i < it.c.choices.length) { e.preventDefault(); pick(i); }
       }
       else if (S.teams && isDone(it) && revealable(it) && /^[120]$/.test(e.key)) { e.preventDefault(); award({ '1': 'a', '2': 'b', '0': 'none' }[e.key]); }
       else if (!S.teams && it.kind !== 'mcq' && isDone(it) && revealable(it) && /^[yn]$/i.test(e.key)) { e.preventDefault(); mark(e.key.toLowerCase() === 'y' ? 1 : 0); }
@@ -2419,7 +2502,7 @@
   /* ---------- time criteria ---------- */
   function renderTime() {
     var rows = dxList().filter(function (d) { return d.duration; });
-    var html = '<div class="wrap page">' + libHead(null, null, 'Time criteria', 'Every duration rule in one place. Many look-alike diagnoses differ only in how long the symptoms have lasted, so this is one of the most tested tables in the manual.') +
+    var html = '<div class="wrap page">' + libHead(null, null, 'Time criteria', 'Every duration rule in one place. Many look-alike diagnoses differ only in how long the symptoms have lasted, so this is one of the most tested tables in the manual.', '<a class="btn btn--solid" href="#/time-drill">Drill these in 60 seconds</a>') +
       (SP.timeLadders || []).map(function (b) { return blockHTML(b, ''); }).join('') +
       (rows.length ? '<div class="table-wrap"><table><thead><tr><th scope="col">Disorder</th><th scope="col">Code</th><th scope="col">Time criterion</th><th scope="col">Chapter</th></tr></thead><tbody>' +
         rows.map(function (d) { var m = planned(d.ch); return '<tr><th scope="row"><a href="' + dxHref(d) + '">' + esc(d.name) + '</a></th><td>' + esc(d.code || '—') + '</td><td>' + fmt(d.duration) + '</td><td>' + (m ? 'Ch ' + m.number : '') + '</td></tr>'; }).join('') +
@@ -2749,10 +2832,14 @@
           return row(href, m.number, esc(m.short), m.id === cur.ch, m.ready ? '' : '<span class="mn-soon">Soon</span>');
         }).join('') +
         '<h2>Study tools</h2>' +
+        row('#/today', '', 'Today’s 10 minutes') +
         row('#/review', '', 'Daily review', false, '<span class="badge" data-badge="review" hidden></span>') +
         row('#/exam', '', 'Board-style exam') +
         row('#/mistakes', '', 'Mistakes', false, '<span class="badge badge--warn" data-badge="mistakes" hidden></span>') +
+        row('#/progress', '', 'My progress') +
+        row('#/time-drill', '', 'Time-rule drill') +
         row('#/bookmarks', '', 'Bookmarks') +
+        row('#/notes', '', 'Notes and highlights') +
         '<h2>Reference library</h2>' + LIBRARY.map(function (l) { return row(l.href, '', esc(l.label)); }).join('') +
         '<h2>For educators</h2>' + row('#/teach', '', 'Teaching mode') + row('#/print-all', '', 'All high-yield (PDF)') + row('#/whats-new', '', 'What’s new', false, '<span class="badge" data-badge="news" hidden></span>') +
         row('#/backup', '', 'Back up progress');
@@ -2816,6 +2903,8 @@
     if ((n = bkCount(data.bookmarks))) parts.push(n + ' bookmark' + (n === 1 ? '' : 's'));
     if ((n = bkCount(data.mistakes))) parts.push(n + ' saved mistake' + (n === 1 ? '' : 's'));
     if ((n = bkCount(data.examHistory))) parts.push(n + ' exam' + (n === 1 ? '' : 's') + ' taken');
+    if ((n = bkCount(data.notes))) parts.push(n + ' note' + (n === 1 ? '' : 's'));
+    if ((n = bkCount(data.highlights))) parts.push(n + ' highlighted section' + (n === 1 ? '' : 's'));
     return parts.length ? parts.join(' · ') : 'no study progress yet';
   }
   function bkDate(iso) {
@@ -2915,6 +3004,18 @@
     document.addEventListener('visibilitychange', function () { if (!document.hidden) bkPaint(); });
   })();
 
+
+  /* ---------- internal API for js/study.js (study tools added in Stage 1) ---------- */
+  SP._app = {
+    store: store, esc: esc, fmt: fmt, plain: plain, plural: plural, pct: pct, shuffle: shuffle, slug: slug, today: today,
+    chapter: chapter, allChapters: allChapters, planned: planned, DECKS: DECKS, MODES: MODES, LETTERS: LETTERS,
+    cards: function () { return CARDS; }, cardList: function () { return CARD_LIST; }, srs: function () { return SRS; },
+    log: function () { return LOG; }, mistakes: function () { return MISTAKES; }, mistakeKeys: mistakeKeys,
+    isDue: isDue, cardStatus: cardStatus, deckKeys: deckKeys, newCardsFor: newCardsFor, reviewPrefs: reviewPrefs, dueSummary: dueSummary,
+    Player: Player, setView: setView, route: route, view: view, main: main, APP: APP, BOOK: BOOK, ATTRIBUTION: ATTRIBUTION,
+    linkTerms: linkTerms, blockText: blockText, chapterHead: chapterHead, libHead: libHead, dxList: dxList, chRef: chRef,
+    confOn: confOn, kbdHelp: kbdHelp, headerH: headerH, reduceMotion: reduceMotion, updateNavBadges: updateNavBadges, fmtDate: fmtDate
+  };
 
   /* ---------- boot ---------- */
   function setTopVar() { document.documentElement.style.setProperty('--top', headerH() + 'px'); }

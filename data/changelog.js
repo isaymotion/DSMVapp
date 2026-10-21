@@ -4,6 +4,22 @@
  */
 SP.changelog = [
   {
+    id: 4,
+    date: "2026-10-21",
+    title: "New study tools: daily session, progress, time drill, notes, listen mode",
+    summary: "Seven new ways to study every chapter, built from the content that is already in the app.",
+    items: [
+      { type: "feature", text: "Today’s 10 minutes: due flashcards, three board questions and five time rules in one short daily session, with a study streak.", href: "#/today", link: "Start today’s session" },
+      { type: "feature", text: "My progress: accuracy by chapter and topic (weakest first), a 14-day activity chart, “falsely confident” answers, and a weak-spot drill for the whole app, a chapter or a single topic.", href: "#/progress", link: "Open My progress" },
+      { type: "feature", text: "“How sure?” on every card: tap Guess, Unsure or Sure before you answer. Sure-but-wrong and lucky guesses feed the weak-spot drill. You can turn it off in My progress.", href: "#/progress", link: "Settings" },
+      { type: "feature", text: "Time-rule drill: a 60-second sprint or 10 untimed questions on every duration rule, with your best score saved.", href: "#/time-drill", link: "Try the drill" },
+      { type: "feature", text: "Notes and highlights in the study guides: select a sentence to highlight it, or tap the pencil beside a section title to write a note. All are listed on one page and included in progress backups.", href: "#/notes", link: "My notes" },
+      { type: "feature", text: "Listen mode: high yield and study guides read aloud by your device’s voice, with speed control. On an iPhone, keep the screen on while listening." },
+      { type: "feature", text: "One-page summary for each chapter: every diagnosis with code, core picture, time rule and main exclusion, designed to print on a single sheet.", href: "#/c/ch04/summary", link: "Chapter 4 summary" },
+      { type: "feature", text: "Teaching mode: a “Show of hands” scoring option that tallies votes for each answer and shows the room’s spread, plus discussion prompts after every board question and vignette.", href: "#/teach", link: "Teaching mode" }
+    ]
+  },
+  {
     id: 3,
     date: "2026-10-15",
     title: "Chapter 4 added: Depressive Disorders",

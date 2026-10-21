@@ -30,8 +30,14 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 - **☰ menu** in the upper left on every screen size: all chapters (keeping your current study mode), study tools, the reference library and the educator pages. On wide screens there is also a collapsible sidebar; on phones and tablets, bottom tabs (Home, Chapters, Review, Exam, Library).
 - **Back and forward buttons** (also Alt+Left / Alt+Right) and **search** across chapters, cards, questions, disorders, helpers and glossary (press `/`).
 - **Daily review**, **board-style exam** (timed or untimed, scored by topic), **mistakes**, **bookmarks**.
+- **Today's 10 minutes**: due flashcards, three board questions and five time rules, with a study streak.
+- **My progress**: accuracy by chapter and topic, a 14-day activity chart, “falsely confident” answers and a **weak-spot drill** (whole app, one chapter or one topic). Optional **“How sure?”** confidence chips on every card feed it.
+- **Time-rule drill**: 60-second sprint or 10 untimed questions, generated from the time ladders and disorder library.
+- **Notes and highlights** in the study guides (select text to highlight; pencil button for notes), listed at `#/notes`.
+- **Listen mode** for high yield and study guides (device speech voice, speed control).
+- **One-page summary** per chapter (`#/c/chNN/summary`), built from the disorder library and designed to print on one sheet.
 - **Reference library**: Disorder library, Diagnostic helpers, Compare disorders (with classic look-alike presets), Time criteria, ICD-10-CM codes, Glossary, and DSM-5-TR changes & updates.
-- **For educators**: teaching mode (full-screen high-yield blanks, cards, board questions, vignettes and **“Name that disorder”**, with countdown, two teams, flags and a review PDF), all high-yield as one PDF, and a *What's new* page.
+- **For educators**: teaching mode (full-screen high-yield blanks, cards, board questions, vignettes and **“Name that disorder”**, with countdown, two teams or show-of-hands voting, discussion prompts, flags and a review PDF), all high-yield as one PDF, and a *What's new* page.
 - **Backup progress**: export and import the review schedule, mistakes, exams, bookmarks and settings (with undo).
 - Maroon and dark orange theme to match the app icon. Dark by default, with a light theme on the theme button.
 
@@ -53,6 +59,8 @@ css/app.css                Styles (dark and light themes)
 js/app.js                  Router, menu, study guide, high yield, flashcards and spaced repetition,
                            review, exam, mistakes, glossary, disorder library, compare, time criteria,
                            codes, diagnostic helpers, search, printing, teaching mode, backup
+js/study.js                Study tools: today's session, progress and weak-spot drill, time-rule drill,
+                           notes and highlights, listen mode, one-page summary (uses SP._app from app.js)
 js/pdf.js, pdf-fonts.js    PDF generator for handouts
 data/chapters.js           Chapter registry (all 22 Section II chapters; `ready: true` for those built)
 data/chNN/                 Chapter content
