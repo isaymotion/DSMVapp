@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 9,
+    date: "2026-10-22",
+    title: "Chapter 5: Anxiety Disorders",
+    summary: "The full anxiety chapter: a 28-section study guide, high yield, four flashcard decks, glossary, mnemonics, two diagnostic helpers and twelve library entries.",
+    items: [
+      { type: "chapter", ch: "ch05", text: "Study guide (pp. 215–261): fear vs anxiety, separation anxiety and selective mutism, specific phobia with every stimulus code, social anxiety and performance only, the panic attack specifier, panic disorder, agoraphobia, GAD, induced and medical causes, and a master comparison of what each disorder fears.", href: "#/c/ch05/guide", link: "Open the guide" },
+      { type: "chapter", ch: "ch05", text: "High yield (13 topics), 44 criteria cards, 38 differential cards, 47 clinical cards, 44 board-style questions and 55 glossary terms.", href: "#/c/ch05", link: "Chapter 5" },
+      { type: "feature", text: "Two new helpers: “Which anxiety disorder?” and “Panic attack or panic disorder?”", href: "#/helpers/anxiety", link: "Open the helper" },
+      { type: "feature", text: "Mnemonics: SEPARATE, STUDENTS FEAR the 3 C’s, COAST (agoraphobia), C-FIRST (GAD), Big Animals Naturally Scare Others (phobia codes) and the chapter’s time rules.", href: "#/c/ch05/cards/mnemonics", link: "Chapter 5 mnemonics" }
+    ]
+  },
+  {
     id: 8,
     date: "2026-10-21",
     title: "Practice packs for Chapters 2 and 3",
