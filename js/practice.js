@@ -297,11 +297,12 @@
   SP.mnemonicList = mnemonicList;
   function renderMnemonics(p) {
     if (p[1] === 'drill') return renderMnDrill(p[2]);
+    if (p[1] === 'pdf') return renderMnPdf();
     var all = mnemonicList(), prefs = store.get('mnPrefs', { ch: 'all' });
     if (prefs.ch !== 'all' && !A.chapter(prefs.ch)) prefs.ch = 'all';
     var chs = A.allChapters().filter(function (ch) { return (ch.mnemonics || []).length; });
     var html = '<div class="wrap page mn-page">' + A.libHead(null, null, 'Mnemonics', 'Memory hooks for the criteria residents are asked about most. Each card spells the mnemonic out and says where it differs from the DSM, because the popular mnemonics are not word-for-word criteria. Mnemonics marked “app original” were written for this app.',
-        '<a class="btn btn--solid" href="#/mnemonics/drill" id="mn-go">Drill them</a>') +
+        '<a class="btn btn--solid" href="#/mnemonics/drill" id="mn-go">Drill them</a><a class="btn" href="#/mnemonics/pdf">Create PDF</a>') +
       '<div class="fam-chips mn-chips"><button type="button" class="filter" data-mch="all">All chapters</button>' + chs.map(function (ch) { return '<button type="button" class="filter" data-mch="' + ch.id + '">Ch ' + ch.number + '</button>'; }).join('') + '</div>' +
       '<div class="lib-tools"><label class="gloss__search"><span class="sr-only">Filter mnemonics</span><input type="search" id="mnq" placeholder="Filter: mania, depression, negative symptoms…" autocomplete="off"></label></div>' +
       '<ul class="mn-grid" id="mn-grid">' + all.map(function (x) {
@@ -352,5 +353,115 @@
     });
     A.view.cleanup = function () { player.destroy(); };
   }
+
+  /* ---------- Mnemonics PDF: study sheet, fill-in worksheet with answer key, pocket card ---------- */
+  function strip(t) { return String(t || '').replace(/\*\*/g, ''); }
+  function firstWord(w) { return strip(w).split(',')[0]; }
+  /* one high-yield topic for a chapter's handout: letter = **word** (bold words become blanks in the worksheet) */
+  SP.mnemonicTopic = function (ch) {
+    return { topic: 'Mnemonics', isMn: true, items: (ch.mnemonics || []).map(function (m) {
+      return m.name + ': ' + m.letters.map(function (l) { return l[0] + ' = **' + firstWord(l[1]) + '**'; }).join(' · ') + (m.short ? '. ' + strip(m.short) : '');
+    }) };
+  };
+  var LAYOUTS = [
+    { k: 'study', label: 'Study sheet', blurb: 'Every letter, word and detail, with the DSM check. Two columns, in chapter order.' },
+    { k: 'worksheet', label: 'Fill-in worksheet', blurb: 'Only the letters, with a blank for each word; the answer key starts on a new page at the end.' },
+    { k: 'pocket', label: 'Pocket card', blurb: 'One or two lines per mnemonic, sized to fit on a single page you can fold.' }
+  ];
+  function mnPdfSpec(list, prefs) {
+    var byCh = [], seen = {};
+    list.forEach(function (x) { if (!seen[x.ch.id]) { seen[x.ch.id] = { ch: x.ch, ms: [] }; byCh.push(seen[x.ch.id]); } seen[x.ch.id].ms.push(x.m); });
+    var nums = byCh.map(function (g) { return g.ch.number; }).join(', ');
+    var src = [A.BOOK, 'Chapter' + (byCh.length > 1 ? 's ' : ' ') + nums];
+    var spec = { paper: prefs.paper, footer: A.ATTRIBUTION, title: 'DSM-5-TR mnemonics', chapters: [] };
+    function head(m, ch) { return m.name + (m.original ? ' (app original)' : '') + ' · Ch ' + ch.number; }
+    if (prefs.layout === 'pocket') {
+      spec.maxPages = 1; spec.minPt = 5.4; spec.maxPt = 9.5;
+      spec.chapters.push({ kicker: 'Pocket card', title: 'DSM-5-TR mnemonics', source: src, running: 'DSM-5-TR mnemonics',
+        topics: byCh.map(function (g) {
+          return { topic: 'Chapter ' + g.ch.number + ': ' + (g.ch.short || g.ch.title), items: g.ms.map(function (m) {
+            return '**' + m.name + '** (' + strip(m['for']).replace(/\s*\(.*\)$/, '') + '): ' + m.letters.map(function (l) { var w = firstWord(l[1]); return w.indexOf(l[0]) === 0 ? w : l[0] + ' ' + w; }).join(', ') + (m.short ? '. *' + strip(m.short) + '*' : '');
+          }) };
+        }) });
+      return spec;
+    }
+    if (prefs.layout === 'worksheet') {
+      spec.blank = true; spec.fontSize = 10;
+      var topics = [], key = [];
+      byCh.forEach(function (g) {
+        g.ms.forEach(function (m) {
+          topics.push({ topic: head(m, g.ch), items: ['For: ' + strip(m['for'])].concat(m.letters.map(function (l) { return l[0] + ' = **' + strip(l[1]) + '**'; })) });
+          key.push({ topic: head(m, g.ch), items: [m.letters.map(function (l) { return l[0] + ' = ' + strip(l[1]); }).join(' · ')].concat(m.caveat ? ['DSM check: ' + strip(m.caveat)] : []) });
+        });
+      });
+      spec.chapters.push({ kicker: 'Mnemonics worksheet', title: 'Spell out each mnemonic', source: src, running: 'DSM-5-TR mnemonics worksheet', topics: topics });
+      spec.chapters.push({ kicker: 'Answer key', title: 'Mnemonics worksheet: answers', source: src, running: 'DSM-5-TR mnemonics: answer key', topics: key });
+      return spec;
+    }
+    spec.fontSize = 9.5;
+    var st = [];
+    byCh.forEach(function (g) {
+      g.ms.forEach(function (m) {
+        st.push({ topic: head(m, g.ch), items: ['*' + strip(m['for']) + '*'].concat(m.letters.map(function (l) { return '**' + l[0] + ' = ' + strip(l[1]) + '**' + (l[2] ? ': ' + strip(l[2]) : ''); })).concat(m.caveat ? ['DSM check: ' + m.caveat] : []) });
+      });
+    });
+    spec.chapters.push({ kicker: 'Study sheet', title: 'DSM-5-TR mnemonics', source: src, running: 'DSM-5-TR mnemonics', topics: st });
+    return spec;
+  }
+  function renderMnPdf() {
+    var prefs = store.get('mnPdf', null) || { paper: (store.get('handoutPrefs', {}) || {}).paper || 'a4', layout: 'study', ch: (store.get('mnPrefs', {}) || {}).ch || 'all' };
+    if (['study', 'worksheet', 'pocket'].indexOf(prefs.layout) < 0) prefs.layout = 'study';
+    if (prefs.paper !== 'letter') prefs.paper = 'a4';
+    var chs = A.allChapters().filter(function (ch) { return (ch.mnemonics || []).length; });
+    if (prefs.ch !== 'all' && !chs.some(function (c) { return c.id === prefs.ch; })) prefs.ch = 'all';
+    function seg(name, opts, cur) {
+      return '<div class="seg" role="radiogroup">' + opts.map(function (o) { return '<label><input type="radio" name="' + name + '" value="' + o[0] + '"' + (String(o[0]) === String(cur) ? ' checked' : '') + '><span>' + o[1] + '</span></label>'; }).join('') + '</div>';
+    }
+    var html = '<div class="wrap page handout-page">' +
+      '<header class="page__head"><p class="crumb"><a href="#/mnemonics">Mnemonics</a></p><h1>Mnemonics PDF</h1><p>Save, print or share the mnemonics as a study sheet, a fill-in worksheet with an answer key, or a one-page pocket card.</p></header>' +
+      '<div class="handout-tools">' +
+        '<div class="handout-tools__row"><span class="handout-tools__label">Chapters</span>' + seg('mch', [['all', 'All']].concat(chs.map(function (c) { return [c.id, 'Ch ' + c.number]; })), prefs.ch) + '</div>' +
+        '<div class="handout-tools__row"><span class="handout-tools__label">Paper</span>' + seg('paper', [['a4', 'A4'], ['letter', 'Letter']], prefs.paper) + '</div>' +
+        '<div class="handout-tools__row"><span class="handout-tools__label">Layout</span>' + seg('layout', LAYOUTS.map(function (l) { return [l.k, l.label]; }), prefs.layout) + '</div>' +
+        '<p class="muted mnpdf-blurb" id="mp-blurb"></p>' +
+        '<div class="handout-tools__go"><button class="btn btn--solid" type="button" id="mp-go">Create PDF</button><p class="handout-fit" id="mp-fit" aria-live="polite"></p></div>' +
+      '</div></div>';
+    A.setView('mn-pdf', html);
+    document.title = 'Mnemonics PDF — ' + APP;
+    var alive = true, btn = main.querySelector('#mp-go'), fit = main.querySelector('#mp-fit');
+    function list() { return mnemonicList().filter(function (x) { return prefs.ch === 'all' || x.ch.id === prefs.ch; }); }
+    var WORDS = ['', 'one page', 'two pages', 'three pages', 'four pages', 'five pages', 'six pages'];
+    function pages(n) { return WORDS[n] || n + ' pages'; }
+    function refresh() {
+      main.querySelector('#mp-blurb').textContent = LAYOUTS.filter(function (l) { return l.k === prefs.layout; })[0].blurb;
+      var l = list();
+      if (!l.length) { btn.disabled = true; fit.className = 'handout-fit is-warn'; fit.textContent = 'No mnemonics in this selection.'; return; }
+      btn.disabled = true; fit.className = 'handout-fit'; fit.textContent = 'Checking the fit…';
+      A.loadPdf().then(function (P) {
+        if (!alive) return;
+        var pl = P.plan(mnPdfSpec(l, prefs));
+        btn.disabled = !pl.ok;
+        fit.className = 'handout-fit' + (pl.ok ? '' : ' is-warn');
+        fit.textContent = pl.ok ? plural(l.length, 'mnemonic') + ' on ' + pages(pl.count) + ' at ' + (Math.round(pl.size * 10) / 10) + ' pt.' : 'Too many mnemonics for one pocket page at a readable size; choose one chapter.';
+      }).catch(function (e) { fit.className = 'handout-fit is-warn'; fit.textContent = A.pdfErrorMsg(e); });
+    }
+    main.querySelectorAll('.handout-tools input[type=radio]').forEach(function (i) {
+      i.addEventListener('change', function () { prefs[i.name === 'mch' ? 'ch' : i.name] = i.value; store.set('mnPdf', prefs); refresh(); });
+    });
+    btn.addEventListener('click', function () {
+      if (btn.disabled) return;
+      btn.disabled = true; btn.textContent = 'Creating…';
+      A.loadPdf().then(function (P) {
+        return P.generate(mnPdfSpec(list(), prefs)).then(function (r) {
+          P.save(r.blob, 'DSM5TR-mnemonics-' + prefs.layout + (prefs.ch === 'all' ? '' : '-' + prefs.ch) + '.pdf');
+          fit.className = 'handout-fit'; fit.textContent = 'PDF created (' + pages(r.pages) + '). Check your downloads or share sheet.';
+        });
+      }).catch(function (e) { fit.className = 'handout-fit is-warn'; fit.textContent = A.pdfErrorMsg(e); })
+        .then(function () { btn.textContent = 'Create PDF'; btn.disabled = false; });
+    });
+    refresh();
+    A.view.cleanup = function () { alive = false; };
+  }
+  SP.mnPdfSpec = mnPdfSpec;
   SP.routes.mnemonics = renderMnemonics;
 })();

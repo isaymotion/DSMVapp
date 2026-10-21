@@ -2042,3 +2042,5 @@ body.tabbar-hidden .lbar { bottom: calc(14px + env(safe-area-inset-bottom, 0px))
 .mn-card__ch { color: var(--ink-3); }
 .mn-st { margin-left: auto; font-weight: 600; color: var(--ink-3); }
 .mn-st--learning { color: var(--m-hy); } .mn-st--mastered { color: var(--good); }
+.mnpdf-blurb { margin: 2px 0 0; font-size: .9rem; }
+.lib-head__row .btn + .btn { margin-left: 8px; }

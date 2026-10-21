@@ -4,6 +4,16 @@
  */
 SP.changelog = [
   {
+    id: 7,
+    date: "2026-10-21",
+    title: "Mnemonics PDFs",
+    summary: "Print or share the mnemonics in three layouts, and add them to any chapter’s high-yield PDF.",
+    items: [
+      { type: "feature", text: "Mnemonics PDF: a study sheet with every detail and DSM check, a fill-in worksheet with an answer key at the end, or a one-page pocket card. All chapters or one, A4 or Letter.", href: "#/mnemonics/pdf", link: "Create a mnemonics PDF" },
+      { type: "feature", text: "Chapter high-yield PDFs can now end with the chapter’s mnemonics (on by default; in the worksheet version, each word becomes a blank).", href: "#/c/ch04/handout", link: "Chapter 4 PDF" }
+    ]
+  },
+  {
     id: 6,
     date: "2026-10-21",
     title: "Mnemonics, with a spell-it-out drill",

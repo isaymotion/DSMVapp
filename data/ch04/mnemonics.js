@@ -2,7 +2,7 @@
    Each mnemonic is also a card in the chapter's Mnemonics deck: keep ids stable. */
 SP.add("ch04", "mnemonics", [
   {
-    id: "m4-01", name: "SIGECAPS", dx: "mdd", sec: "s4-mdd-criteria",
+    id: "m4-01", short: "+ depressed mood; 5 of 9 for 2 weeks, including mood or interest", name: "SIGECAPS", dx: "mdd", sec: "s4-mdd-criteria",
     "for": "Major depressive episode: eight of the nine Criterion A symptoms (“prescribe SIG: Energy CAPSules”)",
     letters: [
       ["S", "Sleep", "Insomnia or hypersomnia nearly every day"],
@@ -17,7 +17,7 @@ SP.add("ch04", "mnemonics", [
     caveat: "SIGECAPS leaves out **depressed mood** itself. Criterion A needs **5 of the 9** (depressed mood plus the eight SIGECAPS items) for **2 weeks**, and one of the five must be **depressed mood or loss of interest**."
   },
   {
-    id: "m4-02", name: "HE’S 2 SAD", dx: "pdd", sec: "s4-pdd-criteria",
+    id: "m4-02", short: "Depressed mood + 2 of 6; never well >2 months", name: "HE’S 2 SAD", dx: "pdd", sec: "s4-pdd-criteria",
     "for": "Persistent depressive disorder: the time rule and the six Criterion B symptoms",
     letters: [
       ["H", "Hopelessness", ""],
@@ -31,7 +31,7 @@ SP.add("ch04", "mnemonics", [
     caveat: "Depressed mood is the core (Criterion A), plus **2 of the 6** symptoms, never symptom-free for more than **2 months**. Anhedonia, guilt, psychomotor change and suicidality are **not** on the PDD list."
   },
   {
-    id: "m4-03", name: "R + HEAL", original: true, dx: "mdd", sec: "s4-spec-melancholic-atypical",
+    id: "m4-03", short: "Mood reactivity + 2 of 4; not with melancholic features or catatonia", name: "R + HEAL", original: true, dx: "mdd", sec: "s4-spec-melancholic-atypical",
     "for": "With atypical features",
     letters: [
       ["R", "Reactive mood", "Required: mood brightens with actual or potential good news"],
@@ -43,7 +43,7 @@ SP.add("ch04", "mnemonics", [
     caveat: "Mood reactivity **plus 2 of the 4** HEAL features. It cannot be used if **melancholic features** or **catatonia** apply to the same episode."
   },
   {
-    id: "m4-04", name: "DIP: the three that don’t count", original: true, dx: "mdd", sec: "s4-spec-anxious-mixed",
+    id: "m4-04", short: "Mixed features needs 3 other manic symptoms", name: "DIP: the three that don’t count", original: true, dx: "mdd", sec: "s4-spec-anxious-mixed",
     "for": "Manic symptoms not counted toward mixed features in a depressive episode",
     letters: [
       ["D", "Distractibility", "Overlaps with depressive poor concentration"],
@@ -53,7 +53,7 @@ SP.add("ch04", "mnemonics", [
     caveat: "Mixed features needs **3** of: elevated mood, grandiosity, talkativeness, racing thoughts, increased energy or activity, risky activities and **decreased need for sleep**, on most days of the episode and observable by others. Full mania or hypomania means bipolar disorder instead."
   },
   {
-    id: "m4-05", name: "3-12-2, 6-18-10", original: true, dx: "dmdd", sec: "s4-dmdd-criteria",
+    id: "m4-05", short: "+ irritability between outbursts; never a manic-like period >1 day", name: "3-12-2, 6-18-10", original: true, dx: "dmdd", sec: "s4-dmdd-criteria",
     "for": "Disruptive mood dysregulation disorder: the numbers",
     letters: [
       ["3", "Outbursts a week", "On average three or more"],

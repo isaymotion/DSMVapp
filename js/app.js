@@ -1690,6 +1690,7 @@
       '<div class="handout-tools">' +
         '<div class="handout-tools__row"><span class="handout-tools__label">Paper</span>' + seg('paper', [['a4', 'A4'], ['letter', 'Letter']], prefs.paper) + '</div>' +
         '<div class="handout-tools__row"><span class="handout-tools__label">Version</span>' + seg('mode', [['key', 'Answer key'], ['blank', 'Fill-in worksheet']], prefs.mode) + '</div>' +
+        ((ch.mnemonics || []).length ? '<div class="handout-tools__row"><span class="handout-tools__label">Extras</span><label class="check"><input type="checkbox" id="ho-mn"' + (prefs.mnemonics !== false ? ' checked' : '') + '> Add the chapter’s mnemonics (' + ch.mnemonics.length + ') at the end</label></div>' : '') +
         '<div class="handout-tools__row"><span class="handout-tools__label">Length</span>' + seg('pages', [[1, 'One page'], [2, 'Two pages'], [3, 'Three pages'], [4, 'Four pages']].slice(0, MAX_PAGES), prefs.pages) + '</div>' +
         '<details class="handout-topics"><summary id="ho-sum"></summary><div class="handout-topics__list">' + ch.highYield.map(function (t) {
           return '<label class="check"><input type="checkbox" data-topic="' + t.id + '" checked> ' + esc(t.topic) + ' <span class="muted">(' + t.items.length + ')</span></label>';
@@ -1701,10 +1702,15 @@
     var fitMsg = main.querySelector('#ho-fit'), printBtn = main.querySelector('#ho-print'), sum = main.querySelector('#ho-sum');
     var alive = true, lastPlan = null;
 
-    function topics() { return ch.highYield.filter(function (t) { return on[t.id]; }); }
+    function topics() {
+      var ts = ch.highYield.filter(function (t) { return on[t.id]; });
+      if (ts.length && prefs.mnemonics !== false && (ch.mnemonics || []).length && SP.mnemonicTopic) ts = ts.concat([SP.mnemonicTopic(ch)]);
+      return ts;
+    }
     function refresh() {
       var ts = topics();
-      sum.textContent = 'Topics: ' + ts.length + ' of ' + ch.highYield.length + ' included';
+      var nTop = ts.filter(function (t) { return !t.isMn; }).length;
+      sum.textContent = 'Topics: ' + nTop + ' of ' + ch.highYield.length + ' included';
       if (!ts.length) { printBtn.disabled = true; fitMsg.className = 'handout-fit is-warn'; fitMsg.textContent = 'Choose at least one topic.'; return Promise.resolve(); }
       printBtn.disabled = true; fitMsg.className = 'handout-fit'; fitMsg.textContent = 'Checking the fit…';
       return loadPdf().then(function (P) {
@@ -1725,6 +1731,8 @@
     main.querySelectorAll('[data-topic]').forEach(function (i) {
       i.addEventListener('change', function () { on[i.getAttribute('data-topic')] = i.checked; refresh(); });
     });
+    var mnBox = main.querySelector('#ho-mn');
+    if (mnBox) mnBox.addEventListener('change', function () { prefs.mnemonics = mnBox.checked; store.set('handoutPrefs', prefs); refresh(); });
     printBtn.addEventListener('click', function () {
       if (printBtn.disabled) return;
       var label = printBtn.textContent; printBtn.disabled = true; printBtn.textContent = 'Creating…';
@@ -3059,6 +3067,7 @@
     chapter: chapter, allChapters: allChapters, planned: planned, DECKS: DECKS, MODES: MODES, LETTERS: LETTERS,
     cards: function () { return CARDS; }, cardList: function () { return CARD_LIST; }, srs: function () { return SRS; },
     log: function () { return LOG; }, mistakes: function () { return MISTAKES; }, mistakeKeys: mistakeKeys,
+    loadPdf: loadPdf, richText: richText, pdfErrorMsg: pdfErrorMsg,
     isDue: isDue, srsKeysDue: function (keys) { return keys.filter(isDue); }, cardStatus: cardStatus, deckKeys: deckKeys, newCardsFor: newCardsFor, reviewPrefs: reviewPrefs, dueSummary: dueSummary,
     Player: Player, setView: setView, route: route, view: view, main: main, APP: APP, BOOK: BOOK, ATTRIBUTION: ATTRIBUTION,
     linkTerms: linkTerms, blockText: blockText, chapterHead: chapterHead, libHead: libHead, dxList: dxList, chRef: chRef,
