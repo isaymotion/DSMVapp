@@ -215,7 +215,7 @@
         { ch: "ch05", dx: "substance-induced-anxiety", when: "Anxiety tied to caffeine, stimulants, cannabis, withdrawal or a medication." },
         { ch: "ch05", dx: "anxiety-due-to-amc", when: "Late onset, atypical symptoms, a medical condition with a known mechanism." },
         { ch: "ch04", dx: "mdd", when: "Low mood or anhedonia with anxiety (the anxious distress specifier)." },
-        { ch: "ch06", name: "Obsessive-compulsive disorder", when: "Intrusive, unwanted thoughts with rituals." },
+        { ch: "ch06", dx: "ocd", when: "Intrusive, unwanted thoughts with rituals." },
         { ch: "ch07", name: "PTSD or adjustment disorder", when: "After a trauma, or within 3 months of a stressor." },
         { ch: "ch09", name: "Illness anxiety disorder", when: "Worry centered on having a serious illness." }
       ]

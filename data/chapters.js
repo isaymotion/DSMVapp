@@ -29,8 +29,9 @@ SP.manifest = [
   { id: 'ch05', number: 5, ready: true, pages: '215–261', title: 'Anxiety Disorders', short: 'Anxiety',
     summary: 'Fear versus anxiety; separation anxiety disorder and selective mutism; specific phobia with its stimulus codes; social anxiety disorder and the performance only specifier; the panic attack specifier, panic disorder and agoraphobia; generalized anxiety disorder; substance/medication-induced and medically caused anxiety; and the other specified and unspecified categories, with every time rule and code.',
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
-  { id: 'ch06', number: 6, ready: false, pages: '263–294', title: 'Obsessive-Compulsive and Related Disorders', short: 'Obsessive-compulsive and related',
-    summary: 'OCD, body dysmorphic disorder, hoarding disorder, trichotillomania and excoriation disorder, with the insight specifiers.' },
+  { id: 'ch06', number: 6, ready: true, pages: '263–294', title: 'Obsessive-Compulsive and Related Disorders', short: 'Obsessive-compulsive and related',
+    summary: 'Obsessions and compulsions, the OCD symptom dimensions and the insight and tic-related specifiers; body dysmorphic disorder and muscle dysmorphia; hoarding disorder; trichotillomania and excoriation disorder; substance/medication-induced and medically caused presentations, including Sydenham’s chorea and PANS; and the other specified examples, from obsessional jealousy to olfactory reference disorder and koro.',
+    files: SP.CHAPTER_FILES },
   { id: 'ch07', number: 7, ready: false, pages: '295–328', title: 'Trauma- and Stressor-Related Disorders', short: 'Trauma- and stressor-related',
     summary: 'Reactive attachment and disinhibited social engagement disorders, PTSD, acute stress disorder, adjustment disorders and prolonged grief disorder.' },
   { id: 'ch08', number: 8, ready: false, pages: '329–348', title: 'Dissociative Disorders', short: 'Dissociative',
@@ -79,5 +80,7 @@ SP.extraFiles = [
   'data/db/disorders-ch05.js',
   'data/helpers/ch05-anxiety.js',
   'data/db/clinical-ch05.js',
+  'data/db/disorders-ch06.js',
+  'data/helpers/ch06-ocd.js',
   'data/changelog.js'
 ];

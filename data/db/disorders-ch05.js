@@ -91,7 +91,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "agoraphobia", how: "Two or more agoraphobic situations, feared because escape or help may be unavailable." },
       { id: "social-anxiety", how: "Situations feared because of negative evaluation." },
       { id: "panic-disorder", how: "Unexpected panic attacks as well." },
-      { name: "Obsessive-compulsive disorder", how: "Fear driven by obsessions (contamination, harming)." },
+      { id: "ocd", how: "Fear driven by obsessions (contamination, harming)." },
       { name: "PTSD", how: "Follows trauma with full PTSD criteria." },
       { name: "Eating disorders", how: "Avoidance limited to food and food cues." }
     ],
@@ -121,7 +121,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "agoraphobia", how: "Fear of being trapped without help; often anxious when alone." },
       { id: "panic-disorder", how: "Attacks come out of the blue, not only in social situations." },
       { id: "gad", how: "Worries about relationships and nonsocial performance, evaluated or not." },
-      { name: "Body dysmorphic disorder", how: "Social fears solely from appearance beliefs → BDD only." },
+      { id: "bdd", how: "Social fears solely from appearance beliefs → BDD only." },
       { name: "Avoidant personality disorder", how: "Broader avoidance and a pervasive negative self-concept." },
       { name: "Autism spectrum disorder", how: "Social communication deficits are core." },
       { id: "mdd", how: "Fear of evaluation from feeling worthless." }
@@ -233,7 +233,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "social-anxiety", how: "Worry only about being evaluated." },
       { id: "separation-anxiety", how: "Worry only about separation." },
       { name: "Illness anxiety disorder", how: "The only fear is one’s own illness." },
-      { name: "Obsessive-compulsive disorder", how: "Intrusive, unwanted thoughts, not worry about real future problems." },
+      { id: "ocd", how: "Intrusive, unwanted thoughts, not worry about real future problems." },
       { name: "Adjustment disorder", how: "Within 3 months of a stressor; residual category." }
     ],
     pearls: ["Children need only 1 of 6 symptoms.", "Full remission is very rare.", "Most frequent anxiety disorder in psychological autopsies of suicide.", "Can be added to depression if severe enough."],

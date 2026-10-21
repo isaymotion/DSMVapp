@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 11,
+    date: "2026-10-22",
+    title: "Chapter 6: Obsessive-Compulsive and Related Disorders",
+    summary: "The full OCD chapter: a 23-section study guide, high yield, four flashcard decks, glossary, mnemonics, two diagnostic helpers and nine library entries.",
+    items: [
+      { type: "chapter", ch: "ch06", text: "Study guide (pp. 263–294): obsessions and compulsions, insight and tic-related specifiers, symptom dimensions, OCD vs OCPD, body dysmorphic disorder and muscle dysmorphia, hoarding disorder, trichotillomania and excoriation disorder, substance-induced and medical causes (Sydenham’s chorea, PANDAS and PANS), and the seven other specified examples.", href: "#/c/ch06/guide", link: "Open the guide" },
+      { type: "chapter", ch: "ch06", text: "High yield (10 topics), 36 criteria cards, 38 differential cards, 47 clinical cards, 44 board-style questions and 58 glossary terms.", href: "#/c/ch06", link: "Chapter 6" },
+      { type: "feature", text: "Two new helpers: “Which obsessive-compulsive or related disorder?” and “Why is this person picking, pulling, checking or saving?”", href: "#/helpers/repetitive", link: "Open the helper" },
+      { type: "feature", text: "Mnemonics: CHeST (OCD dimensions), CAMERA (BDD behaviors), SAVED (hoarding), LASER (hair pulling and skin picking) and BBB-OOKS (other specified examples).", href: "#/c/ch06/cards/mnemonics", link: "Chapter 6 mnemonics" }
+    ]
+  },
+  {
     id: 10,
     date: "2026-10-22",
     title: "Practice pack for Chapter 5",
