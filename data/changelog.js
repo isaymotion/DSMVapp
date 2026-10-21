@@ -4,6 +4,20 @@
  */
 SP.changelog = [
   {
+    id: 5,
+    date: "2026-10-21",
+    title: "Practice pack for Chapter 4, and a new “Start from the complaint” hub",
+    summary: "Board vignettes, write-the-diagnosis and criteria-counting drills, exam traps, interview questions and treatment bridges, piloted on Chapter 4.",
+    items: [
+      { type: "feature", ch: "ch04", text: "25 board vignettes: longer cases, seven in two parts, with an explanation for every answer choice. They join the exam, daily review, mistakes and teaching mode.", href: "#/c/ch04/cards/vignettes", link: "Open the vignettes" },
+      { type: "feature", ch: "ch04", text: "Practice drills: 11 “Write the diagnosis” cases (diagnosis, specifiers and code in recording order) and 10 “Count the criteria” cases.", href: "#/c/ch04/practice", link: "Open the drills" },
+      { type: "feature", ch: "ch04", text: "16 exam traps, each with the rule that beats it: in Practice drills (with rules hidden), at the end of the study guide and in high yield.", href: "#/c/ch04/practice/traps", link: "See the traps" },
+      { type: "feature", ch: "ch04", text: "Disorder pages now have “How to ask it” interview questions for each criterion and a treatment bridge, labeled as outside the DSM, that links to the Stahl Study Companion.", href: "#/dx/mdd", link: "Major depressive disorder" },
+      { type: "feature", text: "Start from the complaint: 14 presenting complaints (low mood, irritable child, after childbirth, suicidal thoughts and more) with the diagnoses to consider across chapters, first questions and must-not-miss causes.", href: "#/complaints", link: "Open the hub" },
+      { type: "feature", text: "Teaching mode: new “Board vignettes” and “Exam traps” slide types and a “Vignettes and traps” preset.", href: "#/teach", link: "Teaching mode" }
+    ]
+  },
+  {
     id: 4,
     date: "2026-10-21",
     title: "New study tools: daily session, progress, time drill, notes, listen mode",

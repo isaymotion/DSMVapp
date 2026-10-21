@@ -88,6 +88,15 @@
       return '<span class="spark__col' + (i === 13 ? ' is-today' : '') + '" title="' + (13 - i ? (13 - i) + ' days ago' : 'Today') + ': ' + v + '"><span style="height:' + Math.max(v ? 8 : 2, Math.round(v / max * 100)) + '%"></span></span>';
     }).join('') + '</div><p class="spark__lbl"><span>2 weeks ago</span><span>Today</span></p>';
   }
+  function drillLine(ch) {
+    if (!SP.drillStats) return '';
+    var parts = [];
+    [['dxline', 'Write the diagnosis', 'write'], ['counting', 'Count the criteria', 'count']].forEach(function (x) {
+      var st = SP.drillStats(ch, x[0]); if (!st.total) return;
+      parts.push('<a href="#/c/' + ch.id + '/practice/' + x[2] + '">' + x[1] + '</a>: ' + (st.seen ? st.right + ' of ' + st.total + ' right' : 'not started'));
+    });
+    return parts.length ? '<p class="pg-drills">Practice drills · ' + parts.join(' · ') + '</p>' : '';
+  }
   function renderProgress() {
     var chs = A.allChapters(), all = { total: 0, seen: 0, n: 0, ok: 0, mastered: 0 }, rows = [];
     var openId = null, most = 0;
@@ -106,6 +115,7 @@
         '<span class="acc acc--big' + accClass(t.acc) + '">' + accLabel(t.acc) + '</span></summary>' +
         '<div class="pg-ch__bar" aria-hidden="true"><span class="m" style="width:' + pct(t.mastered, t.total) + '%"></span><span class="s" style="width:' + pct(t.seen - t.mastered, t.total) + '%"></span></div>' +
         '<div class="pg-ch__acts"><a class="btn btn--small btn--solid" href="#/drill/' + ch.id + '">Drill Chapter ' + ch.number + ' weak spots</a><a class="btn btn--small" href="#/review/' + ch.id + '">Review due cards</a></div>' +
+        drillLine(ch) +
         '<div class="table-wrap"><table class="pg-tab"><thead><tr><th scope="col">Topic</th><th scope="col">Seen</th><th scope="col">Right</th><th scope="col"><span class="sr-only">Sure but wrong</span>⚠</th><th scope="col"><span class="sr-only">Drill</span></th></tr></thead><tbody>' + topics + '</tbody></table></div></details>');
     });
     var acc = all.n ? all.ok / all.n : null, sk = streak(), fcs = falselyConfident(), wk = weakKeys(null, null, 20);

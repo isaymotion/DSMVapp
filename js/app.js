@@ -26,12 +26,14 @@
     { key: 'criteria', label: 'Criteria cards', short: 'Criteria', css: 'mech', deck: true, blurb: 'Recall each criterion set: symptoms, counts, time rules and exclusions.' },
     { key: 'differential', label: 'Differential cards', short: 'Differential', css: 'drug', deck: true, blurb: 'What separates look-alike diagnoses.' },
     { key: 'clinical', label: 'Specifier and course cards', short: 'Specifiers & course', css: 'clin', deck: true, blurb: 'Specifiers, prevalence, development, course, risk and culture.' },
-    { key: 'cases', label: 'Board questions', short: 'Board questions', css: 'case', deck: true, blurb: 'Clinical vignettes, single best answer, with explanations.' }
+    { key: 'cases', label: 'Board questions', short: 'Board questions', css: 'case', deck: true, blurb: 'Clinical vignettes, single best answer, with explanations.' },
+    { key: 'vignettes', label: 'Board vignettes', short: 'Vignettes', css: 'guide', deck: true, blurb: 'Longer board-style cases, some in two steps, with every answer choice explained.' },
+    { key: 'practice', label: 'Practice drills', short: 'Drills', css: 'clin', need: 'dxline', blurb: 'Write the full diagnosis with code and specifiers, count criteria, and spot the exam traps.' }
   ];
   var DECKS = MODES.filter(function (m) { return m.deck; });
   function modeBy(k) { for (var i = 0; i < MODES.length; i++) if (MODES[i].key === k) return MODES[i]; return null; }
   function modeHref(ch, m) { return m.deck ? '#/c/' + ch.id + '/cards/' + m.key : '#/c/' + ch.id + '/' + m.key; }
-  function chapterModes(ch) { return MODES.filter(function (m) { return !m.deck || (ch[m.key] || []).length; }); }
+  function chapterModes(ch) { return MODES.filter(function (m) { return m.need ? (ch[m.need] || []).length : !m.deck || (ch[m.key] || []).length; }); }
   var BOOK = SP.BOOK || 'DSM-5-TR (2022)';
   var APP = 'DSM-5-TR Study Companion';
 
@@ -42,8 +44,9 @@
     });
   }
   /* Cross-references in content: [[dx:schizophrenia]], [[dx:delusional-disorder|delusional disorder]], [[ch:ch02|Chapter 2]], [[helper:psychosis]], [[gl:avolition]] */
-  var XREF_RE = /\[\[(dx|ch|gl|page|helper):([^|\]]+)(?:\|([^\]]+))?\]\]/g;
-  var XREF_HREF = { dx: '#/dx/', ch: '#/c/', gl: '#/glossary/', page: '#/', helper: '#/helpers/' };
+  var XREF_RE = /\[\[(dx|ch|gl|page|helper|stahl):([^|\]]+)(?:\|([^\]]+))?\]\]/g;
+  var STAHL = 'https://isaymotion.github.io/Stahl/#/';
+  var XREF_HREF = { dx: '#/dx/', ch: '#/c/', gl: '#/glossary/', page: '#/', helper: '#/helpers/', stahl: STAHL };
   function xrefLabel(type, id, label) {
     if (label) return label;
     var list = type === 'dx' ? SP.disorders : type === 'helper' ? SP.helpers : null;
@@ -52,7 +55,7 @@
   }
   function fmt(s) {
     return esc(s)
-      .replace(XREF_RE, function (m, type, id, label) { return '<a class="xref xref--' + type + '" href="' + XREF_HREF[type] + id + (type === 'ch' ? '/guide' : '') + '">' + xrefLabel(type, id, label) + '</a>'; })
+      .replace(XREF_RE, function (m, type, id, label) { return '<a class="xref xref--' + type + '" href="' + XREF_HREF[type] + id + (type === 'ch' ? '/guide' : '') + '"' + (type === 'stahl' ? ' target="_blank" rel="noopener" title="Opens the Stahl Study Companion"' : '') + '>' + xrefLabel(type, id, label) + '</a>'; })
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
       .replace(/(^|[^*])\*([^*\s][^*]*?)\*/g, '$1<em>$2</em>');
   }
@@ -272,7 +275,7 @@
         if (!ch) return planned(p[1]) ? renderSoon(p[1]) : renderMissing();
         var mode = p[2] || 'guide';
         if (mode === 'handout') return renderHandout(ch);
-        if (mode === 'summary' && SP.chapterRoutes && SP.chapterRoutes.summary) return SP.chapterRoutes.summary(ch);
+        if (SP.chapterRoutes && SP.chapterRoutes[mode]) return SP.chapterRoutes[mode](ch, p[3]);
         store.set('last', { hash: location.hash, ch: ch.id, mode: mode === 'cards' ? (p[3] || 'criteria') : mode });
         if (mode === 'guide') return renderGuide(ch, p[3]);
         if (mode === 'high-yield') return renderHY(ch, p[3]);
@@ -306,6 +309,7 @@
      slide-in drawer on phones and tablets, opened from the menu button or the Chapters tab. */
   var LIBRARY = [
     { key: 'dx', href: '#/dx', label: 'Disorder library', blurb: 'Every diagnosis: code, criteria in brief, time rules, specifiers, course and differential.', css: 'mech' },
+    { key: 'complaints', href: '#/complaints', label: 'Start from the complaint', blurb: 'Pick what the patient presents with and see every diagnosis to consider, across chapters, with first questions and must-not-miss causes.', css: 'guide' },
     { key: 'helpers', href: '#/helpers', label: 'Diagnostic helpers', blurb: 'Step-by-step decision trees that tell look-alike diagnoses apart, with the reasoning shown.', css: 'case' },
     { key: 'compare', href: '#/compare', label: 'Compare disorders', blurb: 'Two or three diagnoses side by side.', css: 'drug' },
     { key: 'time', href: '#/time', label: 'Time criteria', blurb: 'Every duration rule in one table: the most tested numbers in the manual.', css: 'hy' },
@@ -543,8 +547,8 @@
 
   /* ---------- library hub ---------- */
   function renderLibrary() {
-    var counts = { dx: (SP.disorders || []).length, helpers: (SP.helpers || []).length, compare: (SP.disorders || []).length, time: (SP.disorders || []).filter(function (d) { return d.duration; }).length, codes: (SP.disorders || []).length, glossary: (SP.glossary || []).length, updates: collectUpdates().length };
-    var unit = { dx: ['diagnosis', 'diagnoses'], helpers: ['helper'], compare: ['diagnosis', 'diagnoses'], time: ['time rule'], codes: ['diagnosis', 'diagnoses'], glossary: ['term'], updates: ['note'] };
+    var counts = { dx: (SP.disorders || []).length, helpers: (SP.helpers || []).length, compare: (SP.disorders || []).length, time: (SP.disorders || []).filter(function (d) { return d.duration; }).length, codes: (SP.disorders || []).length, glossary: (SP.glossary || []).length, updates: collectUpdates().length, complaints: (SP.complaints || []).length };
+    var unit = { complaints: ['presenting complaint'], dx: ['diagnosis', 'diagnoses'], helpers: ['helper'], compare: ['diagnosis', 'diagnoses'], time: ['time rule'], codes: ['diagnosis', 'diagnoses'], glossary: ['term'], updates: ['note'] };
     var html = '<div class="wrap page"><header class="page__head"><h1>Reference library</h1><p>Cross-linked tools built from the chapters as they are added. Every entry cites its chapter and DSM-5-TR pages; anything from outside the manual is boxed and labeled.</p></header>' +
       '<div class="tools tools--lib">' + LIBRARY.map(function (l) {
         var u = unit[l.key] || ['entry', 'entries'];
@@ -811,7 +815,7 @@
      o.after    called after every change (to refresh tallies) */
   var LETTERS = 'ABCDE';
   function Player(area, o) {
-    var st = { pos: o.pos || 0, flipped: false, chosen: null, conf: null };
+    var st = { pos: o.pos || 0, flipped: false, chosen: null, conf: null, part: 0, ok0: null };
     var stats = { rated: 0, again: 0, right: 0, wrong: 0, cleared: 0 };
 
     function cur() { return CARDS[o.queue[st.pos]]; }
@@ -827,21 +831,23 @@
       if (!o.queue.length || st.pos >= o.queue.length) {
         area.innerHTML = o.done(stats);
         var again = area.querySelector('[data-restart]');
-        if (again) again.addEventListener('click', function () { st.pos = 0; st.flipped = false; st.chosen = null; st.conf = null; draw(); });
+        if (again) again.addEventListener('click', function () { st.pos = 0; st.flipped = false; st.chosen = null; st.conf = null; st.part = 0; st.ok0 = null; draw(); });
         var rr = area.querySelector('[data-rerender]');
         if (rr) rr.addEventListener('click', function () { route(); });
         return;
       }
-      var r = cur(), c = r.c, key = r.key, isCase = !!c.choices;
+      var r = cur(), c0 = r.c, key = r.key, c = st.part && c0.then ? c0.then : c0, isCase = !!c.choices, twoStep = !!c0.then;
       var front, back;
       if (isCase) {
-        front = '<p class="face__q">' + fmt(c.q) + '</p><ul class="choices">' + c.choices.map(function (ch2, i) {
+        var partTag = twoStep ? '<p class="face__part">Part ' + (st.part + 1) + ' of 2' + (st.part ? ': same patient' : '') + '</p>' : '';
+        var stemH = !st.part && c0.stem ? '<div class="face__stem">' + fmt(c0.stem) + '</div>' : '';
+        front = partTag + stemH + '<p class="face__q">' + fmt(c.q) + '</p><ul class="choices">' + c.choices.map(function (ch2, i) {
           return '<li><button class="choice" type="button" data-choice="' + i + '"><span class="choice__key">' + LETTERS[i] + '</span><span>' + fmt(ch2) + '</span></button></li>';
         }).join('') + '</ul><p class="face__hint">Choose an answer to turn the card.</p>';
         var right = st.chosen === c.answer;
         var verdict = st.chosen == null ? '<p class="verdict">Answer</p>' :
           '<p class="verdict ' + (right ? 'is-right">Correct' : 'is-wrong">Not quite. You chose ' + LETTERS[st.chosen]) + '</p>';
-        back = verdict + '<p class="face__recap">' + fmt(c.q) + '</p>' + choiceList(c.choices, c.answer, st.chosen) + '<p class="face__why">' + fmt(c.why) + '</p>';
+        back = partTag + verdict + '<p class="face__recap">' + fmt(c.q) + '</p>' + choiceList(c.choices, c.answer, st.chosen, c.whyNot) + '<p class="face__why">' + fmt(c.why) + '</p>';
       } else {
         front = '<p class="face__q">' + fmt(c.q) + '</p><p class="face__hint">Tap the card or press Space to see the answer.</p>';
         back = '<p class="face__q face__q--small">' + fmt(c.q) + '</p><p class="face__a">' + fmt(c.a) + '</p>' + (c.why ? '<p class="face__why">' + fmt(c.why) + '</p>' : '');
@@ -858,12 +864,15 @@
       var controls;
       if (!st.flipped) {
         controls = '<button class="btn btn--solid" type="button" id="flip">' + (isCase ? 'Show answer' : 'Flip card') + '</button>';
+      } else if (twoStep && !st.part) {
+        controls = '<button class="btn btn--solid" type="button" id="part2">Part 2 of 2</button>';
       } else if (o.mode === 'mistakes') {
-        var ok = st.chosen === c.answer;
+        var ok = st.chosen === c.answer && st.ok0 !== false;
         controls = '<p class="cleared ' + (ok ? 'is-right' : 'is-wrong') + '">' + (ok ? 'Cleared from your mistakes.' : 'This question stays in your mistakes.') + '</p><button class="btn btn--solid" type="button" id="next-m">Next question</button>';
       } else {
         var s = SRS[key];
-        var suggest = isCase && st.chosen != null ? (st.chosen === c.answer ? (st.conf === 0 ? 2 : st.conf === 2 ? 4 : 3) : 1) : (st.conf === 0 ? 2 : st.conf === 2 ? 3 : 0);
+        var allOk = st.chosen === c.answer && st.ok0 !== false;
+        var suggest = isCase && st.chosen != null ? (allOk ? (st.conf === 0 ? 2 : st.conf === 2 ? 4 : 3) : 1) : (st.conf === 0 ? 2 : st.conf === 2 ? 3 : 0);
         controls = '<div class="rate" role="group" aria-label="How well did you know this?">' + [[1, 'Again'], [2, 'Hard'], [3, 'Good'], [4, 'Easy']].map(function (g) {
           return '<button class="btn rate__b rate__b--' + g[0] + (suggest === g[0] ? ' is-suggested' : '') + '" type="button" data-rate="' + g[0] + '"><span>' + g[1] + '</span><small>' + ivLabel(srsNext(s, g[0]).i) + '</small></button>';
         }).join('') + '</div>';
@@ -898,15 +907,18 @@
       bind('#next', function () { go(1); });
       bind('#flip', function () { if (isCase && !st.flipped) { st.flipped = true; st.chosen = null; draw(); refocus(); } else flip(); });
       bind('#next-m', advanceMistake);
+      bind('#part2', toPart2);
       area.querySelectorAll('[data-rate]').forEach(function (b) { b.addEventListener('click', function () { rate(parseInt(b.getAttribute('data-rate'), 10)); }); });
     }
-    function choiceList(choices, answer, chosen) {
+    function choiceList(choices, answer, chosen, whyNot) {
       return '<ul class="choices choices--static">' + choices.map(function (ch2, i) {
         var cls = i === answer ? ' is-correct' : (i === chosen ? ' is-wrong' : '');
         var note = i === answer ? '<span class="choice__note">Correct answer</span>' : (i === chosen ? '<span class="choice__note">Your answer</span>' : '');
-        return '<li><div class="choice' + cls + '"><span class="choice__key">' + LETTERS[i] + '</span><span>' + fmt(ch2) + note + '</span></div></li>';
+        var wn = whyNot && whyNot[i] ? '<span class="choice__why">' + fmt(whyNot[i]) + '</span>' : '';
+        return '<li><div class="choice' + cls + '"><span class="choice__key">' + LETTERS[i] + '</span><span>' + fmt(ch2) + note + wn + '</span></div></li>';
       }).join('') + '</ul>';
     }
+    function toPart2() { st.ok0 = st.chosen === CARDS[o.queue[st.pos]].c.answer; st.part = 1; st.flipped = false; st.chosen = null; draw(); refocus(); var a = area.querySelector('.flashcard'); if (a && a.scrollIntoView) a.scrollIntoView({ block: 'nearest' }); }
     function confNote(ok) {
       var lbl = ['a guess', 'unsure', 'sure'][st.conf];
       if (ok === true) return st.conf === 0 ? 'Right, but it was a guess: it stays on your weak-spot list until you get it right when sure.' : 'You were ' + lbl + ' and right.';
@@ -917,7 +929,9 @@
     function flip() { st.flipped = !st.flipped; draw(); refocus(); }
     function choose(i) {
       var r = cur(); st.chosen = i; st.flipped = true;
-      var ok = i === r.c.answer;
+      var Q = st.part && r.c.then ? r.c.then : r.c;
+      if (r.c.then && !st.part) { draw(); refocus(); return; }
+      var ok = i === Q.answer && st.ok0 !== false;
       if (ok) stats.right++; else stats.wrong++;
       logAnswer(r.key, ok, st.conf);
       if (o.mode === 'mistakes') {
@@ -929,14 +943,14 @@
     function go(d) {
       var np = st.pos + d;
       if (np < 0 || np >= o.queue.length) return;
-      st.pos = np; st.flipped = false; st.chosen = null; st.conf = null; draw(); refocus();
+      st.pos = np; st.flipped = false; st.chosen = null; st.conf = null; st.part = 0; st.ok0 = null; draw(); refocus();
     }
     function rate(g) {
       var r = cur(); if (!r) return;
       rateCard(r.key, g);
       if (!r.c.choices) logAnswer(r.key, g > 1, st.conf);
       stats.rated++; if (g === 1) stats.again++;
-      st.flipped = false; st.chosen = null; st.conf = null;
+      st.flipped = false; st.chosen = null; st.conf = null; st.part = 0; st.ok0 = null;
       if (o.consume) {
         var k = o.queue.splice(st.pos, 1)[0];
         if (g === 1) o.queue.splice(Math.min(st.pos + 4, o.queue.length), 0, k);
@@ -946,7 +960,7 @@
       draw(); refocus();
     }
     function advanceMistake() {
-      st.flipped = false; st.chosen = null; st.conf = null;
+      st.flipped = false; st.chosen = null; st.conf = null; st.part = 0; st.ok0 = null;
       o.queue.splice(st.pos, 1);
       draw(); refocus();
     }
@@ -956,7 +970,8 @@
       if (e.target.matches && e.target.matches('input, textarea, select')) return;
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       var r = cur(); if (!r) return;
-      var c = r.c, k = e.key;
+      var c = st.part && r.c.then ? r.c.then : r.c, k = e.key;
+      if (r.c.then && !st.part && st.flipped && (k === 'Enter' || k === ' ' || k === 'ArrowRight')) { e.preventDefault(); toPart2(); return; }
       if (k === ' ' || k === 'Enter') {
         if (e.target.closest && e.target.closest('button, a, .gl') && e.target.id !== 'fc') return;
         if (o.mode === 'mistakes' && st.flipped) { e.preventDefault(); advanceMistake(); return; }
@@ -968,7 +983,7 @@
       } else if (k === 'ArrowLeft' && !o.consume) { e.preventDefault(); go(-1); }
       else if (c.choices && !st.flipped && /^[a-e]$/i.test(k)) {
         var i = 'abcde'.indexOf(k.toLowerCase()); if (i < c.choices.length) { e.preventDefault(); choose(i); }
-      } else if (st.flipped && o.mode !== 'mistakes' && /^[1-4]$/.test(k)) { e.preventDefault(); rate(parseInt(k, 10)); }
+      } else if (st.flipped && o.mode !== 'mistakes' && !(r.c.then && !st.part) && /^[1-4]$/.test(k)) { e.preventDefault(); rate(parseInt(k, 10)); }
     }
     document.addEventListener('keydown', onKey);
     draw();
@@ -1153,7 +1168,7 @@
   var SECS_PER_Q = 90;
   function caseKeys(chIds) {
     var out = [];
-    chIds.forEach(function (id) { var ch = chapter(id); if (ch) out = out.concat(deckKeys(ch, 'cases')); });
+    chIds.forEach(function (id) { var ch = chapter(id); if (ch) out = out.concat(deckKeys(ch, 'cases'), deckKeys(ch, 'vignettes')); });
     return out;
   }
   function renderExamSetup() {
@@ -1166,7 +1181,7 @@
       (active ? '<div class="banner"><p>You have an exam in progress: ' + plural(active.items.length, 'question') + ', ' + active.items.filter(function (x) { return x.a != null; }).length + ' answered.</p><div class="empty__actions"><a class="btn btn--solid" href="#/exam/run">Resume exam</a><button class="btn" type="button" id="ex-discard">Discard it</button></div></div>' : '') +
       '<form class="exam-form" id="ex-form" onsubmit="return false">' +
         '<fieldset><legend>Chapters</legend>' + chs.map(function (ch) {
-          return '<label class="check"><input type="checkbox" name="ch" value="' + ch.id + '"' + (prefs.chapters.indexOf(ch.id) > -1 ? ' checked' : '') + '> Chapter ' + ch.number + ': ' + esc(ch.short || ch.title) + ' <span class="muted">(' + (ch.cases || []).length + ' questions)</span></label>';
+          return '<label class="check"><input type="checkbox" name="ch" value="' + ch.id + '"' + (prefs.chapters.indexOf(ch.id) > -1 ? ' checked' : '') + '> Chapter ' + ch.number + ': ' + esc(ch.short || ch.title) + ' <span class="muted">(' + ((ch.cases || []).length + (ch.vignettes || []).length) + ' questions)</span></label>';
         }).join('') + '</fieldset>' +
         '<fieldset><legend>Questions</legend><div class="seg">' + [10, 20, 40, 0].map(function (n) {
           return '<label><input type="radio" name="count" value="' + n + '"' + (prefs.count === n ? ' checked' : '') + '><span>' + (n ? n : 'All') + '</span></label>';
@@ -1237,7 +1252,7 @@
       var flag = main.querySelector('#ex-flag');
       flag.setAttribute('aria-pressed', String(it.f)); flag.textContent = it.f ? 'Flagged' : 'Flag';
       main.querySelector('#ex-q').innerHTML =
-        '<p class="exam-q__meta">Chapter ' + r.ch.number + '</p><p class="exam-q__stem">' + fmt(c.q) + '</p>' +
+        '<p class="exam-q__meta">Chapter ' + r.ch.number + '</p>' + (c.stem ? '<div class="exam-q__stem">' + fmt(c.stem) + '</div>' : '') + '<p class="exam-q__stem">' + fmt(c.q) + '</p>' +
         '<ul class="choices" role="radiogroup" aria-label="Answer choices">' + it.o.map(function (orig, i) {
           var on = it.a === orig;
           return '<li><button class="choice' + (on ? ' is-picked' : '') + '" type="button" role="radio" aria-checked="' + on + '" data-pick="' + orig + '"><span class="choice__key">' + LETTERS[i] + '</span><span>' + fmt(c.choices[orig]) + '</span></button></li>';
@@ -1356,7 +1371,7 @@
       '<header class="page__head"><p class="crumb"><a href="#/exam/results/' + id + '">Back to results</a></p><h1>' + (which === 'all' ? 'All questions' : 'Questions you missed') + '</h1></header>' +
       '<div class="exam-q review-q"><p class="exam-q__meta">Question ' + (n + 1) + ' of ' + list.length + ', Chapter ' + r.ch.number + ', ' + esc(c.tag || '') + '</p>' +
         '<p class="verdict ' + (ok ? 'is-right">Correct' : x.a == null ? 'is-wrong">Not answered' : 'is-wrong">Incorrect') + '</p>' +
-        '<p class="exam-q__stem">' + fmt(c.q) + '</p><ul class="choices choices--static">' + choices + '</ul><p class="face__why">' + fmt(c.why) + '</p>' +
+        (c.stem ? '<div class="exam-q__stem">' + fmt(c.stem) + '</div>' : '') + '<p class="exam-q__stem">' + fmt(c.q) + '</p><ul class="choices choices--static">' + choices + '</ul><p class="face__why">' + fmt(c.why) + '</p>' +
         '<div class="card-nav"><a class="btn' + (n ? '' : ' is-disabled') + '" ' + (n ? 'href="' + base + (n - 1) + '"' : 'aria-disabled="true"') + '>Previous</a>' +
         '<a class="btn btn--solid" href="' + (n < list.length - 1 ? base + (n + 1) : '#/exam/results/' + id) + '">' + (n < list.length - 1 ? 'Next' : 'Back to results') + '</a></div></div>' +
       '</div>';
@@ -1732,6 +1747,8 @@
     { k: 'differential', label: 'Differential cards', unit: 'card', css: 'drug', hint: 'Question on screen; reveal shows the answer.' },
     { k: 'clinical', label: 'Specifier and course cards', unit: 'card', css: 'clin', hint: 'Question on screen; reveal shows the answer.' },
     { k: 'mcq', label: 'Board questions', unit: 'question', css: 'case', hint: 'Single best answer; mark the group’s choice, then reveal the answer and explanation.' },
+    { k: 'vig', label: 'Board vignettes', unit: 'vignette', css: 'guide', hint: 'Longer board-style cases; reveal shows the answer, why each option is right or wrong, and part 2 when there is one.' },
+    { k: 'trap', label: 'Exam traps', unit: 'trap', css: 'hy', hint: 'The tempting wrong idea on screen; reveal shows the rule that beats it.' },
     { k: 'case', label: 'Clinical vignettes', unit: 'vignette', css: 'guide', hint: 'Short vignettes from the study guides; reveal shows the teaching point.' },
     { k: 'drug', label: 'Name that disorder', unit: 'mystery disorder', css: 'drug', hint: 'Clues from the disorder library appear one at a time (core feature, time rule, a specifier, a differential) until someone names the diagnosis.' }
   ];
@@ -1743,6 +1760,7 @@
     { id: 'hy', label: 'High-yield lecture', counts: { hy: 'all' }, order: 'order', timer: 0 },
     { id: 'cards', label: 'Flashcards', counts: { criteria: 'all', differential: 'all', clinical: 'all' }, order: 'shuffle', timer: 0 },
     { id: 'drug', label: 'Name that disorder', counts: { drug: 10 }, order: 'shuffle', timer: 0 },
+    { id: 'vig', label: 'Vignettes and traps', counts: { vig: 'all', trap: 'all' }, order: 'order', timer: 0 },
     { id: 'warm', label: 'Lightning warm-up', counts: { hy: 5, criteria: 5, differential: 5, mcq: 3 }, order: 'mix', timer: 20 }
   ];
   var TEACH_SIZES = ['Normal', 'Large', 'Huge'];
@@ -1764,6 +1782,8 @@
         (ch[k] || []).forEach(function (c) { add(cat[k], { id: k + ':' + ch.id + '/' + c.id, kind: k, ch: ch, c: c }); });
       });
       (ch.cases || []).forEach(function (c) { add(cat.mcq, { id: 'mcq:' + ch.id + '/' + c.id, kind: 'mcq', ch: ch, c: c }); });
+      (ch.vignettes || []).forEach(function (c) { add(cat.vig, { id: 'vig:' + ch.id + '/' + c.id, kind: 'mcq', vig: true, ch: ch, c: c }); });
+      (ch.traps || []).forEach(function (t) { add(cat.trap, { id: 'trap:' + ch.id + '/' + t.id, kind: 'trap', ch: ch, c: { q: t.trap, a: t.truth, tag: t.tag || 'Exam trap' } }); });
       if (ch.guide) ch.guide.parts.forEach(function (pt) {
         pt.sections.forEach(function (s) {
           s.blocks.forEach(function (b, i) {
@@ -1823,11 +1843,13 @@
     if (it.kind === 'hy') return plain(it.text);
     if (it.kind === 'case') return it.title;
     if (it.kind === 'drug') return 'Mystery disorder (' + familyOf(it.d).label + ')';
+    if (it.vig) return plain(it.c.stem || it.c.q);
+    if (it.kind === 'trap') return 'Trap: ' + plain(it.c.q);
     return plain(it.c.q);
   }
   function teachMeta(it) {
     if (it.kind === 'drug') return 'Ch ' + it.ch.number + ' · Name that disorder';
-    var ty = it.kind === 'hyt' ? 'High yield' : teachTypeBy(it.kind).label.replace(/s$/, '');
+    var ty = it.kind === 'hyt' ? 'High yield' : it.vig ? 'Board vignette' : teachTypeBy(it.kind).label.replace(/s$/, '');
     var extra = it.kind === 'hy' || it.kind === 'hyt' ? it.topic : it.kind === 'case' ? it.sec.title : (it.c.tag || '');
     return 'Ch ' + it.ch.number + ' · ' + ty + (extra && it.kind !== 'hyt' ? ' · ' + extra : '');
   }
@@ -2015,13 +2037,14 @@
       var it = cur(), k = it.kind, body = '', done = isDone(it);
       if (k === 'mcq') {
         var c = it.c, vts = votesOf(it), vtot = vts.reduce(function (a, b) { return a + b; }, 0);
-        body = '<p class="teach__stem">' + fmt(c.q) + '</p>' + (S.vote && !st.revealed ? '<p class="teach__prompt teach__prompt--vote">Show of hands: tap a choice once for each hand raised.' + (vtot ? ' <button type="button" class="tbtn tbtn--small" id="t-vreset">Clear votes</button>' : '') + '</p>' : '') +
+        body = (c.stem ? '<div class="teach__stem teach__stem--vig">' + fmt(c.stem) + '</div>' : '') + '<p class="teach__stem">' + fmt(c.q) + '</p>' + (S.vote && !st.revealed ? '<p class="teach__prompt teach__prompt--vote">Show of hands: tap a choice once for each hand raised.' + (vtot ? ' <button type="button" class="tbtn tbtn--small" id="t-vreset">Clear votes</button>' : '') + '</p>' : '') +
         '<ul class="teach__choices">' + c.choices.map(function (ch2, i) {
           var cls = st.revealed ? (i === c.answer ? ' is-correct' : (i === st.picked ? ' is-wrong' : ' is-dim')) : (i === st.picked ? ' is-picked' : '');
           var vbar = S.vote && vtot ? '<span class="tvote"><span class="tvote__n">' + vts[i] + '</span>' + (st.revealed ? '<span class="tvote__bar"><span style="width:' + Math.round(vts[i] / vtot * 100) + '%"></span></span><span class="tvote__p">' + Math.round(vts[i] / vtot * 100) + '%</span>' : '') + '</span>' : '';
           return '<li><button type="button" class="tchoice' + cls + (S.vote ? ' is-vote' : '') + '" data-pick="' + i + '"' + (st.revealed ? ' disabled' : '') + ' aria-pressed="' + (i === st.picked) + '"><span class="tchoice__key">' + LETTERS[i] + '</span><span class="tchoice__txt">' + fmt(ch2) + '</span>' + vbar + '</button></li>';
         }).join('') + '</ul>' +
-        (st.revealed ? '<div class="teach__answer"><p class="teach__label">Answer: ' + LETTERS[c.answer] + (S.vote && vtot ? ', ' + Math.round(vts[c.answer] / vtot * 100) + '% of ' + plural(vtot, 'vote') + ' were right' : st.picked == null ? '' : st.picked === c.answer ? ', the group got it' : ', the group chose ' + LETTERS[st.picked]) + '</p><p>' + fmt(c.why) + '</p></div>' + discussHTML(it) : '');
+        (st.revealed ? '<div class="teach__answer"><p class="teach__label">Answer: ' + LETTERS[c.answer] + (S.vote && vtot ? ', ' + Math.round(vts[c.answer] / vtot * 100) + '% of ' + plural(vtot, 'vote') + ' were right' : st.picked == null ? '' : st.picked === c.answer ? ', the group got it' : ', the group chose ' + LETTERS[st.picked]) + '</p><p>' + fmt(c.why) + '</p>' + (c.whyNot ? '<ul class="teach__whynot">' + c.whyNot.map(function (w, i) { return i === c.answer || !w ? '' : '<li><b>' + LETTERS[i] + '.</b> ' + fmt(w) + '</li>'; }).join('') + '</ul>' : '') + '</div>' +
+          (c.then ? '<div class="teach__answer teach__answer--p2"><p class="teach__label">Part 2: ' + fmt(c.then.q) + '</p><p><b>' + LETTERS[c.then.answer] + '. ' + fmt(c.then.choices[c.then.answer]) + '.</b> ' + fmt(c.then.why) + '</p></div>' : '') + discussHTML(it) : '');
       } else if (k === 'case') {
         body = '<h2 class="teach__title">' + esc(it.title) + '</h2><p class="teach__stem">' + fmt(it.text) + '</p>' +
           (st.revealed ? '<div class="teach__answer"><p class="teach__label">Teaching point</p><p>' + fmt(it.point || '') + '</p></div>' + discussHTML(it) : '<p class="teach__prompt">What is the diagnosis, and which criterion or rule decides it?</p>');
@@ -2040,7 +2063,7 @@
             : '<p class="teach__prompt">' + (shown < cl.length ? 'Clue ' + shown + ' of ' + cl.length + '. Who can name it?' : 'All clues shown. Final guesses?') + '</p>');
       } else {
         body = '<p class="teach__kicker">' + esc(teachTypeBy(k).label) + (it.c.tag ? ' · ' + esc(it.c.tag) : '') + '</p><p class="teach__stem">' + fmt(it.c.q) + '</p>' +
-          (st.revealed ? '<div class="teach__answer"><p class="teach__label">Answer</p><p>' + fmt(it.c.a) + '</p></div>' : '');
+          (st.revealed ? '<div class="teach__answer"><p class="teach__label">' + (k === 'trap' ? 'The rule' : 'Answer') + '</p><p>' + fmt(it.c.a) + '</p></div>' : (k === 'trap' ? '<p class="teach__prompt">Why is this wrong? What is the rule?</p>' : ''));
       }
       var scoreable = done && revealable(it) && (S.teams || k !== 'mcq');
       var scoreHTML = '';
@@ -2428,6 +2451,10 @@
           return '<li><b>' + (x.id ? dxLinkName(x.id, x.name) : esc(x.name)) + '</b><span>' + fmt(x.how) + '</span></li>';
         }).join('') + '</ul>') : '') +
         (d.pearls && d.pearls.length ? sec('Pearls and exam traps', list(d.pearls, 'pearls')) : '') +
+        (d.ask && d.ask.length ? sec('How to ask it', '<p class="muted ask-intro">Plain-language questions for each criterion. Ask open questions first; use these to fill the gaps.</p><dl class="ask">' + d.ask.map(function (a) { return '<dt>' + fmt(a[0]) + '</dt><dd>' + fmt(a[1]) + (a[2] ? '<small>' + fmt(a[2]) + '</small>' : '') + '</dd>'; }).join('') + '</dl>') : '') +
+        (d.tx ? '<section class="lib-sec tx-box"><h2>Treatment bridge <span class="tx-box__tag">Outside the DSM</span></h2><p class="tx-box__note">The DSM-5-TR does not cover treatment. These pointers orient you and link to the Stahl Study Companion; they are not prescribing guidance. Check current guidelines and labeling.' + (d.tx.asOf ? ' Current as of ' + esc(d.tx.asOf) + '.' : '') + '</p>' +
+          (d.tx.first ? '<p><b>First line:</b> ' + fmt(d.tx.first) + '</p>' : '') + (d.tx.points && d.tx.points.length ? list(d.tx.points) : '') +
+          (d.tx.stahl && d.tx.stahl.length ? '<p class="tx-box__links"><span>In Stahl:</span> ' + d.tx.stahl.map(function (x) { return '<a class="ref-chip ref-chip--ext" href="' + STAHL + esc(x[1]) + '" target="_blank" rel="noopener">' + esc(x[0]) + ' ↗</a>'; }).join(' ') + '</p>' : '') + '</section>' : '') +
         updatesHTML(d.updates) +
       '</div><aside class="lib-side"><h2>In the study guide</h2><div class="ref-chips">' + chRef({ ch: d.ch, pages: d.pages, sec: d.sec }) + '</div>' +
         (m && !ch ? '<p class="muted">This chapter is coming soon.</p>' : '') +
@@ -2639,6 +2666,9 @@
     differential: { label: 'Differential card', css: 'drug' },
     clinical: { label: 'Specifier/course card', css: 'clin' },
     cases: { label: 'Board question', css: 'case' },
+    vignettes: { label: 'Board vignette', css: 'guide' },
+    trap: { label: 'Exam trap', css: 'hy' },
+    complaint: { label: 'Complaint', css: 'guide' },
     glossary: { label: 'Glossary', css: 'gloss' },
     dx: { label: 'Disorder', css: 'mech' },
     helper: { label: 'Diagnostic helper', css: 'case' }
@@ -2661,14 +2691,16 @@
       });
       DECKS.forEach(function (d) {
         (ch[d.key] || []).forEach(function (c) {
-          var text = plain(c.q) + ' ' + (c.choices ? c.choices.map(plain).join(' ') + ' ' : '') + plain(c.a || '') + ' ' + plain(c.why || '');
-          INDEX.push({ ch: ch, kind: d.key, title: c.tag || d.short, text: text, front: plain(c.q), href: '#/c/' + ch.id + '/cards/' + d.key + '/' + c.id });
+          var text = plain(c.stem || '') + ' ' + plain(c.q) + ' ' + (c.choices ? c.choices.map(plain).join(' ') + ' ' : '') + plain(c.a || '') + ' ' + plain(c.why || '');
+          INDEX.push({ ch: ch, kind: d.key, title: c.tag || d.short, text: text, front: plain(c.stem || c.q), href: '#/c/' + ch.id + '/cards/' + d.key + '/' + c.id });
         });
       });
+      (ch.traps || []).forEach(function (t) { INDEX.push({ ch: ch, kind: 'trap', title: t.tag || 'Exam trap', text: plain(t.trap + ' ' + t.truth), front: plain(t.trap), href: '#/c/' + ch.id + '/practice/traps' }); });
     });
     if (!GL) buildGloss();
     GL.list.forEach(function (g) { INDEX.push({ ch: null, kind: 'glossary', title: g.t, text: g.d, src: g.src, href: '#/glossary/' + g.slug }); });
     (SP.disorders || []).forEach(function (d) { INDEX.push({ ch: null, kind: 'dx', title: d.name + (d.code ? ' (' + d.code + ')' : ''), text: plain([d.code, d.essence, d.duration, (d.aka || []).join(' '), (d.criteria || []).map(function (c) { return typeof c === 'string' ? c : c[1]; }).join(' '), (d.specifiers || []).join(' ')].join(' ')), href: '#/dx/' + d.id }); });
+    (SP.complaints || []).forEach(function (c) { INDEX.push({ ch: null, kind: 'complaint', title: c.title, text: plain(c.intro + ' ' + c.items.map(function (it) { return (it.name || '') + ' ' + it.when; }).join(' ')), href: '#/complaints/' + c.id }); });
     (SP.helpers || []).forEach(function (h) { INDEX.push({ ch: null, kind: 'helper', title: h.title, text: plain(h.summary), href: '#/helpers/' + h.id }); });
     INDEX.forEach(function (e) { e.lc = e.text.toLowerCase(); e.lt = e.title.toLowerCase(); });
   }
@@ -3014,7 +3046,7 @@
     isDue: isDue, cardStatus: cardStatus, deckKeys: deckKeys, newCardsFor: newCardsFor, reviewPrefs: reviewPrefs, dueSummary: dueSummary,
     Player: Player, setView: setView, route: route, view: view, main: main, APP: APP, BOOK: BOOK, ATTRIBUTION: ATTRIBUTION,
     linkTerms: linkTerms, blockText: blockText, chapterHead: chapterHead, libHead: libHead, dxList: dxList, chRef: chRef,
-    confOn: confOn, kbdHelp: kbdHelp, headerH: headerH, reduceMotion: reduceMotion, updateNavBadges: updateNavBadges, fmtDate: fmtDate
+    confOn: confOn, logAnswer: logAnswer, STAHL: STAHL, blockHTML: blockHTML, bookmarkBtn: bookmarkBtn, bindBookmarks: bindBookmarks, dxBy: dxBy, focusTarget: focusTarget, kbdHelp: kbdHelp, headerH: headerH, reduceMotion: reduceMotion, updateNavBadges: updateNavBadges, fmtDate: fmtDate
   };
 
   /* ---------- boot ---------- */
@@ -3057,6 +3089,7 @@
 
   window.addEventListener('hashchange', function () { syncHist(); route(); });
   loadAll().then(function () {
+    (SP.onData || []).forEach(function (fn) { try { fn(); } catch (e) { if (window.console) console.error(e); } });
     indexCards();
     updateNavBadges();
     route();

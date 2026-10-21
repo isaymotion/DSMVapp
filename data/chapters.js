@@ -10,6 +10,9 @@ SP.add = function (id, key, value) {
 };
 SP.BOOK = 'DSM-5-TR (American Psychiatric Association, 2022)';
 SP.CHAPTER_FILES = ['guide', 'highyield', 'cards-criteria', 'cards-differential', 'cards-clinical', 'cards-cases', 'glossary'];
+/* Practice pack (Stage 2): board vignettes, write-the-diagnosis and counting drills, exam traps.
+   Add these to a chapter's files once data/chNN/ has them (plus data/db/clinical-chNN.js in SP.extraFiles). */
+SP.PRACTICE_FILES = ['vignettes', 'drills', 'traps'];
 
 SP.manifest = [
   { id: 'ch01', number: 1, ready: false, pages: '35–99', title: 'Neurodevelopmental Disorders', short: 'Neurodevelopmental',
@@ -22,7 +25,7 @@ SP.manifest = [
     files: SP.CHAPTER_FILES },
   { id: 'ch04', number: 4, ready: true, pages: '177–214', title: 'Depressive Disorders', short: 'Depressive',
     summary: 'Disruptive mood dysregulation disorder; the major depressive episode and major depressive disorder with full coding; grief and its look-alikes; persistent depressive disorder and its course specifiers; premenstrual dysphoric disorder; substance/medication-induced and medically caused depression; the other specified presentations; and every depressive specifier, from anxious distress to seasonal pattern.',
-    files: SP.CHAPTER_FILES },
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch05', number: 5, ready: false, pages: '215–261', title: 'Anxiety Disorders', short: 'Anxiety',
     summary: 'Separation anxiety, selective mutism, specific phobia, social anxiety disorder, panic disorder and the panic attack specifier, agoraphobia and generalized anxiety disorder.' },
   { id: 'ch06', number: 6, ready: false, pages: '263–294', title: 'Obsessive-Compulsive and Related Disorders', short: 'Obsessive-compulsive and related',
@@ -69,5 +72,6 @@ SP.extraFiles = [
   'data/helpers/ch03-bipolar.js',
   'data/db/disorders-ch04.js',
   'data/helpers/ch04-depressive.js',
+  'data/db/clinical-ch04.js',
   'data/changelog.js'
 ];
