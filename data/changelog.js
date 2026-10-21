@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 10,
+    date: "2026-10-22",
+    title: "Practice pack for Chapter 5",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the anxiety disorders, plus four new complaints in the hub.",
+    items: [
+      { type: "chapter", ch: "ch05", text: "Chapter 5: 25 board vignettes (2 in two parts), 12 “Write the diagnosis” cases (every phobia code, performance only, panic disorder plus agoraphobia, the substance-induced code table, medical causes), 10 counting drills and 17 exam traps.", href: "#/c/ch05/practice", link: "Chapter 5 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges on every anxiety disorder page, linking to the Stahl Study Companion, current to October 2026 (including the benzodiazepine boxed warning and the pediatric GAD approvals).", href: "#/dx/gad", link: "Generalized anxiety disorder" },
+      { type: "feature", text: "Start from the complaint: anxiety or worry; sudden attacks of fear, palpitations or chest pain; avoiding places; and a child who won’t go to school or won’t speak there.", href: "#/complaints/anxious", link: "Open the hub" }
+    ]
+  },
+  {
     id: 9,
     date: "2026-10-22",
     title: "Chapter 5: Anxiety Disorders",

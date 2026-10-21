@@ -28,7 +28,7 @@ SP.manifest = [
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch05', number: 5, ready: true, pages: '215–261', title: 'Anxiety Disorders', short: 'Anxiety',
     summary: 'Fear versus anxiety; separation anxiety disorder and selective mutism; specific phobia with its stimulus codes; social anxiety disorder and the performance only specifier; the panic attack specifier, panic disorder and agoraphobia; generalized anxiety disorder; substance/medication-induced and medically caused anxiety; and the other specified and unspecified categories, with every time rule and code.',
-    files: SP.CHAPTER_FILES },
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch06', number: 6, ready: false, pages: '263–294', title: 'Obsessive-Compulsive and Related Disorders', short: 'Obsessive-compulsive and related',
     summary: 'OCD, body dysmorphic disorder, hoarding disorder, trichotillomania and excoriation disorder, with the insight specifiers.' },
   { id: 'ch07', number: 7, ready: false, pages: '295–328', title: 'Trauma- and Stressor-Related Disorders', short: 'Trauma- and stressor-related',
@@ -78,5 +78,6 @@ SP.extraFiles = [
   'data/db/clinical-ch04.js',
   'data/db/disorders-ch05.js',
   'data/helpers/ch05-anxiety.js',
+  'data/db/clinical-ch05.js',
   'data/changelog.js'
 ];
