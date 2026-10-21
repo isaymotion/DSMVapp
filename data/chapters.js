@@ -9,7 +9,7 @@ SP.add = function (id, key, value) {
   (SP.chapters[id] = SP.chapters[id] || {})[key] = value;
 };
 SP.BOOK = 'DSM-5-TR (American Psychiatric Association, 2022)';
-SP.CHAPTER_FILES = ['guide', 'highyield', 'cards-criteria', 'cards-differential', 'cards-clinical', 'cards-cases', 'glossary'];
+SP.CHAPTER_FILES = ['guide', 'highyield', 'cards-criteria', 'cards-differential', 'cards-clinical', 'cards-cases', 'glossary', 'mnemonics'];
 /* Practice pack (Stage 2): board vignettes, write-the-diagnosis and counting drills, exam traps.
    Add these to a chapter's files once data/chNN/ has them (plus data/db/clinical-chNN.js in SP.extraFiles). */
 SP.PRACTICE_FILES = ['vignettes', 'drills', 'traps'];

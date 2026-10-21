@@ -273,4 +273,84 @@
     document.title = c.title + ' — ' + APP;
   }
   SP.routes.complaints = renderComplaints;
+
+  /* =====================================================================
+     Mnemonics: #/mnemonics (library page) and #/mnemonics/drill[/<ch>]
+     Data: SP.add(ch, 'mnemonics', [{ id, name, for, letters: [[letter, word, detail]], caveat, dx, sec, original }])
+     Each mnemonic is also a card in the chapter's Mnemonics deck (spaced repetition).
+     ===================================================================== */
+  function prepMnemonics() {
+    Object.keys(SP.chapters || {}).forEach(function (chId) {
+      (SP.chapters[chId].mnemonics || []).forEach(function (m) {
+        m.tag = m.name;
+        m.q = '**' + m.name + '**: ' + (m['for'] || '');
+        m.a = m.letters.map(function (l) { return l[0] + ' = ' + l[1]; }).join('; ') + (m.caveat ? '. ' + m.caveat : '');
+      });
+    });
+  }
+  SP.onData = [prepMnemonics].concat(SP.onData || []);
+  function mnemonicList() {
+    var out = [];
+    A.allChapters().forEach(function (ch) { (ch.mnemonics || []).forEach(function (m) { out.push({ ch: ch, m: m, key: ch.id + '/mnemonics/' + m.id }); }); });
+    return out;
+  }
+  SP.mnemonicList = mnemonicList;
+  function renderMnemonics(p) {
+    if (p[1] === 'drill') return renderMnDrill(p[2]);
+    var all = mnemonicList(), prefs = store.get('mnPrefs', { ch: 'all' });
+    if (prefs.ch !== 'all' && !A.chapter(prefs.ch)) prefs.ch = 'all';
+    var chs = A.allChapters().filter(function (ch) { return (ch.mnemonics || []).length; });
+    var html = '<div class="wrap page mn-page">' + A.libHead(null, null, 'Mnemonics', 'Memory hooks for the criteria residents are asked about most. Each card spells the mnemonic out and says where it differs from the DSM, because the popular mnemonics are not word-for-word criteria. Mnemonics marked “app original” were written for this app.',
+        '<a class="btn btn--solid" href="#/mnemonics/drill" id="mn-go">Drill them</a>') +
+      '<div class="fam-chips mn-chips"><button type="button" class="filter" data-mch="all">All chapters</button>' + chs.map(function (ch) { return '<button type="button" class="filter" data-mch="' + ch.id + '">Ch ' + ch.number + '</button>'; }).join('') + '</div>' +
+      '<div class="lib-tools"><label class="gloss__search"><span class="sr-only">Filter mnemonics</span><input type="search" id="mnq" placeholder="Filter: mania, depression, negative symptoms…" autocomplete="off"></label></div>' +
+      '<ul class="mn-grid" id="mn-grid">' + all.map(function (x) {
+        var m = x.m, d = m.dx && A.dxBy(m.dx), st = A.cardStatus(x.key);
+        return '<li class="mn-card" id="mn-' + esc(m.id) + '" data-ch="' + x.ch.id + '" data-t="' + esc((m.name + ' ' + plain(m['for'] || '') + ' ' + m.letters.map(function (l) { return plain(l[1]); }).join(' ')).toLowerCase()) + '">' +
+          '<div class="mn-card__head"><p class="mn-card__name">' + esc(m.name) + (m.original ? ' <span class="mn-orig">App original</span>' : '') + '</p><p class="mn-card__for">' + fmt(m['for'] || '') + '</p></div>' +
+          '<dl class="mn-list">' + m.letters.map(function (l) { return '<dt>' + esc(l[0]) + '</dt><dd><b>' + fmt(l[1]) + '</b>' + (l[2] ? '<span>' + fmt(l[2]) + '</span>' : '') + '</dd>'; }).join('') + '</dl>' +
+          (m.caveat ? '<p class="mn-caveat"><b>DSM check:</b> ' + fmt(m.caveat) + '</p>' : '') +
+          '<p class="mn-card__links"><span class="mn-card__ch">Ch ' + x.ch.number + '</span>' + (m.sec ? '<a href="#/c/' + x.ch.id + '/guide/' + m.sec + '">Study guide</a>' : '') + (d ? '<a href="#/dx/' + d.id + '">' + esc(d.name) + '</a>' : '') + '<a href="#/c/' + x.ch.id + '/cards/mnemonics/' + m.id + '">Practice card</a><span class="mn-st mn-st--' + st + '">' + (st === 'new' ? 'Not drilled yet' : st === 'mastered' ? 'Mastered' : 'Learning') + '</span></p></li>';
+      }).join('') + '</ul></div>';
+    A.setView('mnemonics', html);
+    document.title = 'Mnemonics — ' + APP;
+    A.linkTerms(main.querySelector('#mn-grid'), { skip: '.mn-card__name, .mn-list' });
+    var q = main.querySelector('#mnq');
+    function apply() {
+      var v = q.value.trim().toLowerCase(), n = 0;
+      main.querySelectorAll('#mn-grid > li').forEach(function (li) {
+        var show = (prefs.ch === 'all' || li.getAttribute('data-ch') === prefs.ch) && (!v || li.getAttribute('data-t').indexOf(v) > -1);
+        li.hidden = !show; if (show) n++;
+      });
+      main.querySelectorAll('[data-mch]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-mch') === prefs.ch)); });
+      main.querySelector('#mn-go').setAttribute('href', '#/mnemonics/drill' + (prefs.ch === 'all' ? '' : '/' + prefs.ch));
+    }
+    main.querySelectorAll('[data-mch]').forEach(function (b) { b.addEventListener('click', function () { prefs.ch = b.getAttribute('data-mch'); store.set('mnPrefs', prefs); apply(); }); });
+    q.addEventListener('input', apply);
+    apply();
+  }
+  function renderMnDrill(chId) {
+    var ch = chId && A.chapter(chId);
+    var all = mnemonicList().filter(function (x) { return !ch || x.ch.id === ch.id; }).map(function (x) { return x.key; });
+    var SRS = A.srs();
+    var due = all.filter(A.isDue), fresh = all.filter(function (k) { return !SRS[k]; });
+    var queue = due.concat(shuffle(fresh)), mode = 'due';
+    if (!queue.length) { queue = shuffle(all.slice()); mode = 'all'; }
+    var html = '<div class="wrap page">' +
+      '<header class="page__head"><p class="crumb"><a href="#/mnemonics">Mnemonics</a></p><h1>Spell it out</h1><p>' + (ch ? 'Chapter ' + ch.number + '. ' : 'All chapters. ') +
+        'Look at the letters, say each word, then tap the letter to check. Flip the card for the details and the DSM check, and rate yourself: mnemonics come back on the same review schedule as your flashcards.</p></header>' +
+      '<div class="deck-bar"><span class="deck-bar__count">' + (mode === 'due' ? plural(due.length, 'due mnemonic') + ', ' + plural(fresh.length, 'new one') : 'Nothing due: practicing all ' + all.length) + '</span></div>' +
+      '<div id="card-area" aria-live="polite"></div>' + A.kbdHelp(false) + '</div>';
+    A.setView('mn-drill:' + (chId || 'all'), html);
+    document.title = 'Mnemonics drill — ' + APP;
+    if (!queue.length) { main.querySelector('#card-area').innerHTML = '<div class="empty"><h2>No mnemonics yet</h2></div>'; return; }
+    var player = A.Player(main.querySelector('#card-area'), {
+      queue: queue, consume: true, mode: 'srs', source: true,
+      done: function (stats) {
+        return '<div class="empty"><h2>Drill finished</h2><p>You went through ' + plural(stats.rated, 'mnemonic') + '. They come back when they are due.</p><div class="empty__actions"><a class="btn btn--solid" href="#/mnemonics">Back to Mnemonics</a><button class="btn" type="button" data-rerender>Go again</button></div></div>';
+      }
+    });
+    A.view.cleanup = function () { player.destroy(); };
+  }
+  SP.routes.mnemonics = renderMnemonics;
 })();

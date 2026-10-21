@@ -4,6 +4,19 @@
  */
 SP.changelog = [
   {
+    id: 6,
+    date: "2026-10-21",
+    title: "Mnemonics, with a spell-it-out drill",
+    summary: "A Mnemonics page in the Library and a Mnemonics deck in each chapter, on the same review schedule as the flashcards.",
+    items: [
+      { type: "feature", text: "Mnemonics page: every mnemonic letter by letter, with a “DSM check” that says where it differs from the criteria. Filter by chapter or search.", href: "#/mnemonics", link: "Open Mnemonics" },
+      { type: "feature", text: "Spell-it-out drill: see the letters, say each word, tap to check, then rate yourself. Mnemonics come back in Daily review and Today’s 10 minutes.", href: "#/mnemonics/drill", link: "Start the drill" },
+      { type: "chapter", ch: "ch02", text: "Chapter 2: HD-SB Network (Criterion A), the 5 A’s of negative symptoms, and 1 day, 1 month, 6 months.", href: "#/c/ch02/cards/mnemonics", link: "Chapter 2 mnemonics" },
+      { type: "chapter", ch: "ch03", text: "Chapter 3: DIGFAST, Hypo 4 Mania 7, and PHI makes it mania.", href: "#/c/ch03/cards/mnemonics", link: "Chapter 3 mnemonics" },
+      { type: "chapter", ch: "ch04", text: "Chapter 4: SIGECAPS, HE’S 2 SAD, R + HEAL (atypical features), DIP (what doesn’t count toward mixed features) and the DMDD numbers.", href: "#/c/ch04/cards/mnemonics", link: "Chapter 4 mnemonics" }
+    ]
+  },
+  {
     id: 5,
     date: "2026-10-21",
     title: "Practice pack for Chapter 4, and a new “Start from the complaint” hub",

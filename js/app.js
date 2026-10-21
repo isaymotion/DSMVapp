@@ -28,6 +28,7 @@
     { key: 'clinical', label: 'Specifier and course cards', short: 'Specifiers & course', css: 'clin', deck: true, blurb: 'Specifiers, prevalence, development, course, risk and culture.' },
     { key: 'cases', label: 'Board questions', short: 'Board questions', css: 'case', deck: true, blurb: 'Clinical vignettes, single best answer, with explanations.' },
     { key: 'vignettes', label: 'Board vignettes', short: 'Vignettes', css: 'guide', deck: true, blurb: 'Longer board-style cases, some in two steps, with every answer choice explained.' },
+    { key: 'mnemonics', label: 'Mnemonics', short: 'Mnemonics', css: 'gloss', deck: true, blurb: 'Spell out each mnemonic letter by letter, with where it differs from the DSM.' },
     { key: 'practice', label: 'Practice drills', short: 'Drills', css: 'clin', need: 'dxline', blurb: 'Write the full diagnosis with code and specifiers, count criteria, and spot the exam traps.' }
   ];
   var DECKS = MODES.filter(function (m) { return m.deck; });
@@ -309,6 +310,7 @@
      slide-in drawer on phones and tablets, opened from the menu button or the Chapters tab. */
   var LIBRARY = [
     { key: 'dx', href: '#/dx', label: 'Disorder library', blurb: 'Every diagnosis: code, criteria in brief, time rules, specifiers, course and differential.', css: 'mech' },
+    { key: 'mnemonics', href: '#/mnemonics', label: 'Mnemonics', blurb: 'Every mnemonic in the app, letter by letter, with where it differs from the DSM, and a spell-it-out drill.', css: 'gloss' },
     { key: 'complaints', href: '#/complaints', label: 'Start from the complaint', blurb: 'Pick what the patient presents with and see every diagnosis to consider, across chapters, with first questions and must-not-miss causes.', css: 'guide' },
     { key: 'helpers', href: '#/helpers', label: 'Diagnostic helpers', blurb: 'Step-by-step decision trees that tell look-alike diagnoses apart, with the reasoning shown.', css: 'case' },
     { key: 'compare', href: '#/compare', label: 'Compare disorders', blurb: 'Two or three diagnoses side by side.', css: 'drug' },
@@ -547,8 +549,8 @@
 
   /* ---------- library hub ---------- */
   function renderLibrary() {
-    var counts = { dx: (SP.disorders || []).length, helpers: (SP.helpers || []).length, compare: (SP.disorders || []).length, time: (SP.disorders || []).filter(function (d) { return d.duration; }).length, codes: (SP.disorders || []).length, glossary: (SP.glossary || []).length, updates: collectUpdates().length, complaints: (SP.complaints || []).length };
-    var unit = { complaints: ['presenting complaint'], dx: ['diagnosis', 'diagnoses'], helpers: ['helper'], compare: ['diagnosis', 'diagnoses'], time: ['time rule'], codes: ['diagnosis', 'diagnoses'], glossary: ['term'], updates: ['note'] };
+    var counts = { dx: (SP.disorders || []).length, helpers: (SP.helpers || []).length, compare: (SP.disorders || []).length, time: (SP.disorders || []).filter(function (d) { return d.duration; }).length, codes: (SP.disorders || []).length, glossary: (SP.glossary || []).length, updates: collectUpdates().length, mnemonics: (SP.mnemonicList ? SP.mnemonicList().length : 0), complaints: (SP.complaints || []).length };
+    var unit = { mnemonics: ['mnemonic'], complaints: ['presenting complaint'], dx: ['diagnosis', 'diagnoses'], helpers: ['helper'], compare: ['diagnosis', 'diagnoses'], time: ['time rule'], codes: ['diagnosis', 'diagnoses'], glossary: ['term'], updates: ['note'] };
     var html = '<div class="wrap page"><header class="page__head"><h1>Reference library</h1><p>Cross-linked tools built from the chapters as they are added. Every entry cites its chapter and DSM-5-TR pages; anything from outside the manual is boxed and labeled.</p></header>' +
       '<div class="tools tools--lib">' + LIBRARY.map(function (l) {
         var u = unit[l.key] || ['entry', 'entries'];
@@ -815,7 +817,7 @@
      o.after    called after every change (to refresh tallies) */
   var LETTERS = 'ABCDE';
   function Player(area, o) {
-    var st = { pos: o.pos || 0, flipped: false, chosen: null, conf: null, part: 0, ok0: null };
+    var st = { pos: o.pos || 0, flipped: false, chosen: null, conf: null, part: 0, ok0: null, rev: {} };
     var stats = { rated: 0, again: 0, right: 0, wrong: 0, cleared: 0 };
 
     function cur() { return CARDS[o.queue[st.pos]]; }
@@ -831,14 +833,25 @@
       if (!o.queue.length || st.pos >= o.queue.length) {
         area.innerHTML = o.done(stats);
         var again = area.querySelector('[data-restart]');
-        if (again) again.addEventListener('click', function () { st.pos = 0; st.flipped = false; st.chosen = null; st.conf = null; st.part = 0; st.ok0 = null; draw(); });
+        if (again) again.addEventListener('click', function () { st.pos = 0; st.flipped = false; st.chosen = null; st.conf = null; st.part = 0; st.ok0 = null; st.rev = {}; draw(); });
         var rr = area.querySelector('[data-rerender]');
         if (rr) rr.addEventListener('click', function () { route(); });
         return;
       }
       var r = cur(), c0 = r.c, key = r.key, c = st.part && c0.then ? c0.then : c0, isCase = !!c.choices, twoStep = !!c0.then;
       var front, back;
-      if (isCase) {
+      if (c0.letters) {
+        var nOpen = c0.letters.filter(function (l, i) { return st.rev[i]; }).length;
+        front = '<p class="mn-for">' + fmt(c0['for'] || '') + '</p><p class="mn-name">' + esc(c0.name) + '</p>' +
+          '<ol class="mn-tiles">' + c0.letters.map(function (l, i) {
+            var open = !!st.rev[i];
+            return '<li><button type="button" class="mn-tile' + (open ? ' is-open' : '') + '" data-letter="' + i + '" aria-label="' + (open ? esc(l[0] + ': ' + plain(l[1])) : 'Letter ' + esc(l[0]) + ', tap to reveal') + '"><span class="mn-tile__l">' + esc(l[0]) + '</span><span class="mn-tile__w">' + (open ? fmt(l[1]) : '?') + '</span></button></li>';
+          }).join('') + '</ol>' +
+          '<p class="face__hint">' + (nOpen ? nOpen + ' of ' + c0.letters.length + ' revealed. ' : '') + 'Say each word aloud, then tap its letter to check. Flip for the details.</p>';
+        back = '<p class="mn-for">' + fmt(c0['for'] || '') + '</p><p class="mn-name">' + esc(c0.name) + '</p><dl class="mn-list">' + c0.letters.map(function (l) {
+          return '<dt>' + esc(l[0]) + '</dt><dd><b>' + fmt(l[1]) + '</b>' + (l[2] ? '<span>' + fmt(l[2]) + '</span>' : '') + '</dd>';
+        }).join('') + '</dl>' + (c0.caveat ? '<p class="mn-caveat"><b>DSM check:</b> ' + fmt(c0.caveat) + '</p>' : '');
+      } else if (isCase) {
         var partTag = twoStep ? '<p class="face__part">Part ' + (st.part + 1) + ' of 2' + (st.part ? ': same patient' : '') + '</p>' : '';
         var stemH = !st.part && c0.stem ? '<div class="face__stem">' + fmt(c0.stem) + '</div>' : '';
         front = partTag + stemH + '<p class="face__q">' + fmt(c.q) + '</p><ul class="choices">' + c.choices.map(function (ch2, i) {
@@ -890,11 +903,13 @@
           '<div class="card-nav__main">' + controls + '</div>' +
           (o.consume ? '' : '<button class="btn" type="button" id="next"' + (canNext ? '' : ' disabled') + '>Next</button>') +
         '</div>';
-      area.querySelectorAll('.face').forEach(function (f) { linkTerms(f, { skip: '.choice, .face__top, .verdict' }); });
+      area.querySelectorAll('.face').forEach(function (f) { linkTerms(f, { skip: '.choice, .face__top, .verdict, .mn-list, .mn-tiles, .mn-name' }); });
 
       var fc = area.querySelector('#fc');
       fc.addEventListener('click', function (e) {
         if (e.target.closest('.gl')) return;
+        var lt = e.target.closest('[data-letter]');
+        if (lt) { st.rev[+lt.getAttribute('data-letter')] = true; draw(); refocus(); return; }
         var cb = e.target.closest('[data-conf]');
         if (cb) { var cv = parseInt(cb.getAttribute('data-conf'), 10); st.conf = st.conf === cv ? null : cv; draw(); refocus(); return; }
         var b = e.target.closest('[data-choice]');
@@ -943,14 +958,14 @@
     function go(d) {
       var np = st.pos + d;
       if (np < 0 || np >= o.queue.length) return;
-      st.pos = np; st.flipped = false; st.chosen = null; st.conf = null; st.part = 0; st.ok0 = null; draw(); refocus();
+      st.pos = np; st.flipped = false; st.chosen = null; st.conf = null; st.part = 0; st.ok0 = null; st.rev = {}; draw(); refocus();
     }
     function rate(g) {
       var r = cur(); if (!r) return;
       rateCard(r.key, g);
       if (!r.c.choices) logAnswer(r.key, g > 1, st.conf);
       stats.rated++; if (g === 1) stats.again++;
-      st.flipped = false; st.chosen = null; st.conf = null; st.part = 0; st.ok0 = null;
+      st.flipped = false; st.chosen = null; st.conf = null; st.part = 0; st.ok0 = null; st.rev = {};
       if (o.consume) {
         var k = o.queue.splice(st.pos, 1)[0];
         if (g === 1) o.queue.splice(Math.min(st.pos + 4, o.queue.length), 0, k);
@@ -960,7 +975,7 @@
       draw(); refocus();
     }
     function advanceMistake() {
-      st.flipped = false; st.chosen = null; st.conf = null; st.part = 0; st.ok0 = null;
+      st.flipped = false; st.chosen = null; st.conf = null; st.part = 0; st.ok0 = null; st.rev = {};
       o.queue.splice(st.pos, 1);
       draw(); refocus();
     }
@@ -2668,6 +2683,7 @@
     cases: { label: 'Board question', css: 'case' },
     vignettes: { label: 'Board vignette', css: 'guide' },
     trap: { label: 'Exam trap', css: 'hy' },
+    mnemonics: { label: 'Mnemonic', css: 'gloss' },
     complaint: { label: 'Complaint', css: 'guide' },
     glossary: { label: 'Glossary', css: 'gloss' },
     dx: { label: 'Disorder', css: 'mech' },
@@ -3043,7 +3059,7 @@
     chapter: chapter, allChapters: allChapters, planned: planned, DECKS: DECKS, MODES: MODES, LETTERS: LETTERS,
     cards: function () { return CARDS; }, cardList: function () { return CARD_LIST; }, srs: function () { return SRS; },
     log: function () { return LOG; }, mistakes: function () { return MISTAKES; }, mistakeKeys: mistakeKeys,
-    isDue: isDue, cardStatus: cardStatus, deckKeys: deckKeys, newCardsFor: newCardsFor, reviewPrefs: reviewPrefs, dueSummary: dueSummary,
+    isDue: isDue, srsKeysDue: function (keys) { return keys.filter(isDue); }, cardStatus: cardStatus, deckKeys: deckKeys, newCardsFor: newCardsFor, reviewPrefs: reviewPrefs, dueSummary: dueSummary,
     Player: Player, setView: setView, route: route, view: view, main: main, APP: APP, BOOK: BOOK, ATTRIBUTION: ATTRIBUTION,
     linkTerms: linkTerms, blockText: blockText, chapterHead: chapterHead, libHead: libHead, dxList: dxList, chRef: chRef,
     confOn: confOn, logAnswer: logAnswer, STAHL: STAHL, blockHTML: blockHTML, bookmarkBtn: bookmarkBtn, bindBookmarks: bindBookmarks, dxBy: dxBy, focusTarget: focusTarget, kbdHelp: kbdHelp, headerH: headerH, reduceMotion: reduceMotion, updateNavBadges: updateNavBadges, fmtDate: fmtDate
