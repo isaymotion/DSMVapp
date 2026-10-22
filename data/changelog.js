@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 20,
+    date: "2026-10-22",
+    title: "Practice pack for Chapter 18",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the personality disorders, plus new complaints in the hub.",
+    items: [
+      { type: "chapter", ch: "ch18", text: "Chapter 18: 25 board vignettes (1 in two parts), 13 “Write the diagnosis” cases (every code including F21, F60.81 and F07.0 with its subtypes, “premorbid”, mixed features), 10 counting drills and 20 exam traps.", href: "#/c/ch18/practice", link: "Chapter 18 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges on every Chapter 18 disorder page, current to October 2026 (the APA borderline guideline of December 2024: structured psychotherapy first, medication only time-limited and targeted; no FDA-approved drug for any personality disorder).", href: "#/dx/borderline-pd", link: "Borderline personality disorder" },
+      { type: "feature", text: "Start from the complaint: emotional storms and self-harm; long-standing difficulties with people; lying, rule-breaking or violence in an adult; a personality change in midlife or later. Borderline and avoidant entries in older complaints now link to their library pages.", href: "#/complaints/unstable", link: "Open the hub" }
+    ]
+  },
+  {
     id: 19,
     date: "2026-10-22",
     title: "Chapter 18: Personality Disorders",

@@ -246,7 +246,7 @@ SP.complaintData = (SP.complaintData || []).concat([
       { ch: "ch03", dx: "bipolar-i", when: "Depressive and mixed episodes carry especially high risk." },
       { ch: "ch04", dx: "substance-induced-depressive", when: "Risk peaks in intoxication and withdrawal." },
       { ch: "ch02", dx: "schizophrenia", when: "About 5%–6% die by suicide and about 20% attempt." },
-      { ch: "ch18", name: "Borderline personality disorder", when: "Recurrent suicidal behavior and self-injury in unstable relationships." },
+      { ch: "ch18", dx: "borderline-pd", when: "Recurrent suicidal behavior and self-injury in unstable relationships." },
       { ch: "ch22", name: "Suicidal behavior codes", when: "Current or past suicidal behavior can be coded alongside any diagnosis." }
     ]
   },

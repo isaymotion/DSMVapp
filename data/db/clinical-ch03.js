@@ -122,7 +122,7 @@
         { ch: "ch03", dx: "bipolar-i", when: "Distinct manic episodes lasting a week or more (or needing hospitalization)." },
         { ch: "ch03", dx: "bipolar-ii", when: "Hypomanic episodes of ≥4 days plus major depressive episodes." },
         { ch: "ch03", dx: "cyclothymic", when: "Frequent subthreshold highs and lows for ≥2 years." },
-        { ch: "ch18", name: "Borderline personality disorder", when: "Shifts over hours, triggered by interpersonal events, with emptiness and fear of abandonment." },
+        { ch: "ch18", dx: "borderline-pd", when: "Shifts over hours, triggered by interpersonal events, with emptiness and fear of abandonment." },
         { ch: "ch04", dx: "dmdd", when: "In children: chronic irritability with frequent severe outbursts, not episodes." },
         { ch: "ch03", dx: "substance-induced-bipolar", when: "Swings tied to stimulant use or withdrawal, or to steroids." },
         { ch: "ch01", name: "ADHD", when: "Lifelong impulsivity and emotional reactivity, without distinct episodes." }

@@ -59,7 +59,7 @@ SP.manifest = [
     summary: 'Delirium, major and mild neurocognitive disorders and their etiological subtypes.' },
   { id: 'ch18', number: 18, ready: true, pages: '733–778', title: 'Personality Disorders', short: 'Personality',
     summary: 'The general criteria and age rules; the ten personality disorders in clusters A, B and C with every threshold and code; antisocial personality disorder and its conduct disorder requirement; borderline personality disorder, its course and its look-alikes; personality change due to another medical condition; and an overview of the Section III alternative model.',
-    files: SP.CHAPTER_FILES },
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch19', number: 19, ready: false, pages: '779–801', title: 'Paraphilic Disorders', short: 'Paraphilic',
     summary: 'The eight paraphilic disorders and the distinction between a paraphilia and a paraphilic disorder.' },
   { id: 'ch20', number: 20, ready: false, pages: '803–806', title: 'Other Mental Disorders and Additional Codes', short: 'Other mental disorders',
@@ -98,5 +98,6 @@ SP.extraFiles = [
   'data/db/clinical-ch09.js',
   'data/db/disorders-ch18.js',
   'data/helpers/ch18-personality.js',
+  'data/db/clinical-ch18.js',
   'data/changelog.js'
 ];

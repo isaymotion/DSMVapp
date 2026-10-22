@@ -251,7 +251,7 @@
         { ch: "ch04", dx: "mdd", when: "Staying home from low energy, anhedonia or low self-worth." },
         { ch: "ch07", name: "PTSD", when: "Avoiding reminders of a trauma." },
         { ch: "ch06", name: "OCD or body dysmorphic disorder", when: "Avoiding contamination or being seen because of appearance concerns." },
-        { ch: "ch18", name: "Avoidant personality disorder", when: "Lifelong, pervasive avoidance with feelings of inadequacy." }
+        { ch: "ch18", dx: "avoidant-pd", when: "Lifelong, pervasive avoidance with feelings of inadequacy." }
       ]
     },
     {
