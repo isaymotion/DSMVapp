@@ -40,7 +40,7 @@ SP.manifest = [
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch09', number: 9, ready: true, pages: '349–370', title: 'Somatic Symptom and Related Disorders', short: 'Somatic symptom and related',
     summary: 'Why DSM-5 dropped “medically unexplained” symptoms; somatic symptom disorder with its Criterion B severity rule; illness anxiety disorder, care-seeking or care-avoidant; functional neurological symptom disorder as a rule-in diagnosis with positive signs and F44 codes; psychological factors affecting other medical conditions; factitious disorder imposed on self or another versus malingering; and pseudocyesis.',
-    files: SP.CHAPTER_FILES },
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch10', number: 10, ready: false, pages: '371–397', title: 'Feeding and Eating Disorders', short: 'Feeding and eating',
     summary: 'Pica, rumination disorder, avoidant/restrictive food intake disorder, anorexia nervosa, bulimia nervosa and binge-eating disorder.' },
   { id: 'ch11', number: 11, ready: false, pages: '399–405', title: 'Elimination Disorders', short: 'Elimination',
@@ -94,5 +94,6 @@ SP.extraFiles = [
   'data/db/clinical-ch08.js',
   'data/db/disorders-ch09.js',
   'data/helpers/ch09-somatic.js',
+  'data/db/clinical-ch09.js',
   'data/changelog.js'
 ];

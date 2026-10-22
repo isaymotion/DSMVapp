@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 18,
+    date: "2026-10-22",
+    title: "Practice pack for Chapter 9",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the somatic symptom and related disorders, plus new complaints in the hub.",
+    items: [
+      { type: "chapter", ch: "ch09", text: "Chapter 9: 25 board vignettes (1 in two parts), 12 “Write the diagnosis” cases (SSD severity and specifiers, IAD types, every F44 code with the acute or persistent and stressor specifiers, F54 severity, F68.10 and F68.A, brief illness anxiety), 10 counting drills and 19 exam traps.", href: "#/c/ch09/practice", link: "Chapter 9 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges on every Chapter 9 disorder page, current to October 2026 (CBT and scheduled visits for somatic symptom and illness anxiety disorders; positive explanation, physiotherapy and CBT for functional neurological disorder, with the CODES and Physio4FMD results; safety first in factitious disorder).", href: "#/dx/fnd", link: "Functional neurological symptom disorder" },
+      { type: "feature", text: "Start from the complaint: physical symptoms that won’t go away; worried about having a serious illness; weakness, seizures or numbness with normal tests; suspected feigned or induced illness; and somatic entries added to fatigue and sudden attacks of fear.", href: "#/complaints/neuro-symptoms", link: "Open the hub" }
+    ]
+  },
+  {
     id: 17,
     date: "2026-10-22",
     title: "Chapter 9: Somatic Symptom and Related Disorders",
