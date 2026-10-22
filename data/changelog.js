@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 17,
+    date: "2026-10-22",
+    title: "Chapter 9: Somatic Symptom and Related Disorders",
+    summary: "The full somatic chapter: a 14-section study guide, high yield, four flashcard decks, glossary, mnemonics, two diagnostic helpers and seven library entries.",
+    items: [
+      { type: "chapter", ch: "ch09", text: "Study guide (pp. 349–370): from somatoform to positive criteria, somatic symptom disorder and its severity rule, illness anxiety disorder (care-seeking or care-avoidant), functional neurological symptom disorder with positive signs (Hoover’s sign, entrainment, functional seizures) and F44.4–F44.7 codes, F54 with severity, factitious disorder imposed on self (F68.10) or another (F68.A) versus malingering, and pseudocyesis.", href: "#/c/ch09/guide", link: "Open the guide" },
+      { type: "chapter", ch: "ch09", text: "High yield (7 topics), 28 criteria cards, 30 differential cards, 33 clinical cards, 40 board-style questions and 37 glossary terms.", href: "#/c/ch09", link: "Chapter 9" },
+      { type: "feature", text: "Two new helpers: “Which somatic symptom disorder?” and “Feigned or genuine?”", href: "#/helpers/deception", link: "Open the helper" },
+      { type: "feature", text: "Mnemonics: TAT (somatic symptom disorder Criterion B), HEALTH (illness anxiety disorder), HEFTS (positive functional signs), Move, Shake, Sense, Mix (F44 codes), EFSI (factitious methods) and MMSE (F54 severity).", href: "#/c/ch09/cards/mnemonics", link: "Chapter 9 mnemonics" }
+    ]
+  },
+  {
     id: 16,
     date: "2026-10-22",
     title: "Practice pack for Chapter 8",
