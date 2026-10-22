@@ -29,7 +29,7 @@ SP.glossary = (SP.glossary || []).concat([
   ["adverse childhood experiences", "Abuse, neglect, household dysfunction and similar early adversities; multiple and varied ones are potent risk factors for depression.", "Ch 4"],
   ["HPA axis", "The hypothalamic-pituitary-adrenal stress hormone system; hyperactivity is linked to melancholia, psychotic depression and suicide risk.", "Ch 4"],
   ["bereavement", "The experience of losing a loved one to death, which triggers grief.", "Ch 4"],
-  ["prolonged grief disorder", "A grief reaction lasting at least 12 months after a death (6 in children) with intense yearning or preoccupation plus other grief symptoms and impairment (F43.8, Chapter 7).", "Ch 4"],
+  ["prolonged grief disorder", "A grief reaction lasting at least 12 months after a death (6 in children) with intense yearning or preoccupation plus other grief symptoms and impairment (F43.81 since the October 2022 coding update; printed as F43.8; Chapter 7).", "Ch 4"],
   ["demoralization", "Helplessness, hopelessness, subjective incompetence and a wish to give up, common in chronic illness; unlike depression, pleasure is usually preserved.", "Ch 4"],
   ["adjustment disorder", "Emotional or behavioral symptoms within 3 months of a stressor that do not meet criteria for another disorder and end within 6 months after the stressor (Chapter 7).", "Ch 4"],
   ["premenstrual syndrome", "Premenstrual physical or behavioral symptoms that need neither five symptoms nor mood symptoms; milder and more common (about 20%) than PMDD.", "Ch 4"],

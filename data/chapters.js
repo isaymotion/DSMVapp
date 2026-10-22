@@ -32,8 +32,9 @@ SP.manifest = [
   { id: 'ch06', number: 6, ready: true, pages: '263–294', title: 'Obsessive-Compulsive and Related Disorders', short: 'Obsessive-compulsive and related',
     summary: 'Obsessions and compulsions, the OCD symptom dimensions and the insight and tic-related specifiers; body dysmorphic disorder and muscle dysmorphia; hoarding disorder; trichotillomania and excoriation disorder; substance/medication-induced and medically caused presentations, including Sydenham’s chorea and PANS; and the other specified examples, from obsessional jealousy to olfactory reference disorder and koro.',
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
-  { id: 'ch07', number: 7, ready: false, pages: '295–328', title: 'Trauma- and Stressor-Related Disorders', short: 'Trauma- and stressor-related',
-    summary: 'Reactive attachment and disinhibited social engagement disorders, PTSD, acute stress disorder, adjustment disorders and prolonged grief disorder.' },
+  { id: 'ch07', number: 7, ready: true, pages: '295–328', title: 'Trauma- and Stressor-Related Disorders', short: 'Trauma- and stressor-related',
+    summary: 'Reactive attachment and disinhibited social engagement disorders after neglect; Criterion A trauma; PTSD in adults and in children 6 and younger, with the dissociative and delayed expression specifiers; acute stress disorder; the six adjustment disorders; the new prolonged grief disorder; and the other specified presentations, with every time rule and the post-2022 codes.',
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch08', number: 8, ready: false, pages: '329–348', title: 'Dissociative Disorders', short: 'Dissociative',
     summary: 'Dissociative identity disorder, dissociative amnesia and depersonalization/derealization disorder.' },
   { id: 'ch09', number: 9, ready: false, pages: '349–370', title: 'Somatic Symptom and Related Disorders', short: 'Somatic symptom and related',
@@ -83,5 +84,8 @@ SP.extraFiles = [
   'data/db/disorders-ch06.js',
   'data/helpers/ch06-ocd.js',
   'data/db/clinical-ch06.js',
+  'data/db/disorders-ch07.js',
+  'data/helpers/ch07-trauma.js',
+  'data/db/clinical-ch07.js',
   'data/changelog.js'
 ];

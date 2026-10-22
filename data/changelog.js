@@ -4,6 +4,29 @@
  */
 SP.changelog = [
   {
+    id: 14,
+    date: "2026-10-22",
+    title: "Practice pack for Chapter 7",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the trauma- and stressor-related disorders, plus new complaints in the hub.",
+    items: [
+      { type: "chapter", ch: "ch07", text: "Chapter 7: 25 board vignettes (3 in two parts), 12 “Write the diagnosis” cases (PTSD specifiers, the preschool criteria, acute stress disorder, adjustment disorder subtypes and duration, prolonged grief disorder with its current code), 10 counting drills and 18 exam traps.", href: "#/c/ch07/practice", link: "Chapter 7 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges on every Chapter 7 disorder page, linking to the Stahl Study Companion, current to October 2026 (trauma-focused therapy first; sertraline and paroxetine; no new PTSD drug after the FDA declined MDMA-assisted therapy and brexpiprazole plus sertraline).", href: "#/dx/ptsd", link: "PTSD" },
+      { type: "feature", text: "Start from the complaint: symptoms after a traumatic event; struggling after a life change; a young child after neglect or institutional care; and Chapter 7 additions to grief after a death.", href: "#/complaints/after-trauma", link: "Open the hub" }
+    ]
+  },
+  {
+    id: 13,
+    date: "2026-10-22",
+    title: "Chapter 7: Trauma- and Stressor-Related Disorders",
+    summary: "The full trauma chapter: a 21-section study guide, high yield, four flashcard decks, glossary, mnemonics, two diagnostic helpers and eight library entries, plus the 2022 code changes for prolonged grief disorder.",
+    items: [
+      { type: "chapter", ch: "ch07", text: "Study guide (pp. 295–328): Criterion A, RAD and DSED, PTSD in adults and in children 6 and younger, acute stress disorder, the six adjustment disorders, prolonged grief disorder and the other specified examples, with a time-rules ladder.", href: "#/c/ch07/guide", link: "Open the guide" },
+      { type: "chapter", ch: "ch07", text: "High yield (11 topics), 34 criteria cards, 36 differential cards, 38 clinical cards, 44 board-style questions and 40 glossary terms.", href: "#/c/ch07", link: "Chapter 7" },
+      { type: "feature", text: "Two new helpers: “Which trauma- or stressor-related disorder?” and “RAD, DSED or something else?”", href: "#/helpers/trauma", link: "Open the helper" },
+      { type: "update", text: "Prolonged grief disorder is now shown with its current code, F43.81 (other specified trauma- and stressor-related disorder: F43.89), effective October 2022; Chapter 4 references were updated too.", href: "#/dx/pgd", link: "Prolonged grief disorder" }
+    ]
+  },
+  {
     id: 12,
     date: "2026-10-22",
     title: "Practice pack for Chapter 6",
