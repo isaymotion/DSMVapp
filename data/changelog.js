@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 16,
+    date: "2026-10-22",
+    title: "Practice pack for Chapter 8",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the dissociative disorders, plus new complaints in the hub.",
+    items: [
+      { type: "chapter", ch: "ch08", text: "Chapter 8: 25 board vignettes (1 in two parts), 10 “Write the diagnosis” cases (DID, the amnesia and fugue codes, DPDR’s F48.1, all four other specified examples, PTSD with dissociative amnesia), 8 counting drills and 16 exam traps.", href: "#/c/ch08/practice", link: "Chapter 8 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges on every Chapter 8 disorder page, current to October 2026 (phase-oriented therapy for DID; no approved medication for dissociation; CBT for depersonalization).", href: "#/dx/did", link: "Dissociative identity disorder" },
+      { type: "feature", text: "Start from the complaint: gaps in memory or lost time; feeling unreal or detached; and dissociative entries added to hearing voices and symptoms after trauma.", href: "#/complaints/memory-gaps", link: "Open the hub" }
+    ]
+  },
+  {
     id: 15,
     date: "2026-10-22",
     title: "Chapter 8: Dissociative Disorders",

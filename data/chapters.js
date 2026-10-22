@@ -37,7 +37,7 @@ SP.manifest = [
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch08', number: 8, ready: true, pages: '329–348', title: 'Dissociative Disorders', short: 'Dissociative',
     summary: 'Positive and negative dissociative symptoms; dissociative identity disorder, including the possession form, its covert presentations and its look-alikes (bipolar disorder, schizophrenia, borderline personality disorder, feigning); dissociative amnesia and its forms, with or without fugue; depersonalization/derealization disorder with intact reality testing; and the four other specified examples.',
-    files: SP.CHAPTER_FILES },
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch09', number: 9, ready: false, pages: '349–370', title: 'Somatic Symptom and Related Disorders', short: 'Somatic symptom and related',
     summary: 'Somatic symptom disorder, illness anxiety disorder, functional neurological symptom disorder, psychological factors affecting other medical conditions and factitious disorder.' },
   { id: 'ch10', number: 10, ready: false, pages: '371–397', title: 'Feeding and Eating Disorders', short: 'Feeding and eating',
@@ -90,5 +90,6 @@ SP.extraFiles = [
   'data/db/clinical-ch07.js',
   'data/db/disorders-ch08.js',
   'data/helpers/ch08-dissociative.js',
+  'data/db/clinical-ch08.js',
   'data/changelog.js'
 ];
