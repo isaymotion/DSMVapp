@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 19,
+    date: "2026-10-22",
+    title: "Chapter 18: Personality Disorders",
+    summary: "The full personality disorders chapter: a 20-section study guide, high yield, four flashcard decks, glossary, mnemonics, two diagnostic helpers and thirteen library entries.",
+    items: [
+      { type: "chapter", ch: "ch18", text: "Study guide (pp. 733–778): general criteria and age rules, the three clusters, all ten personality disorders with thresholds and codes, antisocial personality disorder and conduct disorder, borderline course and suicide data, Cluster B and Cluster C comparison tables, personality change due to another medical condition, the residual categories, and an overview of the Section III alternative model.", href: "#/c/ch18/guide", link: "Open the guide" },
+      { type: "chapter", ch: "ch18", text: "High yield (8 topics), 32 criteria cards, 34 differential cards, 36 clinical cards, 40 board-style questions and 47 glossary terms.", href: "#/c/ch18", link: "Chapter 18" },
+      { type: "feature", text: "Two new helpers: “Which personality disorder?” and “Personality look-alikes.”", href: "#/helpers/pdpair", link: "Open the helper" },
+      { type: "feature", text: "Mnemonics for every disorder: SUSPECT, DISTANT, ME PECULIAR, CORRUPT, IMPULSIVE, PRAISE ME, SPECIAL ME, CRINGES, RELIANCE, PERFECTS, plus Weird, Wild, Worried and LAD APe.", href: "#/c/ch18/cards/mnemonics", link: "Chapter 18 mnemonics" }
+    ]
+  },
+  {
     id: 18,
     date: "2026-10-22",
     title: "Practice pack for Chapter 9",

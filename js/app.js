@@ -2566,7 +2566,7 @@
   function renderCodes() {
     var rows = [];
     dxList().forEach(function (d) {
-      (d.codes || (d.code ? [[d.code, d.name]] : [])).forEach(function (c) { rows.push({ code: c[0], label: c[1], note: c[2] || '', d: d }); });
+      (d.codes || (d.code ? [[d.code, d.name]] : [])).forEach(function (c) { if (!/^[A-Z]\d/.test(c[0])) return; rows.push({ code: c[0], label: c[1], note: c[2] || '', d: d }); });
     });
     var html = '<div class="wrap page">' + libHead(null, null, 'ICD-10-CM codes', 'Every code listed so far, with the coding notes residents most often get wrong. Codes follow the DSM-5-TR (2022) listing; check the current ICD-10-CM update before billing.') +
       (rows.length ? '<div class="lib-tools"><label class="gloss__search"><span class="sr-only">Filter codes</span><input type="search" id="cq" placeholder="Filter by code or disorder" autocomplete="off"></label></div>' +

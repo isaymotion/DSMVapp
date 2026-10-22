@@ -57,8 +57,9 @@ SP.manifest = [
     summary: 'Use, intoxication, withdrawal and induced disorders for ten substance classes, and gambling disorder.' },
   { id: 'ch17', number: 17, ready: false, pages: '667–732', title: 'Neurocognitive Disorders', short: 'Neurocognitive',
     summary: 'Delirium, major and mild neurocognitive disorders and their etiological subtypes.' },
-  { id: 'ch18', number: 18, ready: false, pages: '733–778', title: 'Personality Disorders', short: 'Personality',
-    summary: 'General personality disorder and the ten personality disorders in clusters A, B and C.' },
+  { id: 'ch18', number: 18, ready: true, pages: '733–778', title: 'Personality Disorders', short: 'Personality',
+    summary: 'The general criteria and age rules; the ten personality disorders in clusters A, B and C with every threshold and code; antisocial personality disorder and its conduct disorder requirement; borderline personality disorder, its course and its look-alikes; personality change due to another medical condition; and an overview of the Section III alternative model.',
+    files: SP.CHAPTER_FILES },
   { id: 'ch19', number: 19, ready: false, pages: '779–801', title: 'Paraphilic Disorders', short: 'Paraphilic',
     summary: 'The eight paraphilic disorders and the distinction between a paraphilia and a paraphilic disorder.' },
   { id: 'ch20', number: 20, ready: false, pages: '803–806', title: 'Other Mental Disorders and Additional Codes', short: 'Other mental disorders',
@@ -95,5 +96,7 @@ SP.extraFiles = [
   'data/db/disorders-ch09.js',
   'data/helpers/ch09-somatic.js',
   'data/db/clinical-ch09.js',
+  'data/db/disorders-ch18.js',
+  'data/helpers/ch18-personality.js',
   'data/changelog.js'
 ];
