@@ -1885,7 +1885,7 @@ body.is-listening .float-bar { bottom: calc(140px + env(safe-area-inset-bottom, 
   body.print-sum .sum__dx { margin-bottom: 5px; padding-bottom: 4px; }
   @page { margin: 10mm; }
 }
-.g-sec__head h3 { min-width: 0; overflow-wrap: break-word; }
+.g-sec__head h3 { min-width: 0; overflow-wrap: anywhere; }
 @media (max-width: 560px) { .g-sec__head { gap: 6px; } .g-sec__head .bm-btn, .g-sec__head .note-btn { width: 32px; height: 32px; } }
 .face__q + .conf { margin: 12px 0 2px; }
 .pg-unseen td { font-size: .8rem; color: var(--ink-3); line-height: 1.45; }
@@ -2044,3 +2044,8 @@ body.tabbar-hidden .lbar { bottom: calc(14px + env(safe-area-inset-bottom, 0px))
 .mn-st--learning { color: var(--m-hy); } .mn-st--mastered { color: var(--good); }
 .mnpdf-blurb { margin: 2px 0 0; font-size: .9rem; }
 .lib-head__row .btn + .btn { margin-left: 8px; }
+
+/* Long compound words (e.g., "Depersonalization/derealization") must wrap instead of widening the page on phones. */
+.toc a > span:last-child, .toc a { min-width: 0; overflow-wrap: anywhere; }
+main h1, main h2, main h3, main h4, .crumb, .card__q, .card__a { overflow-wrap: anywhere; }
+.g-sec__head h3 > span { min-width: 0; }

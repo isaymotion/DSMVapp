@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 15,
+    date: "2026-10-22",
+    title: "Chapter 8: Dissociative Disorders",
+    summary: "The full dissociative chapter: a 13-section study guide, high yield, four flashcard decks, glossary, mnemonics, two diagnostic helpers and five library entries.",
+    items: [
+      { type: "chapter", ch: "ch08", text: "Study guide (pp. 329–348): positive and negative dissociation, DID (possession form, covert switching, suicide risk, DID vs bipolar disorder, schizophrenia and feigning), dissociative amnesia and its five forms with fugue, depersonalization/derealization disorder, and the four other specified examples.", href: "#/c/ch08/guide", link: "Open the guide" },
+      { type: "chapter", ch: "ch08", text: "High yield (6 topics), 24 criteria cards, 30 differential cards, 32 clinical cards, 40 board-style questions and 37 glossary terms.", href: "#/c/ch08", link: "Chapter 8" },
+      { type: "feature", text: "Two new helpers: “Which dissociative disorder?” and “A gap in memory: dissociative or something else?”", href: "#/helpers/memoryloss", link: "Open the helper" },
+      { type: "feature", text: "Mnemonics: SPLITS (DID), Let Some Stuff Go, Continuously (forms of amnesia), DREAM (depersonalization/derealization) and M-CAT (other specified examples).", href: "#/c/ch08/cards/mnemonics", link: "Chapter 8 mnemonics" }
+    ]
+  },
+  {
     id: 14,
     date: "2026-10-22",
     title: "Practice pack for Chapter 7",

@@ -35,8 +35,9 @@ SP.manifest = [
   { id: 'ch07', number: 7, ready: true, pages: '295–328', title: 'Trauma- and Stressor-Related Disorders', short: 'Trauma- and stressor-related',
     summary: 'Reactive attachment and disinhibited social engagement disorders after neglect; Criterion A trauma; PTSD in adults and in children 6 and younger, with the dissociative and delayed expression specifiers; acute stress disorder; the six adjustment disorders; the new prolonged grief disorder; and the other specified presentations, with every time rule and the post-2022 codes.',
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
-  { id: 'ch08', number: 8, ready: false, pages: '329–348', title: 'Dissociative Disorders', short: 'Dissociative',
-    summary: 'Dissociative identity disorder, dissociative amnesia and depersonalization/derealization disorder.' },
+  { id: 'ch08', number: 8, ready: true, pages: '329–348', title: 'Dissociative Disorders', short: 'Dissociative',
+    summary: 'Positive and negative dissociative symptoms; dissociative identity disorder, including the possession form, its covert presentations and its look-alikes (bipolar disorder, schizophrenia, borderline personality disorder, feigning); dissociative amnesia and its forms, with or without fugue; depersonalization/derealization disorder with intact reality testing; and the four other specified examples.',
+    files: SP.CHAPTER_FILES },
   { id: 'ch09', number: 9, ready: false, pages: '349–370', title: 'Somatic Symptom and Related Disorders', short: 'Somatic symptom and related',
     summary: 'Somatic symptom disorder, illness anxiety disorder, functional neurological symptom disorder, psychological factors affecting other medical conditions and factitious disorder.' },
   { id: 'ch10', number: 10, ready: false, pages: '371–397', title: 'Feeding and Eating Disorders', short: 'Feeding and eating',
@@ -87,5 +88,7 @@ SP.extraFiles = [
   'data/db/disorders-ch07.js',
   'data/helpers/ch07-trauma.js',
   'data/db/clinical-ch07.js',
+  'data/db/disorders-ch08.js',
+  'data/helpers/ch08-dissociative.js',
   'data/changelog.js'
 ];
