@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 24,
+    date: "2026-10-25",
+    title: "Practice pack for Chapter 10",
+    summary: "Board vignettes, write-the-diagnosis drills with the October 2024 codes, counting drills, exam traps, interview questions and treatment bridges for the feeding and eating disorders, plus four new complaints in the hub.",
+    items: [
+      { type: "chapter", ch: "ch10", text: "Chapter 10: 25 board vignettes (2 in two parts), 14 “Write the diagnosis” cases using the codes in force since October 2024 (anorexia F50.01x/F50.02x, bulimia F50.2x, binge-eating disorder F50.81x, adult pica F50.83), 10 counting drills and 22 exam traps.", href: "#/c/ch10/practice", link: "Chapter 10 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges for 7 Chapter 10 disorders, current to October 2026: family-based treatment and CBT-ED with careful refeeding for anorexia, fluoxetine 60 mg for bulimia (bupropion contraindicated), lisdexamfetamine for moderate to severe binge-eating disorder, CBT-AR for ARFID, diaphragmatic breathing for rumination.", href: "#/dx/anorexia", link: "Anorexia nervosa" },
+      { type: "feature", text: "Start from the complaint: weight loss or not eating, binge eating or purging, eating nonfood things or regurgitating, and a child who eats very few foods; Chapter 10 items added to appearance, neglected child and avoidance.", href: "#/complaints", link: "Open the hub" }
+    ]
+  },
+  {
     id: 23,
     date: "2026-10-25",
     title: "Chapter 10: Feeding and Eating Disorders",
