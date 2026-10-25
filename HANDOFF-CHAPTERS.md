@@ -1,5 +1,5 @@
 # Handoff: DSM-5-TR Study Companion, chapter-by-chapter build
-Updated Oct 25, 2026. Owner: Ma. Isabella P. Navarro, MD (psychiatry resident). This covers the **study-guide chapters**; the case-presentation work is in `claude/handoff.md`.
+Updated Oct 25, 2026. Owner: Isabella Navarro, MD (as in the README attribution). This covers the **study-guide chapters**; the case-presentation work is in `claude/handoff.md`.
 
 ## 1. Project
 - Static PWA for psychiatry residents, built from DSM-5-TR (2022) Section II, one chapter at a time.
