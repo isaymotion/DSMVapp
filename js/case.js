@@ -177,6 +177,7 @@
       '<nav class="as-toc"><a href="#cp-basics">Basics</a><a href="#cp-hosp">Hospitalizations</a><a href="#cp-dx">Diagnosis</a><a href="#cp-ddx">Differentials</a><a href="#cp-form">Formulation</a><a href="#cp-risk">Risk & prognosis</a><a href="#cp-plan">Goals & plan</a><a href="#cp-disc">Discussion</a><a href="#cp-send">Print & send</a></nav>' +
       sect('cp-basics', 'Title, objectives and one-liner',
         '<div class="as-row">' + txt('pres.title', 'Case title', 'The Revolving Door: Relapse, Nonadherence and Violence in Schizophrenia') + '</div>' +
+        '<div class="as-row">' + txt('pres.presenter', 'Prepared by', 'Your name, MD') + txt('pres.supervisor', 'Supervising consultant', 'Dr. …') + txt('pres.supResident', 'Supervising resident', 'Dr. …') + txt('pres.date', 'Date of presentation', 'October 26, 2026') + '</div>' +
         area('pres.objectives', 'Objectives (one per line)', 'To present a case of schizophrenia, multiple episodes, with recurrent readmissions\nTo discuss the factors behind nonadherence and relapse\nTo discuss evidence-based strategies, including long-acting injectables, to prevent readmission', 3) +
         '<div class="as-row">' + txt('pres.alias', 'Alias or initials', 'Mr. A') + txt('pres.age', 'Age', '29') + txt('pres.sex', 'Sex', 'man') + txt('pres.reason', 'Reason for this admission', 'psychosis and assaulting his mother after stopping olanzapine') + '</div>' +
         area('pres.oneliner', 'One-liner (identifying data summary)', '', 2) + '<p>' + sbtn('oneliner', 'Draft the one-liner') + '</p>') +
@@ -335,6 +336,10 @@
   function piPayload() {
     var d = compile(), f = {};
     if (d.title) f.caseTitle = d.title;
+    var pr = C().pres || {};
+    if (pr.presenter) f.preparedBy = pr.presenter;
+    var sup = [pr.supervisor ? pr.supervisor + ' (Supervising Consultant)' : '', pr.supResident ? pr.supResident + ' (Supervising Resident)' : ''].filter(Boolean).join('; ');
+    if (sup) f.supervisedBy = sup;
     if (d.objectives.length) f.objectives = d.objectives;
     if (d.oneliner) f.idsummary = d.oneliner;
     if (d.admissions.length) {
@@ -374,7 +379,8 @@
     if (disc.length) f.discussion = disc.join('\n\n');
     if (d.refs.length) f.refs = d.refs;
     var qa = d.questions.map(function (x) { return 'Q: ' + x.q + '\nA: ' + x.a; }).join('\n\n');
-    return { from: 'DSMVapp', v: 1, sent: Date.now(), title: d.title || d.oneliner.slice(0, 60) || 'Case from DSM-5-TR Study Companion', fields: f, notes: qa ? 'Anticipated questions\n\n' + qa : '' };
+    var chart = d.admissions.length ? { stats: d.stats, adm: d.admissions.map(function (a) { return { n: (C().adm || []).indexOf(a) + 1, date: a.date || '', meds: a.meds || 'unknown', viol: a.viol || 'none', medsLabel: MEDS[a.meds] || '', violLabel: a.viol && a.viol !== 'none' ? VIOL[a.viol] + ' behavior' : '', trigger: a.trigger || '', subs: a.subs || '' }; }) } : null;
+    return { from: 'DSMVapp', v: 1, sent: Date.now(), title: d.title || d.oneliner.slice(0, 60) || 'Case from DSM-5-TR Study Companion', fields: f, chart: chart, notes: qa ? 'Anticipated questions\n\n' + qa : '' };
   }
   SP.casePIPayload = piPayload;
   function sendToPI() {
