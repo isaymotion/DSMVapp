@@ -55,7 +55,7 @@ SP.manifest = [
     summary: 'Oppositional defiant disorder, intermittent explosive disorder, conduct disorder, antisocial personality disorder (cross-listed), pyromania and kleptomania.' },
   { id: 'ch16', number: 16, ready: true, pages: '543–665', title: 'Substance-Related and Addictive Disorders', short: 'Substance-related and addictive',
     summary: 'The 11 use disorder criteria, remission and maintenance; intoxication and withdrawal for alcohol, caffeine, cannabis, phencyclidine and other hallucinogens, inhalants, opioids, sedatives, stimulants, tobacco and other substances; the rules for induced disorders and the F1x coding logic; and gambling disorder.',
-    files: SP.CHAPTER_FILES },
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch17', number: 17, ready: false, pages: '667–732', title: 'Neurocognitive Disorders', short: 'Neurocognitive',
     summary: 'Delirium, major and mild neurocognitive disorders and their etiological subtypes.' },
   { id: 'ch18', number: 18, ready: true, pages: '733–778', title: 'Personality Disorders', short: 'Personality',
@@ -102,5 +102,6 @@ SP.extraFiles = [
   'data/db/clinical-ch18.js',
   'data/db/disorders-ch16.js',
   'data/helpers/ch16-substance.js',
+  'data/db/clinical-ch16.js',
   'data/changelog.js'
 ];

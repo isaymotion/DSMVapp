@@ -93,7 +93,7 @@
         { ch: "ch07", dx: "ptsd", when: "Amnesia only for the traumatic event, with intrusions and avoidance." },
         { ch: "ch08", dx: "other-specified-dissociative", when: "Micro-amnesias within a brief reaction to stress." },
         { ch: "ch17", name: "Neurocognitive disorder", when: "Decline in learning new information; identity preserved until late." },
-        { ch: "ch16", name: "Substance intoxication (blackouts)", when: "Gaps only during heavy use." }
+        { ch: "ch16", dx: "alcohol-intox", when: "Gaps only during heavy use (blackouts)." }
       ]
     },
     {

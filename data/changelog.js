@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 22,
+    date: "2026-10-25",
+    title: "Practice pack for Chapter 16",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the substance-related disorders and gambling, plus four new complaints in the hub.",
+    items: [
+      { type: "chapter", ch: "ch16", text: "Chapter 16: 25 board vignettes, 14 “Write the diagnosis” cases (combined F1x codes, perceptual disturbances, remission and maintenance, Z72.0, caffeine, HPPD, gambling), 10 counting drills and 22 exam traps.", href: "#/c/ch16/practice", link: "Chapter 16 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges for 12 Chapter 16 disorders, current to October 2026 (medications for alcohol and opioid use disorder, withdrawal management, naloxone, contingency management for stimulants; no FDA-approved drug for stimulant, cannabis or gambling disorders; cytisinicline not yet approved).", href: "#/dx/opioid-use", link: "Opioid use disorder" },
+      { type: "feature", text: "Start from the complaint: new entries for substance use getting out of hand, intoxication or overdose, withdrawal and gambling, and Chapter 16 items in psychosis, panic, memory gaps and mood after a drug.", href: "#/complaints", link: "Open the hub" }
+    ]
+  },
+  {
     id: 21,
     date: "2026-10-25",
     title: "Chapter 16: Substance-Related and Addictive Disorders",
