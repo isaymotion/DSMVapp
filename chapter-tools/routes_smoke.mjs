@@ -6,7 +6,7 @@ const p = await b.newPage({viewport:vp});
 const errs=[]; p.on('pageerror',e=>errs.push(p.url()+' :: '+e.message)); p.on('console',m=>{if(m.type()==='error'&&!/fonts|ERR_TUNNEL/.test(m.text()))errs.push(p.url()+' :: console '+m.text())});
 for (const r of routes) { await p.goto('http://localhost:8766/'+r); await p.waitForTimeout(400); const t=await p.title(); if(t.startsWith('Not found')) errs.push('NOTFOUND '+r);
  const ov=await p.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth); if(ov>1) errs.push('OVERFLOW '+vp.width+' '+r+' '+ov);
- if(vp.width<500 && ['#/c/ch10/guide','#/helpers/eating'].includes(r)) await p.screenshot({path:'p6'+r.replace(/[#\/,]/g,'_')+'.png'});
+ if(vp.width<500 && ['#/c/ch10/guide','#/helpers/eating'].includes(r)) await p.screenshot({path:(process.env.SC||'.')+'/p6'+r.replace(/[#\/,]/g,'_')+'.png'});
 }
 console.log(vp.width,'ERRORS',errs.length); errs.forEach(e=>console.log(e)); await p.close();}
 await b.close();

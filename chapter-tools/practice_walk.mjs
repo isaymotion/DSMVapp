@@ -5,7 +5,7 @@ const p = await (await b.newContext({viewport:{width:390,height:844},isMobile:tr
 const errs=[]; p.on('pageerror',e=>errs.push(p.url()+' '+e.message)); p.on('dialog',d=>d.accept());
 const go=async h=>{await p.goto('http://localhost:8766/'+h);await p.waitForTimeout(700);};
 const wide=async n=>{const w=await p.evaluate(()=>document.documentElement.scrollWidth);if(w>391)errs.push('OVERFLOW '+n+' '+w);};
-for (const ch of ['ch10']) {
+for (const ch of [process.env.CH||'ch10']) {
   // walk all vignettes: answer correct, part 2, rate
   await go(`#/c/${ch}/cards/vignettes`); await p.selectOption('#opt-mode','order'); await p.waitForTimeout(300);
   for (let i=0;i<25;i++){
