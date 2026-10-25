@@ -23,6 +23,15 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 | 18. Personality Disorders | Ready |
 | All other Section II chapters | Listed in the menu as “Soon” |
 
+## Case tools
+
+**Library → Case tools** (`#/assess`) assesses a patient and prepares a case presentation. Code: `js/assess.js` and `js/case.js`; data: `data/tools/*.js`. The case is stored only on the device (localStorage key `dsm:v1:case`) and can be saved to or opened from a `.json` case file.
+
+- **Substance use assessment**: 11 criteria per substance, severity, remission, withdrawal, combined ICD-10-CM codes.
+- **Rating scales**: AUDIT, CIWA-Ar, Fagerström, COWS, DSM-5-TR psychosis severity dimensions.
+- **Schizophrenia assessment**: criteria, course, severity, induced versus independent psychosis, adherence, violence and suicide risk.
+- **Case presentation builder**: follows the residency case protocol; prints, or sends the protocol fields to PsychInterview (`isaymotion.github.io/case-psychinterview/`) through the shared-origin localStorage key `psyCaseApp.inbox`. PsychInterview asks which case to merge into and never overwrites typed text.
+
 ## What's in each chapter
 
 - **Study guide**: the whole chapter reorganized for learning, in the app's own words, with DSM-5-TR page references on every section, criteria boxes, duration ladders, comparison tables, clinical pearls, exam tips, culture checks and clinical vignettes. Every section has a **bookmark** ribbon.

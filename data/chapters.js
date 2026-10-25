@@ -107,5 +107,9 @@ SP.extraFiles = [
   'data/db/disorders-ch16.js',
   'data/helpers/ch16-substance.js',
   'data/db/clinical-ch16.js',
+  'data/tools/substance.js',
+  'data/tools/scales.js',
+  'data/tools/psychosis.js',
+  'data/tools/teaching.js',
   'data/changelog.js'
 ];

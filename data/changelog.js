@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 25,
+    date: "2026-10-25",
+    title: "Case tools: assess a patient and build a case presentation",
+    summary: "A new Case tools section in the library: substance use and schizophrenia assessments, five rating scales, and a case presentation builder that sends its work to PsychInterview for slides.",
+    items: [
+      { type: "feature", text: "Substance use assessment: the 11 criteria with interview questions for each substance, severity, remission, the prescribed-medication rule, withdrawal checklists with their thresholds, perceptual disturbances and delirium, and the combined ICD-10-CM code.", href: "#/assess/substance", link: "Open it" },
+      { type: "feature", text: "Rating scales with live scoring: AUDIT (with AUDIT-C), CIWA-Ar, Fagerström (with the Heaviness of Smoking Index), COWS, and the DSM-5-TR psychosis severity dimensions.", href: "#/assess", link: "Case tools" },
+      { type: "feature", text: "Schizophrenia assessment: Criteria A–F, course specifiers, current severity, substance-induced versus independent psychosis, adherence (how it was established and why he stops) and violence and suicide risk.", href: "#/assess/psychosis", link: "Open it" },
+      { type: "feature", text: "Case presentation builder following the residency case protocol: one-liner, hospitalization history with a timeline and summary figures, working diagnosis with codes, differentials, the 4 × 4 biopsychosocial grid, risk, prognosis, goals, plans, discussion points, anticipated questions and references. Print it, or send it to your case in PsychInterview, which merges it without overwriting and builds the slides.", href: "#/assess/case", link: "Open the builder" }
+    ]
+  },
+  {
     id: 24,
     date: "2026-10-25",
     title: "Practice pack for Chapter 10",

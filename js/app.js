@@ -312,6 +312,7 @@
     { key: 'dx', href: '#/dx', label: 'Disorder library', blurb: 'Every diagnosis: code, criteria in brief, time rules, specifiers, course and differential.', css: 'mech' },
     { key: 'mnemonics', href: '#/mnemonics', label: 'Mnemonics', blurb: 'Every mnemonic in the app, letter by letter, with where it differs from the DSM, and a spell-it-out drill.', css: 'gloss' },
     { key: 'complaints', href: '#/complaints', label: 'Start from the complaint', blurb: 'Pick what the patient presents with and see every diagnosis to consider, across chapters, with first questions and must-not-miss causes.', css: 'guide' },
+    { key: 'assess', href: '#/assess', label: 'Case tools', blurb: 'Assess a patient (substance use, schizophrenia, rating scales) and build a case presentation, ready to send to PsychInterview for slides.', css: 'clin' },
     { key: 'helpers', href: '#/helpers', label: 'Diagnostic helpers', blurb: 'Step-by-step decision trees that tell look-alike diagnoses apart, with the reasoning shown.', css: 'case' },
     { key: 'compare', href: '#/compare', label: 'Compare disorders', blurb: 'Two or three diagnoses side by side.', css: 'drug' },
     { key: 'time', href: '#/time', label: 'Time criteria', blurb: 'Every duration rule in one table: the most tested numbers in the manual.', css: 'hy' },
@@ -549,8 +550,8 @@
 
   /* ---------- library hub ---------- */
   function renderLibrary() {
-    var counts = { dx: (SP.disorders || []).length, helpers: (SP.helpers || []).length, compare: (SP.disorders || []).length, time: (SP.disorders || []).filter(function (d) { return d.duration; }).length, codes: (SP.disorders || []).length, glossary: (SP.glossary || []).length, updates: collectUpdates().length, mnemonics: (SP.mnemonicList ? SP.mnemonicList().length : 0), complaints: (SP.complaints || []).length };
-    var unit = { mnemonics: ['mnemonic'], complaints: ['presenting complaint'], dx: ['diagnosis', 'diagnoses'], helpers: ['helper'], compare: ['diagnosis', 'diagnoses'], time: ['time rule'], codes: ['diagnosis', 'diagnoses'], glossary: ['term'], updates: ['note'] };
+    var counts = { dx: (SP.disorders || []).length, helpers: (SP.helpers || []).length, compare: (SP.disorders || []).length, time: (SP.disorders || []).filter(function (d) { return d.duration; }).length, codes: (SP.disorders || []).length, glossary: (SP.glossary || []).length, updates: collectUpdates().length, mnemonics: (SP.mnemonicList ? SP.mnemonicList().length : 0), complaints: (SP.complaints || []).length, assess: 3 + ((SP.tools && SP.tools.scales) || []).length };
+    var unit = { mnemonics: ['mnemonic'], complaints: ['presenting complaint'], dx: ['diagnosis', 'diagnoses'], helpers: ['helper'], compare: ['diagnosis', 'diagnoses'], time: ['time rule'], codes: ['diagnosis', 'diagnoses'], glossary: ['term'], updates: ['note'], assess: ['tool'] };
     var html = '<div class="wrap page"><header class="page__head"><h1>Reference library</h1><p>Cross-linked tools built from the chapters as they are added. Every entry cites its chapter and DSM-5-TR pages; anything from outside the manual is boxed and labeled.</p></header>' +
       '<div class="tools tools--lib">' + LIBRARY.map(function (l) {
         var u = unit[l.key] || ['entry', 'entries'];
