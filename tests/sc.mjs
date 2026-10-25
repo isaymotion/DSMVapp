@@ -1,0 +1,16 @@
+import { chromium } from '/home/claude/.npm-global/lib/node_modules/playwright/index.mjs';
+import fs from 'fs';
+const SC=(process.env.SC||process.cwd())+'/';
+const b = await chromium.launch(); const ctx=await b.newContext({viewport:{width:1100,height:900}}); let p = await ctx.newPage();
+const errs=[]; 
+await p.goto('http://localhost:8766/'); await p.evaluate(v=>localStorage.setItem('dsm:v1:case', v), fs.readFileSync(SC+'case.json','utf8')); await p.waitForTimeout(1200);
+p = await ctx.newPage(); p.on('pageerror',e=>errs.push(e.message));
+await p.goto('http://localhost:8766/#/assess/case/script'); await p.waitForTimeout(1800);
+const secs = await p.$$eval('.as-sc', els=>els.map(e=>e.querySelector('h2').textContent+' '+e.querySelector('.as-sc__t').textContent));
+console.log(secs.join('\n'));
+await p.fill('[data-k="pres.minutes"]','45'); await p.fill('[data-k="pres.qaMinutes"]','20'); await p.waitForTimeout(1000);
+const ov=await p.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth); console.log('ov',ov);
+await p.screenshot({path:SC+'sc.png', fullPage:false});
+await p.setViewportSize({width:390,height:844}); await p.waitForTimeout(300); console.log('ov390', await p.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth));
+console.log('ERR', errs);
+await b.close();
