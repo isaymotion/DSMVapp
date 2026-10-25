@@ -52,7 +52,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "social-anxiety", how: "Fear of evaluation not tied to perceived ugliness." },
       { id: "delusional-disorder", how: "Delusional appearance beliefs are BDD with absent insight." },
       { id: "other-specified-ocrd", how: "Clearly visible flaws, no repetitive behaviors, or body odor (olfactory reference disorder)." },
-      { name: "Eating disorders", how: "Weight and fat concerns belong to the eating disorder; both can coexist." },
+      { id: "anorexia", how: "Weight and fat concerns belong to the eating disorder; both can coexist." },
       { name: "Gender dysphoria", how: "Distress about sex characteristics." }
     ],
     pearls: ["One-third or more have delusional conviction.", "Cosmetic procedures rarely help.", "Suicidal thoughts ≈4×, attempts ≈2.6×.", "Picking or plucking to look better = BDD."],

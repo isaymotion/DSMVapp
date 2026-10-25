@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 23,
+    date: "2026-10-25",
+    title: "Chapter 10: Feeding and Eating Disorders",
+    summary: "A 21-section study guide, high yield, four flashcard decks, glossary, mnemonics, a diagnostic helper and 8 library entries, with the ICD-10-CM eating disorder codes that took effect on October 1, 2024.",
+    items: [
+      { type: "chapter", ch: "ch10", text: "Study guide (pp. 371–398): pica, rumination disorder, ARFID and its three presentations, anorexia nervosa (types, BMI rules and severity, medical findings, suicide), what counts as a binge, bulimia nervosa, binge-eating disorder, the other specified examples, comparison tables and a step-by-step approach.", href: "#/c/ch10/guide", link: "Open the guide" },
+      { type: "chapter", ch: "ch10", text: "High yield (9 topics), 28 criteria cards, 28 differential cards, 29 clinical cards, 38 board-style questions and 48 glossary terms.", href: "#/c/ch10", link: "Chapter 10" },
+      { type: "update", text: "Post-publication code update: from October 1, 2024, anorexia nervosa (F50.010–F50.029), bulimia nervosa (F50.20–F50.25) and binge-eating disorder (F50.810–F50.819) are coded with severity and remission; pica in adults is F50.83 and rumination disorder in adults F50.84. Shown in labeled boxes, on the codes page and in the library.", href: "#/c/ch10/guide/s10-coding", link: "The coding table" },
+      { type: "feature", text: "New helper: “Which feeding or eating disorder?” and mnemonics W-F-I, 17 · 16 · 15, BIG + LOST, RUN-AD, SAL, ABB-PN and the SCOFF screen.", href: "#/helpers/eating", link: "Open the helper" }
+    ]
+  },
+  {
     id: 22,
     date: "2026-10-25",
     title: "Practice pack for Chapter 16",

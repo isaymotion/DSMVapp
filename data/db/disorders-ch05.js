@@ -93,7 +93,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "panic-disorder", how: "Unexpected panic attacks as well." },
       { id: "ocd", how: "Fear driven by obsessions (contamination, harming)." },
       { name: "PTSD", how: "Follows trauma with full PTSD criteria." },
-      { name: "Eating disorders", how: "Avoidance limited to food and food cues." }
+      { id: "arfid", how: "Avoidance limited to food and food cues (or anorexia nervosa if driven by weight)." }
     ],
     pearls: ["Code every type present: 75% fear more than one stimulus.", "Blood-injection-injury phobia faints (vasovagal).", "Adult phobias rarely remit.", "Linked with the transition from suicidal thoughts to attempts."],
     cmp: { symptoms: "Immediate fear of a circumscribed stimulus", exclusions: "Agoraphobia, OCD, PTSD, separation and social anxiety", prevalence: "8%–12% (US)", course: "Childhood onset; persistent if it lasts into adulthood" },
