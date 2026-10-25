@@ -774,21 +774,23 @@
     var dxs = A.dxList().filter(function (d) { return d.ch === ch.id; });
     var ladders = (SP.timeLadders || []).filter(function (L) { return chOfTitle(L.title) === ch.id; });
     function short(s, n) { s = plain(s || ''); return s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : s; }
+    var xdense = dxs.length > 18;
     var rows = dxs.map(function (d) {
       var ex = d.cmp && d.cmp.exclusions;
+      if (xdense) ex = '';
       return '<div class="sum__dx"><h3>' + esc(d.name) + (d.code ? ' <span class="sum__code">' + esc(d.code) + '</span>' : '') + '</h3>' +
-        '<p>' + fmt(d.essence || '') + '</p>' +
+        '<p>' + (xdense ? esc(short(d.essence, 170)) : fmt(d.essence || '')) + '</p>' +
         (d.duration && d.duration !== '—' ? '<p class="sum__k"><b>Time:</b> ' + fmt(d.duration) + '</p>' : '') +
         (ex ? '<p class="sum__k"><b>Not if:</b> ' + esc(short(ex, 150)) + '</p>' : '') + '</div>';
     }).join('');
     var times = [];
     ladders.forEach(function (L) { L.rows.forEach(function (r) { times.push('<li><span>' + esc(r.label) + '</span><b>' + esc(r.span) + '</b></li>'); }); });
     var pearls = [];
-    dxs.forEach(function (d) { if (d.pearls && d.pearls[0]) pearls.push('<li>' + fmt(d.pearls[0]) + '</li>'); });
+    if (!xdense) dxs.forEach(function (d) { if (d.pearls && d.pearls[0]) pearls.push('<li>' + fmt(d.pearls[0]) + '</li>'); });
     var html = '<div class="wrap page sum-page">' +
       '<div class="sum-tools no-print"><p class="crumb"><a href="#/c/' + ch.id + '/high-yield">Chapter ' + ch.number + ' high yield</a></p><div class="sum-tools__row"><button class="btn btn--solid" type="button" id="sum-print">Print or save as PDF</button><a class="btn" href="#/c/' + ch.id + '/handout">Full high-yield PDF</a></div>' +
         '<p class="muted">Every diagnosis in the chapter on one sheet: code, core picture, time rule and the main exclusion. Built from the disorder library, so it grows with the app.</p></div>' +
-      '<article class="sum' + (dxs.length > 9 ? ' sum--dense' : '') + '" id="sum">' +
+      '<article class="sum' + (dxs.length > 9 ? ' sum--dense' : '') + (xdense ? ' sum--xdense' : '') + '" id="sum">' +
         '<header class="sum__head"><p class="sum__kicker">DSM-5-TR · Chapter ' + ch.number + ' · pp. ' + esc(ch.pages) + '</p><h1>' + esc(ch.title) + '</h1></header>' +
         '<div class="sum__grid">' + rows + '</div>' +
         (times.length ? '<section class="sum__times"><h2>Time rules</h2><ul>' + times.join('') + '</ul></section>' : '') +

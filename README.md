@@ -18,6 +18,7 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 | 7. Trauma- and Stressor-Related Disorders | Ready |
 | 8. Dissociative Disorders | Ready |
 | 9. Somatic Symptom and Related Disorders | Ready |
+| 16. Substance-Related and Addictive Disorders | Ready (practice pack coming next) |
 | 18. Personality Disorders | Ready |
 | All other Section II chapters | Listed in the menu as “Soon” |
 

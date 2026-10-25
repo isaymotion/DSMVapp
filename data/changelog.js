@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 21,
+    date: "2026-10-25",
+    title: "Chapter 16: Substance-Related and Addictive Disorders",
+    summary: "The largest chapter: a 23-section study guide, high yield, four flashcard decks, glossary, mnemonics, two diagnostic helpers and 30 library entries covering every substance class and gambling disorder.",
+    items: [
+      { type: "chapter", ch: "ch16", text: "Study guide (pp. 543–665): the 11 use disorder criteria, remission and maintenance, induced disorders and the 1-month rule, the F1x coding logic, then alcohol, caffeine, cannabis, phencyclidine and other hallucinogens with HPPD, inhalants, opioids, sedatives, stimulants, tobacco, other substances and gambling disorder, with class comparison tables.", href: "#/c/ch16/guide", link: "Open the guide" },
+      { type: "chapter", ch: "ch16", text: "High yield (9 topics), 34 criteria cards, 32 differential cards, 36 clinical cards, 42 board-style questions and 55 glossary terms.", href: "#/c/ch16", link: "Chapter 16" },
+      { type: "feature", text: "Two new helpers: “Which substance diagnosis?” (use disorder severity, intoxication and withdrawal syndromes, gambling, with codes) and “Induced or independent?”", href: "#/helpers/substance", link: "Open the helper" },
+      { type: "feature", text: "Mnemonics: CSRP (use disorder criteria), HANGOVERS (alcohol withdrawal), YAWNS DRIP (opioid withdrawal), RAD T (cannabis), RAGE NASH (PCP), FAVIP (stimulant withdrawal) and GAMBLER IS.", href: "#/c/ch16/cards/mnemonics", link: "Chapter 16 mnemonics" }
+    ]
+  },
+  {
     id: 20,
     date: "2026-10-22",
     title: "Practice pack for Chapter 18",

@@ -1900,6 +1900,11 @@ body.tabbar-hidden .lbar { bottom: calc(14px + env(safe-area-inset-bottom, 0px))
   body.print-sum .sum--dense .sum__dx h3 { font-size: 7.8pt; }
   body.print-sum .sum--dense .sum__dx { margin-bottom: 3px; padding-bottom: 3px; }
   body.print-sum .sum--dense .sum__pearls li:nth-child(n+9) { display: none; }
+  body.print-sum .sum--xdense .sum__grid { columns: 3; column-gap: 12px; }
+  body.print-sum .sum--xdense .sum__dx p { font-size: 6.3pt; line-height: 1.18; }
+  body.print-sum .sum--xdense .sum__dx h3 { font-size: 7.1pt; }
+  body.print-sum .sum--xdense .sum__dx { margin-bottom: 2px; padding-bottom: 2px; }
+  body.print-sum .sum--xdense .sum__k { display: none; }
 }
 
 /* =====================================================================
