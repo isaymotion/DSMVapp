@@ -2152,3 +2152,49 @@ main h1, main h2, main h3, main h4, .crumb, .card__q, .card__a { overflow-wrap: 
   .as-print h2 { break-after: avoid; }
   .as-ptab tr { break-inside: avoid; }
 }
+/* one-page case handout */
+.as-hand { background: #fff; color: #1d1416; width: 7.6in; max-width: 100%; margin: 0 auto; padding: 0; font: 10.3pt/1.28 var(--sans); box-sizing: border-box; }
+.as-hand-page .as-hand { padding: .3in; box-shadow: 0 2px 14px rgba(0,0,0,.15); width: 8.2in; }
+.as-hand__head { border-bottom: 2px solid #8B2232; margin-bottom: .5em; padding-bottom: .3em; }
+.as-hand__head h1 { font: 700 1.55em/1.15 var(--display); margin: 0 0 .15em; color: #4A0F19; }
+.as-hand__head p { margin: 0; font-size: .9em; color: #4a3a3c; }
+.as-hand__inst { text-transform: uppercase; letter-spacing: .05em; font-size: .78em !important; font-weight: 700; color: #8B2232 !important; }
+.as-hand__cols { display: grid; grid-template-columns: 1.05fr 1fr; gap: 0 1.2em; }
+.as-hand h2 { font: 700 .92em/1.2 var(--sans); text-transform: uppercase; letter-spacing: .04em; color: #8B2232; margin: .65em 0 .2em; border-bottom: 1px solid #e3d2cc; }
+.as-hand p { margin: 0 0 .3em; }
+.as-hand ul, .as-hand ol { margin: 0 0 .3em; padding-left: 1.2em; }
+.as-hand li { margin: 0 0 .15em; }
+.as-hand .as-tl { margin: 0; }
+.as-hand .as-tl text { font-size: 15px; }
+.as-hand__grid { list-style: none; padding-left: 0 !important; }
+.as-hand__foot { margin-top: .6em; padding-top: .3em; border-top: 1px solid #e3d2cc; font-size: .78em; color: #75585A; }
+.as-hand .as-tl circle[fill="var(--bad)"] { fill: #C8364B; }
+.as-hand .as-tl circle[fill="var(--m-hy)"] { fill: #D99A1E; }
+.as-hand .as-tl circle[fill="var(--good)"] { fill: #2E7D4F; }
+.as-hand .as-tl line, .as-hand .as-tl circle[fill="none"] { stroke: #1d1416; }
+.as-hand .as-tl text { fill: #1d1416; }
+@media (max-width: 760px) { .as-hand-page .as-hand { width: 100%; padding: 14px; } .as-hand__cols { grid-template-columns: 1fr; } }
+@media print {
+  @page { size: letter; margin: 0.45in; }
+  body.print-casehand .as-hand-page { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+  body.print-casehand .as-hand { box-shadow: none; padding: 0; width: 100%; }
+  body.print-casehand .as-hand__cols { grid-template-columns: 1.05fr 1fr; }
+}
+.as-hand .as-legend { color: #4a3a3c; font-size: .8em; gap: 2px 10px; margin: 0 0 .2em; }
+.as-hand .as-legend i.ring { border-color: #1d1416; }
+@media print { html:has(body.print-casehand), body.print-casehand { background: #fff !important; } body.print-casehand .as-hand-page, body.print-casehand main, body.print-casehand .content { background: #fff !important; } }
+@media print { html:has(body.print-casehand) { background: #fff !important; color-scheme: light !important; } html:has(body.print-casehand) body { background: #fff !important; } }
+/* presentation script */
+.as-script article h1 { font: 700 1.5rem/1.2 var(--display); margin: 8px 0; }
+.as-sc { border: 1px solid var(--rule); background: var(--surface); border-radius: var(--r-md); padding: 12px 16px; margin: 0 0 12px; break-inside: avoid; }
+.as-sc__head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.as-sc__head h2 { font: 700 1.05rem/1.3 var(--sans); margin: 0; flex: 1; min-width: 180px; }
+.as-sc__n { display: inline-grid; place-items: center; min-width: 28px; height: 28px; padding: 0 6px; border-radius: 14px; background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: .85rem; }
+.as-sc__t { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+.as-sc__t em { font-weight: 400; color: var(--ink-3); }
+.as-sc__say { margin: 8px 0 0; line-height: 1.5; }
+.as-sc__tip { font-size: .92rem; background: var(--tint); border-radius: 8px; padding: 6px 10px; margin: 8px 0 0; }
+.as-sc__tr { font-size: .92rem; color: var(--ink-2); margin: 6px 0 0; font-style: italic; }
+.as-sc__q { font-size: .92rem; border-left: 3px solid var(--m-drug); padding-left: 10px; margin: 8px 0 0; }
+.as-sc--qa ol { padding-left: 20px; } .as-sc--qa li { margin: 0 0 8px; }
+@media print { .as-sc { border-color: #ccc; background: #fff; } .as-script .no-print { display: none !important; } }

@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 26,
+    date: "2026-10-25",
+    title: "Case presentation: timeline slide, one-page handout and script",
+    summary: "The case builder now sends a hospitalization timeline to PsychInterview, prints a one-page handout for consultants, and writes a timed slide-by-slide script with likely questions.",
+    items: [
+      { type: "feature", text: "One-page consultant handout: identifying data, admissions timeline and summary, substance history with codes and scale scores, working diagnosis, formulation, risk, prognosis, management, take-home points and key references, auto-sized to fit one Letter page.", href: "#/assess/case/handout", link: "Open the handout" },
+      { type: "feature", text: "Slide-by-slide script in the case protocol order, timed to your slot (e.g., 45 minutes), with what to say, transitions, tips and the likely question on each slide, plus a question-and-answer rehearsal section.", href: "#/assess/case/script", link: "Open the script" },
+      { type: "feature", text: "Send to PsychInterview now includes the admissions chart (drawn there as a Hospitalization timeline slide), the presenter and the supervising consultant and resident.", href: "#/assess/case", link: "Case builder" }
+    ]
+  },
+  {
     id: 25,
     date: "2026-10-25",
     title: "Case tools: assess a patient and build a case presentation",

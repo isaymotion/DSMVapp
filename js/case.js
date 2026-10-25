@@ -169,6 +169,8 @@
 
   function render(sub) {
     if (sub === 'print') return renderPrint();
+    if (sub === 'handout') return renderHandout();
+    if (sub === 'script') return SP.renderScript ? SP.renderScript() : renderPrint();
     var c = C(); c.pres = c.pres || {}; c.adm = c.adm || [];
     if (!c.adm.length) for (var i = 0; i < 3; i++) c.adm.push({});
     var lines = dxLines();
@@ -177,6 +179,7 @@
       '<nav class="as-toc"><a href="#cp-basics">Basics</a><a href="#cp-hosp">Hospitalizations</a><a href="#cp-dx">Diagnosis</a><a href="#cp-ddx">Differentials</a><a href="#cp-form">Formulation</a><a href="#cp-risk">Risk & prognosis</a><a href="#cp-plan">Goals & plan</a><a href="#cp-disc">Discussion</a><a href="#cp-send">Print & send</a></nav>' +
       sect('cp-basics', 'Title, objectives and one-liner',
         '<div class="as-row">' + txt('pres.title', 'Case title', 'The Revolving Door: Relapse, Nonadherence and Violence in Schizophrenia') + '</div>' +
+        '<div class="as-row">' + txt('pres.institution', 'Institution (handout header, optional)', 'Hospital and training program') + '</div>' +
         '<div class="as-row">' + txt('pres.presenter', 'Prepared by', 'Your name, MD') + txt('pres.supervisor', 'Supervising consultant', 'Dr. …') + txt('pres.supResident', 'Supervising resident', 'Dr. …') + txt('pres.date', 'Date of presentation', 'October 26, 2026') + '</div>' +
         area('pres.objectives', 'Objectives (one per line)', 'To present a case of schizophrenia, multiple episodes, with recurrent readmissions\nTo discuss the factors behind nonadherence and relapse\nTo discuss evidence-based strategies, including long-acting injectables, to prevent readmission', 3) +
         '<div class="as-row">' + txt('pres.alias', 'Alias or initials', 'Mr. A') + txt('pres.age', 'Age', '29') + txt('pres.sex', 'Sex', 'man') + txt('pres.reason', 'Reason for this admission', 'psychosis and assaulting his mother after stopping olanzapine') + '</div>' +
@@ -203,7 +206,7 @@
         '<h3>Questions your consultants may ask</h3><div id="cp-qs"></div>' +
         '<h3>References</h3><ol class="as-refs" id="cp-refs"></ol>') +
       sect('cp-send', 'Print, copy or send', '<p>Send everything above to your case in PsychInterview, where it fills the matching protocol sections (Past Psychiatric History, Substance History, Working Diagnosis, Differentials, Formulation, Prognosis, Goals, Plans, Discussion, References) without overwriting what you have typed there.</p>' +
-        '<div class="as-actions"><button class="btn btn--solid" type="button" id="cp-send-pi">Send to PsychInterview</button><a class="btn" href="#/assess/case/print">Print or save as PDF</a></div><p class="as-stat" id="cp-sendmsg" aria-live="polite"></p>') +
+        '<div class="as-actions"><button class="btn btn--solid" type="button" id="cp-send-pi">Send to PsychInterview</button><a class="btn" href="#/assess/case/handout">One-page handout</a><a class="btn" href="#/assess/case/script">Slide-by-slide script</a><a class="btn" href="#/assess/case/print">Full case summary</a></div><p class="as-stat" id="cp-sendmsg" aria-live="polite"></p>') +
       '</div>';
     A.setView('assess-case', html);
     document.title = 'Case presentation builder — ' + APP;
@@ -326,6 +329,63 @@
     });
   }
 
+
+  /* ---------- one-page consultant handout (#/assess/case/handout) ---------- */
+  function firstSentence(t) { t = plainMd(t); var m = /^(.+?[.!?])(\s|$)/.exec(t); return m ? m[1] : t; }
+  function clip(t, n) { t = String(t || ''); if (t.length <= n) return t; var c = t.slice(0, n); var i = Math.max(c.lastIndexOf('; '), c.lastIndexOf(', '), c.lastIndexOf(' ')); return c.slice(0, i > n * 0.6 ? i : n).replace(/[;,:]$/, '') + '…'; }
+  function shortRef(t) {
+    var parts = String(t).split('. '), au = parts[0] || '', first = au.split(',')[0];
+    var jy = /([A-Z][A-Za-z ]+)\.\s(\d{4})/.exec(t.slice(au.length + (parts[1] || '').length));
+    if (/^American Psychiatric Association\. Diagnostic/.test(t)) return 'American Psychiatric Association. DSM-5-TR. 2022.';
+    if (!jy) return clip(t, 110);
+    var ti = clip(parts[1] || '', 70);
+    return first + (au.indexOf(',') >= 0 ? ' et al.' : '') + ' ' + ti + (/…$/.test(ti) ? ' ' : '. ') + jy[1] + ' ' + jy[2] + '.';
+  }
+  function renderHandout() {
+    var d = compile(), c = C(), p = c.pres || {};
+    var li = function (a) { return a.length ? '<ul>' + a.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>' : ''; };
+    var sup = [p.supervisor ? esc(p.supervisor) + ' (Supervising Consultant)' : '', p.supResident ? esc(p.supResident) + ' (Supervising Resident)' : ''].filter(Boolean).join('; ');
+    var grid = GRID_ROWS.map(function (r) { var cells = GRID_COLS.map(function (col) { var v = (d.grid[r + '|' + col] || '').trim(); return v ? '<em>' + col.charAt(0) + ':</em> ' + esc(clip(v, 95)) : ''; }).filter(Boolean); return cells.length ? '<li><strong>' + r + '.</strong> ' + cells.join(' ') + '</li>' : ''; }).join('');
+    var plans = linesOf(d.plans).slice(0, 7).map(function (x) { return esc(clip(x, 150)); });
+    var pts = d.points.slice(0, 5).map(function (x) { return '<strong>' + esc(x.title) + ':</strong> ' + esc(clip(firstSentence(x.text), 140)); });
+    var h = '<div class="wrap page as-hand-page"><div class="as-actions no-print"><a class="btn" href="#/assess/case">Back to the builder</a><button class="btn btn--solid" type="button" id="ho-print">Print or save as PDF</button><span class="muted" id="ho-fit"></span></div>' +
+      '<article class="as-hand" id="ho-sheet">' +
+      '<header class="as-hand__head">' + (p.institution ? '<p class="as-hand__inst">' + esc(p.institution) + '</p>' : '') + '<h1>' + esc(d.title || 'Case presentation') + '</h1>' +
+      '<p>' + [p.presenter ? 'Prepared by ' + esc(p.presenter) : '', sup ? 'Supervised by ' + sup : '', p.date ? esc(p.date) : ''].filter(Boolean).join(' · ') + '</p></header>' +
+      '<div class="as-hand__cols"><div>' +
+      (d.oneliner ? '<h2>Identifying data</h2><p>' + esc(d.oneliner) + '</p>' : '') +
+      (d.admissions.length ? '<h2>Hospitalization history</h2>' + timelineSVG() + '<p><strong>' + esc(d.stats) + '</strong></p>' : '') +
+      (d.adherence.reasons.length || d.adherence.words ? '<h2>Why he stops treatment</h2><p>' + esc(d.adherence.reasons.join('; ')) + (d.adherence.words ? ' <em>' + esc(d.adherence.words) + '</em>' : '') + '</p>' : '') +
+      (d.subRows.length ? '<h2>Substance history</h2>' + li(d.subRows.map(function (r) { return '<strong>' + esc(r.name) + '</strong> (' + esc(r.status.toLowerCase()) + '): ' + esc(r.summary.replace(/ \((?:[^()]|\([^)]*\))*\)/, '')); })) : '') +
+      (d.lines.length ? '<h2>Working diagnosis</h2>' + li(d.lines.map(function (l) { return (l.code ? '<strong>' + esc(l.code) + '</strong> ' : '') + esc(l.text); })) : '') +
+      (d.ddx.length ? '<h2>Differentials considered</h2><p>' + esc(d.ddx.map(function (r) { return r[0]; }).join('; ')) + '</p>' : '') +
+      (d.risk.v || d.risk.s ? '<h2>Risk</h2><p>Violence: <strong>' + esc(d.risk.v || '–') + '</strong> · Suicide: <strong>' + esc(d.risk.s || '–') + '</strong>' + (d.risk.chronic.length || d.risk.acute.length ? '. ' + esc(d.risk.chronic.concat(d.risk.acute).slice(0, 5).join('; ')) : '') + '.</p>' : '') +
+      (d.prognosis || d.progRating ? '<h2>Prognosis' + (d.progRating ? ': ' + esc(d.progRating) : '') + '</h2>' + (d.prognosis ? '<p>' + esc(d.prognosis).replace(/\n/g, '<br>') + '</p>' : '') : '') +
+      '</div><div>' +
+      (d.integrated ? '<h2>Formulation</h2><p>' + esc(d.integrated) + '</p>' : grid ? '<h2>Formulation</h2><ul class="as-hand__grid">' + grid + '</ul>' : '') +
+      (plans.length ? '<h2>Management</h2>' + li(plans) : '') +
+      (pts.length ? '<h2>Take-home points</h2>' + li(pts) : '') +
+      (d.refs.length ? '<h2>Key references</h2><ol>' + d.refs.slice(0, 6).map(function (r) { return '<li>' + esc(shortRef(r)) + '</li>'; }).join('') + '</ol>' : '') +
+      '</div></div><footer class="as-hand__foot">De-identified case summary for teaching. Codes per DSM-5-TR (2022).</footer></article></div>';
+    A.setView('assess-handout', h);
+    document.title = 'Case handout — ' + APP;
+    var sheet = A.main.querySelector('#ho-sheet');
+    function fit() {
+      var px = 10.3, pad = parseFloat(getComputedStyle(sheet).paddingTop) * 2 || 0, limit = 10.0 * 96 + pad;   // printable height of a Letter page with 0.45-inch margins
+      sheet.style.fontSize = px + 'pt';
+      while (sheet.scrollHeight > limit && px > 6.6) { px -= 0.2; sheet.style.fontSize = px.toFixed(1) + 'pt'; }
+      var msg = A.main.querySelector('#ho-fit');
+      if (msg) msg.textContent = sheet.scrollHeight > limit ? 'Too long for one page even at the smallest size: shorten the plans or untick discussion points.' : 'Fits on one page (text at ' + px.toFixed(1) + ' pt).';
+    }
+    fit();
+    A.main.querySelector('#ho-print').addEventListener('click', function () {
+      document.body.classList.add('print-handout', 'print-casehand');
+      var off = function () { document.body.classList.remove('print-handout', 'print-casehand'); window.removeEventListener('afterprint', off); };
+      window.addEventListener('afterprint', off);
+      window.print();
+      setTimeout(off, 1500);
+    });
+  }
   /* =====================================================================
      Send to PsychInterview (same origin: isaymotion.github.io)
      PsychInterview reads localStorage "psyCaseApp.inbox" on start (and on the storage event),
@@ -397,5 +457,68 @@
     msg.innerHTML = 'Ready: ' + n + ' protocol fields are waiting in PsychInterview. <a href="' + PI_URL + '" target="_blank" rel="noopener">Open PsychInterview</a> and choose the case to merge into. (If it is open as a home-screen app, open it in the same browser instead: home-screen apps keep separate storage.)';
   }
 
+
+  /* ---------- slide-by-slide script (#/assess/case/script) ---------- */
+  function renderScript() {
+    var d = compile(), c = C(), p = c.pres || {}, s = admStats(), t = tags();
+    var total = Number(p.minutes) || 45, qaMin = Number(p.qaMinutes) || 20;
+    var who = p.alias || 'the patient', hePr = /woman|female|she/i.test(p.sex || '') ? 'she' : 'he', his = hePr === 'she' ? 'her' : 'his';
+    var subNames = d.subRows.map(function (r) { return r.name.toLowerCase(); });
+    var Q = function (re) { return d.questions.filter(function (x) { return re.test(x.q); }); };
+    var seg = function (title, w, say, trans, qs, tip) { return { title: title, w: w, say: say, trans: trans || '', qs: qs || [], tip: tip || '' }; };
+    var L = [
+      seg('Title', 0.5, 'Good morning. I am ' + (p.presenter || '[name]') + ', and I will present ' + (d.title ? '“' + d.title + '”' : 'the case of ' + who) + ', supervised by ' + ([p.supervisor, p.supResident].filter(Boolean).join(' and ') || '[supervisors]') + '.', 'Let me start with what we hope to achieve.'),
+      seg('Objectives', 0.8, d.objectives.length ? 'By the end of this presentation, we aim ' + d.objectives.map(function (o) { return o.replace(/^to /i, 'to '); }).join('; ') + '.' : '[Read the 2–3 objectives.]', 'Let me introduce our patient.'),
+      seg('Identifying data, chief complaint, sources', 1.5, (d.oneliner || '[One-liner.]') + ' ' + hePr.charAt(0).toUpperCase() + hePr.slice(1) + ' was brought in because [chief complaint, in the patient’s or informant’s words]. Sources were [patient and family], with [good/fair] reliability.', 'To understand how we got here, let me take you through the history of present illness.', [], 'Pause after the one-liner: it is the frame for everything that follows.'),
+      seg('Premorbid personality', 1, '[Before the illness: temperament, school and work, friends, interests.] This matters because it shows the level of functioning he has lost (Criterion B).', ''),
+      seg('History of present illness', 6, '[Tell it as a story: onset at age __ in ' + ((c.psy || {}).onset || '____') + ', first symptoms, the first admission, then this episode: when ' + hePr + ' stopped medication, the first warning signs, how long until psychosis and aggression, and what led to admission.] Keep dates and the trigger of this admission clear.', 'This was not ' + his + ' first admission.', [], 'End the HPI with the event that brought him in; the consultants will want the trigger.'),
+      seg('Past psychiatric history', 3, (s.n ? 'This is ' + his + ' ' + ordinal(s.n) + ' admission. ' : '') + (d.medTrials ? 'Medication history: ' + d.medTrials.replace(/\n/g, '; ') + '. ' : '') + '[Past diagnoses, treatments, response, adherence.]', 'I have put all the admissions on one timeline.', Q(/established nonadherence/)),
+      seg('Hospitalization timeline', 3, (d.stats || '[Summary of admissions.]') + ' The colors show the pattern: almost every admission followed stopping medication, and the rings mark violence. ' + (s.median != null ? 'On average, ' + hePr + ' was readmitted about every ' + yrs(s.median) + '.' : ''), 'Substance use is part of this pattern.', Q(/oral olanzapine and discharge/), 'This is your key slide: let it sit for a few seconds before speaking.'),
+      seg('Substance history', 3, d.subRows.length ? d.subRows.map(function (r) { return r.name + ': ' + (r.pattern ? r.pattern + '; ' : '') + r.summary + '.'; }).join(' ') : '[Substances, amount, pattern, last use, criteria.]', 'Next, the family history.', Q(/smoking affect|alcohol use disorder\?/), t.tobacco ? 'Mention that smoking lowers olanzapine levels (CYP1A2): it links his smoking to his relapses.' : ''),
+      seg('Past medical history', 0.7, '[Medical illnesses, allergies, current non-psychiatric medicines; head injury or seizures.]', ''),
+      seg('Family history, genogram and profile', 2, '[Psychiatric illness in the family; who lives with him; relationships; who supervises his medicines.]', 'Let me now go through his development.'),
+      seg('Anamnesis (personal and social history)', 3.5, '[Infancy and childhood, adolescence (school, methamphetamine use), adulthood (work, relationships), current psychosocial situation, religion, sexual and legal history.]', 'On examination…', [], 'Keep anamnesis brief and selective: what predisposes and what perpetuates.'),
+      seg('Review of systems, physical and neurological examination', 1, '[Pertinent findings: vital signs, signs of withdrawal, EPS, weight and BMI.]', ''),
+      seg('Mental status examination', 3, '[Appearance and behavior, speech, mood and affect, thought process and content (delusions), perception (hallucinations), cognition, insight and judgment.] Emphasize insight: it explains the nonadherence.', 'This led to our admitting impression.', Q(/capacity/)),
+      seg('Admitting impression and course in the wards', 3, '[Admitting impression; hospital-day highlights: medicines started and doses, response, aggression management, withdrawal monitoring' + (t.alcohol ? ' (CIWA-Ar)' : '') + ', current status.]', 'Here are the key laboratory results.'),
+      seg('Laboratory and ancillary results', 1, '[Pertinent labs: CBC, liver and renal function, electrolytes, glucose and lipids (metabolic baseline), ECG, urine drug screen.]', 'Putting it all together, these are the salient features.'),
+      seg('Salient features', 1.2, '[Pertinent positives and negatives: psychosis with aggression, multiple relapses after nonadherence, substance use; absence of mood episodes, medical cause or current stimulant use.]', 'We considered the following differentials.'),
+      seg('Differentials', 2, d.ddx.length ? d.ddx.map(function (r) { return r[0] + ': more likely because ' + (r[1] || '…') + '; less likely because ' + (r[2] || '…') + '.'; }).join(' ') : '[Each differential, for and against.]', 'This brings us to our working diagnosis.', Q(/substance-induced|schizoaffective/)),
+      seg('Working diagnosis', 1.5, d.lines.length ? d.lines.map(function (l) { return (l.code ? l.code + ' ' : '') + l.text; }).join('. ') + '.' : '[Diagnosis with specifiers and codes.]', 'Why did this happen, and why does it keep happening?', Q(/course specifier/), 'Say the specifiers aloud, slowly.'),
+      seg('Biopsychosocial formulation', 3, d.integrated || '[Walk through the grid row by row: predisposing, precipitating, perpetuating, protective, across biological, psychological, socio-cultural and spiritual. End with one sentence that ties it together.]', 'Given this, what is his risk?'),
+      seg('Risk assessment', 1.3, (d.risk.v ? 'Violence risk is ' + d.risk.v.toLowerCase() + '. ' : '') + (d.risk.s ? 'Suicide risk is ' + d.risk.s.toLowerCase() + '. ' : '') + (d.risk.chronic.length ? 'Historical factors: ' + d.risk.chronic.join('; ') + '. ' : '') + (d.risk.protective.length ? 'Protective: ' + d.risk.protective.join('; ') + '.' : ''), 'And his prognosis.', Q(/violence risk/)),
+      seg('Prognosis', 1, (d.progRating ? d.progRating + '. ' : '') + (d.prognosis || '[Good and poor prognostic factors.]'), 'Our goals and plan address each driver of relapse.', Q(/prognosis/)),
+      seg('Goals and plan of management', 3.5, (d.goals.imm.length ? 'Immediate: ' + d.goals.imm.join('; ') + '. ' : '') + (d.goals.short.length ? 'Short term: ' + d.goals.short.join('; ') + '. ' : '') + (d.goals.long.length ? 'Long term: ' + d.goals.long.join('; ') + '. ' : '') + (d.plans ? 'Plans: ' + linesOf(d.plans).join(' ') : ''), 'I would like to end with a short discussion.', Q(/Which LAI|clozapine/)),
+      seg('Discussion', Math.min(12, Math.max(6, d.points.length * 1.5)), d.points.length ? d.points.map(function (x) { return x.title + '. ' + plainMd(x.text); }).join('\n\n') : (d.discussion || '[Three or four evidence points tied back to the patient.]'), 'In summary…', [], 'Tie every evidence point back to him: “For our patient, this means…”.'),
+      seg('Summary, references and thank you', 1, 'In summary, we presented ' + (d.oneliner ? d.oneliner.replace(/\.$/, '') : 'this patient') + '. The way out of the revolving door is to treat the causes of relapse, not just the relapse: sustained treatment' + (t.nonadherence ? ' with a long-acting injectable' : '') + (t.alcohol || t.tobacco ? ', treatment of ' + subNames.filter(function (x) { return /alcohol|tobacco/.test(x); }).join(' and ') + ' use' : '') + ', and family and community support. Thank you; I welcome your questions.', '')
+    ];
+    var W = L.reduce(function (a, x) { return a + x.w; }, 0), clock = 0;
+    L.forEach(function (x) { x.min = x.w / W * total; x.start = clock; clock += x.min; });
+    var mm = function (m) { var s2 = Math.round(m * 60); return Math.floor(s2 / 60) + ':' + ('0' + s2 % 60).slice(-2); };
+    var html = '<div class="wrap page as-page as-script"><div class="as-actions no-print"><a class="btn" href="#/assess/case">Back to the builder</a><button class="btn btn--solid" type="button" id="sc-print">Print</button>' + K.copyBtn('sc-doc', 'Copy script') + '</div>' +
+      '<div class="as-row no-print"><label class="as-field"><span>Presentation (minutes)</span><input type="text" inputmode="numeric" data-k="pres.minutes" placeholder="45"></label><label class="as-field"><span>Questions and answers (minutes)</span><input type="text" inputmode="numeric" data-k="pres.qaMinutes" placeholder="20"></label></div>' +
+      '<article id="sc-doc"><h1>Slide-by-slide script</h1><p class="muted">' + esc(d.title || 'Case presentation') + ' · ' + total + ' minutes, then ' + qaMin + ' minutes of questions. Text in [brackets] is for you to fill in from your history. Times are guides: stay within a minute of each.</p>' +
+      L.map(function (x, i) {
+        return '<section class="as-sc"><div class="as-sc__head"><span class="as-sc__n">' + (i + 1) + '</span><h2>' + esc(x.title) + '</h2><span class="as-sc__t">' + mm(x.start) + '–' + mm(x.start + x.min) + ' <em>(' + (x.min < 1 ? Math.round(x.min * 60) + ' s' : (Math.round(x.min * 2) / 2) + ' min') + ')</em></span></div>' +
+          '<p class="as-sc__say">' + esc(x.say).replace(/\n\n/g, '</p><p class="as-sc__say">') + '</p>' +
+          (x.tip ? '<p class="as-sc__tip"><strong>Tip:</strong> ' + esc(x.tip) + '</p>' : '') +
+          (x.trans ? '<p class="as-sc__tr"><strong>Transition:</strong> “' + esc(x.trans) + '”</p>' : '') +
+          (x.qs.length ? x.qs.map(function (q) { return '<p class="as-sc__q"><strong>Likely question:</strong> ' + esc(q.q) + '<br><strong>Answer:</strong> ' + esc(q.a) + '</p>'; }).join('') : '') + '</section>';
+      }).join('') +
+      '<section class="as-sc as-sc--qa"><div class="as-sc__head"><span class="as-sc__n">Q&amp;A</span><h2>Questions and answers</h2><span class="as-sc__t">' + mm(total) + '–' + mm(total + qaMin) + '</span></div>' +
+      '<p>Expect ' + Math.max(6, Math.round(qaMin / 2.5)) + '–' + Math.round(qaMin / 1.5) + ' questions. Answer in three parts: the direct answer, the evidence, and what it means for this patient.</p>' +
+      '<ol>' + d.questions.map(function (q) { return '<li><strong>' + esc(q.q) + '</strong><br>' + esc(q.a) + '</li>'; }).join('') + '</ol>' +
+      '<p class="as-sc__tip"><strong>If you do not know:</strong> “That is a good question; I am not certain, but my approach would be… I will look into it and get back to you.” Never guess a number.</p></section></article></div>';
+    A.setView('assess-script', html);
+    document.title = 'Presentation script — ' + APP;
+    K.bind(A.main, function (k) { if (k === 'pres.minutes' || k === 'pres.qaMinutes') { clearTimeout(renderScript._t); renderScript._t = setTimeout(renderScript, 600); } });
+    K.bindCopy(A.main);
+    A.main.querySelector('#sc-print').addEventListener('click', function () {
+      document.body.classList.add('print-handout');
+      var off = function () { document.body.classList.remove('print-handout'); window.removeEventListener('afterprint', off); };
+      window.addEventListener('afterprint', off); window.print(); setTimeout(off, 1500);
+    });
+  }
+  SP.renderScript = renderScript;
   SP.renderCase = render;
 })();
