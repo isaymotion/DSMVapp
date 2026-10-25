@@ -105,7 +105,7 @@
       'Confirm adherence (plasma level or LAI) before calling the illness treatment-resistant; clozapine if two adequate confirmed trials fail.',
       t.tobacco ? 'Treat tobacco use disorder (varenicline or combination NRT); adjust olanzapine if smoking stops or restarts.' : '',
       t.alcohol ? 'Alcohol use disorder: naltrexone or acamprosate with integrated psychosocial treatment; avoid disulfiram.' : '',
-      'Metabolic monitoring: weight, waist, blood pressure, fasting glucose or HbA1c, lipids at baseline, 12 weeks and yearly.',
+      'Metabolic monitoring (APA 2020): weight or BMI every visit for 6 months then quarterly; waist and blood pressure; fasting glucose or HbA1c and lipids at baseline, 4 months, then yearly.',
       'Urine drug screen this admission.',
       'Family psychoeducation; crisis and relapse-prevention plan; close follow-up within 7 days of discharge; consider assertive community treatment.'
     ].filter(Boolean);

@@ -12,7 +12,7 @@ SP.tools.schizo = {
   criteria: [
     { id: "a1m", label: "A. Two or more of the above for a significant portion of 1 month (less if successfully treated), at least one being delusions, hallucinations or disorganized speech", auto: true },
     { id: "b", label: "B. Level of functioning in work, relationships or self-care is markedly below the level before onset" },
-    { id: "c", label: "C. Continuous signs for at least 6 months, including at least 1 month of active-phase symptoms (may include prodromal or residual periods)" },
+    { id: "c", label: "C. Continuous signs for at least 6 months, including at least 1 month of active-phase symptoms, or less if successfully treated (may include prodromal or residual periods)" },
     { id: "d", label: "D. Schizoaffective disorder and depressive or bipolar disorder with psychotic features ruled out (no mood episodes during the active phase, or present for only a minority of the total duration)" },
     { id: "e", label: "E. Not attributable to a substance (drug or medication) or another medical condition" },
     { id: "f", label: "F. If there is autism or a childhood communication disorder, prominent delusions or hallucinations have lasted at least 1 month" }
