@@ -4,7 +4,9 @@
    Every stem states duration, consent, distress or impairment, age and whether the behavior occurs outside
    intoxication, mania or other disinhibiting states. Wording is clinical and forensic-aware; nothing is graphic.
    Items stay inside the DSM except the two labeled next-step items (v19-13 `then`: asking about breath restriction;
-   v19-19: confidentiality limits and reporting duties under RA 7610), which are clinical management outside the DSM. */
+   v19-19: confidentiality limits and reporting duties under RA 7610), which are clinical management outside the DSM,
+   and the labeled legal sentence in the v19-18 `why` (RA 11648). Short management remarks in a `why` and discussion
+   prompts that go beyond the manual are tagged "(outside the DSM)". */
 SP.add("ch19", "vignettes", [
   {
     "id": "v19-01",
@@ -87,7 +89,7 @@ SP.add("ch19", "vignettes", [
   {
     "id": "v19-04",
     "tag": "The nondisclosing voyeur",
-    "stem": "A 31-year-old man is referred by the PNP for evaluation after being caught for the third time in 14 months filming through the bathroom window of a boarding house in Balanga. Three different women were recorded, and none knew or agreed. He says each time that he was “checking the signal” and denies any sexual interest. He reports no distress and says his only problem is the police. Each episode happened while he was sober, and he has no history of mood episodes, psychosis, intellectual disability or neurological illness.",
+    "stem": "A 31-year-old man is referred by the PNP for evaluation after being caught for the third time in 14 months filming through the bathroom window of a boarding house in Balanga. Three different women were recorded, and none knew or agreed. He says each time that he was “checking the signal” and denies any sexual interest. He reports no distress and says his only problem is the police. Each episode happened while he was sober, and he has no history of mood episodes, psychosis, intellectual disability or neurological illness. He has no other criminal record and no history of childhood conduct problems.",
     "q": "What is the most accurate diagnosis?",
     "choices": [
       "No diagnosis, because he denies any sexual urge",
@@ -117,29 +119,29 @@ SP.add("ch19", "vignettes", [
     "q": "What is the most accurate conclusion about a paraphilic diagnosis?",
     "choices": [
       "Voyeuristic disorder (F65.3)",
-      "Other specified paraphilic disorder (F65.89), voyeurism below the age threshold",
+      "Voyeuristic disorder, in a controlled environment",
       "Voyeuristic disorder cannot be diagnosed because he is under 18",
       "Unspecified paraphilic disorder (F65.9)",
       "Conduct disorder, because he violated a neighbor’s privacy"
     ],
     "answer": 2,
-    "why": "Voyeuristic disorder has an age rule: **Criterion C requires the person to be at least 18**. The floor exists because puberty and adolescence bring heightened sexual curiosity, and the manual wants to avoid **pathologizing normal adolescent interest** (pp. 780–781). The behavior still needs a clinical and family response, but not this diagnosis.",
+    "why": "Voyeuristic disorder has an age rule: **Criterion C requires the person to be at least 18**. The floor exists because puberty and adolescence bring heightened sexual curiosity, and the manual wants to avoid **pathologizing normal adolescent interest** (pp. 780–781). The behavior still needs a clinical and family response, but not this diagnosis (clinical management, outside the DSM).",
     "whyNot": [
       "Criterion C (age 18 or older) is not met (p. 780).",
-      "The age rule is part of the definition; using a residual category to get around it would defeat its purpose (pp. 781, 801).",
+      "No disorder can be diagnosed, so there is nothing to specify; the specifier is also only for people living in restricted settings, and he lives at home (pp. 780–781).",
       "Correct.",
       "An unspecified label would also attach a paraphilic diagnosis the age rule is designed to avoid (p. 781).",
       "Two episodes of a single behavior without other rule-breaking do not make the broad pattern conduct disorder needs (p. 782)."
     ],
     "discuss": [
-      "Which other two disorders in the chapter have no minimum age, and what problem does the manual note for adolescents?",
-      "How would you talk with the student and his mother about what this is and what it is not?"
+      "For which two disorders does the manual explicitly say there is no minimum age, and what problem does it note in adolescents (pp. 784, 787)?",
+      "(Outside the DSM) How would you talk with the student and his mother about what this is and what it is not?"
     ]
   },
   {
     "id": "v19-06",
     "tag": "Exhibitionistic subtype",
-    "stem": "A 40-year-old man is referred after conviction for exposing himself to prepubertal schoolchildren, aged about 7 to 10, outside a public elementary school in Balanga on four occasions over 18 months. None of the children consented or expected it. He has never exposed himself to adults, and he admits that only children produce the urge. He says he feels no distress, only fear of prison. Every episode happened while he was sober, and he has no manic, psychotic, cognitive or developmental disorder.",
+    "stem": "A 40-year-old man is referred after conviction for exposing himself to prepubertal schoolchildren, aged about 7 to 10, outside a public elementary school in Balanga on four occasions over 18 months. None of the children consented or expected it. He has never exposed himself to adults, and he admits that only children produce the urge. He says he feels no distress, only fear of prison. Every episode happened while he was sober, and he has no manic, psychotic, cognitive or developmental disorder. He now lives in the community on probation.",
     "q": "How should the exhibitionistic disorder be specified?",
     "choices": [
       "The physically mature individuals subtype",
@@ -149,13 +151,13 @@ SP.add("ch19", "vignettes", [
       "In a controlled environment, because he is now in custody"
     ],
     "answer": 1,
-    "why": "Exhibitionistic disorder is subtyped by the **age or physical maturity** of the people the person prefers to expose to. He exposes **only to prepubertal children**, so the subtype is **sexually aroused by exposing genitals to prepubertal children** (pp. 783–784).",
+    "why": "Exhibitionistic disorder is subtyped by the **age or physical maturity** of the people the person prefers to expose to. He exposes **only to prepubertal children**, so the subtype is **sexually aroused by exposing genitals to prepubertal children** (p. 783).",
     "whyNot": [
       "He has never exposed himself to adults (p. 783).",
       "Correct.",
       "His exposures are limited to children (p. 783).",
-      "The subtypes are set by the target group, not by whether the person discloses (pp. 783–784).",
-      "The specifier is only used when the person is living in a restricted setting; the subtype question is separate, and his history is of acts in the community (p. 783)."
+      "The subtypes are set by the target group, not by whether the person discloses (p. 783).",
+      "The specifier is only used when the person is living in a restricted setting; he lives in the community on probation, and the subtype question is separate (p. 783)."
     ],
     "then": {
       "q": "What does the target-age subtype prompt the clinician to do next?",
@@ -167,7 +169,7 @@ SP.add("ch19", "vignettes", [
         "Use other specified paraphilic disorder to cover both interests"
       ],
       "answer": 2,
-      "why": "The subtypes exist so that a **co-occurring pedophilic disorder is not missed**; exposure to children does **not** rule it out. Someone who exposes himself **exclusively to prepubertal children** may need **both** diagnoses, whereas exposure to people of any age may need only exhibitionistic disorder. Noncontact acts with children count as acting on pedophilic urges (pp. 784, 793, 795).",
+      "why": "The subtypes exist so that a **co-occurring pedophilic disorder is not missed**; exposure to children does **not** rule it out. Someone who exposes himself **exclusively to prepubertal children** may need **both** diagnoses, whereas exposure to people of any age may need only exhibitionistic disorder. Noncontact acts with children count as acting on pedophilic urges (pp. 783, 793, 795).",
       "whyNot": [
         "Pedophilic behaviors include acts without physical contact, such as exposure (p. 793).",
         "The manual expects a separate diagnosis when more than one paraphilia causes harm (pp. 780, 795).",
@@ -196,7 +198,7 @@ SP.add("ch19", "vignettes", [
     "answer": 3,
     "why": "More than **6 months** of urges and behaviors involving **touching or rubbing against nonconsenting people** meets Criterion A. Criterion B is met by **acting on the urges with nonconsenting people**, so his lack of distress does not matter. **Frotteuristic disorder (F65.81)** (pp. 785–786).",
     "whyNot": [
-      "For frotteuristic disorder, acting with a nonconsenting person satisfies Criterion B without distress (p. 786).",
+      "For frotteuristic disorder, acting with a nonconsenting person satisfies Criterion B without distress (pp. 785–786).",
       "There is no broad antisocial pattern, and the specific sexual interest is present (p. 787).",
       "The behavior is exactly what frotteuristic disorder describes (pp. 785–786, 801).",
       "Correct.",
@@ -210,7 +212,7 @@ SP.add("ch19", "vignettes", [
   {
     "id": "v19-08",
     "tag": "Frontotemporal disinhibition",
-    "stem": "A 66-year-old retired teacher in Mariveles is brought by his daughter. Over the past year he has become apathetic, tactless and impulsive, eats compulsively and has lost interest in his grandchildren. In the past 4 months he has exposed himself to two home carers and a nurse on three occasions; none expected or agreed to it. His family says there was never any such behavior before the illness, and he shows no concern about it. He does not drink, has no mood episode, and neuroimaging shows frontal and anterior temporal atrophy.",
+    "stem": "A 66-year-old retired teacher in Mariveles is brought by his daughter. Over the past year he has become apathetic, tactless and impulsive, eats compulsively and has lost interest in his grandchildren. In the past 4 months he has exposed himself to two home carers and a nurse on three occasions; none expected or agreed to it. His family says there was never any such behavior before the illness, and he shows no concern about it. He does not drink, has no mood episode, and neuroimaging shows frontal and anterior temporal atrophy. He can no longer manage his pension or medicines without his daughter, and testing shows marked executive impairment.",
     "q": "What is the most accurate diagnostic conclusion?",
     "choices": [
       "Major frontotemporal neurocognitive disorder; no exhibitionistic disorder",
@@ -230,7 +232,7 @@ SP.add("ch19", "vignettes", [
     ],
     "discuss": [
       "What history would you need before deciding that the behavior also occurs outside the neurocognitive disorder?",
-      "How would you protect the carers and nurses while respecting the patient?"
+      "(Outside the DSM) How would you protect the carers and nurses while respecting the patient?"
     ]
   },
   {
@@ -250,13 +252,13 @@ SP.add("ch19", "vignettes", [
     "whyNot": [
       "There is no frotteuristic pattern outside the manic episode, so only the mood disorder is diagnosed (p. 787).",
       "He never had frotteuristic disorder, so there is nothing to be in remission (p. 786).",
-      "Acting with nonconsenting people satisfies Criterion B only when Criterion A is met; here the behavior is two days long and confined to mania (pp. 786–787).",
+      "Acting with nonconsenting people satisfies Criterion B only when Criterion A is met; here the behavior is two days long and confined to mania (pp. 785, 787).",
       "The behavior has a known cause and is not a paraphilic disorder (p. 787).",
       "Correct."
     ],
     "discuss": [
       "Which other conditions in the shared differential can produce the same picture?",
-      "What would you document for the PNP or the complainants?"
+      "(Outside the DSM) What may you share with the PNP or the complainants, and what stays confidential?"
     ]
   },
   {
@@ -272,7 +274,7 @@ SP.add("ch19", "vignettes", [
       "Unspecified paraphilic disorder (F65.9)"
     ],
     "answer": 2,
-    "why": "**Substance intoxication** can disinhibit a person and lead to exposure. The paraphilic diagnosis is made only when the behavior **also occurs outside** intoxication. On this history both acts happened only while heavily intoxicated and he reports no sober urges (p. 785). His drinking needs its own assessment.",
+    "why": "**Substance intoxication** can disinhibit a person and lead to exposure. The paraphilic diagnosis is made only when the behavior **also occurs outside** intoxication. On this history both acts happened only while heavily intoxicated and he reports no sober urges (p. 785). His drinking needs its own assessment (clinical management, outside the DSM).",
     "whyNot": [
       "Two victims support Criterion A only when the behavior is not explained by intoxication (pp. 784–785).",
       "Shame after the event is not Criterion B when Criterion A is not established (pp. 783, 785).",
@@ -301,7 +303,7 @@ SP.add("ch19", "vignettes", [
     },
     "discuss": [
       "Which risk factors for recidivism among men who expose themselves does the manual list, and does he have any?",
-      "How would you assess his drinking alongside the paraphilic disorder?"
+      "(Outside the DSM) How would you assess his drinking alongside the paraphilic disorder?"
     ]
   },
   {
@@ -321,7 +323,7 @@ SP.add("ch19", "vignettes", [
     "whyNot": [
       "A single act with no sexual interest and no 6-month pattern does not meet Criterion A (pp. 785–787).",
       "Correct.",
-      "Both can be diagnosed only when the frotteuristic criteria are met in their own right; they are not (p. 787).",
+      "Both can be diagnosed only when the frotteuristic criteria are met in their own right, as the manual states for sadism (p. 792); here they are not (pp. 780, 787).",
       "There is no evidence that suffering arouses him (pp. 790, 792).",
       "The behavior is explained by the antisocial pattern; there is no paraphilic presentation (pp. 787, 801)."
     ],
@@ -349,7 +351,7 @@ SP.add("ch19", "vignettes", [
       "A specifier cannot be attached to a disorder that has not been established (pp. 790, 792).",
       "Coercion alone is not a paraphilia, and the manual does not list it as an other specified example (pp. 792, 801).",
       "Correct.",
-      "Denial does not block the diagnosis; objective evidence such as repeated acts or excess violence can support it (pp. 790–791)."
+      "Denial does not block the diagnosis; objective evidence such as repeated acts or excess violence can support it (pp. 790–792)."
     ],
     "then": {
       "q": "Which additional finding would most support a diagnosis of sexual sadism disorder in a man like this?",
@@ -364,7 +366,7 @@ SP.add("ch19", "vignettes", [
       "why": "The manual’s markers that the suffering is arousing are an **admission** of that arousal, a preference for **sadistic pornography**, and **violence beyond what was needed** to commit the assault. Repetition across occasions supports Criterion A in a person who denies the interest (pp. 791–792).",
       "whyNot": [
         "Cruelty and forced sex can occur in antisocial personality disorder without sadistic arousal (p. 792).",
-        "Intoxication points toward disinhibition, not toward a sadistic interest (p. 792).",
+        "Alcohol use before the assault is not one of the manual’s markers that the suffering is arousing (p. 792).",
         "Correct.",
         "Childhood abuse is not listed as a marker of sadism (pp. 791–792).",
         "A conviction says nothing about whether the suffering was arousing (p. 792)."
@@ -410,20 +412,20 @@ SP.add("ch19", "vignettes", [
       "whyNot": [
         "Correct.",
         "Her interests do not change his risk or his diagnosis (p. 788).",
-        "This detail does not address any risk or specifier (p. 789).",
+        "This detail does not address any risk or specifier.",
         "Medication decisions come later and depend on a full assessment; the manual itself says nothing about treatment.",
         "Pornography use is an associated feature, but it is not the safety question (p. 788)."
       ]
     },
     "discuss": [
-      "If he says yes, how would you record the diagnosis, and what safety advice would you give?",
+      "If he says yes, how would you record the diagnosis, and (outside the DSM) what safety advice would you give?",
       "The manual links stigma-related shame and guilt with suicidal ideation in BDSM practitioners: how would you screen for it here?"
     ]
   },
   {
     "id": "v19-14",
     "tag": "Pedophilic specifiers",
-    "stem": "A 46-year-old man is evaluated at a forensic unit after conviction for sexual contact with his daughter and his niece, who were 9 and 10 years old and prepubertal at the time. The contacts happened repeatedly over about 3 years, and neither child could consent. He acknowledges sexual interest in both girls and says he has never been interested in children outside the family. He has been sexually active with adult women, including his wife, throughout. He was sober during the contacts and has no mood, psychotic or cognitive disorder. He reports some distress, mostly about his family’s rejection of him.",
+    "stem": "A 46-year-old man is evaluated at a forensic unit after conviction for sexual contact with his daughter and his niece, who were 9 and 10 years old and prepubertal at the time; both are blood relatives in his household. The contacts happened repeatedly over about 3 years, and neither child could consent. He acknowledges sexual interest in both girls and says he has never been interested in children outside the family. He has been sexually active with adult women, including his wife, throughout. He was sober during the contacts and has no mood, psychotic or cognitive disorder. He reports some distress, mostly about his family’s rejection of him.",
     "q": "Which recording is most complete?",
     "choices": [
       "Pedophilic disorder (F65.4), exclusive type, sexually attracted to females",
@@ -451,24 +453,24 @@ SP.add("ch19", "vignettes", [
         "Yes, but only if he also reports no distress"
       ],
       "answer": 3,
-      "why": "**Pedophilic disorder is the only disorder in the chapter without the shared specifiers**: there is no “in full remission” and no “in a controlled environment” option. The manual describes pedophilia itself as lifelong while the disorder fluctuates (pp. 792–794).",
+      "why": "**Pedophilic disorder is the only one of the eight listed disorders without the shared specifiers**: there is no “in full remission” and no “in a controlled environment” option. The manual describes pedophilia itself as lifelong while the disorder fluctuates (pp. 792–794).",
       "whyNot": [
         "That specifier exists for the other paraphilic disorders, not this one (pp. 792–793).",
         "The controlled-environment specifier is also unavailable for pedophilic disorder (pp. 792–793).",
-        "A prison is the example of a controlled environment, and in any case the specifier does not exist here (pp. 780, 792–793).",
+        "A prison is an institutional setting of the kind the controlled-environment specifier describes, and in any case the specifier does not exist for this disorder (pp. 780, 793).",
         "Correct.",
         "No combination of conditions creates a remission specifier for this disorder (pp. 792–793)."
       ]
     },
     "discuss": [
       "Which of the manual’s markers of pedophilic disorder in a person who has offended are absent here, and why does that matter?",
-      "How would you word the diagnosis line in a report to the court?"
+      "(Outside the DSM) How would you word the diagnosis line in a report to the court?"
     ]
   },
   {
     "id": "v19-15",
     "tag": "Images alone and Criterion B",
-    "stem": "A 38-year-old office worker in Manila is referred for evaluation after the PNP Anti-Cybercrime Group found sexual images of prepubertal children on his laptop, collected over about 2 years. Investigators found no evidence of any in-person sexual contact with a child, and he has no access to children through work or family. He says he does not want to act on the images and reports no distress, guilt or difficulty with his partner, friends or work. He was not intoxicated when viewing them. He has no mood, psychotic or cognitive disorder, and the court asks whether he has a paraphilic disorder.",
+    "stem": "A 38-year-old office worker in Manila is referred for evaluation after the PNP Anti-Cybercrime Group found sexual images of prepubertal children on his laptop, collected over about 2 years. Investigators found no evidence of any in-person sexual contact with a child, and he has no access to children through work or family. He says he does not want to act on this interest and reports no distress, guilt or difficulty with his partner, friends or work. He was not intoxicated when viewing them. He has no mood, psychotic or cognitive disorder, and the court asks whether he has a paraphilic disorder.",
     "q": "Which statement about the pedophilic disorder criteria is most accurate?",
     "choices": [
       "Criteria A, B and C are all met, because viewing the images is acting on the urges",
@@ -478,12 +480,12 @@ SP.add("ch19", "vignettes", [
       "The diagnosis must wait for penile plethysmography"
     ],
     "answer": 2,
-    "why": "Use of sexual images of prepubescent children is typical of pedophilic interest and informs **Criterion A**, but **on its own, without in-person sexual interaction with a child, it is not enough for Criterion B** (p. 793). The diagnosis would need acting on the urges, or **marked distress or interpersonal difficulty**. The offense is a legal matter regardless of the diagnosis.",
+    "why": "Use of sexual images of prepubescent children is typical of pedophilic interest and informs **Criterion A**, but **on its own, without in-person sexual interaction with a child, it is not enough for Criterion B** (p. 793). The diagnosis would need acting on the urges, or **marked distress or interpersonal difficulty**. The offense is a legal matter regardless of the diagnosis (outside the DSM).",
     "whyNot": [
       "The manual says image use alone does not establish Criterion B (p. 793).",
       "Image use is relevant evidence for Criterion A; and he meets Criterion C (pp. 792–793).",
       "Correct.",
-      "Criterion B for pedophilic disorder is acting on the urges or marked distress or interpersonal difficulty; image use alone does not count (p. 793).",
+      "Criterion B for pedophilic disorder is acting on the urges or marked distress or interpersonal difficulty; image use alone does not count (pp. 792–793).",
       "Laboratory measures can help but are not required, and their sensitivity and specificity vary between sites (p. 795)."
     ],
     "discuss": [
@@ -530,13 +532,13 @@ SP.add("ch19", "vignettes", [
       "Other specified paraphilic disorder (F65.89), one child victim"
     ],
     "answer": 3,
-    "why": "Antisocial personality disorder raises the chance that a person **primarily attracted to adults** will approach a child because the child is **accessible**. Pedophilic disorder is added **only** when there are **at least 6 months** of recurrent fantasies, urges or behaviors centered on prepubescent children (pp. 795–796). Nothing here shows that.",
+    "why": "Antisocial personality disorder raises the chance that a person **primarily attracted to adults** will approach a child because the child is **accessible**. Pedophilic disorder is added **only** when there are **at least 6 months** of recurrent fantasies, urges or behaviors centered on prepubescent children (p. 795). Nothing here shows that.",
     "whyNot": [
-      "A single act without a 6-month interest in children does not meet Criterion A (pp. 792, 796).",
-      "The type cannot be specified when the disorder is not present (pp. 793, 796).",
-      "Both are diagnosed only if pedophilic criteria are met in their own right (p. 796).",
+      "A single act without a 6-month interest in children does not meet Criterion A (pp. 792, 795).",
+      "The type cannot be specified when the disorder is not present (pp. 793, 795).",
+      "Both are diagnosed only if pedophilic criteria are met in their own right (p. 795).",
       "Correct.",
-      "Criteria are clear here: the behavior is explained by antisocial personality disorder, not a paraphilia (pp. 796, 801)."
+      "Criteria are clear here: the behavior is explained by antisocial personality disorder, not a paraphilia (pp. 795, 801)."
     ],
     "discuss": [
       "Which of the manual’s markers of pedophilic disorder in a person who has offended (p. 793) would you look for in the records?",
@@ -546,7 +548,7 @@ SP.add("ch19", "vignettes", [
   {
     "id": "v19-18",
     "tag": "The late-adolescent exclusion",
-    "stem": "An 18-year-old senior high school student in Mariveles is referred by the barangay after a report of sexual contact with his 13-year-old girlfriend, with whom he has been in a relationship for about 10 months. She is the only person involved and was not described as unwilling, though she is legally a child. He has no sexual interest in younger children, no fantasies about children, and no history of using sexual images of children. He feels anxious about the report but is otherwise functioning. He was sober and has no mood, psychotic, developmental or cognitive disorder.",
+    "stem": "An 18-year-old senior high school student in Mariveles is referred by the barangay after a report of sexual contact with his 13-year-old girlfriend, with whom he has been in a relationship for about 10 months. She is the only person involved. There is no report of force or threat; legally she cannot consent. He has no sexual interest in younger children, no fantasies about children, and no history of using sexual images of children. He feels anxious about the report but is otherwise functioning. He was sober and has no mood, psychotic, developmental or cognitive disorder.",
     "q": "What is the most accurate conclusion about pedophilic disorder?",
     "choices": [
       "Pedophilic disorder is not diagnosed: the note under Criterion C leaves out late adolescents whose continuing partner is 12 or 13",
@@ -556,7 +558,7 @@ SP.add("ch19", "vignettes", [
       "Pedophilic disorder cannot be judged until she is examined for pubertal status"
     ],
     "answer": 0,
-    "why": "Criterion C asks for age **16 or older** and **at least 5 years older** than the child, and its note **excludes a late adolescent whose continuing sexual partner is 12 or 13 years old** (p. 793). He also lacks the interest in prepubescent children that Criterion A requires. Outside the DSM, the legal question is separate: in the Philippines, RA 11648 (2022) set the age of sexual consent at 16, and its close-in-age exemption never applies when the younger person is under 13.",
+    "why": "Criterion C asks for age **16 or older** and **at least 5 years older** than the child, and its note **excludes a late adolescent whose continuing sexual partner is 12 or 13 years old** (p. 793). He also lacks the interest in prepubescent children that Criterion A requires. Outside the DSM, the legal question is separate: under RA 11648 (2022) the age of sexual consent is 16, and the close-in-age exemption covers only an age difference of 3 years or less (never a child under 13). With a 5-year gap it does not apply here.",
     "whyNot": [
       "Correct.",
       "No disorder is present to specify (p. 793).",
@@ -566,7 +568,7 @@ SP.add("ch19", "vignettes", [
     ],
     "discuss": [
       "Why does the manual consider the pubertal age range a hard place to make this diagnosis?",
-      "How would you separate the clinical opinion from the legal process in your note?"
+      "(Outside the DSM) How would you separate the clinical opinion from the legal process in your note?"
     ]
   },
   {
@@ -608,7 +610,7 @@ SP.add("ch19", "vignettes", [
       "Unspecified paraphilic disorder (F65.9)"
     ],
     "answer": 2,
-    "why": "**Criterion C** says the fetish objects are **not limited to devices designed for genital stimulation**, such as a **vibrator** (p. 796). A device that stimulates the genitals because it was made to do so is not a fetish. She also has no distress or impairment, so Criterion B would fail anyway.",
+    "why": "**Criterion C** says the fetish objects are **not limited to devices designed for genital stimulation**, such as a **vibrator** (p. 796). A device that stimulates the genitals because it was made to do so is not a fetish (p. 798). She also has no distress or impairment, so Criterion B would fail anyway.",
     "whyNot": [
       "Criterion C excludes devices designed for genital stimulation (p. 796).",
       "The “other” specifier is still fetishistic disorder, which Criterion C excludes here (p. 796).",
@@ -669,7 +671,7 @@ SP.add("ch19", "vignettes", [
   {
     "id": "v19-22",
     "tag": "Forced cross-dressing",
-    "stem": "A 37-year-old engineer in Manila reports that for about 3 years his main sexual fantasy has been of a woman forcing him to dress in women’s clothes and then mocking him. He says the clothes themselves do nothing for him; it is the humiliation and being controlled that arouse him. He has never involved anyone without consent and acts it out only in fantasy. He is ashamed, sleeps poorly and has withdrawn from a relationship because of the fantasies. He has no substance use, mood disorder or psychosis, and he has no wish to be a woman.",
+    "stem": "A 37-year-old engineer in Manila reports that for about 3 years his main sexual fantasy has been of a woman forcing him to dress in women’s clothes and then mocking him. He says the clothes themselves do nothing for him; it is the humiliation and being controlled that arouse him. It has stayed a fantasy; he has never acted it out with anyone. He is ashamed, sleeps poorly and has withdrawn from a relationship because of the fantasies. He has no substance use, mood disorder or psychosis, and he has no wish to be a woman.",
     "q": "What is the most accurate diagnosis?",
     "choices": [
       "Transvestic disorder (F65.1)",
@@ -714,7 +716,7 @@ SP.add("ch19", "vignettes", [
       "Arousal from wearing the clothes, with thoughts of being a woman, is transvestic, and Criterion C excludes cross-dressing clothes from fetishism (pp. 796, 800)."
     ],
     "then": {
-      "q": "Twelve years later, at 54, he returns. Arousal from cross-dressing has faded almost to nothing, but for the past 2 years he has felt strongly that his body does not match who he is, wants to live as a woman full time and is seeking hormones; he is distressed by the mismatch. What is the most accurate formulation?",
+      "q": "Twelve years later, at 54, the patient returns, now asks to be called Ms. Reyes and uses she/her. Arousal from cross-dressing has faded almost to nothing, but for the past 2 years she has felt strongly that her body does not match who she is, wants to live as a woman full time and is seeking hormones; she is distressed by the mismatch. What is the most accurate formulation?",
       "choices": [
         "Transvestic disorder, unchanged, because the history began with arousal",
         "Gender dysphoria in adolescents and adults, consistent with the progression the manual describes",
@@ -725,9 +727,9 @@ SP.add("ch19", "vignettes", [
       "answer": 1,
       "why": "Some men with transvestic disorder **progress to gender dysphoria**, wanting to stay in the female role longer and to feminize their bodies, usually with **reduced sexual arousal** to cross-dressing. Middle-aged and older men with a transvestic history are **more likely to present with gender dysphoria** than with transvestic disorder (p. 800). Evaluate with the Chapter 14 criteria.",
       "whyNot": [
-        "His arousal has faded and the problem is now incongruence, which transvestic disorder does not describe (p. 800).",
+        "Her arousal has faded and the problem is now incongruence, which transvestic disorder does not describe (p. 800).",
         "Correct.",
-        "His distress about the incongruence is the clinical problem now (p. 800).",
+        "Her distress about the incongruence is the clinical problem now (p. 800).",
         "There is no object-centered arousal (pp. 796, 800).",
         "This is not a paraphilic presentation (pp. 800–801)."
       ]
@@ -768,7 +770,7 @@ SP.add("ch19", "vignettes", [
         "Pedophilic disorder rules apply, so no specifier is available"
       ],
       "answer": 2,
-      "why": "The 5-year remission clock runs only in an **uncontrolled** environment. Years in a setting where the opportunity is restricted, such as a prison, are recorded as **in a controlled environment**, not as remission (pp. 783–784).",
+      "why": "The 5-year remission clock runs only in an **uncontrolled** environment. Years in a setting where the opportunity is restricted, such as a prison, are recorded as **in a controlled environment**, not as remission (p. 783).",
       "whyNot": [
         "Five years in custody do not count toward remission (p. 783).",
         "The specifier exists precisely for people in institutional settings (p. 783).",
@@ -779,7 +781,7 @@ SP.add("ch19", "vignettes", [
     },
     "discuss": [
       "Why does the manual insist that remission be shown in an uncontrolled environment?",
-      "What would you tell the prison board about what “in a controlled environment” does and does not mean?"
+      "(Outside the DSM) What would you tell the prison board about what “in a controlled environment” does and does not mean?"
     ]
   },
   {
@@ -804,7 +806,7 @@ SP.add("ch19", "vignettes", [
       "Physical contact is not required for a paraphilic disorder; distress and impairment are present (pp. 780, 801)."
     ],
     "then": {
-      "q": "In the emergency room, another man says only that for about a year he has had sexual urges that “are not normal,” which make him unable to work; he refuses to describe them, and no collateral history is available. How is this best recorded for now?",
+      "q": "In the emergency room, another man says only that for about a year he has had sexual urges that “are not normal,” which make him unable to work; he says they concern an unusual target that most people would not find arousing, but he will not say what it is, and no collateral history is available. How is this best recorded for now?",
       "choices": [
         "Other specified paraphilic disorder (F65.89), reason unknown",
         "No diagnosis can be recorded",
