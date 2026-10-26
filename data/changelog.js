@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 32,
+    date: "2026-10-28",
+    title: "Practice pack for Chapter 1",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the neurodevelopmental disorders, five new complaints in the hub, and accuracy fixes from a full check against the manual.",
+    items: [
+      { type: "chapter", ch: "ch01", text: "Chapter 1: 25 board vignettes (6 in two parts), 15 “Write the diagnosis” cases with F70–F73, F80.x, F81.x, F84.0 + F06.1, F90.x and F95.x codes, 10 counting drills and 26 exam traps.", href: "#/c/ch01/practice", link: "Chapter 1 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges for 13 Chapter 1 diagnoses, from ADHD stimulants and nonstimulants (with the 2023 and 2025 FDA label changes) to irritability in autism, CBIT and Tourette’s medications, current to October 2026.", href: "#/dx/adhd", link: "ADHD" },
+      { type: "feature", text: "Start from the complaint: inattention; tics and repetitive movements; late talking; social differences and narrow interests; learning problems at school. Chapter 1 items added to irritability, school refusal, rule-breaking, odd behavior and neglect, and links from other chapters now open the Chapter 1 library pages.", href: "#/complaints/inattention", link: "Open the complaint" },
+      { type: "correction", ch: "ch01", text: "Chapter 1 accuracy pass: stuttering after a stroke or head injury is recorded with that condition, not as F98.5; page references, wording and a few overstatements corrected throughout.", href: "#/c/ch01/guide/s1-stuttering", link: "Stuttering" }
+    ]
+  },
+  {
     id: 31,
     date: "2026-10-28",
     title: "Chapter 1: Neurodevelopmental Disorders",

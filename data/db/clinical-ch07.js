@@ -167,8 +167,8 @@
         { ch: "ch07", dx: "rad", when: "Withdrawn, rarely seeks or responds to comfort, onset before 5." },
         { ch: "ch07", dx: "dsed", when: "Overly familiar with strangers, goes off with them." },
         { ch: "ch07", dx: "ptsd", when: "Trauma reenactment in play, nightmares, startle after a specific event." },
-        { ch: "ch01", name: "Autism spectrum disorder", when: "Restricted interests and rituals; attachment present." },
-        { ch: "ch01", name: "ADHD", when: "Impulsivity with attention and activity problems." }
+        { ch: "ch01", dx: "asd", when: "Restricted interests and rituals; attachment present." },
+        { ch: "ch01", dx: "adhd", when: "Impulsivity with attention and activity problems." }
       ]
     }
   ]);

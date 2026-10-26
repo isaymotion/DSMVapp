@@ -2,7 +2,7 @@
    Codes checked against ICD-10-CM through FY2027 (October 1, 2026): unchanged. */
 SP.add("ch01", "highYield", [
   { id: "hy1-overview", topic: "The chapter", items: [
-    "Neurodevelopmental disorders begin in the **developmental period**, typically before school entry.",
+    "Neurodevelopmental disorders begin in the **developmental period**, typically early and often before school entry.",
     "Diagnosis needs both symptoms and **impaired functioning**, because the dimensions shade into typical development.",
     "Neurodevelopmental disorders frequently **co-occur** with one another.",
     "Severity specifiers exist for IDD, ASD, ADHD, specific learning disorder and **stereotypic movement disorder**.",
@@ -51,7 +51,7 @@ SP.add("ch01", "highYield", [
     "The measurement error allowed around an IQ score is about **±5** points.",
     "Inflated IQ scores from out-of-date test norms: the **Flynn** effect.",
     "Learning from repeated testing that inflates scores: **practice** effects.",
-    "An IQ somewhat above 70 does **not** exclude IDD if adaptive deficits are severe.",
+    "An IQ somewhat above 65–75 does **not** exclude IDD if adaptive deficits are severe.",
     "Genetic testing in IDD work-up: karyotype or **chromosomal microarray**.",
     "The US law that replaced “mental retardation” in federal statutes: **Rosa’s Law**.",
     "Gullibility in IDD raises the risk of exploitation and **false confessions**.",
@@ -82,7 +82,7 @@ SP.add("ch01", "highYield", [
     "Global developmental delay is used for children under age **5**.",
     "Global developmental delay applies when the child **cannot undergo** systematic intellectual testing.",
     "Unspecified IDD is used for individuals over age **5**.",
-    "Unspecified IDD is for when sensory or physical impairments or severe problem behavior make assessment **impossible**.",
+    "Unspecified IDD is for when sensory or physical impairments or severe problem behavior make assessment **difficult or impossible**.",
     "Both global developmental delay and unspecified IDD require **reassessment**."
   ] },
   { id: "hy1-comm", topic: "Communication disorders", items: [
@@ -96,7 +96,7 @@ SP.add("ch01", "highYield", [
     "Bilingualism **does not** cause or worsen language disorder.",
     "Language disorder in a bilingual child affects **both** languages.",
     "A verbal–nonverbal discrepancy is **not** required for language disorder.",
-    "Any language loss warrants an EEG, including a **sleep** EEG.",
+    "Language loss at any age warrants assessment that excludes epilepsy, e.g., a routine and **sleep** EEG.",
     "Acquired aphasia with epilepsy: **Landau-Kleffner** syndrome.",
     "At age 2, only about **50%** of a typical child’s speech is understandable.",
     "By age **3**, overall speech should be intelligible.",
@@ -173,7 +173,7 @@ SP.add("ch01", "highYield", [
     "Childhood-onset schizophrenia follows a period of **normal or near-normal** development.",
     "ASD versus IDD alone: ASD if social communication is impaired relative to **nonverbal** skills.",
     "ASD versus personality disorders in adults: the **early developmental course** decides.",
-    "African American children are more often misdiagnosed with adjustment or **conduct** disorder before ASD."
+    "African American children are more often misdiagnosed with adjustment or **conduct** disorder than White children."
   ] },
   { id: "hy1-adhd-criteria", topic: "ADHD criteria", items: [
     "ADHD requires **six** symptoms in a domain under age 17.",
@@ -214,7 +214,7 @@ SP.add("ch01", "highYield", [
     "ODD co-occurs in about **a quarter** of predominantly inattentive presentation.",
     "Conduct disorder co-occurs in about **a quarter** of combined presentation.",
     "Most children with DMDD **also** meet ADHD criteria.",
-    "Manic or hypomanic episodes must last at least **4** days, even in children.",
+    "A mood episode must last at least **4** days (the hypomania minimum) to suggest bipolar disorder, even in children.",
     "Concentration problems in depression occur **only during** the episode.",
     "In children under **6**, PTSD can mimic ADHD.",
     "Intermittent explosive disorder shows serious **aggression** and is rare in childhood.",

@@ -123,7 +123,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "gad", how: "Worries about relationships and nonsocial performance, evaluated or not." },
       { id: "bdd", how: "Social fears solely from appearance beliefs → BDD only." },
       { name: "Avoidant personality disorder", how: "Broader avoidance and a pervasive negative self-concept." },
-      { name: "Autism spectrum disorder", how: "Social communication deficits are core." },
+      { id: "asd", how: "Social communication deficits are core." },
       { id: "mdd", how: "Fear of evaluation from feeling worthless." }
     ],
     pearls: ["In children the anxiety must occur with peers.", "Performance only = no fear of nonperformance situations.", "People wait 15–20 years before seeking treatment.", "Taijin kyofusho: fear of offending or discomforting others."],

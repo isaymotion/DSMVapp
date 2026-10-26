@@ -107,7 +107,7 @@ SP.disorders = (SP.disorders || []).concat([
     differential: [
       { id: "bdd", how: "Removing hair to fix perceived ugliness." },
       { id: "ocd", how: "Pulling as part of symmetry rituals." },
-      { name: "Stereotypic movement disorder", how: "With intellectual disability or autism, when frustrated or excited." },
+      { id: "stereotypic-movement", how: "With intellectual disability or autism, when frustrated or excited." },
       { name: "Alopecia areata and other alopecias", how: "Dermoscopy or biopsy if pulling is denied." }
     ],
     pearls: ["Biting or twisting hair does not count.", "Trichobezoar from swallowed hair.", "Most also have other BFRBs."],

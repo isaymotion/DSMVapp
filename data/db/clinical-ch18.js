@@ -238,7 +238,7 @@
         { ch: "ch18", dx: "avoidant-pd", when: "Wants closeness but fears rejection." },
         { ch: "ch18", dx: "ocpd", when: "Rigid, perfectionistic and controlling." },
         { ch: "ch18", dx: "other-specified-pd", when: "Mixed features without full criteria." },
-        { ch: "ch01", name: "Autism spectrum disorder", when: "Lifelong social communication differences with restricted interests." }
+        { ch: "ch01", dx: "asd", when: "Lifelong social communication differences with restricted interests." }
       ]
     },
     {

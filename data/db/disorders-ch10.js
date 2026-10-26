@@ -90,7 +90,7 @@
         { id: "ocd", how: "Food rituals or preoccupations; both if criteria met." },
         { id: "mdd", how: "Global appetite loss that resolves with mood." },
         { id: "rad", how: "Feeding disturbed by withdrawal from caregivers." },
-        { name: "Autism spectrum disorder", how: "Rigid, sensory-driven eating without ARFID-level impairment." },
+        { id: "asd", how: "Rigid, sensory-driven eating without ARFID-level impairment." },
         { id: "factitious", how: "Exaggerated or caregiver-induced feeding problems." },
         { name: "Picky eating", how: "Transient and developmentally normal." }
       ],

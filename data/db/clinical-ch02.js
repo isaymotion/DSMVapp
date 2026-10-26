@@ -164,7 +164,7 @@
         { ch: "ch02", dx: "schizophrenia", when: "A recent decline: odd beliefs and withdrawal as the **prodrome**." },
         { ch: "ch02", dx: "delusional-disorder", when: "One fixed belief held with full conviction, otherwise ordinary behavior." },
         { ch: "ch02", dx: "other-specified-psychotic", when: "Attenuated psychosis syndrome: psychotic-like symptoms with insight, less severe and transient." },
-        { ch: "ch01", name: "Autism spectrum disorder", when: "Lifelong social communication differences and restricted interests, not a decline." }
+        { ch: "ch01", dx: "asd", when: "Lifelong social communication differences and restricted interests, not a decline." }
       ]
     },
     {

@@ -125,7 +125,7 @@
         { ch: "ch18", dx: "borderline-pd", when: "Shifts over hours, triggered by interpersonal events, with emptiness and fear of abandonment." },
         { ch: "ch04", dx: "dmdd", when: "In children: chronic irritability with frequent severe outbursts, not episodes." },
         { ch: "ch03", dx: "substance-induced-bipolar", when: "Swings tied to stimulant use or withdrawal, or to steroids." },
-        { ch: "ch01", name: "ADHD", when: "Lifelong impulsivity and emotional reactivity, without distinct episodes." }
+        { ch: "ch01", dx: "adhd", when: "Lifelong impulsivity and emotional reactivity, without distinct episodes." }
       ]
     },
     {

@@ -74,7 +74,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "schizotypal-pd", how: "Cognitive-perceptual distortions." },
       { id: "paranoid-pd", how: "Suspiciousness." },
       { id: "ocpd", how: "Detachment from work devotion; capacity for intimacy." },
-      { name: "Autism spectrum disorder", how: "Stereotyped behaviors and interests." }
+      { id: "asd", how: "Stereotyped behaviors and interests." }
     ],
     pearls: ["No wish for closeness.", "“Emotional freezing” in migrants is not schizoid PD."],
     cmp: { symptoms: "Detached, solitary, cold, indifferent", exclusions: "Psychosis, autism, medical", prevalence: "1.3%", course: "Stable" },

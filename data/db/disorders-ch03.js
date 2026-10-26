@@ -32,7 +32,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "bipolar-due-to-amc", how: "Mania caused by Cushing’s disease, MS, stroke, TBI." },
       { id: "substance-induced-bipolar", how: "Mania caused by stimulants, PCP or steroids; persistent antidepressant-emergent mania is bipolar I." },
       { id: "schizoaffective-disorder", how: "≥2 weeks of psychosis without a mood episode." },
-      { name: "ADHD", how: "Persistent symptoms from before age 12, not episodes." },
+      { id: "adhd", how: "Persistent symptoms from before age 12, not episodes." },
       { name: "Disruptive mood dysregulation disorder", how: "Persistent severe irritability without a distinct manic episode." },
       { name: "Borderline personality disorder", how: "Lability without a distinct episode or increase over baseline." }
     ],

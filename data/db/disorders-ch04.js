@@ -24,7 +24,7 @@ SP.disorders = (SP.disorders || []).concat([
       { name: "Oppositional defiant disorder", how: "Lacks severe outbursts plus persistent mood disruption; only ~15% with ODD meet DMDD; if both, diagnose DMDD only." },
       { name: "Intermittent explosive disorder", how: "No persistent irritability between outbursts; 3 months suffice; never diagnosed with DMDD." },
       { id: "mdd", how: "Irritability only during a major depressive episode → MDD instead." },
-      { name: "Autism spectrum disorder", how: "Outbursts when routines are disturbed are secondary to autism." }
+      { id: "asd", how: "Outbursts when routines are disturbed are secondary to autism." }
     ],
     pearls: ["Created to curb overdiagnosis of pediatric bipolar disorder.", "With ODD or IED, keep DMDD; with bipolar disorder, drop DMDD.", "Comorbidity is extremely high; DMDD alone is rare."],
     cmp: { symptoms: "Outbursts ≥3/week + irritable mood between", exclusions: "Bipolar disorder; ODD and IED not diagnosed with it; outbursts only in MDE, anxiety or autism contexts", prevalence: "2.5%–8.2% (community samples of children)", course: "Half persist at 1 year; later depression and anxiety" },

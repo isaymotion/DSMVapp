@@ -4,10 +4,10 @@
    and the APA DSM-5-TR updates of September 2022–2025: no changes for this chapter. Treatment notes, rating scales
    and other clinical teaching are outside the DSM and labeled as such. */
 SP.add("ch01", "guide", {
-  intro: "The neurodevelopmental disorders begin in the **developmental period**, usually before school entry, and combine **developmental deficits or differences** with **impaired functioning**; symptoms alone are not enough (p. 35). They range from narrow problems (one academic skill, motor coordination) to global ones (**intellectual developmental disorder**). They lie on **dimensions** without a sharp boundary from typical development, and they **co-occur** constantly: autism with intellectual disability, ADHD with specific learning disorder, tics with OCD. The chapter covers **intellectual developmental disorders**, the **communication disorders**, **autism spectrum disorder**, **ADHD**, **specific learning disorder**, the **motor disorders** (developmental coordination disorder, stereotypic movement disorder, the **tic disorders**) and the residual categories. Most of the rules are about **age** (onset before 12 for ADHD, before 18 for tics, under 5 for global developmental delay), **thresholds** (IQ about 70 ± 5, six or five ADHD symptoms, 1.5 SD on achievement tests) and **when two diagnoses are allowed**. Use the [[helper:neurodevelopmental|neurodevelopmental helper]] and the [[helper:tics|movement and tic helper]] to practice the reasoning.",
+  intro: "The neurodevelopmental disorders begin in the **developmental period**, typically early in development and often before school entry, and combine **developmental deficits or differences** with **impaired functioning**; symptoms alone are not enough (p. 35). They range from narrow problems (one academic skill, motor coordination) to global ones (**intellectual developmental disorder**). They lie on **dimensions** without a sharp boundary from typical development, and they **co-occur** constantly: autism with intellectual disability, ADHD with specific learning disorder, tics with OCD. The chapter covers **intellectual developmental disorders**, the **communication disorders**, **autism spectrum disorder**, **ADHD**, **specific learning disorder**, the **motor disorders** (developmental coordination disorder, stereotypic movement disorder, the **tic disorders**) and the residual categories. Most of the rules are about **age** (several symptoms before 12 for ADHD, before 18 for tics, under 5 for global developmental delay), **thresholds** (IQ about 70 ± 5, six or five ADHD symptoms, 1.5 SD on achievement tests) and **when two diagnoses are allowed**. Use the [[helper:neurodevelopmental|neurodevelopmental helper]] and the [[helper:tics|movement and tic helper]] to practice the reasoning.",
   objectives: [
     "State the three criteria for **intellectual developmental disorder**, why severity is graded by **adaptive functioning** rather than IQ, and the IQ band of about **65–75** (70 ± 5).",
-    "Use **global developmental delay** (under age 5) and **unspecified intellectual developmental disorder** (over age 5, testing impossible) correctly; both share the **F88** / **F79** codes with other diagnoses, so know which is which.",
+    "Use **global developmental delay** (under age 5) and **unspecified intellectual developmental disorder** (over age 5, testing impossible) correctly; **F88** is shared with other specified neurodevelopmental disorder, and **F79** (unspecified IDD) must not be confused with **F89** (unspecified neurodevelopmental disorder).",
     "Tell the four **communication disorders** apart: language (vocabulary, grammar, discourse), speech sound (articulation), childhood-onset fluency (stuttering) and **social (pragmatic)** communication disorder.",
     "State the **autism spectrum disorder** criteria (**all three** of A, **two of four** of B), the separate severity levels for each domain, every specifier including **with catatonia**, and the rule that ASD supersedes social (pragmatic) communication disorder.",
     "State the **ADHD** criteria: **six** symptoms (**five** from age 17), **6 months**, several symptoms **before 12**, **two or more settings**, the three presentations with their **F90.x** codes, partial remission and severity.",
@@ -38,7 +38,7 @@ SP.add("ch01", "guide", {
               "Autism spectrum disorder",
               ["ASD", "[[dx:asd|Autism spectrum disorder]]", "F84.0", "56–68"],
               "Attention-deficit/hyperactivity disorder",
-              ["ADHD", "[[dx:adhd|ADHD]], combined · inattentive · hyperactive/impulsive", "F90.2 · F90.0 · F90.1", "68–76"],
+              ["ADHD", "[[dx:adhd|ADHD]], combined · inattentive · hyperactive/impulsive", "F90.2 · F90.0 · F90.1", "68–75"],
               ["ADHD", "[[dx:other-specified-adhd|Other specified ADHD]] · [[dx:unspecified-adhd|unspecified ADHD]]", "F90.8 · F90.9", "76"],
               "Specific learning disorder",
               ["SLD", "[[dx:sld|Specific learning disorder]]: reading · written expression · mathematics", "F81.0 · F81.81 · F81.2", "76–85"],
@@ -107,8 +107,8 @@ SP.add("ch01", "guide", {
           pages: "37–42",
           blocks: [
             { type: "criteria", title: "Intellectual developmental disorder (intellectual disability) in brief", code: "F70–F73", pages: "37–38", items: [
-              ["A", "**Intellectual deficits** (reasoning, problem solving, planning, abstract thinking, judgment, academic learning, learning from experience), confirmed by **both** clinical assessment **and** individualized, standardized **intelligence testing**."],
-              ["B", "**Adaptive deficits**: failure to meet developmental and sociocultural standards for **personal independence and social responsibility**. Without ongoing support, they limit one or more activities of daily life (communication, social participation, independent living) across **multiple environments** (home, school, work, community)."],
+              ["A", "**Intellectual deficits** (reasoning, problem solving, planning, abstract thinking, judgment, academic learning, learning from experience), confirmed both clinically and by individually administered, standardized **IQ testing**."],
+              ["B", "**Adaptive deficits**: the person falls short of age and cultural expectations for **independence and social responsibility**; unless supported, one or more activities of daily life are limited (communication, social participation, independent living) across **multiple environments** (home, school, work, community)."],
               ["C", "**Onset** of the intellectual and adaptive deficits **during the developmental period**."]
             ], specifiers: [["Mild (F70)", "Support for **complex** daily tasks"], ["Moderate (F71)", "Long teaching for self-care; **considerable** support at work"], ["Severe (F72)", "Support for **all** daily activities; supervision at all times"], ["Profound (F73)", "**Dependent on others** for all care"]], note: "The name matches ICD-11 (**disorders of intellectual development**); “intellectual disability” stays in parentheses. In the United States, **Rosa’s Law** (2010) replaced “mental retardation” with “intellectual disability” in federal law (p. 38)." },
             { type: "defs", title: "Reading the criteria (pp. 41–42)", items: [
@@ -152,7 +152,7 @@ SP.add("ch01", "guide", {
               ["**Profound** (F73)", "Concepts about the **physical world**, not symbols; may match and sort objects", "Very limited understanding of symbolic communication; expresses wishes **nonverbally**", "**Dependent on others for all** physical care, health and safety; may help with simple tasks; sensory and motor impairments common"]
             ] },
             { type: "flow", title: "Language as a quick severity marker (pp. 40–41)", steps: [["Mild", "Concrete or immature, but conversational"], ["Moderate", "Spoken language is the main tool, but **much less complex**"], ["Severe", "**Single words or phrases**; augmentative communication"], ["Profound", "**Nonsymbolic**: gestures and emotional cues"]], note: "A teaching shortcut, not a DSM rule: always rate all three domains." },
-            { type: "callout", kind: "pearl", title: "Mild IDD hides until school", text: "Severe forms show **delayed motor, language and social milestones in the first 2 years**; **mild** forms may not be recognized until **school age**, when academic learning gets hard (p. 43). Mild is by far the most common level." },
+            { type: "callout", kind: "pearl", title: "Mild IDD hides until school", text: "Severe forms show **delayed motor, language and social milestones in the first 2 years**; **mild** forms may not be recognized until **school age**, when academic learning gets hard (p. 43). (Outside the DSM: mild is the most common level.)" },
             { type: "case", title: "Clinical vignette: the helpful neighbor", text: "A 19-year-old man reads at about a third-grade level, cannot budget his allowance and was persuaded by acquaintances to sign for a loan. He dresses and bathes independently, holds a job stacking shelves and has friends at church. Testing gives a full-scale IQ of 66, and a standardized adaptive measure shows deficits in conceptual and social skills. School records describe special education from age 8.", point: "Intellectual and adaptive deficits with onset in childhood: **intellectual developmental disorder**. Independent self-care, supported complex tasks and **gullibility** fit **mild (F70)**. Severity follows the adaptive picture, not the IQ." }
           ]
         },
@@ -218,7 +218,7 @@ SP.add("ch01", "guide", {
               { title: "ICD-11", color: "guide", points: ["**Disorders of intellectual development**.", "A **metasyndrome** of the developmental period, analogous to dementia later in life.", "Four subtypes: mild, moderate, severe, profound."] },
               { title: "AAIDD", color: "case", points: ["Uses **intellectual disability**.", "**Multidimensional**, based on the disability construct.", "Emphasizes a **profile of supports** rather than severity specifiers."] }
             ] },
-            { type: "callout", kind: "pearl", title: "Behavior change in a nonverbal adult with IDD", text: "New aggression, self-injury, sleep or appetite change can be **depression**, **anxiety**, **pain** (dental, constipation, reflux) or a **medical illness** the person cannot describe. Rule these out before calling it “behavioral” (pp. 45–46)." }
+            { type: "callout", kind: "pearl", title: "Behavior change in a nonverbal adult with IDD", text: "New aggression, self-injury, sleep or appetite change can be **depression**, **anxiety**, **pain** (dental, constipation, reflux) or a **medical illness** the person cannot describe. Rule these out before calling it “behavioral” (pp. 46, 68, 91)." }
           ]
         },
         {
@@ -254,7 +254,7 @@ SP.add("ch01", "guide", {
               ["A", "Persistent difficulty **acquiring and using language** across modalities (spoken, written, sign) from deficits in **comprehension or production**, including:", ["**reduced vocabulary**;", "**limited sentence structure** (grammar and morphology);", "**impaired discourse** (connecting sentences to explain, describe or converse)."]],
               ["B", "Abilities **substantially and quantifiably below** age expectations, limiting communication, social participation, academic achievement or occupational performance."],
               ["C", "Onset in the **early developmental period**."],
-              ["D", "Not due to **hearing or other sensory impairment**, motor dysfunction or another medical or neurological condition, and not better explained by **IDD** or **global developmental delay**."]
+              ["D", "Not explained by **hearing or other sensory loss**, a motor problem, or a medical or neurological cause, nor by **IDD** or **global developmental delay**."]
             ] },
             { type: "list", title: "What it looks like (pp. 47–48)", items: [
               "Late **first words and phrases**; a small, less varied vocabulary; short, simple sentences with grammatical errors, especially in the **past tense**.",
@@ -293,7 +293,7 @@ SP.add("ch01", "guide", {
               ["A", "Persistent difficulty with **speech sound production** that interferes with **intelligibility** or prevents verbal communication of messages."],
               ["B", "Limits effective communication, interfering with social participation, academic achievement or occupational performance."],
               ["C", "Onset in the **early developmental period**."],
-              ["D", "Not due to congenital or acquired conditions such as **cerebral palsy, cleft palate, deafness or hearing loss, TBI** or other medical or neurological conditions."]
+              ["D", "Not caused by an inborn or acquired condition (e.g., **cerebral palsy, cleft palate, hearing loss, TBI**) or another medical or neurological cause."]
             ] },
             { type: "table", caption: "Intelligibility milestones (pp. 50–51)", head: ["Age", "Typical speech"], rows: [
               ["**2 years**", "Only about **50%** understandable"],
@@ -349,10 +349,10 @@ SP.add("ch01", "guide", {
               ["[[dx:sld|Specific learning disorder, reading]]", "Children who stutter read aloud **slowly** on timed tests; slow oral reading may not reflect true reading ability"],
               ["Bilingualism", "Dysfluency from learning a new language vs a disorder, which appears in **both languages**"],
               ["Medication side effect", "Temporal link to the drug"],
-              ["**Adult-onset dysfluency**", "Onset **during or after adolescence**: not a neurodevelopmental disorder; linked to neurological, medical or mental disorders (**F98.5**)"],
+              ["**Adult-onset dysfluency**", "Onset **during or after adolescence**: not a neurodevelopmental disorder. When due to stroke, TBI or another condition, record it with that condition (not a DSM diagnosis); **F98.5** is for later-onset cases without such a cause"],
               ["[[dx:tourette|Tourette’s disorder]]", "Vocal tics differ from stuttered repetitions in **nature and timing**"]
             ] },
-            { type: "callout", kind: "pearl", title: "Comorbidity", text: "ADHD, ASD, IDD, language disorder or specific learning disorder, **seizure disorders**, **social anxiety disorder**, speech sound disorder and other developmental disorders (pp. 53–54). Ask about **social anxiety** in every adolescent who stutters." }
+            { type: "callout", kind: "pearl", title: "Comorbidity", text: "Other developmental problems (ADHD, ASD, IDD, speech sound, language and learning disorders), **social anxiety disorder** and **seizure disorders** (pp. 53–54). (Clinical teaching: ask about social anxiety in adolescents who stutter.)" }
           ]
         },
         {
@@ -451,13 +451,13 @@ SP.add("ch01", "guide", {
               ["Restricted interests", "A toddler attached to a **pan or a piece of string**; a child preoccupied with **vacuum cleaners**; an adult writing out **timetables** for hours"],
               ["Sensory", "Extreme response to **sounds or textures**, excessive smelling or touching, **fascination with lights or spinning objects**, indifference to **pain, heat or cold**; rituals or restriction around **food** (may be the presenting feature)"]
             ] },
-            { type: "callout", kind: "pearl", title: "Masking and camouflaging", text: "People without intellectual or language impairment may **suppress** repetitive behavior in public; rocking or finger flicking can be **self-soothing**. Many **mask** social difficulties at a cost: social contact is **exhausting**, concentration suffers and self-esteem drops. This lowers recognition, **perhaps especially in adult women**. Use longer assessments, naturalistic observation, and ask about the **toll** of social interaction (p. 61)." },
+            { type: "callout", kind: "pearl", title: "Masking and camouflaging", text: "People without intellectual or language impairment may **suppress** repetitive behavior in public; rocking or finger flicking can be **self-soothing**. Many **mask** social difficulties at a cost: social contact is **exhausting**, concentration suffers and self-esteem drops. This lowers recognition, **perhaps especially in adult women**. Use longer assessments, naturalistic observation, and ask about the **toll** of social interaction (pp. 61–62)." },
             { type: "defs", title: "Associated features (p. 62)", items: [
-              ["Uneven abilities", "Even with average or high IQ, the profile is **uneven**; **adaptive skills are typically below measured IQ**."],
+              ["Uneven abilities", "Even with average or high IQ, the profile is **uneven**; the gap between IQ and adaptive skills is often **large** (p. 62); adaptive skills are typically **below measured IQ** (p. 65)."],
               ["Cognition", "**Theory-of-mind** deficits are common but not universal; **executive** deficits are common but nonspecific; weak **central coherence** (missing the big picture, overfocusing on detail)."],
               ["Motor", "Odd gait, clumsiness, **toe walking**."],
               ["Behavior", "**Self-injury** (head banging, wrist biting); disruptive behavior more common than in other disorders, including IDD."],
-              ["Catatonia", "Catatonic-like slowing and “**freezing**” mid-action is common; a full catatonic episode (mutism, posturing, grimacing, **waxy flexibility**) can occur, with the highest risk in **adolescence**."]
+              ["Catatonia", "Some show catatonic-like slowing and “**freezing**” mid-action, usually short of a catatonic episode; a full catatonic episode (mutism, posturing, grimacing, **waxy flexibility**) can occur, with the highest risk in **adolescence**."]
             ] },
             { type: "compare", title: "Sex and gender (p. 65)", items: [
               { title: "Recognition gap", color: "case", points: ["Diagnosed **3–4 times** more often in males; **later** in females.", "Clinic females more often have **IDD and epilepsy**, suggesting girls without them go **unrecognized**."] },
@@ -473,19 +473,19 @@ SP.add("ch01", "guide", {
           blocks: [
             { type: "table", caption: "Prevalence and sex ratio (pp. 62–63, 65)", head: ["Item", "Figure"], rows: [
               ["United States", "**1%–2%**, similar in children and adults"],
-              ["US by group", "Lower reported in **African American (1.1%)** and **Latinx (0.8%)** vs **White (1.3%)** children, likely from under- and misdiagnosis"],
+              ["US by group", "Lower reported in **African American (1.1%)** and **Latinx (0.8%)** vs **White (1.3%)** children, even after accounting for socioeconomic resources; reported rates may be affected by misdiagnosis, delayed diagnosis or underdiagnosis"],
               ["Global", "Approaching **1%**; median **0.62%**, little variation by region"],
               ["Male:female", "About **3:1** in well-ascertained samples; **3–4×** more often diagnosed in males"]
             ] },
             { type: "update", kind: "post", year: "2025", title: "CDC ADDM: about 1 in 31 eight-year-olds", source: "Shaw KA et al., MMWR Surveillance Summaries 74(SS-2), April 17, 2025 (2022 surveillance year, 16 US sites)", text: "The CDC’s Autism and Developmental Disabilities Monitoring Network found ASD in **32.2 per 1,000** (about **1 in 31**) 8-year-olds in 2022, up from 1 in 36 in 2020, ranging from 9.7 per 1,000 to 53.1 per 1,000 across sites. Boys were about **3.4 times** as likely as girls. Prevalence was now **lowest among non-Hispanic White** children (27.7 per 1,000) and higher among Asian or Pacific Islander, American Indian or Alaska Native, Black and Hispanic children, the reverse of the pattern described in the 2022 manual. Children born in 2018 were identified earlier than those born in 2014. Rising figures largely reflect **better identification**; the DSM’s 1%–2% describes earlier surveys of the whole population." },
-            { type: "flow", vertical: true, title: "Typical onset and course (pp. 63–64)", steps: [["0–12 months", "Lack of social interest in some infants; earlier signs if delays are severe", "guide"], ["12–24 months", "**Usually recognized**; declines in social or language skills typically occur here", "case"], ["Preschool and early school", "Symptoms **most marked**", "dx"], ["Later childhood", "Gains in some areas (e.g., more social interest)", "hy"], ["Adolescence", "Most improve, a few deteriorate; **catatonia** risk peaks", "drug"], ["Adulthood", "Learning continues; masking; first diagnosis is common", "pharm"]] },
+            { type: "flow", vertical: true, title: "Typical onset and course (pp. 63–64)", steps: [["0–12 months", "Lack of social interest in some infants; earlier signs if delays are severe", "guide"], ["12–24 months", "**Usually recognized**; declines in social or language skills typically occur here", "case"], ["Preschool and early school", "Symptoms **most marked**", "dx"], ["Later childhood", "Gains in some areas (e.g., more social interest)", "hy"], ["Adolescence", "Most improve, a few deteriorate; **catatonia** risk peaks", "drug"], ["Adulthood", "Learning continues; masking; some are first diagnosed now", "pharm"]] },
             { type: "list", title: "Development and course (pp. 63–64)", items: [
-              "Prospective studies show onset is usually tied to **declines** in critical social and communication behaviors in the **first 2 years**, which is unusual in other disorders and a useful **marker** of ASD.",
+              "Prospective studies show onset is usually marked by a **loss** of key social and communication behaviors during the **first 2 years**, which is unusual in other disorders and a useful **marker** of ASD.",
               "**Regression after at least 2 years of normal development** (formerly **childhood disintegrative disorder**) is rare and needs medical work-up for **continuous spike-waves during slow-wave sleep** and **Landau-Kleffner syndrome**, especially if self-care, toileting or motor skills are lost too.",
               "First signs often: **delayed language** with little social interest, pulling people by the hand without looking at them, carrying toys without playing, knowing the alphabet but **not answering to his name**; **deafness** is often suspected and ruled out.",
               "Preschoolers commonly like repetition, so judge restricted behavior by **type, frequency and intensity** (lining up objects for hours daily, distress if one is moved).",
               "ASD is **not degenerative**: learning and compensation continue throughout life.",
-              "**First diagnosis in adulthood** is common (prompted by a child’s diagnosis or a breakdown at work or home). A compelling report of **sustained reciprocal friendships and good nonverbal skills** throughout childhood makes ASD much less likely, but **missing** history alone does not rule it out."
+              "Some people are **first diagnosed in adulthood** (prompted by a child’s diagnosis or a breakdown at work or home). A compelling report of **sustained reciprocal friendships and good nonverbal skills** throughout childhood makes ASD much less likely, but **missing** history alone does not rule it out."
             ] },
             { type: "table", caption: "Risk and prognostic factors (p. 64)", head: ["Domain", "Detail"], rows: [
               ["Best prognostic factors", "Presence or absence of **IDD** and **language impairment** (**functional language by age 5** is a good sign), and additional mental health problems"],
@@ -495,13 +495,13 @@ SP.add("ch01", "guide", {
               ["Known genetic cause", "Up to **15%** of cases (de novo CNVs or gene mutations), **not fully penetrant**; most risk is **polygenic**"]
             ] },
             { type: "update", kind: "post", year: "2025", title: "Acetaminophen in pregnancy and leucovorin", source: "FDA announcement, September 22, 2025; ACOG and AAP statements, September 2025; Ahlqvist VH et al., JAMA 2024;331:1205–14", text: "In September 2025 the FDA began a **label change** for acetaminophen noting a possible **association** between use in pregnancy and later autism or ADHD, while stating that **a causal relationship has not been established**. ACOG said the change is not supported by the full body of evidence, and a sibling-controlled Swedish cohort of about 2.5 million children found **no association** once family factors were accounted for. The FDA also moved to relabel **leucovorin** (folinic acid) for **cerebral folate deficiency**; this is not an approval for autism itself. Expect residents and families to ask about both." },
-            { type: "callout", kind: "culture", text: "Social norms differ, but people with ASD are impaired **against the norms of their own culture**. Diagnosis is often **delayed** in socially oppressed and racialized groups, and African American children are more often **misdiagnosed** with adjustment or conduct disorder (p. 65)." },
+            { type: "callout", kind: "culture", text: "Social norms differ, but people with ASD are impaired **against the norms of their own culture**. Diagnosis is often **delayed** in socially oppressed and racialized groups, and African American children receive an adjustment or conduct disorder diagnosis in error more often than White children (p. 65)." },
             { type: "list", title: "Suicide and functional consequences (pp. 65–66)", items: [
               "Higher risk of **suicide death**; children with impaired social communication had more suicidal thoughts, plans and self-harm with intent **by age 16**; adolescents and young adults have more **attempts**, even after adjusting for comorbidity.",
               "Routines, aversion to change and sensory sensitivities disrupt **eating, sleeping**, haircuts and dental care.",
               "Planning and organization problems hurt achievement **even with above-average IQ**; adult independence and employment are often poor, even without IDD.",
               "Premature mortality: deaths from **injury, poisoning and suicide** are higher. **Drowning is the leading cause of accidental death** in children with ASD.",
-              "**Vocational rehabilitation** improves competitive employment for transition-age youth."
+              "**Vocational rehabilitation** improves competitive employment for transition-age youth (p. 64)."
             ] }
           ]
         },
@@ -516,7 +516,7 @@ SP.add("ch01", "guide", {
               ["[[dx:language-disorder|Language disorder]]", "No abnormal **nonverbal** communication and no restricted, repetitive behavior", "Can co-occur"],
               ["[[dx:spcd|Social (pragmatic) communication disorder]]", "No restricted, repetitive behavior **now or in the past**", "**No**: ASD **supersedes** SPCD"],
               ["[[dx:selective-mutism|Selective mutism]]", "Early development normal; communicates well in some settings; **reciprocity intact** where mute; no repetitive behavior", "Rarely relevant"],
-              ["[[dx:stereotypic-movement|Stereotypic movement disorder]]", "Stereotypies are **part of ASD**", "**Only** if stereotypies cause **self-injury** and become a **focus of treatment**"],
+              ["[[dx:stereotypic-movement|Stereotypic movement disorder]]", "Stereotypies are **part of ASD**", "Only with **self-injury** or stereotypies severe enough to be a **focus of treatment** (p. 91; p. 67 words it “and”)"],
               ["**Rett syndrome**", "Autistic features during the **regressive phase (ages 1–4)** in girls usually fade afterward", "ASD only if **all** criteria are met"],
               ["Anxiety disorders", "Withdrawal and repetitive behavior can be **anxiety**; in ASD, **specific phobia** up to **30%**, social anxiety and agoraphobia up to **17%**", "**Yes**"],
               ["[[dx:ocd|OCD]]", "OCD compulsions answer **intrusive thoughts** to relieve anxiety; ASD repetitive behavior may be **pleasurable and reinforcing**", "**Yes**"],
@@ -530,7 +530,7 @@ SP.add("ch01", "guide", {
               "In nonverbal people, changes in sleep, eating or challenging behavior should prompt a search for **anxiety, depression** or **pain** (medical or dental).",
               "Common medical conditions: **epilepsy** and **constipation**."
             ] },
-            { type: "case", title: "Clinical vignette: the engineer’s first diagnosis", text: "A 34-year-old engineer comes after his son is diagnosed with autism. He has always found conversation exhausting, rehearses small talk, eats the same lunch daily and becomes distressed if his commute changes. As a boy he memorized bus timetables, had one friend who shared that interest and was teased for his flat voice. His marriage is strained because his wife says he never notices how she feels. He has no hallucinations or delusions.", point: "Lifelong reciprocity, nonverbal and relationship deficits (A: 3 of 3) with sameness and restricted interests (B: 2 of 4), childhood onset and current impairment: **autism spectrum disorder (F84.0)**, likely **level 1** in both domains, **without** intellectual or language impairment. Adult diagnosis prompted by a child’s diagnosis is common." }
+            { type: "case", title: "Clinical vignette: the engineer’s first diagnosis", text: "A 34-year-old engineer comes after his son is diagnosed with autism. He has always found conversation exhausting, rehearses small talk, eats the same lunch daily and becomes distressed if his commute changes. As a boy he memorized bus timetables, had one friend who shared that interest and was teased for his flat voice. His marriage is strained because his wife says he never notices how she feels. He has no hallucinations or delusions.", point: "Lifelong reciprocity, nonverbal and relationship deficits (A: 3 of 3) with sameness and restricted interests (B: 2 of 4), childhood onset and current impairment: **autism spectrum disorder (F84.0)**, likely **level 1** in both domains, **without** intellectual or language impairment. A child’s diagnosis can prompt a parent’s first assessment." }
           ]
         }
       ]
@@ -544,10 +544,10 @@ SP.add("ch01", "guide", {
           pages: "68–70, 76",
           blocks: [
             { type: "criteria", title: "Attention-deficit/hyperactivity disorder in brief", code: "F90.x", pages: "68–70", items: [
-              ["A", "A persistent pattern of **inattention and/or hyperactivity-impulsivity** that interferes with functioning or development:", ["**Inattention**: **six or more** of nine symptoms for at least **6 months**, inconsistent with developmental level and directly affecting social and academic or occupational activities;", "**Hyperactivity-impulsivity**: **six or more** of nine symptoms for at least **6 months**, same conditions."], "From **age 17**, **five** symptoms are enough in either domain. Symptoms must not be **solely** oppositional behavior, defiance, hostility or failure to understand instructions."],
+              ["A", "An ongoing pattern of **inattention and/or hyperactivity-impulsivity** that disrupts functioning or development:", ["**Inattention**: **six or more** of nine symptoms for at least **6 months**, inconsistent with developmental level and directly affecting social and academic or occupational activities;", "**Hyperactivity-impulsivity**: **six or more** of nine symptoms for at least **6 months**, same conditions."], "From **age 17**, **five** symptoms are enough in either domain. Symptoms must not be **solely** oppositional behavior, defiance, hostility or failure to understand instructions."],
               ["B", "**Several** symptoms present **before age 12**."],
               ["C", "**Several** symptoms present in **two or more settings** (home, school or work, friends or relatives, other activities)."],
-              ["D", "Clear evidence that symptoms **interfere with or reduce the quality of** social, academic or occupational functioning."],
+              ["D", "Clear evidence that symptoms **impair or lower the quality of** social, academic or occupational functioning."],
               ["E", "Not **exclusively** during schizophrenia or another psychotic disorder, and not better explained by another mental disorder (mood, anxiety, dissociative, personality, substance intoxication or withdrawal)."]
             ], specifiers: [
               ["Combined (F90.2)", "**Combined presentation**: A1 **and** A2 met for the past 6 months"],
@@ -569,7 +569,7 @@ SP.add("ch01", "guide", {
               ["[[dx:unspecified-adhd|Unspecified ADHD]]", "Subthreshold, reason **not specified** or information insufficient", "F90.9"]
             ] },
             { type: "callout", kind: "exam", title: "Presentation is about the past 6 months", text: "A child with combined presentation who at 16 has **8 inattentive** but only **3** hyperactive symptoms now has **predominantly inattentive presentation (F90.0)**. If he had fallen to **4** inattentive symptoms with continuing impairment, the specifier would be **in partial remission**. The diagnosis is not lost when the presentation changes." },
-            { type: "case", title: "Clinical vignette: the girl who daydreams", text: "A 9-year-old girl’s teacher says she stares out of the window, makes careless errors, loses her pencils and books and never finishes worksheets; her mother reports the same with chores, and she forgets what she was told to do. She is not disruptive, sits still and waits her turn. This has been true since first grade. Her grades are slipping, and testing shows average IQ and reading at grade level.", point: "Six or more inattentive symptoms, few hyperactive ones, onset before 12, home and school, impairing: **ADHD, predominantly inattentive presentation (F90.0)**. Girls more often present this way and are diagnosed later." }
+            { type: "case", title: "Clinical vignette: the girl who daydreams", text: "A 9-year-old girl’s teacher says she stares out of the window, makes careless errors, loses her pencils and books and never finishes worksheets; her mother reports the same with chores, and she forgets what she was told to do. She is not disruptive, sits still and waits her turn. This has been true since first grade. Her grades are slipping, and testing shows average IQ and reading at grade level.", point: "Six or more inattentive symptoms, few hyperactive ones, onset before 12, home and school, impairing: **ADHD, predominantly inattentive presentation (F90.0)**. Females are more likely than males to present with mainly inattentive features (p. 72)." }
           ]
         },
         {
@@ -652,7 +652,7 @@ SP.add("ch01", "guide", {
               ["Sleep", "**A quarter to a half** report sleep problems: insomnia, circadian disorders, **sleep-disordered breathing**, **restless legs**; daytime sleepiness may meet hypersomnolence disorder"],
               ["Medical", "**Allergy and autoimmune** disorders, **epilepsy**"]
             ] },
-            { type: "callout", kind: "key", title: "Ask about sleep and trauma first", text: "Before labeling inattention as ADHD, screen for **sleep-disordered breathing**, **trauma**, **anxiety**, **hearing or vision problems**, **substance use** and **medications**. Then gather symptoms from **two settings** and check that several were present **before 12** (pp. 72–75)." }
+            { type: "callout", kind: "key", title: "Practical checklist (clinical teaching drawn from pp. 71–75)", text: "Before labeling inattention as ADHD, screen for **sleep-disordered breathing**, **trauma**, **anxiety**, **hearing or vision problems**, **substance use** and **medications**. Then gather symptoms from **two settings** and check that several were present **before 12** (pp. 72–75)." }
           ]
         }
       ]
@@ -669,7 +669,7 @@ SP.add("ch01", "guide", {
               ["A", "Difficulty learning and using academic skills, with **at least one** of six symptoms persisting **at least 6 months despite interventions** targeting them:", ["**inaccurate or slow, effortful word reading**;", "trouble understanding **what is read**;", "**spelling** difficulty;", "**written expression** difficulty (grammar, punctuation, organization, clarity);", "trouble with **number sense, number facts or calculation**;", "trouble with **mathematical reasoning**."]],
               ["B", "Affected skills are **substantially and quantifiably below** expectations for **chronological age**, interfering with school, work or daily activities, confirmed by **individually administered standardized achievement tests** and comprehensive assessment.", [], "From **age 17**, a documented **history** of impairing learning difficulty can replace the standardized assessment."],
               ["C", "Begins in the **school-age years**, though it may not show fully until demands exceed capacity (**timed tests**, long reports on tight deadlines, heavy loads)."],
-              ["D", "Not better accounted for by **intellectual disability**, uncorrected **vision or hearing**, other mental or neurological disorders, **psychosocial adversity**, lack of proficiency in the **language of instruction**, or **inadequate instruction**."]
+              ["D", "Not explained by **IDD**, uncorrected **vision or hearing**, another mental or neurological disorder, **adversity**, limited command of the **language of instruction**, or **poor teaching**."]
             ], specifiers: [
               ["Reading (F81.0)", "**With impairment in reading**: Word reading accuracy; reading rate or fluency; reading comprehension. **Dyslexia** is an alternative term for the decoding, word-recognition and spelling pattern."],
               ["Writing (F81.81)", "**With impairment in written expression**: Spelling accuracy; grammar and punctuation; clarity or organization."],
@@ -807,7 +807,7 @@ SP.add("ch01", "guide", {
               ["Simple stereotypies in young typical children", "**5%–19%** (UK, US)"],
               ["Complex stereotypies", "About **3%–4%**"],
               ["IDD (high-income countries)", "**4%–16%** have stereotypy and self-injury; higher in **severe** IDD"],
-              ["IDD in residential facilities", "**10%–15%** may have stereotypic movement disorder with self-injury"],
+              ["IDD in residential facilities", "Self-injurious stereotypic movement disorder in **10%–15%**"],
               ["Onset of complex stereotypies", "About **80% before 24 months**, 12% at 24–35 months, 8% at 36 months or later"],
               ["Anatomy", "Reduced **putamen** volume; premotor–posterior putamen habit circuits"]
             ] },
@@ -858,11 +858,11 @@ SP.add("ch01", "guide", {
               ["**Simple**", "Eye blinks, grimaces, shoulder shrugs, extending a limb", "Throat clearing, sniffing, chirps, barks, grunts"],
               ["**Complex**", "Combinations (head turn plus shrug), purposeful-looking gestures; **echopraxia** (imitating movements); **copropraxia** (obscene or taboo gestures)", "Words or partial words: **palilalia** (repeating one’s own words), **echolalia** (repeating the last heard word), **coprolalia** (obscenities or slurs)"]
             ] },
-            { type: "callout", kind: "pearl", title: "Coprolalia is uncommon and has no prosody", text: "Coprolalia is an **abrupt, sharp bark or grunt** utterance, lacking the prosody of ordinary angry speech (p. 94). Most people with Tourette’s **never** have it; **eye blinking** is the classic first tic. Talking about tics, or seeing someone else’s gesture, can **trigger** tics, which teachers or police may misread as deliberate." },
+            { type: "callout", kind: "pearl", title: "Coprolalia lacks normal prosody", text: "Coprolalia is an **abrupt, sharp bark or grunt** utterance, lacking the prosody of ordinary angry speech (p. 94). (Outside the DSM: most people with Tourette’s never have coprolalia.) **Eye blinking** is characteristic as a first tic. Talking about tics, or seeing someone else’s gesture, can **trigger** tics, which teachers or police may misread as deliberate." },
             { type: "defs", title: "The premonitory urge (pp. 94–95)", items: [
               ["What", "A localized uncomfortable sensation **before** the tic, and an **urge** to tic."],
-              ["Consequence", "Tics feel **involuntary**, yet many can be **suppressed** for a while; some must be done **“just right”** or repeated; **relief** follows."],
-              ["Why it matters", "It separates tics from **stereotypies, myoclonus and chorea**, and it is the basis of behavioral treatment (outside the DSM)."]
+              ["Consequence", "Tics feel **involuntary**, yet some can be **suppressed** for varying lengths of time; some must be done **“just right”** or repeated; **relief** follows."],
+              ["Why it matters", "It separates tics from **stereotypies and myoclonus**, and it is the basis of behavioral treatment (outside the DSM)."]
             ] },
             { type: "case", title: "Clinical vignette: the sniff that would not stop", text: "A 9-year-old boy began blinking hard at age 6; over the next two years this was replaced by head jerks and shoulder shrugs. For the past 8 months he has also sniffed and cleared his throat many times a day, though an allergy work-up was negative. He says he feels an itch in his throat before sniffing and can hold it in at church but then has a burst afterward. He takes no medication or drugs.", point: "Multiple motor tics and at least one vocal tic, more than **1 year since the first tic**, onset before 18, no other cause: **Tourette’s disorder (F95.2)**. The vocal tics need not have lasted a year themselves, and the two kinds need not occur together." }
           ]
@@ -889,7 +889,7 @@ SP.add("ch01", "guide", {
             { type: "list", title: "Co-occurring conditions over time (pp. 95, 97–98)", items: [
               "Prepubertal children: **ADHD**, **OCD** and **separation anxiety**.",
               "Teenagers and adults: **mood, anxiety and substance use** disorders.",
-              "**ADHD** and **OCD** often cause **more impairment** than the tics; many people with mild or moderate tics have no impairment and may not notice them.",
+              "**ADHD** and **OCD** can cause **more impairment** than the tics; many people with mild or moderate tics have no impairment and may not notice them.",
               "Tic-related OCD starts **earlier** and features **symmetry and exactness** and taboo thoughts (aggressive, sexual, religious).",
               "Rare injuries: **eye injury**, orthopedic and neurological injury (disc disease) from forceful movements."
             ] },

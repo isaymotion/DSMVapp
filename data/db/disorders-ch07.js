@@ -18,8 +18,8 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Prevalence", "Rare; <10% of severely neglected children"], ["Age", "9 months to 5 years"], ["Risk", "Serious social neglect (only known risk factor)"]],
     risk: ["Serious social neglect, institutional rearing, repeated caregiver changes."],
     differential: [
-      { name: "Autism spectrum disorder", how: "Restricted interests and rituals; attachment present; rarely neglect." },
-      { name: "Intellectual developmental disorder", how: "Selective attachments by a cognitive age of 7–9 months." },
+      { id: "asd", how: "Restricted interests and rituals; attachment present; rarely neglect." },
+      { id: "idd", how: "Selective attachments by a cognitive age of 7–9 months." },
       { id: "mdd", how: "Depressed young children still seek and accept comfort." },
       { id: "dsed", how: "Indiscriminately sociable rather than withdrawn." }
     ],
@@ -44,7 +44,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Prevalence", "Up to 2% (low-income UK communities); rare"], ["Age", "Second year of life into adulthood"], ["Neglect timing", "Not seen if neglect only after age 2"]],
     risk: ["Neglect, multiple placements, maternal borderline personality disorder, poor-quality care.", "Blunted reward sensitivity, poor inhibitory control."],
     differential: [
-      { name: "ADHD", how: "Attention and hyperactivity problems; social impulsivity only." },
+      { id: "adhd", how: "Attention and hyperactivity problems; social impulsivity only." },
       { id: "rad", how: "Withdrawn rather than overfriendly." }
     ],
     pearls: ["Can occur with secure attachments.", "Often persists despite good care.", "Often comorbid with ADHD."],

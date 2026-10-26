@@ -54,7 +54,7 @@
         { id: "language-disorder", how: "Delay confined to language." }
       ],
       pearls: ["Same code (F88) as other specified neurodevelopmental disorder: record the name.", "Always reassess."],
-      cmp: { symptoms: "Multi-domain milestone delay", exclusions: "Age 5 or older", prevalence: "Not given", course: "Many later meet IDD criteria; some catch up" },
+      cmp: { symptoms: "Multi-domain milestone delay", exclusions: "Age 5 or older", prevalence: "Not given", course: "Reassess; some later meet IDD criteria" },
       clues: [["Core picture", "A 30-month-old with few words, late walking and no pointing"], ["Code", "F88"]],
       updates: upd("**F88** is unchanged through the October 2026 ICD-10-CM update.")
     },
@@ -105,7 +105,7 @@
         { id: "asd", how: "Adds social disinterest, odd play, repetitive behavior." },
         { name: "Landau-Kleffner syndrome", how: "Language loss with epilepsy; get a sleep EEG." }
       ],
-      pearls: ["Comprehension deficits are underestimated.", "Assess both languages in bilingual children.", "Any language loss needs an EEG."],
+      pearls: ["Comprehension deficits are underestimated.", "Assess both languages in bilingual children.", "Language loss needs neurological assessment, including EEG to exclude epilepsy."],
       cmp: { symptoms: "Vocabulary, grammar and discourse deficits", exclusions: "Hearing loss, IDD, neurological causes", prevalence: "Not given", course: "Persists if present at age 4+" },
       clues: [["Core picture", "A 5-year-old with short ungrammatical sentences who cannot retell a story"], ["Code", "F80.2"]],
       updates: upd("**F80.2** is unchanged through the October 2026 ICD-10-CM update.")
@@ -159,7 +159,7 @@
       risk: ["Genetic (four genes identified) and neurophysiological factors.", "Severity at 8 predicts persistence."],
       differential: [
         { name: "Normal dysfluency", how: "Whole-word or phrase repetitions in young children." },
-        { name: "Adult-onset dysfluency (F98.5)", how: "Onset in adolescence or later, with neurological or other causes." },
+        { name: "Adult-onset dysfluency (F98.5)", how: "Onset in adolescence or later; neurogenic cases are recorded with the neurological condition, not F98.5." },
         { id: "sld", how: "Slow timed oral reading may reflect stuttering, not reading disability." },
         { id: "tourette", how: "Vocal tics differ in nature and timing." }
       ],
@@ -437,9 +437,9 @@
         { id: "stereotypic-movement", how: "Early, rhythmic, fixed, no urge." },
         { id: "ocd", how: "Compulsions answer obsessions." },
         { name: "Functional tic disorder", how: "Prolonged tic attacks, sudden onset." },
-        { name: "Myoclonus, chorea, dystonia", how: "No urge, not suppressible." }
+        { name: "Myoclonus, chorea, dystonia", how: "Myoclonus: faster, not suppressible, no urge; chorea random and continual; dystonia sustained postures absent in sleep." }
       ],
-      pearls: ["Eye blinking is a classic first tic.", "Coprolalia is uncommon.", "Peak severity at 10–12.", "Ecopipam under FDA review (2026)."],
+      pearls: ["Eye blinking is a classic first tic.", "Coprolalia is uncommon (outside DSM).", "Peak severity at 10–12.", "Ecopipam under FDA review (2026)."],
       cmp: { symptoms: "Motor and vocal tics", exclusions: "Substances, medical causes", prevalence: "3–9 per 1,000 school-age", course: "Peak 10–12, improves in adolescence" },
       clues: [["Core picture", "A 9-year-old with blinking, shrugging and sniffing for 3 years, preceded by an urge"], ["Code", "F95.2"]],
       updates: upd("**F95.2** is unchanged through the October 2026 ICD-10-CM update.")
@@ -543,7 +543,7 @@
       id: "other-specified-nd", ch: "ch01", sec: "s1-other-nd", pages: "99", critPages: "99",
       name: "Other specified neurodevelopmental disorder", code: "F88",
       codes: [["F88", "Other disorders of psychological development", NC]],
-      aka: ["ND-PAE", "neurodevelopmental disorder associated with prenatal alcohol exposure", "fetal alcohol spectrum disorder"],
+      aka: ["ND-PAE", "neurodevelopmental disorder associated with prenatal alcohol exposure", "FASD (related, outside DSM)"],
       essence: "Neurodevelopmental symptoms causing impairment without full criteria for any disorder in the chapter, with the **reason recorded**; the manual’s example is **neurodevelopmental disorder associated with prenatal alcohol exposure**.",
       duration: "Varies",
       functioning: "Impairment required",
