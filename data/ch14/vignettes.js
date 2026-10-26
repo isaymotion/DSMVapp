@@ -1,12 +1,12 @@
 /* Chapter 14 board vignettes: longer single-best-answer cases, some in two parts (`then`).
    `answer` is the zero-based index of the correct choice; `whyNot` explains every option in order.
    Card ids are the key for each card's review schedule: keep them stable.
-   No treatment items: every question stays inside the DSM, except one `then` on the psychiatrist’s role (outside the DSM). */
+   No treatment items: every question stays inside the DSM, except v14-20 (next step: suicide risk assessment) and one `then` on the psychiatrist’s role, both clinical management rather than DSM text. */
 SP.add("ch14", "vignettes", [
   {
     "id": "v14-01",
     "tag": "Child criteria met",
-    "stem": "A 10-year-old assigned male at birth, still prepubertal on examination, is brought by her parents to a clinic in Balanga. For the past 18 months she has insisted that she is a girl and asks to be called Bea. She wears her older sister’s skirts whenever she can, always plays the princess or the mother in pretend games, plays almost only with girls, and refuses basketball and wrestling games with her cousins. She says her penis is “disgusting” and that she wants to have a girl’s body when she grows up. She shows no special preference for any type of toy. She has stopped joining the parish children’s choir because the boys must wear a barong, and her teacher reports that she has become withdrawn and tearful at school.",
+    "stem": "A 10-year-old assigned male at birth, still prepubertal on examination, is brought by her parents to a clinic in Balanga. For the past 18 months she has insisted that she is a girl and asks to be called Bea. She wears her older sister’s skirts whenever she can, always plays the princess or the mother in pretend games, plays almost only with girls, and refuses basketball, wrestling and the toy cars and action figures her cousins play with. She says her penis is “disgusting” and that she wants to have a girl’s body when she grows up. She has stopped joining the parish children’s choir because the boys must wear a barong, and her teacher reports that she has become withdrawn and tearful at school.",
     "q": "What is the most accurate diagnosis?",
     "choices": [
       "Other specified gender dysphoria (F64.8)",
@@ -16,7 +16,7 @@ SP.add("ch14", "vignettes", [
       "Unspecified gender dysphoria (F64.9)"
     ],
     "answer": 1,
-    "why": "She shows **7 of the 8** child items: **A1** (insists she is a girl), A2 (clothing), A3 (pretend roles), A5 (playmates), A6 (rejects rough-and-tumble play), A7 (dislike of her anatomy) and A8 (wish for a girl’s body). A1 is among them, the duration is **over 6 months**, and there is **distress and impairment** at school and socially: **gender dysphoria in children (F64.2)** (p. 512).",
+    "why": "She shows **7 of the 8** child items: **A1** (insists she is a girl), A2 (clothing), A3 (pretend roles), A5 (playmates), A6 (rejects masculine toys and games and avoids rough-and-tumble play), A7 (dislike of her anatomy) and A8 (wish for a girl’s body). A1 is among them, the duration is **over 6 months**, and there is **distress and impairment** at school and socially: **gender dysphoria in children (F64.2)** (p. 512).",
     "whyNot": [
       "Full criteria are met, so a residual category is not used.",
       "Correct.",
@@ -110,7 +110,7 @@ SP.add("ch14", "vignettes", [
     "whyNot": [
       "The 6-month duration is not yet met.",
       "A residual category exists for distressing presentations that do not yet meet the duration.",
-      "The reason is known (duration), so it should be specified.",
+      "The reason is known (duration), so other specified is the more accurate choice; unspecified is for when the clinician chooses not to specify or lacks information.",
       "There is no stressor; the distress arises from the gender incongruence itself.",
       "Correct."
     ],
@@ -135,7 +135,7 @@ SP.add("ch14", "vignettes", [
     "why": "Puberty has begun, so the **adolescent/adult** set applies. For young adolescents, A1 and A2 refer to the **anticipated** secondary sex characteristics and the wish to **prevent** them (pp. 512–514). With A4 and A5 as well, for over **6 months**, with distress and impairment: **F64.0**.",
     "whyNot": [
       "The criteria explicitly allow anticipated characteristics in young adolescents.",
-      "The set follows pubertal status, not a fixed age; she has entered puberty.",
+      "The manual sets no age cutoff; she is in puberty, and A1 and A2 are written to cover anticipated characteristics, so the adolescent/adult set fits (pp. 512–514).",
       "Correct.",
       "Her concern is about changes that do not fit her gender, not a perceived defect.",
       "Full criteria are met using the young-adolescent wording."
@@ -288,7 +288,7 @@ SP.add("ch14", "vignettes", [
   {
     "id": "v14-10",
     "tag": "DSD specifier in a child",
-    "stem": "A 7-year-old has 46,XX classical congenital adrenal hyperplasia, diagnosed on newborn screening and recorded in the chart, and takes hydrocortisone daily. The child was assigned female at birth. For the past year he has insisted he is a boy, wears only boys’ clothes and refuses dresses, plays boys’ roles in pretend play, prefers boys as playmates, rejects dolls, and says he wants to grow up with a man’s body. He is prepubertal. He is miserable at school, where he is made to line up with the girls, and has started refusing to go.",
+    "stem": "A 7-year-old has 46,XX classical congenital adrenal hyperplasia, diagnosed on newborn screening and recorded in the chart, and takes hydrocortisone daily. The child was assigned female at birth. For the past year he has insisted he is a boy, wears only boys’ clothes and refuses dresses, plays boys’ roles in pretend play, prefers boys as playmates, strongly rejects dolls, dress-up and other typically feminine toys and games, and says he wants to grow up with a man’s body. He is prepubertal. He is miserable at school, where he is made to line up with the girls, and has started refusing to go.",
     "q": "How should this be coded?",
     "choices": [
       "F64.2 only; the CAH is recorded in the narrative",
@@ -378,7 +378,7 @@ SP.add("ch14", "vignettes", [
   {
     "id": "v14-13",
     "tag": "Transvestic disorder and GD",
-    "stem": "A 47-year-old assigned male at birth, attracted to women, has been sexually aroused by cross-dressing since adolescence. Over the past 3 years the arousal has faded, while a strong and steady wish has grown to be a woman and to be treated as one in daily life. She now wants to be rid of her beard and her genitals and uses a woman’s name with friends. She still sometimes becomes aroused when cross-dressing and is ashamed of it. The conflict has ended her marriage, and she has taken leave from her job because of the distress.",
+    "stem": "A 47-year-old assigned male at birth, attracted to women, has been sexually aroused by cross-dressing since adolescence. Over the past 3 years a strong and steady wish has grown to be a woman and to be treated as one in daily life. She now wants to be rid of her beard and her genitals and uses a woman’s name with friends. Intense sexual arousal from cross-dressing has continued throughout, several times a month over the past year, and it distresses and shames her. The conflict has ended her marriage, and she has taken leave from her job because of the distress.",
     "q": "What is the most accurate diagnosis?",
     "choices": [
       "Gender dysphoria in adolescents and adults (F64.0) together with transvestic disorder",
@@ -388,7 +388,7 @@ SP.add("ch14", "vignettes", [
       "Transvestic disorder only, because the cross-dressing began as sexual"
     ],
     "answer": 0,
-    "why": "She now meets the adolescent/adult set (A2 wish to be rid of sex characteristics, A4 and A5 wishes to be and be treated as a woman) for **3 years** with distress and impairment, and she still has distressing sexualized cross-dressing. The manual says transvestic disorder is **occasionally accompanied** by gender dysphoria and that **both** can be diagnosed when both sets of criteria are met (p. 519).",
+    "why": "She now meets the adolescent/adult set (A2 wish to be rid of sex characteristics, A4 and A5 wishes to be and be treated as a woman) for **3 years** with distress and impairment, and she still has recurrent, intense, distressing sexual arousal from cross-dressing, so transvestic disorder is also present. The manual says transvestic disorder is **occasionally accompanied** by gender dysphoria and that **both** can be diagnosed when both sets of criteria are met (p. 519).",
     "whyNot": [
       "Correct.",
       "Neither diagnosis replaces the other; both can be given.",
@@ -530,7 +530,7 @@ SP.add("ch14", "vignettes", [
       "Autism spectrum disorder only: the gender statements are a restricted interest"
     ],
     "answer": 0,
-    "why": "The manual warns that co-occurring gender dysphoria can be **hard to tell from an autistic preoccupation**, given concrete, rigid thinking about gender roles (p. 520). Here a careful assessment over 18 months shows a **steady** identity not built on gender stereotypes, with A1, A2, A4 and A5, distress and impairment. Both diagnoses can be made; autism traits are **over-represented** in gender dysphoria (p. 515).",
+    "why": "The manual warns that co-occurring gender dysphoria can be **hard to tell from an autistic preoccupation**, given concrete, rigid thinking about gender roles (pp. 519–520). Here a careful assessment over 18 months shows a **steady** identity not built on gender stereotypes, with A1, A2, A4 and A5, distress and impairment. Both diagnoses can be made; autism traits are **over-represented** in gender dysphoria (p. 515).",
     "whyNot": [
       "Correct.",
       "Autism does not exclude gender dysphoria; they often co-occur.",
@@ -565,7 +565,7 @@ SP.add("ch14", "vignettes", [
       "Correct."
     ],
     "then": {
-      "q": "Two years later he says he no longer feels like a man or a woman, strongly wants to be rid of his genitals and to be treated as neither, and has been distressed by this for over a year. What does the manual say?",
+      "q": "Two years later the same person says they no longer feel like a man or a woman, strongly want to be rid of their genitals and to be treated as neither, and have been distressed by this for over a year. What does the manual say?",
       "choices": [
         "Criteria can never be met after an aesthetic request",
         "Only body dysmorphic disorder can apply",
@@ -594,7 +594,7 @@ SP.add("ch14", "vignettes", [
       "Refer her to endocrinology"
     ],
     "answer": 2,
-    "why": "She carries several risk factors the manual lists: **younger age**, **gender victimization**, probable **depression**, and lack of family support, plus a passive death wish and research into a method (pp. 518–519). A direct **suicide risk assessment** now comes before anything else.",
+    "why": "She carries several risk factors the manual lists: **younger age**, **gender victimization**, probable **depression** (p. 518), and she lacks the family support the manual links to better outcomes (p. 519), plus a passive death wish and research into a method (pp. 518–519). A direct **suicide risk assessment** now comes before anything else.",
     "whyNot": [
       "Her diagnosis is established; her immediate safety is the priority.",
       "Delay is unsafe with a death wish and research into overdose.",
@@ -722,7 +722,7 @@ SP.add("ch14", "vignettes", [
       "Early-onset gender dysphoria with a period of desistance and later recurrence"
     ],
     "answer": 4,
-    "why": "In the **early (prepubertal)-onset** trajectory, dysphoria may **desist or be denied** for a time, during which the person may identify as gay or lesbian, and may **recur** later (pp. 516–517). She now meets the adolescent/adult set (A2, A4, A5) for 2 years with distress: **F64.0**.",
+    "why": "In the **early (prepubertal)-onset** trajectory, dysphoria may **desist or be denied** for a time, during which the person may identify as gay or lesbian, and may **recur** later (p. 516). She now meets the adolescent/adult set (A2, A4, A5) for 2 years with distress: **F64.0**.",
     "whyNot": [
       "She met the child criteria at age 7, so the onset was early.",
       "The current dysphoria has lasted 2 years.",
@@ -738,7 +738,7 @@ SP.add("ch14", "vignettes", [
   {
     "id": "v14-25",
     "tag": "Code by age",
-    "stem": "An 8-year-old assigned female at birth, with no breast development or other sign of puberty, has insisted for 2 years that he is a boy. He wears only boys’ clothes and refuses dresses, plays male characters in pretend play, prefers boys’ games and boys as playmates, and says he hates having a girl’s body. He is distressed and avoids school events that require a girl’s uniform. There is no disorder/difference of sex development.",
+    "stem": "An 8-year-old assigned female at birth, with no breast development or other sign of puberty, has insisted for 2 years that he is a boy. He wears only boys’ clothes and refuses dresses, plays male characters in pretend play, prefers boys’ games and boys as playmates, and says he hates his genitals and does not want to grow breasts. He is distressed and avoids school events that require a girl’s uniform. There is no disorder/difference of sex development.",
     "q": "Which code is correct?",
     "choices": [
       "F64.0",
@@ -754,7 +754,7 @@ SP.add("ch14", "vignettes", [
       "Full criteria are met, so the other specified code is not used.",
       "Correct.",
       "The information is sufficient for a specific diagnosis.",
-      "F64.A is an ICD-10-CM code added in October 2026 for gender dysphoria in remission; it is not a DSM diagnosis and is not used when criteria are currently met."
+      "F64.A, “gender identity disorder, in remission,” is an ICD-10-CM code added on October 1, 2026; it is not a DSM diagnosis and is not used when criteria are currently met."
     ],
     "then": {
       "q": "At 13, now in mid-puberty, he still meets criteria for gender dysphoria with distress. Which code applies now?",
