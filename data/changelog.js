@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 29,
+    date: "2026-10-27",
+    title: "Chapter 17: Neurocognitive Disorders",
+    summary: "A 28-section study guide, high yield, four flashcard decks, glossary, mnemonics, two diagnostic helpers and 19 library entries for delirium, major and mild NCD and every etiological subtype, with the post-2022 F01/F02/F03 and F06.7x codes.",
+    items: [
+      { type: "chapter", ch: "ch17", text: "Study guide (pp. 667–732): the six cognitive domains; delirium criteria, specifiers, substance and medication codes, features, course and differential; major versus mild NCD, testing thresholds, behavioral symptoms, epidemiology and suicide risk; Alzheimer’s, frontotemporal, Lewy body, Parkinson’s, Huntington’s and prion disease; vascular, TBI (with the severity table), substance/medication-induced, HIV and other medical causes; multiple and unknown etiologies; a comparison table and a work-up and treatment orientation.", href: "#/c/ch17/guide", link: "Open the guide" },
+      { type: "chapter", ch: "ch17", text: "High yield (19 topics), 40 criteria cards, 38 differential cards, 40 clinical cards, 44 board-style questions and 87 glossary terms.", href: "#/c/ch17", link: "Chapter 17" },
+      { type: "update", text: "Codes follow the APA’s September 2022 rebuild (severity in the 4th character, disturbance type in the 5th–6th, possible etiologies in F03, mild NCD as F06.70/F06.71 or G31.84, other specified and unspecified delirium as F05, S06.2XAS, K76.82), G20.C for Parkinson’s disease (2023), the 2024 removal of the mixed-etiology item from the Alzheimer’s criteria, and G35.D for multiple sclerosis (2025); no changes in FY2027. Evidence boxes cover blood biomarkers, anti-amyloid antibodies, brexpiprazole for agitation and the 2024 Lancet Commission.", href: "#/c/ch17/guide/s17-coding", link: "Codes" },
+      { type: "feature", text: "New helpers: “Is it delirium?” and “Which neurocognitive disorder?”, and 10 mnemonics, from A-B-C-D-E and I-B-D to DASH-P and F-V-P + R-N.", href: "#/helpers/neurocognitive", link: "Open the helper" }
+    ]
+  },
+  {
     id: 28,
     date: "2026-10-26",
     title: "Practice pack for Chapter 11",
