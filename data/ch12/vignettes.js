@@ -20,7 +20,7 @@ SP.add("ch12", "vignettes", [
     "whyNot": [
       "Her insomnia predates the depression, is the main complaint and needs its own treatment, so a separate diagnosis is warranted.",
       "Correct.",
-      "DSM-5-TR dropped causal labels such as “secondary”; the specifier names the comorbid disorder, and the insomnia code comes first.",
+      "DSM-5 dropped causal labels such as “secondary”; the specifier names the comorbid disorder, and the insomnia code comes first.",
       "Duration (14 months), frequency (5 nights a week) and impairment meet full criteria for insomnia disorder.",
       "The specifier names the comorbid disorder, and that disorder still receives its own code after F51.01."
     ],
@@ -73,7 +73,7 @@ SP.add("ch12", "vignettes", [
       "No sleep study has been done, and there is no cataplexy."
     ],
     "then": {
-      "q": "During the trial actigraphy confirms 8½–9½ hours of sleep nightly, yet he still dozes off 5–6 days a week, takes 1–2-hour naps that leave him groggy and needs several alarms, appearing confused for half an hour after waking. Polysomnography shows an AHI of 2 and sleep efficiency of 95%; the next-day MSLT shows a mean sleep latency of 7 minutes with no SOREMPs. What is the diagnosis?",
+      "q": "During the trial actigraphy confirms 8½–9½ hours of sleep nightly, yet he still dozes off 5–6 days a week, takes 1–2-hour naps that leave him groggy and needs several alarms, appearing confused for half an hour after waking. Polysomnography shows an AHI of 2, sleep efficiency of 95% and a REM latency of 90 minutes; the next-day MSLT shows a mean sleep latency of 7 minutes with no SOREMPs. What is the diagnosis?",
       "choices": [
         "Hypersomnolence disorder",
         "Narcolepsy type 2",
@@ -85,7 +85,7 @@ SP.add("ch12", "vignettes", [
       "why": "Sleepiness **despite at least 7 hours** of sleep, long **unrefreshing** naps and **sleep inertia**, present for far longer than **3 months**, with no apnea and **no SOREMPs**: **hypersomnolence disorder (F51.11)**. Trouble staying alert **5–7 days a week** rates **severe** (pp. 417–419).",
       "whyNot": [
         "Correct.",
-        "Narcolepsy type 2 needs two or more SOREMPs on the MSLT, and short naps would refresh him.",
+        "Narcolepsy type 2 needs a nocturnal REM latency ≤ 15 minutes or two or more SOREMPs on the MSLT; he has neither, and short naps would refresh him.",
         "The sleepiness persisted after adequate sleep was restored.",
         "An AHI of 2 is below the threshold of 5.",
         "Full criteria for hypersomnolence disorder are met, so a residual category is not used."
@@ -161,7 +161,7 @@ SP.add("ch12", "vignettes", [
   {
     "id": "v12-06",
     "tag": "Pseudocataplexy",
-    "stem": "A 26-year-old call-center worker reports collapsing 3–4 times a week for 5 months, usually after arguments with her supervisor or when she feels anxious. Each episode lasts 15–30 minutes; she slides to the floor with her eyes closed and afterward says she was “dreaming.” She has never collapsed while laughing. She sleeps 7½ hours a night, rarely naps and is not sleepy during the day. During an episode in clinic, her weakness is generalized and her knee and ankle reflexes remain brisk. A home video shows no jerking, and an MSLT shows a mean sleep latency of 14 minutes with no SOREMPs.",
+    "stem": "A 26-year-old call-center worker reports collapsing 3–4 times a week for 5 months, usually after arguments with her supervisor or when she feels anxious. Each episode lasts 15–30 minutes; she slides to the floor with her eyes closed and afterward says she was “dreaming.” She has never collapsed while laughing. She sleeps 7½ hours a night, rarely naps and is not sleepy during the day. During an episode in clinic, her weakness is generalized and her knee and ankle reflexes remain brisk. A home video shows no jerking, She has no dizziness, dimming of vision or muffled hearing beforehand. On an MSLT she says she slept and dreamed in several naps, but the mean sleep latency is 14 minutes with no SOREMPs.",
     "q": "What is the most likely diagnosis?",
     "choices": [
       "Narcolepsy type 1",
@@ -259,7 +259,7 @@ SP.add("ch12", "vignettes", [
       "Central sleep apnea comorbid with opioid use"
     ],
     "answer": 4,
-    "why": "**Five or more central apneas per hour** (Criterion A), central events well over half of the total, an **ataxic** pattern and **long-term methadone**: **central sleep apnea comorbid with opioid use**. About **24%** of people on chronic opioids for pain, and a similar share on methadone, have CSA (pp. 435–437).",
+    "why": "**Five or more central apneas per hour** (Criterion A), central events well over half of the total, an **ataxic** pattern and **long-term methadone**: **central sleep apnea comorbid with opioid use**. About **24%** of people on chronic opioids for pain, and a similar share on methadone, have CSA (pp. 435–438).",
     "whyNot": [
       "Most events lack respiratory effort, so they are central, not obstructive.",
       "The PSG documents a specific breathing-related sleep disorder that has its own opioid subtype and code.",
@@ -562,7 +562,7 @@ SP.add("ch12", "vignettes", [
       "Generalized anxiety disorder; no separate sleep diagnosis"
     ],
     "answer": 2,
-    "why": "TCAs, **SSRIs** and SNRIs can produce REM sleep without atonia and frank RBD, which the manual diagnoses as **medication-induced sleep disorder, parasomnia type** (p. 463). Onset after the dose change meets Criterion B (p. 468). Whether the drug causes RBD or **unmasks** a predisposition is unknown (p. 463).",
+    "why": "TCAs, **SSRIs** and SNRIs can produce REM sleep without atonia and frank RBD, which the manual diagnoses as **medication-induced sleep disorder, parasomnia type** (p. 463). Onset after starting the drug and worsening after the dose increase meet Criterion B (p. 468) and the “with onset after medication use” specifier (p. 469). Whether the drug causes RBD or **unmasks** a predisposition is unknown (p. 463).",
     "whyNot": [
       "RBD Criterion F excludes behavior due to a medication.",
       "She enacts her dreams with injury; nightmare disorder lacks dream enactment.",
@@ -656,7 +656,7 @@ SP.add("ch12", "vignettes", [
   {
     "id": "v12-23",
     "tag": "Alcohol-induced insomnia",
-    "stem": "A 50-year-old man with severe alcohol use disorder completed a medically supervised detoxification 3 weeks ago and has not drunk since. The tremor, sweating and anxiety of withdrawal have resolved. Every night, however, he lies awake for 2–3 hours, wakes repeatedly from vivid, disturbing dreams and sleeps 3–4 hours in total. He had no sleep problems before he began drinking heavily at 30. The insomnia is now his main complaint, it is fueling his cravings, and the team is planning treatment specifically for it. He does not snore, has no mood episode and uses no other substances.",
+    "stem": "A 50-year-old man with severe alcohol use disorder completed a medically supervised detoxification 3 weeks ago and has not drunk since. The tremor, sweating and anxiety of withdrawal have resolved. The insomnia began during detoxification and has continued since. Every night he lies awake for 2–3 hours, wakes repeatedly from vivid, disturbing dreams and sleeps 3–4 hours in total. He had no sleep problems before he began drinking heavily at 30. The insomnia is now his main complaint, it is fueling his cravings, and the team is planning treatment specifically for it. He does not snore, has no mood episode and uses no other substances.",
     "q": "Which recording is most accurate?",
     "choices": [
       "F10.282 severe alcohol use disorder with alcohol-induced sleep disorder, with onset during withdrawal, insomnia type",
@@ -719,7 +719,7 @@ SP.add("ch12", "vignettes", [
       "The cause is identified, so a specific induced diagnosis can be made."
     ],
     "then": {
-      "q": "The bupropion is replaced and her sleep returns to normal. Months later, during a deadline, she drinks five large coffees a day, the last at 9 p.m., feels jittery with a racing heart, and develops sleep-onset insomnia on most nights for 3 weeks with marked daytime fatigue and errors. The insomnia is why she seeks help. How is it coded?",
+      "q": "The bupropion is replaced and her sleep returns to normal. Months later, during a deadline, she drinks five large coffees a day, the last at 9 p.m., feels jittery and restless with a flushed face, a racing heart, frequent urination, an upset stomach and muscle twitching, and develops sleep-onset insomnia on most nights for 3 weeks with marked daytime fatigue and errors. The insomnia is why she seeks help. How is it coded?",
       "choices": [
         "F15.182 mild caffeine use disorder with caffeine-induced sleep disorder",
         "F15.282 moderate caffeine use disorder with caffeine-induced sleep disorder",
