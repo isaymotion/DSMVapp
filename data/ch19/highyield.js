@@ -1,0 +1,235 @@
+/* Chapter 19 high yield. Bold text becomes a blank in "Hide key facts" mode, so bold the answer, not the topic.
+   Source: DSM-5-TR, Paraphilic Disorders (pp. 779–801), in the app’s own words. Codes checked against ICD-10-CM
+   through FY2027 (October 1, 2026) and the APA DSM-5-TR updates of September 2022–2025: no changes for this chapter.
+   Items beyond the manual’s text (ICD-10-CM titles, treatment, risk tools, ICD-11, Philippine law) are labeled
+   "outside the DSM" and kept in the last group. */
+SP.add("ch19", "highYield", [
+  { id: "hy19-overview", topic: "Overview and classification", items: [
+    "The chapter gives explicit criteria for **eight** paraphilic disorders (p. 779).",
+    "They were singled out because they are relatively **common** and some are satisfied through acts classed as criminal offenses (p. 779).",
+    "The eight are not the whole field: **many dozens** of distinct paraphilias have been named (p. 779).",
+    "Voyeuristic, exhibitionistic and frotteuristic disorders are **courtship disorders**, distorted pieces of courtship behavior (p. 779).",
+    "Sexual masochism and sexual sadism disorders are the **algolagnic** disorders, centered on pain and suffering (p. 779).",
+    "The anomalous target group has one disorder aimed at other humans, **pedophilic disorder**, and two directed elsewhere (fetishistic, transvestic) (p. 779)."
+  ] },
+  { id: "hy19-paraphilia-vs-disorder", topic: "Paraphilia versus paraphilic disorder", items: [
+    "A paraphilia is any **intense and persistent** sexual interest other than genital stimulation or preparatory fondling with mature, consenting, phenotypically normal partners (p. 779).",
+    "In very old or medically ill people, a paraphilia can be defined as an interest **greater than or equal to** their nonparaphilic interests (p. 779).",
+    "A person’s paraphilic pattern is often mirrored in the choice of **pornography** (p. 779).",
+    "A paraphilic disorder is a paraphilia currently causing distress or impairment, or one whose satisfaction has meant **harm or risk of harm to others** (p. 780).",
+    "A paraphilia is **necessary but not sufficient** for a paraphilic disorder, and alone need not prompt intervention (p. 780).",
+    "Criterion A describes the paraphilia’s **qualitative nature**; Criterion B its negative consequences (p. 780).",
+    "Someone meeting A but not B, such as a benign paraphilia found incidentally, **has the paraphilia** but no disorder (p. 780).",
+    "The manual’s example of two closely related paraphilias is **foot and shoe** fetishism (p. 780).",
+    "Separate comorbid paraphilic diagnoses are warranted when **more than one** paraphilia causes suffering or harm (p. 780).",
+    "Severity measures can rate either the **strength of the paraphilia** or the seriousness of its consequences (p. 780)."
+  ] },
+  { id: "hy19-shared-rules", topic: "Shared rules and specifiers", items: [
+    "All eight criteria sets require a minimum duration of **6 months** (pp. 780–798).",
+    "In full remission requires at least **5 years** without acting on urges and without distress or impairment (p. 780).",
+    "The 5 remission years must be spent in an **uncontrolled** environment (p. 780).",
+    "In a controlled environment is meant mainly for people in **institutional** settings where opportunity is restricted (p. 780).",
+    "The only listed disorder with **no** remission or controlled-environment specifier is pedophilic disorder (p. 793).",
+    "The remission specifier says **nothing** about whether the paraphilia itself persists (pp. 781, 783, 786).",
+    "Criterion B can be met by acting on urges with a **nonconsenting** person in voyeuristic, exhibitionistic, frotteuristic and sadism disorders (pp. 780, 783, 785, 790).",
+    "Masochism, fetishistic and transvestic disorders require **distress or impairment** alone for Criterion B (pp. 788, 796, 798).",
+    "A person who denies urges can still be diagnosed when **recurrent behavior** with victims shows Criterion A and the harm shows Criterion B (pp. 781, 784, 786).",
+    "“Recurrent” may be read as **multiple victims**, each on a separate occasion (pp. 781, 784, 786, 791).",
+    "Multiple victims are **sufficient but not necessary**; an acknowledged intense interest can also meet the criteria (pp. 781, 784, 786, 791, 794).",
+    "An admitting person with no distress, no impairment and no history of acting on it has a **sexual interest**, not a disorder (pp. 781, 784, 786).",
+    "The shared course text links advancing age with **decreasing** paraphilic preference and behavior (pp. 782, 784, 787, 789, 791)."
+  ] },
+  { id: "hy19-voyeuristic", topic: "Voyeuristic disorder (F65.3)", items: [
+    "Voyeuristic Criterion A is arousal from watching an **unsuspecting** person who is naked, undressing or in sexual activity (p. 780).",
+    "Voyeuristic Criterion C requires the person to be at least **18** years old (p. 780).",
+    "The age floor guards against pathologizing the sexual **curiosity** of pubertal adolescence (p. 781).",
+    "Voyeuristic acts are the **most common** of the potentially law-breaking sexual behaviors (p. 781).",
+    "Lifetime voyeuristic behavior in the Quebec survey reached **34.5%** overall (p. 781).",
+    "By sex, Quebec lifetime voyeuristic behavior was **50.3%** in men and **21.2%** in women (p. 781).",
+    "In Quebec, “intense desire” for voyeurism was **9.6%** and “persistent behavior” **2.1%** (p. 781).",
+    "The male-to-female ratio for voyeuristic behavior was about **2:1** in Quebec and **3:1** in Sweden (p. 781).",
+    "Of **1,346** incarcerated sex offenders in Austria, **3.7%** had voyeuristic disorder (p. 782).",
+    "Suggested environmental risk factors are childhood sexual abuse, **substance misuse** and hypersexuality (p. 782).",
+    "Voyeuristic disorder is very **uncommon** among women in clinical settings (p. 782).",
+    "The paraphilic disorder most linked to voyeuristic disorder is **exhibitionistic** disorder (p. 783)."
+  ] },
+  { id: "hy19-exhibitionistic", topic: "Exhibitionistic disorder (F65.2)", items: [
+    "Exhibitionistic Criterion A is arousal from exposing one’s **genitals** to an unsuspecting person (p. 783).",
+    "The subtypes are set by the **age or physical maturity** of the people exposed to: children, mature individuals, or both (p. 783).",
+    "The subtypes exist so that a co-occurring **pedophilic disorder** is not overlooked (p. 783).",
+    "Exposure to children does **not** rule out an added pedophilic diagnosis (p. 783).",
+    "Exhibitionistic disorder has **no** minimum age, though adolescent curiosity makes it hard to judge (p. 784).",
+    "Single arousing exhibitionistic acts occur in women up to **half** as often as in men (p. 784).",
+    "Lifetime exhibitionistic behavior in the Quebec survey was **30.9%** overall (p. 784).",
+    "By sex, Quebec lifetime exhibitionistic behavior was **32.6%** in men and **29.4%** in women (p. 784).",
+    "In Quebec, “intense desire” for exhibitionism was **4.8%** and “persistent behavior” **0.8%** (p. 784).",
+    "A Swedish study put lifetime exhibitionistic disorder at **4.1%** of men and **2.1%** of women (p. 784).",
+    "Men notice the interest in adolescence, somewhat **later** than ordinary sexual interest develops (p. 784).",
+    "Antisocial history, alcohol misuse and a **pedophilic** preference may raise sexual recidivism in exhibitionistic offenders (p. 785)."
+  ] },
+  { id: "hy19-frotteuristic", topic: "Frotteuristic disorder (F65.81)", items: [
+    "Frotteuristic Criterion A is arousal from **touching or rubbing** against a nonconsenting person (p. 785).",
+    "The frotteuristic text calls its specifier **“in remission”** rather than “in full remission” (p. 786).",
+    "Frotteuristic acts may occur in up to **30%** of adult men in the US and Canada (p. 786).",
+    "For frotteurism, “intense desire” was **3.8%** and “persistent behavior” **0.7%** (p. 787).",
+    "In outpatient settings for men with paraphilic disorders and hypersexuality, about **10%–14%** meet frotteuristic criteria (p. 787).",
+    "Men often first notice frotteuristic interest in **late adolescence or emerging adulthood** (p. 787).",
+    "With no minimum age, young cases can be hard to tell from **conduct-disordered** behavior without sexual motive (p. 787).",
+    "Nonspecific risk factors are **nonsexual antisocial behavior** and hypersexuality (p. 787).",
+    "Paraphilic comorbidities named for frotteuristic disorder are exhibitionistic and **voyeuristic** disorders (p. 788)."
+  ] },
+  { id: "hy19-courtship-differential", topic: "Courtship disorders: shared differential", items: [
+    "Each courtship differential begins with the paraphilia itself, present **without** acting on it or distress (pp. 782, 785, 787).",
+    "Sexual disinhibition can come from a manic episode, major NCD, intellectual developmental disorder, intoxication, schizophrenia or **personality change due to another medical condition** (pp. 782, 785, 787).",
+    "In those conditions, diagnose a paraphilic disorder only if the behavior also occurs **outside** that context (pp. 782, 785, 787).",
+    "Conduct disorder and ASPD show broader norm-breaking, and the **specific sexual interest** is usually lacking (pp. 782, 785, 787).",
+    "Among the three courtship disorders, only **voyeuristic** disorder has a minimum age (pp. 780, 784, 787)."
+  ] },
+  { id: "hy19-masochism", topic: "Sexual masochism disorder (F65.51)", items: [
+    "Masochism Criterion A is arousal from being humiliated, beaten, **bound** or otherwise made to suffer (p. 788).",
+    "Masochism Criterion B requires distress or impairment, with **no** nonconsenting-person arm (p. 788).",
+    "The masochism specifier for seeking arousal through restricted breathing is **with asphyxiophilia** (p. 788).",
+    "The masochism criteria are meant for people who **freely admit** the interest (p. 788).",
+    "People practicing sadomasochism may show **hyposensitivity** to pain, unproven for the disorder itself (p. 788).",
+    "The assumed link to childhood sexual abuse has **insufficient** evidence (pp. 788–789).",
+    "Community samples give a mean age at onset of masochism of **19.3** years (p. 789).",
+    "Earlier onsets of masochistic fantasies, at **puberty** or in childhood, have also been reported (p. 789).",
+    "Religious rituals such as suspension from **hooks** or self-flagellation must be distinguished from sexual masochism (p. 789).",
+    "Masochistic practice carries a risk of **accidental death** during asphyxiophilia or other autoerotic procedures (p. 789).",
+    "A paraphilic comorbidity named for masochism is **transvestic fetishism** (p. 790).",
+    "A small clinical sample of women suggested an association with **borderline** personality disorder (p. 790)."
+  ] },
+  { id: "hy19-sadism", topic: "Sexual sadism disorder (F65.52)", items: [
+    "Sadism Criterion A is arousal from another person’s **physical or psychological** suffering (p. 790).",
+    "People who openly acknowledge sadistic interest are called **admitting individuals** (p. 790).",
+    "Prevalence of sexual sadism disorder is unknown and drawn mostly from **forensic** settings (p. 791).",
+    "Among civilly committed US sexual offenders, less than **10%** have sexual sadism disorder (p. 791).",
+    "Sadistic behavior is present in about **one-third** of sexually motivated homicides (p. 791).",
+    "In a Finnish population sample, lifetime sadistic behavior was **2.7%** in men and **2.3%** in women (p. 791).",
+    "Sadistic preference is probably **lifelong**, while the disorder fluctuates (p. 791).",
+    "Varying **legal status** across countries means distress and impairment vary too (p. 791).",
+    "Pain inflicted **instrumentally** during rape or while subduing a victim does not by itself indicate sadism (p. 792).",
+    "Evidence that suffering is arousing includes an admission, a sadistic **pornography** preference, or violence beyond what the assault needed (p. 792).",
+    "When criteria for both sadism and conduct disorder or ASPD are met, **both** may be diagnosed (p. 792).",
+    "In the Finnish study, masochism co-occurred in **68.8%** and voyeurism in **33.3%** of those with sadistic behavior (p. 792).",
+    "In the same study, transvestic fetishism co-occurred in **9.2%** and exhibitionism in **6.4%** (p. 792)."
+  ] },
+  { id: "hy19-bdsm", topic: "BDSM and consent", items: [
+    "BDSM stands for bondage-domination-**sadism-masochism** (p. 788).",
+    "BDSM activities include restraints, spanking, **sensory deprivation** such as blindfolds, and dominance–submission role play (p. 788).",
+    "In Australia, **2.2%** of men and **1.3%** of women reported BDSM involvement in the past 12 months (pp. 789, 791).",
+    "Many people in BDSM became aware of their interest in their **teenage** years (p. 791).",
+    "Most people in community sadomasochistic networks are not dissatisfied and would **not** meet sadism criteria (p. 792).",
+    "A study of **321** adults in BDSM tied stigma-related shame and guilt to suicidal ideation (pp. 789, 791)."
+  ] },
+  { id: "hy19-pedophilic-criteria", topic: "Pedophilic disorder (F65.4): criteria and specifiers", items: [
+    "Pedophilic Criterion A concerns sexual activity with a prepubescent child, generally aged **13** or younger (p. 792).",
+    "The age guide is **approximate**, because puberty onset varies and has been getting earlier (p. 793).",
+    "Pedophilic Criterion B is acting on urges, or **marked distress or interpersonal difficulty** (p. 792).",
+    "Criterion C requires the person to be at least **16** and at least **5 years** older than the child (p. 793).",
+    "The Criterion C note excludes someone in **late adolescence** in an ongoing relationship with a 12- or 13-year-old (p. 793).",
+    "The type specifier is exclusive (attracted **only to children**) or nonexclusive (p. 793).",
+    "Pedophilic disorder is also specified by sex attracted to and as **limited to incest** (p. 793).",
+    "Pedophilic behaviors include sexual interactions **with or without** physical contact (p. 793).",
+    "Use of sexual images of prepubescent children informs Criterion A but alone is **insufficient** for Criterion B (p. 793)."
+  ] },
+  { id: "hy19-pedophilic-features", topic: "Pedophilic disorder: features, course and markers", items: [
+    "In a person who has offended, factors suggesting the disorder include **self-reported interest** and use of child pornography (p. 793).",
+    "Victim factors suggesting the disorder are **multiple**, boy and unrelated child victims (p. 793).",
+    "Affinity with children, such as preferring their company, is called **emotional congruence** with children (p. 794).",
+    "Emotional congruence with children is related to pedophilic interest and to sexual **reoffending** (p. 794).",
+    "Prevalence of pedophilic disorder is likely under **3%** among men in international studies (p. 794).",
+    "In women, prevalence is probably a **small fraction** of the male rate (p. 794).",
+    "Pedophilia per se appears **lifelong**, while the disorder may fluctuate (p. 794).",
+    "Because antisocial traits make acting out more likely, **antisocial personality disorder** is a risk factor in men with pedophilia (p. 794).",
+    "Some evidence links **in utero** neurodevelopmental perturbation to pedophilic interest (p. 795).",
+    "The most researched psychophysiological marker is **penile plethysmography**, whose accuracy varies across sites (p. 795).",
+    "Possessing sexual images of children even for diagnosis may violate US law, so **audio** stimuli are an option (p. 795).",
+    "The marker is the **relative** response to child versus adult stimuli, not the absolute response (p. 795).",
+    "Laboratory measures are **not necessarily useful** in women because research on them is very limited (p. 795)."
+  ] },
+  { id: "hy19-pedophilic-differential", topic: "Pedophilic disorder: differential and comorbidity", items: [
+    "Pedophilia not acted on and causing no marked distress or interpersonal difficulty warrants **no** diagnosis (p. 795).",
+    "A person who exposes himself **exclusively** to prepubescent children may have both exhibitionistic and pedophilic disorder (p. 795).",
+    "A person who exposes himself regardless of victims’ age may have **only** exhibitionistic disorder (p. 795).",
+    "In ASPD, a person attracted to adults may approach a child because of **access** to the child (p. 795).",
+    "Pedophilic disorder is added to ASPD only with **6 months** of recurrent interest centered on prepubescent children (p. 795).",
+    "**Substance intoxication** can also disinhibit a person attracted to adults into approaching a child (p. 796).",
+    "Ego-dystonic worries about attraction to children, with no positive feelings or sexual behavior, point to **OCD** (p. 796).",
+    "Pedophilic comorbidity findings come mostly from **convicted** men and may not generalize (p. 796)."
+  ] },
+  { id: "hy19-fetishistic", topic: "Fetishistic disorder (F65.0)", items: [
+    "Fetishistic Criterion A involves **nonliving objects** or a highly specific focus on nongenital body parts (p. 796).",
+    "Criterion C excludes clothing used in **cross-dressing** and devices designed for genital stimulation such as a vibrator (p. 796).",
+    "The fetishistic specifiers are body part(s), nonliving object(s) and **other**, and they can combine (p. 796).",
+    "Common fetish objects include women’s undergarments, footwear, rubber, leather and **diapers** (p. 797).",
+    "Highly eroticized body parts named are feet, toes and **hair** (p. 797).",
+    "An exclusive focus on a body part is called **partialism** (p. 797).",
+    "In DSM-IV-TR, partialism was a **paraphilia not otherwise specified**; before DSM-III it sat within fetishism (p. 797).",
+    "For a **minority**, the fetish object is obligatory for arousal or satisfaction (p. 797).",
+    "Fetishistic interests can develop **before adolescence** (p. 797).",
+    "Once established, fetishistic disorder tends to run a **continuous** course that fluctuates in intensity (p. 797).",
+    "The gender gap is **smaller** for fetishistic fantasy than for behavior; clinical samples are nearly all men (p. 797).",
+    "A typical impairment is **sexual dysfunction** in a relationship when the fetish object is unavailable (pp. 797–798).",
+    "Forced cross-dressing with arousal mainly from domination or humiliation is **sexual masochism disorder** (p. 798)."
+  ] },
+  { id: "hy19-transvestic", topic: "Transvestic disorder (F65.1)", items: [
+    "Transvestic Criterion A is recurrent, intense sexual arousal from **cross-dressing** (p. 798).",
+    "The transvestic specifier for arousal by fabrics, materials or garments is **with fetishism** (p. 798).",
+    "The specifier for arousal by thoughts or images of oneself as a woman is **with autogynephilia** (p. 798).",
+    "With fetishism **decreases**, and with autogynephilia increases, the likelihood of gender dysphoria in men with the disorder (p. 799).",
+    "Cross-dressing, even habitual, must be **always or often** sexually exciting to meet Criterion A (p. 799).",
+    "Discarding a costly wardrobe and then rebuilding it, called **purging and acquisition**, often signals distress (p. 799).",
+    "Autogynephilic fantasies may focus on female physiological functions such as **lactation** or menstruation (p. 799).",
+    "Fewer than **3%** of Swedish men report ever being aroused by wearing women’s clothing (p. 799).",
+    "With age, arousal from cross-dressing **declines** while the desire to cross-dress stays or grows (p. 799).",
+    "Severity peaks in **adulthood**, when transvestic drives clash with heterosexual relationships and marriage plans (p. 800).",
+    "The most frequent co-occurring paraphilic interests are fetishistic and **masochistic** (p. 800).",
+    "**Autoerotic asphyxia** is associated with transvestic behavior in a substantial share of fatal cases (p. 800)."
+  ] },
+  { id: "hy19-three-way", topic: "Fetishistic vs transvestic disorder vs gender dysphoria", items: [
+    "The nearest diagnostic neighbor of fetishistic disorder is **transvestic disorder** (p. 798).",
+    "Telling the two apart depends on the person’s **thoughts** during the activity, such as being like a woman (p. 800).",
+    "People with transvestic disorder report **no** incongruence between experienced and assigned gender (p. 800).",
+    "People with transvestic disorder typically lack a history of **childhood** cross-gender behavior (p. 800).",
+    "When full criteria for transvestic disorder and gender dysphoria are met, give **both** diagnoses (p. 800).",
+    "Middle-aged and older men with transvestism more often present with **gender dysphoria** than transvestic disorder (p. 800)."
+  ] },
+  { id: "hy19-residual", topic: "Other specified and unspecified paraphilic disorder", items: [
+    "The other specified category is recorded with the **specific reason**, for example “zoophilia” (p. 801).",
+    "Telephone scatologia refers to obscene **phone calls** (p. 801).",
+    "Necrophilia refers to **corpses** and zoophilia to animals (p. 801).",
+    "Klismaphilia refers to **enemas**; coprophilia to feces and urophilia to urine (p. 801).",
+    "The examples still need at least **6 months** of recurrent, intense arousal with marked distress or impairment (p. 801).",
+    "Other specified paraphilic disorder **can** carry the in remission and in a controlled environment specifiers (p. 801).",
+    "Unspecified paraphilic disorder is used when no reason is given or there is **insufficient information** (p. 801)."
+  ] },
+  { id: "hy19-coding", topic: "Codes", items: [
+    "Voyeuristic disorder: **F65.3** (p. 780).",
+    "Exhibitionistic disorder: **F65.2** (p. 783).",
+    "Frotteuristic disorder: **F65.81** (p. 785).",
+    "Sexual masochism disorder: **F65.51** (p. 788).",
+    "Sexual sadism disorder: **F65.52** (p. 790).",
+    "Pedophilic disorder: **F65.4** (p. 792).",
+    "Fetishistic disorder: **F65.0** (p. 796).",
+    "Transvestic disorder: **F65.1** (p. 798).",
+    "Other specified paraphilic disorder: **F65.89** (p. 801).",
+    "Unspecified paraphilic disorder: **F65.9** (p. 801).",
+    "Specifiers such as with asphyxiophilia are written **in words** after the name and do not change the code (pp. 780–801)."
+  ] },
+  { id: "hy19-outside", topic: "Outside the DSM", items: [
+    "Outside the DSM: no F65 code was added, deleted or retitled in ICD-10-CM through **FY2027** (October 1, 2026); check the official tabular list.",
+    "Outside the DSM: the ICD-10-CM title for F65.1 is **transvestic fetishism**; record the DSM-5-TR name in the chart.",
+    "Outside the DSM: ICD-10-CM also has **F65.50**, sadomasochism, unspecified, which DSM-5-TR does not use.",
+    "Outside the DSM: the WFSBP guidelines (Thibaut et al., 2010; updated 2020) stage treatment by **risk** of harm and severity.",
+    "Outside the DSM: in the WFSBP order, **psychological treatment** such as CBT and relapse prevention is offered to everyone.",
+    "Outside the DSM: in the WFSBP order, **SSRIs** come next, for lower-risk presentations.",
+    "Outside the DSM: antiandrogens such as **cyproterone acetate** (not FDA-approved in the US) or medroxyprogesterone acetate are for higher risk.",
+    "Outside the DSM: **GnRH agonists** such as leuprolide or triptorelin are reserved for the most severe or highest-risk cases.",
+    "Outside the DSM: actuarial tools such as **Static-99R** estimate recidivism risk and do not diagnose a paraphilic disorder.",
+    "Outside the DSM: ICD-11 keeps paraphilic disorders involving **nonconsenting** people, including coercive sexual sadism disorder.",
+    "Outside the DSM: ICD-11 dropped fetishism, fetishistic transvestism and **sadomasochism** as diagnoses.",
+    "Outside the DSM: in the Philippines, RA 11648 (2022) raised the age of sexual consent to **16**, with a close-in-age exemption that never applies under 13.",
+    "Outside the DSM: in the Philippines, child abuse and its reporting fall under **RA 7610**."
+  ] }
+]);

@@ -28,7 +28,8 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 | 16. Substance-Related and Addictive Disorders | Ready |
 | 17. Neurocognitive Disorders | Ready |
 | 18. Personality Disorders | Ready |
-| All other Section II chapters | Listed in the menu as “Soon” |
+| 19. Paraphilic Disorders | Ready |
+| Chapters 20–22 | Listed in the menu as “Soon” |
 
 ## Case tools
 

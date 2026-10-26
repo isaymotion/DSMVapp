@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 41,
+    date: "2026-10-27",
+    title: "Chapter 19: Paraphilic Disorders",
+    summary: "Chapter 19 is ready: paraphilia versus paraphilic disorder, the three courtship disorders, the two algolagnic disorders, pedophilic, fetishistic and transvestic disorders, the shared rules and specifiers, the differential, the residual categories and the F65 codes.",
+    items: [
+      { type: "chapter", ch: "ch19", text: "Chapter 19 study guide in 19 sections: the definitions of paraphilia and paraphilic disorder, the template every criteria set follows and its exceptions (age rules, the three shapes of Criterion B, the disorder with no remission specifier), voyeuristic, exhibitionistic and frotteuristic disorders with their shared differential, sexual masochism and sadism with BDSM, consent and the instrumental-pain rule, pedophilic disorder in three sections (criteria and specifiers; features, course, risk and diagnostic markers; differential and comorbidity), fetishistic and transvestic disorders and their three-way comparison with gender dysphoria, the residual categories, coding, and a dated assessment-and-treatment orientation labeled as outside the DSM.", href: "#/c/ch19/guide", link: "Open Chapter 19" },
+      { type: "feature", text: "High-yield points, criteria, differential and clinical decks, 40 board questions, glossary terms and 8 mnemonics for Chapter 19, and 10 new disorder library entries with compare presets and a time ladder.", href: "#/c/ch19/high-yield", link: "Chapter 19 high yield" },
+      { type: "feature", text: "New diagnostic helper: “Paraphilic disorders: interest, disorder, or something else?”", href: "#/helpers/paraphilic", link: "Open the helper" },
+      { type: "update", ch: "ch19", text: "Current to October 2026: no F65 code was added, deleted or retitled in the October 2024, 2025 or 2026 ICD-10-CM updates, and no APA DSM-5-TR update (September 2022–2025) touches the chapter. The ICD-10-CM titles (fetishism, transvestic fetishism, pedophilia, frotteurism, other paraphilias) differ from the DSM names; record the DSM name.", href: "#/c/ch19/guide/s19-coding", link: "Coding and recording" }
+    ]
+  },
+  {
     id: 40,
     date: "2026-10-27",
     title: "Practice pack for Chapter 14",
