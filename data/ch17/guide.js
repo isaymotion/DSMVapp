@@ -114,7 +114,7 @@ SP.add("ch17", "guide", {
               ["x11 agitation", "Aggression, combativeness, violent behavior, verbal or physical agitation."],
               ["x18 other behavioral or psychological disturbance", "Sleep disturbance, social disinhibition, sexual disinhibition; anything not covered by the other codes."],
               ["x2 psychotic disturbance", "Hallucinations, delusions, paranoia, suspiciousness."],
-              ["x3 mood disturbance", "Depression, **apathy**, anhedonia, elation."],
+              ["x3 mood disturbance", "Depression, **apathy**, anhedonia."],
               ["x4 anxiety", "Anxiety symptoms."],
               ["x0 without", "No clinically significant behavioral or psychological disturbance."]
             ] },
@@ -126,7 +126,7 @@ SP.add("ch17", "guide", {
               ["Substance/medication-induced", "F1x.188 / .288 / .988 by substance and use disorder"],
               ["Unspecified NCD", "**R41.9**"]
             ] },
-            { type: "callout", kind: "exam", title: "The coding traps", text: "1) **Probable** gets the disease code plus F02; **possible** gets **F03** and no disease code. 2) **Vascular** disease never gets a medical code for major NCD (**F01** carries it); for mild NCD it gets **I67.9**. 3) Severity **is coded** for major NCD now (4th character); it could not be coded in the 2022 printing. 4) For mild NCD only **with or without** behavioral disturbance is coded (F06.71 vs F06.70), and nothing at all for **G31.84**. 5) **F02.81** no longer exists: agitation is **F02.811**, other disturbance **F02.818**." },
+            { type: "callout", kind: "exam", title: "The coding traps", text: "1) **Probable** gets the disease code plus F02; **possible** gets **F03** and no disease code. 2) **Vascular** disease never gets a medical code for major NCD (**F01** carries it); for mild NCD it gets **I67.9**. 3) Severity **is coded** for major NCD now (4th character); it could not be coded in the 2022 printing. 4) For mild NCD only **with or without** behavioral disturbance is coded (F06.71 vs F06.70), and nothing at all for **G31.84**. 5) **F02.81** no longer exists: at unspecified severity, agitation is **F02.811**, other disturbance **F02.818**, psychotic **F02.82**, mood **F02.83**, anxiety **F02.84**." },
             { type: "update", kind: "post", year: "2022", title: "ICD-10-CM restructuring of the NCD codes", source: "APA, DSM-5-TR Neurocognitive Disorders Supplement and DSM-5-TR Update, September 2022; ICD-10-CM FY2023", text: "Effective **October 1, 2022**: severity and disturbance codes for **F01, F02 and F03**; **F06.70 / F06.71** for mild NCD due to a known physiological condition; **G31.84** kept for possible or unknown etiology; **possible** etiologies moved to **F03**; a new **major or mild NCD due to unknown etiology**; the TBI sequela code changed from **S06.2X9S** to **S06.2XAS**; hepatic encephalopathy in the delirium examples changed from **K72.90** to **K76.82**; and other specified and unspecified delirium changed from **R41.0** to **F05**." },
             { type: "update", kind: "post", year: "2023–2025", title: "Later code changes", source: "APA DSM-5-TR Updates, September 2023 and September 2025", text: "**Parkinson’s disease**: **G20** became **G20.C** (parkinsonism, unspecified) on October 1, 2023. **Multiple sclerosis**: **G35** became **G35.D** (multiple sclerosis, unspecified) on October 1, 2025; the three-character G35 is no longer valid." },
             { type: "update", kind: "post", year: "2026", title: "No further changes in FY2027", source: "ICD-10-CM FY2027 code tables (effective October 1, 2026)", text: "The October 2026 update added no codes in F01–F09, G10, G20, G30, G31, G35, A81, B20, I67, R41 or S06 that affect this chapter. Check the code set in force on the date of service." }
@@ -163,7 +163,7 @@ SP.add("ch17", "guide", {
               ["Stupor", "Reduced arousal; minimal response; **not testable**", "dx"],
               ["Coma", "No cognition, no sleep-wake cycle, no meaningful response", "dx"]
             ], note: "Delirium needs enough arousal to respond to **verbal stimulation**. A person who barely responds has a **disorder of arousal**, not delirium, though delirium often appears on **emergence** from coma or stupor." },
-            { type: "case", title: "Clinical vignette: the quiet patient", text: "An 82-year-old woman is admitted with pneumonia. On day 2 the nurse notes she is “no trouble”: she sleeps much of the day, answers slowly and drifts off mid-sentence. She cannot keep track of the months backward, thinks she is at home, and in the evening picks at the bedsheets. Her daughter says she was managing her own finances last week.", point: "**Hypoactive delirium** due to another medical condition (pneumonia), acute: inattention and reduced awareness that developed over a day, fluctuate, and represent a clear change from baseline. Hypoactive delirium is **more common in older adults** and is often **missed** (p. 675)." }
+            { type: "case", title: "Clinical vignette: the quiet patient", text: "An 82-year-old woman is admitted with pneumonia. On day 2 the nurse notes she is “no trouble”: she sleeps much of the day, answers slowly and drifts off mid-sentence. She cannot keep track of the months backward, thinks she is at home, and is drowsier still in the evening. Her daughter says she was managing her own finances last week.", point: "**Hypoactive delirium** due to another medical condition (pneumonia), acute: inattention and reduced awareness that developed over a day, fluctuate, and represent a clear change from baseline. Hypoactive delirium is **more common in older adults** and is often **missed** (p. 675)." }
           ]
         },
         {
@@ -230,7 +230,7 @@ SP.add("ch17", "guide", {
               ["EEG", "Often **generalized irregular theta slowing**; **fast activity** occasionally (e.g., some alcohol withdrawal delirium). Slowing within the alpha range is hard to see without a premorbid baseline."],
               ["Function", "More functional decline and **institutional placement**; hospitalized people **65 and older** with delirium have higher rates of death, institutionalization and dementia after discharge."]
             ] },
-            { type: "callout", kind: "exam", title: "Delirium and the EEG", text: "Diffuse **slowing** is the classic EEG of delirium; **fast** (beta) activity points to **sedative or alcohol withdrawal** or benzodiazepine effect. A normal EEG argues for a primary psychiatric cause when the picture is unclear." }
+            { type: "callout", kind: "exam", title: "Delirium and the EEG", text: "The manual names generalized **theta slowing**, with **fast** activity in some **alcohol withdrawal** delirium (p. 677). Clinical teaching beyond the text: fast activity also suggests sedative withdrawal or benzodiazepine effect, and a normal EEG makes delirium less likely when the picture is unclear." }
           ]
         },
         {
@@ -371,7 +371,7 @@ SP.add("ch17", "guide", {
               ["Age of onset", "Easiest to identify in **youth and midlife**, when families seek care (malingering or factitious disorder may be a concern); in very late life symptoms may go unnoticed, and mild NCD must be told from **normal aging**."],
               ["Childhood onset", "May also warrant **intellectual developmental disorder** or another neurodevelopmental diagnosis to capture the whole picture."]
             ] },
-            { type: "callout", kind: "caution", title: "Suicide risk is raised", text: "Large studies show **elevated suicidal behavior** across NCD etiologies (p. 689). In Denmark, people with a hospital diagnosis of dementia had a **3- to 8-fold** suicide risk; a Taiwanese study linked late-life **suicide attempts** with later dementia. Suicide risk is especially high in **Huntington’s disease** and after **TBI**. Keep asking about mood and suicidal thoughts at every stage." }
+            { type: "callout", kind: "caution", title: "Suicide risk is raised", text: "Large studies show **elevated suicidal behavior** across NCD etiologies (p. 689). In Denmark, people with a hospital diagnosis of dementia had a **3- to 8-fold** suicide risk; a Taiwanese study linked late-life **suicide attempts** with later dementia. The subtype sections also describe raised risk in **Huntington’s disease** and after **TBI**. Keep asking about mood and suicidal thoughts at every stage." }
           ]
         },
         {
@@ -414,7 +414,7 @@ SP.add("ch17", "guide", {
               ["D", "Not better explained by cerebrovascular disease, another neurodegenerative disease, a substance, or another mental, neurological or systemic disorder."]
             ], note: "Major, probable: **G30.9** then **F02.xx**. Major, possible: **F03.xx** only. Mild, probable: G30.9 then **F06.70 / F06.71**. Mild, possible: **G31.84** only. Add codes for psychiatric symptoms due to Alzheimer’s disease (e.g., F06.2, F06.32)." },
             { type: "callout", kind: "key", title: "The asymmetry between major and mild", text: "For **major** NCD, a **typical clinical picture** (memory plus another domain, steady progression) is enough for **probable** Alzheimer’s disease. For **mild** NCD the same picture earns only **possible**, because it is less certain that mild deficits will progress; **probable** at the mild level needs a **causative mutation** (p. 691). The manual notes that **biomarkers** (amyloid or tau PET, CSF) increase certainty and may change how probable and possible are used." },
-            { type: "update", kind: "post", year: "2024", title: "Alzheimer’s criteria revised: mixed etiologies allowed", source: "APA DSM-5-TR Update, September 2024", text: "The “**no evidence of mixed etiology**” item was **deleted** from the probable (major NCD) and possible (mild NCD) lists, and the lead-ins changed from “all three” to “**both**”. The reason given: mixed pathology is common, and the old wording prevented Alzheimer’s disease from being one of the causes in **NCD due to multiple etiologies**. Criterion D is unchanged. No codes changed." },
+            { type: "update", kind: "post", year: "2024", title: "Alzheimer’s criteria revised: mixed etiologies allowed", source: "APA DSM-5-TR Update, September 2024", text: "The “**no evidence of mixed etiology**” item was **deleted** from the probable (major NCD) and possible (mild NCD) lists, and the lead-ins changed from “all three” to “**both**”. The reason given: mixed pathology is common, and the old item sat awkwardly with the manual’s own advice to diagnose **NCD due to multiple etiologies** when another condition contributes (pp. 691, 695, 731). Criterion D is unchanged. No codes changed." },
             { type: "update", kind: "post", year: "2022", title: "Possible Alzheimer’s disease takes F03", source: "APA DSM-5-TR Neurocognitive Disorders Supplement, September 2022", text: "Since October 1, 2022, **probable** Alzheimer’s disease is coded **G30.9 + F02.xx** (major) or **G30.9 + F06.7x** (mild), while **possible** Alzheimer’s disease takes **F03.xx** (major) or **G31.84** (mild) with **no** G30.9. The 2022 printing coded both as G30.9 + F02.80/F02.81 and both mild forms as G31.84." },
             { type: "case", title: "Clinical vignette: the repeated question", text: "A 76-year-old retired teacher has, over 3 years, begun asking the same question several times in one conversation, forgetting appointments and getting lost driving to her daughter’s house. Her son now manages her medications and bills; she dresses and feeds herself. Testing shows poor delayed recall that does not improve with cues, and impaired figure copying. There is no stroke history; MRI shows hippocampal atrophy only.", point: "**Major NCD due to probable Alzheimer’s disease, mild**: memory plus a second domain (perceptual-motor), steady progression, needs help with **IADLs only**. Code **G30.9, F02.A0**." }
           ]
@@ -503,7 +503,7 @@ SP.add("ch17", "guide", {
             { type: "table", caption: "Differential diagnosis (pp. 698–699)", head: ["Condition", "How to tell"], rows: [
               ["Alzheimer’s disease", "Early **memory** loss; but **10%–30%** of frontotemporal-looking syndromes have Alzheimer’s pathology at autopsy (especially dysexecutive or logopenic)."],
               ["Primary mental disorder (MDD, bipolar disorder, schizophrenia)", "Behavioral variant is often first treated as a psychiatric illness; **progressive cognitive decline** settles it. Treatable mimics: metabolic, nutritional, infectious."],
-              ["Progressive supranuclear palsy", "**Vertical supranuclear gaze palsy**, axial parkinsonism, **backward falls (retropulsion)**, pseudobulbar signs."],
+              ["Progressive supranuclear palsy", "**Supranuclear gaze palsy** (typically vertical), axial parkinsonism, **backward falls (retropulsion)**, pseudobulbar signs."],
               ["Corticobasal degeneration", "**Asymmetric** rigidity, **limb apraxia**, myoclonus, **alien limb**, cortical sensory loss."],
               ["Vascular NCD", "Can cause apathy and executive loss, but a **cerebrovascular event** is tied to onset and imaging shows lesions."]
             ] },
@@ -539,7 +539,7 @@ SP.add("ch17", "guide", {
             ] },
             { type: "table", caption: "Biomarkers (p. 701)", head: ["Weight", "Marker"], rows: [
               ["Equivalent to a core feature", "**Low striatal dopamine transporter uptake** on SPECT or PET (DaT scan); **low MIBG** myocardial uptake (cardiac sympathetic denervation); **REM sleep without atonia** on polysomnography"],
-              ["Supportive only", "**Relative preservation of medial temporal lobes** on MRI; low occipital perfusion/metabolism with or without the **cingulate island sign**; posterior slow-wave EEG activity with periodic fluctuations"],
+              ["Supportive only", "**Relative preservation of medial temporal lobes** on MRI; low occipital perfusion/metabolism with or without the **cingulate island sign**; prominent slow-wave EEG activity with periodic fluctuations in the pre-alpha/theta range"],
               ["Pathology", "Misfolded **α-synuclein**, mainly **limbic** (with or without neocortex)"]
             ] },
             { type: "table", caption: "Numbers to know (pp. 700–701)", head: ["Item", "Figure"], rows: [
@@ -567,12 +567,12 @@ SP.add("ch17", "guide", {
               ["Possibly due to", "**Only one** of these is met."]
             ], note: "Major, probably due to: **G20.C** then **F02.xx**; possibly due to: **F03.xx**. Mild: G20.C + F06.7x or G31.84. Psychiatric codes, e.g., F06.0 psychotic disorder due to Parkinson’s disease, with hallucinations; F06.31 depressive disorder due to Parkinson’s disease, with depressive features." },
             { type: "update", kind: "post", year: "2023", title: "Parkinson’s disease is now G20.C", source: "APA DSM-5-TR Update, September 2023; ICD-10-CM FY2024", text: "On October 1, 2023, ICD-10-CM split **G20** into more specific codes. DSM-5-TR uses **G20.C** (parkinsonism, unspecified) wherever the manual prints G20. The new dyskinesia and fluctuation codes (G20.A1–G20.B2) are not used in DSM-5-TR." },
-            { type: "timeline", title: "Which comes first? The 1-year rule (pp. 702, 725)", cols: ["Year −2", "Year −1", "Year 0", "Year +1", "Year +2"], rows: [
+            { type: "timeline", title: "Which comes first? The 1-year rule (pp. 702, 726)", cols: ["Year −2", "Year −1", "Year 0", "Year +1", "Year +2"], rows: [
               { label: "Lewy bodies", from: 0, to: 3, color: "case", bar: "Cognition first or within 1 year" },
               { label: "Either", from: 1, to: 3, color: "hy", bar: "Clinician chooses", note: "NCD begins before or within 12 months of Parkinson’s disease." },
               { label: "Parkinson’s disease", from: 3, to: 5, color: "guide", bar: "PD ≥1 year before NCD" }
             ] },
-            { type: "callout", kind: "key", title: "How the two expert systems agree and disagree", text: "Lewy body consensus criteria attribute dementia to **Parkinson’s disease** only if PD was diagnosed **at least 1 year before** cognition reached the major NCD level; in **NCD with Lewy bodies**, cognitive symptoms may begin **before, with, or without** parkinsonism. Parkinson’s criteria allow cognition to come first. So when NCD starts **before or within 12 months** of PD, the clinician **chooses**; when PD has been present **1 year or more** before cognitive symptoms, **both** agree on NCD due to Parkinson’s disease. At the **mild** level the order may be unclear: use **unspecified NCD** until it becomes evident (pp. 702, 725)." },
+            { type: "callout", kind: "key", title: "How the two expert systems agree and disagree", text: "Lewy body consensus criteria attribute dementia to **Parkinson’s disease** only if PD was diagnosed **at least 1 year before** cognition reached the major NCD level; in **NCD with Lewy bodies**, cognitive symptoms may begin **before, with, or without** parkinsonism. Parkinson’s criteria allow cognition to come first. So when NCD starts **before or within 12 months** of PD, the clinician **chooses**; when PD has been present **1 year or more** before cognitive symptoms, **both** agree on NCD due to Parkinson’s disease. At the **mild** level the order may be unclear: **unspecified NCD** may be needed until it becomes evident (pp. 702, 726)." },
             { type: "defs", title: "Clinical figures (pp. 724–725)", items: [
               ["Parkinson’s prevalence, US", "About **0.4%** at 60–69 rising to **1.4%** at 80–89; more common in **men**."],
               ["Cognitive outcome", "Up to **80%** eventually develop **major NCD**; **25%–27%** of those without major NCD have **mild NCD**; **9%–19%** of new untreated PD have mild NCD, and one study found major NCD in **24%** of newly diagnosed untreated PD."],
@@ -611,7 +611,7 @@ SP.add("ch17", "guide", {
               ["Motor", "Early fidgetiness and mild apraxia; then **chorea**, bradykinesia, gait ataxia and postural instability; **dysarthria** with relatively intact cognition; end-stage **dysphagia**."],
               ["Juvenile form", "Onset **before 20**: more **bradykinesia, dystonia and rigidity** than chorea."],
               ["Prevalence", "**2.7 per 100,000** worldwide; **5.7** in North America, Europe and Australia; **0.40** in Asia."],
-              ["Onset and survival", "Symptoms most often at **35–45**; survival about **10–20 years** after diagnosis; death usually from **aspiration pneumonia**."],
+              ["Onset and survival", "Symptoms most often at **35–45**; survival about **10–20 years** after diagnosis; end-stage swallowing failure is a major contributor to death (**pneumonia** was the most frequent cause, 19.5%, in one cohort)."],
               ["CAG repeats", "**40 or more**: always Huntington’s disease; **36–39**: **partially penetrant**, usually late onset (after 70); longer repeats mean **earlier** onset."],
               ["Imaging", "Progressive volume loss in the **caudate and putamen**."]
             ] },
@@ -643,7 +643,7 @@ SP.add("ch17", "guide", {
               ["Transmission", "Corneal transplants, cadaveric **dura mater** grafts, contaminated neurosurgical instruments, cadaver-derived **growth hormone** and gonadotropins, and blood transfusion (variant CJD only); **no** raised risk for health workers."],
               ["Genetics", "**PRNP** mutations in up to **15%**; the **codon 129** polymorphism modifies risk, onset and duration."]
             ] },
-            { type: "table", caption: "Diagnostic markers (p. 722)", head: ["Test", "Finding"], rows: [
+            { type: "table", caption: "Diagnostic markers (p. 723)", head: ["Test", "Finding"], rows: [
               ["Confirmation", "Only by **brain biopsy or autopsy**"],
               ["CSF", "**14-3-3** and **tau**: sensitive, variable specificity; **RT-QuIC**: extremely **high specificity**"],
               ["MRI (DWI)", "The **most sensitive** test: **multifocal gray matter hyperintensities** (cortical ribboning, basal ganglia)"],
@@ -692,7 +692,7 @@ SP.add("ch17", "guide", {
               ["Sex", "Stroke more common in men up to 65 and in women after 65"]
             ] },
             { type: "list", title: "Risk factors (p. 705)", cols: true, items: ["**Hypertension**", "**Diabetes**", "Smoking", "Obesity", "High cholesterol", "High **homocysteine**", "**Atrial fibrillation** and emboli", "**Cerebral amyloid angiopathy** (hemorrhage)", "**CADASIL** (genetic)"] },
-            { type: "table", caption: "Differential diagnosis (pp. 705–706)", head: ["Condition", "How to tell"], rows: [
+            { type: "table", caption: "Differential diagnosis (p. 706)", head: ["Condition", "How to tell"], rows: [
               ["Alzheimer’s disease", "Early, progressive **memory** loss and decline in language, executive and perceptual-motor function **without** matching focal lesions. Incidental white matter lesions are common in older people. If both are present, diagnose **both** (p. 706)."],
               ["NCD with Lewy bodies", "**Fluctuations, visual hallucinations, spontaneous parkinsonism**."],
               ["Frontotemporal NCD", "**Insidious, gradual** behavioral or language change, not typical of vascular disease."],
@@ -712,7 +712,7 @@ SP.add("ch17", "guide", {
               ["A", "Criteria for **major or mild NCD** are met."],
               ["B", "Evidence of a **TBI** (an impact to the head or rapid movement or displacement of the brain in the skull) with **one or more** of:", ["**loss of consciousness**;", "**posttraumatic amnesia**;", "**disorientation and confusion**;", "**neurological signs** (imaging showing injury, visual field cuts, anosmia, hemiparesis, hemisensory loss, cortical blindness, aphasia, apraxia, weakness, loss of balance, other unexplained sensory loss)."]],
               ["C", "The NCD appears **immediately** after the injury or **immediately after recovery of consciousness**, and **persists past the acute post-injury period**."]
-            ], note: "Major: **S06.2XAS** (diffuse TBI with loss of consciousness of unspecified duration, sequela) then **F02.xx**. Mild: S06.2XAS then F06.70 / F06.71. Rate the severity of the **NCD**, not of the injury. Psychiatric codes, e.g., **F06.34** bipolar and related disorder due to TBI, with mixed features; **F07.0** personality change due to TBI, apathetic type." },
+            ], note: "Major: **S06.2XAS** (diffuse TBI with loss of consciousness status unknown, sequela) then **F02.xx**. Mild: S06.2XAS then F06.70 / F06.71. Rate the severity of the **NCD**, not of the injury. Psychiatric codes, e.g., **F06.34** bipolar and related disorder due to TBI, with mixed features; **F07.0** personality change due to TBI, apathetic type." },
             { type: "update", kind: "post", year: "2022", title: "TBI sequela code", source: "APA DSM-5-TR Update, September 2022", text: "The manual prints **S06.2X9S**; since October 1, 2022 the code is **S06.2XAS** (diffuse TBI with loss of consciousness status unknown, sequela)." },
             { type: "table", wide: true, caption: "Classifying TBI severity (Table 2, p. 708)", head: ["Feature", "Mild", "Complicated mild", "Moderate", "Severe"], rows: [
               ["Loss of consciousness", "≤30 min", "≤30 min", ">30 min to <24 h", "≥24 h"],
@@ -787,14 +787,14 @@ SP.add("ch17", "guide", {
               ["Caution on causation", "Poor impulse control may **precede** stimulant use; persistent NCD from drugs **other than alcohol, depressants and inhalants** is not clearly established."]
             ] },
             { type: "defs", title: "Prevalence and course (pp. 715–716)", items: [
-              ["Alcohol use disorder", "Mild NCD in about **30%–40%** in the **first 2 months** of abstinence; it may persist, especially if stable abstinence comes **after 50**. Major NCD is **rare** and usually tied to **nutritional** deficits; maybe more common in men."],
+              ["Alcohol use disorder", "Mild NCD in about **30%–40%** in the **first 2 months** of abstinence; it may persist, especially if stable abstinence comes **after 50**. Major NCD is **rare** and may result from **nutritional** deficits; maybe more common in men."],
               ["Inhalants", "Persistent use to the point of NCD in **less than 1%** of the US population."],
               ["Recovery", "Substantial or **complete** recovery is common with stable abstinence **before 50**; persistence is most likely with use continuing **past 50**."],
               ["Risk", "Older age, longer use, use past 50, **nutritional deficits**; for alcohol also liver disease, vascular risk, and **transketolase deficiency** (amnestic type)."],
               ["Imaging", "Alcohol: cortical thinning, white matter loss, enlarged sulci and ventricles; many changes **reverse** with abstinence. Methamphetamine: hyperintensities or infarcts."]
             ] },
             { type: "callout", kind: "pearl", title: "Look for the other causes", text: "People with substance use disorders also have more **TBI**, **HIV**, **hepatitis C** and **syphilis**, and stimulant users have more **vascular** NCD. Each can cause or compound the cognitive problem and may need its own diagnosis (p. 717). See [[ch:ch16|Chapter 16]] for the use disorders." },
-            { type: "update", kind: "post", year: "2024", title: "Specifier note for mild NCD", source: "APA DSM-5-TR Update, September 2024", text: "The coding note now lists the specifiers separately: **mild, moderate, severe** apply to substance-induced **major** NCD; **with or without behavioral disturbance** apply to **major and mild** NCD. None of them can be coded for the substance-induced NCDs, but all should be **recorded**. No codes changed." }
+            { type: "update", kind: "post", year: "2024", title: "Coding note tidied", source: "APA DSM-5-TR Update, September 2024", text: "The APA aligned the coding note and table footnote for this disorder: **mild, moderate, severe** apply to substance-induced **major** NCD, and **with or without behavioral disturbance** to **major and mild** NCD (as p. 713 already says). None of them is coded for substance-induced NCDs, but all are **recorded**. No codes changed." }
           ]
         },
         {
@@ -840,7 +840,7 @@ SP.add("ch17", "guide", {
               ["B", "History, examination or laboratory findings show the NCD is the **pathophysiological consequence** of another medical condition (e.g., **multiple sclerosis**)."],
               ["C", "Not better explained by another mental disorder (e.g., MDD) or **another specific NCD** (e.g., Alzheimer’s disease)."]
             ], note: "Major: code the condition first, e.g., **G35.D** multiple sclerosis, then **F02.xx** (e.g., **F02.B2** for moderate, with psychotic disturbance). Mild: the condition, then F06.70 / F06.71." },
-            { type: "table", caption: "Causes named in the text (p. 729)", head: ["Group", "Examples"], rows: [
+            { type: "table", caption: "Causes named in the text (p. 730)", head: ["Group", "Examples"], rows: [
               ["Structural", "Primary or secondary **brain tumors**, **subdural hematoma**, slowly progressive or **normal-pressure hydrocephalus**"],
               ["Hypoxia", "Hypoperfusion from **heart failure**"],
               ["Endocrine", "**Hypothyroidism**, hypercalcemia, **hypoglycemia**"],
@@ -852,7 +852,7 @@ SP.add("ch17", "guide", {
               ["Neurological", "**Epilepsy**, **multiple sclerosis**"],
               ["Unusual injuries", "Electrical shock, intracranial radiation"]
             ] },
-            { type: "callout", kind: "key", title: "The best evidence is timing and treatment response", text: "A **temporal link** between the onset or worsening of the medical condition and the cognitive deficit gives the strongest support. Certainty grows if deficits **improve or stabilize** with treatment (p. 729). The NCD follows the illness: it may improve with treatable causes (hypothyroidism) and progress with deteriorating ones (secondary progressive MS). If deficits **persist** after successful treatment, look for **another** etiology (p. 730)." },
+            { type: "callout", kind: "key", title: "The best evidence is timing and treatment response", text: "A **temporal link** between the onset or worsening of the medical condition and the cognitive deficit gives the strongest support. Certainty grows if deficits **improve or stabilize** with treatment (p. 730). The NCD follows the illness: it may improve with treatable causes (hypothyroidism) and progress with deteriorating ones (secondary progressive MS). If deficits **persist** after successful treatment, look for **another** etiology (p. 730)." },
             { type: "update", kind: "post", year: "2025", title: "Multiple sclerosis is now G35.D", source: "APA DSM-5-TR Update, September 2025; ICD-10-CM FY2026", text: "Since October 1, 2025, multiple sclerosis is **G35.D** (multiple sclerosis, unspecified); the three-character **G35** printed in the manual is no longer valid." }
           ]
         },
@@ -878,7 +878,7 @@ SP.add("ch17", "guide", {
               ["Unspecified NCD (R41.9)", "NCD symptoms that cause distress or impairment **predominate** but **full criteria** for no NCD are met, and the etiology cannot be determined with enough certainty. No etiology codes; behavior recorded, not coded."]
             ] },
             { type: "update", kind: "post", year: "2022", title: "New diagnosis: NCD due to unknown etiology", source: "APA DSM-5-TR Update and Neurocognitive Disorders Supplement, September 2022", text: "The APA added **major or mild NCD due to unknown etiology** and revised **unspecified NCD**. Use unknown etiology when the **syndrome** is clear but the **cause** is not; use unspecified NCD when the presentation does **not meet** full NCD criteria or the picture is too uncertain." },
-            { type: "callout", kind: "exam", title: "Mixed pathology is the rule in old age", text: "Many etiologies become more common with age, so **mixed** NCDs are frequent (p. 689). Alzheimer’s plus vascular is the classic pair; Lewy body pathology often coexists with Alzheimer’s, **TDP-43** and vascular pathology in the oldest people, with **faster decline** (p. 702). Since 2024 Alzheimer’s disease can be one of the **multiple etiologies**." }
+            { type: "callout", kind: "exam", title: "Mixed pathology is the rule in old age", text: "Many etiologies become more common with age, so **mixed** NCDs are frequent (p. 689). Alzheimer’s plus vascular is the classic pair; Lewy body pathology often coexists with Alzheimer’s, **TDP-43** and vascular pathology in the oldest people, with **faster decline** (p. 702). The 2024 revision makes explicit that Alzheimer’s disease can be one of the **multiple etiologies**." }
           ]
         }
       ]
@@ -895,7 +895,7 @@ SP.add("ch17", "guide", {
               ["Alzheimer’s disease", "Insidious; **steady** decline, few plateaus; usually 70s–80s", "**Memory and learning**", "Repeats questions; later language and visuospatial loss; social cognition kept until late", "Amyloid and tau (PET, CSF, blood)"],
               ["Frontotemporal", "Insidious; **50s**; faster than Alzheimer’s", "**Social cognition, executive**, or **language**", "Disinhibition, apathy, lost empathy, hyperorality, compulsions; or progressive aphasia", "Frontal/anterior temporal atrophy"],
               ["Lewy bodies", "Insidious; **mid-70s**; fluctuating", "**Attention, executive, visuoperceptual**", "Fluctuations, **visual hallucinations**, parkinsonism after cognition, REM sleep behavior disorder, **neuroleptic sensitivity**", "DaT scan, MIBG, polysomnography"],
-              ["Parkinson’s disease", "Gradual, in **established** PD (≥1 year)", "Attention, executive, speed, visuospatial", "Motor PD first; apathy, depression, hallucinations", "DaT scan"],
+              ["Parkinson’s disease", "Gradual, in **established** PD (PD ≥1 year first by the Lewy consensus rule)", "Attention, executive, speed, visuospatial", "Motor PD first; apathy, depression, hallucinations", "DaT scan"],
               ["Vascular", "**Stepwise** after strokes, or gradual with small vessel disease", "**Complex attention, processing speed, executive**", "Focal signs, TIA or stroke history, emotional lability, vascular depression", "MRI: infarcts, lacunes, white matter disease"],
               ["Traumatic brain injury", "**Immediately** after the injury; then static or improving", "Attention, speed, memory, executive, social cognition", "Loss of consciousness or posttraumatic amnesia; irritability, aggression", "CT/MRI; TBI severity table"],
               ["Substance/medication", "Persists beyond intoxication and withdrawal; **improves with abstinence**", "Executive and memory (alcohol); memory (sedatives)", "Korsakoff: amnesia with confabulation", "Abstinence trial; MRI"],

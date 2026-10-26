@@ -79,7 +79,7 @@ SP.add("ch17", "highYield", [
     "Mild NCD probably due to vascular disease: **I67.9** then F06.70 or F06.71.",
     "Unspecified NCD: **R41.9**.",
     "Severe probable Alzheimer’s NCD with agitation and delusions: G30.9, **F02.C11**, **F02.C2**.",
-    "F02.81 was split into **F02.811** (agitation) and F02.818 (other disturbance)."
+    "At unspecified severity, F02.81 was replaced by **F02.811** (agitation), F02.818 (other), F02.82, F02.83 and F02.84."
   ] },
   { id: "hy17-ncd-epi", topic: "NCD: prevalence and course", items: [
     "Dementia prevalence: about **1%–2%** at age 65.",
@@ -119,7 +119,7 @@ SP.add("ch17", "highYield", [
     "Share of dementias due to Alzheimer’s disease: about **60% to over 90%**.",
     "Genetic share of Alzheimer’s attributable risk: **60%–80%**.",
     "Autosomal dominant Alzheimer’s mutations lie on chromosomes **1, 14 and 21**.",
-    "APP is on chromosome **21**, which is why Down syndrome leads to Alzheimer’s disease in midlife.",
+    "People with Down syndrome (trisomy **21**) may develop Alzheimer’s disease if they survive to midlife.",
     "The strongest common genetic risk factor: **APOE ε4**.",
     "CSF finding of Alzheimer’s disease: **low** amyloid-β42 with raised tau or phospho-tau.",
     "FDG-PET finding in Alzheimer’s disease: **temporoparietal** hypometabolism."

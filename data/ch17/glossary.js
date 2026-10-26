@@ -28,7 +28,7 @@ SP.glossary = (SP.glossary || []).concat([
   ["behavioral and psychological symptoms of dementia", "Neuropsychiatric symptoms of NCD, such as agitation, apathy, depression, delusions, wandering and sleep disturbance.", "Ch 17"],
   ["apathy", "Reduced motivation and goal-directed behavior with blunted emotional response; common in Alzheimer’s and frontotemporal NCD and coded as a mood disturbance.", "Ch 17"],
   ["wandering", "Aimless or purposeful walking that puts a person with NCD at risk of getting lost.", "Ch 17"],
-  ["probable etiology", "The higher level of diagnostic certainty for some NCD subtypes (e.g., a causative mutation, typical course or imaging); coded with the disease code plus F02 or F06.7x.", "Ch 17"],
+  ["probable etiology", "The higher level of diagnostic certainty for some NCD subtypes (e.g., a causative mutation, typical course or imaging); coded with the disease code plus F02 (major) or F06.7x (mild); probable vascular takes F01 (major) or I67.9 + F06.7x (mild).", "Ch 17"],
   ["possible etiology", "The lower level of certainty for some NCD subtypes; coded F03 (major) or G31.84 (mild) without a disease code.", "Ch 17"],
   ["amnestic presentation", "The typical Alzheimer’s presentation, led by impaired learning and memory.", "Ch 17"],
   ["neuritic plaque", "An extracellular deposit of amyloid-β surrounded by damaged neurites; a hallmark of Alzheimer’s pathology.", "Ch 17"],

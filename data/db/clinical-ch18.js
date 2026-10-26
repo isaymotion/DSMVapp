@@ -267,7 +267,7 @@
         { ch: "ch04", dx: "mdd", when: "Withdrawal and irritability within a depressive episode." },
         { ch: "ch03", dx: "bipolar-i", when: "Disinhibition within a manic episode." },
         { ch: "ch07", dx: "ptsd", when: "Change after extreme stress." },
-        { ch: "ch17", name: "Major neurocognitive disorder", when: "Personality change with cognitive decline." }
+        { ch: "ch17", dx: "ncd-frontotemporal", when: "Personality change with cognitive decline." }
       ]
     },
     {

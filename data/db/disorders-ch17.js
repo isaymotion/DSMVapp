@@ -38,7 +38,7 @@
         { id: "acute-stress", how: "Follows trauma; attention intact." },
         { id: "factitious", how: "Atypical picture and no medical or substance cause." }
       ],
-      pearls: ["Test attention directly (months backward).", "Hypoactive delirium is common and missed.", "Treat the cause; manage delirium before NCD.", "Visual hallucinations suggest a medical cause."],
+      pearls: ["Test attention directly (months backward).", "Hypoactive delirium is common and missed.", "Treat the cause; manage delirium before NCD.", "Clinical teaching: visual hallucinations suggest a medical cause."],
       cmp: { symptoms: "Inattention, reduced awareness, fluctuation", exclusions: "Coma; explained by an NCD", prevalence: "1%–2% community; up to 81% ICU", course: "Usually recovers; 38%–41% die within 1 year" },
       clues: [["Core picture", "An 84-year-old, confused and drowsy on day 2 of pneumonia, worse at night"], ["Code", "J18.9 then F05 (pneumonia, then delirium due to it)"]],
       updates: upd("Hepatic encephalopathy in the examples is now **K76.82** (was K72.90). F05 and the substance codes are unchanged through October 2026.")
@@ -169,7 +169,7 @@
         { id: "ncd-amc", how: "Thyroid disease, B12 deficiency." }
       ],
       pearls: ["Recall does not improve with cues.", "Social cognition preserved until late.", "Over half start with behavioral symptoms.", "Mild NCD: probable only with a mutation."],
-      cmp: { symptoms: "Amnestic; then language and visuospatial", exclusions: "Other primary etiology", prevalence: "60%–90% of dementias", course: "Steady progression; ~10 years" },
+      cmp: { symptoms: "Amnestic; then language and visuospatial", exclusions: "Other primary etiology", prevalence: "60% to over 90% of dementias", course: "Steady progression; ~10 years" },
       clues: [["Core picture", "A 76-year-old who repeats questions and gets lost driving, needing help with bills"], ["Code", "G30.9, F02.A0"]],
       updates: [
         { kind: "post", year: "2024", title: "Mixed etiologies allowed", source: "APA DSM-5-TR Update, September 2024", text: "The **no evidence of mixed etiology** item was removed from the probable (major) and possible (mild) criteria, so Alzheimer’s disease can be one of several causes in **NCD due to multiple etiologies**." },
@@ -201,7 +201,7 @@
         { id: "schizophrenia", how: "Earlier onset; no progressive decline." },
         { id: "ncd-vascular", how: "Cerebrovascular event tied to onset." }
       ],
-      pearls: ["Often presents first to psychiatry.", "Formal tests may be near normal early.", "Cholinesterase inhibitors do not help.", "Check for motor neuron disease."],
+      pearls: ["Often presents first to psychiatry.", "Formal tests may be near normal early.", "Outside the DSM: cholinesterase inhibitors do not help.", "Check for motor neuron disease."],
       cmp: { symptoms: "Disinhibition, apathy, hyperorality; or aphasia", exclusions: "Prominent early amnesia", prevalence: "2–31/100,000", course: "Faster than Alzheimer’s" },
       clues: [["Core picture", "A 56-year-old accountant who shoplifts sweets and shows no concern for his wife"], ["Code", "G31.09, F02.A18"]],
       updates: upd("Probable: **G31.09 + F02.xx**; possible: **F03.xx**. Mild: G31.09 + F06.7x or G31.84.")
@@ -222,7 +222,7 @@
         ["D", "Not better explained by another disease or disorder."]
       ],
       specifiers: ["Probable / possible", "Without / with behavioral disturbance", "Severity (major)"],
-      epi: [["Older adults", "0%–1.2%"], ["Share of dementia", "4.2% community; 7.5% clinics"], ["Onset", "Mid-70s"], ["Sex", "About 3× in men 65+"]],
+      epi: [["Older adults", "0%–1.2%"], ["Share of dementia", "4.2% community; 7.5% clinics"], ["Onset", "Mid-70s"], ["Sex", "Incidence ~3× in men 65+ (one study)"]],
       risk: ["Familial aggregation in some; most have no family history.", "Genetic risk comparable to Alzheimer’s and Parkinson’s disease."],
       differential: [
         { id: "ncd-parkinsons", how: "PD at least 1 year before NCD." },
@@ -231,7 +231,7 @@
         { id: "ncd-vascular", how: "Stroke-linked onset." }
       ],
       pearls: ["Up to 50% have severe neuroleptic sensitivity.", "Up to 25% never develop parkinsonism.", "Ask about dream enactment.", "DaT scan has core-level weight."],
-      cmp: { symptoms: "Fluctuation, visual hallucinations, parkinsonism, RBD", exclusions: "PD ≥1 year before NCD", prevalence: "4%–8% of dementias", course: "Progressive; 5.5–7.7 years" },
+      cmp: { symptoms: "Fluctuation, visual hallucinations, parkinsonism, RBD", exclusions: "PD ≥1 year before NCD", prevalence: "4.2%–7.5% of dementias", course: "Progressive; 5.5–7.7 years" },
       clues: [["Core picture", "A 75-year-old with good and bad days, seeing children in the garden, and a shuffling gait"], ["Code", "G31.83, F02.A2"]],
       updates: upd("Probable: **G31.83 + F02.xx**; possible: **F03.xx**. Mild: G31.83 + F06.7x or G31.84.")
     },
@@ -288,7 +288,7 @@
       ],
       pearls: ["Grade the TBI with Table 2; grade the NCD by function.", "Complicated mild TBI behaves like moderate.", "Screen for suicide risk.", "Older adults do worse after mild TBI."],
       cmp: { symptoms: "Attention, speed, memory, executive, social cognition", exclusions: "Late onset after injury", prevalence: "Depends on severity", course: "Most severe early, then improves" },
-      clues: [["Core picture", "A 28-year-old slowed and irritable 8 months after a crash with 2 hours of LOC"], ["Code", "S06.2XAS, F02.A11"]],
+      clues: [["Core picture", "A 28-year-old slowed, with angry outbursts, 8 months after a crash with 2 hours of LOC"], ["Code", "S06.2XAS, F02.A11"]],
       updates: upd("The TBI sequela code changed from **S06.2X9S** to **S06.2XAS**; mild NCD due to TBI now takes **F06.70 / F06.71** after it.")
     },
     {
@@ -323,10 +323,10 @@
         { id: "ncd-tbi", how: "Head injuries are common in substance users." },
         { id: "ncd-hiv", how: "Shared risk through injection use." }
       ],
-      pearls: ["Give thiamine.", "Many improve with abstinence before 50.", "Korsakoff: amnesia with confabulation.", "Methamphetamine can cause vascular NCD."],
+      pearls: ["Outside the DSM: give thiamine.", "Many improve with abstinence before 50.", "Korsakoff: amnesia with confabulation.", "Methamphetamine can cause vascular NCD."],
       cmp: { symptoms: "Executive and memory deficits", exclusions: "Only during intoxication or withdrawal", prevalence: "30%–40% mild NCD early in alcohol abstinence", course: "Often improves with abstinence" },
       clues: [["Core picture", "A malnourished man who cannot learn new facts and fills gaps with stories"], ["Code", "F10.26"]],
-      updates: upd("Codes unchanged. In September 2024 the APA clarified that the severity and behavioral specifiers (now listed separately for major and mild NCD) are recorded but not coded.", "2024")
+      updates: upd("Codes unchanged. In September 2024 the APA aligned the coding note: severity (major) and behavioral specifiers (major and mild) are recorded but not coded.", "2024")
     },
     {
       id: "ncd-hiv", ch: "ch17", sec: "s17-hiv", pages: "717–721", critPages: "717",
@@ -354,7 +354,7 @@
       ],
       pearls: ["Asymptomatic impairment is not an NCD.", "Abrupt change: look for another cause.", "Over half of people with HIV in the US are over 50."],
       cmp: { symptoms: "Slowing, executive, learning", exclusions: "Secondary brain disease", prevalence: "Mild NCD ~25% of disturbances", course: "Variable" },
-      clues: [["Core picture", "A 52-year-old on ART, slowed and forgetting doses, with normal naming"], ["Code", "B20, F06.70"]],
+      clues: [["Core picture", "A 52-year-old on ART, slowed at work, with normal naming, still independent"], ["Code", "B20, F06.70"]],
       updates: upd("Mild NCD due to HIV infection: **B20 + F06.70 / F06.71** since October 2022 (G31.84 in the 2022 printing).")
     },
     {
@@ -405,7 +405,7 @@
         { id: "ncd-vascular", how: "Vascular parkinsonism; course tied to strokes." },
         { name: "Antipsychotic-induced parkinsonism", how: "Motor signs after a dopamine blocker." }
       ],
-      pearls: ["The 1-year rule.", "Use motor-free tests.", "DaT scan separates Lewy body dementias from Alzheimer’s.", "Pimavanserin is approved for PD psychosis."],
+      pearls: ["The 1-year rule.", "Use motor-free tests.", "DaT scan separates Lewy body dementias from Alzheimer’s.", "Outside the DSM: pimavanserin is approved for PD psychosis."],
       cmp: { symptoms: "Attention, executive, speed, visuospatial", exclusions: "Cognition before PD (consider Lewy bodies)", prevalence: "Up to 80% of PD eventually", course: "Gradual" },
       clues: [["Core picture", "A 72-year-old with PD for 8 years now needing help with his pills"], ["Code", "G20.C, F02.A0"]],
       updates: upd("Parkinson’s disease is **G20.C** since October 1, 2023 (was G20).", "2023")
@@ -481,10 +481,10 @@
       epi: [["Mixed Alzheimer’s plus vascular (European autopsy)", "5.5%"]],
       risk: ["Age: many etiologies increase together."],
       differential: [{ id: "ncd-alzheimers", how: "Single etiology." }, { id: "ncd-unknown", how: "Cause presumed but not identifiable." }],
-      pearls: ["Code F02 once.", "Vascular goes in F01, not as a medical code.", "Since 2024, Alzheimer’s can be one of the etiologies."],
+      pearls: ["Code F02 once.", "Vascular goes in F01, not as a medical code.", "The 2024 revision makes explicit that Alzheimer’s can be one of the etiologies."],
       cmp: { symptoms: "Mixed features", exclusions: "Single etiology", prevalence: "Common in the oldest old", course: "Often faster" },
       clues: [["Core picture", "Probable Alzheimer’s disease with a later stroke and further decline"], ["Code", "G30.9, F02.B0, F01.B0"]],
-      updates: upd("The manual’s example (G30.9, B20, F02.81, F01.51, F10.27) becomes **G30.9, B20, F02.B11, F01.B11, F10.27** under current codes.")
+      updates: upd("The manual’s example (G30.9, B20, F02.81, F01.51, F10.27) becomes **G30.9, B20, F02.B__, F01.B__, F10.27** under current codes, with the disturbance suffix chosen by type (e.g., **F02.B11, F01.B11** for agitation).")
     },
     {
       id: "ncd-unknown", ch: "ch17", sec: "s17-multiple-unknown", pages: "731–732 (added 2022)",

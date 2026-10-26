@@ -297,8 +297,8 @@ SP.complaintData = (SP.complaintData || []).concat([
     items: [
       { ch: "ch04", dx: "mdd", when: "Subacute onset with depressive symptoms, “don’t know” answers, effort-dependent deficits (“pseudodementia”)." },
       { ch: "ch04", dx: "depressive-due-to-amc", when: "Poststroke depression or depression in Parkinson’s or Huntington’s disease." },
-      { ch: "ch17", name: "Major or mild neurocognitive disorder", when: "Gradual decline that precedes the mood change, often minimized by the patient." },
-      { ch: "ch17", name: "Delirium", when: "Acute, fluctuating disturbance of attention and awareness." }
+      { ch: "ch17", dx: "major-ncd", when: "Gradual decline that precedes the mood change, often minimized by the patient." },
+      { ch: "ch17", dx: "delirium", when: "Acute, fluctuating disturbance of attention and awareness." }
     ]
   },
   {

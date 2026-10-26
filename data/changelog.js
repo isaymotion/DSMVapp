@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 30,
+    date: "2026-10-27",
+    title: "Practice pack for Chapter 17",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the neurocognitive disorders, plus a new complaint in the hub.",
+    items: [
+      { type: "chapter", ch: "ch17", text: "Chapter 17: 25 board vignettes (6 in two parts), 14 “Write the diagnosis” cases with the current F01/F02/F03, F06.7x and substance codes, 10 counting drills and 22 exam traps.", href: "#/c/ch17/practice", link: "Chapter 17 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges for 13 Chapter 17 diagnoses, from delirium work-up and antipsychotic caution to cholinesterase inhibitors, memantine, anti-amyloid antibodies, brexpiprazole and pimavanserin, current to October 2026.", href: "#/dx/ncd-alzheimers", link: "Alzheimer’s disease" },
+      { type: "feature", text: "Start from the complaint: sudden confusion or acute change in mental state; Chapter 17 items added to memory complaints in older adults and memory gaps, and links from other chapters now open the Chapter 17 library pages.", href: "#/complaints/confusion", link: "Open the complaint" }
+    ]
+  },
+  {
     id: 29,
     date: "2026-10-27",
     title: "Chapter 17: Neurocognitive Disorders",

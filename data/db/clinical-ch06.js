@@ -190,7 +190,7 @@
         { ch: "ch06", dx: "hoarding", when: "Difficulty discarding items that feel useful or precious; cluttered living areas." },
         { ch: "ch06", dx: "ocd", when: "Saving to prevent harm or out of incompleteness; bizarre items." },
         { ch: "ch04", dx: "mdd", when: "Clutter from low energy, no trouble discarding." },
-        { ch: "ch17", name: "Major neurocognitive disorder", when: "Accumulation and squalor after cognitive decline." },
+        { ch: "ch17", dx: "major-ncd", when: "Accumulation and squalor after cognitive decline." },
         { ch: "ch02", dx: "schizophrenia", when: "Accumulation from delusions or negative symptoms." }
       ]
     },

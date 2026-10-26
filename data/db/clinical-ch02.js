@@ -187,10 +187,10 @@
       ask: ["Any cognitive decline before the psychosis?", "Fluctuating attention or alertness?", "New medicines (steroids, dopaminergic drugs, anticholinergics)?", "Vision or hearing loss?", "Visual hallucinations, parkinsonism or falls?"],
       mustNotMiss: ["**Delirium**.", "**Stroke, tumor or seizures**.", "**Medication toxicity**."],
       items: [
-        { ch: "ch17", name: "Delirium", when: "Acute, fluctuating attention and awareness." },
+        { ch: "ch17", dx: "delirium", when: "Acute, fluctuating attention and awareness." },
         { ch: "ch02", dx: "psychotic-due-to-amc", when: "A medical condition with a plausible mechanism and time link." },
         { ch: "ch02", dx: "substance-induced-psychotic", when: "Onset after a medication change." },
-        { ch: "ch17", name: "Neurocognitive disorder with psychotic features", when: "Psychosis in Alzheimer’s disease or Lewy body disease (visual hallucinations, parkinsonism, fluctuations)." },
+        { ch: "ch17", dx: "ncd-lewy", when: "Psychosis in Alzheimer’s disease or Lewy body disease (visual hallucinations, parkinsonism, fluctuations)." },
         { ch: "ch02", dx: "delusional-disorder", when: "Late-onset fixed delusions with intact cognition, often with hearing loss." },
         { ch: "ch04", dx: "mdd", when: "Psychotic depression with nihilistic or guilt delusions." }
       ]
