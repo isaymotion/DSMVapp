@@ -260,7 +260,7 @@ SP.complaintData = (SP.complaintData || []).concat([
       { ch: "ch04", dx: "pdd", when: "Chronic low energy with low mood for ≥2 years." },
       { ch: "ch04", name: "Atypical features (specifier)", when: "Leaden paralysis, hypersomnia and mood reactivity." },
       { ch: "ch04", dx: "depressive-due-to-amc", when: "A medical cause with a time link." },
-      { ch: "ch12", name: "Sleep-wake disorders", when: "Fatigue from disturbed sleep, such as obstructive sleep apnea or insomnia disorder." }
+      { ch: "ch12", dx: "insomnia", when: "Fatigue from poor sleep: insomnia disorder; also consider obstructive sleep apnea." }
     ]
   },
   {
@@ -273,7 +273,7 @@ SP.complaintData = (SP.complaintData || []).concat([
       { ch: "ch04", name: "Melancholic features (specifier)", when: "Waking at least 2 hours early, worst in the morning." },
       { ch: "ch04", name: "Atypical or seasonal features", when: "Hypersomnia with increased appetite, often in winter." },
       { ch: "ch03", dx: "bipolar-i", when: "Feeling rested after 3 hours of sleep: decreased need for sleep." },
-      { ch: "ch12", name: "Insomnia disorder", when: "Insomnia that is the main complaint and not explained by another disorder." }
+      { ch: "ch12", dx: "insomnia", when: "Insomnia that is the main complaint and not explained by another disorder." }
     ]
   },
   {

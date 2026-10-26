@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 34,
+    date: "2026-10-26",
+    title: "Practice pack for Chapter 12",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the sleep-wake disorders, three new complaints in the hub, and accuracy fixes from a full check against the manual.",
+    items: [
+      { type: "chapter", ch: "ch12", text: "Chapter 12: 25 board vignettes (9 in two parts), 15 “Write the diagnosis” cases from F51.01 with comorbidity codes to G71.11 + G47.429, F11.20 + G47.37 and the substance-induced codes, 10 counting drills and 26 exam traps.", href: "#/c/ch12/practice", link: "Chapter 12 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges for 17 Chapter 12 diagnoses, from CBT-I and orexin antagonists to oxybates, oveporexton, tirzepatide for sleep apnea, light and melatonin timing, imagery rehearsal and the 2024 restless legs guideline, current to October 2026.", href: "#/dx/insomnia", link: "Insomnia disorder" },
+      { type: "feature", text: "Start from the complaint: snoring or stopping breathing in sleep; strange behavior, screaming or bad dreams at night; restless legs at night. Chapter 12 items added to sleeping too much or too little and to fatigue, and links from Chapters 4, 10 and 11 now open the Chapter 12 library pages.", href: "#/complaints/night-behaviors", link: "Open the hub" }
+    ]
+  },
+  {
     id: 33,
     date: "2026-10-26",
     title: "Chapter 12: Sleep-Wake Disorders",
