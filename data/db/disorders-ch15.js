@@ -39,7 +39,7 @@
       ],
       pearls: ["Severity counts settings, not symptoms.", "Under 5: most days; 5 and older: weekly.", "Symptoms may not show in the clinic: ask parents and teachers.", "Defiant/vindictive symptoms predict CD; angry/irritable mood predicts mood and anxiety disorders.", "Since DSM-5, ODD and CD can both be diagnosed."],
       cmp: { symptoms: "Angry/irritable mood, arguing and defiance, vindictiveness (4 of 8)", exclusions: "Only during psychotic, substance, depressive or bipolar disorder; DMDD criteria met", prevalence: "About 3.3% (1%–11%)", course: "Preschool onset; may precede childhood-onset CD; many never develop CD" },
-      clues: [["Core picture", "A 9-year-old who argues, refuses chores and blames his brother weekly for 8 months, only at home"], ["Duration rule", "4 of 8 for ≥6 months"], ["Code", "F91.3"]],
+      clues: [["Core picture", "A 9-year-old who loses his temper, argues, refuses chores and blames his brother weekly for 8 months, only at home"], ["Duration rule", "4 of 8 for ≥6 months"], ["Code", "F91.3"]],
       updates: upd("**F91.3** is unchanged in the October 2024, 2025 and 2026 ICD-10-CM updates.")
     },
     {
@@ -122,7 +122,7 @@
       id: "pyromania", ch: "ch15", sec: "s15-pyromania", pages: "537–539", critPages: "537",
       name: "Pyromania", code: "F63.1",
       codes: [["F63.1", "Pyromania", NC]],
-      aka: ["pathological fire setting", "compulsive fire setting", "impulsive fire setting"],
+      aka: ["pathological fire setting", "compulsive fire setting"],
       essence: "**Deliberate** fire setting on **more than one** occasion, with **tension or arousal before**, **fascination with fire** and **pleasure or relief** in setting or watching fires; not for **gain, ideology, hiding a crime, anger, better living conditions**, not from **delusions** or **impaired judgment**, and not better explained by **conduct disorder, mania or antisocial PD**.",
       duration: "None; more than one fire",
       functioning: "Harm to life and property, legal consequences",
@@ -182,7 +182,7 @@
         { id: "major-ncd", how: "Stealing from neurocognitive impairment." },
         { id: "bulimia", how: "A common comorbidity, not an explanation." }
       ],
-      pearls: ["The only disorder in the chapter more common in women (3:1).", "Items are often given away, discarded, hoarded or secretly returned.", "Steals alone and unplanned, but avoids stealing in front of police.", "Comorbid compulsive buying, MDD, bulimia and alcohol use are common.", "Ask about suicide attempts."],
+      pearls: ["The only disorder in the chapter more common in women (3:1).", "Items are often given away, discarded, hoarded or secretly returned.", "Steals alone, usually unplanned, but avoids stealing in front of police.", "Comorbid compulsive buying, MDD, bulimia and alcohol use are common.", "Ask about suicide attempts."],
       cmp: { symptoms: "Unresisted urges to steal unneeded items; tension then relief", exclusions: "Anger, delusions; CD, mania, ASPD", prevalence: "0.3%–0.6% (US); 4%–24% of arrested shoplifters", course: "Sporadic, episodic or chronic; may persist for years" },
       clues: [["Core picture", "A 34-year-old who takes lipsticks she could easily buy, feels relief, keeps them unopened in a drawer and feels ashamed"], ["Code", "F63.2"]],
       updates: upd("**F63.2** is unchanged in the October 2024, 2025 and 2026 ICD-10-CM updates.")

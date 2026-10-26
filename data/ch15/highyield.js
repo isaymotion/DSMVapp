@@ -36,7 +36,7 @@ SP.add("ch15", "highYield", [
     "ODD is excluded if symptoms occur only during a psychotic, substance use, **depressive or bipolar** disorder."
   ] },
   { id: "hy15-odd-course", topic: "ODD: features, prevalence and course", items: [
-    "ODD symptoms are most often confined to **home**.",
+    "When ODD is confined to one setting, that setting is most often the **home**.",
     "Daily tantrums occur in only about **10%** of preschoolers.",
     "ODD is linked to a higher risk of **suicide attempts**, even after controlling for comorbidity.",
     "ODD prevalence ranges from **1%–11%**, averaging about **3.3%**.",
@@ -131,7 +131,7 @@ SP.add("ch15", "highYield", [
     "Conduct disorder and ADHD: **both** should be diagnosed when both are met.",
     "Conduct disorder and a mood disorder can both be given if conduct problems occur **outside** mood episodes.",
     "IED aggression is **impulsive** only, and IED lacks nonaggressive symptoms.",
-    "Conduct problems tied to a clear stressor and resolving within 6 months suggest **adjustment disorder**.",
+    "Conduct problems that begin with a clear stressor and do not outlast it by more than 6 months suggest **adjustment disorder**.",
     "Reading and verbal skills in conduct disorder may justify a diagnosis of **specific learning disorder**."
   ] },
   { id: "hy15-aspd", topic: "Antisocial personality disorder (cross-listed)", items: [
@@ -157,7 +157,7 @@ SP.add("ch15", "highYield", [
     "Kleptomania: recurrent failure to resist urges to steal objects not needed for **personal use** or money value.",
     "Before the theft: a rising sense of **tension**.",
     "During the theft: **pleasure, gratification or relief**.",
-    "Kleptomania thefts are done **alone** and are not planned.",
+    "Kleptomania thefts are done **alone** and are usually not planned.",
     "Stolen items are often given away, discarded, **hoarded** or secretly returned.",
     "Kleptomania occurs in about **4%–24%** of arrested shoplifters.",
     "Kleptomania in the general population: about **0.3%–0.6%**.",
@@ -167,7 +167,7 @@ SP.add("ch15", "highYield", [
     "Faking kleptomania to avoid prosecution is **malingering**."
   ] },
   { id: "hy15-motive", topic: "Fire setting and stealing: motive", items: [
-    "Fire setting for insurance, revenge or to hide a crime is **arson**, not pyromania.",
+    "Fire setting for insurance, revenge or to hide a crime is **intentional fire setting with an external motive** (ordinary arson), not pyromania.",
     "Stealing for the object or its value is **ordinary theft**, far more common than kleptomania.",
     "Pyromania and kleptomania share the exclusion trio: conduct disorder, **mania** and antisocial personality disorder.",
     "Both disorders follow the loop of **tension**, act, then relief."

@@ -189,7 +189,7 @@
         ["Argues with his teacher two or three times a week", true, "A4, at least weekly from age 5."],
         ["Blames classmates for his own mistakes about once a week", true, "A7, at least weekly."],
         ["Loses his temper about once a month", false, "From age 5 a symptom needs to occur **at least once a week**."],
-        ["Deliberately annoys his older brother daily, but nobody else", false, "Sibling conflict is common, so the manual asks that symptoms be seen in interactions with **people other than siblings** (p. 523); behavior aimed only at a brother does not count here."],
+        ["Deliberately annoys classmates about once a month", false, "From age 5 a symptom needs to occur **at least once a week**."],
         ["Refuses classroom rules several times a week", true, "A5, at least weekly."]
       ],
       need: 4,

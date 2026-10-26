@@ -132,7 +132,7 @@ SP.helpers = (SP.helpers || []).concat([
       },
       fmotive: {
         q: "Is there an external motive: money (insurance), sabotage, revenge or anger, hiding a crime, a political statement, improving living conditions, or getting attention by ‘discovering’ the fire?",
-        help: "These motives exclude pyromania (Criterion E).",
+        help: "These motives exclude pyromania (Criterion E and the differential diagnosis, pp. 537, 539).",
         options: [
           { label: "No external motive", to: "fjudg", note: "Continue." },
           { label: "Yes", to: "r:arson", note: "Not pyromania." },
@@ -148,7 +148,7 @@ SP.helpers = (SP.helpers || []).concat([
         ]
       },
       fother: {
-        q: "Is the fire setting better explained by conduct disorder, a manic episode or antisocial personality disorder?",
+        q: "Does conduct disorder, a manic episode or antisocial personality disorder account better for the fire setting?",
         help: "Look for a wider pattern of aggression, theft and rule-breaking, or for elevated mood and grandiosity at the time.",
         options: [
           { label: "No", to: "fcore", note: "Continue." },
@@ -200,7 +200,7 @@ SP.helpers = (SP.helpers || []).concat([
       theft: { label: "Not kleptomania", dx: "Ordinary theft", line: "Stealing for an object’s use or value, on a dare or out of anger is not kleptomania.", points: ["Shoplifting is common; kleptomania is rare.", "Consider conduct disorder or antisocial PD if part of a pattern."], link: { ch: "ch15", sec: "s15-motive", label: "Motive table" } },
       stealother: { label: "Not kleptomania", dx: "Mania, psychosis or major NCD", line: "Stealing during a manic episode, in response to delusions or hallucinations, or from major NCD is attributed to that disorder.", points: ["Diagnose and treat the underlying condition."], link: { ch: "ch15", sec: "s15-kleptomania", label: "Kleptomania" } },
       malinger: { label: "Not kleptomania", dx: "Malingering", line: "Claiming irresistible urges to avoid prosecution.", points: ["Look for inconsistency, gain and a pattern of ordinary theft."], link: { ch: "ch15", sec: "s15-kleptomania", label: "Kleptomania" } },
-      kleptomania: { dx: "Kleptomania", line: "Recurrent unresisted urges to steal unneeded items, tension before and relief during, done alone and unplanned.", points: ["Code: F63.2.", "Women outnumber men 3:1; ask about depression, bulimia, alcohol and suicide attempts.", "Treatment (outside the DSM): CBT; naltrexone has trial support."], link: { ch: "ch15", sec: "s15-kleptomania", label: "Kleptomania" }, dxId: "kleptomania" },
+      kleptomania: { dx: "Kleptomania", line: "Recurrent unresisted urges to steal unneeded items, tension before and relief during, done alone and usually unplanned.", points: ["Code: F63.2.", "Women outnumber men 3:1; ask about depression, bulimia, alcohol and suicide attempts.", "Treatment (outside the DSM): CBT; naltrexone has trial support."], link: { ch: "ch15", sec: "s15-kleptomania", label: "Kleptomania" }, dxId: "kleptomania" },
       "other-spec": { dx: "Other specified disruptive, impulse-control, and conduct disorder", line: "Clinically significant fire setting or stealing that does not meet full criteria; record the reason.", points: ["Code: F91.8.", "Use unspecified (F91.9) if there is not enough information."], link: { ch: "ch15", sec: "s15-residual", label: "Residual categories" }, dxId: "other-specified-disruptive" }
     }
   }

@@ -41,7 +41,7 @@ SP.add("ch15", "guide", {
               { title: "Mostly emotion", color: "hy", points: ["[[dx:ied|IED]]: outbursts of anger **out of proportion** to the provocation or stressor."] },
               { title: "Narrow impulses", color: "clin", points: ["[[dx:pyromania|Pyromania]] and [[dx:kleptomania|kleptomania]]: one specific act (fire setting or stealing) that **relieves inner tension**."] }
             ] },
-            { type: "update", kind: "tr", title: "What the text revision changed", text: "The criteria and codes are essentially those of DSM-5 (2013), with updated terms such as **intellectual developmental disorder** in the pyromania exclusions. The text revision rewrote the descriptive sections: new **Association With Suicidal Thoughts or Behavior** sections (raised suicide attempt risk in ODD, IED with PTSD, conduct disorder, fire setting and kleptomania), revised **culture-related** sections warning that disruptive disorders may be **overdiagnosed or misdiagnosed** in some cultural groups and that reactions to **racism** can be mistaken for conduct disorder, and updated prevalence figures. Confirm details against pp. 521–541." },
+            { type: "update", kind: "tr", title: "What the text revision changed", text: "The criteria and codes are essentially those of DSM-5 (2013), with updated terms such as **intellectual developmental disorder** in the pyromania exclusions. The text revision rewrote the descriptive sections: new **Association With Suicidal Thoughts or Behavior** sections (raised suicide attempt risk in IED with PTSD, conduct disorder, fire setting and kleptomania; ODD’s link to suicide attempts appears under Associated Features), revised **culture-related** sections warning that disruptive disorders may be **overdiagnosed or misdiagnosed** in some cultural groups and that reactions to **racism** can be mistaken for conduct disorder, and updated prevalence figures. Confirm details against pp. 521–541." },
             { type: "update", kind: "post", year: "2026", title: "No code changes through FY2027", source: "ICD-10-CM FY2025, FY2026 and FY2027 code tables (effective October 1 of 2024, 2025 and 2026); APA DSM-5-TR coding updates (September 2022, 2023, 2024 and 2025)", text: "F91.1, F91.2, F91.3, F91.8, F91.9, F63.1, F63.2, F63.81 and F60.2 were **not changed** in the October 2024, October 2025 or October 2026 ICD-10-CM updates, and the APA’s DSM-5-TR coding updates have not touched this chapter. The codes printed in the manual are still current. Check the code set in force on the date of service." },
             { type: "callout", kind: "pearl", title: "Historical note (outside the manual’s text)", text: "In DSM-IV, ODD could not be diagnosed when conduct disorder was present. Since DSM-5, **both can be given** when both sets of criteria are met (p. 536), and ODD’s symptoms are grouped into **mood, behavior and vindictiveness**. Older textbooks may still teach the exclusion." }
           ]
@@ -59,7 +59,7 @@ SP.add("ch15", "guide", {
               ["The normative line", "Many symptoms appear in typically developing children. Judge **frequency, persistence, pervasiveness across settings and impairment** against what is normal for the person’s **age, gender and culture**."],
               ["Externalizing spectrum", "The disorders share a broad **externalizing** liability linked to the personality dimensions of **disinhibition** and some facets of **negative emotionality**, and to low **constraint** and low **agreeableness**. This may explain why they co-occur with each other, with **substance use disorders** and with **antisocial personality disorder**. The exact shared cause is unknown."]
             ] },
-            { type: "flow", title: "A common developmental path, not a fixed one (pp. 521–522, 534)", vertical: true, steps: [
+            { type: "flow", title: "A common developmental path, not a fixed one (pp. 521–524, 532, 534)", vertical: true, steps: [
               ["Difficult, undercontrolled temperament", "High emotional reactivity, poor frustration tolerance"],
               ["Oppositional defiant disorder", "Usually first seen in the preschool years"],
               ["Childhood-onset conduct disorder", "Before age 10; often with ADHD"],
@@ -371,7 +371,7 @@ SP.add("ch15", "guide", {
             { type: "table", caption: "Differential diagnosis of conduct disorder (pp. 536–537)", head: ["Look-alike", "How to tell", "Both allowed?"], rows: [
               ["[[dx:oppositional-defiant|ODD]]", "ODD is milder, with **no** aggression to people or animals, destruction, theft or deceit, and **adds** angry/irritable mood", "**Yes**, when both are met"],
               ["[[dx:adhd|ADHD]]", "Hyperactive, impulsive behavior is disruptive but does **not by itself** violate norms or others’ rights", "**Yes**, both should be given"],
-              ["[[dx:mdd|Depressive]], [[dx:bipolar-i|bipolar]] disorders and [[dx:dmdd|DMDD]]", "Look at the **course**: in CD, conduct problems occur **outside** mood episodes, either **before** the mood disturbance began or **premeditated** behavior during calm periods", "**Yes**, when both are met"],
+              ["[[dx:mdd|Depressive]], [[dx:bipolar-i|bipolar]] disorders and [[dx:dmdd|DMDD]]", "Look at the **course**: in CD, conduct problems occur **outside** mood episodes, either **before** the mood disturbance began or **premeditated** acts that do not occur during intense emotional arousal", "**Yes**, when both are met"],
               ["[[dx:ied|IED]]", "IED aggression is **impulsive only**, not premeditated or for gain, and IED has no **nonaggressive** symptoms", "IED only if outbursts need **separate attention**"],
               ["[[dx:adjustment|Adjustment disorder]] (with disturbance of conduct)", "Conduct problems that start **in clear association with a stressor** and do not meet another disorder; by its own criteria (Chapter 7), adjustment disorder does not outlast the stressor and its consequences by **more than 6 months**. CD needs a **repetitive, persistent** pattern with impairment", "Choose one"]
             ] },
@@ -432,7 +432,7 @@ SP.add("ch15", "guide", {
               ["Suicide", "In a forensic sample of male fire setters, higher later rates of **suicide and suicide attempts**; unknown for pyromania itself"],
               ["Comorbidity", "Substance use disorders, gambling disorder, depressive and bipolar disorders, other disruptive disorders"]
             ] },
-            { type: "callout", kind: "exam", title: "Exam twist", text: "A 14-year-old with a year of fights, cruelty to a neighbor’s cat and burglaries sets a shed on fire and enjoys watching it burn. Even with enjoyment, fire setting that is **part of conduct disorder** is **not** pyromania (Criterion F): the fire setting counts as conduct disorder symptom **A8**." }
+            { type: "callout", kind: "exam", title: "Exam twist", text: "A 14-year-old with a year of fights, cruelty to a neighbor’s cat and burglaries sets a shed on fire to destroy it and enjoys watching it burn. Even with enjoyment, fire setting that is **part of conduct disorder** is **not** pyromania (Criterion F): the fire setting counts as conduct disorder symptom **A8**." }
           ]
         },
         {
@@ -557,7 +557,7 @@ SP.add("ch15", "guide", {
               { label: "CD: recent symptom", dx: "conduct-disorder", from: 50, to: 100, color: "case", span: "1 in last 6 months" },
               { label: "LPE specifier", dx: "conduct-disorder", from: 0, to: 100, color: "clin", span: "2 of 4 for 12 months" }
             ], note: "Pyromania and kleptomania have **no duration**: pyromania needs **more than one** fire; kleptomania needs **recurrent** failure to resist." },
-            { type: "table", caption: "Age thresholds (pp. 522, 527, 531, 537)", head: ["Rule", "Age"], rows: [
+            { type: "table", caption: "Age thresholds (pp. 522, 527–528, 531, 534; ASPD rule from Chapter 18)", head: ["Rule", "Age"], rows: [
               ["ODD frequency guide changes", "**5** (most days below 5; weekly from 5)"],
               ["IED minimum age", "**6** (or developmental equivalent)"],
               ["IED: adjustment-disorder exclusion applies", "**6–18**"],
