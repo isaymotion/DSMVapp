@@ -53,7 +53,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "delusional-disorder", how: "Delusional appearance beliefs are BDD with absent insight." },
       { id: "other-specified-ocrd", how: "Clearly visible flaws, no repetitive behaviors, or body odor (olfactory reference disorder)." },
       { id: "anorexia", how: "Weight and fat concerns belong to the eating disorder; both can coexist." },
-      { name: "Gender dysphoria", how: "Distress about sex characteristics." }
+      { id: "gender-dysphoria-adults", name: "Gender dysphoria", how: "Distress about sex characteristics as the wrong gender, not as deformed; both can be diagnosed." }
     ],
     pearls: ["One-third or more have delusional conviction.", "Cosmetic procedures rarely help.", "Suicidal thoughts ≈4×, attempts ≈2.6×.", "Picking or plucking to look better = BDD."],
     cmp: { symptoms: "Appearance preoccupation + repetitive acts", exclusions: "Eating disorder weight concerns; visible defects", prevalence: "2.4% (US)", course: "Adolescent onset; chronic without treatment" },

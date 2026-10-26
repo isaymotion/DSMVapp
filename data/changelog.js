@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 40,
+    date: "2026-10-27",
+    title: "Practice pack for Chapter 14",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and a care orientation for gender dysphoria, and a new complaint in the hub.",
+    items: [
+      { type: "chapter", ch: "ch14", text: "Chapter 14: 25 board vignettes, 12 “Write the diagnosis” cases from F64.2 with a coded DSD to F64.0 posttransition, brief gender dysphoria (F64.8) and the no-code presentations, 10 counting drills (the A1 rule, 2 of 6, Criterion B, posttransition, the DSD specifier, the differential, suicide risk factors) and 20 exam traps.", href: "#/c/ch14/practice", link: "Chapter 14 drills" },
+      { type: "feature", text: "“How to ask it” for the 4 Chapter 14 diagnoses, and a neutral, dated orientation to assessment and the guideline and policy landscape (WPATH SOC-8 2022, Endocrine Society 2017, Cass Review 2024, US developments 2025–2026, the Philippine context), labeled as outside the DSM.", href: "#/dx/gender-dysphoria-adults", link: "Gender dysphoria in adolescents and adults" },
+      { type: "feature", text: "Start from the complaint: distress about gender or about one’s sex characteristics. Chapter 14 items added to preoccupied with appearance, school refusal, social differences, and suicidal thoughts.", href: "#/complaints/gender-distress", link: "Open the hub" }
+    ]
+  },
+  {
     id: 39,
     date: "2026-10-27",
     title: "Chapter 14: Gender Dysphoria",

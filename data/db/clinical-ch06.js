@@ -177,7 +177,7 @@
         { ch: "ch05", dx: "social-anxiety", when: "Fear of judgment for behaving awkwardly, not for looking ugly." },
         { ch: "ch10", dx: "anorexia", when: "Concern about weight and shape at a significantly low weight." },
         { ch: "ch10", dx: "bulimia", when: "Shape and weight drive self-worth, with binges and purging." },
-        { ch: "ch14", name: "Gender dysphoria", when: "Distress about sex characteristics." }
+        { ch: "ch14", dx: "gender-dysphoria-adults", when: "Distress about sex characteristics as the wrong gender, not as deformed; both can be diagnosed." }
       ]
     },
     {
