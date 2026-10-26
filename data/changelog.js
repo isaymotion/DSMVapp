@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 39,
+    date: "2026-10-27",
+    title: "Chapter 14: Gender Dysphoria",
+    summary: "Chapter 14 is ready: the manual’s vocabulary of sex and gender, gender dysphoria in children and in adolescents and adults, the two specifiers, course, risk, suicide risk, the differential, the residual categories and the codes, including the new ICD-10-CM code F64.A.",
+    items: [
+      { type: "chapter", ch: "ch14", text: "Chapter 14 study guide in 16 sections: the manual’s definitions, the 6-of-8 (A1 required) and 2-of-6 criteria sets, the DSD and posttransition specifiers, diagnostic features by age, associated features, prevalence and the shifting sex ratio, the two trajectories and persistence figures, risk factors with and without a DSD, suicide risk and comorbidity, the differential with gender nonconformity, transvestic disorder, BDD, autism and psychosis, the residual categories, and a neutral, dated orientation to assessment and the guideline landscape (outside the DSM).", href: "#/c/ch14/guide", link: "Open Chapter 14" },
+      { type: "feature", text: "High-yield points, criteria, differential and clinical decks, 38 board questions, glossary terms and mnemonics for Chapter 14, and 4 new disorder library entries.", href: "#/c/ch14/high-yield", link: "Chapter 14 high yield" },
+      { type: "feature", text: "New diagnostic helper: “Gender dysphoria: is it the diagnosis, and which criteria set?”", href: "#/helpers/gender", link: "Open the helper" },
+      { type: "update", ch: "ch14", text: "Current to October 2026: ICD-10-CM added F64.A, “gender identity disorder, in remission,” on October 1, 2026; F64.0, F64.2, F64.8 and F64.9 are unchanged and the APA has issued no DSM-5-TR coding update for the chapter. ICD-11’s gender incongruence (HA60–HA6Z) sits outside the mental disorders chapter.", href: "#/c/ch14/guide/s14-coding", link: "Codes and how to record them" }
+    ]
+  },
+  {
     id: 38,
     date: "2026-10-26",
     title: "Practice pack for Chapter 13",
