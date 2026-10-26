@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 37,
+    date: "2026-10-26",
+    title: "Chapter 13: Sexual Dysfunctions",
+    summary: "Chapter 13 is ready: male hypoactive sexual desire disorder, female sexual interest/arousal disorder, erectile disorder, delayed and premature ejaculation, female orgasmic disorder, genito-pelvic pain/penetration disorder, substance/medication-induced sexual dysfunction and the residual categories.",
+    items: [
+      { type: "chapter", ch: "ch13", text: "Chapter 13 study guide in 25 sections, from the shared frame (75%–100% of occasions, about 6 months, distress, four exclusions) and the subtype table to FSIAD’s 3 of 6, the both-parts rule for male HSDD, organic versus psychogenic erectile problems, premature ejaculation graded in seconds, the four dimensions of GPPPD, coding the induced disorder by use disorder, which drugs do what, and what is not a dysfunction.", href: "#/c/ch13/guide", link: "Open Chapter 13" },
+      { type: "feature", text: "High-yield points, criteria, differential and clinical decks, 40 board questions, glossary terms and mnemonics for Chapter 13, and 10 new disorder library entries.", href: "#/c/ch13/high-yield", link: "Chapter 13 high yield" },
+      { type: "feature", text: "Two new diagnostic helpers: “Sexual problem: a dysfunction, or something else?” and “Which sexual dysfunction?”", href: "#/helpers/sexual", link: "Open the helper" },
+      { type: "update", ch: "ch13", text: "Current to October 2026: no ICD-10-CM changes for F52.x or the F10–F19 sexual dysfunction codes through FY2027, and no APA coding updates for the chapter. Treatment bridge (outside the DSM) includes the December 2025 FDA expansion of flibanserin to postmenopausal women under 65.", href: "#/c/ch13/guide/s13-map", link: "Chapter map and codes" }
+    ]
+  },
+  {
     id: 36,
     date: "2026-10-26",
     title: "Practice pack for Chapter 15",
