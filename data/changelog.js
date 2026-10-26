@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 27,
+    date: "2026-10-26",
+    title: "Chapter 11: Elimination Disorders",
+    summary: "A 15-section study guide, high yield, four flashcard decks, glossary, mnemonics, a diagnostic helper and 4 library entries for enuresis, encopresis and the residual categories, with codes checked through October 2026.",
+    items: [
+      { type: "chapter", ch: "ch11", text: "Study guide (pp. 399–406): enuresis criteria and the two ways to meet Criterion B, the nocturnal, diurnal and combined subtypes, primary and secondary course, the sleep and arousal model, genetics, culture and sex differences, medical and medication look-alikes; encopresis criteria and the constipation exception, the withholding cycle, both subtypes, diagnostic markers, the residual categories, an orientation to assessment and treatment, and a step-by-step approach.", href: "#/c/ch11/guide", link: "Open the guide" },
+      { type: "chapter", ch: "ch11", text: "High yield (10 topics), 24 criteria cards, 24 differential cards, 24 clinical cards, 38 board-style questions and 38 glossary terms.", href: "#/c/ch11", link: "Chapter 11" },
+      { type: "update", text: "Codes checked against the ICD-10-CM updates of October 2024, 2025 and 2026: F98.0, F98.1, N39.498, R15.9 and R32 are unchanged. Evidence boxes summarize the 2025 Cochrane review of desmopressin and the 2026 ESPGHAN/NASPGHAN constipation guideline.", href: "#/c/ch11/guide/s11-coding", link: "Codes" },
+      { type: "feature", text: "New helper: “Which elimination disorder?” and mnemonics Pee 5 Poo 4, 2-W 1-M 3-M, WET-5 and Hard and leaky vs soft and placed.", href: "#/helpers/elimination", link: "Open the helper" }
+    ]
+  },
+  {
     id: 26,
     date: "2026-10-25",
     title: "Case presentation: timeline slide, one-page handout and script",
