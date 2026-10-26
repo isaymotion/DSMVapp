@@ -58,7 +58,7 @@
         { name: "Chronic diarrhea", how: "Incontinence from diarrhea is not encopresis." },
         { name: "Spina bifida or anal stenosis", how: "Neurological or structural incontinence is not encopresis." },
         { name: "Laxative effect", how: "Incontinence exclusively from laxatives is excluded." },
-        { name: "Oppositional defiant or conduct disorder", how: "Often coexists with deliberate soiling without constipation; diagnose both." },
+        { id: "oppositional-defiant", name: "Oppositional defiant or conduct disorder", how: "Often coexists with deliberate soiling without constipation; diagnose both." },
         { id: "anorexia", how: "Laxative misuse for weight control causing accidents." },
         { id: "enuresis", how: "Often coexists, especially without constipation." }
       ],

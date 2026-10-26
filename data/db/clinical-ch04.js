@@ -205,8 +205,8 @@ SP.complaintData = (SP.complaintData || []).concat([
       { ch: "ch04", dx: "mdd", when: "Irritability confined to a **2-week or longer episode** with other depressive symptoms." },
       { ch: "ch04", dx: "pdd", when: "Irritable or low mood more days than not for ≥1 year in youth." },
       { ch: "ch03", dx: "bipolar-i", when: "**Episodic** change with elevated mood, grandiosity, decreased need for sleep." },
-      { ch: "ch15", name: "Oppositional defiant disorder", when: "Defiance and vindictiveness; if DMDD criteria are met, diagnose DMDD only." },
-      { ch: "ch15", name: "Intermittent explosive disorder", when: "Outbursts without irritability between them; 3 months suffice." },
+      { ch: "ch15", dx: "oppositional-defiant", when: "Defiance and vindictiveness; if DMDD criteria are met, diagnose DMDD only." },
+      { ch: "ch15", dx: "ied", when: "Outbursts without irritability between them; 3 months suffice." },
       { ch: "ch01", name: "ADHD or autism spectrum disorder", when: "Outbursts driven by impulsivity, or by disrupted routines in autism." }
     ]
   },

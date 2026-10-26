@@ -97,7 +97,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "3.6% (NCS-R 0.6%, NESARC 3.6%)"], ["Severe AUD, prisons", ">70%"], ["Sex", "About 3:1 men"], ["Course", "Often remits by 40"]],
     risk: ["Child abuse or neglect, erratic parenting, inconsistent discipline.", "Childhood-onset conduct disorder (before 10) with ADHD.", "Familial; relatives have more substance use and somatization."],
     differential: [
-      { name: "Conduct disorder", how: "Under 18, or after 18 only if antisocial PD is not met." },
+      { id: "conduct-disorder", how: "Under 18, or after 18 only if antisocial PD is not met." },
       { name: "Substance use disorder", how: "Antisocial acts only in service of use, without childhood onset." },
       { id: "bipolar-i", how: "Antisocial acts only during mania." },
       { id: "narcissistic-pd", how: "No impulsivity, aggression or deceit; needs admiration." },

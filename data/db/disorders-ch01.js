@@ -270,7 +270,7 @@
       epi: [["Children", "About 7.2%"], ["Adults", "2.5%"], ["Male:female", "2:1 children; 1.6:1 adults"], ["Heritability", "About 74%"]],
       risk: ["Very low birth weight and prematurity.", "Prenatal smoking exposure.", "Lead, encephalitis, prenatal alcohol (causation unclear).", "Family history."],
       differential: [
-        { name: "Oppositional defiant disorder", how: "Defiance rather than difficulty sustaining effort." },
+        { id: "oppositional-defiant", how: "Defiance rather than difficulty sustaining effort." },
         { id: "asd", how: "Social indifference and restricted, repetitive behavior." },
         { id: "sld", how: "Inattention only when the impaired skill is needed." },
         { id: "idd", how: "Symptoms must exceed mental age." },

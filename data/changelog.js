@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 36,
+    date: "2026-10-26",
+    title: "Practice pack for Chapter 15",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the disruptive, impulse-control and conduct disorders, four new complaints in the hub, and accuracy fixes from a full check against the manual.",
+    items: [
+      { type: "chapter", ch: "ch15", text: "Chapter 15: 25 board vignettes, 14 “Write the diagnosis” cases from F91.3 and F63.81 to F91.1 with limited prosocial emotions, F91.9 and the combined lines with ADHD and autism, 10 counting drills and 24 exam traps.", href: "#/c/ch15/practice", link: "Chapter 15 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges for the Chapter 15 diagnoses: parent management training and multisystemic therapy, treating comorbid ADHD, risperidone only for severe aggression, CBT and fluoxetine for IED, and naltrexone for kleptomania, current to October 2026.", href: "#/dx/conduct-disorder", link: "Conduct disorder" },
+      { type: "feature", text: "Start from the complaint: aggression, lying, stealing or truancy in a child or teen; explosive anger in an adult; repeated fire setting; repeated stealing. Chapter 15 items added to irritability in a child and to rule-breaking in an adult, and links from Chapters 1, 4, 5, 11 and 18 now open the Chapter 15 library pages.", href: "#/complaints/conduct-problems", link: "Open the hub" }
+    ]
+  },
+  {
     id: 35,
     date: "2026-10-26",
     title: "Chapter 15: Disruptive, Impulse-Control, and Conduct Disorders",

@@ -267,7 +267,7 @@
         { ch: "ch05", dx: "gad", when: "Worries about performance, grades and many other things." },
         { ch: "ch05", dx: "specific-phobia", when: "A particular feared thing at school (a dog on the route, the toilets, vomiting)." },
         { ch: "ch04", dx: "mdd", when: "Low mood, irritability, loss of interest." },
-        { ch: "ch15", name: "Conduct disorder (truancy)", when: "Stays away from home and school without anxiety." },
+        { ch: "ch15", dx: "conduct-disorder", when: "Stays away from home and school without anxiety." },
         { ch: "ch01", name: "Specific learning disorder or language disorder", when: "Avoids tasks that expose difficulties." }
       ]
     },

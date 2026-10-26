@@ -21,8 +21,8 @@ SP.disorders = (SP.disorders || []).concat([
     risk: ["Chronic irritability history, often first meeting ODD criteria.", "Comorbid ADHD and anxiety from an early age.", "Disrupted family life: abuse, neglect, parental psychiatric disorder, divorce, parental death.", "Family history of depression."],
     differential: [
       { id: "bipolar-i", how: "**Episodic** mood change with elevated mood and grandiosity; any manic-like spell >1 day excludes DMDD and bipolar wins." },
-      { name: "Oppositional defiant disorder", how: "Lacks severe outbursts plus persistent mood disruption; only ~15% with ODD meet DMDD; if both, diagnose DMDD only." },
-      { name: "Intermittent explosive disorder", how: "No persistent irritability between outbursts; 3 months suffice; never diagnosed with DMDD." },
+      { id: "oppositional-defiant", how: "Lacks severe outbursts plus persistent mood disruption; only ~15% with ODD meet DMDD; if both, diagnose DMDD only." },
+      { id: "ied", how: "No persistent irritability between outbursts; 3 months suffice; never diagnosed with DMDD." },
       { id: "mdd", how: "Irritability only during a major depressive episode → MDD instead." },
       { id: "asd", how: "Outbursts when routines are disturbed are secondary to autism." }
     ],

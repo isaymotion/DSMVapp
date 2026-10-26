@@ -22,7 +22,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "panic-disorder", how: "Panic disorder has unexpected attacks; here attacks come with anticipated separation." },
       { id: "agoraphobia", how: "Agoraphobia fears being trapped without help, not being away from attachment figures." },
       { id: "social-anxiety", how: "School refusal from fear of judgment, not separation." },
-      { name: "Conduct disorder", how: "Truancy without anxiety; the child stays away from home." },
+      { id: "conduct-disorder", how: "Truancy without anxiety; the child stays away from home." },
       { name: "Illness anxiety disorder", how: "Worry about one’s own illness, not loved ones’ safety." },
       { name: "Dependent personality disorder", how: "Indiscriminate reliance on others rather than fear for specific attachment figures." },
       { name: "Prolonged grief disorder", how: "Yearning for someone who has died, not fear of possible separation." }
