@@ -44,6 +44,6 @@ for (const ch of [process.env.CH||'ch10']) {
     await p.click('[data-act="next"]'); await p.waitForTimeout(60);
   }
 }
-for (const h of ['#/dx/insomnia','#/dx/narcolepsy','#/complaints/sleep','#/complaints/night-behaviors','#/complaints/snoring']) { await go(h); await wide(h); await p.screenshot({path:SC+h.replace(/[#/]/g,'_')+'.png',fullPage:true}); }
+for (const h of ['#/dx/conduct-disorder','#/dx/ied','#/complaints/conduct-problems','#/complaints/fire-setting','#/complaints/irritable-child']) { await go(h); await wide(h); await p.screenshot({path:SC+h.replace(/[#/]/g,'_')+'.png',fullPage:true}); }
 console.log(await p.evaluate(()=>SP.complaints.map(c=>c.id+':'+c.items.length).join(' ')));
 console.log('ERR',errs); await b.close();
