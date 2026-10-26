@@ -13,17 +13,17 @@ SP.add("ch19", "vignettes", [
     "q": "How should this sexual interest be handled in the diagnostic formulation?",
     "choices": [
       "Fetishistic disorder (F65.0), nonliving object(s)",
-      "Unspecified paraphilic disorder (F65.9)",
       "Note the fetishistic interest in the history; there is no paraphilic disorder",
+      "Unspecified paraphilic disorder (F65.9)",
       "Fetishistic disorder (F65.0), in full remission",
       "Other specified paraphilic disorder (F65.89), leather"
     ],
-    "answer": 2,
+    "answer": 1,
     "why": "He has a paraphilia (Criterion A: an intense, long-standing interest in a nonliving object), but **no distress, no impairment and no harm to anyone**, so Criterion B is absent. A paraphilia is **necessary but not sufficient**: the word diagnosis is kept for A plus B, and an incidental benign paraphilia is described, **not diagnosed** (pp. 779–780, 798).",
     "whyNot": [
       "Fetishistic disorder needs distress or impairment (Criterion B), which he does not have (p. 796).",
-      "The residual categories also require clinically significant distress or impairment (p. 801).",
       "Correct.",
+      "The residual categories also require clinically significant distress or impairment (p. 801).",
       "Remission describes a disorder that once met criteria; he never had the disorder (p. 796).",
       "Leather is a classic object of fetishism, and in any case there is no distress or impairment to justify a residual diagnosis (pp. 797, 801)."
     ],
@@ -38,19 +38,19 @@ SP.add("ch19", "vignettes", [
     "stem": "A married couple in their early 30s from Manila come to a clinic because the wife has insomnia after a job change. In the history they explain that for 8 years they have both taken part in a community BDSM group: the husband takes a dominant role and enjoys his wife’s staged suffering, and she enjoys being bound and disciplined. Everything is negotiated in advance, both consent fully, and they stop when either asks. Neither feels distressed, ashamed or troubled by the interests, and both work and socialize well. Neither has a mood disorder, psychosis or substance use, and the activities do not depend on alcohol.",
     "q": "Which conclusion about their sexual interests is correct?",
     "choices": [
-      "No paraphilic disorder for either partner: consensual activity without distress or impairment is a sexual interest",
+      "Sexual sadism disorder for the husband and sexual masochism disorder for the wife, recorded separately",
       "Sexual sadism disorder (F65.52) for the husband only, because he enjoys another person’s suffering",
       "Sexual masochism disorder (F65.51) for the wife only, because masochism has no nonconsenting-person arm",
-      "Sexual sadism disorder for the husband and sexual masochism disorder for the wife, recorded separately",
+      "No paraphilic disorder for either partner: consensual activity without distress or impairment is a sexual interest",
       "Other specified paraphilic disorder (F65.89), BDSM"
     ],
-    "answer": 0,
+    "answer": 3,
     "why": "Both have the paraphilic interest, but **Criterion B is missing**: no distress or impairment, and the husband has **never acted on his urges with a nonconsenting person**. The manual notes that most people active in **community BDSM networks** are not dissatisfied with their interests and would not meet criteria (pp. 788, 790, 792).",
     "whyNot": [
-      "Correct.",
+      "Neither partner meets Criterion B, so neither disorder applies (pp. 788, 790).",
       "Sadism disorder requires acting on the urges with a nonconsenting person or distress or impairment; his partner consents and he is not distressed (p. 790).",
       "Masochism disorder needs distress or impairment, which she does not report (p. 788).",
-      "Neither partner meets Criterion B, so neither disorder applies (pp. 788, 790).",
+      "Correct.",
       "BDSM is a community practice, not a residual diagnosis, and there is no distress or impairment (pp. 788, 801)."
     ],
     "discuss": [
@@ -64,20 +64,20 @@ SP.add("ch19", "vignettes", [
     "stem": "A 30-year-old call-center agent in Manila is being assessed for a single depressive episode that has now resolved. Asked about sexual fantasies, he says frankly that for about 3 years he has often fantasized about exposing himself to unsuspecting women. He has never done it, has never come close, and says the fantasies are private and do not trouble him. He feels no guilt or anxiety about them and his work and relationships are unaffected. There is no substance use, no manic history and no medical illness.",
     "q": "What is the most accurate conclusion?",
     "choices": [
-      "Exhibitionistic disorder (F65.2), sexually aroused by exposing genitals to physically mature individuals",
+      "Exhibitionistic sexual interest without exhibitionistic disorder",
       "Exhibitionistic disorder (F65.2), in a controlled environment",
       "Unspecified paraphilic disorder (F65.9)",
       "No conclusion is possible until he has acted on the fantasies",
-      "Exhibitionistic sexual interest without exhibitionistic disorder"
+      "Exhibitionistic disorder (F65.2), sexually aroused by exposing genitals to physically mature individuals"
     ],
-    "answer": 4,
+    "answer": 0,
     "why": "Fantasies alone can meet Criterion A, but Criterion B needs either **acting on the urges with a nonconsenting person** or **distress or impairment**. He has neither. A person who acknowledges the interest, is not distressed or impaired and has never acted on it has **exhibitionistic sexual interest, not the disorder** (pp. 783–784).",
     "whyNot": [
-      "Criterion B is not met: he has not acted and is not distressed or impaired (p. 783).",
+      "Correct.",
       "The specifier applies to a disorder in a setting that restricts opportunity; he has neither (p. 783).",
       "The residual category also needs distress or impairment (p. 801).",
       "Acting is one route to Criterion B, but distress or impairment is another; the conclusion can be drawn now, and it is that he has the interest only (pp. 783–784).",
-      "Correct."
+      "Criterion B is not met: he has not acted and is not distressed or impaired (p. 783)."
     ],
     "discuss": [
       "If he returned saying the fantasies now made him avoid the bus terminal and arrive late at work, what would you diagnose?",
@@ -91,19 +91,19 @@ SP.add("ch19", "vignettes", [
     "q": "What is the most accurate diagnosis?",
     "choices": [
       "No diagnosis, because he denies any sexual urge",
-      "Voyeuristic disorder (F65.3)",
+      "Voyeuristic disorder (F65.3), in full remission",
       "Unspecified paraphilic disorder (F65.9), because his motive cannot be confirmed",
       "Antisocial personality disorder only",
-      "Voyeuristic disorder (F65.3), in full remission"
+      "Voyeuristic disorder (F65.3)"
     ],
-    "answer": 1,
+    "answer": 4,
     "why": "The criteria apply to **nondisclosing** people too. Recurrent secret watching of **unsuspecting** people, with **multiple victims on separate occasions**, supports Criterion A, and acting on it with nonconsenting people satisfies Criterion B. He is over **18** (Criterion C). **Voyeuristic disorder (F65.3)** can be diagnosed despite his denial (pp. 780–781).",
     "whyNot": [
       "Self-report is not required: repeated behavior with several victims meets Criterion A (p. 781).",
-      "Correct.",
+      "Remission needs 5 years without acting in an uncontrolled environment; his last episode is recent (p. 780).",
       "Full criteria are met from the behavior itself, so a residual category is not used (pp. 781, 801).",
       "Nothing suggests a broad antisocial pattern, and the behavior is specifically voyeuristic (p. 782).",
-      "Remission needs 5 years without acting in an uncontrolled environment; his last episode is recent (p. 780)."
+      "Correct."
     ],
     "discuss": [
       "What does the manual mean by “recurrent” when the person denies any urge?",
@@ -118,17 +118,17 @@ SP.add("ch19", "vignettes", [
     "choices": [
       "Voyeuristic disorder (F65.3)",
       "Other specified paraphilic disorder (F65.89), voyeurism below the age threshold",
-      "Unspecified paraphilic disorder (F65.9)",
       "Voyeuristic disorder cannot be diagnosed because he is under 18",
+      "Unspecified paraphilic disorder (F65.9)",
       "Conduct disorder, because he violated a neighbor’s privacy"
     ],
-    "answer": 3,
+    "answer": 2,
     "why": "Voyeuristic disorder has an age rule: **Criterion C requires the person to be at least 18**. The floor exists because puberty and adolescence bring heightened sexual curiosity, and the manual wants to avoid **pathologizing normal adolescent interest** (pp. 780–781). The behavior still needs a clinical and family response, but not this diagnosis.",
     "whyNot": [
       "Criterion C (age 18 or older) is not met (p. 780).",
       "The age rule is part of the definition; using a residual category to get around it would defeat its purpose (pp. 781, 801).",
-      "An unspecified label would also attach a paraphilic diagnosis the age rule is designed to avoid (p. 781).",
       "Correct.",
+      "An unspecified label would also attach a paraphilic diagnosis the age rule is designed to avoid (p. 781).",
       "Two episodes of a single behavior without other rule-breaking do not make the broad pattern conduct disorder needs (p. 782)."
     ],
     "discuss": [
@@ -142,17 +142,17 @@ SP.add("ch19", "vignettes", [
     "stem": "A 40-year-old man is referred after conviction for exposing himself to prepubertal schoolchildren, aged about 7 to 10, outside a public elementary school in Balanga on four occasions over 18 months. None of the children consented or expected it. He has never exposed himself to adults, and he admits that only children produce the urge. He says he feels no distress, only fear of prison. Every episode happened while he was sober, and he has no manic, psychotic, cognitive or developmental disorder.",
     "q": "How should the exhibitionistic disorder be specified?",
     "choices": [
+      "The physically mature individuals subtype",
       "Sexually aroused by exposing genitals to prepubertal children",
-      "Sexually aroused by exposing genitals to physically mature individuals",
       "The combined subtype (children and physically mature individuals alike)",
       "No subtype, because the subtype applies only to people who disclose their interest",
       "In a controlled environment, because he is now in custody"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": "Exhibitionistic disorder is subtyped by the **age or physical maturity** of the people the person prefers to expose to. He exposes **only to prepubertal children**, so the subtype is **sexually aroused by exposing genitals to prepubertal children** (pp. 783–784).",
     "whyNot": [
-      "Correct.",
       "He has never exposed himself to adults (p. 783).",
+      "Correct.",
       "His exposures are limited to children (p. 783).",
       "The subtypes are set by the target group, not by whether the person discloses (pp. 783–784).",
       "The specifier is only used when the person is living in a restricted setting; the subtype question is separate, and his history is of acts in the community (p. 783)."
@@ -189,17 +189,17 @@ SP.add("ch19", "vignettes", [
     "choices": [
       "No diagnosis, because he is not distressed",
       "Antisocial personality disorder",
-      "Frotteuristic disorder (F65.81)",
       "Other specified paraphilic disorder (F65.89), rubbing in public transport",
+      "Frotteuristic disorder (F65.81)",
       "Exhibitionistic disorder (F65.2)"
     ],
-    "answer": 2,
+    "answer": 3,
     "why": "More than **6 months** of urges and behaviors involving **touching or rubbing against nonconsenting people** meets Criterion A. Criterion B is met by **acting on the urges with nonconsenting people**, so his lack of distress does not matter. **Frotteuristic disorder (F65.81)** (pp. 785–786).",
     "whyNot": [
       "For frotteuristic disorder, acting with a nonconsenting person satisfies Criterion B without distress (p. 786).",
       "There is no broad antisocial pattern, and the specific sexual interest is present (p. 787).",
-      "Correct.",
       "The behavior is exactly what frotteuristic disorder describes (pp. 785–786, 801).",
+      "Correct.",
       "He touches people; he does not expose himself (p. 783)."
     ],
     "discuss": [
@@ -213,20 +213,20 @@ SP.add("ch19", "vignettes", [
     "stem": "A 66-year-old retired teacher in Mariveles is brought by his daughter. Over the past year he has become apathetic, tactless and impulsive, eats compulsively and has lost interest in his grandchildren. In the past 4 months he has exposed himself to two home carers and a nurse on three occasions; none expected or agreed to it. His family says there was never any such behavior before the illness, and he shows no concern about it. He does not drink, has no mood episode, and neuroimaging shows frontal and anterior temporal atrophy.",
     "q": "What is the most accurate diagnostic conclusion?",
     "choices": [
-      "Exhibitionistic disorder (F65.2), with a comorbid neurocognitive disorder",
+      "Major frontotemporal neurocognitive disorder; no exhibitionistic disorder",
       "Exhibitionistic disorder (F65.2), in a controlled environment",
       "Other specified paraphilic disorder (F65.89), late-onset exposure",
       "Unspecified paraphilic disorder (F65.9)",
-      "Major frontotemporal neurocognitive disorder; no exhibitionistic disorder"
+      "Exhibitionistic disorder (F65.2), with a comorbid neurocognitive disorder"
     ],
-    "answer": 4,
+    "answer": 0,
     "why": "A **major neurocognitive disorder** can loosen judgment and impulse control and lead to exposure. A paraphilic disorder is diagnosed **only if the behavior also occurs outside** that state. Here it began with the illness and occurs only within it, so the exposures belong to the **neurocognitive disorder** (p. 785).",
     "whyNot": [
-      "The exposures arose only within the neurocognitive disorder, so no separate paraphilic diagnosis is made (p. 785).",
+      "Correct.",
       "No paraphilic disorder is present to specify (p. 785).",
       "The residual categories are for paraphilic presentations, not disinhibition from another disorder (pp. 785, 801).",
       "The cause of the behavior is known, and it is not a paraphilic disorder (p. 785).",
-      "Correct."
+      "The exposures arose only within the neurocognitive disorder, so no separate paraphilic diagnosis is made (p. 785)."
     ],
     "discuss": [
       "What history would you need before deciding that the behavior also occurs outside the neurocognitive disorder?",
@@ -240,19 +240,19 @@ SP.add("ch19", "vignettes", [
     "q": "What is the most accurate diagnosis?",
     "choices": [
       "Frotteuristic disorder (F65.81) with comorbid bipolar I disorder",
-      "Bipolar I disorder, current episode manic; no frotteuristic disorder",
+      "Frotteuristic disorder (F65.81), in full remission",
       "Frotteuristic disorder (F65.81) only, because he acted on the urges",
       "Unspecified paraphilic disorder (F65.9)",
-      "Frotteuristic disorder (F65.81), in full remission"
+      "Bipolar I disorder, current episode manic; no frotteuristic disorder"
     ],
-    "answer": 1,
+    "answer": 4,
     "why": "The touching occurred **only during a manic episode**, and the 6-month pattern of Criterion A is absent. Sexual disinhibition from mania is not a paraphilic disorder unless the behavior **also occurs outside** the episode (p. 787).",
     "whyNot": [
       "There is no frotteuristic pattern outside the manic episode, so only the mood disorder is diagnosed (p. 787).",
-      "Correct.",
+      "He never had frotteuristic disorder, so there is nothing to be in remission (p. 786).",
       "Acting with nonconsenting people satisfies Criterion B only when Criterion A is met; here the behavior is two days long and confined to mania (pp. 786–787).",
       "The behavior has a known cause and is not a paraphilic disorder (p. 787).",
-      "He never had frotteuristic disorder, so there is nothing to be in remission (p. 786)."
+      "Correct."
     ],
     "discuss": [
       "Which other conditions in the shared differential can produce the same picture?",
@@ -267,17 +267,17 @@ SP.add("ch19", "vignettes", [
     "choices": [
       "Exhibitionistic disorder (F65.2), because two women were involved",
       "Exhibitionistic disorder (F65.2), because his shame meets Criterion B",
-      "Other specified paraphilic disorder (F65.89), alcohol-related exposure",
       "No exhibitionistic disorder: the exposures occurred only during intoxication",
+      "Other specified paraphilic disorder (F65.89), alcohol-related exposure",
       "Unspecified paraphilic disorder (F65.9)"
     ],
-    "answer": 3,
+    "answer": 2,
     "why": "**Substance intoxication** can disinhibit a person and lead to exposure. The paraphilic diagnosis is made only when the behavior **also occurs outside** intoxication. On this history both acts happened only while heavily intoxicated and he reports no sober urges (p. 785). His drinking needs its own assessment.",
     "whyNot": [
       "Two victims support Criterion A only when the behavior is not explained by intoxication (pp. 784–785).",
       "Shame after the event is not Criterion B when Criterion A is not established (pp. 783, 785).",
-      "Intoxication is a differential, not a reason for a residual paraphilic diagnosis (pp. 785, 801).",
       "Correct.",
+      "Intoxication is a differential, not a reason for a residual paraphilic diagnosis (pp. 785, 801).",
       "The likely cause is known (intoxication), so no paraphilic diagnosis is made (p. 785)."
     ],
     "then": {
@@ -310,17 +310,17 @@ SP.add("ch19", "vignettes", [
     "stem": "A 23-year-old man is assessed at the provincial jail in Balanga. Since age 12 he has stolen, lied, fought, run away from home and been expelled from two schools, and as an adult he has committed robberies and assaults without remorse. During a bag-snatching on a jeepney 3 months ago he grabbed and groped the woman he was robbing; she did not consent. Records and interviews show no other episode of sexual touching, and he describes no sexual fantasies or urges about touching strangers. He was sober during the robbery and has no mood, psychotic or cognitive disorder. He denies any distress.",
     "q": "What is the most accurate diagnostic conclusion?",
     "choices": [
-      "Antisocial personality disorder; frotteuristic disorder is not diagnosed",
       "Frotteuristic disorder (F65.81), because he touched a nonconsenting person",
+      "Antisocial personality disorder; frotteuristic disorder is not diagnosed",
       "Frotteuristic disorder (F65.81) with comorbid antisocial personality disorder",
       "Sexual sadism disorder (F65.52)",
       "Unspecified paraphilic disorder (F65.9)"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": "Conduct disorder and antisocial personality disorder bring a **broad pattern of norm-breaking**, and the **specific sexual interest** in touching nonconsenting people is usually missing. One act during a robbery, no fantasies or urges, and no 6-month pattern: **antisocial personality disorder** without a paraphilic disorder (p. 787).",
     "whyNot": [
-      "Correct.",
       "A single act with no sexual interest and no 6-month pattern does not meet Criterion A (pp. 785–787).",
+      "Correct.",
       "Both can be diagnosed only when the frotteuristic criteria are met in their own right; they are not (p. 787).",
       "There is no evidence that suffering arouses him (pp. 790, 792).",
       "The behavior is explained by the antisocial pattern; there is no paraphilic presentation (pp. 787, 801)."
@@ -338,17 +338,17 @@ SP.add("ch19", "vignettes", [
     "choices": [
       "Sexual sadism disorder (F65.52), because he caused pain to a nonconsenting person",
       "Sexual sadism disorder (F65.52), in a controlled environment",
-      "Sexual sadism disorder is not diagnosed: pain used instrumentally during the assault does not show arousal by suffering",
       "Other specified paraphilic disorder (F65.89), coercion",
+      "Sexual sadism disorder is not diagnosed: pain used instrumentally during the assault does not show arousal by suffering",
       "Sexual sadism disorder can be diagnosed only if he admits the interest"
     ],
-    "answer": 2,
+    "answer": 3,
     "why": "Pain caused **instrumentally**, while subduing or restraining a victim during a sexual assault, does **not** by itself indicate sexual sadism disorder. The manual asks for evidence that the **suffering itself is arousing**: an admission, a preference for sadistic pornography, or **violence beyond what the assault required** (p. 792). None is present.",
     "whyNot": [
       "Causing pain is not the same as being aroused by suffering (p. 792).",
       "A specifier cannot be attached to a disorder that has not been established (pp. 790, 792).",
-      "Correct.",
       "Coercion alone is not a paraphilia, and the manual does not list it as an other specified example (pp. 792, 801).",
+      "Correct.",
       "Denial does not block the diagnosis; objective evidence such as repeated acts or excess violence can support it (pp. 790–791)."
     ],
     "then": {
@@ -381,20 +381,20 @@ SP.add("ch19", "vignettes", [
     "stem": "A 26-year-old male nursing graduate in Manila asks for help. For about 2 years his arousal has depended almost entirely on fantasies of being bound and humiliated, and his girlfriend, who consents, has taken part in this at his request. He feels intense shame, has failed his board review exams because he cannot concentrate, and has stopped seeing friends. No one has been involved without consent. He does not drink or use drugs, and he has no mood episodes or psychotic symptoms.",
     "q": "What is the most accurate diagnosis?",
     "choices": [
-      "No diagnosis, because his partner consents",
+      "Sexual masochism disorder (F65.51)",
       "Sexual sadism disorder (F65.52)",
       "Other specified paraphilic disorder (F65.89), humiliation",
       "Major depressive disorder only",
-      "Sexual masochism disorder (F65.51)"
+      "No diagnosis, because his partner consents"
     ],
-    "answer": 4,
+    "answer": 0,
     "why": "More than **6 months** of intense arousal from **being bound and humiliated** (Criterion A) with **distress and impairment** (Criterion B). Masochism has **no nonconsenting-person arm**: Criterion B is distress or impairment only, so a consenting partner does not prevent the diagnosis. **Sexual masochism disorder (F65.51)** (p. 788).",
     "whyNot": [
-      "Consent matters for disorders with a victim; here Criterion B is met by his own distress and impairment (p. 788).",
+      "Correct.",
       "He wants to receive humiliation, not to inflict suffering (pp. 788, 790).",
       "Being humiliated is part of the masochism definition itself (pp. 788, 801).",
       "He describes no depressive syndrome; his distress comes from the paraphilia (p. 788).",
-      "Correct."
+      "Consent matters for disorders with a victim; here Criterion B is met by his own distress and impairment (p. 788)."
     ],
     "then": {
       "q": "Clinical management outside the DSM: before ending the first interview, which question is the most important to ask next?",
@@ -427,19 +427,19 @@ SP.add("ch19", "vignettes", [
     "q": "Which recording is most complete?",
     "choices": [
       "Pedophilic disorder (F65.4), exclusive type, sexually attracted to females",
-      "Pedophilic disorder (F65.4), nonexclusive type, sexually attracted to females, limited to incest",
+      "Other specified paraphilic disorder (F65.89), incest",
       "Pedophilic disorder (F65.4), nonexclusive type, sexually attracted to both",
       "Pedophilic disorder (F65.4), limited to incest, in a controlled environment",
-      "Other specified paraphilic disorder (F65.89), incest"
+      "Pedophilic disorder (F65.4), nonexclusive type, sexually attracted to females, limited to incest"
     ],
-    "answer": 1,
+    "answer": 4,
     "why": "He has acted on urges about prepubescent children over more than 6 months (A, B) and is over 16 and more than 5 years older (C). He is also attracted to adults, so **nonexclusive type**; his interest is in girls, so **sexually attracted to females**; and it is confined to family, so **limited to incest** (pp. 792–793).",
     "whyNot": [
       "He is also attracted to adult women, so the type is nonexclusive (p. 793).",
-      "Correct.",
+      "Pedophilic disorder is fully met; incest is a specifier, not a residual diagnosis (pp. 793, 801).",
       "Both of the children he targeted were girls (p. 793).",
       "Pedophilic disorder has no controlled-environment specifier, and the type and sex specifiers are missing (pp. 792–793).",
-      "Pedophilic disorder is fully met; incest is a specifier, not a residual diagnosis (pp. 793, 801)."
+      "Correct."
     ],
     "then": {
       "q": "He has now been in custody for 6 years with no incidents and asks whether his diagnosis can be marked as being in remission. Which statement is correct?",
@@ -473,17 +473,17 @@ SP.add("ch19", "vignettes", [
     "choices": [
       "Criteria A, B and C are all met, because viewing the images is acting on the urges",
       "No criterion is met, because there was no contact",
-      "Criterion B is met by the risk of harm the images represent",
       "The images support Criterion A, but image use alone does not satisfy Criterion B",
+      "Criterion B is met by the risk of harm the images represent",
       "The diagnosis must wait for penile plethysmography"
     ],
-    "answer": 3,
+    "answer": 2,
     "why": "Use of sexual images of prepubescent children is typical of pedophilic interest and informs **Criterion A**, but **on its own, without in-person sexual interaction with a child, it is not enough for Criterion B** (p. 793). The diagnosis would need acting on the urges, or **marked distress or interpersonal difficulty**. The offense is a legal matter regardless of the diagnosis.",
     "whyNot": [
       "The manual says image use alone does not establish Criterion B (p. 793).",
       "Image use is relevant evidence for Criterion A; and he meets Criterion C (pp. 792–793).",
-      "Criterion B for pedophilic disorder is acting on the urges or marked distress or interpersonal difficulty; image use alone does not count (p. 793).",
       "Correct.",
+      "Criterion B for pedophilic disorder is acting on the urges or marked distress or interpersonal difficulty; image use alone does not count (p. 793).",
       "Laboratory measures can help but are not required, and their sensitivity and specificity vary between sites (p. 795)."
     ],
     "discuss": [
@@ -497,17 +497,17 @@ SP.add("ch19", "vignettes", [
     "stem": "A 29-year-old call-center supervisor in Manila asks for help because for 8 months he has been tormented by thoughts that he might be sexually attracted to his 8-year-old nephew. The thoughts horrify him, he has never felt aroused by them and never masturbates to them, and he has never had sexual contact with any child. He avoids family gatherings, checks his body for signs of arousal, and repeatedly asks his wife for reassurance. He also has intrusive doubts about whether he is secretly gay, and as a teenager he had contamination fears. He does not use substances and has no mood episodes.",
     "q": "What is the most accurate diagnosis?",
     "choices": [
-      "Obsessive-compulsive disorder; not pedophilic disorder",
       "Pedophilic disorder (F65.4), because his distress meets Criterion B",
+      "Obsessive-compulsive disorder; not pedophilic disorder",
       "Pedophilic disorder (F65.4), nonexclusive type, sexually attracted to males",
       "Unspecified paraphilic disorder (F65.9)",
       "Pedophilic interest without pedophilic disorder"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": "Some people present with **ego-dystonic** worries that they might be attracted to children. The pointers away from pedophilic disorder are **no positive feelings** about the thoughts, **no link to sexual behavior** such as masturbation, and **other intrusive sexual ideas** (for example about orientation). This is **obsessive-compulsive disorder** (p. 796).",
     "whyNot": [
-      "Correct.",
       "Distress meets Criterion B only when Criterion A, a real arousing interest, is present; his thoughts are obsessions, not arousal (pp. 792, 796).",
+      "Correct.",
       "There is no sexual interest in children to specify (p. 796).",
       "This is not a paraphilic presentation at all (pp. 796, 801).",
       "He has no interest in children; he has intrusive fears about having one (p. 796)."
@@ -526,17 +526,17 @@ SP.add("ch19", "vignettes", [
       "Pedophilic disorder (F65.4), because he acted on the urge",
       "Pedophilic disorder (F65.4), nonexclusive type",
       "Pedophilic disorder (F65.4) with comorbid antisocial personality disorder",
-      "Other specified paraphilic disorder (F65.89), one child victim",
-      "Antisocial personality disorder; pedophilic disorder is not added without a 6-month interest in children"
+      "Antisocial personality disorder; pedophilic disorder is not added without a 6-month interest in children",
+      "Other specified paraphilic disorder (F65.89), one child victim"
     ],
-    "answer": 4,
+    "answer": 3,
     "why": "Antisocial personality disorder raises the chance that a person **primarily attracted to adults** will approach a child because the child is **accessible**. Pedophilic disorder is added **only** when there are **at least 6 months** of recurrent fantasies, urges or behaviors centered on prepubescent children (pp. 795–796). Nothing here shows that.",
     "whyNot": [
       "A single act without a 6-month interest in children does not meet Criterion A (pp. 792, 796).",
       "The type cannot be specified when the disorder is not present (pp. 793, 796).",
       "Both are diagnosed only if pedophilic criteria are met in their own right (p. 796).",
-      "Criteria are clear here: the behavior is explained by antisocial personality disorder, not a paraphilia (pp. 796, 801).",
-      "Correct."
+      "Correct.",
+      "Criteria are clear here: the behavior is explained by antisocial personality disorder, not a paraphilia (pp. 796, 801)."
     ],
     "discuss": [
       "Which of the manual’s markers of pedophilic disorder in a person who has offended (p. 793) would you look for in the records?",
@@ -549,18 +549,18 @@ SP.add("ch19", "vignettes", [
     "stem": "An 18-year-old senior high school student in Mariveles is referred by the barangay after a report of sexual contact with his 13-year-old girlfriend, with whom he has been in a relationship for about 10 months. She is the only person involved and was not described as unwilling, though she is legally a child. He has no sexual interest in younger children, no fantasies about children, and no history of using sexual images of children. He feels anxious about the report but is otherwise functioning. He was sober and has no mood, psychotic, developmental or cognitive disorder.",
     "q": "What is the most accurate conclusion about pedophilic disorder?",
     "choices": [
-      "Pedophilic disorder (F65.4), because he is over 16 and 5 years older than her",
-      "Pedophilic disorder (F65.4), nonexclusive type, sexually attracted to females",
       "Pedophilic disorder is not diagnosed: the note under Criterion C leaves out late adolescents whose continuing partner is 12 or 13",
+      "Pedophilic disorder (F65.4), nonexclusive type, sexually attracted to females",
+      "Pedophilic disorder (F65.4), because he is over 16 and 5 years older than her",
       "Other specified paraphilic disorder (F65.89), age-gap relationship",
       "Pedophilic disorder cannot be judged until she is examined for pubertal status"
     ],
-    "answer": 2,
+    "answer": 0,
     "why": "Criterion C asks for age **16 or older** and **at least 5 years older** than the child, and its note **excludes a late adolescent whose continuing sexual partner is 12 or 13 years old** (p. 793). He also lacks the interest in prepubescent children that Criterion A requires. Outside the DSM, the legal question is separate: in the Philippines, RA 11648 (2022) set the age of sexual consent at 16, and its close-in-age exemption never applies when the younger person is under 13.",
     "whyNot": [
-      "The note under Criterion C specifically excludes this situation (p. 793).",
-      "No disorder is present to specify (p. 793).",
       "Correct.",
+      "No disorder is present to specify (p. 793).",
+      "The note under Criterion C specifically excludes this situation (p. 793).",
       "This is not a paraphilic presentation and the manual lists no such example (pp. 793, 801).",
       "The note applies to 12- and 13-year-olds in ongoing relationships regardless, and he shows no interest in prepubescent children (pp. 792–793)."
     ],
@@ -576,19 +576,19 @@ SP.add("ch19", "vignettes", [
     "q": "Clinical management outside the DSM: what is the best first step before asking about the allegation?",
     "choices": [
       "Begin with detailed questions about the alleged contact while he is willing to talk",
-      "Explain the purpose of the evaluation, who will receive the report, and the limits of confidentiality, including reporting duties for child abuse under RA 7610",
+      "Start an SSRI to reduce any sexual urges before the interview",
       "Assure him that everything he says is protected by doctor–patient confidentiality",
       "Arrange penile plethysmography before any interview",
-      "Start an SSRI to reduce any sexual urges before the interview"
+      "Explain the purpose of the evaluation, who will receive the report, and the limits of confidentiality, including reporting duties for child abuse under RA 7610"
     ],
-    "answer": 1,
+    "answer": 4,
     "why": "This is **clinical and legal management, outside the DSM**. In a forensic referral the clinician is not acting only as the man’s treating doctor, so he must be told the **purpose of the evaluation, who will see the report and the limits of confidentiality**, including **reporting of child abuse under RA 7610**, **before** offending is discussed. Follow hospital policy and document the explanation. The DSM content (Criterion A for 6 months, the denying-person route, markers on p. 793) comes after.",
     "whyNot": [
       "Interviewing before he understands how his statements will be used is unethical and can make the evaluation unusable.",
-      "Correct.",
+      "Treatment before any assessment has no basis; the manual does not address treatment, and guideline frameworks (WFSBP, outside the DSM) start with assessment of risk.",
       "A promise of full confidentiality is false in a court-referred evaluation and conflicts with reporting duties.",
       "Laboratory measures are optional aids whose accuracy varies between sites, not a first step (p. 795).",
-      "Treatment before any assessment has no basis; the manual does not address treatment, and guideline frameworks (WFSBP, outside the DSM) start with assessment of risk."
+      "Correct."
     ],
     "discuss": [
       "How would you document the confidentiality explanation in the chart?",
@@ -603,17 +603,17 @@ SP.add("ch19", "vignettes", [
     "choices": [
       "Fetishistic disorder (F65.0), nonliving object(s)",
       "Fetishistic disorder (F65.0), other",
-      "Other specified paraphilic disorder (F65.89), device dependence",
       "No fetishistic disorder: devices designed for genital stimulation are excluded by Criterion C",
+      "Other specified paraphilic disorder (F65.89), device dependence",
       "Unspecified paraphilic disorder (F65.9)"
     ],
-    "answer": 3,
+    "answer": 2,
     "why": "**Criterion C** says the fetish objects are **not limited to devices designed for genital stimulation**, such as a **vibrator** (p. 796). A device that stimulates the genitals because it was made to do so is not a fetish. She also has no distress or impairment, so Criterion B would fail anyway.",
     "whyNot": [
       "Criterion C excludes devices designed for genital stimulation (p. 796).",
       "The “other” specifier is still fetishistic disorder, which Criterion C excludes here (p. 796).",
-      "There is no paraphilia and no distress or impairment (pp. 796, 801).",
       "Correct.",
+      "There is no paraphilia and no distress or impairment (pp. 796, 801).",
       "The residual categories need distress or impairment and a paraphilic presentation; there is neither (p. 801)."
     ],
     "then": {
@@ -646,17 +646,17 @@ SP.add("ch19", "vignettes", [
     "stem": "A 29-year-old seafarer from Mariveles is referred by his wife’s gynecologist. For as long as he can remember, and certainly for the past 6 years, his arousal has centered almost entirely on women’s feet, and for the past year he has been unable to maintain an erection with his wife unless her feet are the focus. She agreed at first but now refuses, and the marriage is near breaking point; he feels hopeless. He has never involved anyone without consent. He does not drink and has no mood, psychotic or medical disorder, and erections are normal when the focus is present.",
     "q": "What is the most accurate diagnosis?",
     "choices": [
-      "Fetishistic disorder (F65.0), body part(s)",
       "Other specified paraphilic disorder (F65.89), partialism",
+      "Fetishistic disorder (F65.0), body part(s)",
       "Erectile disorder",
       "Fetishistic disorder (F65.0), nonliving object(s)",
       "No diagnosis, because body parts are part of ordinary sexual interest"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": "A **highly specific focus on a nongenital body part** for more than 6 months (Criterion A) with **distress and relationship impairment** (Criterion B). Partialism was a paraphilia not otherwise specified in DSM-IV-TR and was **re-incorporated** into fetishistic disorder; record **fetishistic disorder, body part(s) (F65.0)** (pp. 796–797).",
     "whyNot": [
-      "Correct.",
       "Partialism now sits inside fetishistic disorder rather than the residual category (p. 797).",
+      "Correct.",
       "His erections are normal when the focus is present; the problem is the fetishistic dependence (pp. 797–798).",
       "Feet are a body part, not an object (p. 796).",
       "An exclusive, highly specific nongenital focus with distress and impairment is exactly what Criterion A and B describe (p. 796)."
@@ -674,17 +674,17 @@ SP.add("ch19", "vignettes", [
     "choices": [
       "Transvestic disorder (F65.1)",
       "Fetishistic disorder (F65.0), nonliving object(s)",
-      "Sexual masochism disorder (F65.51)",
       "Transvestic disorder (F65.1), with fetishism",
+      "Sexual masochism disorder (F65.51)",
       "Gender dysphoria in adolescents and adults"
     ],
-    "answer": 2,
+    "answer": 3,
     "why": "When a person fantasizes about **“forced cross-dressing”** and is aroused mainly by the **domination or humiliation**, with distress or impairment, the diagnosis is **sexual masochism disorder**, not fetishistic or transvestic disorder (pp. 788, 798).",
     "whyNot": [
       "The cross-dressing itself is not what arouses him (p. 798).",
       "The clothes are not the object of arousal (p. 798).",
-      "Correct.",
       "The fetishism specifier is for arousal by fabrics or garments, which he denies (pp. 798–799).",
+      "Correct.",
       "He has no incongruence and no wish to be another gender (p. 800)."
     ],
     "discuss": [
@@ -698,20 +698,20 @@ SP.add("ch19", "vignettes", [
     "stem": "A 42-year-old married bank officer in Balanga has been sexually aroused by cross-dressing since adolescence, now with a full outfit and wig. During these episodes his arousal centers on imagining himself with a woman’s body rather than on the fabric. Three times in 5 years he has thrown away his women’s clothes to fight the urge and then bought them again. His wife recently discovered them and has moved out, and he is miserable. He says he has never felt that he is a woman, has never wanted to live as one, and had no cross-gender behavior in childhood. He does not drink and has no mood disorder.",
     "q": "What is the most accurate diagnosis?",
     "choices": [
-      "Fetishistic disorder (F65.0), nonliving object(s)",
+      "Transvestic disorder (F65.1), with autogynephilia",
       "Gender dysphoria in adolescents and adults",
       "Transvestic disorder (F65.1), with fetishism",
       "Sexual masochism disorder (F65.51)",
-      "Transvestic disorder (F65.1), with autogynephilia"
+      "Fetishistic disorder (F65.0), nonliving object(s)"
     ],
-    "answer": 4,
+    "answer": 0,
     "why": "Recurrent arousal from **cross-dressing** for far longer than 6 months, with **distress and marital impairment**; the **purge-and-rebuy** cycle is the manual’s sign of distress. His arousal is to **thoughts or images of himself as a woman**: **with autogynephilia**. This specifier **raises** the likelihood of later gender dysphoria, whereas **with fetishism lowers** it (pp. 798–799).",
     "whyNot": [
-      "Arousal from wearing the clothes, with thoughts of being a woman, is transvestic, and Criterion C excludes cross-dressing clothes from fetishism (pp. 796, 800).",
+      "Correct.",
       "He has no incongruence, no wish to be a woman and no childhood cross-gender history (p. 800).",
       "His arousal is to himself as a woman, not to the fabrics or garments (p. 799).",
       "There is no domination or humiliation theme (p. 798).",
-      "Correct."
+      "Arousal from wearing the clothes, with thoughts of being a woman, is transvestic, and Criterion C excludes cross-dressing clothes from fetishism (pp. 796, 800)."
     ],
     "then": {
       "q": "Twelve years later, at 54, he returns. Arousal from cross-dressing has faded almost to nothing, but for the past 2 years he has felt strongly that his body does not match who he is, wants to live as a woman full time and is seeking hormones; he is distressed by the mismatch. What is the most accurate formulation?",
@@ -744,19 +744,19 @@ SP.add("ch19", "vignettes", [
     "q": "How should his diagnosis be specified now?",
     "choices": [
       "Frotteuristic disorder (F65.81), in a controlled environment",
-      "Frotteuristic disorder (F65.81), in full remission",
+      "Remission cannot be specified while any interest remains",
       "The diagnosis should be removed, because he has had no behavior for over 5 years",
       "Frotteuristic disorder (F65.81), current, because the interest persists",
-      "Remission cannot be specified while any interest remains"
+      "Frotteuristic disorder (F65.81), in full remission"
     ],
-    "answer": 1,
+    "answer": 4,
     "why": "**In full remission** needs **5 years** in an **uncontrolled environment** with **no acting on urges with a nonconsenting person and no distress or impairment**. He has 6 such years in the community. Remission **does not mean the interest has gone**; the specifier says nothing about whether the paraphilia persists (p. 786).",
     "whyNot": [
       "He lives freely in the community; the controlled-environment specifier is for restricted settings (p. 786).",
-      "Correct.",
+      "The remission specifier explicitly does not address whether the interest remains (p. 786).",
       "The manual uses a remission specifier for this situation rather than removing the diagnosis (p. 786).",
       "Neither behavior nor distress has occurred for 6 years, which meets the remission rule (p. 786).",
-      "The remission specifier explicitly does not address whether the interest remains (p. 786)."
+      "Correct."
     ],
     "then": {
       "q": "A different man with exhibitionistic disorder has spent the past 5 years in New Bilibid Prison with no incidents and no reported distress. How should his disorder be specified?",
@@ -790,17 +790,17 @@ SP.add("ch19", "vignettes", [
     "choices": [
       "Exhibitionistic disorder (F65.2)",
       "Unspecified paraphilic disorder (F65.9)",
-      "Frotteuristic disorder (F65.81)",
       "Other specified paraphilic disorder (F65.89), telephone scatologia",
+      "Frotteuristic disorder (F65.81)",
       "No diagnosis, because no physical contact occurred"
     ],
-    "answer": 3,
+    "answer": 2,
     "why": "A paraphilia present for **at least 6 months** with **marked distress or impairment** that fits none of the eight listed disorders is recorded as **other specified paraphilic disorder** followed by the reason. **Telephone scatologia** (obscene calls) is one of the manual’s own examples (p. 801).",
     "whyNot": [
       "He does not expose his genitals (p. 783).",
       "The reason is known and can be stated, so other specified is more accurate (p. 801).",
-      "He does not touch anyone (p. 785).",
       "Correct.",
+      "He does not touch anyone (p. 785).",
       "Physical contact is not required for a paraphilic disorder; distress and impairment are present (pp. 780, 801)."
     ],
     "then": {

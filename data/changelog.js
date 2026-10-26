@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 42,
+    date: "2026-10-27",
+    title: "Practice pack for Chapter 19",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and a dated care orientation for the paraphilic disorders, and a new complaint in the hub.",
+    items: [
+      { type: "chapter", ch: "ch19", text: "Chapter 19: 25 board vignettes (paraphilia versus disorder, nondisclosing presentations, the disinhibition and antisocial look-alikes, instrumental pain versus sadism, the pedophilic age rules and specifiers, Criterion C of fetishistic disorder, transvestic disorder and gender dysphoria, remission and controlled-environment specifiers, the residual categories, and two labeled next-step items on asphyxiophilia and confidentiality), 14 “Write the diagnosis” cases from F65.3 in full remission to other specified paraphilic disorder, zoophilia, 10 counting drills and 24 exam traps.", href: "#/c/ch19/practice", link: "Chapter 19 drills" },
+      { type: "feature", text: "“How to ask it” for the 10 Chapter 19 diagnoses, with a confidentiality-first frame, and a dated orientation to assessment, risk and the WFSBP treatment framework (2010, updated 2020) and the Philippine legal context (RA 11648, RA 7610), labeled as outside the DSM.", href: "#/dx/pedophilic-disorder", link: "Pedophilic disorder" },
+      { type: "feature", text: "Start from the complaint: an unusual, intense or troubling sexual interest or behavior. Chapter 19 items added to sexual problems, distress about gender, rule-breaking, intrusive thoughts and suicidal thoughts. Chapter 14’s transvestic disorder references now link to the new library entry.", href: "#/complaints/unusual-sexual-interest", link: "Open the hub" }
+    ]
+  },
+  {
     id: 41,
     date: "2026-10-27",
     title: "Chapter 19: Paraphilic Disorders",
