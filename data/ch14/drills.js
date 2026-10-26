@@ -21,7 +21,7 @@
     },
     {
       id: "w14-02", tag: "Children + DSD",
-      "case": "A 9-year-old assigned female at birth has classical congenital adrenal hyperplasia, documented in the chart since infancy. For 2 years he has said he is a boy, wears only boys’ clothes and refuses skirts, prefers boys as friends and rough sports, rejects dolls, and says he does not want breasts. He is withdrawn and distressed at school.",
+      "case": "A 9-year-old assigned female at birth has classical congenital adrenal hyperplasia, documented in the chart since infancy. For 2 years he has said he is a boy, wears only boys’ clothes and refuses skirts, prefers boys as friends and rough sports, rejects dolls, says he does not want breasts and says he wants a penis. He is withdrawn and distressed at school.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 0 },
         { label: "Specifier", options: SPEC, answer: 1 },
@@ -31,14 +31,14 @@
       why: "A child (child criteria set) with A1 and at least five other items for over 6 months, plus distress. The DSD is specific, codable and **documented**, so the specifier applies and the DSD is **coded as well** (pp. 512–513)."
     },
     {
-      id: "w14-03", tag: "Children, no A1",
-      "case": "An 8-year-old assigned female at birth has, for over a year, worn only boys’ clothes and fought against dresses, played the male hero in pretend games, chosen trucks and football, played only with boys, rejected dolls, and said she hates her body. She consistently says she is a girl and does not want to be a boy. She is anxious and tearful most days and her teacher reports she has stopped joining class activities. The clinician judges the picture clinically significant and records why full criteria are not met.",
+      id: "w14-03", tag: "Children, below count",
+      "case": "A 7-year-old assigned male at birth has insisted for a year that she is a girl. She dresses up in her sister’s skirts and drapes towels as long hair whenever she can, always plays the mother in pretend games, chooses dolls over cars, and plays only with girls. She joins in rough play without complaint and has said nothing about her body. She is clearly distressed when corrected as a boy and has become withdrawn at school. The clinician judges the picture clinically significant and records why full criteria are not met.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 2 },
         { label: "Code", options: ["F64.2", "F64.9", "F64.0", "F64.8", "F64.A"], answer: 3 }
       ],
-      line: "**F64.8** Other specified gender dysphoria (six manifestations without A1)",
-      why: "Six items (A2–A7) but **no A1**, which is compulsory, so the child criteria are not met (p. 512). Because there is clear distress and impairment and the clinician states the reason, **other specified** fits (p. 520). Without distress, this would be gender nonconformity and no diagnosis."
+      line: "**F64.8** Other specified gender dysphoria (below the 6-of-8 count)",
+      why: "A1 (insists she is a girl) plus A2, A3, A4 and A5 = **5 of 8**: A1 is present, but the child set needs **at least 6 of 8** (p. 512). The symptoms are characteristic of gender dysphoria, with clear distress and impairment, and the clinician states the reason, so **other specified** fits, reason “below the 6-of-8 count” (p. 520)."
     },
     {
       id: "w14-04", tag: "Adolescents",
@@ -75,14 +75,14 @@
     },
     {
       id: "w14-07", tag: "Adults + DSD",
-      "case": "A 24-year-old assigned female at birth has complete androgen insensitivity syndrome, documented after an inguinal hernia repair in infancy. For 4 years he has identified as a man, wants to be treated as one, feels his breasts do not belong to him and wants chest surgery. He is depressed and has stopped attending university.",
+      "case": "A 24-year-old assigned female at birth has androgen insensitivity syndrome, documented in the chart (no subtype recorded) after an inguinal hernia repair in infancy. For 4 years he has identified as a man, wants to be treated as one, feels his breasts do not belong to him and wants chest surgery. He is depressed and has stopped attending university.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 1 },
         { label: "Specifier", options: SPEC, answer: 1 },
         { label: "Code", options: ["F64.0", "F64.2 + E34.50", "F64.0 + E25.0", "F64.8", "F64.0 + E34.50"], answer: 4 }
       ],
       line: "**F64.0** Gender dysphoria in adolescents and adults, with a disorder/difference of sex development; **E34.50** androgen insensitivity syndrome",
-      why: "Adult set met (A1, A3, A4, A5) with distress and impairment. The DSD is documented and codable, so add the specifier and **code the DSD too** (pp. 512–513). Not posttransition: no full-time living with treatment under way."
+      why: "Adult set met (A1 breasts do not belong to him, A2 wants chest surgery to be rid of them, A4, A5) with distress and impairment. The DSD is documented and codable, so add the specifier and **code the DSD too** (pp. 512–513). E34.50 is AIS unspecified; a documented complete form would be E34.51 (ICD-10-CM, outside the DSM). Not posttransition: no full-time living with treatment under way."
     },
     {
       id: "w14-08", tag: "Brief",
@@ -112,7 +112,7 @@
         { label: "DSM-5-TR code", options: ["F64.0", "No gender dysphoria code", "F64.8", "F64.9"], answer: 1 }
       ],
       line: "No gender dysphoria diagnosis: **transgender identity without distress or impairment**",
-      why: "Being transgender is **not** a disorder. Without clinically significant **distress or impairment** from incongruence, Criterion B is not met and there is no diagnosis (pp. 511–513). Assess the insomnia on its own terms."
+      why: "The manual places the clinical problem in the dysphoria, not in identity (p. 512); a transgender identity without distress or impairment does not meet criteria. Without clinically significant **distress or impairment** from incongruence, Criterion B is not met and there is no diagnosis. Assess the insomnia on its own terms."
     },
     {
       id: "w14-11", tag: "Transvestic arousal",
@@ -126,20 +126,20 @@
     },
     {
       id: "w14-12", tag: "Remitted",
-      "case": "A 38-year-old man assigned female at birth was diagnosed with gender dysphoria at 25. He has lived as a man for 12 years, completed testosterone treatment and chest surgery, and now reports no distress about his body or how he is treated. He functions well at work and at home and attends only for a hormone-related letter.",
+      "case": "A 38-year-old man assigned female at birth was diagnosed with gender dysphoria at 25. He transitioned years ago and has lived as a man for 12 years. He had chest surgery 10 years ago and stopped testosterone several years ago; he takes no gender-affirming treatment now and plans none. He is comfortable in his body and with how he is treated, reports no distress about his gender, and functions well at work and at home. He attends for insomnia after a change in shift work.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 4 },
         { label: "DSM-5-TR code", options: ["F64.0", "F64.8", "F64.9", "No gender dysphoria code"], answer: 3 }
       ],
       line: "No current gender dysphoria diagnosis: **criteria no longer met** (no distress or impairment)",
-      why: "Criterion B is not met, and the **posttransition** specifier does not rescue the diagnosis: it is for people who **still meet** criteria while in continuing treatment (p. 513). DSM-5-TR has **no remission specifier**. Outside the DSM: from **October 1, 2026**, ICD-10-CM has **F64.A** (gender identity disorder, in remission) for administrative coding of a resolved dysphoria; it is **not** a DSM diagnosis, so check local coding guidance before using it."
+      why: "Criterion B is not met, so there is no current diagnosis. **Posttransition** does not come into it: the manual says it may be used in the context of continuing treatment that supports the new gender assignment (p. 513), and he has no treatment under way or planned. Assess the insomnia on its own terms. DSM-5-TR has **no remission specifier**. Outside the DSM: from **October 1, 2026**, ICD-10-CM has **F64.A** (gender identity disorder, in remission) for administrative coding of a resolved dysphoria; it is **not** a DSM diagnosis, so check local coding guidance before using it."
     }
   ]);
 
   SP.add("ch14", "counting", [
     {
       id: "n14-01", tag: "Children Criterion A",
-      "case": "A 6-year-old assigned male at birth, seen over 10 months. The record already documents A7 (calls his penis disgusting) and A8 (wants a vagina).",
+      "case": "A 6-year-old assigned male at birth, seen over 10 months. The record already documents A7 (calls her penis disgusting) and A8 (wants a vagina).",
       ask: "Mark the findings that count toward Criterion A. With A7 and A8 already counted, are at least four more present, including A1?",
       items: [
         ["Says “I am a girl” and corrects anyone who calls her a boy", true, "A1: insistence on being another gender."],
@@ -167,7 +167,7 @@
       ],
       need: 6,
       met: false,
-      why: "Six items, but **A1 is missing**: she does not want to be, or say she is, another gender. The children’s count must include **A1**, so Criterion A is **not met** (p. 512). This is the gender-nonconformity differential (p. 519). The reverse also fails: A1 with only four other items is **5 of 8**, still short."
+      why: "Six items, but **A1 is missing**: she does not want to be, or say she is, another gender. The children’s count must include **A1**, so F64.2 criteria are **not met** (p. 512). Without a wish to be another gender this is usually **nonconformity to gender roles** (p. 519); assess distress before considering a residual category. The reverse also fails: A1 with only four other items is **5 of 8**, still short."
     },
     {
       id: "n14-03", tag: "Adolescents/adults Criterion A",
@@ -249,7 +249,7 @@
         ["Congenital adrenal hyperplasia diagnosed and recorded in infancy", true, "Specific, codable, documented (E25.0)."],
         ["Androgen insensitivity syndrome confirmed in the chart", true, "Specific, codable, documented (E34.50)."],
         ["A resident suspects an intersex condition but no workup was done", false, "Suspicion is not documentation."],
-        ["Mildly raised testosterone in a person assigned female, no DSD", false, "The manual describes this in gender dysphoria without a DSD (p. 518)."],
+        ["Mildly raised testosterone in a person assigned female, no DSD", false, "The manual describes this in gender dysphoria without a DSD (p. 517)."],
         ["Strongly gender-nonconforming play in early childhood", false, "Behavior is not a DSD."]
       ],
       need: 1,
@@ -285,7 +285,7 @@
       ],
       need: 4,
       met: true,
-      why: "The manual cites **30%–80%** suicidality in transgender individuals and names **past maltreatment, gender victimization, depression, substance abuse and younger age** (p. 518). Risk is raised **before** gender-affirming treatment and legal change and may persist after it (pp. 515, 519)."
+      why: "The manual cites **30%–80%** suicidality in transgender individuals and names **past maltreatment, gender victimization, depression, substance abuse and younger age** (p. 518). Risk is raised **before** gender-affirming treatment and legal change and may persist after it (pp. 515, 518)."
     }
   ]);
 })();

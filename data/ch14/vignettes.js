@@ -240,7 +240,7 @@ SP.add("ch14", "vignettes", [
       "Residual categories also require distress or impairment.",
       "DSM-5-TR has no remission specifier for gender dysphoria.",
       "There is no distress, and the history is complete.",
-      "Posttransition is a specifier for someone who still meets the criteria; he has no distress or impairment."
+      "Posttransition marks continuing treatment that supports the new gender assignment (p. 513); he has had no medical treatment, wants none, and has no distress or impairment, so there is no diagnosis to specify."
     ],
     "discuss": [
       "How would you word the clearance form respectfully and accurately?",

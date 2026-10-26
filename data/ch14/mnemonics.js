@@ -38,13 +38,13 @@ SP.add("ch14", "mnemonics", [
       ["6 mo", "Both sets", "At least 6 months; full criteria for less time = other specified, brief gender dysphoria (F64.8)"],
       ["B", "Both sets", "Clinically significant distress or impairment (school in children, occupational in adults)"]
     ],
-    caveat: "DSM check: unspecified gender dysphoria is **F64.9**. F64.A was added to ICD-10-CM on October 1, 2026; DSM-5-TR still lists F64.0/F64.2 (see the coding section)."
+    caveat: "DSM check: unspecified gender dysphoria is **F64.9**. F64.A (outside the DSM) was added to ICD-10-CM on October 1, 2026; DSM-5-TR still lists F64.0/F64.2 (see the coding section)."
   },
   {
     id: "m14-04", short: "Differential: N-T-B-A-S-O", name: "Never Treat Bodies, Autism or Schizophrenia as Obvious", original: true, dx: "gender-dysphoria-adults", sec: "s14-differential",
     "for": "The six differential headings for gender dysphoria",
     letters: [
-      ["N", "Nonconformity to gender roles", "Tomboy or 'girly-boy' behavior, occasional cross-dressing: no strong wish to be another gender, no distress"],
+      ["N", "Nonconformity to gender roles", "Tomboy or 'girly-boy' behavior, occasional cross-dressing: no strong wish to be another gender; variance not pervasive"],
       ["T", "Transvestic disorder", "Sexual arousal from cross-dressing, assigned gender not in question; both can be diagnosed"],
       ["B", "Body dysmorphic disorder", "Body part seen as malformed, not as a sign of the rejected gender; both can be diagnosed"],
       ["A", "Autism spectrum disorder", "Rigid, concrete ideas about gender roles can resemble or coexist with gender dysphoria"],

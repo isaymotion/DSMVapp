@@ -7,14 +7,14 @@ SP.add("ch14", "highYield", [
     "The chapter contains **one** diagnosis, gender dysphoria, written as two criteria sets (p. 511).",
     "The two criteria sets are for children and for **adolescents and adults** (p. 512).",
     "The diagnosis targets **distress or impairment** from incongruence, not identity itself (p. 512).",
-    "Being transgender or gender diverse is **not** a mental disorder (p. 512).",
+    "The manual places the clinical problem in the dysphoria, not in identity (p. 512); a transgender identity without distress or impairment does **not** meet criteria.",
     "Many people with incongruence become distressed when desired **hormones or surgery** are unavailable (p. 512).",
   ] },
   { id: "hy14-terms", topic: "Terms", items: [
     "Sex refers to biological markers: chromosomes, gonads, sex hormones and **genitalia** (p. 511).",
     "Gender is the **lived public role** of boy/girl, man/woman or another gender (p. 511).",
     "Gender assignment is usually made **at birth** from phenotypic sex (p. 511).",
-    "“Biological sex” and “natal gender” are treated as **historical** terms for the birth-assigned gender (p. 511).",
+    "The birth-assigned gender was historically called “biological sex” and, **more recently**, “natal gender” (p. 511).",
     "Nondiagnostic alternatives to “gender-atypical”: gender-nonconforming, gender variant and **gender diverse** (p. 511).",
     "Gender-affirming treatment means **hormones and/or surgery** to align the body with the experienced gender (p. 511).",
     "Transgender: gender identity **differs** from the birth-assigned gender (p. 511).",
@@ -50,7 +50,7 @@ SP.add("ch14", "highYield", [
   { id: "hy14-adults", topic: "Adolescent and adult criteria (F64.0)", items: [
     "Adolescents and adults need at least **2 of 6** manifestations for at least 6 months (p. 512).",
     "In the adolescent/adult set, **no** item is compulsory.",
-    "A1: marked incongruence between experienced gender and the **primary and/or secondary sex characteristics** (pp. 512–513).",
+    "A1: marked incongruence between experienced gender and the **primary and/or secondary sex characteristics** (p. 512).",
     "In young adolescents, A1 and A2 are read for the **anticipated** secondary sex characteristics (pp. 512–513).",
     "A2: a strong desire to be **rid of** one’s sex characteristics, or in young adolescents to prevent them (p. 513).",
     "A3: a strong desire **for** the sex characteristics of the other gender (p. 513).",
@@ -68,8 +68,8 @@ SP.add("ch14", "highYield", [
     "For posttransition, a **legal** gender change is not required (p. 513).",
     "Posttransition also requires at least one gender-affirming **medical procedure or regimen** done or being prepared for (p. 513).",
     "Posttransition surgery examples for someone assigned female: chest surgery, phalloplasty or **metoidioplasty** (p. 513).",
-    "Posttransition marks people in **continuing treatment** that supports the new gender assignment (p. 513).",
-    "A person who has transitioned and is no longer distressed or impaired does **not** meet Criterion B."
+    "The manual says posttransition may be used in the context of **continuing treatment** that supports the new gender assignment (p. 513).",
+    "The manual does not say whether full criteria must still be met; reading the specifier as only for people who still meet criteria (so a transitioned person who is no longer distressed or impaired has no diagnosis) is an **interpretation**."
   ] },
   { id: "hy14-features", topic: "Diagnostic features by age", items: [
     "The experienced gender may be **nonbinary**: an intermediate or alternative gender (p. 513).",
@@ -84,9 +84,9 @@ SP.add("ch14", "highYield", [
   ] },
   { id: "hy14-associated", topic: "Associated features", items: [
     "Adolescents assigned male may **shave** facial, body and leg hair as soon as it appears (p. 514).",
-    "Adolescents assigned female may **bind their breasts**, stoop and wear loose sweaters (p. 514).",
-    "Adolescents may obtain **GnRH agonists** or spironolactone without prescription (p. 514).",
-    "Adults with genital aversion often keep their genitals **unseen and untouched** by partners (p. 514).",
+    "Adolescents assigned female may **bind their breasts**, stoop and wear loose sweaters (pp. 514–515).",
+    "Adolescents may obtain **GnRH agonists** or spironolactone without prescription (p. 515).",
+    "Adults with genital aversion often keep their genitals **unseen and untouched** by partners (p. 515).",
     "Traits over-represented in gender dysphoria: **autism spectrum** traits (p. 515).",
     "In prepubertal children, behavioral and emotional problems **increase** with age as acceptance falls (p. 515).",
     "Supported and accepted children and adolescents may show **few or no** psychological problems (p. 515)."
@@ -105,7 +105,7 @@ SP.add("ch14", "highYield", [
   { id: "hy14-course", topic: "Development and course", items: [
     "Two criteria sets exist because expression **varies with age** (p. 515).",
     "Young children are **less** likely to show extreme, persistent anatomic dysphoria (p. 515).",
-    "A very young child’s distress may show only as **intense crying** when told they are “really” not the other gender (p. 516).",
+    "A very young child’s distress may show only as **intense crying** when told they are “really” not the other gender (p. 515).",
     "In clinic samples, gender-nonconforming behavior usually begins at ages **2–4** (p. 516).",
     "Anatomic dysphoria becomes more common as children approach **puberty** (p. 516).",
     "Persistence into adolescence in children assigned male: **2%–39%** (p. 516).",
