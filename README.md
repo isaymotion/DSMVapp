@@ -22,6 +22,7 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 | 10. Feeding and Eating Disorders | Ready |
 | 11. Elimination Disorders | Ready |
 | 12. Sleep-Wake Disorders | Ready |
+| 15. Disruptive, Impulse-Control, and Conduct Disorders | Ready |
 | 16. Substance-Related and Addictive Disorders | Ready |
 | 17. Neurocognitive Disorders | Ready |
 | 18. Personality Disorders | Ready |

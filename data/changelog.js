@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 35,
+    date: "2026-10-26",
+    title: "Chapter 15: Disruptive, Impulse-Control, and Conduct Disorders",
+    summary: "Chapter 15 is ready: oppositional defiant disorder, intermittent explosive disorder, conduct disorder, antisocial personality disorder as a cross-listing, pyromania, kleptomania and the residual categories.",
+    items: [
+      { type: "chapter", ch: "ch15", text: "Chapter 15 study guide in 22 sections, from the ODD 4-of-8 rule, its age-based frequency guide and severity by settings to IED’s A1 and A2 routes, the 15 conduct disorder behaviors with onset subtypes and limited prosocial emotions, the motives that rule out pyromania and kleptomania, the DMDD exclusions and a page of age, duration and double-diagnosis rules.", href: "#/c/ch15/guide", link: "Open Chapter 15" },
+      { type: "feature", text: "High-yield points, criteria, differential and clinical decks, 40 board questions, glossary terms and mnemonics for Chapter 15, and 7 new disorder library entries.", href: "#/c/ch15/high-yield", link: "Chapter 15 high yield" },
+      { type: "feature", text: "Two new diagnostic helpers: “Which disruptive behavior disorder?” and “Fire setting or stealing: which disorder?”", href: "#/helpers/disruptive", link: "Open the helper" },
+      { type: "update", ch: "ch15", text: "Current to October 2026: no ICD-10-CM changes for F91.x, F63.1, F63.2 or F63.81 through FY2027, and no APA coding updates for the chapter; F91.9 remains shared by conduct disorder, unspecified onset, and the unspecified category.", href: "#/c/ch15/guide/s15-map", link: "Chapter map and codes" }
+    ]
+  },
+  {
     id: 34,
     date: "2026-10-26",
     title: "Practice pack for Chapter 12",
