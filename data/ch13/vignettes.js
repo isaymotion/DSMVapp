@@ -145,7 +145,7 @@ SP.add("ch13", "vignettes", [
     "answer": 2,
     "why": "Onset **after starting** a drug that can delay ejaculation = **substance/medication-induced**. Antidepressants have no named class in the coding table, so they take the **other (or unknown) substance** code with **9** (no use disorder): **F19.981**, naming the drug. About **60%** of occasions is **moderate** (50%–75%) (pp. 505–507).",
     "whyNot": [
-      "Delayed ejaculation is excluded when a medication explains the problem, and 4 weeks falls far short of 6 months.",
+      "Delayed ejaculation is excluded when a medication explains the problem, and about a month falls far short of 6 months.",
       "Severe means 75% or more of occasions; his is about 60%.",
       "Correct.",
       "F13 is the sedative, hypnotic or anxiolytic class; fluoxetine belongs under other (or unknown) substance.",
@@ -231,7 +231,7 @@ SP.add("ch13", "vignettes", [
       "Taking a medication as prescribed is not a use disorder, so the 4th character is 9.",
       "Moderate is 50%–75% of occasions; hers is about 80%.",
       "Correct.",
-      "The problem began with the medication, and 3 months falls short of 6; the induced diagnosis applies instead."
+      "The problem began with the medication, and about 2½ months falls short of 6; the induced diagnosis applies instead."
     ]
   },
   {
@@ -262,7 +262,7 @@ SP.add("ch13", "vignettes", [
   {
     "id": "v13-09",
     "tag": "Erectile failure from vascular disease",
-    "stem": "A 58-year-old man with 15 years of poorly controlled diabetes, hypertension and a 30-pack-year smoking history describes erection problems that came on gradually over 2 years. He now cannot obtain a usable erection in any situation, including masturbation, and no longer wakes with erections. He is distressed. His medications (metformin and amlodipine) have been unchanged for a decade. Nocturnal penile tumescence testing shows no adequate erections during sleep, and penile Doppler ultrasound shows marked arterial insufficiency. He has no depressive symptoms, and his marriage is good.",
+    "stem": "A 58-year-old man with 15 years of poorly controlled diabetes, hypertension and a 30-pack-year smoking history (he quit 10 years ago) describes erection problems that came on gradually over 2 years. He now cannot obtain a usable erection in any situation, including masturbation, and no longer wakes with erections. He is distressed. His medications (metformin and amlodipine) have been unchanged for a decade. Nocturnal penile tumescence testing shows no adequate erections during sleep, and penile Doppler ultrasound shows marked arterial insufficiency. He has no depressive symptoms, and his marriage is good.",
     "q": "What is the most appropriate diagnostic conclusion?",
     "choices": [
       "F52.21 erectile disorder, acquired, generalized, severe",
@@ -606,7 +606,7 @@ SP.add("ch13", "vignettes", [
       "Correct.",
       "There has never been a period of pain-free intercourse.",
       "Her fear is tied to pain with penetration and comes with pain and muscle tightening, which this diagnosis covers.",
-      "No medical condition was found; a positive swab test measures the pain but does not show a separate disease."
+      "Even if her vestibular pain is labeled provoked vestibulodynia, the manual says such women are likely to meet criteria for this disorder, and a coexisting medical condition does not exclude it (pp. 495, 497)."
     ],
     "then": {
       "q": "A 35-year-old man reports a year of distressing pelvic and penile pain during and after intercourse, with fear of sex. Urology finds no infection or structural cause. Which diagnosis fits?",
@@ -679,7 +679,7 @@ SP.add("ch13", "vignettes", [
     "choices": [
       "F52.0 male hypoactive sexual desire disorder, acquired, generalized",
       "F52.8 other specified sexual dysfunction",
-      null,
+      "F52.0 male hypoactive sexual desire disorder, acquired, situational",
       "Major depressive disorder",
       "No male hypoactive sexual desire disorder at this time"
     ],
@@ -688,7 +688,7 @@ SP.add("ch13", "vignettes", [
     "whyNot": [
       "Two months is well short of about 6 months, and the change is a reaction to an acute stressor.",
       "Short-term changes in desire are not diagnosed as a disorder, residual or otherwise.",
-      null,
+      "Two months is far short of the approximately 6 months required, and the drop in desire is a reaction to an acute stressor.",
       "He has no persistent depressed mood or loss of interest in other activities.",
       "Correct."
     ]
