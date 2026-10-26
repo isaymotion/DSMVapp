@@ -1,6 +1,6 @@
 /* Chapter 19 glossary terms: [term, definition in the app's own words, source chapter]. */
 SP.glossary = (SP.glossary || []).concat([
-  ["paraphilia", "Any intense and persistent sexual interest other than interest in genital stimulation or foreplay with physically mature, consenting human partners; in the very old or ill, an interest at least equal to nonparaphilic ones (p. 779).", "Ch 19"],
+  ["paraphilia", "Any intense and persistent sexual interest other than interest in genital stimulation or foreplay with phenotypically normal, physically mature, consenting human partners; in the very old or ill, an interest at least equal to nonparaphilic ones (p. 779).", "Ch 19"],
   ["paraphilic disorder", "A paraphilia that currently causes the person distress or impairment, or whose satisfaction has harmed or risked harm to others; Criterion A gives the interest, Criterion B the consequences (p. 780).", "Ch 19"],
   ["courtship disorders", "The anomalous activity group that resembles distorted parts of courtship: voyeuristic, exhibitionistic and frotteuristic disorders (p. 779).", "Ch 19"],
   ["algolagnic disorders", "The anomalous activity group involving pain and suffering: sexual masochism and sexual sadism disorders (p. 779).", "Ch 19"],
@@ -18,7 +18,7 @@ SP.glossary = (SP.glossary || []).concat([
   ["admitting individual", "In sexual sadism disorder, a person who openly acknowledges intense sexual interest in the suffering of others (p. 790).", "Ch 19"],
   ["disclosing individual", "A person who more or less freely acknowledges the paraphilic interest; diagnosed only if distress, impairment or acting on it with a nonconsenting person is also present (pp. 781, 783–784).", "Ch 19"],
   ["nondisclosing individual", "A person who denies the paraphilic interest despite strong objective evidence; recurrent behavior with several victims can still establish Criteria A and B (pp. 781, 784, 786, 790, 793).", "Ch 19"],
-  ["recurrent (paraphilic behavior)", "Usually read as several victims on separate occasions; fewer victims can qualify with repeated acts toward one person or corroborating evidence. Multiple victims are sufficient, not necessary (pp. 781, 784, 786, 791).", "Ch 19"],
+  ["recurrent (paraphilic behavior)", "May be read as several victims on separate occasions; fewer victims can qualify with repeated acts toward one person or corroborating evidence. Multiple victims are sufficient, not necessary (pp. 781, 784, 786, 791).", "Ch 19"],
   ["instrumental infliction of pain", "Pain caused to subdue or restrain a victim during a sexual assault; not evidence of sexual sadism unless there are signs of arousal from the suffering (p. 792).", "Ch 19"],
   ["pedophilia", "Recurrent, intense sexual fantasies, urges or behaviors involving prepubescent children; appears to be lifelong, and is a disorder only with acting on it or marked distress or interpersonal difficulty (pp. 792, 794–795).", "Ch 19"],
   ["prepubescent (DSM-5-TR usage)", "Not yet in puberty; the manual's guide of age 13 or younger is approximate because puberty timing varies and has been getting earlier (pp. 792–793).", "Ch 19"],
@@ -39,8 +39,8 @@ SP.glossary = (SP.glossary || []).concat([
   ["in a controlled environment (paraphilic disorders)", "Specifier for people in institutions or similar settings where the chance to act on the paraphilia is restricted; not available for pedophilic disorder (pp. 780–798).", "Ch 19"],
   ["in full remission (paraphilic disorders)", "At least 5 years in an uncontrolled environment without distress or impairment and, where relevant, without acting on urges with a nonconsenting person; the paraphilia itself may persist (pp. 780–781).", "Ch 19"],
   ["uncontrolled environment", "Ordinary community life where the opportunity to act on the paraphilia exists; remission time must be counted here (p. 780).", "Ch 19"],
-  ["hypersexuality (as used in the chapter)", "Sexual preoccupation or excessive sexual drive, named as a possible risk factor and a frequent comorbidity of paraphilic disorders; not itself a DSM-5-TR diagnosis (pp. 782–783, 787, 798).", "Ch 19"],
-  ["sexual recidivism", "Committing a further sexual offense; in exhibitionistic offenders it is linked to antisocial history, ASPD, alcohol misuse and pedophilic preference (p. 785).", "Ch 19"],
+  ["hypersexuality (as used in the chapter)", "Sexual preoccupation or excessive sexual drive, named as a possible risk factor and a frequent comorbidity of paraphilic disorders (outside the chapter text: not itself a DSM-5-TR diagnosis) (pp. 782–783, 787, 798).", "Ch 19"],
+  ["sexual recidivism", "Committing a further sexual offense; in exhibitionistic offenders its risk might be increased by antisocial history, ASPD, alcohol misuse and pedophilic preference (p. 785).", "Ch 19"],
   ["telephone scatologia", "Sexual arousal from obscene phone calls; an example for other specified paraphilic disorder (p. 801).", "Ch 19"],
   ["necrophilia", "Sexual interest in corpses; an example for other specified paraphilic disorder (pp. 779, 801).", "Ch 19"],
   ["zoophilia", "Sexual interest in animals; the manual's recording example: 'other specified paraphilic disorder, zoophilia' (pp. 779, 801).", "Ch 19"],

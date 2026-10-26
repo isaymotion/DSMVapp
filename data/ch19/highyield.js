@@ -29,7 +29,7 @@ SP.add("ch19", "highYield", [
     "In full remission requires at least **5 years** without acting on urges and without distress or impairment (p. 780).",
     "The 5 remission years must be spent in an **uncontrolled** environment (p. 780).",
     "In a controlled environment is meant mainly for people in **institutional** settings where opportunity is restricted (p. 780).",
-    "The only listed disorder with **no** remission or controlled-environment specifier is pedophilic disorder (p. 793).",
+    "The only listed disorder with no remission or controlled-environment specifier is **pedophilic disorder** (p. 793).",
     "The remission specifier says **nothing** about whether the paraphilia itself persists (pp. 781, 783, 786).",
     "Criterion B can be met by acting on urges with a **nonconsenting** person in voyeuristic, exhibitionistic, frotteuristic and sadism disorders (pp. 780, 783, 785, 790).",
     "Masochism, fetishistic and transvestic disorders require **distress or impairment** alone for Criterion B (pp. 788, 796, 798).",
@@ -37,7 +37,7 @@ SP.add("ch19", "highYield", [
     "“Recurrent” may be read as **multiple victims**, each on a separate occasion (pp. 781, 784, 786, 791).",
     "Multiple victims are **sufficient but not necessary**; an acknowledged intense interest can also meet the criteria (pp. 781, 784, 786, 791, 794).",
     "An admitting person with no distress, no impairment and no history of acting on it has a **sexual interest**, not a disorder (pp. 781, 784, 786).",
-    "The shared course text links advancing age with **decreasing** paraphilic preference and behavior (pp. 782, 784, 787, 789, 791)."
+    "The shared course text says advancing age may be associated with **decreasing** paraphilic preference and behavior (pp. 782, 784, 787, 789, 791)."
   ] },
   { id: "hy19-voyeuristic", topic: "Voyeuristic disorder (F65.3)", items: [
     "Voyeuristic Criterion A is arousal from watching an **unsuspecting** person who is naked, undressing or in sexual activity (p. 780).",
@@ -64,7 +64,7 @@ SP.add("ch19", "highYield", [
     "By sex, Quebec lifetime exhibitionistic behavior was **32.6%** in men and **29.4%** in women (p. 784).",
     "In Quebec, “intense desire” for exhibitionism was **4.8%** and “persistent behavior” **0.8%** (p. 784).",
     "A Swedish study put lifetime exhibitionistic disorder at **4.1%** of men and **2.1%** of women (p. 784).",
-    "Men notice the interest in adolescence, somewhat **later** than ordinary sexual interest develops (p. 784).",
+    "Men often report noticing the interest in adolescence, somewhat **later** than ordinary sexual interest develops (p. 784).",
     "Antisocial history, alcohol misuse and a **pedophilic** preference may raise sexual recidivism in exhibitionistic offenders (p. 785)."
   ] },
   { id: "hy19-frotteuristic", topic: "Frotteuristic disorder (F65.81)", items: [
@@ -141,7 +141,7 @@ SP.add("ch19", "highYield", [
     "Prevalence of pedophilic disorder is likely under **3%** among men in international studies (p. 794).",
     "In women, prevalence is probably a **small fraction** of the male rate (p. 794).",
     "Pedophilia per se appears **lifelong**, while the disorder may fluctuate (p. 794).",
-    "Because antisocial traits make acting out more likely, **antisocial personality disorder** is a risk factor in men with pedophilia (p. 794).",
+    "Because antisocial traits make acting out more likely, **antisocial personality disorder** may be considered a risk factor in men with pedophilia (p. 794).",
     "Some evidence links **in utero** neurodevelopmental perturbation to pedophilic interest (p. 795).",
     "The most researched psychophysiological marker is **penile plethysmography**, whose accuracy varies across sites (p. 795).",
     "Possessing sexual images of children even for diagnosis may violate US law, so **audio** stimuli are an option (p. 795).",
@@ -182,7 +182,7 @@ SP.add("ch19", "highYield", [
     "Discarding a costly wardrobe and then rebuilding it, called **purging and acquisition**, often signals distress (p. 799).",
     "Autogynephilic fantasies may focus on female physiological functions such as **lactation** or menstruation (p. 799).",
     "Fewer than **3%** of Swedish men report ever being aroused by wearing women’s clothing (p. 799).",
-    "With age, arousal from cross-dressing **declines** while the desire to cross-dress stays or grows (p. 799).",
+    "In many cases, arousal from cross-dressing **declines** with age while the desire to cross-dress stays or grows (p. 799).",
     "Severity peaks in **adulthood**, when transvestic drives clash with heterosexual relationships and marriage plans (p. 800).",
     "The most frequent co-occurring paraphilic interests are fetishistic and **masochistic** (p. 800).",
     "**Autoerotic asphyxia** is associated with transvestic behavior in a substantial share of fatal cases (p. 800)."

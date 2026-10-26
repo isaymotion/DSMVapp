@@ -171,7 +171,7 @@
         { label: "Code", options: ["F65.3", "F65.89", "F65.9", "F65.2", NOCODE], answer: 0 }
       ],
       line: "**F65.3** Voyeuristic disorder, in full remission",
-      why: "Full remission needs **at least 5 years** with no acting on urges with a nonconsenting person **and** no distress or impairment, **in an uncontrolled environment** (p. 781). Six years at home qualifies. Remission says nothing about whether the voyeuristic **interest** itself has gone, and the specifier does not change the code."
+      why: "Full remission needs **at least 5 years** with no acting on urges with a nonconsenting person **and** no distress or impairment, **in an uncontrolled environment** (p. 780). Six years at home qualifies. Remission says nothing about whether the voyeuristic **interest** itself has gone (p. 781), and the specifier does not change the code."
     },
     {
       id: "w19-13", tag: "Mania",
@@ -219,7 +219,7 @@
       ask: "Mark the findings that satisfy Criterion B for the disorder named. Are at least three present?",
       items: [
         ["Exhibitionistic: exposed himself to two unsuspecting strangers", true, "Acted on with a nonconsenting person (p. 783)."],
-        ["Frotteuristic: rubbed against nonconsenting women on crowded trains", true, "Acted on with a nonconsenting person (p. 786)."],
+        ["Frotteuristic: rubbed against nonconsenting women on crowded trains", true, "Acted on with a nonconsenting person (p. 785)."],
         ["Sexual sadism: hurt a partner who had refused", true, "Acted on with a nonconsenting person (p. 790)."],
         ["Sexual masochism: is spanked by a willing partner", false, "Masochism has **no** nonconsenting arm; B needs distress or impairment (p. 788)."],
         ["Fetishistic: uses leather with a willing partner", false, "Distress or impairment only (p. 796)."]

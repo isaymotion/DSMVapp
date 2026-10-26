@@ -4,7 +4,7 @@
    Complaint hub entries (SP.complaintData) are shared across chapters: entries with the same id merge. */
 (function () {
   var OPEN = "Ask in **private**, explain the **limits of confidentiality** before asking about behavior that may be an offense (app guidance), use neutral words (“a person who has offended”, “sexual interest in”), and record **facts** (dates, occasions, who, consent) rather than inferences.";
-  var SAFETY = "Screen every patient for **depression, anxiety, substance use, ADHD and antisocial traits** (the manual’s recurrent comorbidities, pp. 783, 785, 788, 796) and for **suicidal thoughts**, which were linked to stigma-related shame and guilt in BDSM practitioners (pp. 789, 791). Ask directly about **asphyxiophilia** and autoerotic asphyxia whenever masochistic or transvestic interests appear (pp. 789, 800).";
+  var SAFETY = "(App guidance, outside the DSM) Screen every patient for **depression, anxiety, substance use, ADHD and antisocial traits** (the manual’s recurrent comorbidities, pp. 783, 785, 788, 796) and for **suicidal thoughts**, which were linked to stigma-related shame and guilt in BDSM practitioners (pp. 789, 791). Ask directly about **asphyxiophilia** and autoerotic asphyxia whenever masochistic or transvestic interests appear (pp. 789, 800).";
   var WFSBP = "Outside the DSM: the **WFSBP** guidelines (Thibaut et al., 2010; updated 2020) grade treatment by **risk of harm to others** and severity: psychological treatment (**CBT, relapse prevention**) for everyone; **SSRIs** for lower-risk presentations; **antiandrogens** (cyproterone acetate, not approved in the US; medroxyprogesterone acetate) for higher risk; **GnRH agonists** (leuprolide, triptorelin) for the most severe or highest-risk cases, with informed consent and monitoring of bone density, liver and metabolic measures. Sources number the levels differently; learn the order.";
   var LAW = "Outside the DSM, Philippine frame: **RA 11648** (2022) sets the age of sexual consent at **16** (close-in-age exemption of 3 years or less, never under 13); **RA 7610** governs child abuse and reporting. Know your hospital’s policy on confidentiality and reporting before the first interview; the manual’s own legal warning about sexual images of children is American (p. 795).";
   var STAHL_SSRI = [["Fluoxetine", "drugs/fluoxetine"], ["Sertraline", "drugs/sertraline"], ["Paroxetine", "drugs/paroxetine"], ["Impulsivity and compulsivity", "c/ch13/guide/s13-impulse"]];
@@ -31,9 +31,9 @@
         ["A Duration and intensity", "“How long has this been going on? How often do you think about it, and how strong is the urge compared with other sexual interests?”", "6 months; fantasies, urges or behaviors."],
         ["B Acts", "“Have you ever done it? How many times, and how many different people?”", "Multiple victims on separate occasions support both A and B even if urges are denied (p. 781)."],
         ["B Distress", "“Does this interest trouble you, or has it caused problems with work, relationships or the law?”"],
-        ["C Age", "Confirm the person is at least 18 (p. 781).", "No diagnosis under 18."],
+        ["C Age", "Confirm the person is at least 18 (p. 780).", "No diagnosis under 18; the rationale is on p. 781."],
         ["Rule-outs", "“Did this happen only when you were drunk, high, unusually elated, or unwell in some other way?”", "Disinhibition rule-out (p. 782)."],
-        ["Comorbidity", "“Any other sexual interests of this kind, such as exposing yourself? Mood, attention, alcohol or drug problems?”", "Exhibitionistic disorder and hypersexuality are the commonest companions (p. 783)."]
+        ["Comorbidity", "“Any other sexual interests of this kind, such as exposing yourself? Mood, attention, alcohol or drug problems?”", "Listed comorbidities include hypersexuality and other paraphilic disorders, particularly exhibitionistic disorder (p. 783)."]
       ],
       tx: VICTIM_CARE
     },
@@ -46,7 +46,7 @@
         ["B Acts", "“How many times, with how many different people? Did any of them agree?”", "Acting on urges with a nonconsenting person meets Criterion B."],
         ["B Distress", "“Does it bother you? Any trouble at work, at home or with the police because of it?”"],
         ["Rule-outs", "“Only while intoxicated, elated or unwell?”", "Disinhibition rule-out (p. 785)."],
-        ["Risk", "“Any alcohol problems? Earlier trouble with the law? Any sexual interest in children?”", "ASPD, alcohol misuse and pedophilic interest raise recidivism risk (p. 785)."]
+        ["Risk", "“Any alcohol problems? Earlier trouble with the law? Any sexual interest in children?”", "ASPD, alcohol misuse and pedophilic interest might increase recidivism risk (p. 785)."]
       ],
       tx: VICTIM_CARE
     },
@@ -69,7 +69,7 @@
         ["A Duration", "“For how long? How central is it to your arousal?”", "6 months."],
         ["Asphyxiophilia", "“Have you ever restricted your breathing, or had it restricted, for arousal? Alone or with someone? Ever lost consciousness?”", "Specifier; risk of accidental death (p. 789)."],
         ["B Distress", "“Does this interest trouble you, or get in the way of relationships, work or safety?”", "Criterion B is distress or impairment only."],
-        ["Context", "“Is this something you do with a consenting partner, in a community, or alone?”", "Consensual practice without distress is not a disorder (p. 792)."],
+        ["Context", "“Is this something you do with a consenting partner, in a community, or alone?”", "Consensual practice without distress is not a disorder (p. 789)."],
         ["Safety", "“Any shame or guilt about it? Thoughts of ending your life?”", "Stigma-related shame linked to suicidal ideation (p. 789)."],
         ["Comorbidity", "“Any arousal from cross-dressing, objects or other interests?”", "Transvestic fetishism and other paraphilic disorders co-occur (p. 790)."]
       ],
@@ -83,7 +83,7 @@
         ["B Consent", "“Has anyone been hurt without agreeing to it? How many times, how many people?”", "Acting on urges with a nonconsenting person meets Criterion B (p. 790)."],
         ["B Distress", "“Does the interest trouble you, or has it caused problems?”"],
         ["Instrumental versus sadistic", "In a forensic case: Was the violence beyond what the act required? Is there sadistic pornography? Any admission that the suffering itself was arousing?", "The manual’s three markers (p. 792)."],
-        ["Rule-outs", "“Only when intoxicated, elated or unwell? Is cruelty part of a wider pattern?”", "Disinhibition; conduct disorder/ASPD, both may be diagnosed (p. 792)."],
+        ["Rule-outs", "“Is cruelty part of a wider pattern of breaking rules or harming people?”", "Conduct disorder/ASPD: cruelty without arousal from suffering is not sadism; both may be diagnosed when both are met (p. 792). The sadism text lists no disinhibition rule-out; asking about intoxication or mania is app guidance."],
         ["Comorbidity", "“Any masochistic, voyeuristic, cross-dressing or exposing interests?”", "Finnish co-occurrence: masochism 68.8%, voyeurism 33.3% (p. 792)."]
       ],
       tx: VICTIM_CARE
@@ -98,7 +98,7 @@
         ["B Acts", "“Has there been any sexual contact or sexual behavior with a child, including exposing yourself? How many children, on how many occasions?”", "Acting on the urges meets B; use of sexual images of children alone does not (p. 793)."],
         ["B Distress", "“Does this cause you distress, or problems in relationships?”", "Marked distress or interpersonal difficulty."],
         ["C Age", "Confirm the person is 16 or older and at least 5 years older than the child; apply the late-adolescent note (p. 793)."],
-        ["Markers", "“Do you prefer the company of children to adults? Have you chosen work or volunteer roles to be near children?”", "Emotional congruence with children (p. 794)."],
+        ["Associated features", "“Do you prefer the company of children to adults? Have you chosen work or volunteer roles to be near children?”", "Emotional congruence with children (p. 794)."],
         ["Rule-outs", "“Only while intoxicated? Is this part of a wider pattern of breaking rules? Do these thoughts disgust you and come against your will?”", "Intoxication, ASPD, OCD (pp. 795–796)."],
         ["Risk", "Victim access, current contact with children, antisocial traits, substance use.", "Outside the DSM: risk assessment and treatment planning."]
       ],
