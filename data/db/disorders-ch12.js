@@ -124,7 +124,7 @@
       essence: "On polysomnography, an **AHI of at least 5** obstructive apneas or hypopneas per hour **with symptoms** (snoring, gasping, pauses, or daytime sleepiness, fatigue or unrefreshing sleep), **or an AHI of 15 or more regardless of symptoms**.",
       duration: "No minimum duration (PSG-defined)",
       functioning: "Daytime sleepiness in over 50% with moderate to severe OSA; twofold occupational accidents, motor vehicle crashes up to sevenfold; lowest quality-of-life scores in vitality",
-      mood: "Up to one-third of referrals report depressive symptoms, about 10% moderate to severe",
+      mood: "Up to one-third of referrals report depressive symptoms, up to 10% moderate to severe",
       criteria: [
         ["A1", "PSG shows at least 5 obstructive apneas or hypopneas per hour of sleep, plus either nocturnal breathing disturbance (snoring, snorting or gasping, breathing pauses) or daytime sleepiness, fatigue or unrefreshing sleep despite enough opportunity to sleep, not better explained by another mental disorder (including a sleep disorder) or medical condition."],
         ["A2", "Or: PSG shows an obstructive AHI of 15 or higher, with or without symptoms."]
@@ -165,14 +165,14 @@
       ],
       specifiers: ["G47.31 Idiopathic: repeated apneas and hypopneas from variable effort without obstruction", "R06.3 Cheyne-Stokes breathing: crescendo-decrescendo tidal volume, at least 5 events an hour, with frequent arousal", "G47.37 Comorbid with opioid use: opioid effect on medullary rhythm generators", "Severity: by frequency of events, desaturation and sleep fragmentation"],
       epi: [["Idiopathic CSA", "Unknown; thought rare"], ["Heart failure with EF <45%", "Cheyne-Stokes in 15%–44%"], ["Acute stroke", "About 20%"], ["Chronic opioids or methadone", "About 24%; worse above 200 mg morphine equivalents a day"], ["Children", "4%–6%"]],
-      risk: ["Heart failure, stroke, renal failure, atrial fibrillation (Cheyne-Stokes).", "Long-acting opioids taken for months; added benzodiazepines.", "Ascent to high altitude (usually 2,500 m or more).", "Age over 60 and male sex."],
+      risk: ["Heart failure, stroke, renal failure, atrial fibrillation (Cheyne-Stokes).", "Long-acting opioids taken for months; methadone maintenance.", "Ascent to high altitude (usually 2,500 m or more).", "Age over 60 and male sex."],
       differential: [
         { id: "osa", how: "Obstructive events with continued effort; snoring prominent; can coexist." },
         { id: "sleep-hypoventilation", how: "Sustained desaturation and raised CO₂ rather than cyclical events." },
         { name: "High-altitude periodic breathing", how: "After recent ascent; shorter cycle than Cheyne-Stokes; no heart failure." },
         { id: "opioid-use", how: "Code the opioid use disorder first, then G47.37." }
       ],
-      pearls: ["Central events should be over 50% of all respiratory events (text, not Criterion A).", "Cheyne-Stokes cycle is about 60 seconds.", "Cheyne-Stokes breathing while awake signals worse prognosis.", "Think of CSA in methadone or buprenorphine maintenance patients who are sleepy.", "G47.37 alone when there is opioid use without a use disorder."],
+      pearls: ["Central events should be over 50% of all respiratory events (text, not Criterion A).", "Cheyne-Stokes cycle is about 60 seconds.", "Cheyne-Stokes breathing while awake signals worse prognosis.", "Think of CSA in sleepy patients on methadone maintenance or long-term opioids.", "G47.37 alone when there is opioid use without a use disorder."],
       cmp: { symptoms: "Sleepiness, insomnia, waking with dyspnea; sometimes none", exclusions: "Another current sleep disorder that explains it", prevalence: "Heart failure 15%–44%; chronic opioids about 24%", course: "Follows the underlying condition (heart failure, opioid dose)" },
       clues: [["Core picture", "A 64-year-old with heart failure (EF 30%) whose wife sees waxing and waning breathing with pauses"], ["Duration rule", "No minimum duration (PSG-defined)"], ["Code", "G47.31 / R06.3 / G47.37"]],
       updates: upd("**G47.31**, **R06.3** and **G47.37** are unchanged in the October 2024, 2025 and 2026 ICD-10-CM updates.")
@@ -270,7 +270,7 @@
       id: "circadian-irregular", ch: "ch12", sec: "s12-circadian-irregular-non24", pages: "447–448", critPages: "443–444",
       name: "Circadian rhythm sleep-wake disorder, irregular sleep-wake type", code: "G47.23",
       codes: [["G47.23", "Circadian rhythm sleep disorder, irregular sleep wake type", NC]],
-      aka: ["irregular sleep-wake rhythm", "ISWRD", "sundowning sleep pattern"],
+      aka: ["irregular sleep-wake rhythm", "ISWRD"],
       essence: "**No discernible circadian rhythm**: sleep is scattered in **at least three bouts** across 24 hours, with insomnia at night and **napping by day**; the longest bout usually falls **between 2 and 6 a.m.** and lasts **under 4 hours**.",
       duration: "No minimum; episodic 1–<3 months, persistent ≥3 months",
       functioning: "No main sleep period; disrupts the caregiver’s sleep too",
@@ -380,7 +380,7 @@
         { name: "Alcohol-induced blackouts", how: "Complex behavior with amnesia while drinking." },
         { id: "dissociative-amnesia", how: "Fugue arises from wakefulness at night." },
         { id: "substance-induced-sleep", how: "Z-drugs, benzodiazepines and other drugs can cause complex sleep behaviors: parasomnia type." },
-        { id: "bed", how: "Night eating syndrome: fully awake overeating, not an incomplete arousal." }
+        { id: "other-specified-eating", name: "Night eating syndrome (other specified feeding or eating disorder)", how: "Night eating syndrome: fully awake overeating, not an incomplete arousal." }
       ],
       pearls: ["First third of the night, from N3.", "Hard to wake, confused, amnesic.", "New adult onset: look for OSA, nocturnal seizures or a medication.", "50%–65% remit by adolescence.", "Sleep-related eating is more common in women; sexsomnia in men."],
       cmp: { symptoms: "Walking or complex behavior from sleep; blank stare; amnesia", exclusions: "Substances; coexisting disorders that explain it", prevalence: "Adults weekly to monthly 0.5%–0.7%", course: "Childhood onset; mostly remits by adolescence" },
@@ -437,7 +437,7 @@
       ],
       specifiers: ["During sleep onset", "With mental disorder (substance use disorders count)", "With medical condition", "With another sleep disorder (code each after F51.5)", "Acute: 1 month or less", "Subacute: more than 1 month but less than 6 months", "Persistent: 6 months or more", "Mild: less than one a week on average", "Moderate: one or more a week but not nightly", "Severe: nightly"],
       epi: [["Children", "1%–5%; ages 5–15: 5.2%"], ["Adults, monthly", "About 6%"], ["Adults, weekly", "2%–6%"], ["Adults, frequent", "1%–5%"], ["Sex", "Adult women report more"]],
-      risk: ["Psychosocial stressors, sleep loss, irregular schedules.", "Middle age: low income, mood problems, insomnia, sleep-disordered breathing, antidepressants, heavy alcohol.", "Trauma exposure.", "Protective: parental soothing after nightmares."],
+      risk: ["Psychosocial stressors, sleep loss, irregular schedules.", "Middle age: low income, mood problems, insomnia, sleep-disordered breathing, antidepressants, heavy alcohol.", "More frequent past adverse events, not necessarily trauma; trauma-related nightmares belong with PTSD.", "Protective: parental soothing after nightmares."],
       differential: [
         { id: "sleep-terrors", how: "First third, N3, inconsolable and amnesic." },
         { id: "rbd", how: "Complex movement and vocalization acting out the dream; older men." },
@@ -480,7 +480,7 @@
         { name: "Nocturnal seizures", how: "Stereotyped; seizure EEG; REM atonia usually preserved." },
         { name: "Asymptomatic REM without atonia", how: "A PSG finding without behavior is not RBD." },
         { id: "nightmare", how: "Frightening dreams without complex movement." },
-        { id: "ncd-lewy", how: "RBD is a core feature and often a precursor." }
+        { id: "ncd-lewy", how: "RBD is a suggestive diagnostic feature of NCD with Lewy bodies and often precedes it by years." }
       ],
       pearls: ["Idiopathic RBD: about 75% develop a neurodegenerative disease within 10–15 years (6%–7% a year).", "Arm (biceps) EMG is most specific.", "Without PSG or a synucleinopathy: other specified sleep-wake disorder (G47.8).", "Eyes usually closed; dream content matches the behavior."],
       cmp: { symptoms: "Dream enactment late in the night; alert on waking; recalls dream", exclusions: "Substances (antidepressants); medical causes", prevalence: "About 1%–2% of older adults", course: "Progressive; high conversion to synucleinopathy" },
@@ -653,7 +653,7 @@
       id: "other-specified-sleep-wake", ch: "ch12", sec: "s12-residual", pages: "476", critPages: "476",
       name: "Other specified sleep-wake disorder", code: "G47.8",
       codes: [["G47.8", "Other sleep disorders", NC]],
-      aka: ["probable REM sleep behavior disorder"],
+      aka: ["repeated REM-sleep arousals without PSG or synucleinopathy"],
       essence: "A sleep-wake picture with distress or impairment that fits no specific disorder and **does not qualify for the insomnia or hypersomnolence residuals**, with the **reason recorded**, e.g., **repeated REM-sleep arousals without PSG or a known synucleinopathy**.",
       duration: "Varies",
       functioning: "Distress or impairment required",

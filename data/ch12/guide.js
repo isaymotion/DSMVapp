@@ -4,7 +4,7 @@
    and the APA DSM-5-TR updates of September 2022–2025. Treatment notes, sleep-medicine rules of thumb and other
    clinical teaching are outside the DSM and labeled as such. */
 SP.add("ch12", "guide", {
-  intro: "The sleep-wake disorders share one shape: a complaint about the **quality, timing or amount of sleep** plus **daytime distress or impairment** (p. 407). The chapter is written for psychiatrists and generalists, not sleep specialists, so it **lumps** where splitting adds little (one **insomnia disorder** with comorbidity specifiers) and **splits** where biology justifies it (four coded **narcolepsy** subtypes, defined partly by **CSF hypocretin**). It covers **insomnia disorder**, **hypersomnolence disorder**, **narcolepsy**, the three **breathing-related sleep disorders** (obstructive sleep apnea hypopnea, central sleep apnea, sleep-related hypoventilation), the **circadian rhythm sleep-wake disorders**, the **parasomnias** (NREM sleep arousal disorders, nightmare disorder, REM sleep behavior disorder), **restless legs syndrome**, **substance/medication-induced sleep disorder** and six residual categories. Several diagnoses need a **sleep study**: polysomnography for apnea and REM sleep behavior disorder, an **MSLT** for narcolepsy type 2. Many codes are **G codes** from the nervous system chapter of ICD-10-CM, not F codes. Sleep problems matter in every other chapter: they are **risk factors and early signs** of depression, bipolar disorder, anxiety and substance use, and insomnia and nightmares raise **suicide risk**. Use the [[helper:sleep|sleep-wake helper]] and the [[helper:parasomnia|night-behavior helper]] to practice the reasoning.",
+  intro: "The sleep-wake disorders share one shape: a complaint about the **quality, timing or amount of sleep** plus **daytime distress or impairment** (p. 407). The chapter is written for psychiatrists and generalists, not sleep specialists, so it **lumps** where splitting adds little (one **insomnia disorder** with comorbidity specifiers) and **splits** where biology justifies it (four coded **narcolepsy** subtypes, defined partly by **CSF hypocretin**). It covers **insomnia disorder**, **hypersomnolence disorder**, **narcolepsy**, the three **breathing-related sleep disorders** (obstructive sleep apnea hypopnea, central sleep apnea, sleep-related hypoventilation), the **circadian rhythm sleep-wake disorders**, the **parasomnias** (NREM sleep arousal disorders, nightmare disorder, REM sleep behavior disorder), **restless legs syndrome**, **substance/medication-induced sleep disorder** and six residual categories. Several diagnoses need a **sleep study**: polysomnography for apnea and usually for REM sleep behavior disorder, an **MSLT** for narcolepsy type 2. Many codes are **G codes** from the nervous system chapter of ICD-10-CM, not F codes. Sleep problems matter in every other chapter: they are **risk factors and early signs** of depression, bipolar disorder, anxiety and substance use, and insomnia and nightmares raise **suicide risk**. Use the [[helper:sleep|sleep-wake helper]] and the [[helper:parasomnia|night-behavior helper]] to practice the reasoning.",
   objectives: [
     "Describe the **sleep stages** (N1, N2, N3, REM) and their share of the night, and define sleep latency, wake after sleep onset, sleep efficiency, REM latency and the **sleep-onset REM period**.",
     "State the criteria for **insomnia disorder**: dissatisfaction plus one of three symptoms, **3 nights a week for 3 months**, adequate opportunity, distress or impairment, and the rule that comorbid disorders must not **adequately explain** it; use the three comorbidity specifiers and record the comorbid code **after F51.01**.",
@@ -150,7 +150,7 @@ SP.add("ch12", "guide", {
               ["Subjective diagnosis", "The diagnosis rests on the **person’s (or caregiver’s) perception**, not on a sleep study."],
               ["Adequate opportunity", "Separates insomnia from **sleep deprivation** by circumstance: an intern on call, a parent of a newborn."]
             ] },
-            { type: "callout", kind: "pearl", title: "Why the specifiers exist", text: "DSM-IV had three separate diagnoses (insomnia related to another mental disorder, to a medical condition, and primary insomnia). DSM-5 **lumped** them into one disorder with specifiers because the direction of cause is usually unknowable and **changes over time** (pp. 407, 410). Persistent insomnia is a **risk factor** for depression, anxiety and alcohol use disorder, and a common **residual symptom** after they are treated; both conditions may need treatment." },
+            { type: "callout", kind: "pearl", title: "Why the specifiers exist", text: "DSM-IV had three separate categories (insomnia with other mental disorders, with other medical conditions, and with other sleep disorders). DSM-5 **lumped** them into one disorder with specifiers because the direction of cause is usually unknowable and **changes over time** (pp. 407, 410). Persistent insomnia is a **risk factor** for depression, anxiety and alcohol use disorder, and a common **residual symptom** after they are treated; both conditions may need treatment." },
             { type: "case", title: "Clinical vignette: the accountant after the audit", text: "A 44-year-old accountant has taken over an hour to fall asleep and woken at 3 a.m. most nights for 5 months, ever since a stressful audit that has long ended. She goes to bed at 10 p.m. with 8 hours available, watches the clock, and dreads bedtime. She is irritable and making errors at work. Mood is otherwise good, she drinks one coffee in the morning, and she does not snore.", point: "Dissatisfaction with sleep, onset and maintenance problems, **more than 3 nights a week for over 3 months**, adequate opportunity, impairment, and no other disorder explaining it: **insomnia disorder (F51.01), persistent**. The precipitant has passed; **conditioned arousal** keeps it going." }
           ]
         },
@@ -162,7 +162,7 @@ SP.add("ch12", "guide", {
             { type: "table", caption: "Where in the night (p. 411)", head: ["Type", "Also called", "Notes"], rows: [
               ["Sleep-onset", "**Initial** insomnia", "Difficulty falling asleep at bedtime; more common in **young adults**"],
               ["Sleep maintenance", "**Middle** insomnia", "Frequent or prolonged night waking; the **most common single symptom** (about **60%**)"],
-              ["Late", "Early-morning awakening", "Waking early without getting back to sleep; more common with age"],
+              ["Late", "Early-morning awakening", "Waking early without getting back to sleep; may reflect an **age-related phase advance**"],
               ["Mixed", "—", "A **combination** is the most common presentation overall, and the pattern **shifts over time**"]
             ] },
             { type: "table", caption: "Illustrative severity guides, not criteria (p. 411)", head: ["Symptom", "Rough threshold"], rows: [
@@ -211,10 +211,11 @@ SP.add("ch12", "guide", {
               "Young adults struggle to **fall** asleep; middle-aged and older adults to **stay** asleep.",
               "Children: conditioning (cannot fall asleep without a parent) and lack of routines. Adolescents: irregular schedules, especially **phase delay**."
             ] },
-            { type: "table", caption: "The 3P model: predisposing, precipitating, perpetuating (pp. 414)", head: ["Factor", "Examples from the manual"], rows: [
+            { type: "table", caption: "The 3P model: predisposing, precipitating, perpetuating (p. 414; the grouping is the app’s)", head: ["Factor", "Examples from the manual"], rows: [
               ["Predisposing: temperament", "Anxious or **worry-prone** style, high arousal, **stress reactivity**, tendency to repress emotions"],
               ["Predisposing: biology", "**Female sex**, older age; family history in **35%–70%** (most often the **mother**); higher in **monozygotic** than dizygotic twins"],
-              ["Precipitating", "Major life events (illness, separation) or chronic daily stress; noise, light, temperature, **high altitude**"],
+              ["Predisposing: environment", "Noise, light, uncomfortable temperature, **high altitude**"],
+              ["Precipitating", "Major life events (illness, separation) or chronic daily stress"],
               ["Perpetuating", "Poor sleep habits, irregular schedule, **fear of not sleeping**, excess caffeine"]
             ] },
             { type: "callout", kind: "analogy", title: "The match and the fuel", text: "The precipitant is the **match** (an exam, a death, an injury); the perpetuating habits and fears are the **fuel** that keeps the fire going after the match is gone. Treating chronic insomnia means removing the fuel, not finding the match. (Analogy written for this app; the 3P model name is outside the DSM; DSM check: p. 414.)" },
@@ -261,7 +262,7 @@ SP.add("ch12", "guide", {
               ["Other specified insomnia: short-term", "**Short-term insomnia disorder**"],
               ["Substance/medication-induced sleep disorder, insomnia type", "**No separate category**"]
             ] },
-            { type: "case", title: "Clinical vignette: the student who sleeps fine on holidays", text: "A 19-year-old university student cannot fall asleep before 2 a.m. on school nights and struggles to wake for 8 a.m. classes. On holidays she sleeps from 2:30 a.m. to 10:30 a.m., falls asleep quickly, and wakes refreshed. This pattern has lasted 2 years and she has failed two morning exams.", point: "Sleep is normal when she sleeps on her **own clock**; the problem is **timing**. This is **circadian rhythm sleep-wake disorder, delayed sleep phase type (G47.21)**, not insomnia disorder (p. 415)." }
+            { type: "case", title: "Clinical vignette: the student who sleeps fine on holidays", text: "A 19-year-old university student cannot fall asleep before 2 a.m. on school nights and struggles to wake for 8 a.m. classes. On holidays she sleeps from 2:30 a.m. to 10:30 a.m., falls asleep quickly, and wakes refreshed. This pattern has lasted 2 years and she has failed two morning exams.", point: "Sleep is normal when she sleeps on her **own clock**; the problem is **timing**. This is **circadian rhythm sleep-wake disorder, delayed sleep phase type (G47.21)**, not insomnia disorder (p. 416)." }
           ]
         },
         {
@@ -396,7 +397,7 @@ SP.add("ch12", "guide", {
               ["3. Overnight PSG", "Rules out other causes and may itself show a **nocturnal SOREMP**."],
               ["4. MSLT the next day", "Five nap opportunities; **REM in at least two** with mean latency ≤ 8 minutes."]
             ] },
-            { type: "callout", kind: "caution", title: "False-positive SOREMPs", text: "SOREMPs also appear with **shift work**, circadian disorders, **severe OSA**, medication effects or withdrawal, **insufficient sleep**, and severe depression (pp. 424, 426). Test-retest reliability of the MSLT is **85%–95%** for NT1 but can be **< 50%** for NT2. A sleep-deprived adolescent with a delayed phase can easily “fail” an MSLT." },
+            { type: "callout", kind: "caution", title: "False-positive SOREMPs", text: "SOREMPs also appear with **shift work**, circadian disorders, **severe OSA**, medication effects or withdrawal, **insufficient sleep**, and severe depression (pp. 424, 426). Diagnostic reliability of the MSLT is **85%–95%** for NT1; for NT2, test-retest reliability may be **< 50%**. A sleep-deprived adolescent with a delayed phase can easily “fail” an MSLT." },
             { type: "callout", kind: "pearl", title: "Hypocretin testing is robust", text: "CSF hypocretin is **not affected** by medications, sleep deprivation or time of day, so it helps in suspected **pseudocataplexy**, atypical cataplexy and treatment-refractory cases. It is **uninterpretable** during severe infection, head trauma or coma. CSF cell count, protein and glucose are **normal** (pp. 426–427)." },
             { type: "list", title: "Associated features (pp. 424–425)", items: [
               "**Hypnagogic** (falling asleep) or **hypnopompic** (waking) hallucinations in **20%–60%**: vivid, visual or auditory, sometimes tactile.",
@@ -435,7 +436,7 @@ SP.add("ch12", "guide", {
               ["Other triggers", "**Head trauma**; abrupt sleep-wake changes (job change, stress)"],
               ["Twins", "Monozygotic concordance **25%–32%**"],
               ["Relatives", "**1%–2%** of first-degree relatives (**10- to 40-fold** increase)"],
-              ["HLA", "Strong link with **DQB1*06:02**; DQB1*03:01 raises risk; DQB1*05:01, *06:01 and *06:03 lower it (small effects)"],
+              ["HLA", "Strong link with **DQB1*06:02**; In carriers of DQB1*06:02, DQB1*03:01 raises risk and DQB1*05:01, *06:01 and *06:03 lower it (small effects)"],
               ["Other genes", "**T-cell receptor alpha** and immune genes modulate risk slightly"]
             ] },
             { type: "callout", kind: "culture", title: "Culture (p. 426)", text: "In one US study, **African American** patients more often had narcolepsy **without cataplexy or with atypical cataplexy** (despite low hypocretin) and **earlier onset**; higher rates of **obesity and OSA**, linked to social determinants of health, complicate diagnosis. **Sleep paralysis** may be attributed to **supernatural forces** (a frightening spirit sitting on the chest), which shapes fear and help-seeking." },
@@ -541,7 +542,7 @@ SP.add("ch12", "guide", {
               "Children younger than 5: **nighttime** signs (observed apneas, labored breathing). Older children: **daytime** signs (sleepiness, impulsivity, hyperactivity, ADHD, learning problems, morning headaches).",
               "Pediatric clues: **agitated arousals**, sleeping on **hands and knees**, new **bedwetting** in a previously dry child, mouth breathing, trouble swallowing, poor articulation, **failure to thrive**."
             ] },
-            { type: "table", caption: "Risk factors (p. 432)", head: ["Kind", "Examples"], rows: [
+            { type: "table", caption: "Risk factors (pp. 432–433)", head: ["Kind", "Examples"], rows: [
               ["Major", "**Obesity** and **male sex**"],
               ["Anatomy", "Retrognathia or **micrognathia**; **adenotonsillar hypertrophy** in young children"],
               ["Genetic", "Family history (prevalence about **twice** as high in relatives; shared factors explain about **one-third** of AHI variance); **Down syndrome**, Treacher Collins syndrome"],
@@ -555,7 +556,7 @@ SP.add("ch12", "guide", {
               ["Quality of life", "Worst in the **vitality** domain"],
               ["Cardiovascular", "Hypertension, coronary disease, heart failure, **stroke**, diabetes, higher **mortality**; risk up **30% to 300%**; treatment **reduces** cardiovascular morbidity and mortality"],
               ["Right heart failure", "**Rare**; suggests very severe disease or hypoventilation"],
-              ["Depression", "Up to **one-third** of referrals report depressive symptoms, about **10%** moderate to severe; correlates with AHI, perhaps more in men"]
+              ["Depression", "Up to **one-third** of referrals report depressive symptoms, up to **10%** moderate to severe; correlates with AHI, perhaps more in men"]
             ] }
           ]
         },
@@ -589,7 +590,7 @@ SP.add("ch12", "guide", {
               ["B", "Not better explained by **another current sleep disorder**."]
             ], specifiers: [["G47.31 Idiopathic", "Apneas and hypopneas from **variable effort**, no obstruction"], ["R06.3 Cheyne-Stokes", "**Crescendo-decrescendo** tidal volume, ≥ 5 events/h, frequent arousal"], ["G47.37 Opioid use", "CSA **comorbid with opioid use**"], ["Severity", "Frequency of events, desaturation and fragmentation"]] },
             { type: "callout", kind: "exam", title: "Coding G47.37", text: "With an **opioid use disorder**, code it **first** (**F11.10** mild, **F11.20** moderate or severe), then **G47.37**. Without a use disorder (e.g., after one heavy use), code **G47.37** alone (p. 435)." },
-            { type: "compare", title: "Two mechanisms (p. 436)", items: [
+            { type: "compare", title: "Two mechanisms (pp. 436–439)", items: [
               { title: "High loop gain", color: "mech", points: ["Idiopathic CSA and **Cheyne-Stokes** breathing.", "An over-sensitive ventilatory control system: **hyperventilation alternates with hypoventilation** (periodic breathing).", "Awake pCO₂ **low or normal**.", "Also behind **treatment-emergent** CSA when OSA treatment starts, and CSA mixed with OSA."] },
               { title: "Opioid effect", color: "drug", points: ["Opioids act on the **medullary rhythm generators** and change hypoxic versus hypercapnic drive.", "Awake pCO₂ may be **raised**.", "**Ataxic** or periodic breathing.", "Seen with **long-acting opioids** used for months; methadone patients have more somnolence and depression."] }
             ] },
@@ -610,7 +611,7 @@ SP.add("ch12", "guide", {
               "Opioid-related CSA: sleepiness, **confusion**, depression.",
               "Pediatric PSG criteria differ (pauses > 20 s, or two breaths with arousal, desaturation > 3% or bradycardia)."
             ] },
-            { type: "callout", kind: "pearl", title: "The psychiatrist’s CSA patient", text: "The patient you are most likely to see is on **methadone or buprenorphine maintenance**, or long-term opioids for pain, with daytime sleepiness, poor concentration or low mood. Consider a sleep study, especially at high doses or when **benzodiazepines** are added (pp. 436–438)." }
+            { type: "callout", kind: "pearl", title: "The psychiatrist’s CSA patient", text: "The patient you are most likely to see is on **methadone or buprenorphine maintenance**, or long-term opioids for pain, with daytime sleepiness, poor concentration or low mood. Consider a sleep study, especially at high doses. (Buprenorphine and added benzodiazepines are clinical teaching beyond the manual, which names long-acting opioids and methadone, pp. 436–438.)" }
           ]
         },
         {
@@ -790,7 +791,7 @@ SP.add("ch12", "guide", {
               ["After the episode", "Brief confusion, then full recovery; little memory the next morning."],
               ["Disorder or not", "Depends on frequency, **violence or injury**, embarrassment and distress to **household members**; severity is judged by **consequences**, not just frequency."]
             ] },
-            { type: "list", title: "The specialized forms of sleepwalking (p. 453)", items: [
+            { type: "list", title: "The specialized forms of sleepwalking (pp. 453–455)", items: [
               "**Sleep-related eating**: unwanted recurrent eating with variable amnesia, sometimes of **inedible** items (wrappers, small toys); evidence found next morning; risks: poor diabetes control, weight gain, burns, cuts, toxic ingestion; **more common in women**.",
               "**Sexsomnia** (sleep sex): sexual behavior from masturbation to intercourse without awareness; **more common in men**; relationship and **medicolegal** consequences."
             ] },

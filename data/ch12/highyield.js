@@ -188,7 +188,7 @@ SP.add("ch12", "highYield", [
     "Idiopathic CSA and Cheyne-Stokes breathing reflect high **loop gain**.",
     "Cheyne-Stokes cycle length: about **60 seconds**.",
     "Cheyne-Stokes breathing in heart failure with EF under 45%: **15%–44%**.",
-    "Central apnea in chronic opioid users on methadone: about **24%**.",
+    "CSA in people taking opioids chronically for nonmalignant pain (similar in methadone maintenance): about **24%**.",
     "Opioid-related CSA worsens above **200 mg** of morphine equivalents a day.",
     "Cheyne-Stokes breathing while **awake** signals a worse prognosis."
   ] },
