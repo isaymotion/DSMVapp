@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 28,
+    date: "2026-10-26",
+    title: "Practice pack for Chapter 11",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the elimination disorders, plus two new complaints in the hub.",
+    items: [
+      { type: "chapter", ch: "ch11", text: "Chapter 11: 25 board vignettes (7 in two parts), 10 “Write the diagnosis” cases with the residual-category codes (N39.498, R32, R15.9), 10 counting drills and 18 exam traps.", href: "#/c/ch11/practice", link: "Chapter 11 drills" },
+      { type: "feature", text: "“How to ask it” for all 4 Chapter 11 diagnoses, and treatment bridges for enuresis (alarm, oral desmopressin with fluid limits, imipramine as third line) and encopresis (disimpaction and maintenance polyethylene glycol per the 2026 ESPGHAN/NASPGHAN guideline), current to October 2026.", href: "#/dx/enuresis", link: "Enuresis" },
+      { type: "feature", text: "Start from the complaint: bedwetting or daytime wetting, and soiling or fecal accidents; Chapter 11 items added to the neglected child and irritable child.", href: "#/complaints", link: "Open the hub" }
+    ]
+  },
+  {
     id: 27,
     date: "2026-10-26",
     title: "Chapter 11: Elimination Disorders",

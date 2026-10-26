@@ -2,7 +2,7 @@
    Only this app's caches (prefix "dsm-companion-") are ever deleted, so other study apps on the same
    GitHub Pages site keep their offline copies. */
 const PREFIX = 'dsm-companion-';
-const VERSION = PREFIX + '2026-10-26-ch11';
+const VERSION = PREFIX + '2026-10-26-ch11-practice';
 const CORE = [
   './', './index.html', './css/app.css', './js/app.js', './js/study.js', './js/practice.js', './js/assess.js', './js/case.js', './js/pdf.js', './js/pdf-fonts.js', './data/chapters.js',
   './manifest.webmanifest', './icons/favicon-64.png', './icons/home-icon.png', './icons/icon-192.png', './icons/icon-512.png'
