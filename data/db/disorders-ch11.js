@@ -28,7 +28,7 @@
         { name: "Diabetes mellitus or diabetes insipidus", how: "Polyuria with thirst; check urine glucose and specific gravity." },
         { name: "Urinary tract infection", how: "Do not diagnose during an acute infection; diagnose if wetting persists after treatment." },
         { name: "Medication side effect", how: "Antipsychotics (e.g., clozapine) or diuretics; note as a side effect unless wetting preceded the drug." },
-        { name: "Obstructive sleep apnea", how: "Snoring and pauses; about half become dry after adenotonsillectomy." },
+        { id: "osa", how: "Snoring and pauses; about half become dry after adenotonsillectomy." },
         { id: "encopresis", how: "Soiling; often coexists, especially with constipation." }
       ],
       pearls: ["Distress or impairment can replace the frequency rule.", "Most common subtype: nocturnal only (monosymptomatic).", "Remits spontaneously 5%–10% a year.", "Ask about bowels: treat constipation first.", "Ask about punishment at home."],

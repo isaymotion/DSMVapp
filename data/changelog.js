@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 33,
+    date: "2026-10-26",
+    title: "Chapter 12: Sleep-Wake Disorders",
+    summary: "Chapter 12 is ready: insomnia and hypersomnolence, narcolepsy types 1 and 2, the breathing-related sleep disorders, the five circadian types, the parasomnias, restless legs syndrome and substance/medication-induced sleep disorder.",
+    items: [
+      { type: "chapter", ch: "ch12", text: "Chapter 12 study guide in 31 sections, from sleep stages, PSG and the MSLT to the insomnia comorbidity specifiers, cataplexy and CSF hypocretin, AHI severity, Cheyne-Stokes and opioid-related central apnea, the circadian types, NREM versus REM parasomnias, RLS versus akathisia and the substance code table.", href: "#/c/ch12/guide", link: "Open Chapter 12" },
+      { type: "feature", text: "High-yield points, criteria, differential and clinical decks, 44 board questions, glossary terms and mnemonics for Chapter 12, and 23 new disorder library entries.", href: "#/c/ch12/high-yield", link: "Chapter 12 high yield" },
+      { type: "feature", text: "Two new diagnostic helpers: “Which sleep-wake disorder?” and “Which nighttime behavior?”", href: "#/helpers/sleep", link: "Open the helper" },
+      { type: "update", ch: "ch12", text: "Current to October 2026: no ICD-10-CM changes for the chapter through FY2027; tirzepatide approved for obstructive sleep apnea with obesity (2024); the AASM restless legs guideline (2024); oveporexton, the first orexin agonist, approved for narcolepsy type 1 (August 2026).", href: "#/c/ch12/guide/s12-treatment", link: "Treatment in 2026" }
+    ]
+  },
+  {
     id: 32,
     date: "2026-10-28",
     title: "Practice pack for Chapter 1",

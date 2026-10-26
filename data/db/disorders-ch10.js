@@ -30,7 +30,7 @@
         { name: "Nonsuicidal self-injury", how: "Swallowing pins, needles or knives in crises." },
         { id: "arfid", how: "Restriction of food; can coexist with sensory-driven pica." },
         { id: "trichotillomania", how: "Pulled hair may be eaten; diagnose both if pica needs attention." },
-        { name: "Kleine-Levin syndrome", how: "Episodic hypersomnia with abnormal eating." }
+        { id: "other-specified-hypersomnolence", name: "Kleine-Levin syndrome (other specified hypersomnolence)", how: "Episodic hypersomnia with abnormal eating." }
       ],
       pearls: ["Suggested minimum age about 2 years.", "Diet products with little nutrition are not “nonfood.”", "Look for lead poisoning, bezoars and parasitic infection.", "Do not assume cultural practice without evaluation."],
       cmp: { symptoms: "Eating nonfood substances", exclusions: "Developmentally normal mouthing; cultural practice", prevalence: "About 5% of school-age children", course: "Often childhood; can be protracted or fatal" },
@@ -165,7 +165,7 @@
       differential: [
         { id: "anorexia", how: "Binges and purges at significantly low weight." },
         { id: "bed", how: "Binges without regular compensation." },
-        { name: "Kleine-Levin syndrome", how: "Overeating with hypersomnia, no shape concern." },
+        { id: "other-specified-hypersomnolence", name: "Kleine-Levin syndrome (other specified hypersomnolence)", how: "Overeating with hypersomnia, no shape concern." },
         { id: "mdd", how: "Atypical overeating without compensation; both if met." },
         { id: "borderline-pd", how: "Bingeing within impulsivity; both if met." }
       ],
