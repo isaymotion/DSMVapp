@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 38,
+    date: "2026-10-26",
+    title: "Practice pack for Chapter 13",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview questions and treatment bridges for the sexual dysfunctions, three new complaints in the hub, and accuracy fixes from a full check against the manual.",
+    items: [
+      { type: "chapter", ch: "ch13", text: "Chapter 13: 25 board vignettes, 14 “Write the diagnosis” cases from F52.21 and F52.4 with latency severity to F10.281 with alcohol-induced sexual dysfunction, F19.981 paroxetine-induced and F13.981, 10 counting drills and 28 exam traps.", href: "#/c/ch13/practice", link: "Chapter 13 drills" },
+      { type: "feature", text: "“How to ask it” and treatment bridges for 8 Chapter 13 diagnoses: PDE5 inhibitors, behavioral methods and SSRIs for early ejaculation, sex therapy and directed masturbation, flibanserin, bremelanotide and testosterone for low desire, pelvic floor physical therapy and CBT for genito-pelvic pain, and managing antidepressant and antipsychotic sexual side effects, current to October 2026.", href: "#/dx/substance-sexual", link: "Medication-induced sexual dysfunction" },
+      { type: "feature", text: "Start from the complaint: sexual problems (low desire, erections or orgasm); pain or difficulty with penetration; sexual side effects of a medication or drug. Chapter 13 items added to loss of interest or pleasure and to mood change after a new medicine or drug.", href: "#/complaints/sexual-problems", link: "Open the hub" }
+    ]
+  },
+  {
     id: 37,
     date: "2026-10-26",
     title: "Chapter 13: Sexual Dysfunctions",
