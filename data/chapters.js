@@ -15,8 +15,9 @@ SP.CHAPTER_FILES = ['guide', 'highyield', 'cards-criteria', 'cards-differential'
 SP.PRACTICE_FILES = ['vignettes', 'drills', 'traps'];
 
 SP.manifest = [
-  { id: 'ch01', number: 1, ready: false, pages: '35–99', title: 'Neurodevelopmental Disorders', short: 'Neurodevelopmental',
-    summary: 'Intellectual developmental disorders, communication disorders, autism spectrum disorder, attention-deficit/hyperactivity disorder, specific learning disorder, motor and tic disorders.' },
+  { id: 'ch01', number: 1, ready: true, pages: '35–99', title: 'Neurodevelopmental Disorders', short: 'Neurodevelopmental',
+    summary: 'Intellectual developmental disorder with its adaptive severity levels, global developmental delay and the IQ rules; language, speech sound, fluency and social (pragmatic) communication disorders; autism spectrum disorder with its two-domain severity, specifiers and catatonia code; ADHD with the 6/5 symptom, age-12 and two-setting rules and its F90.x presentations; specific learning disorder by domain; developmental coordination and stereotypic movement disorders; the tic hierarchy from Tourette’s to provisional; and the residual categories, current to October 2026.',
+    files: SP.CHAPTER_FILES },
   { id: 'ch02', number: 2, ready: true, pages: '101–138', title: 'Schizophrenia Spectrum and Other Psychotic Disorders', short: 'Schizophrenia spectrum and other psychotic',
     summary: 'The five psychotic domains; schizotypal (personality) disorder, delusional disorder, brief psychotic disorder, schizophreniform disorder, schizophrenia and schizoaffective disorder; substance/medication-induced and medically caused psychosis; the three catatonia diagnoses; and the other specified and unspecified categories, with every time rule, specifier and code.',
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
@@ -76,6 +77,8 @@ SP.manifest = [
 
 /* Shared data loaded with the chapters: the disorder library, diagnostic helpers, and release notes. */
 SP.extraFiles = [
+  'data/db/disorders-ch01.js',
+  'data/helpers/ch01-neurodevelopmental.js',
   'data/db/disorders-ch02.js',
   'data/helpers/ch02-psychosis.js',
   'data/db/clinical-ch02.js',

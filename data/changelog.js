@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 31,
+    date: "2026-10-28",
+    title: "Chapter 1: Neurodevelopmental Disorders",
+    summary: "The first chapter of Section II is ready: intellectual developmental disorders, communication disorders, autism spectrum disorder, ADHD, specific learning disorder, and the motor and tic disorders.",
+    items: [
+      { type: "chapter", ch: "ch01", text: "Chapter 1 study guide in 27 sections, from IDD severity by adaptive functioning and the IQ band to the ASD two-domain severity levels, the ADHD thresholds and presentations, SLD domains and the tic hierarchy, plus a chapter-wide page of age, duration and double-diagnosis rules.", href: "#/c/ch01/guide", link: "Open Chapter 1" },
+      { type: "feature", text: "High-yield points, criteria, differential and clinical decks, 44 board questions, glossary terms and mnemonics for Chapter 1, and 22 new disorder library entries.", href: "#/c/ch01/high-yield", link: "Chapter 1 high yield" },
+      { type: "feature", text: "Two new diagnostic helpers: “Which neurodevelopmental disorder?” and “Tic, stereotypy or something else?”", href: "#/helpers/neurodevelopmental", link: "Open the helper" },
+      { type: "update", ch: "ch01", text: "Current to October 2026: no ICD-10-CM changes for the chapter through FY2027; the CDC’s 2025 autism prevalence report (about 1 in 31 eight-year-olds); FDA stimulant labeling updates; ecopipam under review for Tourette syndrome.", href: "#/c/ch01/guide/s1-asd-course", link: "Autism prevalence" }
+    ]
+  },
+  {
     id: 30,
     date: "2026-10-27",
     title: "Practice pack for Chapter 17",
