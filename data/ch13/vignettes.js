@@ -322,7 +322,7 @@ SP.add("ch13", "vignettes", [
       "Alcohol was involved only in the first episode; the problem now occurs when sober."
     ],
     "discuss": [
-      "Why might the manual still advise checking lipids in a man over 40 with erectile problems?"
+      "Why might the manual still advise checking lipids in a man 40 or older with erectile problems?"
     ]
   },
   {

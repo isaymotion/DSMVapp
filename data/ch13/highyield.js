@@ -40,7 +40,7 @@ SP.add("ch13", "highYield", [
     "Aging and longer **relationship duration** can bring a normative decrease in sexual response.",
     "If a nonsexual mental disorder mostly explains the problem, diagnose **only** that disorder.",
     "If the problem is fully due to another medical condition (e.g., peripheral neuropathy), give **no psychiatric** diagnosis.",
-    "If severe relationship distress, partner violence or stressors explain the problem, list a **Z code** instead.",
+    "If severe relationship distress, partner violence or stressors explain the problem, a **Z code** may be listed instead.",
     "Z code example for relationship problems: **Z63.0** Relationship distress with spouse or intimate partner.",
     "A sexual dysfunction **can coexist** with a medical condition, a nonsexual mental disorder or substance use.",
     "Despite their names, MHSDD and FSIAD may be applied to **gender-diverse** individuals by clinical judgment.",

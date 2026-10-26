@@ -8,7 +8,7 @@ SP.add("ch13", "guide", {
   objectives: [
     "State the **shared frame**: symptoms on **approximately 75%–100%** of occasions (where it applies), for **approximately 6 months**, with **clinically significant distress**, and the four **Criterion D** exclusions.",
     "Apply the **subtypes**: **lifelong vs acquired** for all seven specific disorders; **generalized vs situational** for all except **genito-pelvic pain/penetration disorder**; severity by **distress**, except **premature ejaculation** (by **latency**) and **substance/medication-induced** dysfunction (by **frequency**).",
-    "Use the **exclusion hierarchy**: a nonsexual mental disorder that explains the problem is diagnosed **alone**; a substance gives the **induced** diagnosis; a medical cause gets **no psychiatric diagnosis**; severe relationship distress or partner violence gets a **Z code** such as **Z63.0** instead.",
+    "Use the **exclusion hierarchy**: a nonsexual mental disorder that explains the problem is diagnosed **alone**; a substance gives the **induced** diagnosis; a medical cause gets **no psychiatric diagnosis**; severe relationship distress or partner violence gets no sexual dysfunction diagnosis, and a **Z code** such as **Z63.0** may be listed.",
     "Recognize what is **not** a diagnosis: **inadequate stimulation**, a **desire discrepancy** alone, orgasm only with **clitoral stimulation**, **episodic** early ejaculation with a new partner, **unrealistic expectations**, and lifelong low desire explained by **asexual identity**.",
     "State the thresholds that are tested: **3 of 6** indicators in FSIAD; **both** low desire **and** deficient fantasies in male HSDD; **1 of 3** erectile symptoms; **1 of 4** GPPPD dimensions; ejaculation within **about 1 minute** of vaginal penetration in premature ejaculation, with severity at **30** and **15 seconds**.",
     "Tell **organic from psychogenic** erectile problems (gradual and generalized vs sudden, situational and after a stressor; age **under 40**; **nocturnal erections**), and list the medical screens the manual names.",
@@ -54,7 +54,7 @@ SP.add("ch13", "guide", {
           blocks: [
             { type: "p", text: "Seven of the ten diagnoses are built on the same four-part frame. Once you know it, each disorder is just its **Criterion A** plus a few exceptions." },
             { type: "steps", title: "The four parts (each disorder’s Criteria A–D)", items: [
-              ["A. The symptom, and how often. ", "The specific problem (low desire, erectile difficulty, delay, pain). For five disorders it must occur on **almost all or all, about 75%–100%**, of sexual occasions, in the identified situations or, if generalized, in all."],
+              ["A. The symptom, and how often. ", "The specific problem (low desire, erectile difficulty, delay, pain). For four disorders (delayed ejaculation, erectile disorder, female orgasmic disorder and, in Criterion B, premature ejaculation) it must occur on **almost all or all, about 75%–100%**, of sexual occasions, in the identified situations or, if generalized, in all; FSIAD applies this only to items A4 and A6."],
               ["B. How long. ", "At least **approximately 6 months**. The word “approximately” lets the clinician use judgment when the exact duration is uncertain (p. 486)."],
               ["C. Distress. ", "The symptoms cause **clinically significant distress in the individual**. Impairment alone is not listed: the criterion is about the person’s distress."],
               ["D. Not better explained. ", "Not better explained by a **nonsexual mental disorder** or by **severe relationship distress** (the female disorders add **partner violence** as an example) or **other significant stressors**, and not attributable to a **substance/medication** or **another medical condition**."]
@@ -217,10 +217,10 @@ SP.add("ch13", "guide", {
               ["A1 history", "Reduced interest (A1) was once the **single criterion** of the old hypoactive sexual desire disorder in women; it is now one item among six (p. 490)."],
               ["A2 and age", "Sexual thoughts normally decline with age; allow for that (p. 490)."],
               ["A3 is behavioral", "The couple’s beliefs about **who initiates** matter in judging it (p. 490)."],
-              ["A5 responsive desire", "Many women feel desire in **response** to cues rather than spontaneously; A5 asks whether that responsive desire is missing. Check the **adequacy** of the stimuli first (p. 490)."],
+              ["A5 responsive desire", "A5 asks whether interest or arousal in **response** to sexual cues is missing (a lack of “responsive desire”); women with low desire have fewer cues that work. Check the **adequacy** of the stimuli first (p. 490). *Outside the DSM: many models describe women’s desire as often responsive rather than spontaneous.*"],
               ["A6 self-report is enough", "Lubrication and genital blood flow measures **do not distinguish** women with and without arousal complaints, so her report of reduced sensation suffices (p. 490)."]
             ] },
-            { type: "callout", kind: "exam", title: "Two types and a ninefold overlap", text: "Women who lose desire are about **nine times** more likely to also lose excitement or arousal (p. 490), which is why the two were merged. The text describes at least **two types**: one with **low sensitivity to sexual cues** and one with **overactive sexual inhibition** (p. 490)." },
+            { type: "callout", kind: "exam", title: "Two types and a ninefold overlap", text: "Women who lose desire are about **nine times** more likely to also lose excitement or arousal (p. 490). The text describes at least **two types**: one with **low sensitivity to sexual cues** and one with **overactive sexual inhibition** (p. 490)." },
             { type: "case", title: "Clinical vignette: low desire after the second baby?", text: "A 34-year-old woman says that for the past 9 months she has rarely wanted sex, has almost no sexual thoughts, never initiates and usually turns her husband down. When they do have sex she enjoys it and has normal sensations. She is distressed and feels she is failing him. She is not depressed, the marriage is otherwise warm, and she takes no medications. Her son is 2 years old.", point: "Three indicators (A1, A2, A3) for more than 6 months with her own distress, and no better explanation: **FSIAD**. Excitement and sensation are preserved, which is allowed: only 3 of 6 are needed." }
           ]
         },
@@ -233,7 +233,7 @@ SP.add("ch13", "guide", {
               "Often comes with **orgasm problems**, **pain** during sex, infrequent sex and couple-level differences in desire.",
               "Relationship difficulties, chronic stress and **mood disorders** are frequent companions.",
               "Unrealistic expectations, poor technique and **lack of information** about sexuality may be present; consider normative gender-role beliefs.",
-              "Women in **longer relationships** more often begin sex without feeling desire at the outset; desire may follow arousal (p. 491)."
+              "Women in **longer relationships** more often begin sex without feeling desire at the outset (p. 491)."
             ] },
             { type: "table", caption: "Numbers from the text (pp. 491–492)", head: ["Measure", "Figure"], rows: [
               ["Women with chronic low desire", "About **30%**"],
@@ -259,7 +259,7 @@ SP.add("ch13", "guide", {
               ["Inadequate stimuli", "Care may help, but **no diagnosis**. Also exclude transient, adaptive changes after a major life event."]
             ] },
             { type: "callout", kind: "caution", title: "Suicidal thoughts", text: "Problems with sexual arousal and satisfaction have been linked to **suicidal thoughts** in female veterans and service members, even after adjusting for probable PTSD and depression (p. 492). Ask." },
-            { type: "callout", kind: "pearl", title: "Comorbidity to screen for (p. 493)", text: "Low desire that causes distress is linked to **depression, anxiety, thyroid problems, urinary incontinence**, arthritis and inflammatory or irritable bowel disease, adult **sexual and physical abuse**, and **alcohol** use." }
+            { type: "callout", kind: "pearl", title: "Comorbidity to screen for (p. 493)", text: "Distressing low desire is linked to **depression, anxiety, thyroid problems** and **urinary incontinence**; **arthritis** and inflammatory or irritable bowel disease are linked to **arousal** problems; low desire is also comorbid with adult **sexual and physical abuse** and **alcohol** use." }
           ]
         },
         {
@@ -314,12 +314,12 @@ SP.add("ch13", "guide", {
             ], note: "A known organic disease does **not** prove cause: a man with diabetes can develop erectile disorder in response to psychological stress (p. 485). Many cases are mixed." },
             { type: "list", title: "Diagnostic markers named in the manual (p. 484)", items: [
               "**Nocturnal penile tumescence** and rigidity during sleep: adequate REM erections suggest a **psychological** cause.",
-              "**Doppler ultrasonography**, **intracavernosal injection** of vasoactive drugs and dynamic infusion **cavernosography** for vascular integrity.",
+              "**Doppler ultrasonography**, **intravascular injection** of vasoactive drugs and dynamic infusion **cavernosography** for vascular integrity.",
               "**Pudendal nerve conduction** studies and somatosensory evoked potentials when neuropathy is suspected.",
               "**Bioavailable or free testosterone**, especially with **diabetes**, **low desire**, or **no response to PDE5 inhibitors**; thyroid function.",
               "**Fasting glucose** to screen for diabetes and **serum lipids**: erectile disorder in men **40 and older** predicts future **coronary artery disease**."
             ] },
-            { type: "callout", kind: "exam", title: "The heart test", text: "Erectile problems in a man **over 40** are a warning sign for **coronary artery disease** (p. 484). Check lipids and glucose and ask about cardiovascular risk." },
+            { type: "callout", kind: "exam", title: "The heart test", text: "Erectile problems in a man **40 or older** are a warning sign for **coronary artery disease** (p. 484). Check lipids and glucose and ask about cardiovascular risk." },
             { type: "table", caption: "Differential diagnosis (pp. 484–485)", head: ["Look-alike", "How to tell"], rows: [
               ["[[dx:mdd|Major depressive disorder]]", "Closely linked; erectile problems during severe depression. If depression better explains it, no erectile disorder."],
               ["Normal function", "A man with **excessive expectations** and normal erections."],
@@ -412,7 +412,7 @@ SP.add("ch13", "guide", {
               { label: "Severe", from: 0, to: 25, color: "case", span: "Before or within ~15 s" },
               { label: "Moderate", from: 25, to: 50, color: "hy", span: "~15–30 s" },
               { label: "Mild", from: 50, to: 100, color: "guide", span: "~30–60 s" }
-            ], note: "This is the **only** sexual dysfunction graded by a measured quantity rather than by distress. Beyond about 60 seconds the criterion is not met." },
+            ], note: "This is the **only** sexual dysfunction graded by **latency** (seconds); the induced disorder is graded by frequency, and the rest by distress. Beyond about 60 seconds the criterion is not met." },
             { type: "defs", title: "Reading the criteria (p. 502)", items: [
               ["Self-estimate is enough", "Estimated and measured latencies **agree well when latency is short**, so the man’s own estimate is accepted; a stopwatch is for research (p. 504)."],
               ["Other partners", "Similar latencies are assumed for **men who have sex with men** and other sexual behaviors."],
@@ -420,7 +420,7 @@ SP.add("ch13", "guide", {
               ["Lack of control", "Most men describe feeling **no control** and dread the next encounter."]
             ] },
             { type: "callout", kind: "exam", title: "Two words that differ from the others", text: "Premature ejaculation says **at least** 6 months (not “approximately”) and puts the **75%–100%** rule in **Criterion B** rather than A (p. 502)." },
-            { type: "case", title: "Clinical vignette: ever since he started", text: "A 26-year-old man has ejaculated within about 20 seconds of penetration, before he wants to, on nearly every occasion since his first sexual experience at 19. He feels ashamed and has avoided dating. He has social anxiety in other settings but no depression. He takes no medications or drugs and has no medical problems.", point: "**Premature (early) ejaculation, lifelong, generalized, moderate** (15–30 seconds). Lifelong premature ejaculation is linked to **anxiety disorders, especially social anxiety** (p. 503)." }
+            { type: "case", title: "Clinical vignette: ever since he started", text: "A 26-year-old man has ejaculated within about 20 seconds of penetration, before he wants to, on nearly every occasion since his first sexual experience at 19. He feels ashamed and has avoided dating. He has social anxiety in other settings but no depression. He takes no medications or drugs and has no medical problems.", point: "**Premature (early) ejaculation, lifelong, generalized, moderate** (15–30 seconds). PE may be more common with **anxiety disorders, especially social anxiety disorder** (p. 503), and lifelong PE is associated with certain anxiety disorders (p. 504)." }
           ]
         },
         {
@@ -435,7 +435,7 @@ SP.add("ch13", "guide", {
               ["Using the ~1-minute criterion", "Only **1%–3%**"]
             ] },
             { type: "compare", title: "Lifelong versus acquired (pp. 503–504)", items: [
-              { title: "Lifelong", color: "guide", points: ["Starts with the first sexual experiences and stays **stable**.", "**Moderate genetic** contribution; dopamine and serotonin transporter polymorphisms.", "Linked to **anxiety disorders**, especially social anxiety."] },
+              { title: "Lifelong", color: "guide", points: ["Starts with the first sexual experiences and stays **stable**.", "**Moderate genetic** contribution; dopamine and serotonin transporter polymorphisms.", "Associated with certain **anxiety disorders** (p. 504); PE overall may be more common with social anxiety disorder (p. 503)."] },
               { title: "Acquired", color: "case", points: ["Begins after normal latency, usually in or after the **fourth decade**.", "Associated with **thyroid disease**, **prostatitis** and **drug withdrawal** (e.g., **opioid withdrawal**).", "Much less studied."] }
             ] },
             { type: "table", caption: "Differential diagnosis (p. 504)", head: ["Look-alike", "How to tell"], rows: [
@@ -576,7 +576,7 @@ SP.add("ch13", "guide", {
               ["Inadequate stimulation", "Too little foreplay or arousal can cause penetration difficulty, pain or avoidance; the diagnosis may not fit."],
               ["Partner’s dysfunction", "A partner’s **erectile disorder or premature ejaculation** can make penetration difficult."]
             ] },
-            { type: "callout", kind: "caution", title: "Only females; what to do for men", text: "By definition GPPPD is given only to females (p. 497). Men can have **urological chronic pelvic pain syndrome** (estimated **2.2%–9.7%** worldwide), but the research is too thin to extend the diagnosis: use **other specified or unspecified sexual dysfunction** for men who fit the pattern." },
+            { type: "callout", kind: "caution", title: "Only females; what to do for men", text: "By definition GPPPD is given only to females (p. 497). Research on **urological chronic pelvic pain syndrome** suggests men may have similar problems, and male genito-pelvic pain is estimated at **2.2%–9.7%** worldwide, but the research is too thin to extend the diagnosis: use **other specified or unspecified sexual dysfunction** for men who fit the pattern." },
             { type: "callout", kind: "culture", text: "Social narratives that prioritize **penetrative sex** and men’s desire, and portray sex as easy and natural, shape how women interpret pain and seek help (pp. 496–497). In the United States, **Hispanic** women report higher rates, including pain at first intercourse. In a Minneapolis survey only about **half** sought treatment, and many felt stigmatized; inequities in pain treatment may add to this." },
             { type: "callout", kind: "pearl", title: "Comorbidity (p. 498)", text: "Other sexual difficulties and **relationship distress** (usually from the lack of intimacy rather than the pain itself); pelvic and reproductive conditions such as **interstitial cystitis, constipation, vaginal infection, endometriosis, irritable bowel syndrome**; and chronic pain such as **fibromyalgia** and headaches, more so with more severe vulvar pain." }
           ]
@@ -681,13 +681,13 @@ SP.add("ch13", "guide", {
           blocks: [
             { type: "compare", title: "The two residual categories (p. 509)", items: [
               { title: "Other specified (F52.8)", color: "guide", points: ["Distressing sexual symptoms that predominate but **do not meet full criteria** for any specific sexual dysfunction.", "The clinician **records the reason**: “other specified sexual dysfunction, sexual aversion”."] },
-              { title: "Unspecified (F52.9)", color: "case", points: ["Same threshold problem.", "The clinician **chooses not to give** the reason, or there is **not enough information** (e.g., an emergency setting)."] }
+              { title: "Unspecified (F52.9)", color: "case", points: ["Same threshold problem.", "The clinician **chooses not to give** the reason, or there is **not enough information**."] }
             ] },
             { type: "list", title: "Presentations the chapter sends here", items: [
               "**Sexual aversion** (the manual’s example, p. 509).",
               "**Anhedonic ejaculation**: normal ejaculation with reduced pleasure (p. 481).",
               "**Genito-pelvic pain in males** fitting the GPPPD pattern (p. 497).",
-              "Symptoms close to a specific disorder but **short of** its duration or frequency, with distress (by clinical judgment)."
+              "Symptoms close to a specific disorder but **short of** its duration or frequency, with distress (the app’s application of the general rule, not an example the manual names)."
             ] },
             { type: "callout", kind: "caution", title: "Residual is not a dumping ground for non-disorders", text: "Both categories still require **clinically significant distress**. Desire discrepancy, inadequate stimulation or a one-off difficulty are not disorders at all, and get **no** diagnosis (though care or a **Z code** may still be appropriate)." }
           ]
@@ -772,7 +772,7 @@ SP.add("ch13", "guide", {
             { type: "callout", kind: "caution", title: "Outside the DSM", text: "The manual does not cover treatment. This section summarizes guideline-level care as of **October 2026** for orientation; confirm doses, approvals and local availability (including in the Philippines) before prescribing." },
             { type: "table", caption: "First steps by disorder", head: ["Disorder", "Usual approach"], rows: [
               ["All", "Take a **sexual history** with the five factors; review **medications**, alcohol and drugs; screen for **depression**, anxiety and relationship violence; involve the partner when appropriate; give **education**."],
-              ["Erectile disorder", "**PDE5 inhibitors** (sildenafil, tadalafil, vardenafil, avanafil) first line, **never with nitrates**; psychosexual therapy; vacuum devices, intraurethral or intracavernosal **alprostadil**, penile prosthesis for non-responders (AUA 2018). Assess **cardiovascular risk**."],
+              ["Erectile disorder", "Shared decision-making among all suitable options (AUA 2018 dropped the stepwise first/second/third-line approach): **PDE5 inhibitors** (sildenafil, tadalafil, vardenafil, avanafil; **never with nitrates**), vacuum devices, intraurethral or intracavernosal **alprostadil**, or penile prosthesis; add psychosexual therapy where psychological factors contribute. In practice most men start with a PDE5 inhibitor. Assess **cardiovascular risk**."],
               ["Premature ejaculation", "Behavioral methods (stop–start, squeeze); **daily SSRIs** such as [[stahl:drugs/paroxetine|paroxetine]] or [[stahl:drugs/sertraline|sertraline]], or [[stahl:drugs/clomipramine|clomipramine]]; on-demand **dapoxetine** where approved (not in the United States); topical **anesthetic** sprays or creams (AUA/SMSNA 2020). None is FDA-approved for PE."],
               ["Delayed ejaculation", "No approved drug. Reduce or switch **serotonergic** drugs; sex therapy, including changing idiosyncratic masturbation habits; evaluate for hypogonadism and neuropathy."],
               ["Male HSDD", "Treat **documented hypogonadism** or **hyperprolactinemia**; review drugs; couples and sex therapy."],

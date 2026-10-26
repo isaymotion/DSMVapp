@@ -78,7 +78,7 @@ SP.add("ch13", "mnemonics", [
       ["M", "Mental disorder (nonsexual)", "Depressive, bipolar, anxiety, PTSD or psychotic disorder explains it: give only that diagnosis"],
       ["S", "Substance or medication", "Use, misuse or stopping a drug explains it: substance/medication-induced sexual dysfunction"],
       ["M", "Medical condition", "E.g., peripheral neuropathy or pelvic nerve damage explains it: no psychiatric diagnosis"],
-      ["R", "Relationship or stressors", "Severe relationship distress, partner violence or major stressors explain it: no sexual dysfunction; list a Z code such as Z63.0"]
+      ["R", "Relationship or stressors", "Severe relationship distress, partner violence or major stressors explain it: no sexual dysfunction; a Z code such as Z63.0 may be listed"]
     ],
     caveat: "DSM check: a sexual dysfunction **can coexist** with a medical condition, mental disorder or substance use when they do not fully explain it, and several sexual dysfunctions are **all diagnosed**. Another sexual dysfunction does not exclude one. Inadequate stimulation → **no diagnosis** (pp. 477–478)."
   },

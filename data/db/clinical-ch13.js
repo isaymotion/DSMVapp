@@ -46,7 +46,7 @@
         ["A5 Cues", "“Do things like a touch, a romantic scene or something you read ever spark interest?”", "Responsive desire."],
         ["A6 Sensations", "“During sex, do you notice the usual body and genital feelings, such as warmth, tingling or wetness?”", "Self-report is enough."],
         ["Distress", "“How much does this bother you, apart from how your partner feels?”"],
-        ["Context", "“How are things in the relationship? Do you ever feel unsafe or pressured? Is there any pain with sex?”", "Partner violence excludes the diagnosis; pain may cause low desire."]
+        ["Context", "“How are things in the relationship? Do you ever feel unsafe or pressured? Is there any pain with sex?”", "Partner violence that explains the problem excludes the diagnosis (consider a Z code); pain may cause low desire."]
       ],
       tx: {
         asOf: "October 2026",
@@ -70,12 +70,12 @@
         ["Onset", "“Did it start suddenly or gradually? What was happening in your life then?”", "Sudden onset after a stressor points to psychological factors."],
         ["B Duration", "“How long has this been going on?”"],
         ["C Distress", "“How much does it bother you?”"],
-        ["Medical", "“Do you smoke? Any diabetes, heart problems, high blood pressure or cholesterol, prostate surgery or urinary symptoms?”", "Erectile disorder over 40 predicts coronary disease."],
-        ["Mood", "“How has your mood been since this started?”", "Depression risk is highest in the first year."]
+        ["Medical", "“Do you smoke? Any diabetes, heart problems, high blood pressure or cholesterol, prostate surgery or urinary symptoms?”", "Erectile disorder at 40 or older predicts coronary disease."],
+        ["Mood", "“How has your mood been since this started?”", "Depression risk is markedly higher, especially in the first year after onset."]
       ],
       tx: {
         asOf: "October 2026",
-        first: "**PDE5 inhibitors** (sildenafil, tadalafil, vardenafil, avanafil) are first-line oral treatment, **never with nitrates**; combine with **psychosexual therapy** for performance anxiety and relationship factors (AUA 2018). Second-line: vacuum devices, intraurethral or intracavernosal **alprostadil**; then penile prosthesis.",
+        first: "Under AUA 2018, offer all suitable options through **shared decision-making** rather than a fixed sequence: **PDE5 inhibitors** (sildenafil, tadalafil, vardenafil, avanafil; **never with nitrates**), vacuum devices, intraurethral or intracavernosal **alprostadil**, or penile prosthesis. Most men start with a PDE5 inhibitor. Combine with **psychosexual therapy** for performance anxiety and relationship factors.",
         points: [
           "Screen **cardiovascular risk**: glucose, lipids, blood pressure, smoking (p. 484).",
           "Check **testosterone** when desire is low, in diabetes, or after PDE5 failure.",
@@ -118,7 +118,7 @@
         ["Onset", "“Has it always been like this, or did it start after a period of lasting longer?”", "Acquired: look for thyroid disease, prostatitis, drug withdrawal."],
         ["Context", "“Is it only with a new partner or the first time with someone?”", "Episodic early ejaculation is not a disorder."],
         ["Erections", "“Do you rush because you worry about losing your erection?”", "Erectile problems often coexist."],
-        ["Anxiety", "“Do you get anxious in social situations or generally?”", "Lifelong PE is linked to social anxiety."]
+        ["Anxiety", "“Do you get anxious in social situations or generally?”", "PE may be more common with social anxiety disorder."]
       ],
       tx: {
         asOf: "October 2026",
@@ -164,7 +164,7 @@
         ["A4 Tension", "“Do you notice your muscles tightening when penetration is tried?”"],
         ["Onset", "“Was there ever a time when penetration was pain-free and comfortable?”", "If yes, acquired."],
         ["History", "“Any vaginal infections, endometriosis, skin conditions, childbirth, or menopause symptoms such as dryness?”"],
-        ["Safety", "“Have you ever been forced or hurt sexually? Do you feel safe with your partner?”", "Abuse history is more common; partner violence excludes."],
+        ["Safety", "“Have you ever been forced or hurt sexually? Do you feel safe with your partner?”", "Abuse history is more common; partner violence that explains the symptoms excludes."],
         ["Partner", "“How does your partner respond when you have pain?”", "Solicitous, negative or facilitative responses."]
       ],
       tx: {
@@ -210,7 +210,7 @@
       id: "sexual-problems", title: "Sexual problems: low desire, erections or orgasm",
       intro: "Name the **phase** (desire, arousal, orgasm or ejaculation), then check the shared frame: **most occasions**, about **6 months**, **distress** in the person. Rule out a nonsexual mental disorder, a **substance or medication**, a **medical condition** and **severe relationship distress** before diagnosing. Several dysfunctions can coexist.",
       ask: ["Which part is the problem: wanting sex, getting aroused or erect, reaching orgasm or ejaculating?", "How often, and for how long?", "Always, or only with certain partners, situations or kinds of stimulation?", "Since first sexual experiences, or after a period of normal function?", "How much does it bother you?", "Any new medicines, alcohol or drugs?", "Diabetes, heart disease, surgery, hormone problems?", "Mood, anxiety, the relationship, and safety at home?"],
-      mustNotMiss: ["**Depression** and suicidal thoughts.", "**Medication side effects** leading to stopping treatment.", "**Cardiovascular disease** behind erectile problems in men over 40.", "**Hypogonadism, hyperprolactinemia** or thyroid disease.", "**Intimate partner violence**."],
+      mustNotMiss: ["**Depression** and suicidal thoughts.", "**Medication side effects** leading to stopping treatment.", "**Cardiovascular disease** behind erectile problems in men 40 and older.", "**Hypogonadism, hyperprolactinemia** or thyroid disease.", "**Intimate partner violence**."],
       helpers: ["sexual-cause", "sexual"],
       items: [
         { ch: "ch13", dx: "male-hsdd", when: "Both low desire and few sexual thoughts or fantasies, about 6 months." },

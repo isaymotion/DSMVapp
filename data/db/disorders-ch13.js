@@ -19,7 +19,7 @@
       criteria: [
         ["A", "Persistent or recurrent deficiency or absence of both sexual/erotic thoughts or fantasies and desire for sexual activity. The clinician makes the judgment, weighing age and the general and sociocultural context."],
         ["B", "Present for at least approximately 6 months."],
-        ["C", "Clinically significant distress in the man."],
+        ["C", "Clinically significant distress in the individual."],
         ["D", "Not better explained by a nonsexual mental disorder or by severe relationship distress or other major stressors; not due to a substance/medication or another medical condition."]
       ],
       specifiers: ["Lifelong / acquired", "Generalized / situational", "Severity by distress: mild, moderate, severe"],
@@ -53,7 +53,7 @@
       criteria: [
         ["A", "Lack of, or clearly reduced, sexual interest/arousal with ≥3 of: (1) little or no interest in sexual activity; (2) few or no sexual/erotic thoughts or fantasies; (3) little or no initiation, and usually unreceptive to a partner’s initiation; (4) little or no excitement/pleasure during sex on about 75%–100% of encounters; (5) little or no interest/arousal in response to any internal or external erotic cues (written, verbal, visual); (6) little or no genital or nongenital sensation during sex on about 75%–100% of encounters."],
         ["B", "Present for at least approximately 6 months."],
-        ["C", "Clinically significant distress in the woman."],
+        ["C", "Clinically significant distress in the individual."],
         ["D", "Not better explained by a nonsexual mental disorder or by severe relationship distress (e.g., partner violence) or other major stressors; not due to a substance/medication or another medical condition."]
       ],
       specifiers: ["Lifelong / acquired (for A3, A4, A6, lifelong means since first sexual experiences)", "Generalized / situational", "Severity by distress: mild, moderate, severe"],
@@ -84,11 +84,11 @@
       essence: "On **about 75%–100%** of sexual occasions, at least **1 of 3**: marked difficulty **getting** an erection, **keeping** it until the end of sexual activity, or a marked drop in **rigidity**, for about **6 months**, with **distress**; erectile **dysfunction** is the broad descriptive term, erectile **disorder** the DSM diagnosis (pp. 481–482).",
       duration: "≈6 months",
       functioning: "Distress, fear and avoidance of sex that can block new relationships; may affect fertility (p. 484)",
-      mood: "Low self-esteem, guilt, sense of failure, depressed mood; depression risk highest in the first year after onset (pp. 482, 485)",
+      mood: "Low self-esteem, guilt, sense of failure, depressed mood; depression risk markedly higher, especially in the first year after onset (pp. 482, 485)",
       criteria: [
         ["A", "On almost all or all (≈75%–100%) sexual occasions, ≥1 of: (1) marked difficulty obtaining an erection; (2) marked difficulty maintaining it until sexual activity is complete; (3) marked decrease in erectile rigidity."],
         ["B", "Present for at least approximately 6 months."],
-        ["C", "Clinically significant distress in the man."],
+        ["C", "Clinically significant distress in the individual."],
         ["D", "Not better explained by a nonsexual mental disorder or by severe relationship distress or other major stressors; not due to a substance/medication or another medical condition."]
       ],
       specifiers: ["Lifelong / acquired", "Generalized / situational", "Severity by distress: mild, moderate, severe"],
@@ -121,7 +121,7 @@
       criteria: [
         ["A", "On almost all or all (≈75%–100%) occasions of partnered sexual activity, and without desiring delay, either: (1) marked delay in ejaculation; or (2) marked infrequency or absence of ejaculation."],
         ["B", "Present for at least approximately 6 months."],
-        ["C", "Clinically significant distress in the man."],
+        ["C", "Clinically significant distress in the individual."],
         ["D", "Not better explained by a nonsexual mental disorder or by severe relationship distress or other major stressors; not due to a substance/medication or another medical condition."]
       ],
       specifiers: ["Lifelong / acquired", "Generalized / situational", "Severity by distress: mild, moderate, severe"],
@@ -153,7 +153,7 @@
       criteria: [
         ["A", "A persistent or recurrent pattern of ejaculating during partnered sexual activity within about 1 minute after vaginal penetration and before the man wishes. Note: can apply to nonvaginal activity, but no duration criteria exist for it."],
         ["B", "Present for at least 6 months and on almost all or all (≈75%–100%) occasions of sexual activity."],
-        ["C", "Clinically significant distress in the man."],
+        ["C", "Clinically significant distress in the individual."],
         ["D", "Not better explained by a nonsexual mental disorder or by severe relationship distress or other major stressors; not due to a substance/medication or another medical condition."]
       ],
       specifiers: ["Lifelong / acquired", "Generalized / situational", "Mild: about 30 seconds to 1 minute after penetration", "Moderate: about 15–30 seconds", "Severe: before sexual activity, at its start, or within about 15 seconds"],
@@ -164,7 +164,7 @@
         { name: "Normal latency, wants longer", how: "Normal ejaculatory timing with a wish to last longer is not PE (p. 504)." },
         { name: "Episodic early ejaculation", how: "E.g., first encounter with a new partner: common and not PE, even if distressing (p. 504)." },
         { id: "erectile-disorder", how: "Often co-occurs; which began first can be unclear (p. 504)." },
-        { id: "social-anxiety", how: "Lifelong PE is linked to anxiety disorders, especially social anxiety (pp. 503–504)." },
+        { id: "social-anxiety", how: "PE may be more common with anxiety disorders, especially social anxiety disorder; lifelong PE is associated with certain anxiety disorders (pp. 503–504)." },
         { id: "opioid-withdrawal", how: "Acquired PE can appear during opioid withdrawal or after stopping opioids (pp. 504, 508)." },
         { id: "delayed-ejaculation", how: "The opposite timing problem, without a latency cutoff (p. 479)." }
       ],
@@ -185,7 +185,7 @@
       criteria: [
         ["A", "On almost all or all (≈75%–100%) sexual occasions, either: (1) marked delay, infrequency or absence of orgasm; or (2) markedly reduced intensity of orgasmic sensations."],
         ["B", "Present for at least approximately 6 months."],
-        ["C", "Clinically significant distress in the woman."],
+        ["C", "Clinically significant distress in the individual."],
         ["D", "Not better explained by a nonsexual mental disorder or by severe relationship distress (e.g., partner violence) or other major stressors; not due to a substance/medication or another medical condition."]
       ],
       specifiers: ["Lifelong / acquired", "Generalized / situational", "Never experienced an orgasm under any situation", "Severity by distress: mild, moderate, severe"],
@@ -219,7 +219,7 @@
       criteria: [
         ["A", "Persistent or recurrent difficulty with ≥1 of: (1) penetration of the vagina in intercourse; (2) marked vulvovaginal or pelvic pain when intercourse or penetration is attempted; (3) marked fear or anxiety about such pain before, during or after penetration; (4) marked tightening of the pelvic floor muscles when penetration is attempted."],
         ["B", "Present for at least approximately 6 months."],
-        ["C", "Clinically significant distress in the woman."],
+        ["C", "Clinically significant distress in the individual."],
         ["D", "Not better explained by a nonsexual mental disorder or by severe relationship distress (e.g., partner violence) or other major stressors; not due to a substance/medication or another medical condition."]
       ],
       specifiers: ["Lifelong / acquired (acquired if there was a consistent period of pain-, fear- and tension-free intercourse)", "Severity by distress: mild, moderate, severe", "No generalized / situational subtype"],
@@ -277,7 +277,7 @@
       ],
       pearls: ["Proof: onset after starting, fading on stopping, recurring on rechallenge (p. 509).", "Withdrawal onset applies to alcohol, opioids, sedatives and other, not stimulants (p. 507).", "No cannabis or tobacco row in the coding table.", "Antidepressant onset as early as 8 days; about 30% with mild–moderate orgasm delay remit within 6 months; SSRI effects may persist after stopping (p. 508).", "Two agents: list each separately, e.g., F14.181 plus F19.981 fluoxetine (p. 506)."],
       cmp: { symptoms: "Any sexual dysfunction tied to a substance or medication", exclusions: "Independent sexual dysfunction; delirium only", prevalence: "25%–80% on many antidepressants; ~50% on antipsychotics", course: "Usually improves within days to several weeks after stopping, by half-life" },
-      clues: [["Core picture", "A 29-year-old woman who cannot reach orgasm since starting sertraline 3 weeks ago, on most occasions, and wants to stop it"], ["Duration rule", "Onset with the agent; ~1 month persistence after stopping suggests independent"], ["Code", "e.g., F19.981 sertraline-induced sexual dysfunction, with onset after medication use, severe"]],
+      clues: [["Core picture", "A 29-year-old woman who cannot reach orgasm since starting sertraline 3 weeks ago, on nearly every occasion, and wants to stop it"], ["Duration rule", "Onset with the agent; ~1 month persistence after stopping suggests independent"], ["Code", "e.g., F19.981 sertraline-induced sexual dysfunction, with onset after medication use, severe"]],
       updates: upd("The induced sexual dysfunction codes (**F10.181–F19.981**) are unchanged in the October 2024, 2025 and 2026 ICD-10-CM updates.")
     },
     {
