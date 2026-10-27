@@ -7,7 +7,7 @@ SP.add("ch20", "highYield", [
   { id: "hy20-map", topic: "The chapter at a glance", items: [
     "The chapter contains **no** criteria sets, only definitions and recording rules (pp. 803–805).",
     "It offers **four** residual categories plus one additional code (pp. 803–805).",
-    "Every category here requires clinically significant **distress or impairment** (p. 803).",
+    "Each of the four residual categories requires clinically significant **distress or impairment** (p. 803).",
     "Two categories cover symptoms that are a **direct physiological consequence** of another medical condition (p. 803).",
     "The only example symptom picture the chapter names: **dissociative symptoms** (pp. 803–804).",
     "The additional code for an evaluation that finds nothing: **Z03.89** (p. 805)."
@@ -17,7 +17,7 @@ SP.add("ch20", "highYield", [
     "Condition 2: it meets criteria for **no specific** Section II disorder (p. 803).",
     "Condition 3: it fits no chapter-specific **other specified or unspecified** category (p. 803).",
     "Condition 4: **no other** mental disorder diagnosis applies (p. 803).",
-    "Subthreshold low mood after a breakup takes a **Chapter 4** residual (or adjustment disorder), not F99, because condition 3 fails (app guidance).",
+    "Subthreshold low mood after a breakup takes **adjustment disorder** if its criteria fit, otherwise a Chapter 4 residual; never F99 (app guidance).",
     "F99 is meant for a presentation that fits **no chapter** at all (app reading of p. 803)."
   ] },
   { id: "hy20-f068", topic: "Other specified mental disorder due to AMC (F06.8)", items: [
@@ -48,24 +48,24 @@ SP.add("ch20", "highYield", [
   ] },
   { id: "hy20-z0389", topic: "Z03.89 No diagnosis or condition", items: [
     "Z03.89 is used after the person **has been evaluated** and nothing is found (p. 805).",
-    "Z03.89 means no mental disorder and no **other condition** is present (p. 805).",
-    "Z03.89 is an **additional code**, not a mental disorder.",
+    "Z03.89 means no mental disorder **or condition** is present (p. 805).",
+    "Z03.89 is an **additional code**, not a mental disorder (p. 805).",
     "An unclear picture still under assessment takes an **unspecified** category or a provisional diagnosis, not Z03.89 (app guidance).",
-    "A psychosocial problem without a disorder takes a Z code from the **next chapter**, not Z03.89 (app guidance).",
+    "A psychosocial problem without a disorder takes a Z code from **Chapter 22**, Other Conditions That May Be a Focus of Clinical Attention (not yet in the app), not Z03.89 (app guidance).",
     "ICD-10-CM title (outside the DSM): Z03.89 is “encounter for observation for other suspected diseases and conditions **ruled out**”."
   ] },
   { id: "hy20-coding", topic: "Recording, coding and Section I rules", items: [
     "Other specified versus unspecified is decided by whether the clinician **chooses** to record the reason (p. 803).",
-    "Section I (pp. 22–23): the choice between other specified and unspecified is **clinical judgment**.",
-    "Section I (pp. 22–23): unspecified categories act as a **placeholder** until a fuller differential is possible.",
-    "Section I (pp. 23–24): with a disorder due to a medical condition, the principal diagnosis is the **second** line listed.",
+    "Section I (p. 23): the choice between other specified and unspecified is **clinical judgment**.",
+    "Section I (p. 22): in settings such as the emergency department, a chapter’s unspecified category can serve as a **placeholder** until a fuller differential is possible.",
+    "Section I (pp. 23–24): when the disorder due to the medical condition is the principal diagnosis, it is the **second** line listed.",
     "Section I (pp. 23–24): “(principal diagnosis)” or “(**reason for visit**)” may be added after the diagnosis for clarity.",
     "Section I (p. 24): “**(provisional)**” marks a strong presumption that criteria will be confirmed.",
     "The chapter’s introductory example of a medical condition coded first: **B20** HIV disease (p. 803).",
     "Outside the DSM: F06.8, F09, F99 and Z03.89 are **unchanged** in ICD-10-CM from FY2016 through FY2027 (October 2026).",
     "ICD-10-CM title (outside the DSM): F99 is “mental disorder, **not otherwise specified**”.",
     "Outside the DSM: F99 carries an Excludes1 note against **F09**, so a medically caused picture never takes F99.",
-    "Outside the DSM: since October 2022, mild NCD due to a medical condition is **F06.70/F06.71**, not F06.8.",
+    "September 2022 APA coding update (outside the printed DSM): since October 2022, mild NCD due to a medical condition is **F06.70/F06.71** (formerly G31.84), not F06.8.",
     "ICD-11 (outside the DSM; app mapping): the nearest equivalents of F99 are **6E8Y and 6E8Z**."
   ] }
 ]);

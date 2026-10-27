@@ -10,8 +10,8 @@
   var ICD11_AMC = " **ICD-11** (outside the DSM): the nearest home is the **6E6** block of secondary mental or behavioural syndromes (6E60–6E69, residuals **6E6Y** and **6E6Z**), coded together with the underlying disease; the mapping is the app’s own inference.";
   var ICD11_F99 = " **ICD-11** (outside the DSM): nearest equivalents are **6E8Y** (other specified) and **6E8Z** (unspecified) mental, behavioural or neurodevelopmental disorders; the mapping is the app’s own inference.";
   function upd(text) { return [{ kind: "post", year: "2026", title: "Codes checked through October 2026", source: SRC, text: text }]; }
-  var NOMEAS = [["Prevalence", "Not given in the manual (p. 803–805)"], ["How often the code is used", "No usable 2020–2026 figures found (app research note)"]];
-  var ZCODES = { name: "Z codes in the next chapter", how: "A psychosocial or relational problem without a mental disorder (for example, conflict at work or in a marriage) takes a Z code from “Other conditions that may be a focus of clinical attention”, not a residual category or Z03.89 (app guidance)." };
+  var NOMEAS = [["Prevalence", "Not given in the manual (pp. 803–805)"], ["How often the code is used", "No usable 2020–2026 figures found (app research note)"]];
+  var ZCODES = { name: "Z codes (Chapter 22, Other Conditions That May Be a Focus of Clinical Attention)", how: "A psychosocial or relational problem without a mental disorder (for example, conflict at work or in a marriage) takes a Z code from Chapter 22, Other Conditions That May Be a Focus of Clinical Attention (not yet in the app), not a residual category or Z03.89 (app guidance)." };
   var PROV = { name: "A specific diagnosis marked “(provisional)”", how: "When confirmation of a specific disorder is strongly expected once information arrives, Section I prefers that diagnosis with “(provisional)” added (Section I, p. 24)." };
 
   SP.disorders = (SP.disorders || []).concat([
@@ -33,7 +33,7 @@
       ],
       specifiers: [],
       epi: NOMEAS,
-      risk: ["App guidance: the “risk factor” is the medical condition itself; the manual names only seizure disorders (complex partial seizures) in its example (p. 804)."],
+      risk: ["App guidance: the “risk factor” is the medical condition itself. The manual’s examples are B20 HIV disease in the chapter introduction (p. 803) and complex partial seizures in the F06.8 text (p. 804)."],
       differential: [
         { id: "psychotic-due-to-amc", how: "Prominent hallucinations or delusions caused by the condition meet that specific set; use it, not F06.8 (p. 803)." },
         { id: "depressive-due-to-amc", how: "A persistent depressed mood or anhedonia caused by the condition has its own specific category (p. 803)." },
@@ -42,15 +42,15 @@
         { id: "ocrd-due-to-amc", how: "Obsessions, compulsions or related symptoms caused by the condition are coded there." },
         { id: "catatonic-due-to-amc", how: "Three or more catatonic features from a medical cause take that specific code." },
         { id: "delirium", how: "Disturbed attention and awareness that fluctuates points to delirium, a specific disorder that comes first in the differential." },
-        { id: "ncd-amc", how: "Cognitive decline from the condition is a mild or major neurocognitive disorder, not F06.8; mild NCD due to a medical condition now has its own codes F06.70/F06.71 (Chapter 17)." },
+        { id: "ncd-amc", how: "Cognitive decline from the condition is a mild or major neurocognitive disorder, not F06.8; mild NCD due to a medical condition has had its own codes F06.70/F06.71 since October 2022, formerly G31.84 (September 2022 APA coding update, outside the printed DSM; Chapter 17)." },
         { id: "personality-change-amc", how: "A lasting change in personality caused by the condition has its own specific category." },
-        { id: "other-specified-dissociative", how: "Dissociation **without** a medical cause, short of a dissociative disorder, stays in Chapter 8; dissociation caused by seizures comes here, because Chapter 8 has no medical-cause disorder (p. 804; app reading)." },
+        { id: "other-specified-dissociative", how: "Dissociation **without** a medical cause, short of a dissociative disorder, stays in Chapter 8; dissociation caused by seizures is the manual’s F06.8 example (p. 804). App reasoning: Chapter 8 has no medical-cause disorder, and its criteria exclude symptoms caused by a medical condition (Chapter 8)." },
         { id: "unspecified-mental-amc", how: "Same situation when the clinician does not name the symptom picture or lacks the information to do so (F09; p. 805)." }
       ],
-      pearls: ["Two lines, two codes, the **medical condition first** (pp. 803–804).", "Put the condition’s actual name into the disorder name, then add the symptom picture after a comma (p. 804).", "Dissociation from complex partial seizures is the manual’s only listed example (p. 804).", "Check every specific “due to another medical condition” disorder first; F06.8 is what is left over (app guidance).", "Since October 2022, mild neurocognitive disorder due to a medical condition is F06.70/F06.71, not F06.8 (app research note)."],
+      pearls: ["Two lines, two codes, the **medical condition first** (pp. 803–804).", "Put the condition’s actual name into the disorder name, then add the symptom picture after a comma (p. 804).", "Dissociation from complex partial seizures is the manual’s only listed example (p. 804).", "Check every specific “due to another medical condition” disorder first; F06.8 is what is left over (app guidance).", "Since October 2022, mild neurocognitive disorder due to a medical condition is F06.70/F06.71 (formerly G31.84), not F06.8 (September 2022 APA coding update, outside the printed DSM)."],
       cmp: { symptoms: "Symptoms from a medical condition with distress or impairment; symptom picture stated", exclusions: "Any specific “due to another medical condition” disorder, delirium, NCD", prevalence: "Not given", course: "Follows the medical condition (app guidance)" },
       clues: [["Core picture", "A man with temporal lobe epilepsy whose peri-ictal detachment episodes, confirmed on video-EEG, have made him stop driving and working"], ["Order", "Seizure code first"], ["Code", "G40.209 then F06.8"]],
-      updates: upd("**F06.8** (ICD-10-CM title “Other specified mental disorders due to known physiological condition”; billable, no subcodes) carries a **code first the underlying physiological condition** note; its inclusion terms include epileptic psychosis NOS, organic dissociative disorder, organic emotionally labile (asthenic) disorder and OCD-related disorder due to a known physiological condition. It is **unchanged from FY2016 through FY2027** (October 1, 2026). The neighbor that changed: since October 1, 2022, **mild neurocognitive disorder** due to a medical condition is coded **F06.70/F06.71** (Chapter 17). **G40.209**, the seizure code in the example, is unchanged through FY2026 with no FY2027 change documented." + APA + ICD11_AMC)
+      updates: upd("**F06.8** (ICD-10-CM title “Other specified mental disorders due to known physiological condition”; billable, no subcodes) carries a **code first the underlying physiological condition** note; its inclusion terms include epileptic psychosis NOS, organic dissociative disorder, organic emotionally labile (asthenic) disorder and OCD-related disorder due to a known physiological condition. It is **unchanged from FY2016 through FY2027** (October 1, 2026). The neighbor that changed: since October 1, 2022, **mild neurocognitive disorder** due to a medical condition is coded **F06.70/F06.71** (Chapter 17), formerly G31.84 (September 2022 APA coding update). **G40.209**, the seizure code in the example, is unchanged through FY2026 with no FY2027 change documented." + APA + ICD11_AMC)
     },
     {
       id: "unspecified-mental-amc", ch: "ch20", sec: "s20-amc-unspecified", pages: "805", critPages: "805",
@@ -79,7 +79,7 @@
         { id: "unspecified-psychotic", how: "Psychotic symptoms not attributed to a medical cause take this Chapter 2 placeholder; ICD-10-CM bars pairing F09 with F29 (app research note)." },
         { id: "unspecified-mental-disorder", how: "When no medical cause has been judged responsible, the plain F99 placeholder applies instead; ICD-10-CM bars using F99 with F09." }
       ],
-      pearls: ["Same first line as F06.8; the second line has **no symptom tail** and the code is **F09** (pp. 804–805).", "Insufficient information, such as in an emergency room, is named as a reason to use it (p. 805).", "A placeholder: revise once the picture is characterized (Section I, pp. 22–23).", "Delirium is a specific disorder and must be ruled out before F09 (app guidance)."],
+      pearls: ["Same first line as F06.8; the second line has **no symptom tail** and the code is **F09** (pp. 804–805).", "Insufficient information, such as in an emergency room, is named as a reason to use it (p. 805).", "Treat it as a placeholder and revise once the picture is characterized (app guidance, extending Section I’s emergency-department example, p. 22).", "Delirium is a specific disorder and must be ruled out before F09 (app guidance)."],
       cmp: { symptoms: "Symptoms from a medical condition with distress or impairment; reason not stated or information insufficient", exclusions: "Any specific “due to another medical condition” disorder, delirium, NCD", prevalence: "Not given", course: "Placeholder; revise when the picture is clear (app guidance)" },
       clues: [["Core picture", "A woman with HIV disease brought to the emergency department with new behavioral change, alert and oriented, history unobtainable"], ["Order", "Medical code first"], ["Code", "B20 then F09"]],
       updates: upd("**F09** (ICD-10-CM title “Unspecified mental disorder due to known physiological condition”; billable) carries a **code first** note and an **Excludes1** note against **F06.7-** (mild neurocognitive disorder due to a known physiological condition) and **F29** (unspecified psychosis not due to a substance or known physiological condition). It is **unchanged from FY2016 through FY2027** (October 1, 2026)." + APA + ICD11_AMC)
@@ -141,9 +141,9 @@
       epi: NOMEAS,
       risk: [],
       differential: [
-        { id: "unspecified-psychotic", how: "If the prominent cluster can be named (here, psychosis), Section I prefers that chapter’s unspecified category as the placeholder (Section I, pp. 22–23)." },
+        { id: "unspecified-psychotic", how: "If the prominent cluster can be named (here, psychosis), Section I prefers that chapter’s unspecified category as the placeholder (Section I, p. 22)." },
         { id: "unspecified-depressive", how: "A recognizable depressive cluster takes Chapter 4’s unspecified category." },
-        { id: "unspecified-mood", how: "Mood symptoms that cannot yet be called depressive or bipolar take this Chapter 4 category." },
+        { id: "unspecified-mood", how: "Mood symptoms that cannot yet be called depressive or bipolar take unspecified mood disorder (F39), printed in both Chapters 3 and 4." },
         { id: "unspecified-anxiety", how: "A recognizable anxiety cluster takes Chapter 5’s unspecified category." },
         { id: "unspecified-trauma", how: "A clear stressor-linked picture takes Chapter 7’s unspecified category." },
         { id: "unspecified-mental-amc", how: "If a medical condition is judged the cause, use F09 with the condition coded first." },
@@ -151,7 +151,7 @@
         PROV,
         { name: "No diagnosis or condition (Z03.89)", how: "Unspecified means a disorder is present but not characterized; Z03.89 means the evaluation found none (p. 805)." }
       ],
-      pearls: ["Shares **F99** with other specified mental disorder (p. 805).", "Insufficient information, as in an emergency room, is named as a reason to use it (p. 805).", "A placeholder until a fuller differential is possible (Section I, pp. 22–23); replace it (app guidance).", "Prefer a chapter’s unspecified category whenever the prominent cluster can be named (Section I, pp. 22–23)."],
+      pearls: ["Shares **F99** with other specified mental disorder (p. 805).", "Insufficient information, as in an emergency room, is named as a reason to use it (p. 805).", "In emergency settings, Section I treats an unspecified category as a placeholder until a fuller differential is possible (Section I, p. 22); revisiting and replacing every one is app guidance.", "Prefer a chapter’s unspecified category whenever the prominent cluster can be named (Section I, p. 22)."],
       cmp: { symptoms: "Mental disorder with distress or impairment; reason not stated or information insufficient", exclusions: "Any specific disorder; a nameable cluster belongs to its chapter", prevalence: "Not given", course: "Placeholder; revise when the picture is clear (app guidance)" },
       clues: [["Core picture", "An agitated, tearful man admitted at night, uncooperative, no collateral, toxicology pending, cluster unclear"], ["Record", "Name only"], ["Code", "F99"]],
       updates: upd("**F99** (ICD-10-CM title “Mental disorder, not otherwise specified”; billable) is **unchanged from FY2016 through FY2027** (October 1, 2026), with an **Excludes1** note against **F09**. The same code serves both plain residual categories, so the recorded DSM name carries the distinction." + APA + ICD11_F99)
@@ -168,7 +168,7 @@
       criteria: [
         ["What", "An evaluation has been carried out (p. 805)."],
         ["Result", "It concludes that **no mental disorder or condition** is present (p. 805)."],
-        ["Not for", "An unclear picture (use an unspecified category or “(provisional)”), a subthreshold disorder (other specified), or a psychosocial problem (a Z code from the next chapter) (app guidance; Section I, p. 24)."],
+        ["Not for", "An unclear picture (use an unspecified category or “(provisional)”), a subthreshold disorder (other specified), or a psychosocial problem (a Z code from Chapter 22, Other Conditions That May Be a Focus of Clinical Attention, not yet in the app) (app guidance; Section I, p. 24)."],
         ["Record", "Z03.89 no diagnosis or condition (p. 805)."]
       ],
       specifiers: [],
@@ -181,7 +181,7 @@
         ZCODES,
         { name: "Z71.1 (ICD-10-CM, outside the DSM)", how: "ICD-10-CM category Z03 excludes Z71.1, the person with a feared complaint in whom no diagnosis is made; signs or symptoms still under study are coded to the symptom (app research note)." }
       ],
-      pearls: ["Requires a completed **evaluation** (p. 805).", "Means no disorder **and** no other condition of clinical focus (p. 805).", "The ICD-10-CM title (“…ruled out”) differs from the DSM name; record the DSM name (app research note).", "Not a placeholder: uncertainty is unspecified or provisional (app guidance)."],
+      pearls: ["Requires a completed **evaluation** (p. 805).", "Means no mental disorder **or condition** is present (p. 805); the app reads “condition” as including conditions that may be a focus of clinical attention (app reading).", "The ICD-10-CM title (“…ruled out”) differs from the DSM name; record the DSM name (app research note).", "Not a placeholder: uncertainty is unspecified or provisional (app guidance)."],
       cmp: { symptoms: "None of clinical significance after evaluation", exclusions: "Any disorder; any condition that is a focus of clinical attention", prevalence: "Not applicable", course: "Not applicable" },
       clues: [["Core picture", "An occupational-health referral after a workplace argument; full assessment and collateral find nothing"], ["Status", "Additional code, not a disorder"], ["Code", "Z03.89"]],
       updates: upd("**Z03.89** (ICD-10-CM title “Encounter for observation for other suspected diseases and conditions ruled out”; billable, while the parent Z03 is not) is **unchanged from FY2016 through FY2027** (October 1, 2026). DSM-5-TR assigns it the plain meaning “No diagnosis or condition”. ICD-10-CM category Z03 carries **Excludes1** notes against **Z71.1** (person with feared complaint in whom no diagnosis is made), Z05.- (newborn observation), Z77.- (exposures) and signs or symptoms under study, which are coded to the symptom; these are ICD-10-CM conventions, not DSM text." + APA)

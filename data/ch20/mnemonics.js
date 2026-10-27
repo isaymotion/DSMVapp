@@ -20,7 +20,7 @@ SP.add("ch20", "mnemonics", [
       ["N", "Name the condition", "Replace the words 'another medical condition' with the actual condition"],
       ["S", "Symptom phrase only for F06.8", "Other specified adds the manifestation (e.g., dissociative symptoms); F09 adds none"]
     ],
-    caveat: "DSM check: G40.209 complex partial seizures, F06.8 other specified mental disorder due to complex partial seizures, dissociative symptoms (p. 804); the F09 version ends after the condition name (p. 805). Under Section I (pp. 23–24) the principal diagnosis is then the **second** listed."
+    caveat: "DSM check: G40.209 complex partial seizures, F06.8 other specified mental disorder due to complex partial seizures, dissociative symptoms (p. 804); the F09 version ends after the condition name (p. 805). Under Section I (pp. 23–24), when the disorder due to the medical condition is the principal diagnosis, it is the **second** line listed."
   },
   {
     id: "m20-03", short: "Say it or skip it", name: "Specified = Say why; Unspecified = Unsaid", original: true, dx: "other-specified-mental-disorder", sec: "s20-other-specified",
@@ -29,16 +29,17 @@ SP.add("ch20", "mnemonics", [
       ["S", "Specified = Say why", "The clinician chooses to write the reason criteria are not met, after the category name"],
       ["U", "Unspecified = Unsaid", "The clinician chooses not to give the reason, including when information is too thin (emergency room)"]
     ],
-    caveat: "DSM check: the choice is the **clinician's**, not a matter of severity or duration (p. 803; Section I, pp. 22–23). Both plain categories share **F99**; the medical pair is **F06.8** (specified) vs **F09** (unspecified) (pp. 803–805)."
+    caveat: "DSM check: the choice is the **clinician's**, not a matter of severity or duration (p. 803; Section I, p. 23). Both plain categories share **F99**; the medical pair is **F06.8** (specified) vs **F09** (unspecified) (pp. 803–805)."
   },
   {
-    id: "m20-04", short: "Ladder: Specific, Chapter, Medical, Last", name: "Specific, then Chapter residual, then Last resort", original: true, dx: "unspecified-mental-amc", sec: "s20-choose",
+    id: "m20-04", short: "Ladder: Specific, Medical, Chapter, Last", name: "Specific, then Medical cause, then Chapter residual, then Last resort", original: true, dx: "unspecified-mental-amc", sec: "s20-choose",
     "for": "Order of search before using any Chapter 20 code (app guidance)",
     letters: [
-      ["S", "Specific disorder", "Try every specific criteria set first, including the specific 'due to another medical condition' disorders and delirium"],
-      ["C", "Chapter residual", "Then the other specified or unspecified category of the chapter that matches the main symptom cluster"],
-      ["L", "Last resort", "Only then F06.8/F09 (medically caused) or F99 (not medically caused); if no disorder at all, Z03.89"]
+      ["S", "Specific disorder", "Try every specific criteria set first, including delirium"],
+      ["M", "Medical cause", "If a medical condition directly causes the symptoms: the specific 'due to another medical condition' disorder if one fits, otherwise F06.8 (reason stated) or F09, with the medical condition coded first"],
+      ["C", "Chapter residual", "Not medically caused: the other specified or unspecified category of the chapter that matches the main symptom cluster"],
+      ["L", "Last resort", "Only then F99 (other specified or unspecified mental disorder); if evaluation finds no disorder at all, Z03.89"]
     ],
-    caveat: "DSM check: F06.8 and F09 apply only when no specific 'due to another medical condition' disorder is met, and F99 only when no chapter-specific residual fits (p. 803). The ladder order is app guidance."
+    caveat: "DSM check: F06.8 and F09 apply only when no specific 'due to another medical condition' disorder is met, and F99 only when no chapter-specific residual fits (p. 803). The ladder order is app guidance and matches the study guide and the residual-category helper."
   }
 ]);

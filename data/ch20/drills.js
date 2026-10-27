@@ -48,7 +48,7 @@
         { label: "Code", options: ["F09", "F29", "F99", "Z03.89", "F06.8"], answer: 2 }
       ],
       line: "**F99** unspecified mental disorder",
-      why: "Clearly a disturbance with impairment, but **not enough information** to place it in any chapter, an emergency room setting being the manual’s example (p. 805). With no identifiable symptom cluster, the chapter-wide **unspecified** category applies; it shares **F99** with other specified mental disorder (p. 805). Had a psychotic picture been evident, unspecified schizophrenia spectrum disorder (F29) would come first (app guidance)."
+      why: "Clearly a disturbance with impairment, but **not enough information** to place it in any chapter, an emergency room setting being the manual’s example (p. 805). With no identifiable symptom cluster, the chapter-wide **unspecified** category applies; it shares **F99** with other specified mental disorder (p. 805). Had a psychotic picture been evident, unspecified schizophrenia spectrum and other psychotic disorder (F29) would come first (app guidance; Section I, p. 22)."
     },
     {
       id: "w20-05", tag: "Nothing found",
@@ -157,13 +157,13 @@
       ask: "Mark the F99 conditions this presentation satisfies. Are all 4 satisfied?",
       items: [
         ["A mental disorder: distress or impairment is present", true, "Distress and missed work."],
-        ["No specific Section II disorder is met", true, "Assume no specific disorder fits on the facts given."],
-        ["No chapter-specific other specified or unspecified category fits", false, "Other specified depressive disorder (Chapter 4) fits, or adjustment disorder (Chapter 7)."],
-        ["No other mental disorder diagnosis applies", false, "The depressive or adjustment diagnosis applies."]
+        ["No specific Section II disorder is met", false, "Adjustment disorder (Chapter 7), a specific disorder, fits symptoms that begin within 3 months of an identifiable stressor (app reading of the facts)."],
+        ["No chapter-specific other specified or unspecified category fits", false, "Even if adjustment disorder were ruled out, other specified depressive disorder (Chapter 4) would fit."],
+        ["No other mental disorder diagnosis applies", false, "Adjustment disorder applies."]
       ],
       need: 4,
       met: false,
-      why: "Only **2 of 4**: a chapter covers this picture, so F99 is **wrong** (p. 803). Use the chapter’s own residual category or the specific diagnosis (app guidance)."
+      why: "Only **1 of 4**: adjustment disorder comes first for a picture that follows a stressor, and failing that Chapter 4’s other specified depressive disorder applies, so F99 is **wrong** (p. 803; app guidance)."
     }
   ]);
 })();

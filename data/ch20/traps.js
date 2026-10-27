@@ -18,10 +18,10 @@ SP.add("ch20", "traps", [
     truth: "Z03.89 means an evaluation **found nothing** (p. 805). Uncertainty calls for an **unspecified** category or a **(provisional)** diagnosis (pp. 805, 24)." },
   { id: "t20-06", tag: "Psychosocial", sec: "s20-no-dx",
     trap: "No disorder but marital conflict, so Z03.89.",
-    truth: "A psychosocial problem without a disorder takes a **Z code from the next chapter** (conditions that may be a focus of clinical attention); Z03.89 is for **no disorder and no condition** (p. 805; app guidance)." },
+    truth: "A psychosocial problem without a disorder takes a **Z code from Chapter 22**, Other Conditions That May Be a Focus of Clinical Attention (not yet in the app); Z03.89 is for **no disorder and no condition** (p. 805; app guidance)." },
   { id: "t20-07", tag: "Distress", sec: "s20-when",
     trap: "Any odd symptom that fits nowhere can be coded F99.",
-    truth: "Every category in the chapter requires a **mental disorder**: symptoms with **clinically significant distress or impairment**. Without that, none applies (p. 803)." },
+    truth: "Each of the four residual categories requires a **mental disorder**: symptoms with **clinically significant distress or impairment**. Without that, none of the four applies (p. 803); Z03.89 may, after an evaluation that finds nothing (p. 805)." },
   { id: "t20-08", tag: "Z03.89 title", sec: "s20-no-dx",
     trap: "Z03.89 is titled “No diagnosis or condition” in ICD-10-CM.",
     truth: "That is the **DSM** name (p. 805). The ICD-10-CM title is “**Encounter for observation for other suspected diseases and conditions ruled out**” (ICD-10-CM title, outside the DSM)." },
@@ -30,5 +30,5 @@ SP.add("ch20", "traps", [
     truth: "ICD-10-CM gives F09 an **Excludes1** note against **F29** and **F06.7-**, so they are not coded together for the same problem (outside the DSM; app ICD note)." },
   { id: "t20-10", tag: "Mild NCD code", sec: "s20-coding",
     trap: "Mild cognitive decline due to a medical condition is coded F06.8.",
-    truth: "Since **October 2022**, mild neurocognitive disorder due to a medical condition is **F06.70** (without) or **F06.71** (with behavioral disturbance), in Chapter 17, not F06.8 (app ICD-10-CM note)." }
+    truth: "Since **October 2022**, mild neurocognitive disorder due to a medical condition is **F06.70** (without) or **F06.71** (with behavioral disturbance), in Chapter 17, not F06.8; the former code was G31.84 (September 2022 APA coding update, outside the printed DSM)." }
 ]);
