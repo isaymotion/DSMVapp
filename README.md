@@ -31,7 +31,7 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 | 19. Paraphilic Disorders | Ready |
 | 20. Other Mental Disorders and Additional Codes | Ready |
 | 21. Medication-Induced Movement Disorders and Other Adverse Effects of Medication | Ready |
-| Chapter 22 | Listed in the menu as “Soon” |
+| 22. Other Conditions That May Be a Focus of Clinical Attention | Ready |
 
 ## Case tools
 

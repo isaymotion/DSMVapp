@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 47,
+    date: "2026-10-27",
+    title: "Chapter 22: Other Conditions That May Be a Focus of Clinical Attention",
+    summary: "The last chapter of Section II is ready: suicidal behavior and nonsuicidal self-injury, abuse and neglect with their coding system, relational and family problems, the psychosocial and environmental Z codes, the additional conditions from wandering to malingering, and the codes corrected or changed since 2022.",
+    items: [
+      { type: "chapter", ch: "ch22", text: "Chapter 22 study guide in 21 sections: the four reasons a condition may be coded and the rule that none of these is a mental disorder; how the T74/T76, A/D, Z69 and history codes fit together; suicidal behavior (intent to die, initiated, injury not required) and nonsuicidal self-injury; child physical and sexual abuse, neglect and psychological abuse; partner physical and sexual violence, neglect and psychological abuse; abuse of an adult by a nonpartner; parent-child, sibling and partner relational problems and the family-environment codes; educational, occupational, housing, economic, social, legal and other circumstances with the manual’s exclusions; wandering, uncomplicated bereavement, phase of life and religious problems; antisocial behavior, nonadherence, obesity, malingering and its four indicators; age-related cognitive decline and borderline intellectual functioning; coding current to October 2026 and a labeled Philippine legal note.", href: "#/c/ch22/guide", link: "Open Chapter 22" },
+      { type: "feature", text: "167 high-yield points, 44/44/44 criteria, differential and clinical cards, 40 board questions, 55 glossary terms and 8 mnemonics for Chapter 22, and 34 new library entries (conditions and codes rather than disorders) with compare presets.", href: "#/c/ch22/high-yield", link: "Chapter 22 high yield" },
+      { type: "feature", text: "New diagnostic helper: “A problem rather than a disorder: which Z code, and is a disorder present too?”", href: "#/helpers/psychosocial", link: "Open the helper" },
+      { type: "update", ch: "ch22", text: "Codes current to October 2026: four printed codes have changed since 2022, each marked in the chapter: T14.91A/D → T14.91XA/XD (APA correction, September 2022), Z91.19 → Z91.199 (October 2022), Z59.1 → Z59.10 (October 2023), Z59.7 → Z59.71/Z59.72 (October 2024). Every other code in the chapter is unchanged through the October 2026 (FY2027) update, and no APA DSM-5-TR update of 2025 or 2026 touches it. ICD-10-CM titles that differ from the DSM names are listed in the coding section.", href: "#/c/ch22/guide/s22-coding", link: "Coding and recording" }
+    ]
+  },
+  {
     id: 46,
     date: "2026-10-27",
     title: "Practice pack for Chapter 21",
