@@ -44,6 +44,6 @@ for (const ch of [process.env.CH||'ch10']) {
     await p.click('[data-act="next"]'); await p.waitForTimeout(60);
   }
 }
-for (const h of ['#/dx/pedophilic-disorder','#/dx/transvestic-disorder','#/complaints/unusual-sexual-interest','#/complaints/sexual-problems','#/complaints/rule-breaking','#/complaints/intrusive']) { await go(h); await wide(h); await p.screenshot({path:SC+h.replace(/[#/]/g,'_')+'.png',fullPage:true}); }
+for (const h of ['#/dx/suicidal-behavior','#/dx/malingering','#/complaints/life-problem','#/complaints/self-harm-behavior','#/complaints/after-loss','#/complaints/feigned']) { await go(h); await wide(h); await p.screenshot({path:SC+h.replace(/[#/]/g,'_')+'.png',fullPage:true}); }
 console.log(await p.evaluate(()=>SP.complaints.map(c=>c.id+':'+c.items.length).join(' ')));
 console.log('ERR',errs); await b.close();
