@@ -51,7 +51,7 @@ SP.add("ch20", "highYield", [
     "Z03.89 means no mental disorder **or condition** is present (p. 805).",
     "Z03.89 is an **additional code**, not a mental disorder (p. 805).",
     "An unclear picture still under assessment takes an **unspecified** category or a provisional diagnosis, not Z03.89 (app guidance).",
-    "A psychosocial problem without a disorder takes a Z code from **Chapter 22**, Other Conditions That May Be a Focus of Clinical Attention (not yet in the app), not Z03.89 (app guidance).",
+    "A psychosocial problem without a disorder takes a Z code from **Chapter 22**, [[ch:ch22|Other Conditions That May Be a Focus of Clinical Attention]], not Z03.89 (app guidance).",
     "ICD-10-CM title (outside the DSM): Z03.89 is “encounter for observation for other suspected diseases and conditions **ruled out**”."
   ] },
   { id: "hy20-coding", topic: "Recording, coding and Section I rules", items: [

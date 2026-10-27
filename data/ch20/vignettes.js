@@ -2,7 +2,7 @@
    `answer` is the zero-based index of the correct choice; `whyNot` explains every option in order.
    Card ids are the key for each card's review schedule: keep them stable.
    The chapter has no criteria sets, so several items draw on Section I, “Use of the Manual” (pp. 22–24), and are labeled.
-   Chapter 22 (Other conditions that may be a focus of clinical attention) is not yet in the app: it is named in plain text only.
+   Chapter 22 (Other conditions that may be a focus of clinical attention) is now in the app and linked where it is named.
    No treatment items: every question stays inside the DSM. */
 SP.add("ch20", "vignettes", [
   {
@@ -266,7 +266,7 @@ SP.add("ch20", "vignettes", [
         "F43.20 adjustment disorder, unspecified"
       ],
       "answer": 0,
-      "why": "There is still **no mental disorder**, but there **is a condition** that is the focus of the visit: the marital relationship. Z03.89 is only for an evaluation that finds **neither a disorder nor a condition** (p. 805), so the record takes the relational-problem Z code for spouse or partner distress from Chapter 22 (Other conditions that may be a focus of clinical attention; not yet in the app).",
+      "why": "There is still **no mental disorder**, but there **is a condition** that is the focus of the visit: the marital relationship. Z03.89 is only for an evaluation that finds **neither a disorder nor a condition** (p. 805), so the record takes the relational-problem Z code for spouse or partner distress from Chapter 22 (Other conditions that may be a focus of clinical attention; in [[ch:ch22|Chapter 22]]).",
       "whyNot": [
         "Correct.",
         "A condition that needs clinical attention is present, so “no diagnosis or condition” is wrong (p. 805).",

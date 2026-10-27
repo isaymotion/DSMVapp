@@ -44,7 +44,7 @@
         ["Reason for referral", "“Who suggested this assessment, and what were they worried about?”", "Third-party referrals (employer, court, family) are the usual setting (app guidance)."],
         ["Symptoms", "“Over the past months, any change in mood, sleep, appetite, energy, concentration, thinking or behavior?”", "Screen each chapter briefly."],
         ["Functioning", "“How are work, studies, relationships and daily life going?”", "No distress and no impairment supports the conclusion."],
-        ["Psychosocial problems", "“Is there anything in your life you would like help with: relationships, work, housing, money, legal matters?”", "A problem that needs attention takes a Z code from Chapter 22, Other Conditions That May Be a Focus of Clinical Attention (not yet in the app), instead of Z03.89 (app guidance)."],
+        ["Psychosocial problems", "“Is there anything in your life you would like help with: relationships, work, housing, money, legal matters?”", "A problem that needs attention takes a Z code from Chapter 22, [[ch:ch22|Other Conditions That May Be a Focus of Clinical Attention]], instead of Z03.89 (app guidance)."],
         ["Collateral", "“May we hear from someone who knows you well?”", "A negative evaluation is stronger with collateral and records."]
       ],
       tx: {
@@ -52,7 +52,7 @@
         first: "Outside the DSM: Z03.89 documents a **completed evaluation with a negative result** (p. 805). Write what was assessed, what was excluded and why, and how the person can return if symptoms appear.",
         points: [
           "Do not use it to close an **uncertain** case: that is an unspecified category or a provisional diagnosis (pp. 805, 24).",
-          "Do not use it when a **psychosocial problem** was found and is the focus of attention: use a Z code from Chapter 22, Other Conditions That May Be a Focus of Clinical Attention (not yet in the app) (app guidance).",
+          "Do not use it when a **psychosocial problem** was found and is the focus of attention: use a Z code from Chapter 22, [[ch:ch22|Other Conditions That May Be a Focus of Clinical Attention]] (app guidance).",
           "ICD-10-CM titles the code “encounter for observation for other suspected diseases and conditions ruled out”; record the DSM name beside it (app note)."
         ],
         stahl: []

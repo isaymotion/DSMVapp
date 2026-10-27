@@ -18,7 +18,7 @@ SP.add("ch20", "traps", [
     truth: "Z03.89 means an evaluation **found nothing** (p. 805). Uncertainty calls for an **unspecified** category or a **(provisional)** diagnosis (pp. 805, 24)." },
   { id: "t20-06", tag: "Psychosocial", sec: "s20-no-dx",
     trap: "No disorder but marital conflict, so Z03.89.",
-    truth: "A psychosocial problem without a disorder takes a **Z code from Chapter 22**, Other Conditions That May Be a Focus of Clinical Attention (not yet in the app); Z03.89 is for **no disorder and no condition** (p. 805; app guidance)." },
+    truth: "A psychosocial problem without a disorder takes a **Z code from Chapter 22**, [[ch:ch22|Other Conditions That May Be a Focus of Clinical Attention]]; Z03.89 is for **no disorder and no condition** (p. 805; app guidance)." },
   { id: "t20-07", tag: "Distress", sec: "s20-when",
     trap: "Any odd symptom that fits nowhere can be coded F99.",
     truth: "Each of the four residual categories requires a **mental disorder**: symptoms with **clinically significant distress or impairment**. Without that, none of the four applies (p. 803); Z03.89 may, after an evaluation that finds nothing (p. 805)." },

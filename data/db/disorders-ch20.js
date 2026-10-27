@@ -11,7 +11,7 @@
   var ICD11_F99 = " **ICD-11** (outside the DSM): nearest equivalents are **6E8Y** (other specified) and **6E8Z** (unspecified) mental, behavioural or neurodevelopmental disorders; the mapping is the app’s own inference.";
   function upd(text) { return [{ kind: "post", year: "2026", title: "Codes checked through October 2026", source: SRC, text: text }]; }
   var NOMEAS = [["Prevalence", "Not given in the manual (pp. 803–805)"], ["How often the code is used", "No usable 2020–2026 figures found (app research note)"]];
-  var ZCODES = { name: "Z codes (Chapter 22, Other Conditions That May Be a Focus of Clinical Attention)", how: "A psychosocial or relational problem without a mental disorder (for example, conflict at work or in a marriage) takes a Z code from Chapter 22, Other Conditions That May Be a Focus of Clinical Attention (not yet in the app), not a residual category or Z03.89 (app guidance)." };
+  var ZCODES = { name: "Z codes (Chapter 22, Other Conditions That May Be a Focus of Clinical Attention)", how: "A psychosocial or relational problem without a mental disorder (for example, conflict at work or in a marriage) takes a Z code from Chapter 22, [[ch:ch22|Other Conditions That May Be a Focus of Clinical Attention]], not a residual category or Z03.89 (app guidance)." };
   var PROV = { name: "A specific diagnosis marked “(provisional)”", how: "When confirmation of a specific disorder is strongly expected once information arrives, Section I prefers that diagnosis with “(provisional)” added (Section I, p. 24)." };
 
   SP.disorders = (SP.disorders || []).concat([
@@ -168,7 +168,7 @@
       criteria: [
         ["What", "An evaluation has been carried out (p. 805)."],
         ["Result", "It concludes that **no mental disorder or condition** is present (p. 805)."],
-        ["Not for", "An unclear picture (use an unspecified category or “(provisional)”), a subthreshold disorder (other specified), or a psychosocial problem (a Z code from Chapter 22, Other Conditions That May Be a Focus of Clinical Attention, not yet in the app) (app guidance; Section I, p. 24)."],
+        ["Not for", "An unclear picture (use an unspecified category or “(provisional)”), a subthreshold disorder (other specified), or a psychosocial problem (a Z code from Chapter 22, Other Conditions That May Be a Focus of Clinical Attention, in [[ch:ch22|Chapter 22]]) (app guidance; Section I, p. 24)."],
         ["Record", "Z03.89 no diagnosis or condition (p. 805)."]
       ],
       specifiers: [],
