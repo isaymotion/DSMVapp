@@ -507,7 +507,7 @@
       epi: [["≥3 times a week with moderate or severe distress", "1.6%"], ["Severe enough to impair", "2%–3%"], ["Sex", "About 2× in women (parity)"], ["Pregnancy", "2–3× the general rate"], ["Asian populations", "Lower"]],
       risk: ["Family history; MEIS1 variant nearly doubles risk.", "Iron deficiency, pregnancy, chronic renal failure.", "Serotonergic antidepressants can induce or worsen it.", "Older age (rises to about 60)."],
       differential: [
-        { name: "Neuroleptic-induced akathisia", how: "Tied to the drug; whole-body restlessness; less evening worsening and fewer periodic limb movements." },
+        { id: "medication-induced-acute-akathisia", name: "Neuroleptic-induced akathisia", how: "Tied to the drug; whole-body restlessness; less evening worsening and fewer periodic limb movements." },
         { name: "Leg cramps", how: "Painful contraction; no urge to move." },
         { name: "Positional discomfort", how: "Relieved by one change of position." },
         { name: "Arthritis, neuropathy, venous insufficiency", how: "Joint or sensory findings; no clear evening pattern." },

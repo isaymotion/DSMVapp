@@ -178,7 +178,7 @@
         { ch: "ch02", dx: "catatonic-due-to-amc", when: "Caused by a medical condition, such as encephalitis or hepatic encephalopathy." },
         { ch: "ch02", dx: "unspecified-catatonia", when: "Cause unclear or information insufficient (e.g., in the emergency department)." },
         { ch: "ch04", dx: "mdd", when: "Severe depression with stupor and mutism: **with catatonia**." },
-        { ch: "ch21", name: "Neuroleptic malignant syndrome", when: "After a dopamine blocker, with fever and autonomic instability." }
+        { ch: "ch21", dx: "nms", when: "After a dopamine blocker, with fever and autonomic instability." }
       ]
     },
     {

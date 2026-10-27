@@ -406,7 +406,7 @@
         { id: "tourette", how: "Tics: later onset, variable, premonitory urge." },
         { id: "ocd", how: "Driven by obsessions." },
         { id: "trichotillomania", how: "Goal-directed; onset around puberty." },
-        { name: "Tardive dyskinesia", how: "Neuroleptic history; no self-injury." }
+        { id: "tardive-dyskinesia", how: "Neuroleptic history; no self-injury." }
       ],
       pearls: ["Early onset, rhythmic, fixed, enjoyable, no urge.", "Look for a painful medical cause."],
       cmp: { symptoms: "Rhythmic purposeless movements", exclusions: "ASD without self-injury, tics, OCD", prevalence: "3%–4% complex", course: "Usually diminish; persist with IDD" },

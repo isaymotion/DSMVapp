@@ -254,8 +254,8 @@ SP.disorders = (SP.disorders || []).concat([
     risk: ["The association with mood disorders holds across cultures."],
     differential: [
       { id: "catatonic-due-to-amc", how: "Infectious, metabolic or neurological cause must be ruled out first." },
-      { name: "Neuroleptic malignant syndrome (G21.0)", how: "On antipsychotics, with vital sign and laboratory abnormalities." },
-      { name: "Medication-induced movement disorders", how: "E.g., acute dystonia producing abnormal postures." }
+      { id: "nms", name: "Neuroleptic malignant syndrome (G21.0)", how: "On antipsychotics, with vital sign and laboratory abnormalities." },
+      { id: "medication-induced-acute-dystonia", name: "Medication-induced movement disorders", how: "E.g., acute dystonia producing abnormal postures." }
     ],
     pearls: ["Rare signs such as **waxy flexibility** are overtaught; most catatonia is mutism, negativism, staring and posturing.", "Complications: malnutrition, exhaustion, thromboembolism, pressure ulcers, contractures, hyperpyrexia."],
     cmp: { symptoms: "≥3 of 12 catatonic features", exclusions: "Medical causes, medication effects, NMS", prevalence: "≈9% of clinical samples; up to 35% in schizophrenia", course: "Follows the associated disorder" },

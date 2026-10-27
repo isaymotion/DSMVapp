@@ -403,7 +403,7 @@
         { id: "ncd-lewy", how: "Cognition before or within 1 year of parkinsonism." },
         { id: "ncd-alzheimers", how: "No early motor features." },
         { id: "ncd-vascular", how: "Vascular parkinsonism; course tied to strokes." },
-        { name: "Antipsychotic-induced parkinsonism", how: "Motor signs after a dopamine blocker." }
+        { id: "medication-induced-parkinsonism", name: "Antipsychotic-induced parkinsonism", how: "Motor signs after a dopamine blocker." }
       ],
       pearls: ["The 1-year rule.", "Use motor-free tests.", "DaT scan separates Lewy body dementias from Alzheimer’s.", "Outside the DSM: pimavanserin is approved for PD psychosis."],
       cmp: { symptoms: "Attention, executive, speed, visuospatial", exclusions: "Cognition before PD (consider Lewy bodies)", prevalence: "Up to 80% of PD eventually", course: "Gradual" },

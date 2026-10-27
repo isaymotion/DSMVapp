@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 46,
+    date: "2026-10-27",
+    title: "Practice pack for Chapter 21",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, bedside questions and a dated, labeled treatment orientation for the medication-induced movement disorders, and a new complaint in the hub.",
+    items: [
+      { type: "chapter", ch: "ch21", text: "Chapter 21: 25 board vignettes (drug-induced versus idiopathic parkinsonism, depression and catatonia look-alikes, NMS before the fever and its differential from malignant catatonia and serotonin syndrome, oculogyric crisis and laryngeal dystonia, akathisia versus anxiety and restless legs, the tardive dyskinesia time rules including the 1-month rule after 60, withdrawal dyskinesia, benztropine worsening TD, lithium tremor and toxicity, NMS-like syndromes without a dopamine blocker, antidepressant discontinuation versus relapse, and priapism as another adverse effect), 14 “Write the diagnosis” cases from G21.11 to T50.905A, 10 counting drills and 24 exam traps.", href: "#/c/ch21/practice", link: "Chapter 21 drills" },
+      { type: "feature", text: "“How to ask it” for the 11 Chapter 21 conditions, and a dated orientation to management (stop or reduce the agent, anticholinergics, beta-blockers, VMAT2 inhibitors, NMS supportive care and rechallenge, gradual antidepressant tapers) with Stahl links, labeled as outside the DSM.", href: "#/dx/tardive-dyskinesia", link: "Tardive dyskinesia" },
+      { type: "feature", text: "Start from the complaint: abnormal movements, stiffness or restlessness on a medication. Chapter 21 items added to leg restlessness, not moving or speaking, sudden confusion, anxiety, after a substance and neurological symptoms. Earlier chapters’ references to neuroleptic malignant syndrome, akathisia, parkinsonism and tardive dyskinesia now link to the new library entries.", href: "#/complaints/abnormal-movements", link: "Open the hub" }
+    ]
+  },
+  {
     id: 45,
     date: "2026-10-27",
     title: "Chapter 21: Medication-Induced Movement Disorders and Other Adverse Effects of Medication",
