@@ -48,7 +48,7 @@ SP.helpers = (SP.helpers || []).concat([
           { label: "Some intent to die, behavior initiated (injury or not)", to: "encounter", note: "Suicidal behavior." },
           { label: "Self-injury without suicidal intent", to: "r:nssi", note: "R45.88 current; Z91.52 history." },
           { label: "Stopped or dissuaded before initiating", to: "r:nocode-ideation", note: "Not suicidal behavior under this entry." },
-          { label: "The behavior was in the past, not part of this presentation", to: "r:history-sb", note: "Z91.51." }
+          { label: "Past suicidal behavior, not part of this presentation", to: "r:history-sb", note: "Z91.51 (past NSSI: Z91.52, see the NSSI result)." }
         ]
       },
       encounter: {
