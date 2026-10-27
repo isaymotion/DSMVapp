@@ -270,7 +270,7 @@
     ] },
     { id: "learning-problems", title: "Struggling at school with reading, writing or math", items: [
       { ch: "ch22", dx: "educational-problem", when: "The problem is access, teaching, exams or discord rather than a learning disorder: Z55.-." },
-      { ch: "ch22", dx: "borderline-intellectual-functioning", when: "Intellectual and adaptive functioning below average but not meeting intellectual developmental disorder; R41.83." }
+      { ch: "ch22", dx: "borderline-intellectual-functioning", when: "Borderline intellectual functioning that does not meet intellectual developmental disorder once intellectual and adaptive functioning are both assessed; R41.83 (p. 836)." }
     ] },
     { id: "rule-breaking", title: "Rule-breaking, aggression or law-breaking", items: [
       { ch: "ch22", dx: "antisocial-behavior", when: "Antisocial acts in an adult not attributable to a disorder (Z72.811)." },

@@ -15,7 +15,7 @@ SP.add("ch22", "highYield", [
     "Reason 4: it is a problem to weigh in the **overall management plan** (p. 821).",
     "The manual’s stated aims for the listing: to draw attention to extra issues met in practice and to give a **systematic listing** for documentation (p. 821).",
     "Number of groups the chapter lists: **14** (pp. 821–822).",
-    "A Z code sits **beside** a diagnosis that is met; it never **replaces** it (p. 821; app note)."
+    "A Z code sits **beside** a diagnosis that is met; it never **replaces** it (Section I p. 28; app note)."
   ] },
   { id: "hy22-coding", topic: "Coding mechanics: A/D, T74/T76, Z69 and history codes", items: [
     "For the T codes, the letter **A** marks the **initial encounter**, used while the person is in active treatment (pp. 822–823).",
@@ -42,7 +42,7 @@ SP.add("ch22", "highYield", [
     "What separates NSSI from suicidal behavior: the **absence of suicidal intent** (p. 822).",
     "Current nonsuicidal self-injury: **R45.88** (p. 822).",
     "History of nonsuicidal self-injury: **Z91.52** (p. 822).",
-    "Both entries are **conditions**, not disorders; suicidal behavior disorder and NSSI disorder stay in **Section III** (p. 822; app note).",
+    "Both entries are **conditions**, not disorders; suicidal behavior disorder and NSSI disorder stay in **Section III** (p. 920 ff.; app note).",
     "The ICD-10-CM title of T14.91 is “**suicide attempt**” (ICD-10-CM title).",
     "Whenever either code is used, a current **safety and risk assessment** belongs in the plan (app note)."
   ] },

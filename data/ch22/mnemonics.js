@@ -98,6 +98,6 @@ SP.add("ch22", "mnemonics", [
       ["I", "Intellectual functioning, borderline (R41.83)", "Compare mild IDD by weighing intellectual and adaptive functioning (p. 836)"],
       ["N", "Nonadherence (Z91.199)", "Only if severe enough for its own attention and PFAMC is not met (p. 835)"]
     ],
-    caveat: "DSM check: each line cites its page. In every pair, **diagnose the disorder when its criteria are met**; the chapter code covers problems that fall short of a disorder or need attention on their own (p. 821). Z91.199 per the APA coding update, September 2022 (printed Z91.19)."
+    caveat: "DSM check: each line cites its page. In every pair, **diagnose the disorder when its criteria are met**; the chapter code covers problems that fall short of a disorder or need attention on their own (pp. 28, 821; app reading). Z91.199 per the APA coding update, September 2022 (printed Z91.19)."
   }
 ]);

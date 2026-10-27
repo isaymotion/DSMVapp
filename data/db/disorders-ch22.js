@@ -1,17 +1,18 @@
 /* Disorder library: Chapter 22, Other Conditions That May Be a Focus of Clinical Attention (DSM-5-TR pp. 821–836).
    Codes as printed in the 2022 manual, with the APA’s later coding corrections and updates: T14.91A/D → T14.91XA/XD
    (correction, September 2022), Z91.19 → Z91.199 (October 1, 2022), Z59.1 → Z59.10 (October 1, 2023), Z59.7 →
-   Z59.71 / Z59.72 (October 1, 2024). Every other code was found unchanged through FY2027 (October 1, 2026; secondary
-   code pages; confirm against the official tabular list). These conditions are NOT mental disorders and have NO
+   Z59.71 / Z59.72 (October 1, 2024). For the other codes, no change was found through the FY2027 tables (October 1,
+   2026; secondary code pages) for the codes checked; not every code was checked individually, so confirm against
+   the official tabular list. These conditions are NOT mental disorders and have NO
    criteria sets (p. 821): each entry’s `criteria` holds the manual’s definition, examples, exclusions and coding rule
    as labeled items, and `duration` is “Not applicable”. ICD-10-CM titles, ICD-11, law and clinical advice are
    outside the DSM and labeled. Abuse, suicidal behavior and self-injury are kept at the level of the manual’s
    definitions. */
 (function () {
   var SRC = "APA DSM-5-TR coding corrections and updates, September 2022–2025 (psychiatry.org); ICD-10-CM FY2022–FY2027 code tables (icd10data.com code pages; official CDC addenda not consulted directly); checked October 27, 2026";
-  var NC = "Unchanged through October 2026";
+  var NC = "No change was found through the FY2027 tables for the codes checked; confirm against the official tabular list";
   var APA = " No APA DSM-5-TR coding update after those named here touches this entry, and no 2026 APA update existed on the check date; confirm against the official tabular list in force on the date of service.";
-  var UNCH = " was found **unchanged through FY2027** (October 1, 2026)";
+  var UNCH = " showed **no change through the FY2027 tables** (October 1, 2026) for the codes checked (not every code was checked individually; confirm against the official tabular list)";
   var NOTMD = "Not a mental disorder (p. 821); recorded beside any diagnosis that is met (app note)";
   var ICD11 = " **ICD-11** (outside the DSM): the equivalent factors sit in Chapter 24, “Factors influencing health status or contact with health services” (blocks QD50–QD9Z and QE00–QE9Z); individual ICD-11 codes were not verified for the app.";
   var CONF = "Confirmed or suspected event, A or D, then the encounter or history Z code (pp. 822–823)";
@@ -53,7 +54,7 @@
       pearls: ["Two words carry the definition: **some intent** and **initiated** (p. 822).", "**No injury needed**: an attempt that harmed no one still counts (p. 822).", "A **new clinician’s** first evaluation is still **A** (p. 822).", "Write **T14.91XA / XD**, not the printed T14.91A / D (APA correction, September 2022).", "Section III keeps **suicidal behavior disorder** as a condition for further study; here it is a code, not a diagnosis (app note).", "Safety first (app guidance): a code is never a substitute for a risk assessment and plan."],
       cmp: { symptoms: "Initiated, potentially self-injurious act with at least some intent to die (stated or inferred)", exclusions: "Stopped or dissuaded before starting; self-injury without suicidal intent (NSSI)", prevalence: "Not given", course: "Current (A/D) or lifetime history (Z91.51)" },
       clues: [["Core picture", "A man brought to the emergency department after an overdose he says was meant to end his life; no lasting injury"], ["Key test", "Any intent to die + act initiated"], ["Code", "T14.91XA (initial), T14.91XD (subsequent), Z91.51 (history)"]],
-      updates: upd("**T14.91XA / T14.91XD** (ICD-10-CM title “Suicide attempt”, initial / subsequent encounter; in ICD-10-CM since FY2018, with T14.91XS for sequela, which the DSM does not use). The manual printed **T14.91A / T14.91D** and a coding note calling A/D the “6th character”; the **APA’s September 2022 correction** (effective immediately) changed them to **T14.91XA / T14.91XD**, so A/D is the 7th character after an X placeholder, as in the abuse codes. **Z91.51** (“Personal history of suicidal behavior”) has existed since **October 1, 2021** and" + UNCH + ". ICD-10-CM also has **R45.851** suicidal ideations, not listed in the chapter. **App comparison**: DSM-5 (2013) had no suicidal behavior codes in this chapter; the text revision added them." + ICD11 + APA)
+      updates: upd("**T14.91XA / T14.91XD** (ICD-10-CM title “Suicide attempt”, initial / subsequent encounter; in ICD-10-CM since FY2018, with T14.91XS for sequela, which the DSM does not use). The manual printed **T14.91A / T14.91D** and a coding note calling A/D the “6th character”; the **APA’s September 2022 correction** (effective immediately) changed them to **T14.91XA / T14.91XD**, so A/D is the 7th character after an X placeholder, as in the abuse codes. **Z91.51** (“Personal history of suicidal behavior”) has existed since **October 1, 2021** and" + UNCH + ". ICD-10-CM also has **R45.851** suicidal ideations, not listed in the chapter. **App comparison**: DSM-5 (2013) had only a general Personal History of Self-Harm code (Z91.5); the text revision added specific current and history codes for suicidal behavior (Preface to DSM-5-TR)." + ICD11 + APA)
     },
     {
       id: "nssi", ch: "ch22", sec: "s22-nssi", pages: "822", critPages: "822",
@@ -86,7 +87,7 @@
       pearls: ["Defined by the **absence of suicidal intent**, not by the method (p. 822).", "Damage must be likely to cause **bleeding, bruising or pain** (p. 822).", "ICD-10-CM says “self-**harm**”, DSM says “self-**injury**”: record the DSM name (app note).", "Section III keeps **NSSI disorder** as a condition for further study (app note).", "Re-ask intent at each visit (app guidance)."],
       cmp: { symptoms: "Deliberate self-inflicted bodily damage likely to bleed, bruise or hurt, no suicidal intent", exclusions: "Any intent to die (suicidal behavior); stereotypies; hair pulling and skin picking", prevalence: "Not given", course: "Current (R45.88) or history (Z91.52)" },
       clues: [["Core picture", "A teenager who cuts her forearm when overwhelmed and is clear she has never wanted to die"], ["Key test", "No suicidal intent"], ["Code", "R45.88 (current), Z91.52 (history)"]],
-      updates: upd("**R45.88** (ICD-10-CM title “Nonsuicidal self-harm”) and **Z91.52** (“Personal history of nonsuicidal self-harm”) both entered ICD-10-CM on **October 1, 2021**; each" + UNCH + ". No APA DSM-5-TR update changed them. **App comparison**: DSM-5 (2013) had no NSSI code in this chapter; the text revision added it, while Section III keeps the proposed NSSI disorder." + ICD11 + APA)
+      updates: upd("**R45.88** (ICD-10-CM title “Nonsuicidal self-harm”) and **Z91.52** (“Personal history of nonsuicidal self-harm”) both entered ICD-10-CM on **October 1, 2021**; each" + UNCH + ". No APA DSM-5-TR update changed them. **App comparison**: DSM-5 (2013) had only a general Personal History of Self-Harm code (Z91.5); the text revision added specific NSSI codes (Preface to DSM-5-TR), while Section III keeps the proposed NSSI disorder." + ICD11 + APA)
     },
     {
       id: "child-physical-abuse", ch: "ch22", sec: "s22-child-abuse", pages: "823", critPages: "823",
@@ -151,7 +152,7 @@
       mood: "Not part of the definition; trauma-related and other disorders are assessed in their own right (app guidance)",
       criteria: [
         ["What", "Any sexual act involving a child intended to provide sexual gratification to a parent, caregiver or other person responsible for the child (pp. 823–824)."],
-        ["Contact acts", "The manual lists genital fondling, penetration, incest, rape, sodomy and indecent exposure (p. 824)."],
+        ["Includes", "The manual lists genital fondling, penetration, incest, rape, sodomy and indecent exposure (p. 824)."],
         ["Noncontact", "Exploitation without direct physical contact: the child is forced, tricked, enticed, threatened or pressured into acts for the sexual gratification of others (p. 824)."],
         ["Codes", "Confirmed **T74.22XA/XD**; suspected **T76.22XA/XD**; victim **Z69.010** (parent) or **Z69.020** (nonparental); perpetrator **Z69.011** or **Z69.021**; past history **Z62.810** (p. 824)."],
         ["Care", "Legal implications call for careful assessment and coding (p. 822)."]
@@ -167,7 +168,7 @@
       pearls: ["**Noncontact** exploitation counts (p. 824).", "Defined by the **purpose**: sexual gratification of the responsible adult or of others (pp. 823–824).", "Same Z69 and Z62.810 codes as child physical abuse; only the T code differs (pp. 823–824).", "Keep documentation factual and in the child’s words (app guidance)."],
       cmp: { symptoms: "Contact or noncontact sexual acts involving a child for an adult’s or others’ gratification", exclusions: "Physical abuse without sexual purpose; psychological abuse", prevalence: "Not given", course: CONF },
       clues: [["Core picture", "A disclosure by a child of sexual acts by a caregiver, under investigation"], ["Key test", "Sexual purpose; contact not required"], ["Code", "T74.22XA (confirmed) or T76.22XA (suspected)"]],
-      updates: upd("The T74.22X-, T76.22X-, Z69.0- and Z62.810 codes" + UNCH + "; no APA DSM-5-TR update changed them. ICD-10-CM has separate **T74.5-/T76.5-** codes for forced sexual exploitation and history code **Z62.813** (forced sexual exploitation in childhood), which the DSM chapter does not list." + TNOTE + " **Philippine context** (outside the DSM; app guidance): RA 7610 and **RA 11648** (2022, age of sexual consent raised to 16); verify current law and follow protocol." + ICD11 + APA)
+      updates: upd("The T74.22X-, T76.22X-, Z69.0- and Z62.810 codes" + UNCH + "; no APA DSM-5-TR update changed them. ICD-10-CM has separate **T74.5-/T76.5-** codes for forced sexual exploitation and history code **Z62.813** (personal history of forced labor or sexual exploitation in childhood), which the DSM chapter does not list." + TNOTE + " **Philippine context** (outside the DSM; app guidance): RA 7610 and **RA 11648** (2022, age of sexual consent raised to 16); verify current law and follow protocol." + ICD11 + APA)
     },
     {
       id: "child-neglect", ch: "ch22", sec: "s22-child-neglect-psych", pages: "824", critPages: "824",
@@ -718,7 +719,7 @@
       pearls: ["Write **Z59.71** (health insurance) or **Z59.72** (welfare), not the printed Z59.7 (APA update, October 2024).", "Z59.41 food insecurity was printed **F59.41** in early printings; the APA corrected it in September 2022 (app note).", "**Z58.6** water sits outside the Z59 block (p. 832).", "Economic codes justify social work and plan changes: one of the four reasons to code (p. 821)."],
       cmp: { symptoms: "Food insecurity, unsafe water, extreme poverty, low income, insufficient insurance or welfare", exclusions: "Housing problems (coded separately); neglect", prevalence: "Not given", course: "Coded while it affects care" },
       clues: [["Core picture", "A woman who cannot afford her medicines and was refused welfare for lack of a proof of address"], ["Key test", "Economic problem affects care"], ["Code", "Z59.6, Z59.72, Z59.41 etc."]],
-      updates: upd("**Z59.7** became invalid on **October 1, 2024**, when ICD-10-CM split it into **Z59.71** (insufficient health insurance coverage) and **Z59.72** (insufficient welfare support); the **APA’s September 2024 update** adopted both. The **APA’s September 2022 correction** fixed a printing error (food insecurity printed **F59.41** → **Z59.41**). Z59.41 and Z58.6 (FY2022), Z59.5, Z59.6 and Z59.9" + UNCH + ". ICD-10-CM also has **Z59.82** transportation insecurity, **Z59.86-** financial insecurity and **Z59.87** material hardship (FY2023), which the DSM does not list." + ICD11 + APA)
+      updates: upd("**Z59.7** became invalid on **October 1, 2024**, when ICD-10-CM split it into **Z59.71** (insufficient health insurance coverage) and **Z59.72** (insufficient welfare support); the **APA’s September 2024 update** adopted both. The **APA’s September 2022 correction** fixed a printing error (food insecurity printed **F59.41** → **Z59.41**). Z58.6 (FY2022), Z59.41, Z59.5, Z59.6 and Z59.9" + UNCH + ". ICD-10-CM also has **Z59.82** transportation insecurity, **Z59.86-** financial insecurity and **Z59.87** material hardship (FY2023), which the DSM does not list." + ICD11 + APA)
     },
     {
       id: "social-environment-problem", ch: "ch22", sec: "s22-social-legal", pages: "832", critPages: "832",
@@ -1068,7 +1069,7 @@
       pearls: ["Write **Z91.199**, not the printed Z91.19 (APA update, October 2022).", "Not if **PFAMC** criteria are met (p. 835).", "Must be **severe enough** for independent attention (p. 835).", "Ask **why**: side effects, cost, beliefs, debility, disorder (p. 835)."],
       cmp: { symptoms: "Nonadherence to an important part of treatment, severe enough for its own attention", exclusions: "PFAMC; trivial lapses", prevalence: "Not given", course: "Coded while it is a focus" },
       clues: [["Core picture", "A man with schizophrenia who stops his antipsychotic every few months because of weight gain, leading to relapse"], ["Key test", "Severe, important, not PFAMC"], ["Code", "Z91.199 (printed Z91.19)"]],
-      updates: upd("On **October 1, 2022** ICD-10-CM split **Z91.19** into **Z91.190** (noncompliance with other medical treatment and regimen due to financial hardship), **Z91.198** (other reason) and **Z91.199** (unspecified reason); the **APA’s September 2022 update** (effective October 1, 2022) assigns DSM-5-TR nonadherence to medical treatment to **Z91.199**. Unchanged since, through FY2027. ICD-10-CM also has more specific underdosing and regimen codes (Z91.11-, Z91.12-, Z91.13-, Z91.14-, Z91.15-) that the DSM does not list." + ICD11 + APA)
+      updates: upd("On **October 1, 2022** ICD-10-CM split **Z91.19** into **Z91.190** (noncompliance with other medical treatment and regimen due to financial hardship), **Z91.198** (other reason) and **Z91.199** (unspecified reason); the **APA’s September 2022 update** (effective October 1, 2022) assigns DSM-5-TR nonadherence to medical treatment to **Z91.199**. No later change was found (confirm against the official tabular list). ICD-10-CM also has more specific underdosing and regimen codes (Z91.11-, Z91.12-, Z91.13-, Z91.14-, Z91.15-) that the DSM does not list." + ICD11 + APA)
     },
     {
       id: "overweight-obesity", ch: "ch22", sec: "s22-behavior-adherence", pages: "835", critPages: "835",
