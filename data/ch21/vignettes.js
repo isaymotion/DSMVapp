@@ -3,17 +3,19 @@
    Card ids are the key for each card's review schedule: keep them stable.
    The conditions in this chapter are not mental disorders and have no criteria sets (p. 807): items test the
    manual's descriptions, time rules and differentials, never "Criterion A". Every stem states the drug, dose changes
-   and timing; two oral temperatures and the CK where NMS is an option; attention and orientation where delirium is an
-   option; the movement type and frequency; exposure length and age for tardive dyskinesia; whether a stimulant
-   augmenter was involved; and any history of hypomania for discontinuation cases.
-   One item is clinical management outside the DSM and labeled so: the v21-07 `then` (first steps in suspected NMS).
-   ICD-10-CM notes and discussion prompts that go beyond the manual are tagged "(outside the DSM)" or "(app note)".
+   and timing, including when the signs began; two oral temperatures, heart rate, blood pressure and the CK where NMS is
+   an option; attention and orientation where delirium is an option; the movement type and frequency; exposure length
+   and age for tardive dyskinesia; whether a stimulant augmenter was involved; and any history of hypomania for
+   discontinuation cases. Management is outside the DSM and labeled so: the v21-07 `then` (first steps in suspected NMS)
+   and the airway note in the v21-11 `then`. Serotonin syndrome features, the meaning of the ICD-10-CM seventh
+   character (A = active treatment), ICD-10-CM notes and discussion prompts that go beyond the manual are tagged
+   "(outside the DSM)" or "(app note)".
    Disorders from other chapters (restless legs syndrome, stimulant withdrawal, catatonia) are named in plain text. */
 SP.add("ch21", "vignettes", [
   {
     "id": "v21-01",
     "tag": "Parkinsonism: drug or disease?",
-    "stem": "A 67-year-old retired midwife from Orion has major depressive disorder with psychotic features. She has taken sertraline 100 mg daily, unchanged, for 2 years. Risperidone 2 mg at night was added 3 weeks ago for nihilistic delusions. Over the past 10 days her husband has noticed that she walks slowly with small steps, no longer swings either arm and has a fixed, staring face. On examination both wrists show constant resistance through the whole range of passive movement, with cogwheeling, and there is a slight 4-per-second tremor of both hands at rest that stops when she reaches for a glass; the right side is a little worse than the left. She has never had a tremor or slowness before. Her sense of smell is normal, her husband has never seen her act out dreams, and she has no constipation, urinary urgency or dizziness on standing. There are no focal neurological signs. Oral temperature is 36.8 °C and 36.7 °C on two readings, and CK is normal. She is alert, attends well and is fully oriented. Her mood and delusions have begun to improve.",
+    "stem": "A 67-year-old retired midwife from Orion has major depressive disorder with psychotic features. She has taken sertraline 100 mg daily, unchanged, for 2 years. Risperidone 2 mg at night was added 3 weeks ago for nihilistic delusions. Over the past week her husband has noticed that she walks slowly with small steps, no longer swings either arm and has a fixed, staring face. On examination both wrists show constant resistance through the whole range of passive movement, with cogwheeling, and there is a slight 4-per-second tremor of both hands at rest that stops when she reaches for a glass; the right side is a little worse than the left. She has never had a tremor or slowness before. Her sense of smell is normal, her husband has never seen her act out dreams, and she has no constipation, urinary urgency or dizziness on standing. There are no focal neurological signs. Oral temperature is 36.8 °C and 36.7 °C on two readings, heart rate 76 and blood pressure 128/78 are at her baseline, and CK is normal. She is alert, attends well and is fully oriented. Her mood and delusions have begun to improve.",
     "q": "What is the most likely diagnosis for the motor picture?",
     "choices": [
       "Parkinson’s disease, newly presenting",
@@ -23,11 +25,11 @@ SP.add("ch21", "vignettes", [
       "Psychomotor retardation of her major depressive episode"
     ],
     "answer": 1,
-    "why": "Tremor, rigidity and slowness appeared **on both sides over days to weeks**, about **3 weeks after a D2-blocking antipsychotic** was started, which the manual calls highly suggestive of MIP (p. 808); onset 2–4 weeks after a DRBA is typical (p. 808). The features that point to **Parkinson’s disease** (hyposmia, REM sleep behavior disorder, autonomic symptoms) are absent (p. 809). Slight asymmetry **does not exclude** MIP (p. 808). The cause is an antipsychotic, so the code is **G21.11**.",
+    "why": "Tremor, rigidity and slowness appeared **on both sides over days to weeks**, about **2 weeks after a D2-blocking antipsychotic** was started, which the manual calls highly suggestive of MIP (p. 808); onset 2–4 weeks after a DRBA is typical (p. 808). The features that point to **Parkinson’s disease** (hyposmia, REM sleep behavior disorder, autonomic symptoms) are absent (p. 809). Slight asymmetry **does not exclude** MIP (p. 808). The cause is an antipsychotic, so the code is **G21.11**.",
     "whyNot": [
       "Parkinson’s disease usually begins on one side and progresses asymmetrically, and is suggested by hyposmia, dream enactment and autonomic symptoms, all absent here (pp. 808–809).",
       "Correct.",
-      "NMS requires hyperthermia on at least two oral readings, with raised CK; both are normal (p. 810).",
+      "NMS is distinguished by hyperthermia on at least two oral readings, usually with a raised CK, autonomic instability and a change in mental status; she has none of these (p. 810).",
       "SSRIs can cause parkinsonism (p. 808), but sertraline has been unchanged for 2 years; the onset follows the risperidone, so the temporal link points to the antipsychotic (p. 807).",
       "Her depression is improving, and depressive slowing does not produce constant rigidity, cogwheeling and a rest tremor (p. 810)."
     ],
@@ -65,7 +67,7 @@ SP.add("ch21", "vignettes", [
   {
     "id": "v21-03",
     "tag": "Slowed down: depression or the drug?",
-    "stem": "A 45-year-old fish-port supervisor has major depressive disorder with psychotic features. Escitalopram 20 mg has been unchanged for 3 months; haloperidol 5 mg twice daily was added 4 weeks ago for guilty delusions. His wife brings him back because his depression “is worse”: he moves slowly, hardly changes expression and needs help to button his shirt. He says his mood is much better, he sleeps through to 6 a.m., his appetite has returned, he feels no guilt and he is hopeful about going back to work; the delusions have faded. On examination he blinks rarely, has resistance that is constant through the full range of movement at both wrists with cogwheeling, reduced arm swing on both sides and small handwriting. He is not mute, has no posturing or negativism and follows every instruction. Oral temperature 36.7 °C and 36.8 °C; CK normal. He is alert, attentive and oriented.",
+    "stem": "A 45-year-old fish-port supervisor has major depressive disorder with psychotic features. Escitalopram 20 mg has been unchanged for 3 months; haloperidol 5 mg twice daily was added 4 weeks ago for guilty delusions. His wife brings him back because his depression “is worse”: over the past 10 days he has slowed down, hardly changes expression and needs help to button his shirt. He says his mood is much better, he sleeps through to 6 a.m., his appetite has returned, he feels no guilt and he is hopeful about going back to work; the delusions have faded. On examination he blinks rarely, has resistance that is constant through the full range of movement at both wrists with cogwheeling, reduced arm swing on both sides and small handwriting. He is not mute, has no posturing or negativism and follows every instruction. Oral temperature 36.7 °C and 36.8 °C; heart rate 78 and blood pressure 124/80, his usual values; CK normal. He is alert, attentive and oriented.",
     "q": "What best explains his slowness?",
     "choices": [
       "G21.11 antipsychotic medication– and other dopamine receptor blocking agent–induced parkinsonism",
@@ -75,12 +77,12 @@ SP.add("ch21", "vignettes", [
       "Worsening major depressive episode with psychomotor retardation"
     ],
     "answer": 0,
-    "why": "Depressive slowing and drug-induced akinesia can look the same, but depression usually brings **vegetative signs, hopelessness and despair** (p. 810), and he has none of them: his mood, sleep and appetite have recovered. What he does have is the **examination of parkinsonism**: constant rigidity, cogwheeling, reduced blink and arm swing and micrographia (pp. 808–809), starting **4 weeks after haloperidol** (p. 808). These associated signs are what separate MIP from psychiatric slowing (p. 810).",
+    "why": "Depressive slowing and drug-induced akinesia can look the same, but depression usually brings **vegetative signs, hopelessness and despair** (p. 810), and he has none of them: his mood, sleep and appetite have recovered. What he does have is the **examination of parkinsonism**: constant rigidity, cogwheeling, reduced blink and arm swing and micrographia (pp. 808–809), starting **within 3 weeks of starting haloperidol** (p. 808). These associated signs are what separate MIP from psychiatric slowing (p. 810).",
     "whyNot": [
       "Correct.",
       "He is not mute, has no posturing or negativism and cooperates fully; the rigidity is constant, not the inconsistent kind seen in psychiatric conditions (p. 810).",
       "Nothing suggests a preexisting neurological disease (no earlier slowness, no hyposmia or dream enactment), and the onset follows the antipsychotic (pp. 808–809).",
-      "Two normal oral temperatures and a normal CK rule out NMS (p. 810).",
+      "He has no fever, no autonomic instability, no change in mental status and a normal CK, so nothing points to NMS (pp. 810–811).",
       "His mood, sleep, appetite and hope have returned; the slowness comes with parkinsonian signs, not with depressive ones (p. 810)."
     ],
     "discuss": [
@@ -91,7 +93,7 @@ SP.add("ch21", "vignettes", [
   {
     "id": "v21-04",
     "tag": "Stiff and still: catatonia or parkinsonism?",
-    "stem": "A 26-year-old woman with schizophrenia was started on haloperidol 10 mg daily 3 weeks ago during an admission for persecutory delusions. The ward team now wonders whether she is becoming catatonic: she sits still, her face is blank and she speaks little. On examination she answers every question, slowly but fully, follows commands, and says she feels “stiff like wood” and asks for something to help. Resistance to passive movement of her elbows and wrists is the same from the start to the end of the range, with ratchet-like catches at the wrists; there is a 4-per-second tremor of both hands at rest, and she walks with short steps and no arm swing. There is no posturing, no waxy flexibility, no echolalia or echopraxia, no negativism and no mutism. Before the haloperidol she moved normally. Oral temperature is 37.0 °C and 36.9 °C, CK normal, and she is alert, attentive and oriented.",
+    "stem": "A 26-year-old woman with schizophrenia was started on haloperidol 10 mg daily 3 weeks ago during an admission for persecutory delusions. The ward team now wonders whether she is becoming catatonic: over the past week she has come to sit still, her face is blank and she speaks little. On examination she answers every question, slowly but fully, follows commands, and says she feels “stiff like wood” and asks for something to help. Resistance to passive movement of her elbows and wrists is the same from the start to the end of the range, with ratchet-like catches at the wrists; there is a 4-per-second tremor of both hands at rest, and she walks with short steps and no arm swing. There is no posturing, no waxy flexibility, no echolalia or echopraxia, no negativism and no mutism. Before the haloperidol she moved normally. Oral temperature is 37.0 °C and 36.9 °C, heart rate 80 and blood pressure 118/76 (her baseline), CK normal, and she is alert, attentive and oriented.",
     "q": "What is the most likely explanation?",
     "choices": [
       "Catatonia associated with schizophrenia (F06.1)",
@@ -101,12 +103,12 @@ SP.add("ch21", "vignettes", [
       "G21.11 antipsychotic medication– and other dopamine receptor blocking agent–induced parkinsonism"
     ],
     "answer": 4,
-    "why": "The decisive finding is the **quality of the rigidity**: in parkinsonism the resistance is **constant through the full range** (lead-pipe), whereas rigidity in psychiatric conditions is **inconsistent** (p. 810). Add the cogwheeling, rest tremor and gait, the onset **3 weeks after haloperidol** (p. 808), and her **distress and request for help**, and the picture is MIP. Catatonic signs are absent.",
+    "why": "The decisive finding is the **quality of the rigidity**: in parkinsonism the resistance is **constant through the full range** (lead-pipe), whereas rigidity in psychiatric conditions is **inconsistent** (p. 810). Add the cogwheeling, rest tremor and gait, the onset **about 2 weeks after haloperidol** (p. 808), and her **distress and request for help** (the manual uses this contrast for dystonia versus catatonia, p. 813; app reading), and the picture is MIP. Catatonic signs are absent.",
     "whyNot": [
       "She shows none of the catatonic signs, and catatonic rigidity is not constant through the range (p. 810).",
       "The manual notes rigidity can occur in this disorder, but it is not constant through the range, and her signs fit a drug effect with a clear temporal link (p. 810).",
-      "Temperature and CK are normal on repeat, and she is alert and oriented (p. 810).",
-      "Negative symptoms do not produce lead-pipe rigidity, cogwheeling or a rest tremor, and they did not begin 3 weeks after a drug (pp. 808–810).",
+      "She is afebrile on two readings, with a normal CK and stable vitals, and she is alert and oriented (p. 810).",
+      "Negative symptoms do not produce lead-pipe rigidity, cogwheeling or a rest tremor, and they did not begin within weeks of a new drug (pp. 808–810).",
       "Correct."
     ],
     "discuss": [
@@ -117,7 +119,7 @@ SP.add("ch21", "vignettes", [
   {
     "id": "v21-05",
     "tag": "The trembling lips",
-    "stem": "A 52-year-old man with schizophrenia was started on haloperidol 10 mg daily 5 weeks ago; he had never taken an antipsychotic before. His sister notices that his lips “shiver”. On examination there are fast, regular, up-and-down movements of the lips at about 5 per second, seen while he sits quietly with his mouth closed; the tongue is not involved. The movement stops while he talks or sips water and returns when he is at rest. He also has mild cogwheeling at both wrists and a reduced arm swing. There are no writhing or irregular movements of the tongue, jaw or limbs, no sustained abnormal postures, and no tremor when he holds his arms out. He is calm and is not restless. He has no tics and no history of repetitive movements in childhood.",
+    "stem": "A 52-year-old man with schizophrenia was started on haloperidol 10 mg daily 5 weeks ago; he had never taken an antipsychotic before. For the past 2 weeks his sister has noticed that his lips “shiver”. On examination there are regular, rhythmic, up-and-down movements of the lips at about 5 per second, seen while he sits quietly with his mouth closed; the tongue is not involved. The movement stops while he talks or sips water and returns when he is at rest. He also has mild cogwheeling at both wrists and a reduced arm swing. There are no writhing or irregular movements of the tongue, jaw or limbs, no sustained abnormal postures, and no tremor when he holds his arms out. He is calm and is not restless. He has no tics and no history of repetitive movements in childhood.",
     "q": "Which diagnosis fits the lip movement best?",
     "choices": [
       "G24.01 tardive dyskinesia",
@@ -127,7 +129,7 @@ SP.add("ch21", "vignettes", [
       "Stereotypic movement disorder"
     ],
     "answer": 2,
-    "why": "A **regular 3–6 Hz** tremor **at rest** that is **suppressed by action** is parkinsonian, and the manual notes it can involve the lips, which is called **“rabbit syndrome”** (p. 808). It began **5 weeks after starting haloperidol** and comes with cogwheeling and reduced arm swing, other signs of MIP.",
+    "why": "A **regular 3–6 Hz** tremor **at rest** that is **suppressed by action** is parkinsonian, and the manual notes it can involve the lips, which is called **“rabbit syndrome”** (p. 808). It began **about 3 weeks after starting haloperidol** and comes with cogwheeling and reduced arm swing, other signs of MIP.",
     "whyNot": [
       "TD movements are irregular (choreiform, athetoid or semirhythmic), not a steady 3–6 Hz tremor, and he has only 5 weeks of exposure; under 60 he needs at least 3 months (pp. 814–815).",
       "Acute dystonia is a sustained contraction or posture, not a rhythmic tremor, and most cases start within days (p. 812).",
@@ -148,7 +150,7 @@ SP.add("ch21", "vignettes", [
     "choices": [
       "G21.11 antipsychotic medication– and other dopamine receptor blocking agent–induced parkinsonism",
       "G21.0 neuroleptic malignant syndrome",
-      "Catatonia associated with schizophrenia (F06.1), malignant form",
+      "Catatonia associated with schizophrenia (F06.1), presenting as malignant catatonia",
       "Serotonin syndrome",
       "Heat stroke"
     ],
@@ -158,7 +160,7 @@ SP.add("ch21", "vignettes", [
       "MIP does not cause fever, autonomic instability or a CK this high; those findings separate NMS from MIP (p. 809).",
       "Correct.",
       "Malignant catatonia can be indistinguishable from NMS (p. 811), but here catatonic signs were absent before the antipsychotic and appeared only with the rest of the syndrome after it.",
-      "He has received no serotonergic drug, and lead-pipe rigidity with very high CK fits NMS (p. 811).",
+      "He has received no serotonergic drug, and lead-pipe rigidity with very high CK fits NMS (pp. 810–811; the contrast with serotonin syndrome is outside the DSM).",
       "He was indoors in an air-conditioned ward, and heat stroke does not explain generalized rigidity after a new dopamine blocker (p. 811)."
     ],
     "discuss": [
@@ -183,7 +185,7 @@ SP.add("ch21", "vignettes", [
     "whyNot": [
       "MIP does not cause confusion, autonomic swings or this CK rise, and the manual expects fever to come later in NMS (pp. 809–811).",
       "Her inattention and disorientation are real, but they are part of the NMS picture (delirium is one of its mental status changes, p. 810); calling rigidity, autonomic instability and CK incidental ignores the syndrome.",
-      "Catatonic signs did not precede the drug, and adding more DRBA to an evolving NMS is dangerous (p. 811).",
+      "Catatonic signs did not precede the drug, and the manual notes NMS is self-limited once the DRBA is stopped (p. 811); adding more DRBA is dangerous (outside the DSM).",
       "Correct.",
       "Acute dystonia is a focal or segmental posture without confusion, autonomic instability or high CK (pp. 812–813)."
     ],
@@ -200,7 +202,7 @@ SP.add("ch21", "vignettes", [
       "whyNot": [
         "NMS rigidity usually does not respond to antiparkinsonian drugs (p. 810), and continuing the DRBA keeps the cause in place.",
         "Correct.",
-        "Any DRBA can cause NMS, low-potency ones included (p. 811); adding another is unsafe.",
+        "Nearly all DRBAs, low-potency ones included, have been associated with NMS (p. 811); adding another is unsafe (outside the DSM).",
         "Waiting for the full picture delays recognition, which is when deaths occur (p. 811)."
       ]
     },
@@ -222,7 +224,7 @@ SP.add("ch21", "vignettes", [
       "G21.0 neuroleptic malignant syndrome"
     ],
     "answer": 0,
-    "why": "The manual lists **serotonin syndrome** first among drug-related look-alikes of NMS (p. 811). Here the **serotonergic combination**, onset **within hours**, **clonus, hyperreflexia, tremor, diarrhea and dilated pupils**, normal tone and only a slight CK rise all point to it. There is **no dopamine blocker** at all, so NMS is not the diagnosis (p. 810). The manual also notes that tremor can be an **early sign** of serotonin syndrome (p. 817).",
+    "why": "The manual lists **serotonin syndrome** first among drug-related look-alikes of NMS (p. 811). Here the **serotonergic combination**, onset **within hours**, **clonus, hyperreflexia, tremor, diarrhea and dilated pupils**, normal tone and only a slight CK rise all point to it (these features are outside the DSM). There is **no dopamine blocker** at all, so NMS is not the diagnosis (p. 810). The manual also notes that tremor can be an **early sign** of serotonin syndrome (p. 817).",
     "whyNot": [
       "Correct.",
       "The G25.79 example is a presentation that resembles NMS; this one has the features of serotonin syndrome, which the manual names as a separate condition (pp. 811, 818; app reading).",
@@ -245,7 +247,7 @@ SP.add("ch21", "vignettes", [
       "Heat stroke",
       "G25.79 other medication-induced movement disorder",
       "Catatonic disorder due to another medical condition (F06.1)",
-      "Catatonia associated with schizophrenia (F06.1), malignant form"
+      "Catatonia associated with schizophrenia (F06.1), presenting as malignant catatonia"
     ],
     "answer": 4,
     "why": "Fever, rigidity and autonomic instability here make **malignant catatonia**, which the manual says may be **indistinguishable from NMS** (p. 811). The deciding facts are the **sequence** (catatonic signs for days **before** any hyperthermia) and the **absence of any dopamine antagonist** in the preceding 6 months. NMS by definition follows exposure to a dopamine antagonist, generally **within 72 hours** (p. 810). The manual names malignant catatonia in schizophrenia or a mood disorder as the key look-alike (pp. 807, 811).",
@@ -290,7 +292,7 @@ SP.add("ch21", "vignettes", [
   {
     "id": "v21-11",
     "tag": "Eyes up, then the airway",
-    "stem": "A 19-year-old male college student with first-episode psychosis was given haloperidol 5 mg intramuscularly in the emergency department 20 hours ago and started on haloperidol 5 mg orally twice daily; he takes nothing else. For the past 40 minutes his eyes have been forced upward and he cannot bring them down; his neck is arched backward. He is frightened, says his eyes are “pulling up by themselves”, and keeps asking the nurses to help him. Oral temperature is 36.9 °C and 37.0 °C, heart rate 96. Tone in his limbs is normal, and there is no rigidity elsewhere. He has no history of seizures, is not confused, and follows every instruction he can.",
+    "stem": "A 19-year-old male college student with first-episode psychosis was given haloperidol 5 mg intramuscularly in the emergency department 20 hours ago and started on haloperidol 5 mg orally twice daily; he takes nothing else. For the past 40 minutes his eyes have been forced upward and he cannot bring them down; his neck is arched backward. He is frightened, says his eyes are “pulling up by themselves”, and keeps asking the nurses to help him. Oral temperature is 36.9 °C and 37.0 °C, heart rate 96, blood pressure 126/78, and CK is normal. Tone in his limbs is normal, and there is no rigidity elsewhere. He has no history of seizures, is not confused, and follows every instruction he can.",
     "q": "What is the most likely diagnosis?",
     "choices": [
       "Catatonia associated with a psychotic disorder (F06.1)",
@@ -306,7 +308,7 @@ SP.add("ch21", "vignettes", [
       "Correct.",
       "The manual warns that dystonia can be mistaken for part of the psychosis, leading to a higher dose of the drug that caused it (p. 812).",
       "Tardive dystonia emerges late in treatment; this appeared within a day of the first dose (p. 816).",
-      "He is fully responsive and the posture began within a day of a DRBA, the typical timing of acute dystonia (p. 812)."
+      "He is fully responsive and the posture began within a day of a DRBA, the typical timing of acute dystonia (p. 812); seizures are a mimic the manual lists (p. 813)."
     ],
     "then": {
       "q": "An hour later, before treatment is given, he clutches his throat, his voice becomes hoarse, and there is a high-pitched noise on breathing in; he is struggling to breathe. There is no rash, no lip or tongue swelling and blood pressure is normal; he has eaten nothing new. What is the most likely explanation?",
@@ -333,7 +335,7 @@ SP.add("ch21", "vignettes", [
   {
     "id": "v21-12",
     "tag": "Twisted neck, no distress",
-    "stem": "A 34-year-old woman with major depressive disorder with psychotic features stopped eating and talking 4 days ago. Her husband says that since then she has held her head turned sharply to the left and her right arm raised, for hours, and resists when anyone tries to move them. She was admitted yesterday and given olanzapine 5 mg for the first time last night; she had taken no antipsychotic, antiemetic or other medication before. This morning, the posture is unchanged. Intramuscular benztropine given 2 hours ago made no difference. She is mute, does not follow commands, does not look at the examiner and shows no sign of distress about the posture. Oral temperature 37.0 °C and 37.1 °C, heart rate 84, CK normal. There are no other neurological signs.",
+    "stem": "A 34-year-old woman with major depressive disorder with psychotic features stopped eating and talking 4 days ago. Her husband says that since then she has held her head turned sharply to the left and her right arm raised, for hours, and resists when anyone tries to move them. She was admitted yesterday and given olanzapine 5 mg for the first time last night; she had taken no antipsychotic, antiemetic or other medication before. This morning, the posture is unchanged. Intramuscular benztropine given 2 hours ago made no difference. She is mute, does not follow commands, does not look at the examiner and shows no sign of distress about the posture. Oral temperature 37.0 °C and 37.1 °C, heart rate 84, blood pressure 118/74, CK normal. There are no other neurological signs.",
     "q": "What is the most likely explanation for the posture?",
     "choices": [
       "G24.02 medication-induced acute dystonia, cervical (torticollis)",
@@ -346,7 +348,7 @@ SP.add("ch21", "vignettes", [
     "why": "The manual gives three clues that separate catatonia from acute dystonia: the **timing** (the posture **preceded** the antipsychotic), the **response to treatment** (no change with an anticholinergic), and **subjective distress** (people with acute dystonia are usually upset and seek help, whereas those with **retarded catatonia** are **mute, withdrawn and not distressed**) (p. 813). All three point to catatonia in her depressive episode.",
     "whyNot": [
       "The posture began days before her first antipsychotic dose, did not respond to benztropine, and she shows no distress (p. 813).",
-      "She is afebrile with normal CK on repeat (p. 810).",
+      "She is afebrile on two readings, with a normal heart rate, blood pressure and CK (p. 810).",
       "Tardive dystonia needs long exposure; she had none before last night (p. 816).",
       "Correct.",
       "Mutism, refusal to eat and a held arm posture are not explained by an isolated neck dystonia, and the picture began with her depressive illness."
@@ -359,7 +361,7 @@ SP.add("ch21", "vignettes", [
   {
     "id": "v21-13",
     "tag": "Restless: anxiety or the dose?",
-    "stem": "A 35-year-old construction worker with schizophrenia was started on risperidone 2 mg daily 3 weeks ago. Ten days later he began to pace the ward. The team read this as anxiety and psychotic agitation and raised risperidone to 4 mg 5 days ago; since then the restlessness has become much worse. He says he has to keep moving his legs, the feeling is inside his legs, and he cannot sit through a 10-minute interview: when asked to stay seated he rocks his legs constantly and then stands to shift from foot to foot. He says “this is not like my nerves before.” His voices are quieter than on admission. He drinks no coffee, urine toxicology is negative, and hemoglobin and ferritin are normal. He has no history of ADHD, no mood episode and no neurological illness. The team is considering a further increase.",
+    "stem": "A 35-year-old construction worker with schizophrenia was started on risperidone 2 mg daily 3 weeks ago. Ten days later he began to pace the ward. The team read this as anxiety and psychotic agitation and raised risperidone to 4 mg 5 days ago; since then the restlessness has become much worse. He says he has to keep moving his legs, the feeling is inside his legs, and he cannot sit through a 10-minute interview: when asked to stay seated he rocks his legs constantly and then stands to shift from foot to foot. He says “this is not like my nerves before.” His voices are quieter than on admission. He drinks no coffee, uses no alcohol or drugs and has not stopped any substance, urine toxicology is negative, and hemoglobin and ferritin are normal. He has no history of ADHD, no mood episode and no neurological illness. The team is considering a further increase.",
     "q": "What is the most likely diagnosis?",
     "choices": [
       "G25.71 medication-induced acute akathisia",
@@ -456,7 +458,7 @@ SP.add("ch21", "vignettes", [
       "A postural tremor is a regular 8–12 Hz oscillation when holding a posture (p. 817)."
     ],
     "discuss": [
-      "State the four time rules for TD: movement duration, exposure length for under-60s and over-60s, and the window after stopping oral and long-acting drugs (p. 815).",
+      "State the four time rules for TD: movement duration, exposure length for under-60s and over-60s, and the window after stopping oral and long-acting drugs (pp. 814–815).",
       "His wife is more distressed than he is. How does the manual describe the social cost of mild TD (p. 815)?"
     ]
   },
@@ -508,7 +510,7 @@ SP.add("ch21", "vignettes", [
       "Acute dystonia is a sustained posture that usually appears within days (p. 812)."
     ],
     "discuss": [
-      "Why does the manual shorten the exposure rule for older people (pp. 815–816)?",
+      "The manual states the shorter exposure rule as “age 60 years or older” on p. 815 but “middle-age and elderly” on p. 816. Which wording would you use on an exam, and why might the rule be shorter for older people?",
       "What would you tell her son about the likely course if risperidone is continued (p. 816)?"
     ]
   },
@@ -541,7 +543,7 @@ SP.add("ch21", "vignettes", [
   {
     "id": "v21-20",
     "tag": "Chorea before the drug",
-    "stem": "A 44-year-old jeepney dispatcher was started on haloperidol 5 mg daily 5 months ago for jealous and persecutory beliefs. His wife says that for about 2 years, well before any antipsychotic, he has had restless, jerky, flowing movements of his face, shoulders and hands, and he often drops things. Over the same 2 years he has become forgetful, slow to plan and irritable. His father became “restless and forgetful” in his forties and died at 55 in a nursing home. On examination there are irregular, nonrhythmic, quick movements of the face, trunk and limbs, with slow eye movements on looking side to side. There is no rest tremor or rigidity. MRI shows atrophy of the caudate nuclei.",
+    "stem": "A 44-year-old jeepney dispatcher was started on haloperidol 5 mg daily 5 months ago for jealous and persecutory beliefs. His wife says that for about 2 years, well before any antipsychotic, he has had restless, jerky, flowing movements of his face, shoulders and hands, and he often drops things. His wife says the movements have looked the same since the haloperidol was started. Over the same 2 years he has become forgetful, slow to plan and irritable. His father became “restless and forgetful” in his forties and died at 55 in a nursing home. On examination there are irregular, nonrhythmic, quick movements of the face, trunk and limbs, with slow eye movements on looking side to side. There is no rest tremor or rigidity. MRI shows atrophy of the caudate nuclei.",
     "q": "Which conclusion is most accurate about the movements?",
     "choices": [
       "G24.01 tardive dyskinesia, since he has had more than 3 months of haloperidol",
@@ -632,7 +634,7 @@ SP.add("ch21", "vignettes", [
     "why": "The manual’s first example for this residual category is a presentation **resembling NMS** that is linked to a medication **other than an antipsychotic or other DRBA** (p. 818). Tetrabenazine **depletes** dopamine rather than **blocking its receptors** (the manual lists it among dopamine depleters, p. 808). The G21.0 description requires exposure to a **dopamine antagonist** (p. 810). The syndrome (fever, rigidity, autonomic instability, high CK) is fully NMS-like, so **G25.79** fits.",
     "whyNot": [
       "Correct.",
-      "He takes no serotonergic drug, has no clonus or hyperreflexia, and has lead-pipe rigidity with a high CK (p. 811).",
+      "He takes no serotonergic drug, has no clonus or hyperreflexia, and has lead-pipe rigidity with a high CK (serotonin syndrome is named on p. 811; its features are outside the DSM).",
       "He has had no dopamine receptor blocker, which the NMS description requires (p. 810); the manual sends NMS-like pictures from other drugs to G25.79 (p. 818).",
       "Fever, autonomic instability and a high CK go beyond parkinsonism (p. 809).",
       "The syndrome followed a dose increase of a drug the manual links to these effects, and Huntington’s disease does not cause hyperthermia and lead-pipe rigidity."
@@ -655,7 +657,7 @@ SP.add("ch21", "vignettes", [
       "T43.205A antidepressant discontinuation syndrome, initial encounter"
     ],
     "answer": 4,
-    "why": "Symptoms began **2–4 days after the last dose** of a **short half-life** antidepressant stopped abruptly, and **venlafaxine** is one of the two agents most often implicated (p. 818). Dizziness, tinnitus, **“electric shock” sensations**, insomnia and acute anxiety are the symptoms described with serotonin reuptake inhibitors (p. 818). She **never had hypomania or a mixed state** on treatment, which the manual requires (p. 818), and there is **no craving, dose escalation or drug-seeking** (p. 819). This is her first visit for it, so the seventh character is **A**.",
+    "why": "Symptoms began **2–4 days after the last dose** of a **short half-life** antidepressant stopped abruptly, and **venlafaxine** is one of the two agents most often implicated (p. 818). Dizziness, tinnitus, **“electric shock” sensations**, insomnia and acute anxiety are the symptoms the manual describes for SSRIs (p. 818); venlafaxine also blocks serotonin reuptake, and the manual names it among the commonest causes. She **never had hypomania or a mixed state** on treatment, which the manual requires (p. 818), and there is **no craving, dose escalation or drug-seeking** (pp. 818–819). She is receiving active treatment for it, so the encounter is initial: **A** (ICD-10-CM ties A to active treatment, not to the visit count; app note).",
     "whyNot": [
       "Her mood, interest and hope are intact; the manual stresses not confusing discontinuation with relapse (p. 819).",
       "The anxiety arose with dizziness and sensory symptoms 2 days after stopping, without recurrent unexpected panic attacks (p. 819).",
@@ -677,12 +679,12 @@ SP.add("ch21", "vignettes", [
         "Correct.",
         "His symptoms are the stimulant-withdrawal cluster, and the manual directs this situation to stimulant withdrawal (p. 818).",
         "The low mood began within days of stopping a stimulant, with the full withdrawal cluster; a relapse would not explain the timing and the vivid dreams and hyperphagia as well (app reading).",
-        "Wrong syndrome, and D is for a subsequent encounter, not a first presentation (p. 818)."
+        "Wrong syndrome, and D is for a subsequent encounter after active treatment, not this first presentation (codes p. 818; meaning of D per ICD-10-CM, app note)."
       ]
     },
     "discuss": [
       "Why does the manual insist that prior antidepressant treatment did not cause hypomania or a mixed state (p. 818)?",
-      "How would you use the timing of onset and offset (2–4 days to start, usually gone within 2 weeks, p. 819) to tell discontinuation from relapse?"
+      "How would you use the timing of onset and offset (2–4 days to start, p. 818; usually gone within 2 weeks, p. 819) to tell discontinuation from relapse?"
     ]
   },
   {
@@ -698,7 +700,7 @@ SP.add("ch21", "vignettes", [
       "No code: side effects belong only in the medication list"
     ],
     "answer": 2,
-    "why": "The manual offers an **optional** code for medication side effects **other than movement symptoms** when they become a **main focus of clinical attention**, and it names **priapism** as an example, with severe hypotension and arrhythmias (p. 819). This is the first encounter for the effect, so the seventh character is **A** (p. 819). App note: ICD-10-CM has more specific drug-class adverse-effect codes and asks that the nature of the effect be coded first; the DSM lists only T50.905 for this category.",
+    "why": "The manual offers an **optional** code for medication side effects **other than movement symptoms** when they become a **main focus of clinical attention**, and it names **priapism** as an example, with severe hypotension and arrhythmias (p. 819). He is receiving active treatment for the effect, so the encounter is initial: **A** (code p. 819; ICD-10-CM ties A to active treatment, app note). App note: ICD-10-CM has more specific drug-class adverse-effect codes and asks that the nature of the effect be coded first; the DSM lists only T50.905 for this category.",
     "whyNot": [
       "He has not stopped an antidepressant; T43.205 is for discontinuation symptoms (p. 818).",
       "Priapism is not a movement disorder; this category covers movement presentations only (p. 818).",
@@ -708,7 +710,7 @@ SP.add("ch21", "vignettes", [
     ],
     "discuss": [
       "Which other non-movement side effects of psychotropics might reasonably become “a main focus of clinical attention” in a psychiatric ward?",
-      "What would change in the record at his follow-up visit next week (p. 819)?"
+      "What would change in the record at a follow-up visit after active treatment has ended (p. 819; ICD-10-CM seventh-character rules, app note)?"
     ]
   }
 ]);
