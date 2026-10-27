@@ -5,7 +5,7 @@
 (function () {
   var ASOF = "October 2026";
   var TIMELINE = "Build a **medication timeline** first: every start, dose increase, depot injection, anticholinergic reduction and discontinuation, with dates (the manual anchors every condition in this chapter to such a change, pp. 807–819).";
-  var ADHERE = "Ask about **adherence and distress**: each acute syndrome is tied to nonadherence (pp. 807, 812, 813, 817) and akathisia to suicide attempts (p. 813).";
+  var ADHERE = "Ask about **adherence and distress**: parkinsonism, acute dystonia, akathisia and lithium tremor are each tied to nonadherence (pp. 807, 812, 813, 817) and akathisia to suicide attempts (p. 813).";
   var LOCAL = "In the Philippines, high-potency first-generation agents remain common in public services and VMAT2 inhibitors are not generally available, so prevention (lowest effective dose, lower-potency choices, early recognition) is the main strategy; benztropine, diphenhydramine and propranolol are the usual tools (app note; verify local formularies).";
   function care(first, points, stahl) {
     return { asOf: ASOF, first: "Outside the DSM: " + first, points: [TIMELINE].concat(points).concat([ADHERE, LOCAL]), stahl: stahl || [] };
@@ -38,7 +38,7 @@
     "Do not rely on a dose increase: it only suppresses TD temporarily (p. 815).",
     "Remember the trap: anticholinergics worsen TD, and VMAT2 inhibitors worsen parkinsonism (p. 816).",
     "Where VMAT2 inhibitors are unavailable, prevention and the lowest effective dose are the realistic approach (app note).",
-    "VMAT2 inhibitors were approved for TD in 2017; once-daily deutetrabenazine (2023) and valbenazine sprinkle capsules (2024) followed; no new class since (checked October 2026)."
+    "VMAT2 inhibitors were approved for TD in 2017; once-daily deutetrabenazine (2023) and valbenazine sprinkle capsules (2024) followed; no new class identified (checked October 2026)."
   ], [["Tardive dyskinesia: how the brain learns it", "c/ch05/guide/s5-td"], ["VMAT2 inhibitors", "c/ch05/guide/s5-vmat2"], ["Valbenazine", "drugs/valbenazine"], ["Deutetrabenazine", "drugs/deutetrabenazine"], ["Tetrabenazine", "drugs/tetrabenazine"]]);
 
   var TARD_CARE = care("the same principles as tardive dyskinesia: review the need for the dopamine blocker, avoid anticholinergics for tardive dyskinesia, and refer for movement-disorder assessment when dystonia or akathisia persists after the drug is stopped (app guidance).", [
@@ -184,7 +184,7 @@
       id: "neuro-symptoms",
       items: [
         { ch: "ch21", dx: "medication-induced-acute-dystonia", when: "Twisting postures, eye deviation or throat tightness within days of a dopamine blocker, including an antiemetic (p. 812)." },
-        { ch: "ch21", dx: "medication-induced-postural-tremor", when: "A fine action tremor on lithium, valproate or another listed drug, absent at rest (p. 817)." }
+        { ch: "ch21", dx: "medication-induced-postural-tremor", when: "A fine postural tremor (may worsen with action) on lithium, valproate or another listed drug, absent at rest (p. 817)." }
       ]
     }
   ]);

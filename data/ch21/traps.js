@@ -14,7 +14,7 @@ SP.add("ch21", "traps", [
   { id: "t21-04", tag: "Tremor frequencies", sec: "s21-tremor",
     trap: "A fast, fine tremor on lithium is parkinsonism.",
     truth: "**8–12 Hz**, absent at rest and worse holding a posture is **medication-induced postural tremor**; the parkinsonian tremor is **3–6 Hz**, worst at rest and suppressed by action (pp. 808, 817)." },
-  { id: "t21-05", tag: "Two different 4s", sec: "s21-td",
+  { id: "t21-05", tag: "Movements vs exposure", sec: "s21-td",
     trap: "Tardive dyskinesia needs the movements to have lasted 3 months.",
     truth: "The **movements** need **at least 4 weeks**; the **3 months** (1 month at 60 or older) is the required **drug exposure** (pp. 814–815)." },
   { id: "t21-06", tag: "Age for 1 month", sec: "s21-td",

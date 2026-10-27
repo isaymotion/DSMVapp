@@ -43,7 +43,7 @@
         { label: "Code", options: G_CODES, answer: 1 }
       ],
       line: "**G21.19** Other medication-induced parkinsonism",
-      why: "**Lithium** is on the manual’s list of non-DRBA causes of parkinsonism (p. 808). The tremor is a **rest** tremor that settles with action, with rigidity, bradykinesia, micrographia and hypophonia: parkinsonism, not the **8–12 Hz** postural tremor that lithium more often causes (pp. 808–809, 817). No dopamine receptor blocker is involved, so the code is **G21.19**; G21.11 is reserved for antipsychotics and other DRBAs (p. 807). Coarsening with twitching or ataxia would instead raise toxicity (p. 817)."
+      why: "**Lithium** is on the manual’s list of non-DRBA causes of parkinsonism (p. 808). The tremor is a **rest** tremor that settles with action, with rigidity, bradykinesia, micrographia and hypophonia: parkinsonism, not the **8–12 Hz** postural tremor that lithium can also cause (pp. 808–809, 817). No dopamine receptor blocker is involved, so the code is **G21.19**; G21.11 is reserved for antipsychotics and other DRBAs (p. 807). Coarsening with twitching or ataxia would instead raise toxicity (p. 817)."
     },
     {
       id: "w21-03", tag: "Metoclopramide, febrile",
@@ -63,7 +63,7 @@
         { label: "Code", options: G_CODES, answer: 3 }
       ],
       line: "**G24.02** Medication-induced acute dystonia",
-      why: "Sustained abnormal postures (**oculogyric crisis**, **retrocollis**, jaw involvement) within **24–48 hours** of an antiemetic dopamine blocker (p. 812). Young males are the highest-risk group (p. 812). He is distressed and seeks help, unlike retarded catatonia; there is no fever or generalized rigidity to suggest NMS (p. 813). Acute dystonia is **G24.02**; tardive dystonia is G24.09."
+      why: "Sustained abnormal postures (**oculogyric crisis**, **retrocollis**, jaw involvement) within **24–48 hours** of an antiemetic dopamine blocker (p. 812). Children and adults under 40 are at highest risk, males more than females (p. 812). He is distressed and seeks help, unlike retarded catatonia; there is no fever or generalized rigidity to suggest NMS (p. 813). Acute dystonia is **G24.02**; tardive dystonia is G24.09."
     },
     {
       id: "w21-05", tag: "Sertraline, panic",
