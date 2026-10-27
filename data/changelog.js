@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 45,
+    date: "2026-10-27",
+    title: "Chapter 21: Medication-Induced Movement Disorders and Other Adverse Effects of Medication",
+    summary: "Chapter 21 is ready: parkinsonism, neuroleptic malignant syndrome, acute dystonia, acute akathisia, tardive dyskinesia and the other tardive syndromes, postural tremor, antidepressant discontinuation syndrome and the adverse-effect codes, with every time rule and figure the manual gives.",
+    items: [
+      { type: "chapter", ch: "ch21", text: "Chapter 21 study guide in 24 sections: why these non-mental-disorder conditions are in Section II and which drugs count as dopamine receptor blocking agents; medication-induced parkinsonism in three sections (causes and time course, the motor features and their consequences, the differential); neuroleptic malignant syndrome in three (the picture and thresholds, the figures, course and risk, the look-alikes); acute dystonia and acute akathisia with their differentials; tardive dyskinesia in three sections plus tardive dystonia and akathisia; postural tremor, the residual movement category, antidepressant discontinuation syndrome and the optional adverse-effect code; then a timing-and-type sorter, coding with the ICD-10-CM titles and seventh characters, a dated treatment orientation labeled as outside the DSM, and how the chapter is tested.", href: "#/c/ch21/guide", link: "Open Chapter 21" },
+      { type: "feature", text: "178 high-yield points, 44/44/44 criteria, differential and clinical cards, 40 board questions, 55 glossary terms and 8 mnemonics (including the published FINISH), and 11 new library entries with four compare presets and an onset time ladder.", href: "#/c/ch21/high-yield", link: "Chapter 21 high yield" },
+      { type: "feature", text: "New diagnostic helper: “Which medication-induced movement disorder, or something else?”, which rules out NMS first and then sorts by movement type and timing.", href: "#/helpers/movement", link: "Open the helper" },
+      { type: "update", ch: "ch21", text: "Current to October 2026: every code in the chapter (G21.11, G21.19, G21.0, G24.02, G25.71, G24.01, G24.09, G25.1, G25.79, T43.205A/D/S, T50.905A/D/S) is unchanged from FY2016 through the October 2026 ICD-10-CM update, and no APA DSM-5-TR update touches the chapter; the ICD-10-CM titles differ from the DSM names and G25.71 serves both acute and tardive akathisia. Treatment notes cover the 2020 APA guideline, the VMAT2 inhibitors and the 2024–2025 discontinuation-syndrome meta-analyses, labeled as outside the DSM.", href: "#/c/ch21/guide/s21-coding", link: "Coding and recording" }
+    ]
+  },
+  {
     id: 44,
     date: "2026-10-27",
     title: "Practice pack for Chapter 20",

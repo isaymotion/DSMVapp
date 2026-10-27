@@ -96,7 +96,7 @@ SP.add("ch21", "mnemonics", [
     "for": "The observed movements, at least one of which accompanies the subjective restlessness of acute akathisia",
     letters: [
       ["F", "Fidget", "Fidgety or swinging legs while seated"],
-      ["R", "Rock", "Rocking from foot to foot or 'walking on the spot' while standing"],
+      ["R", "Rock", "When standing, shifting weight from one foot to the other or marking time ('walking on the spot')"],
       ["P", "Pace", "Pacing to relieve the restlessness"],
       ["S", "can't Stay still", "Unable to sit or stand still for at least several minutes; at worst, unable to hold any position for more than a few seconds"]
     ],

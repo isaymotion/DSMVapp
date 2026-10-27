@@ -30,7 +30,8 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 | 18. Personality Disorders | Ready |
 | 19. Paraphilic Disorders | Ready |
 | 20. Other Mental Disorders and Additional Codes | Ready |
-| Chapters 21–22 | Listed in the menu as “Soon” |
+| 21. Medication-Induced Movement Disorders and Other Adverse Effects of Medication | Ready |
+| Chapter 22 | Listed in the menu as “Soon” |
 
 ## Case tools
 

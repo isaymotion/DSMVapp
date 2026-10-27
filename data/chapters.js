@@ -75,8 +75,9 @@ SP.manifest = [
   { id: 'ch20', number: 20, ready: true, pages: '803–806', title: 'Other Mental Disorders and Additional Codes', short: 'Other mental disorders',
     summary: 'The four chapter-wide residual categories and when they apply: other specified and unspecified mental disorder due to another medical condition (F06.8, F09; medical condition coded first, the dissociative-symptoms-from-seizures example) and other specified and unspecified mental disorder (both F99; the four conditions, including that no chapter-specific residual category fits); the additional code Z03.89, no diagnosis or condition; other specified versus unspecified; the Section I rules on principal diagnosis, listing the medical condition first and provisional diagnoses; and the codes, current to October 2026.',
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
-  { id: 'ch21', number: 21, ready: false, pages: '807–820', title: 'Medication-Induced Movement Disorders and Other Adverse Effects of Medication', short: 'Medication-induced movement',
-    summary: 'Neuroleptic malignant syndrome, medication-induced parkinsonism, dystonia, akathisia, tardive dyskinesia and related conditions, and antidepressant discontinuation syndrome.' },
+  { id: 'ch21', number: 21, ready: true, pages: '807–820', title: 'Medication-Induced Movement Disorders and Other Adverse Effects of Medication', short: 'Medication-induced movement',
+    summary: 'Why these non-mental-disorder conditions sit in Section II and the term “dopamine receptor blocking agent”; medication-induced parkinsonism (2–4 weeks, 3–6 Hz rest tremor, lead-pipe and cogwheel rigidity, G21.11 versus G21.19); neuroleptic malignant syndrome (72 hours, fever above 38.0 °C twice, CK four times normal, the figures and look-alikes); acute dystonia (24–48 hours, the laryngeal emergency) and acute akathisia (4 weeks, the dose-change clue); tardive dyskinesia (4 weeks, 3 months or 1 month at 60, 4 or 8 weeks after stopping, the anticholinergic and VMAT2 trap), tardive dystonia and akathisia; postural tremor (8–12 Hz, lithium); other medication-induced movement disorder; antidepressant discontinuation syndrome (2–4 days, paroxetine and venlafaxine, no craving) and the optional adverse-effect code, with the T-code seventh characters; codes current to October 2026 and a dated treatment orientation labeled as outside the DSM.',
+    files: SP.CHAPTER_FILES },
   { id: 'ch22', number: 22, ready: false, pages: '821–836', title: 'Other Conditions That May Be a Focus of Clinical Attention', short: 'Other conditions of clinical focus',
     summary: 'Suicidal behavior and nonsuicidal self-injury codes, relational, abuse and neglect, educational, occupational, housing, economic and other psychosocial problems.' }
 ];
@@ -143,6 +144,8 @@ SP.extraFiles = [
   'data/db/disorders-ch20.js',
   'data/helpers/ch20-residual.js',
   'data/db/clinical-ch20.js',
+  'data/db/disorders-ch21.js',
+  'data/helpers/ch21-movement.js',
   'data/tools/substance.js',
   'data/tools/scales.js',
   'data/tools/psychosis.js',
