@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 43,
+    date: "2026-10-27",
+    title: "Chapter 20: Other Mental Disorders and Additional Codes",
+    summary: "Chapter 20 is ready: the four chapter-wide residual categories (F06.8, F09 and the shared F99), the additional code Z03.89, other specified versus unspecified, the medical-condition-first recording rule and the Section I conventions the chapter relies on.",
+    items: [
+      { type: "chapter", ch: "ch20", text: "Chapter 20 study guide in 10 sections: how the four-page chapter is built, what makes a presentation a mental disorder and the four conditions for the chapter-wide categories, other specified and unspecified mental disorder due to another medical condition with the manual’s recording examples, other specified and unspecified mental disorder (both F99), Z03.89 no diagnosis or condition, the decision in order (chapter-specific residuals first), coding and recording with the Section I rules on principal diagnosis and provisional diagnoses (labeled), and how the chapter is tested.", href: "#/c/ch20/guide", link: "Open Chapter 20" },
+      { type: "feature", text: "High-yield points, criteria, differential and clinical decks, 16 board questions, glossary terms and 4 mnemonics for Chapter 20, and 5 new library entries (the four residual categories and the no-diagnosis code) with compare presets.", href: "#/c/ch20/high-yield", link: "Chapter 20 high yield" },
+      { type: "feature", text: "New diagnostic helper: “It fits no criteria set: which residual category, or no diagnosis?”", href: "#/helpers/residual", link: "Open the helper" },
+      { type: "update", ch: "ch20", text: "Current to October 2026: F06.8, F09, F99 and Z03.89 are unchanged in the October 2024, 2025 and 2026 ICD-10-CM updates, and no APA DSM-5-TR update (September 2022–2025) touches the chapter. The ICD-10-CM titles differ from the DSM names (Z03.89 is an “encounter for observation” code); record the DSM name. Since October 2022, mild neurocognitive disorder due to a medical condition is F06.70/F06.71, not F06.8.", href: "#/c/ch20/guide/s20-coding", link: "Coding and recording" }
+    ]
+  },
+  {
     id: 42,
     date: "2026-10-27",
     title: "Practice pack for Chapter 19",
