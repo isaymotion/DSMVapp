@@ -253,7 +253,7 @@
         { ch: "ch18", dx: "narcissistic-pd", when: "Exploitative but not aggressive or deceitful in the same way." },
         { ch: "ch03", dx: "bipolar-i", when: "Only during manic episodes." },
         { ch: "ch18", dx: "personality-change-amc", when: "A new change after brain injury or disease." },
-        { ch: "ch22", name: "Adult antisocial behavior (Z72.811)", when: "Crime for gain without personality features." }
+        { ch: "ch22", dx: "antisocial-behavior", when: "Crime for gain without personality features." }
       ]
     },
     {

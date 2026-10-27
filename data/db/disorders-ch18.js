@@ -102,7 +102,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "bipolar-i", how: "Antisocial acts only during mania." },
       { id: "narcissistic-pd", how: "No impulsivity, aggression or deceit; needs admiration." },
       { id: "borderline-pd", how: "Manipulates for nurturance; more emotionally unstable." },
-      { name: "Adult antisocial behavior", how: "Crime without the personality features (Z72.811)." }
+      { id: "antisocial-behavior", name: "Adult antisocial behavior", how: "Crime without the personality features (Z72.811)." }
     ],
     pearls: ["Never before 18.", "Conduct disorder before 15 is required.", "Use collateral information.", "Premature death from natural causes and suicide."],
     cmp: { symptoms: "Unlawful, deceitful, impulsive, aggressive, reckless, irresponsible, remorseless", exclusions: "Schizophrenia or bipolar episodes only", prevalence: "3.6%", course: "Chronic; remits by 40" },

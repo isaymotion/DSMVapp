@@ -80,7 +80,7 @@ SP.manifest = [
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch22', number: 22, ready: true, pages: '821–836', title: 'Other Conditions That May Be a Focus of Clinical Attention', short: 'Other conditions of clinical focus',
     summary: 'The four reasons a non-disorder condition may be coded; suicidal behavior (some intent to die, initiated; T14.91XA/XD, Z91.51) and nonsuicidal self-injury (R45.88, Z91.52); child and adult abuse and neglect with the confirmed/suspected T74/T76 codes, the A/D encounter characters and the victim, perpetrator and history Z codes; parent-child, sibling and partner relational problems and the family-environment codes; educational, occupational, housing, economic, social, legal and other psychosocial problems; wandering, uncomplicated bereavement, phase of life and religious problems; antisocial behavior, nonadherence, obesity, malingering and its four indicators, age-related cognitive decline and borderline intellectual functioning; and the codes corrected or changed since 2022, current to October 2026.',
-    files: SP.CHAPTER_FILES }
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) }
 ];
 
 /* Shared data loaded with the chapters: the disorder library, diagnostic helpers, and release notes. */
@@ -150,6 +150,7 @@ SP.extraFiles = [
   'data/db/clinical-ch21.js',
   'data/db/disorders-ch22.js',
   'data/helpers/ch22-psychosocial.js',
+  'data/db/clinical-ch22.js',
   'data/tools/substance.js',
   'data/tools/scales.js',
   'data/tools/psychosis.js',

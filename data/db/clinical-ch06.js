@@ -206,7 +206,7 @@
         { ch: "ch06", dx: "other-specified-ocrd", when: "Nail biting, lip biting or cheek chewing." },
         { ch: "ch06", dx: "bdd", when: "Picking or plucking to fix perceived appearance flaws." },
         { ch: "ch06", dx: "substance-induced-ocrd", when: "Only during stimulant or cocaine use." },
-        { ch: "ch22", name: "Nonsuicidal self-injury", when: "Intent to hurt oneself." },
+        { ch: "ch22", dx: "nssi", when: "Intent to hurt oneself." },
         { ch: "ch02", dx: "delusional-disorder", when: "Picking out “parasites” (somatic delusions)." }
       ]
     }

@@ -191,7 +191,7 @@
       helpers: ["deception"],
       items: [
         { ch: "ch09", dx: "factitious", when: "Deception even without obvious external rewards; self (F68.10) or another (F68.A)." },
-        { ch: "ch22", name: "Malingering (Z76.5)", when: "Deception for external rewards; not a mental disorder." },
+        { ch: "ch22", dx: "malingering", when: "Deception for external rewards; not a mental disorder." },
         { ch: "ch09", dx: "fnd", when: "Genuine symptoms with positive incompatible signs." },
         { ch: "ch09", dx: "ssd", when: "Heavy care seeking without deception." },
         { ch: "ch08", dx: "did", when: "Dramatic presentations raise the question of feigned DID." }

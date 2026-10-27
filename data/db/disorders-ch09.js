@@ -135,7 +135,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Prevalence", "Unknown; about 1% of hospital psychiatric consultations"], ["Sex", "About two-thirds women"], ["Onset", "Early adulthood, often after a hospitalization"]],
     risk: ["A hospitalization (own or a child’s) often precedes onset.", "Course usually intermittent; may become lifelong."],
     differential: [
-      { name: "Malingering", how: "Deception for external rewards; can coexist." },
+      { id: "malingering", name: "Malingering", how: "Deception for external rewards; can coexist." },
       { id: "ssd", how: "Excessive care seeking without deception." },
       { id: "fnd", how: "Genuine, not feigned, incompatible symptoms." },
       { name: "Borderline personality disorder", how: "Self-harm without deceptive presentation as illness." },

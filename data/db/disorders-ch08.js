@@ -53,7 +53,7 @@ SP.disorders = (SP.disorders || []).concat([
       { name: "Substance blackouts", how: "Only during intoxication." },
       { name: "Seizures", how: "Nonpurposive wandering, EEG abnormalities." },
       { name: "Major neurocognitive disorder", how: "Global decline; identity spared until late; anterograde deficits." },
-      { name: "Malingering", how: "No reliable test; context of gain; can coexist." }
+      { id: "malingering", name: "Malingering", how: "No reliable test; context of gain; can coexist." }
     ],
     pearls: ["A reversible retrieval deficit, usually retrograde.", "Fugue is a specifier: F44.1.", "Suicide risk when amnesia remits suddenly."],
     cmp: { symptoms: "Autobiographical gaps, no identity states", exclusions: "Substances, seizures, TGA, TBI; DID, PTSD, neurocognitive disorders", prevalence: "1.8%", course: "Acute or chronic; may recur" },

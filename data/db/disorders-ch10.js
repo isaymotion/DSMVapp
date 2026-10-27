@@ -27,7 +27,7 @@
       differential: [
         { id: "anorexia", how: "Nonfood eaten to control appetite or weight." },
         { id: "factitious", how: "Objects swallowed deceptively to feign illness." },
-        { name: "Nonsuicidal self-injury", how: "Swallowing pins, needles or knives in crises." },
+        { id: "nssi", name: "Nonsuicidal self-injury", how: "Swallowing pins, needles or knives in crises." },
         { id: "arfid", how: "Restriction of food; can coexist with sensory-driven pica." },
         { id: "trichotillomania", how: "Pulled hair may be eaten; diagnose both if pica needs attention." },
         { id: "other-specified-hypersomnolence", name: "Kleine-Levin syndrome (other specified hypersomnolence)", how: "Episodic hypersomnia with abnormal eating." }

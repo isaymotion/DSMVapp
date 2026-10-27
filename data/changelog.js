@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 48,
+    date: "2026-10-27",
+    title: "Practice pack for Chapter 22, and Section II complete",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, bedside questions and a labeled documentation-and-safety orientation for the conditions that may be a focus of clinical attention, with two new complaints in the hub. All 22 chapters of Section II now have a study guide and a practice pack.",
+    items: [
+      { type: "chapter", ch: "ch22", text: "Chapter 22: 25 board vignettes, most in two parts (a suicide attempt without injury and its follow-up, the changed-mind case, self-injury past and present, suspected then confirmed child abuse, reasonable discipline versus excessive discipline and confinement, noncontact sexual exploitation, neglect versus poverty, partner violence that causes fear, partner neglect of a dependent husband, economic control and gaslighting, elder abuse by a son, the grandparent caregiver code, couple distress and the child it affects, high expressed emotion, deployment status versus adjustment disorder, inadequate housing and shelters, bullying and discrimination, genetic counseling and the four reasons, wandering versus akathisia, bereavement versus prolonged grief disorder, retirement and a crisis of faith, an isolated antisocial act and borderline intellectual functioning, nonadherence versus PFAMC, malingering versus factitious disorder, age-related cognitive decline), 14 “Write the diagnosis” lines from T14.91XA to R41.81, 10 counting drills and 24 exam traps.", href: "#/c/ch22/practice", link: "Chapter 22 drills" },
+      { type: "feature", text: "“How to ask it” for all 34 Chapter 22 conditions and five labeled care orientations: risk assessment and the crisis lines for suicidal behavior and self-injury; safety, nonleading history, the suspected codes and Philippine reporting duties (RA 7610, RA 9262, RA 11036) for abuse and neglect; relational, psychosocial and additional-condition orientations.", href: "#/dx/suicidal-behavior", link: "Suicidal behavior" },
+      { type: "feature", text: "Start from the complaint: a life problem, stressor or circumstance rather than a disorder; and a suicide attempt or self-injury, documenting the behavior. Chapter 22 items added to suicidal thoughts, grief, the neglected child, feigned illness, memory complaints in older adults, school problems, rule-breaking, conduct problems and stress reactions. Earlier chapters’ references to malingering, normal grief, nonsuicidal self-injury and adult antisocial behavior now link to the new library entries.", href: "#/complaints/life-problem", link: "Open the hub" }
+    ]
+  },
+  {
     id: 47,
     date: "2026-10-27",
     title: "Chapter 22: Other Conditions That May Be a Focus of Clinical Attention",

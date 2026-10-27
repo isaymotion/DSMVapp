@@ -174,7 +174,7 @@
       risk: ["Higher rate of alcohol use disorder in first-degree relatives.", "Serotonin, dopamine and opioid pathways tied to behavioral addictions appear involved."],
       differential: [
         { name: "Ordinary theft or shoplifting", how: "Motivated by the object’s use or worth, planned or impulsive; or a dare, rebellion or rite of passage." },
-        { name: "Malingering", how: "Feigns kleptomania to avoid prosecution." },
+        { id: "malingering", name: "Malingering", how: "Feigns kleptomania to avoid prosecution." },
         { id: "conduct-disorder", how: "A general pattern of antisocial behavior." },
         { id: "antisocial-pd", how: "A general pattern of antisocial behavior." },
         { id: "bipolar-i", how: "Stealing during a manic episode." },

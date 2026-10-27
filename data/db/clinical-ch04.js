@@ -247,7 +247,7 @@ SP.complaintData = (SP.complaintData || []).concat([
       { ch: "ch04", dx: "substance-induced-depressive", when: "Risk peaks in intoxication and withdrawal." },
       { ch: "ch02", dx: "schizophrenia", when: "About 5%–6% die by suicide and about 20% attempt." },
       { ch: "ch18", dx: "borderline-pd", when: "Recurrent suicidal behavior and self-injury in unstable relationships." },
-      { ch: "ch22", name: "Suicidal behavior codes", when: "Current or past suicidal behavior can be coded alongside any diagnosis." }
+      { ch: "ch22", dx: "suicidal-behavior", when: "Current or past suicidal behavior can be coded alongside any diagnosis." }
     ]
   },
   {

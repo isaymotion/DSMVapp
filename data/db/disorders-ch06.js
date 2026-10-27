@@ -134,7 +134,7 @@ SP.disorders = (SP.disorders || []).concat([
     differential: [
       { id: "bdd", how: "Picking to improve appearance." },
       { id: "substance-induced-ocrd", how: "Picking only during cocaine or stimulant use." },
-      { name: "Nonsuicidal self-injury", how: "Intent to harm oneself." },
+      { id: "nssi", name: "Nonsuicidal self-injury", how: "Intent to harm oneself." },
       { name: "Psychotic disorders", how: "Delusional parasitosis or formication." },
       { name: "Factitious disorder or malingering", how: "Deception about self-inflicted lesions." }
     ],

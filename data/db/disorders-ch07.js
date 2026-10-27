@@ -164,7 +164,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "ptsd", how: "Event-focused intrusions, no yearning." },
       { id: "separation-anxiety", how: "Fear of separation from living people." },
       { id: "adjustment", how: "Before 12 months, out-of-proportion grief." },
-      { name: "Normal grief", how: "Less than 12 months, within norms, or anniversary spikes only." }
+      { id: "uncomplicated-bereavement", name: "Normal grief", how: "Less than 12 months, within norms, or anniversary spikes only." }
     ],
     pearls: ["New in DSM-5-TR.", "Yearning separates it from PTSD.", "Hearing the deceased is common in normal grief.", "Suicidal ideation independent of MDD and PTSD."],
     cmp: { symptoms: "Yearning or preoccupation + 3 of 8", exclusions: "MDD, PTSD; within cultural norms", prevalence: "≈10% of bereaved", course: "Prolonged, especially after a child’s death" },
