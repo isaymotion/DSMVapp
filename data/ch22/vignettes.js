@@ -25,7 +25,7 @@ SP.add("ch22", "vignettes", [
       "No suicidal behavior code, because the act caused no injury"
     ],
     "answer": 1,
-    "why": "She acted with **explicit intent to die**, and an attempt counts **whether or not it causes injury** (p. 822). An emergency visit and an evaluation by a **new clinician** are **active treatment**, so the 7th character is **A** (p. 822). The attempt at 19 is recorded with **Z91.51**, which covers suicidal behavior at **any time in her life** (p. 822). The manual prints T14.91A; the APA’s September 2022 correction made it **T14.91XA** (APA coding update; app note). Her major depressive episode is diagnosed in its own right: these conditions are not mental disorders and do not replace one (p. 821).",
+    "why": "She acted with **explicit intent to die**, and an attempt counts **whether or not it causes injury** (p. 822). An emergency visit and an evaluation by a **new clinician** are **active treatment**, so the encounter character is **A** (p. 822; the printed note calls it the 6th character, but in the corrected code T14.91XA it is the 7th: APA correction, September 2022). The attempt at 19 is recorded with **Z91.51**, which covers suicidal behavior at **any time in her life** (p. 822). The manual prints T14.91A; the APA’s September 2022 correction made it **T14.91XA** (APA coding update; app note). Her major depressive episode is diagnosed in its own right: these conditions are not mental disorders and do not replace one (p. 821).",
     "whyNot": [
       "Nonsuicidal self-injury requires the absence of suicidal intent (p. 822); she said she wanted to die.",
       "Correct.",
@@ -34,7 +34,7 @@ SP.add("ch22", "vignettes", [
       "The manual counts an attempt even when it causes no actual self-injury (p. 822)."
     ],
     "then": {
-      "q": "Three weeks after discharge she sees the same psychiatrist in the outpatient clinic to adjust her antidepressant. She has had no further suicidal behavior, and the visit is routine follow-up care in her recovery. Which code records the recent attempt at this visit?",
+      "q": "Three weeks after discharge she sees the same psychiatry resident in the outpatient clinic to adjust her antidepressant. She has had no further suicidal behavior, and the visit is routine follow-up care in her recovery. Which code records the recent attempt at this visit?",
       "choices": [
         "T14.91XA, because it is her first outpatient visit",
         "T14.91XD current suicidal behavior, subsequent encounter",
@@ -43,9 +43,9 @@ SP.add("ch22", "vignettes", [
         "No code: suicidal behavior is recorded only at the emergency visit"
       ],
       "answer": 1,
-      "why": "Once active treatment is over and the person is in **routine care during recovery** (medication adjustment, aftercare, follow-up), the 7th character is **D** (p. 822): **T14.91XD** (printed T14.91D; APA correction, September 2022). Z91.51 continues to record the attempt at 19 (p. 822).",
+      "why": "Once active treatment is over and the person is in **routine care during recovery** (medication adjustment, aftercare, follow-up), the encounter character is **D** (p. 822): **T14.91XD** (printed T14.91D; APA correction, September 2022). Z91.51 continues to record the attempt at 19 (p. 822).",
       "whyNot": [
-        "A new setting is not a new clinician: she is seeing the same psychiatrist for routine aftercare, which the manual places under D (p. 822).",
+        "A new setting is not a new clinician: she is seeing the same resident for routine aftercare, which the manual places under D (p. 822).",
         "Correct.",
         "The recent attempt is still part of the presentation being followed up, so the current code with D applies; Z91.51 is recorded as well, not instead (p. 822; app reading).",
         "There was suicidal intent, so the nonsuicidal self-injury code does not fit (p. 822).",
@@ -70,7 +70,7 @@ SP.add("ch22", "vignettes", [
       "T14.91XD current suicidal behavior, subsequent encounter"
     ],
     "answer": 3,
-    "why": "The category needs behavior that was actually **initiated**: if the person **changes their mind before initiating** it, or is talked out of it by someone else, the manual says it **does not apply** (p. 822). He decided and prepared, then stopped before starting any act. That is still serious **suicidal ideation with a plan**, which belongs in the risk assessment and safety plan (app guidance). ICD-10-CM has a separate code for suicidal ideation, R45.851, which this chapter does not list (outside the DSM).",
+    "why": "The category needs behavior that was actually **initiated**: if the person **changes their mind before initiating** it, or is talked out of it by someone else, the manual says it **does not apply** (p. 822). He decided and prepared, then stopped before starting any act. Writing a note is preparation, not an act that could injure him (p. 822; app reading). That is still serious **suicidal ideation with a plan**, which belongs in the risk assessment and safety plan (app guidance). ICD-10-CM has a separate code for suicidal ideation, R45.851, which this chapter does not list (outside the DSM). The current suicidal behavior codes are printed T14.91A/T14.91D; the APA’s September 2022 correction made them T14.91XA/T14.91XD (APA coding update; app note).",
     "whyNot": [
       "No behavior was initiated, so current suicidal behavior is not coded (p. 822).",
       "He has never engaged in suicidal behavior, so there is no history to record (p. 822).",
@@ -86,7 +86,7 @@ SP.add("ch22", "vignettes", [
   {
     "id": "v22-03",
     "tag": "Old scars, new behavior",
-    "stem": "A 16-year-old Grade 11 student is referred by her school counselor to a child psychiatrist she has never seen, for low mood over 3 months. Between ages 13 and 14 she repeatedly cut the skin of her thighs when overwhelmed, causing bleeding; she says she never wanted to die and has never attempted suicide. She stopped about 2 years ago and has not hurt herself since; examination shows only old healed scars. She attends school and passes her subjects.",
+    "stem": "A 16-year-old Grade 11 student is referred by her school counselor to a child psychiatrist she has never seen, for low mood over 3 months. Assessment for a depressive disorder is under way. Between ages 13 and 14 she repeatedly cut the skin of her thighs when overwhelmed, causing bleeding; she says she never wanted to die and has never attempted suicide. She stopped about 2 years ago and has not hurt herself since; examination shows only old healed scars. She attends school and passes her subjects.",
     "q": "Which code records the self-injury at this visit?",
     "choices": [
       "Z91.52 history of nonsuicidal self-injury",
@@ -96,7 +96,7 @@ SP.add("ch22", "vignettes", [
       "No code, because the behavior stopped 2 years ago"
     ],
     "answer": 0,
-    "why": "Deliberate self-inflicted damage likely to cause **bleeding**, with **no suicidal intent**, is nonsuicidal self-injury (p. 822). It is **not part of the present picture**: she stopped 2 years ago. The history code **Z91.52** covers NSSI at **any time in the lifetime** (p. 822).",
+    "why": "Deliberate self-inflicted damage likely to cause **bleeding**, with **no suicidal intent**, is nonsuicidal self-injury (p. 822). It is **not part of the present picture**: she stopped 2 years ago. The history code **Z91.52** covers NSSI at **any time in the lifetime** (p. 822). The current suicidal behavior codes are printed T14.91A/T14.91D; the APA’s September 2022 correction made them T14.91XA/T14.91XD (APA coding update; app note).",
     "whyNot": [
       "Correct.",
       "She had no intent to die, and there is no current behavior (p. 822).",
@@ -141,12 +141,12 @@ SP.add("ch22", "vignettes", [
       "T76.12XA child physical abuse, suspected, initial encounter"
     ],
     "answer": 4,
-    "why": "Nonaccidental injury to a child, from bruises to fractures, by a parent or other person responsible for him is child physical abuse **whether or not** the adult meant to hurt him (p. 823). The event is **not yet confirmed**, so the **suspected** code (T76) applies (pp. 822–823). He is in active treatment and is being evaluated by a **new clinician**, so the 7th character is **A** (p. 823). Because abuse codes carry legal implications, the manual asks for **care** in assigning them (p. 822); the suspected code exists for this situation.",
+    "why": "Nonaccidental injury to a child, from bruises to fractures, by a parent or other person responsible for him is child physical abuse **whether or not** the adult meant to hurt him (p. 823). The event is **not yet confirmed**, so the **suspected** code (T76) applies (p. 823). He is in active treatment and is being evaluated by a **new clinician**, so the 7th character is **A** (p. 823). Because abuse codes carry legal implications, the manual asks for **care** in assigning them (p. 822); the suspected code exists for this situation.",
     "whyNot": [
       "The investigation has not confirmed the abuse; T74 is for confirmed events (p. 823).",
       "He is in active treatment with a new clinician, which is A, not D (p. 823).",
       "A history code records past abuse; this is a current, suspected event (p. 823).",
-      "The suspected code lets the concern be recorded before confirmation (pp. 822–823).",
+      "The suspected code lets the concern be recorded before confirmation (p. 823).",
       "Correct."
     ],
     "then": {
@@ -195,7 +195,7 @@ SP.add("ch22", "vignettes", [
       "A relational code is used when the quality of the relationship is the focus or affects a disorder (p. 829), never automatically; here the relationship is warm."
     ],
     "then": {
-      "q": "Some months later a teacher reports that the girl is exhausted and tearful. Social services confirm that for the past 4 months her father has punished every minor misbehavior by making her kneel or stand facing a wall for 2 to 3 hours most evenings while shouting that she is worthless, and on several nights locked her in a small storage room. She has no bruises or other injuries. Her psychiatrist sees her urgently to evaluate and begin treatment for this new problem. Which category applies?",
+      "q": "Some months later a teacher reports that the girl is exhausted and tearful. Social services confirm that for the past 4 months her father has punished every minor misbehavior by making her kneel or stand facing a wall for 2 to 3 hours most evenings while shouting that she is worthless, and on several nights locked her in a small storage room. She has no bruises or other injuries. She is referred urgently to the hospital’s child protection psychiatrist, who has not seen her before, to evaluate and begin treatment. Which category applies?",
       "choices": [
         "T74.12XA child physical abuse, confirmed",
         "Z62.820 parent–biological child relational problem only",
@@ -204,7 +204,7 @@ SP.add("ch22", "vignettes", [
         "Not abuse, because no injury occurred"
       ],
       "answer": 2,
-      "why": "Discipline at an **extremely high frequency or duration**, even short of physical abuse and whether physical or not, is **psychological abuse**; so are berating and humiliating the child and **confining** her in a small enclosed space (p. 825). Social services have **confirmed** it (T74.32), and she is in **active** evaluation and treatment for it (A) (pp. 823, 825).",
+      "why": "Discipline at an **extremely high frequency or duration**, even short of physical abuse and whether physical or not, is **psychological abuse**; so are berating and humiliating the child and **confining** her in a small enclosed space (p. 825). Social services have **confirmed** it (T74.32). A applies **while she is receiving active treatment** for the abuse, and evaluation and treatment by a **new clinician** is one of the coding note’s examples (A) (pp. 823, 825).",
       "whyNot": [
         "Physical abuse is nonaccidental physical injury (p. 823); she has none, and the manual places excessive discipline without injury under psychological abuse (p. 825).",
         "A relational code does not capture confirmed maltreatment with harm (pp. 825, 829).",
@@ -259,7 +259,7 @@ SP.add("ch22", "vignettes", [
     "answer": 3,
     "why": "Child neglect is a confirmed or suspected **egregious act or omission** by a parent or caregiver that **deprives** the child of **basic age-appropriate needs** and causes, or could reasonably cause, harm; the forms include **abandonment**, **lack of supervision**, and failure to provide **medical care** and **nourishment** (p. 824). The family has the means, so poverty does not explain the deprivation. The case is **not completed** (T76.02), and the emergency visit with a new clinician is **A** (p. 823).",
     "whyNot": [
-      "The household has steady income and food; the deprivation comes from the caregiving, not from money (p. 824).",
+      "The household has steady income and food; the deprivation comes from the caregiving, not from money (pp. 824, 832).",
       "Social services have not finished their assessment, so the event is not yet confirmed (p. 823).",
       "A relational code does not record deprivation of basic needs with harm (pp. 824, 829).",
       "Correct.",
@@ -360,7 +360,7 @@ SP.add("ch22", "vignettes", [
       "Relationship distress describes problems in the quality of the relationship such as conflict, withdrawal and negative attributions (p. 829); one-sided control, isolation and gaslighting are abuse (p. 827).",
       "Correct.",
       "There has been no physical force and she does not fear physical harm (p. 826).",
-      "Her household income is not low; the problem is her husband’s control over it (p. 827)."
+      "Her household income is not low; the problem is her husband’s control over it (pp. 827, 832)."
     ],
     "discuss": [
       "Why can psychological abuse be harder to recognize than physical violence, and which questions bring it out (app guidance)?",
@@ -410,7 +410,7 @@ SP.add("ch22", "vignettes", [
     "whyNot": [
       "She is his grandmother, not his biological parent (p. 829).",
       "Z62.29 is for when the focus is being raised away from the parents (p. 829); he is untroubled by that, and the request is about the caregiver relationship.",
-      "Expressed emotion is hostility, overinvolvement and criticism directed at a family member who is an identified patient (p. 830); he has no disorder.",
+      "Expressed emotion describes a family-wide climate of hostility, overinvolvement and criticism toward an identified patient (p. 830); here the problem is the quality of one caregiver–child relationship (p. 829).",
       "Correct.",
       "The conflict is between caregiver and child, not between the brothers (p. 829)."
     ],
@@ -456,7 +456,7 @@ SP.add("ch22", "vignettes", [
       "Correct.",
       "Psychological abuse is one partner’s nonaccidental acts with actual or potential significant harm, such as control, isolation, threats or gaslighting (p. 827); this is mutual conflict.",
       "They live together and are not divorcing (p. 830).",
-      "Expressed emotion is directed at a family member who is an identified patient (p. 830); neither has a disorder.",
+      "Expressed emotion describes a family’s hostility, overinvolvement and criticism toward an identified patient (p. 830); this is mutual conflict between two partners about the quality of their relationship (p. 829).",
       "His hours are one topic of conflict, but the focus of care is the relationship (p. 829)."
     ],
     "then": {
@@ -492,7 +492,7 @@ SP.add("ch22", "vignettes", [
       "Z62.891 sibling relational problem",
       "Z62.820 parent–biological child relational problem",
       "Z63.0 relationship distress with spouse or intimate partner",
-      "Z91.199 nonadherence to medical treatment",
+      "Z91.199 nonadherence to medical treatment (printed as Z91.19; APA coding update, October 2022)",
       "Z63.8 high expressed emotion level within family"
     ],
     "answer": 4,
@@ -621,7 +621,7 @@ SP.add("ch22", "vignettes", [
   {
     "id": "v22-17",
     "tag": "Bullied, or discriminated against?",
-    "stem": "A 13-year-old boy, small for his age, has missed school for 3 weeks. For most of the school year a group of older, bigger classmates has repeatedly pushed him aside in the hallway, mocked him, taken his lunch money and shut him out of group activities while others laughed. Nothing suggests he is targeted for belonging to any group. Evaluation finds no anxiety, depressive or trauma-related disorder, and he is otherwise well. His mother wants help getting him back to school.",
+    "stem": "A 13-year-old boy, small for his age, has missed school for 3 weeks. For most of the school year a group of older, bigger classmates has repeatedly pushed him aside in the hallway, mocked him, hidden his belongings and shut him out of group activities while others laughed. Nothing suggests he is targeted for belonging to any group. His grades were good until he stopped attending, and he gets on well with his teachers. Evaluation finds no anxiety, depressive or trauma-related disorder, and he is otherwise well. His mother asks for help with the bullying and what it is doing to him.",
     "q": "Which code fits?",
     "choices": [
       "T74.32XA child psychological abuse, confirmed",
@@ -634,13 +634,13 @@ SP.add("ch22", "vignettes", [
     "why": "**Z60.4** applies when an **imbalance of social power** produces **recurrent** exclusion or rejection: **bullying, teasing and intimidation**, verbal abuse and humiliation, and purposeful exclusion from peers’ activities (p. 832).",
     "whyNot": [
       "The child abuse categories require a parent or caregiver as the perpetrator (pp. 823–825); these are classmates.",
-      "Discord with classmates is involved, but the manual’s entry for recurrent bullying with a power imbalance is Z60.4 (pp. 830, 832).",
+      "Discord implies conflict on both sides; here a more powerful group repeatedly targets him, which is the power imbalance that Z60.4 describes (pp. 830, 832; app reading).",
       "Nothing suggests he is targeted for membership in a category such as ethnicity or religion (p. 832).",
       "Correct.",
-      "The taking of money is part of the bullying pattern; the focus of care is the recurrent exclusion and rejection (p. 832; app reading)."
+      "No crime is described; the focus is recurrent exclusion and rejection (p. 832)."
     ],
     "then": {
-      "q": "A different patient: a 22-year-old nursing student from an Aeta community in Bataan says that a clinical instructor repeatedly calls her by an ethnic slur, marks her lower than classmates for the same work, and told her that “people like her” should not become nurses. She feels anxious before every duty but meets criteria for no disorder. She wants help deciding whether to file a complaint. Which code fits?",
+      "q": "A different patient: a 22-year-old nursing student from an Aeta community in Bataan, who has settled comfortably into university life, says that a clinical instructor repeatedly calls her by an ethnic slur, marks her lower than classmates for the same work, and told her that “people like her” should not become nurses. She feels anxious before every duty but meets criteria for no disorder. She wants help deciding whether to file a complaint. Which code fits?",
       "choices": [
         "Z60.3 acculturation difficulty",
         "Z55.8 problems related to inadequate teaching",
@@ -736,7 +736,7 @@ SP.add("ch22", "vignettes", [
         "Z91.83 alone",
         "Do not code wandering; assess for medication-induced acute akathisia",
         "Z59.3 problem related to living in a residential institution",
-        "Z91.199 nonadherence to medical treatment"
+        "Z91.199 nonadherence to medical treatment (printed as Z91.19; APA coding update, October 2022)"
       ],
       "answer": 2,
       "why": "The wandering code **excludes** people who walk or pace because of **medication-induced akathisia** (p. 834). Subjective restlessness with an urge to move, starting within weeks of a dopamine-blocking drug, points to medication-induced acute akathisia (Chapter 21).",
@@ -784,12 +784,12 @@ SP.add("ch22", "vignettes", [
         "Z65.8 religious or spiritual problem"
       ],
       "answer": 1,
-      "why": "Grief persisting **more than 12 months** after the death in an adult, with near-daily longing, several accompanying symptoms (identity disruption, marked disbelief, avoidance of reminders, difficulty reintegrating) and a duration and severity that **exceed cultural norms**, is prolonged grief disorder (Chapter 7). The bereavement entry refers to that text for the distinction (p. 834).",
+      "why": "Grief persisting **at least 12 months** after the death in an adult, with near-daily longing, several accompanying symptoms (identity disruption, marked disbelief, avoidance of reminders, difficulty reintegrating) and a duration and severity that **exceed cultural norms**, is prolonged grief disorder (Chapter 7). The bereavement entry refers to that text for the distinction (p. 834).",
       "whyNot": [
         "Her grief is no longer a normal reaction: it is persistent, impairing and beyond her community’s norms (p. 834; Chapter 7).",
         "Correct.",
         "She does not meet criteria for a major depressive episode (Chapter 4).",
-        "Widowhood is not one of the manual’s life-cycle transitions, and the grief itself is the focus (p. 834).",
+        "The focus is grief that now meets criteria for a disorder, not adjustment to a life-cycle transition (p. 834; Chapter 7).",
         "Her withdrawal from church reflects grief, not a loss or questioning of faith (p. 834)."
       ]
     },
@@ -891,7 +891,7 @@ SP.add("ch22", "vignettes", [
   {
     "id": "v22-23",
     "tag": "He stopped his insulin",
-    "stem": "A 57-year-old tricycle driver with type 2 diabetes and major depressive disorder in full remission stopped his metformin and insulin 3 months ago, and his HbA1c has risen sharply. He explains that since his income fell he cannot afford the insulin, and that metformin gave him diarrhea that kept him from working. He understands the risks, is not anxious, shows no denial, and his mood remains normal. The nonadherence has become a separate focus of the diabetes team’s attention, and they ask psychiatry how to record it.",
+    "stem": "A 57-year-old tricycle driver with type 2 diabetes and major depressive disorder in full remission stopped his metformin and insulin 3 months ago, and his HbA1c has risen sharply. He explains that since his income fell he cannot afford the insulin, and that metformin gave him diarrhea that kept him from working. He understands the risks, is not anxious, shows no denial and does not minimize his diabetes; he says he would restart both if he could afford insulin and had a medicine he could tolerate. His mood remains normal. The nonadherence has become a separate focus of the diabetes team’s attention, and they ask psychiatry how to record it.",
     "q": "What fits best?",
     "choices": [
       "Z91.199 nonadherence to medical treatment (printed as Z91.19; APA coding update, effective October 1, 2022)",
@@ -901,16 +901,16 @@ SP.add("ch22", "vignettes", [
       "Psychological factors affecting other medical conditions"
     ],
     "answer": 0,
-    "why": "Nonadherence to an important part of treatment is coded when it warrants **independent clinical attention** and criteria for **psychological factors affecting other medical conditions** are **not met** (p. 835). His reasons, **expense** and **side effects**, are on the manual’s list (p. 835). No psychological or behavioral factor such as anxiety, denial or maladaptive coping is harming the diabetes in the way PFAMC requires (Chapter 9). The printed Z91.19 is now **Z91.199** (APA coding update, September 2022); ICD-10-CM’s Z91.190 for financial hardship is more specific but is not the code the APA assigned (app note).",
+    "why": "Nonadherence to an important part of treatment is coded when it warrants **independent clinical attention** and criteria for **psychological factors affecting other medical conditions** are **not met** (p. 835). His reasons, **expense** and **side effects**, are on the manual’s list (p. 835). Poor adherence can itself be a behavioral factor in psychological factors affecting other medical conditions (Chapter 9), but here it is a reasoned response to cost and side effects, with no distress, denial or maladaptive coping behind it, and the team is attending to the nonadherence as a problem in its own right (p. 835; app reading). The printed Z91.19 is now **Z91.199** (APA coding update, September 2022); ICD-10-CM’s Z91.190 for financial hardship is more specific but is not the code the APA assigned (app note).",
     "whyNot": [
       "Correct.",
       "His depression is in full remission and his mood is normal (Chapter 4).",
       "Low income can be recorded as well (p. 832), but it does not capture the nonadherence that is the team’s focus (p. 835).",
       "Z72.9 covers lifestyle problems such as diet, exercise or sleep hygiene (p. 833), not stopping prescribed treatment.",
-      "PFAMC needs a psychological or behavioral factor that adversely affects the medical condition (Chapter 9); his reasons are cost and side effects, and the nonadherence code is reserved for when PFAMC is not met (p. 835)."
+      "Poor adherence driven by psychological factors such as denial or maladaptive coping can meet PFAMC (Chapter 9); his stopping is a reasoned response to cost and side effects, and the manual reserves the nonadherence code for when PFAMC is not met (p. 835; app reading)."
     ],
     "then": {
-      "q": "He tells you that he meets the income rules for the government cash-assistance program for poor households but has been turned away twice because he cannot provide proof of address; he lives in an informal settlement. His medical care is otherwise covered by his national health insurance membership. Which additional code records this?",
+      "q": "He tells you that he meets the income rules for the government cash-assistance program for poor households but has been turned away twice because he cannot provide proof of address; he rents a small house in an informal settlement that has no official street address. His medical care is otherwise covered by his national health insurance membership. Which additional code records this?",
       "choices": [
         "Z59.71 insufficient health insurance coverage",
         "Z59.5 extreme poverty",
@@ -924,7 +924,7 @@ SP.add("ch22", "vignettes", [
         "His health insurance covers his care; the gap is the cash-assistance program (p. 832; APA coding update, September 2024).",
         "Nothing establishes extreme poverty; the problem is access to support he qualifies for (p. 832).",
         "Health care facilities are available to him (p. 833).",
-        "An informal settlement is housing meant for living in (p. 831).",
+        "He has a dwelling of his own; the problem being recorded is the support he was refused (pp. 831–832; app reading).",
         "Correct."
       ]
     },
@@ -936,7 +936,7 @@ SP.add("ch22", "vignettes", [
   {
     "id": "v22-24",
     "tag": "Voices before the trial",
-    "stem": "A 34-year-old man charged with robbery is referred by his defense attorney for evaluation two weeks before trial. He reports hearing voices “all day” and says he cannot remember his own name or birthday. On the ward he chats with others, plays cards, and recalls details of his case when talking with his family; his account of the voices is vague, he describes no other psychotic features, and staff see no sign that he is responding to hallucinations. He refuses neuropsychological testing and will not take the trial medication. His records show conduct disorder before age 15 and a long adult history meeting criteria for antisocial personality disorder.",
+    "stem": "A 34-year-old man charged with robbery is referred by his defense attorney for evaluation two weeks before trial. He reports hearing voices “all day” and says he cannot remember his own name or birthday. On the ward he chats with others, plays cards, and recalls details of his case when talking with his family; his account of the voices is vague, he describes no other psychotic features, and staff see no sign that he is responding to hallucinations. He refuses neuropsychological testing and will not take the antipsychotic offered on the ward. His records show conduct disorder before age 15 and a long adult history meeting criteria for antisocial personality disorder.",
     "q": "What is the most likely formulation?",
     "choices": [
       "Functional neurological symptom disorder",
@@ -961,7 +961,7 @@ SP.add("ch22", "vignettes", [
         "Somatic symptom disorder",
         "Factitious disorder imposed on self",
         "Psychological factors affecting other medical conditions",
-        "Z91.199 nonadherence to medical treatment"
+        "Z91.199 nonadherence to medical treatment (printed as Z91.19; APA coding update, October 2022)"
       ],
       "answer": 2,
       "why": "Deception without an obvious external reward, aimed at taking on the **sick role**, points to **factitious disorder**; malingering differs because its motive is an **external incentive** (p. 835). When feigning is definite, the apparent aim decides between them (p. 835).",
@@ -981,7 +981,7 @@ SP.add("ch22", "vignettes", [
   {
     "id": "v22-25",
     "tag": "Names slip, life goes on",
-    "stem": "A 74-year-old retired accountant says that over 3 years he has become slower to recall the names of acquaintances, sometimes forgets an appointment unless he writes it down, and needs more time to work out complex tax problems for friends. He still drives, manages his money, cooks and keeps his diary without help; his wife has noticed nothing beyond the trouble with names. Detailed cognitive testing is within normal limits for his age and education. Neurological examination, blood tests and brain imaging are normal, and he has no depressive, anxiety or other mental disorder.",
+    "stem": "A 74-year-old retired accountant says that over 3 years he has become slower to recall the names of acquaintances, sometimes forgets an appointment unless he writes it down, and needs more time to work out complex tax problems for friends. He still drives, manages his money, cooks and keeps his diary without help; his wife has noticed nothing beyond the trouble with names. Detailed cognitive testing is within normal limits for his age and education, but his scores are slightly lower than on the same tests done for a work assessment 4 years ago. Neurological examination, blood tests and brain imaging are normal, and he has no depressive, anxiety or other mental disorder.",
     "q": "What fits?",
     "choices": [
       "Mild neurocognitive disorder due to possible Alzheimer’s disease",
