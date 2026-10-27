@@ -12,17 +12,17 @@ SP.add("ch20", "vignettes", [
     "q": "Which record is most accurate?",
     "choices": [
       "F48.1 depersonalization/derealization disorder",
-      "F44.89 other specified dissociative disorder, seizure-related dissociation",
       "G40.209 complex partial seizures; F06.8 other specified mental disorder due to complex partial seizures, dissociative symptoms",
+      "F44.89 other specified dissociative disorder, seizure-related dissociation",
       "G40.209 complex partial seizures; F05 delirium due to complex partial seizures",
       "G40.209 complex partial seizures only: dissociation during seizures is part of the epilepsy"
     ],
-    "answer": 2,
+    "answer": 1,
     "why": "The dissociative symptoms are judged a **direct physiological consequence** of a medical condition, they cause **distress and impairment**, and no specific “due to another medical condition” disorder covers dissociation (p. 803). With the symptom picture stated, the category is **F06.8**, and the seizure code is listed **immediately before** it. This is the manual’s own worked example (p. 804).",
     "whyNot": [
       "That disorder requires that the symptoms are not attributable to a medical condition such as seizures (Chapter 8).",
-      "The Chapter 8 residual categories are for dissociation without a medical cause; the manual places seizure-related dissociation in this chapter (p. 804).",
       "Correct.",
+      "The Chapter 8 residual categories are for dissociation without a medical cause; the manual places seizure-related dissociation in this chapter (p. 804).",
       "Attention and orientation are intact between spells and the course is months long; this is not delirium.",
       "The spells cause clinically significant distress and impairment, so they are a mental disorder that should be coded (p. 803)."
     ],
@@ -57,17 +57,17 @@ SP.add("ch20", "vignettes", [
       "F99 unspecified mental disorder",
       "B20 HIV disease; F05 delirium due to HIV disease",
       "F09 unspecified mental disorder due to HIV disease; B20 HIV disease",
-      "B20 HIV disease; F06.8 other specified mental disorder due to HIV disease, behavioral change",
-      "B20 HIV disease; F09 unspecified mental disorder due to HIV disease"
+      "B20 HIV disease; F09 unspecified mental disorder due to HIV disease",
+      "B20 HIV disease; F06.8 other specified mental disorder due to HIV disease, behavioral change"
     ],
-    "answer": 4,
+    "answer": 3,
     "why": "A **medical cause is established**, the symptoms cause distress and impairment, no specific “due to another medical condition” disorder can yet be identified, and there is **too little information** to say more: this is what **F09** is for, with the emergency room given as the setting example (p. 805). The medical condition is **coded and listed first**; the chapter’s own example is B20 HIV disease (p. 803).",
     "whyNot": [
       "F99 is for presentations not attributed to a medical condition; the team has attributed this one to HIV disease (p. 803).",
       "Attention and orientation are intact and stable over hours of observation; delirium is not supported.",
       "The order is reversed: the medical condition must be listed immediately before the mental disorder (pp. 803, 805).",
-      "Other specified requires the clinician to state why no specific disorder fits; “behavioral change” does not characterize a picture the team cannot yet describe.",
-      "Correct."
+      "Correct.",
+      "Other specified requires the clinician to state why no specific disorder fits; “behavioral change” does not characterize a picture the team cannot yet describe."
     ],
     "discuss": [
       "Which specific “due to another medical condition” disorders might replace F09 once a full history is available?",
@@ -80,17 +80,17 @@ SP.add("ch20", "vignettes", [
     "stem": "A 34-year-old woman with systemic lupus erythematosus is admitted during a flare. Over 3 weeks she has become convinced that her neighbors are poisoning her water and following her to the market; she occasionally hears a voice calling her name, but the persecutory beliefs dominate the picture. She has not received corticosteroids or any other new medication in the past 3 months, and toxicology is negative. MRI shows new white-matter lesions and the CSF findings support neuropsychiatric lupus; rheumatology and psychiatry agree the psychosis is a direct physiological effect of the lupus. She is alert, attends normally and is fully oriented, with no fluctuation over several days. She has stopped eating at home and has quit her job. She has no history of psychosis or mood episodes.",
     "q": "What is the most accurate diagnosis?",
     "choices": [
-      "M32.19 other organ or system involvement in systemic lupus erythematosus; F06.8 other specified mental disorder due to systemic lupus erythematosus, psychotic symptoms",
       "M32.19 other organ or system involvement in systemic lupus erythematosus; F06.2 psychotic disorder due to systemic lupus erythematosus, with delusions",
+      "M32.19 other organ or system involvement in systemic lupus erythematosus; F06.8 other specified mental disorder due to systemic lupus erythematosus, psychotic symptoms",
       "M32.19 other organ or system involvement in systemic lupus erythematosus; F05 delirium due to systemic lupus erythematosus",
       "F23 brief psychotic disorder",
       "M32.19 other organ or system involvement in systemic lupus erythematosus; F09 unspecified mental disorder due to systemic lupus erythematosus"
     ],
-    "answer": 1,
+    "answer": 0,
     "why": "Prominent delusions judged a direct physiological effect of a medical condition, not occurring only during a delirium, meet criteria for **psychotic disorder due to another medical condition** (Chapter 2). Delusions predominate, so the specifier is **with delusions (F06.2)**, and the medical condition is listed first. The Chapter 20 categories apply only when **no specific** “due to another medical condition” disorder fits (p. 803).",
     "whyNot": [
-      "F06.8 is for symptoms that fall short of every specific “due to another medical condition” disorder; this picture meets one (p. 803).",
       "Correct.",
+      "F06.8 is for symptoms that fall short of every specific “due to another medical condition” disorder; this picture meets one (p. 803).",
       "Attention and orientation are intact and stable; delirium is not present.",
       "The psychosis is attributed to a medical condition, which excludes the primary psychotic disorders.",
       "Enough information is available to name the specific disorder; F09 would discard it."
@@ -109,17 +109,17 @@ SP.add("ch20", "vignettes", [
       "N39.0 urinary tract infection; F06.0 psychotic disorder due to urinary tract infection, with hallucinations",
       "N39.0 urinary tract infection; F06.8 other specified mental disorder due to urinary tract infection, perceptual disturbances",
       "Major neurocognitive disorder due to another medical condition",
-      "N39.0 urinary tract infection; F05 delirium due to urinary tract infection",
-      "N39.0 urinary tract infection; F09 unspecified mental disorder due to urinary tract infection"
+      "N39.0 urinary tract infection; F09 unspecified mental disorder due to urinary tract infection",
+      "N39.0 urinary tract infection; F05 delirium due to urinary tract infection"
     ],
-    "answer": 3,
+    "answer": 4,
     "why": "An acute change over hours to days in **attention** and **orientation**, with **fluctuation** through the day, an additional cognitive and perceptual disturbance, and evidence of a medical cause: this meets criteria for **delirium due to another medical condition** (Chapter 17). A specific disorder fits, so the Chapter 20 residuals do not apply (p. 803).",
     "whyNot": [
       "Hallucinations that occur only during a disturbance of attention and awareness belong to the delirium, not to a separate psychotic disorder.",
       "F06.8 is for presentations that meet no specific “due to another medical condition” disorder; delirium is met (p. 803).",
       "His cognition was normal until 1 day ago, and the course is acute and fluctuating, not a gradual decline.",
-      "Correct.",
-      "There is enough information for a specific diagnosis, so the unspecified category is not needed."
+      "There is enough information for a specific diagnosis, so the unspecified category is not needed.",
+      "Correct."
     ]
   },
   {
@@ -128,18 +128,18 @@ SP.add("ch20", "vignettes", [
     "stem": "A 29-year-old call-center agent in Balanga has had depressed mood most of the day, nearly every day, for 5 weeks, with early waking and low energy. She still enjoys her weekend dance class, her appetite and weight are unchanged, and she reports no guilt, no trouble concentrating and no thoughts of death. She cannot point to any stressor or life change before the onset. She has never had a depressive, manic or hypomanic episode, has no psychotic symptoms, drinks rarely, and her thyroid tests and blood count are normal. She is distressed by how she feels and has missed six shifts.",
     "q": "Which diagnosis is most accurate?",
     "choices": [
-      "F32.89 other specified depressive disorder, depressive episode with insufficient symptoms",
-      "F99 other specified mental disorder, subthreshold low mood",
       "Major depressive disorder, single episode",
+      "F99 other specified mental disorder, subthreshold low mood",
+      "F32.89 other specified depressive disorder, depressive episode with insufficient symptoms",
       "Z03.89 no diagnosis or condition",
       "F99 unspecified mental disorder"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": "She has depressed mood plus two other depressive symptoms (**3 of 9**, short of the 5 needed for a major depressive episode), for more than 2 weeks, with **distress and impairment**, no prior mood episode and no stressor. This is a recognizable **depressive** picture, so the residual comes from **Chapter 4**. F99 is used only when no chapter-specific other specified or unspecified category fits (p. 803).",
     "whyNot": [
-      "Correct.",
-      "Condition 3 on p. 803 fails: a chapter-specific residual (other specified depressive disorder) covers this picture.",
       "Only three of the nine symptoms are present; five are required.",
+      "Condition 3 on p. 803 fails: a chapter-specific residual (other specified depressive disorder) covers this picture.",
+      "Correct.",
       "She has distress and impairment from depressive symptoms; this is a mental disorder, not a negative evaluation (p. 805).",
       "The picture is clearly depressive and the reason is known, so neither F99 nor “unspecified” is the best record."
     ],
@@ -172,18 +172,18 @@ SP.add("ch20", "vignettes", [
     "q": "Which record is most accurate?",
     "choices": [
       "F44.89 other specified dissociative disorder, brief detachment spells",
-      "F42.8 other specified obsessive-compulsive and related disorder, checking without full obsessions",
-      "F99 unspecified mental disorder",
       "F99 other specified mental disorder, mixed subthreshold symptoms from several domains with no predominant cluster",
+      "F99 unspecified mental disorder",
+      "F42.8 other specified obsessive-compulsive and related disorder, checking without full obsessions",
       "Z03.89 no diagnosis or condition"
     ],
-    "answer": 3,
+    "answer": 1,
     "why": "All four conditions on p. 803 are met: it **is** a mental disorder (distress and impairment), **no specific** disorder fits, the team has determined that **no chapter-specific residual** fits, and nothing else applies. No medical cause has been found, so the F06.8/F09 categories do not apply. Because the clinician **chooses to record the reason**, the category is **other specified mental disorder**, written with the reason after the name (p. 805).",
     "whyNot": [
       "Detachment is only one of several equal problems and does not predominate; the team found that no chapter residual fits.",
-      "Checking is one minor strand of a mixed picture, not a predominant obsessive-compulsive presentation.",
-      "Same code, but the psychiatrist wants to state the reason, which makes it “other specified” (p. 805).",
       "Correct.",
+      "Same code, but the psychiatrist wants to state the reason, which makes it “other specified” (p. 805).",
+      "Checking is one minor strand of a mixed picture, not a predominant obsessive-compulsive presentation.",
       "He has distress and impairment, so a mental disorder is present (pp. 803, 805)."
     ],
     "discuss": [
@@ -200,17 +200,17 @@ SP.add("ch20", "vignettes", [
       "F29 unspecified schizophrenia spectrum and other psychotic disorder",
       "F32.A unspecified depressive disorder",
       "F09 unspecified mental disorder due to another medical condition",
-      "Z03.89 no diagnosis or condition",
-      "F99 unspecified mental disorder"
+      "F99 unspecified mental disorder",
+      "Z03.89 no diagnosis or condition"
     ],
-    "answer": 4,
+    "answer": 3,
     "why": "She has a disorder causing marked impairment, but **no symptom cluster can yet be identified**, no medical cause has been established, and there is **too little information** to say more. That is the use the manual gives for **unspecified mental disorder (F99)**, with the emergency setting as its example (p. 805).",
     "whyNot": [
       "No psychotic symptoms have been elicited; choosing this chapter would be a guess.",
       "No depressive syndrome has been established; crying alone does not assign the chapter.",
       "F09 requires a judgment that the symptoms are a direct effect of a medical condition; none has been found (p. 803).",
-      "She has not had an evaluation that excludes a disorder, and she is clearly impaired (p. 805).",
-      "Correct."
+      "Correct.",
+      "She has not had an evaluation that excludes a disorder, and she is clearly impaired (p. 805)."
     ],
     "then": {
       "q": "By morning she is talking. She says that for “some weeks” a voice has been commenting on her actions and that her neighbors are poisoning her food. Toxicology is negative, but she cannot say how long this has lasted, and nothing is known yet about her mood history or functioning before admission. What should replace the admission diagnosis?",
@@ -242,17 +242,17 @@ SP.add("ch20", "vignettes", [
     "stem": "A 52-year-old man retired 6 months ago from a shipyard. His wife asks for an assessment because he now spends most weekends fishing with friends and she worries he is “depressed and hiding it.” The psychiatrist completes a full interview and mental status examination, takes collateral from the wife and their adult son, and reviews his clinic records and a validated depression rating. He reports good mood, sleep and appetite, enjoys his hobbies and his grandchildren, and helps run a parish livelihood program. No symptoms, distress or impairment are found, there is no psychosocial problem he or his wife wants help with, and both describe their marriage as close.",
     "q": "Which record fits the outcome of this evaluation?",
     "choices": [
-      "F99 unspecified mental disorder",
       "Z03.89 no diagnosis or condition",
+      "F99 unspecified mental disorder",
       "F32.A unspecified depressive disorder",
       "Z63.0 relationship distress with spouse or intimate partner",
       "F43.20 adjustment disorder, unspecified"
     ],
-    "answer": 1,
+    "answer": 0,
     "why": "The man **was evaluated**, and the conclusion is that **no mental disorder and no other condition** is present. That is exactly the situation for **Z03.89, No diagnosis or condition** (p. 805).",
     "whyNot": [
-      "No symptoms, distress or impairment were found, so there is no mental disorder to code (p. 803).",
       "Correct.",
+      "No symptoms, distress or impairment were found, so there is no mental disorder to code (p. 803).",
       "There are no depressive symptoms, and the wife’s worry is not a finding.",
       "Both partners describe the marriage as close; there is no relational problem.",
       "Retirement is a life change, but he has no emotional or behavioral symptoms in response to it."
@@ -285,20 +285,20 @@ SP.add("ch20", "vignettes", [
     "stem": "A 38-year-old woman with complex partial seizures from a right temporal focus, after a head injury 10 years ago, is admitted to the psychiatric ward for 2 weeks. The reason for admission is a 3-month run of spells of feeling detached and unreal, during which she has twice wandered onto a busy road; she is terrified of them and has stopped leaving the house. Video-EEG confirms the spells are peri-ictal, and neurology and psychiatry agree they are a direct physiological effect of the epilepsy. They meet criteria for no specific disorder, and the psychiatrist records the symptom picture. Between spells she is alert, attentive and oriented. The ward stay was chiefly for the dissociative spells, not for seizure control.",
     "q": "Following Section I (pp. 23–24), how should the discharge diagnoses be listed?",
     "choices": [
-      "G40.209 complex partial seizures; F06.8 other specified mental disorder due to complex partial seizures, dissociative symptoms (principal diagnosis)",
+      "F99 other specified mental disorder, dissociative symptoms (principal diagnosis); G40.209 complex partial seizures",
       "F06.8 other specified mental disorder due to complex partial seizures, dissociative symptoms (principal diagnosis); G40.209 complex partial seizures",
       "G40.209 complex partial seizures (principal diagnosis); F06.8 other specified mental disorder due to complex partial seizures, dissociative symptoms",
       "F44.89 other specified dissociative disorder (principal diagnosis); G40.209 complex partial seizures",
-      "F99 other specified mental disorder, dissociative symptoms (principal diagnosis); G40.209 complex partial seizures"
+      "G40.209 complex partial seizures; F06.8 other specified mental disorder due to complex partial seizures, dissociative symptoms (principal diagnosis)"
     ],
-    "answer": 0,
+    "answer": 4,
     "why": "Section I: the **principal diagnosis** (the condition chiefly responsible for an inpatient admission) is normally listed first, but when it is a mental disorder **due to another medical condition**, ICD coding rules put the **etiological medical condition first**. The principal diagnosis is then the **second** line, and “(principal diagnosis)” may be added after it (pp. 23–24). The chapter itself also requires the condition’s code **immediately before** F06.8 (p. 804).",
     "whyNot": [
-      "Correct.",
+      "F99 is for presentations not attributed to a medical condition (p. 803).",
       "The order is wrong: the medical condition is coded and listed first even when the mental disorder is the reason for admission (pp. 23–24, 804).",
       "The order is right, but the admission was chiefly for the dissociative spells, so the label belongs on the F06.8 line.",
       "Dissociation caused by seizures is coded in this chapter, not as a Chapter 8 residual (p. 804).",
-      "F99 is for presentations not attributed to a medical condition (p. 803)."
+      "Correct."
     ],
     "discuss": [
       "What is the outpatient equivalent of “principal diagnosis”, and how would you label it here?",

@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 44,
+    date: "2026-10-27",
+    title: "Practice pack for Chapter 20",
+    summary: "Board vignettes, write-the-diagnosis and counting drills, exam traps, interview prompts and a practical orientation for the residual categories, and a new complaint in the hub.",
+    items: [
+      { type: "chapter", ch: "ch20", text: "Chapter 20: 10 board vignettes (seizure-related dissociation and the F06.8 recording line, F09 in the emergency room, a specific due-to-AMC disorder and delirium beating the residual categories, subthreshold depression taking the chapter residual, a true F99 other specified case, the night admission and the chapter’s unspecified category, Z03.89 versus a relational Z code, principal diagnosis and the medical condition listed first, and a provisional diagnosis), 6 “Write the diagnosis” lines, 6 counting drills and 10 exam traps.", href: "#/c/ch20/practice", link: "Chapter 20 drills" },
+      { type: "feature", text: "“How to ask it” for the five Chapter 20 entries and a dated orientation to using residual categories in practice (record the reason, medical condition first, reassess every unspecified diagnosis, safety independent of the code), labeled as outside the DSM.", href: "#/dx/unspecified-mental-disorder", link: "Unspecified mental disorder" },
+      { type: "feature", text: "Start from the complaint: symptoms that fit no specific diagnosis. Chapter 20 items added to weakness/seizures with normal tests, feeling unreal, gaps in memory and sudden confusion.", href: "#/complaints/no-clear-fit", link: "Open the hub" }
+    ]
+  },
+  {
     id: 43,
     date: "2026-10-27",
     title: "Chapter 20: Other Mental Disorders and Additional Codes",
