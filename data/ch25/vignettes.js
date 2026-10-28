@@ -25,12 +25,12 @@ SP.add("ch25", "vignettes", [
       "Attenuated psychosis syndrome entered as the official diagnosis, without a code"
     ],
     "answer": 2,
-    "why": "He has **attenuated hallucinations** that are unformed and that he can doubt (A2; p. 904), at least **weekly for more than a month** (B), **beginning within the past year** (C), with distress and falling function that bring him to care (D), no substance or mood disorder to explain them (E), and **no psychotic disorder ever** (F) (pp. 903–904). That matches the proposed set. Because these sets are **not intended for clinical use** (p. 903), the chart uses a Section II category: Chapter 2 lists attenuated psychosis syndrome as an example of **other specified schizophrenia spectrum and other psychotic disorder, F28** (app guidance on the route).",
+    "why": "He has **attenuated hallucinations** that are unformed and that he can doubt (A2; p. 904), at least **weekly for more than a month** (B), **beginning within the past year** (C), with distress and falling function that bring him to care (D), no substance or mood disorder to explain them (E), and **no psychotic disorder ever** (F) (pp. 903–904). That matches the proposed set. Because these sets are **not intended for clinical use** (p. 903), the chart uses a Section II category: Chapter 2 lists attenuated psychosis syndrome as an example of **other specified schizophrenia spectrum and other psychotic disorder, F28** (p. 138; app guidance on the route).",
     "whyNot": [
       "Schizophrenia needs symptoms at the psychotic threshold; his experiences are unformed and open to doubt, so no psychotic disorder can be diagnosed (pp. 904, 906).",
       "Brief psychotic disorder needs frank delusions, hallucinations or disorganized speech; his symptoms stay below the psychosis threshold (p. 906).",
       "Correct.",
-      "Preserved insight is a defining feature of attenuated symptoms, not a reason to dismiss them; he has distress and decline that call for care (pp. 904–905).",
+      "Preserved insight is a defining feature of attenuated symptoms, not a reason to dismiss them; he has distress and decline that call for care (p. 904).",
       "Section III conditions are not official diagnoses (p. 903); a Section II category carries the code (app guidance)."
     ],
     "then": {
@@ -43,10 +43,10 @@ SP.add("ch25", "vignettes", [
         "It no longer applies, and no diagnosis is needed until 6 months have passed"
       ],
       "answer": 3,
-      "why": "The proposed set requires that criteria for **any psychotic disorder have never been met** (Criterion F; p. 904). Fixed beliefs and hallucinations he can no longer doubt are at the psychotic threshold, so the attenuated label ends and the full Section II psychotic disorder that fits is diagnosed. Among people with attenuated psychosis syndrome who progress, about **73%** develop a schizophrenia spectrum disorder and **11%** an affective psychosis (p. 905). The 3-year risk of transition is **up to 22%**, highest in the first 2 years (p. 905).",
+      "why": "The proposed set requires that criteria for **any psychotic disorder have never been met** (Criterion F; p. 903). Fixed beliefs and hallucinations he can no longer doubt are at the psychotic threshold, so the attenuated label ends and the full Section II psychotic disorder that fits is diagnosed. Among people with attenuated psychosis syndrome who progress, about **73%** develop a schizophrenia spectrum disorder and **11%** an affective psychosis (p. 905). The 3-year risk of transition is **up to 22%**, highest in the first 2 years (p. 905).",
       "whyNot": [
-        "Criterion F makes it impossible once any psychotic disorder has been met (p. 904).",
-        "The time rule (began or worsened in the past year) is not the issue; Criterion F is (pp. 903–904).",
+        "Criterion F makes it impossible once any psychotic disorder has been met (p. 903).",
+        "The time rule (began or worsened in the past year) is not the issue; Criterion F is (p. 903).",
         "That proposal concerns depressive and short hypomanic periods (pp. 907–908); he has psychosis.",
         "Correct.",
         "Section II psychotic disorders have their own duration rules, and one of them (for example, schizophreniform disorder or schizophrenia, depending on the course) is diagnosed now, not deferred (app guidance)."
@@ -75,7 +75,7 @@ SP.add("ch25", "vignettes", [
     "why": "Her odd beliefs, ideas of reference, eccentric dress and speech, lack of close friends and suspiciousness are a **long-standing, stable pattern**, which points to the Section II diagnosis of **schizotypal personality disorder**. Attenuated psychosis syndrome requires **state** psychopathology that has **begun or worsened in the past year** (Criterion C), and the manual separates it from schizotypal personality disorder on exactly this point; schizotypal personality disorder also needs a broader range of features (pp. 903–904, 906).",
     "whyNot": [
       "Correct.",
-      "Nothing has begun or worsened in the past year, so Criterion C fails; the proposal is about a change in state, not a lifelong trait (pp. 904, 906).",
+      "Nothing has begun or worsened in the past year, so Criterion C fails; the proposal is about a change in state, not a lifelong trait (pp. 903–904, 906).",
       "There have never been psychotic-level symptoms (p. 906).",
       "She has never held a belief with full conviction (app reading of the stem).",
       "Culture matters, and the manual warns that some beliefs are accepted in some settings (p. 906), but her pattern spans several domains and draws complaints from others; selling remedies does not explain ideas of reference and a lack of friends (app guidance)."
@@ -87,7 +87,7 @@ SP.add("ch25", "vignettes", [
   },
   {
     "id": "v25-03",
-    "tag": "Nine days after the funeral",
+    "tag": "Back to himself by day 9",
     "sec": "s25-aps-features",
     "dx": "attenuated-psychosis-syndrome",
     "stem": "A 23-year-old call-center agent in Clark is brought in by his roommates two days after his father’s sudden death. For those two days he has been certain that coworkers planted cameras to film him, has heard a clear voice commenting on his actions, and his speech jumps between topics so that he cannot be followed. He uses no substances and has no medical illness. He is admitted, and by day 9 after onset he is fully back to his usual self, with no symptoms at all. He had no unusual experiences before this.",
@@ -100,10 +100,10 @@ SP.add("ch25", "vignettes", [
       "Brief psychotic disorder, with marked stressor"
     ],
     "answer": 4,
-    "why": "His delusion, hallucination and disorganized speech were at **full psychotic intensity**, lasted more than a day and less than a month, and resolved completely after a major stressor: that is the Section II diagnosis of **brief psychotic disorder, with marked stressor** (Chapter 2). The manual notes that early attenuated symptoms can resemble brief psychotic disorder, but in attenuated psychosis syndrome the symptoms **never cross the psychosis threshold** (p. 906), and once any psychotic disorder has been met the proposal is ruled out (Criterion F; p. 904).",
+    "why": "His delusion, hallucination and disorganized speech were at **full psychotic intensity**, lasted more than a day and less than a month, and resolved completely after a major stressor: that is the Section II diagnosis of **brief psychotic disorder, with marked stressor** (Chapter 2). The manual notes that early attenuated symptoms can resemble brief psychotic disorder, but in attenuated psychosis syndrome the symptoms **never cross the psychosis threshold** (p. 906), and once any psychotic disorder has been met the proposal is ruled out (Criterion F; p. 903).",
     "whyNot": [
-      "Brevity is not the test; the symptoms were psychotic in intensity, which excludes the proposal (pp. 904, 906).",
-      "Insight returned after the episode, but during it he was certain and could not be reoriented; Criterion F now excludes attenuated psychosis syndrome (p. 904).",
+      "Brevity is not the test; the symptoms were psychotic in intensity, which excludes the proposal (pp. 903, 906).",
+      "Insight returned after the episode, but during it he was certain and could not be reoriented; Criterion F now excludes attenuated psychosis syndrome (p. 903).",
       "Psychotic symptoms after a stressor are classified with the psychotic disorders, not as adjustment disorder (Chapter 2; app guidance).",
       "There is no stable lifelong pattern; he had no unusual experiences before (p. 906).",
       "Correct."
@@ -128,7 +128,7 @@ SP.add("ch25", "vignettes", [
       "Major depressive disorder only, since the high periods were short"
     ],
     "answer": 1,
-    "why": "She has **at least one major depressive episode** and **at least two** periods of full hypomanic symptoms (elevated mood with increased energy plus at least three B symptoms, a visible change, no marked impairment or hospitalization) lasting **at least 2 but fewer than 4 days** (pp. 907–908). That matches the proposed set. Since it is not an official diagnosis (p. 903), Chapter 3’s **other specified bipolar and related disorder, F31.89**, which lists short-duration hypomanic episodes with major depressive episodes as an example, carries the code (app guidance on the route).",
+    "why": "She has **at least one major depressive episode** and **at least two** periods of full hypomanic symptoms (elevated mood with increased energy plus at least three B symptoms, a visible change, no marked impairment or hospitalization) lasting **at least 2 but fewer than 4 days** (pp. 907–908). That matches the proposed set. Since it is not an official diagnosis (p. 903), Chapter 3’s **other specified bipolar and related disorder, F31.89**, which lists short-duration hypomanic episodes with major depressive episodes as an example (p. 168), carries the code (app guidance on the route).",
     "whyNot": [
       "Bipolar II needs a hypomanic episode of at least 4 consecutive days; hers lasted 3 (p. 910).",
       "Correct.",
@@ -152,7 +152,7 @@ SP.add("ch25", "vignettes", [
         "The manual says the diagnosis does not go back once a 4-day hypomania has happened (p. 910).",
         "Bipolar I needs a manic episode (at least a week, or marked impairment, hospitalization or psychosis); none occurred (p. 910).",
         "A major depressive episode excludes cyclothymic disorder (p. 910).",
-        "A residual category is not used when full criteria for a named disorder (bipolar II) are met (app guidance)."
+        "The F31.89 example applies only when the presentation has never met full criteria for a manic or hypomanic episode (p. 168); she now meets bipolar II."
       ]
     },
     "discuss": [
@@ -165,7 +165,7 @@ SP.add("ch25", "vignettes", [
     "tag": "Racing thoughts in the middle of the low",
     "sec": "s25-sdh-features",
     "dx": "short-duration-hypomania",
-    "stem": "A 41-year-old seaman’s wife in Mariveles has a 5-week major depressive episode with low mood, poor sleep, guilt and hopelessness. During this same episode, on most days, she also has racing thoughts, talks rapidly and feels driven to reorganize the house. She has never had a period of elevated or irritable mood with increased energy outside her depressive episodes; her family confirms this. She uses no substances and takes no medication.",
+    "stem": "A 41-year-old seaman’s wife in Mariveles has a 5-week major depressive episode with low mood, poor sleep, guilt and hopelessness. During this same episode, on most days, she also has racing thoughts, talks rapidly and feels driven to reorganize the house; her husband has noticed the fast talking and restless reorganizing, which are unlike her. She has never had a period of elevated or irritable mood with increased energy outside her depressive episodes; her family confirms this. She uses no substances and takes no medication.",
     "q": "Which diagnosis fits best?",
     "choices": [
       "Depressive episodes with short-duration hypomania, recorded as F31.89",
@@ -193,7 +193,7 @@ SP.add("ch25", "vignettes", [
     "tag": "Three days, then the ward",
     "sec": "s25-sdh-features",
     "dx": "short-duration-hypomania",
-    "stem": "A 33-year-old jeepney dispatcher in Dinalupihan has had two major depressive episodes. Last month, over 3 days, he became elated, slept 2 hours a night, talked without stopping and announced that he had been chosen by God to lead the nation; he held this belief with full conviction. His family brought him to the provincial hospital and he was admitted. He was well again within a week. He uses no substances and was on no antidepressant at the time. He has had no other high periods.",
+    "stem": "A 33-year-old jeepney dispatcher in Dinalupihan has had two major depressive episodes. Last month, over 3 days, he became elated and full of energy, slept 2 hours a night, talked without stopping and announced that he had been chosen by God to lead the nation; he held this belief with full conviction. His family brought him to the provincial hospital and he was admitted. He was well again within a week. He uses no substances and was on no antidepressant at the time. He has had no other high periods.",
     "q": "What is the diagnosis?",
     "choices": [
       "Depressive episodes with short-duration hypomania, because the high period lasted only 3 days",
@@ -208,7 +208,7 @@ SP.add("ch25", "vignettes", [
       "Short duration does not matter once there is psychosis or admission; the episode counts as manic (p. 910).",
       "A hypomanic episode cannot include psychosis or hospitalization (pp. 908, 910).",
       "Correct.",
-      "The grandiose delusion arose within an episode of elevated mood, energy and reduced sleep; a mood episode with psychotic features is classified with the mood disorders (p. 910; app guidance).",
+      "The grandiose delusion arose within an episode of elevated mood, energy and reduced sleep; brief psychotic disorder is excluded when the picture is better explained by a depressive or bipolar disorder with psychotic features (Criterion C of brief psychotic disorder, p. 109).",
       "The elevated period occurred apart from his depressive episodes, and it reached mania (p. 910)."
     ],
     "discuss": [
@@ -235,7 +235,7 @@ SP.add("ch25", "vignettes", [
     "whyNot": [
       "Correct.",
       "Chapter 16 gives caffeine its own section, with intoxication and withdrawal but no use disorder, so caffeine is not coded as a stimulant use disorder (app guidance). The manual lists other stimulant use disorder as a differential, not a home for caffeine (p. 913).",
-      "Role failure is item 5, not one of the three required items (pp. 910–911).",
+      "Role failure is item 5, not one of the three required items (p. 910).",
       "There is no count of five; the rule is that the first three must all be present (p. 910).",
       "Physical symptoms with a clear caffeine link do not make an anxiety disorder; chronic heavy use can mimic generalized anxiety disorder (p. 913)."
     ],
@@ -278,12 +278,12 @@ SP.add("ch25", "vignettes", [
       "His pattern does not match the proposal: he lacks the first two required items, and tolerance plus mild withdrawal alone are common in heavy daily use and not enough"
     ],
     "answer": 4,
-    "why": "The proposal requires **the first three** items: desire or failed efforts to cut down, use despite a caffeine-related problem, and withdrawal (p. 910). He has only withdrawal (and tolerance). The manual warns that regular heavy use producing **tolerance and withdrawal is common and is not enough** for a diagnosis (p. 913), and the high threshold exists **to prevent overdiagnosis** given how common nonproblematic daily use is (p. 911).",
+    "why": "The proposal requires **the first three** items: desire or failed efforts to cut down, use despite a caffeine-related problem, and withdrawal (p. 910). At most he has tolerance and a single mild withdrawal symptom. The manual warns that regular heavy use producing **tolerance and withdrawal is common and is not enough** for a diagnosis (p. 913), and the high threshold exists **to prevent overdiagnosis** given how common nonproblematic daily use is (p. 911).",
     "whyNot": [
       "Tolerance and withdrawal alone are not sufficient (p. 913).",
-      "His headache is mild and he does not mind it; without clinically significant distress or impairment, caffeine withdrawal is not diagnosed (Chapter 16; app guidance).",
+      "One mild headache is not the withdrawal syndrome, which needs three or more symptoms within 24 hours plus clinically significant distress or impairment (Criteria B–C, pp. 571–572).",
       "There is no disorder to record (p. 913).",
-      "An interpersonal problem is item 6, which does not replace the first two items (pp. 910–911).",
+      "An interpersonal problem is item 6, which does not replace the first two items (p. 910).",
       "Correct."
     ],
     "discuss": [
@@ -312,7 +312,7 @@ SP.add("ch25", "vignettes", [
       "Correct.",
       "Nothing in the stem shows failed efforts to cut down, use despite known harm, or withdrawal, the three required items (p. 910); and the proposal is not an official diagnosis (p. 903).",
       "She has no chronic worry; the attacks are acute and caffeine-linked (p. 913).",
-      "She studies; she does not game, and the gaming proposal excludes non-gaming use (p. 914)."
+      "She studies; she does not game, and the gaming proposal excludes non-gaming use (pp. 914, 916)."
     ],
     "then": {
       "q": "She stops all caffeine. Over the next 2 months she has three more sudden attacks with no caffeine, alcohol or other substance, including one that woke her from sleep, and for the past month she has avoided the review center for fear of another attack. What is the diagnosis now?",
@@ -326,10 +326,10 @@ SP.add("ch25", "vignettes", [
       "answer": 4,
       "why": "Unexpected attacks that continue **without** the substance, followed by at least a month of avoidance of situations because of fear of further attacks, meet the Section II criteria for **panic disorder** (Chapter 5). A substance-induced anxiety diagnosis no longer explains attacks that persist well after the substance has stopped (Chapter 16; app guidance).",
       "whyNot": [
-        "Symptoms that persist without caffeine for 2 months are no longer explained by caffeine (Chapter 16; app guidance).",
+        "Symptoms that persist for about a month or more after the substance stops point to an independent anxiety disorder (substance/medication-induced anxiety disorder, Criterion C, p. 255); hers have persisted 2 months.",
         "Withdrawal begins within about a day of stopping and does not take the form of recurrent panic attacks months later (Chapter 16; app guidance).",
         "She never matched the proposal, and it has no remission specifier (pp. 910–911).",
-        "Her avoidance follows from the attacks; panic disorder explains the whole picture (Chapter 5; app guidance).",
+        "Her avoidance follows from the attacks; agoraphobia needs fear of at least two of the five situation types, and she avoids only the review center (Chapter 5).",
         "Correct."
       ]
     },
@@ -343,17 +343,17 @@ SP.add("ch25", "vignettes", [
     "tag": "The guild leader who lost his scholarship",
     "sec": "s25-igd-criteria",
     "dx": "internet-gaming-disorder",
-    "stem": "A 20-year-old IT student in Malolos leads a guild in an online role-playing game. Over the past 12 months he has thought about the game during every class and planned his next raid all day; he has needed longer and longer sessions to feel satisfied and now plays about 10 hours a day; he has lied to his parents about how much he plays; he logs in to escape feeling like a failure; and he lost his scholarship after failing three subjects. When his laptop broke for a week he was bored but not irritable or sad, he has never tried to cut down, he still plays basketball on weekends, and he says he would stop if his grades required it. He does not gamble and uses no substances.",
+    "stem": "A 20-year-old IT student in Malolos leads a guild in an online role-playing game. Over the past 12 months he has thought about the game during every class and planned his next raid all day; he has needed longer and longer sessions to feel satisfied and now plays about 10 hours a day; he has lied to his parents about how much he plays; he logs in to escape feeling like a failure; and he lost his scholarship after failing three subjects. When his laptop broke for a week he was bored but not irritable or sad, he has never tried to cut down, and he still plays basketball on weekends. He does not gamble and uses no substances.",
     "q": "Which statement is correct?",
     "choices": [
       "He does not match the proposal, because withdrawal is required",
       "He matches the proposal only if he also has a comorbid depressive disorder",
       "He meets the official DSM-5-TR criteria for Internet gaming disorder, which should be coded",
-      "He endorses five of the nine proposed items in 12 months, which matches the proposed Section III criteria for Internet gaming disorder; it is not an official DSM-5-TR diagnosis",
+      "He endorses at least five of the nine proposed items in 12 months, which matches the proposed Section III criteria for Internet gaming disorder; it is not an official DSM-5-TR diagnosis (if a code is needed, other specified mental disorder, F99, with the reason; app guidance)",
       "He does not match, because playing with a team is a social use of the Internet and is excluded"
     ],
     "answer": 3,
-    "why": "He endorses **preoccupation (1), tolerance (3), deceiving family (7), gaming to escape a negative mood (8)** and **losing an educational opportunity (9)**: five items in a 12-month period, which is the proposed threshold (pp. 913–914). The manual calls five of nine a deliberately **conservative** cut-off (p. 915). The condition remains a Section III proposal (p. 903); it is included in ICD-11 (p. 914), and ICD-11’s gaming disorder sits outside the DSM.",
+    "why": "He endorses **preoccupation (1), tolerance (3), deceiving family (7), gaming to escape a negative mood (8)** and **losing an educational opportunity (9)**: at least five items in a 12-month period (continuing to play after losing the scholarship may also count as item 6), which meets the proposed threshold (pp. 913–914). The manual calls five of nine a deliberately **conservative** cut-off (p. 915). The condition remains a Section III proposal (p. 903); it is included in ICD-11 (p. 914), and ICD-11’s gaming disorder sits outside the DSM.",
     "whyNot": [
       "No single item is mandatory; any five of the nine count (p. 913).",
       "Comorbidity is not a criterion (p. 916).",
@@ -376,7 +376,7 @@ SP.add("ch25", "vignettes", [
         "Hours are part of the picture, but the manual ties severity to disruption, not to an hour count (p. 914).",
         "Correct.",
         "Offline games are less researched, but this is not how severity is graded (pp. 914–915).",
-        "The manual does not set severity by item count for this proposal (p. 914).",
+        "The manual ties severity to the degree of disruption; milder cases may show fewer symptoms, but there are no count-based cut-offs (p. 914).",
         "Comorbidity is not part of the severity rating (pp. 914, 916)."
       ]
     },
@@ -446,7 +446,7 @@ SP.add("ch25", "vignettes", [
     "tag": "Lola’s grandson",
     "sec": "s25-ndpae-criteria",
     "dx": "nd-pae",
-    "stem": "A 10-year-old boy in Pilar has been raised since infancy by his grandmother, who gives him stable, attentive care. His mother told the municipal social worker, as recorded in his file, that she drank three to four glasses of gin most Saturdays throughout her pregnancy. Since preschool he has forgotten lessons learned the day before and repeats the same mistakes despite correction; he has frequent angry outbursts and fast mood shifts; he is overly friendly with strangers and misses social cues; and he cannot manage a daily routine such as bathing and preparing his school bag without step-by-step help. His full-scale IQ is 86. He is failing Grade 4. He has no facial features of fetal alcohol syndrome, no history of head injury, no postnatal substance exposure, and a genetics consult found no syndrome.",
+    "stem": "A 10-year-old boy in Pilar has been raised since infancy by his grandmother, who gives him stable, attentive care. His mother told the municipal social worker, as recorded in his file, that she drank three to four glasses of gin most Saturdays throughout her pregnancy. Since preschool he has forgotten lessons learned the day before and repeats the same mistakes despite correction; he has frequent angry outbursts and fast mood shifts; he is overly friendly with strangers and misses social cues; and he cannot manage a daily routine such as bathing and preparing his school bag without step-by-step help. His full-scale IQ is 86. He is failing Grade 4. He has no facial features of fetal alcohol syndrome, no history of head injury, no postnatal substance exposure, no other prenatal drug or medication exposure is recorded, and a genetics consult found no syndrome.",
     "q": "Which formulation is best?",
     "choices": [
       "The proposal cannot be considered without the facial features of fetal alcohol syndrome",
@@ -456,7 +456,7 @@ SP.add("ch25", "vignettes", [
       "Matches the proposed criteria for neurobehavioral disorder associated with prenatal alcohol exposure (ND-PAE); record as other specified neurodevelopmental disorder (F88), with ND-PAE as the reason"
     ],
     "answer": 4,
-    "why": "Exposure is **more than minimal**: more than 2 drinks on one occasion counts (p. 918), and the mother’s own report confirms it (A; p. 916). He shows a **memory** impairment (B4), **mood and behavioral regulation** problems (C1), and adaptive deficits in **social communication** (D2) and **daily living** (D3), with one of the two being D1 or D2 as required (p. 917). Onset was in childhood (E), there is impairment (F), and the stem rules out the alternatives in G (p. 917). ND-PAE can be diagnosed **with or without** the physical features of fetal alcohol syndrome (p. 917). Since the proposal is not official (p. 903), Chapter 1’s **other specified neurodevelopmental disorder, F88**, which gives ND-PAE as its example, carries the code (app guidance on the route).",
+    "why": "Exposure is **more than minimal**: more than 2 drinks on one occasion counts (p. 918), and the mother’s own report confirms it (A; p. 916). He shows a **memory** impairment (B4), **mood and behavioral regulation** problems (C1), and adaptive deficits in **social communication** (D2) and **daily living** (D3), with one of the two being D1 or D2 as required (p. 917). Onset was in childhood (E), there is impairment (F), and the stem rules out the alternatives in G (p. 917). ND-PAE can be diagnosed **with or without** the physical features of fetal alcohol syndrome (p. 917). Since the proposal is not official (p. 903), Chapter 1’s **other specified neurodevelopmental disorder, F88**, which gives ND-PAE as its example (named there neurodevelopmental disorder associated with prenatal alcohol exposure; p. 99), carries the code (app guidance on the route).",
     "whyNot": [
       "The manual says the proposal applies both with and without the physical effects of prenatal alcohol (p. 917).",
       "An IQ of 86 does not support intellectual developmental disorder; the neurocognitive item he meets is memory (pp. 916–917).",
@@ -474,7 +474,7 @@ SP.add("ch25", "vignettes", [
     "tag": "Is it just ADHD?",
     "sec": "s25-ndpae-features",
     "dx": "nd-pae",
-    "stem": "An 8-year-old girl in Bagac was born to a mother whose hospital record documents heavy daily drinking through pregnancy. She meets full criteria for ADHD, combined presentation, with symptoms in school and at home since age 5. Testing also shows academic achievement well below her intellectual level (IQ 88) in reading and arithmetic. Her speech developed late and she still struggles to understand spoken instructions, and her fine motor skills are poor. Her difficulties began in early childhood and are causing school failure. She has no genetic syndrome, head injury or postnatal substance exposure, and her care has been consistent.",
+    "stem": "An 8-year-old girl in Bagac was born to a mother whose hospital record documents heavy daily drinking through pregnancy. She meets full criteria for ADHD, combined presentation, with symptoms in school and at home since age 5. Testing also shows academic achievement well below her intellectual level (IQ 88) in reading and arithmetic. Her speech developed late and she still struggles to understand spoken instructions, and her fine motor skills are poor. Her reading, arithmetic, language and motor difficulties have been assessed and do not meet full criteria for specific learning disorder, language disorder or developmental coordination disorder. Her difficulties began in early childhood and are causing school failure. She has no genetic syndrome, head injury or postnatal substance exposure, and her care has been consistent.",
     "q": "How should her problems be formulated?",
     "choices": [
       "ADHD alone, because ADHD explains the attention problems",
@@ -484,7 +484,7 @@ SP.add("ch25", "vignettes", [
       "Defer all diagnoses until age 12"
     ],
     "answer": 1,
-    "why": "Exposure is documented in records (A; pp. 916, 918). She has a **learning** impairment (B3), an **attention** deficit and impulse problems (C2–C3), and adaptive deficits in **communication** (D1) and **motor skills** (D4), with childhood onset and impairment (pp. 916–917). ADHD is the **most common co-occurring diagnosis** in ND-PAE (p. 920), so both are named: ADHD as the Section II diagnosis, and the ND-PAE picture through F88 (app guidance on the route).",
+    "why": "Exposure is documented in records (A; pp. 916, 918). She has a **learning** impairment (B3), an **attention** deficit and impulse problems (C2–C3), and adaptive deficits in **communication** (D1) and **motor skills** (D4), with childhood onset and impairment (pp. 916–917). ADHD is the **most common co-occurring diagnosis** in ND-PAE (p. 920), so both are named: ADHD as the Section II diagnosis, and the ND-PAE picture through F88, whose example it is (p. 99; app guidance on the route).",
     "whyNot": [
       "ADHD does not account for her documented exposure, learning, language and motor deficits, which the proposal gathers together (pp. 916–917, 920).",
       "Correct.",
@@ -549,7 +549,7 @@ SP.add("ch25", "vignettes", [
     "tag": "Four months after the pesticide",
     "sec": "s25-sbd-criteria",
     "dx": "suicidal-behavior-disorder",
-    "stem": "A 36-year-old rice farmer in Abucay, treated for major depressive disorder, made a suicide attempt 4 months ago after a failed harvest: he swallowed a farm pesticide expecting to die and spent 5 days in the hospital’s intensive care unit. He has made no attempt since. He is now seen by his regular psychiatrist for routine follow-up of his recovery, with an antidepressant adjustment. He was not delirious or confused at the time of the attempt.",
+    "stem": "A 36-year-old rice farmer in Abucay, treated for major depressive disorder, made a suicide attempt 4 months ago after a failed harvest: he swallowed a farm pesticide expecting to die and spent 5 days in the hospital’s intensive care unit. He has made no attempt since. He is now seen by his regular psychiatrist for routine follow-up of his recovery, with an antidepressant adjustment. He was not delirious or confused at the time of the attempt, and his reasons were personal, with no political or religious motive.",
     "q": "How is the attempt described in Section III terms, and what is coded today?",
     "choices": [
       "His history matches the proposed criteria for suicidal behavior disorder, current; in the chart, his depressive disorder is coded with T14.91XD (current suicidal behavior, subsequent encounter)",
@@ -559,7 +559,7 @@ SP.add("ch25", "vignettes", [
       "Suicidal behavior disorder, current, entered as his principal diagnosis in place of the depressive disorder"
     ],
     "answer": 0,
-    "why": "He began a self-initiated act expecting to die (Criterion A; p. 920), within 24 months, outside delirium (D), for no political or religious goal (E). It was **4 months** ago, so the **current** specifier applies (**12 months or less**; p. 920). An admission beyond the emergency department marks a **high-lethality** attempt in the manual’s specifier discussion (p. 920). The proposal is not an official diagnosis (p. 903); the note on p. 920 points to the Chapter 22 codes, which can accompany any diagnosis. Routine recovery-phase follow-up takes **T14.91XD** (printed T14.91D; the APA’s 2022 correction added the X; app guidance on phase of care).",
+    "why": "He began a self-initiated act expecting to die (Criterion A; p. 920), within 24 months, outside delirium (D), for no political or religious goal (E). It was **4 months** ago, so the **current** specifier applies (**12 months or less**; p. 920). An admission beyond the emergency department marks a **high-lethality** attempt in the manual’s specifier discussion (p. 920). The proposal is not an official diagnosis (p. 903); the note on p. 920 points to the Chapter 22 codes, which can accompany any diagnosis. Routine recovery-phase care such as medication adjustment takes **T14.91XD** (Chapter 22 coding note, p. 822; printed T14.91D, the X added by the APA’s post-publication correction, app guidance).",
     "whyNot": [
       "Correct.",
       "Early remission starts 12 months after the last attempt (p. 920); it has been 4.",
@@ -577,7 +577,7 @@ SP.add("ch25", "vignettes", [
         "In early remission"
       ],
       "answer": 4,
-      "why": "The proposal’s specifiers are **current** (no more than 12 months since the last attempt) and **in early remission** (**12–24 months**) (pp. 920–921). At 16 months he is in early remission. In the chart the attempt is recorded with **Z91.51**, history of suicidal behavior (p. 920; app guidance on when the current code gives way to the history code).",
+      "why": "The proposal’s specifiers are **current** (no more than 12 months since the last attempt) and **in early remission** (**12–24 months**) (pp. 920–921). At 16 months he is in early remission. In the chart **Z91.51** records the lifetime history; T14.91XD would still be added only if the attempt remains part of the current clinical presentation (pp. 822, 920; app guidance).",
       "whyNot": [
         "More than 12 months have passed (p. 920).",
         "The proposal has no full remission specifier (p. 920).",
@@ -596,7 +596,7 @@ SP.add("ch25", "vignettes", [
     "tag": "Gin first, “so I would not lose my nerve”",
     "sec": "s25-sbd-features",
     "dx": "suicidal-behavior-disorder",
-    "stem": "A 44-year-old fisherman in Mariveles lost his boat in a storm. Last night he drank most of a bottle of gin “so I would not lose my nerve,” then took an overdose of his mother’s tablets, expecting to die. His son found him and brought him to the emergency department, where he needed only observation and had no lasting harm. This morning he is sober, oriented and remembers the events. The psychiatry resident who has just met him is doing the first evaluation. He has never attempted suicide before.",
+    "stem": "A 44-year-old fisherman in Mariveles lost his boat in a storm. Last night he drank most of a bottle of gin “so I would not lose my nerve,” then took an overdose of tablets, expecting to die. His son found him and brought him to the emergency department, where he needed only observation and had no lasting harm. This morning he is sober, oriented and remembers the events. The psychiatry resident who has just met him is doing the first evaluation. He has never attempted suicide before.",
     "q": "Which statement is correct?",
     "choices": [
       "The proposed suicidal behavior disorder is excluded, because he was intoxicated when he acted",
@@ -606,7 +606,7 @@ SP.add("ch25", "vignettes", [
       "His act is suicidal ideation with a preparatory act"
     ],
     "answer": 2,
-    "why": "He initiated the act expecting to die (Criterion A; p. 920). The manual states that if a person **deliberately becomes intoxicated beforehand to reduce anticipatory anxiety**, the diagnosis **can still be made** (p. 921). Injury or medical severity is **not required**, and factors that shape medical outcome are **not considered** in assigning it (p. 921). The proposal is not an official diagnosis (p. 903); an emergency visit and a first evaluation by a new clinician are active treatment, so the Chapter 22 code is **T14.91XA** (printed T14.91A; APA 2022 correction; app guidance).",
+    "why": "He initiated the act expecting to die (Criterion A; p. 920). The manual states that if a person **deliberately becomes intoxicated beforehand to reduce anticipatory anxiety**, the diagnosis **can still be made** (p. 921). Injury or medical severity is **not required**, and factors that shape medical outcome are **not considered** in assigning it (p. 921). The proposal is not an official diagnosis (p. 903); an emergency visit and a first evaluation by a new clinician are active treatment, so the Chapter 22 code is **T14.91XA** (Chapter 22 coding note, p. 822; printed T14.91A, the X added by the APA’s post-publication correction, app guidance).",
     "whyNot": [
       "Exclusion applies to acts initiated during delirium or confusion; deliberate intoxication to steady oneself does not exclude (pp. 920–921).",
       "An attempt need not cause injury (p. 921).",
@@ -615,7 +615,7 @@ SP.add("ch25", "vignettes", [
       "He went beyond ideation and preparation: he applied the method (p. 920)."
     ],
     "discuss": [
-      "Which risk markers named in the manual are present, such as a sudden loss (p. 921)?",
+      "Which risk markers named in the manual are present, such as loss of employment (p. 921)?",
       "Why does the manual call a willingness to sign a safety contract a less reliable indicator (p. 921)?"
     ]
   },
@@ -691,7 +691,7 @@ SP.add("ch25", "vignettes", [
     },
     "discuss": [
       "How would you respond to her disclosure in a way that reduces shame (app guidance)?",
-      "Contagion of self-injury in dormitories and schools is described in the manual (p. 925). What, if anything, should the university do (outside the DSM)?"
+      "Starting self-injury after exposure to others who self-injure, including in school settings, is described in the manual (p. 925). What, if anything, should the university do (outside the DSM)?"
     ]
   },
   {
@@ -759,19 +759,19 @@ SP.add("ch25", "vignettes", [
     "q": "Which entry follows DSM-5-TR’s rules for these conditions?",
     "choices": [
       "“Caffeine use disorder, moderate”",
-      "“F88 Other specified neurodevelopmental disorder (neurobehavioral disorder associated with prenatal alcohol exposure)”",
+      "“F88 Other specified neurodevelopmental disorder (neurodevelopmental disorder associated with prenatal alcohol exposure)”",
       "“F63.0 Internet gaming disorder”",
       "“Suicidal behavior disorder, current” entered in place of the patient’s major depressive disorder",
       "“F20.9 Attenuated psychosis syndrome”"
     ],
     "answer": 1,
-    "why": "The Section III sets are **for research and not for clinical use**; only Section II diagnoses are official (p. 903). The chart therefore names a Section II category and gives the Section III condition as the reason. Chapter 1 lists ND-PAE as an example for **other specified neurodevelopmental disorder, F88** (app guidance on the route). The other conditions are recorded through **F28** (attenuated psychosis), **F31.89** (short-duration hypomania), a Section II caffeine diagnosis (**F15.93**, **F15.920** or **F15.99**), **F99** for gaming if a code is needed, and the Chapter 22 codes **T14.91XA/XD, Z91.51, R45.88, Z91.52** for suicidal behavior and self-injury (pp. 920, 923–924; app guidance).",
+    "why": "The Section III sets are **for research and not for clinical use**; only Section II diagnoses are official (p. 903). The chart therefore names a Section II category and gives the Section III condition as the reason. Chapter 1 lists it as the example for **other specified neurodevelopmental disorder, F88**, under the name neurodevelopmental disorder associated with prenatal alcohol exposure (the Section II name on p. 99; Section III calls it neurobehavioral) (app guidance on the route). The other conditions are recorded through **F28** (attenuated psychosis), **F31.89** (short-duration hypomania), a Section II caffeine diagnosis (**F15.93**, **F15.920** or **F15.99**), **F99** for gaming if a code is needed, and the Chapter 22 codes **T14.91XA/XD, Z91.51, R45.88, Z91.52** for suicidal behavior and self-injury (pp. 920, 923–924; app guidance).",
     "whyNot": [
       "There is no official caffeine use disorder, and the proposal has no severity levels (pp. 903, 910–911).",
       "Correct.",
       "F63.0 is the code for gambling disorder; the gaming proposal is distinct from gambling (pp. 913–914; app guidance).",
       "The note says the suicidal behavior codes accompany a diagnosis; they do not replace it, and the proposal is not official (pp. 903, 920).",
-      "F20.9 is a schizophrenia code; attenuated psychosis syndrome requires that no psychotic disorder has been met, and its route is F28 (p. 904; app guidance)."
+      "F20.9 is a schizophrenia code; attenuated psychosis syndrome requires that no psychotic disorder has been met, and its route is F28 (p. 903; app guidance)."
     ],
     "discuss": [
       "When would you choose to record no diagnosis at all and describe the presentation in the note instead (app guidance)?",
