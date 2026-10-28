@@ -117,6 +117,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["12-month prevalence (US)", "≈7%"], ["Elsewhere", "0.5%–2.0%; Europe median 2.3%"], ["Sex", "Women 1.5–2.2×; equal or more men in clinics"], ["Onset", "Median 13; 75% between 8 and 15"]],
     risk: ["Behavioral inhibition, fear of negative evaluation, high neuroticism, low extraversion.", "Peer victimization; childhood maltreatment; discrimination.", "First-degree relatives 2–6× risk."],
     differential: [
+        { id: "taijin-kyofusho", how: "Japanese syndrome of fear that one’s gaze, blushing, odor or body offends others; broader than social anxiety disorder, reaching into body dysmorphic, olfactory reference and delusional presentations (Chapter 24, p. 879)." },
       { name: "Normative shyness", how: "Only 12% of shy people meet criteria." },
       { id: "agoraphobia", how: "Fear of being trapped without help; often anxious when alone." },
       { id: "panic-disorder", how: "Attacks come out of the blue, not only in social situations." },
@@ -147,6 +148,8 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["12-month prevalence", "2%–3% (US and Europe)"], ["Sex", "≈2:1 female"], ["Onset", "US median 20–24; mean 34.7; rare <14 or >55"], ["Comorbidity", "80% lifetime"]],
     risk: ["Anxiety sensitivity, negative affectivity, behavioral inhibition, fearful spells.", "Stressors before the first attack; trauma; smoking.", "Parental anxiety, depressive or bipolar disorders; CO₂ hypersensitivity; asthma."],
     differential: [
+        { id: "ataque-de-nervios", how: "Overlaps with panic symptomatically but usually follows a family stressor and features anger, grief and loss of control; some ataques are normative (Chapter 24, p. 874)." },
+        { id: "khyal-cap", how: "Cambodian wind attacks that usually meet panic attack criteria, with tinnitus, neck soreness and fear of wind rising with the blood (Chapter 24, pp. 875–876)." },
       { id: "anxiety-due-to-amc", how: "Hyperthyroidism, hyperparathyroidism, pheochromocytoma, vestibular, seizure or cardiopulmonary disease; onset after 45 or atypical symptoms." },
       { id: "substance-induced-anxiety", how: "Stimulant, caffeine or cannabis intoxication; alcohol or sedative withdrawal." },
       { id: "social-anxiety", how: "Attacks only in feared social situations." },
@@ -322,6 +325,9 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [],
     risk: [],
     differential: [
+        { id: "ataque-de-nervios", how: "The Latinx syndrome behind this chapter’s own example: a stress-bound paroxysm with shouting, crying, aggression and sometimes dissociation; recorded here when clinically significant and not a full panic or dissociative diagnosis (Chapter 24, p. 874)." },
+        { id: "khyal-cap", how: "Cambodian wind attacks, which usually meet panic attack criteria; catastrophic cognitions about wind rising in the body (Chapter 24, pp. 875–876)." },
+        { id: "nervios", how: "A Latinx idiom and explanation that spans no disorder to anxiety, depressive, dissociative and somatic presentations (Chapter 24, p. 877)." },
       { id: "unspecified-anxiety", how: "Reason not recorded or information insufficient." },
       { name: "Adjustment disorder with anxiety", how: "Stressor-related anxiety; must be ruled out first." }
     ],

@@ -16,6 +16,9 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["General population", "About 4%–6%"], ["Primary care", "10%–20%"], ["Specialty clinics", "40%–60%"], ["Sex", "Likely more common in women"]],
     risk: ["Negative affectivity (neuroticism); comorbid anxiety or depression.", "Low education and socioeconomic status; recent stressful events; childhood sexual abuse.", "Persistence: illness benefits, chronic illness, unemployment, older age, female sex."],
     differential: [
+        { id: "shenjing-shuairuo", how: "The Chinese neurasthenia syndrome; somatic symptom disorder is on its related list, and up to 45% of clinic patients with it meet no DSM-IV disorder (Chapter 24, pp. 877–879)." },
+        { id: "dhat-syndrome", how: "A South Asian explanation attributing fatigue, weakness and sexual symptoms to semen loss; somatic symptom and illness anxiety disorders are on its related list (Chapter 24, pp. 874–875)." },
+        { id: "susto", how: "The somatic type of susto, with recurrent bodily symptoms and consultations with several practitioners, resembles somatic symptom disorder (Chapter 24, p. 879)." },
       { id: "iad", how: "No or mild somatic symptoms; fear of having a disease." },
       { id: "fnd", how: "Loss of function with positive incompatible signs; both can be diagnosed." },
       { id: "pfamc", how: "A medical condition worsened by psychological factors; thoughts need not be excessive." },

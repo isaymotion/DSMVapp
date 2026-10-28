@@ -100,6 +100,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [],
     risk: [],
     differential: [
+        { id: "ataque-de-nervios", how: "Depersonalization, derealization and amnesia are prominent in some ataques; other specified dissociative disorder is on the manual’s related list (Chapter 24, p. 874)." },
       { id: "did", how: "Identity states with recurrent amnesia." },
       { id: "acute-stress", how: "9 of 14 symptoms, 3 days to 1 month after Criterion A trauma." },
       { id: "unspecified-dissociative", how: "Reason not given." }

@@ -70,6 +70,8 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Lifetime (US, DSM-5)", "6.1%–8.3%"], ["12-month (US)", "4.7%"], ["Sex", "Women 8%–11% vs men 4.1%–5.4% (lifetime)"], ["Course", "Half recover within 3 months; some >50 years"]],
     risk: ["Pretraumatic: childhood adversity, prior disorders, neuroticism, low SES, discrimination.", "Peritraumatic: severity, interpersonal violence, peritraumatic dissociation.", "Posttraumatic: negative appraisals, acute stress disorder, new adversity; social support protects."],
     differential: [
+        { id: "susto", how: "When a traumatic fright shapes the symptoms, the manual says PTSD is the better fit for susto (Chapter 24, p. 879)." },
+        { id: "khyal-cap", how: "Wind attacks may shape the experience of trauma- and stressor-related disorders in Cambodian contexts (Chapter 24, p. 876)." },
       { id: "acute-stress", how: "3 days to 1 month." },
       { id: "adjustment", how: "Non-Criterion A stressor, or subthreshold symptoms." },
       { id: "mdd", how: "No intrusions or avoidance; both can coexist." },
@@ -182,6 +184,8 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [],
     risk: [],
     differential: [
+        { id: "ataque-de-nervios", how: "The manual lists other specified trauma- and stressor-related disorder among the conditions related to this Latinx syndrome (Chapter 24, p. 874)." },
+        { id: "susto", how: "A Latinx explanation of distress after a fright; its trauma type is closer to PTSD, its interpersonal type to depression (Chapter 24, p. 879)." },
       { id: "adjustment", how: "Onset within 3 months and resolution within 6 months of the end." },
       { id: "ptsd", how: "Full criteria met." },
       { id: "unspecified-trauma", how: "Reason not recorded." }

@@ -47,6 +47,8 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Prevalence", "About 0.2% lifetime (Finnish sample)"], ["Commonest type", "Persecutory"], ["Sex", "No major overall difference; jealous type probably more common in men; men have worse outcomes"], ["Course", "About one-third of cases lasting 1–3 months become schizophrenia; stable after 6–12 months"], ["Age", "May be more prevalent in older people"]],
     risk: ["Significant familial link with schizophrenia and schizotypal PD.", "Traditional beliefs unfamiliar to Western clinicians can be mislabeled as delusional."],
     differential: [
+        { id: "maladi-dyab", how: "A Haitian sent-sickness explanation shared by the community; the manual warns it may lead to misdiagnosis of delusional disorder, persecutory type (Chapter 24, p. 877)." },
+        { id: "taijin-kyofusho", how: "Consider delusional disorder only when the fear of offending others has a delusional quality that resists reassurance or counterexample (Chapter 24, p. 879)." },
       { name: "OCD or body dysmorphic disorder", how: "Fully convinced OCD or BDD beliefs → that disorder **with absent insight/delusional beliefs**." },
       { name: "Major neurocognitive disorder", how: "Simple persecutory delusions in dementia → major NCD **with behavioral disturbance**." },
       { id: "substance-induced-psychotic", how: "Same cross-sectional picture; timing of substance use decides." },

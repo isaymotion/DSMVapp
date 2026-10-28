@@ -46,6 +46,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Point prevalence (US)", "2.4% (women 2.5%, men 2.2%)"], ["Cosmetic settings", "Rhinoplasty 20%; cosmetic surgery 13%–15%; dermatology 11%–13%"], ["Onset", "Most common 12–13; two-thirds before 18"], ["Heritability", "37%–49%"]],
     risk: ["Childhood neglect, abuse, trauma and teasing.", "Family history of OCD; shared genetics with OCD."],
     differential: [
+        { id: "taijin-kyofusho", how: "The shubo-kyofu variant (perceived deformity, stiff or awkward expression or movement) overlaps with body dysmorphic disorder (Chapter 24, p. 879)." },
       { id: "ocd", how: "Obsessions not limited to appearance; better insight." },
       { id: "excoriation", how: "Picking without an appearance motive." },
       { id: "trichotillomania", how: "Pulling without an appearance motive." },
@@ -213,6 +214,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [],
     risk: [],
     differential: [
+        { id: "taijin-kyofusho", how: "The jiko-shu-kyofu variant corresponds to olfactory reference syndrome, this chapter’s other specified example (Chapter 24, p. 879)." },
       { id: "bdd", how: "Slight or unobservable flaws with repetitive behaviors." },
       { id: "delusional-disorder", how: "Delusional (not obsessional) jealousy." },
       { id: "unspecified-ocrd", how: "Reason not given." }

@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 51,
+    date: "2026-10-28",
+    title: "Chapter 24: Culture and Psychiatric Diagnosis (Section III)",
+    summary: "The second Section III chapter: culture, race and ethnicity as the manual defines them; the Outline for Cultural Formulation and the Cultural Formulation Interview (16 core questions in four domains, the Informant version, the online modules, the seven situations where it helps most); cultural idioms, explanations and syndromes in place of “culture-bound syndromes”; and the ten worked examples from ataque de nervios to taijin kyofusho, each tied to the DSM-5-TR conditions the manual lists. Nothing in the chapter is a diagnosis: the chart gets the Section II disorder that is met, or an other specified category, with the concept in the formulation.",
+    items: [
+      { type: "chapter", ch: "ch24", text: "Chapter 24: a 23-section study guide (the CFI described question by question in the app’s own words, never reprinted), high-yield points, three card decks, board questions, glossary, mnemonics, board vignettes, write-the-formulation and counting drills, exam traps, 11 library entries (the cultural formulation tool and the ten concepts), compare presets and a time ladder, the cultural helper, interview questions, a care orientation and complaint-hub entries, plus a labeled Philippine section (nerbyos, pasma, usog, kulam, sapi, bangungot and others) that is outside the DSM.", href: "#/c/ch24", link: "Open Chapter 24" },
+      { type: "feature", text: "New helper: from a cultural idiom, explanation or syndrome to the Section II conditions the manual lists and to the recording route on p. 873.", href: "#/helpers/cultural", link: "The cultural helper" },
+      { type: "update", text: "Panic disorder, social anxiety disorder, other specified anxiety disorder, body dysmorphic disorder, other specified obsessive-compulsive and related disorder, PTSD, other specified trauma- and stressor-related disorder, other specified dissociative disorder, somatic symptom disorder and delusional disorder now point to the Chapter 24 concepts in their differential lists.", href: "#/dx/other-specified-anxiety", link: "Other specified anxiety disorder" },
+      { type: "feature", text: "New complaint-hub entries “The family explains it with a spiritual, supernatural or traditional cause” and “A young person who has not left home or their room for months”; the panic, anxiety, bodily-symptom, low-mood, avoidance, trauma and stress entries now list the cultural concepts.", href: "#/complaints/cultural-explanation", link: "Cultural explanation" }
+    ]
+  },
+  {
     id: 50,
     date: "2026-10-28",
     title: "Practice pack for Chapter 25, and Section II links to the proposed conditions",
