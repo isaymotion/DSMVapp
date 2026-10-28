@@ -4,6 +4,17 @@
  */
 SP.changelog = [
   {
+    id: 49,
+    date: "2026-10-28",
+    title: "Chapter 25: Conditions for Further Study (the first Section III chapter)",
+    summary: "The app now goes beyond Section II. The seven proposed criteria sets of Section III (attenuated psychosis syndrome, depressive episodes with short-duration hypomania, caffeine use disorder, Internet gaming disorder, neurobehavioral disorder associated with prenatal alcohol exposure, suicidal behavior disorder and nonsuicidal self-injury disorder) get a study guide, high-yield points, three card decks, board questions, glossary, mnemonics, a library entry each, a decision tree and complaint-hub links. Every entry says what the manual says: these are research sets, not diagnoses, and the chart carries the Section II category or Chapter 22 code.",
+    items: [
+      { type: "chapter", ch: "ch25", text: "Chapter 25 study guide: 19 sections from what Section III is and how its conditions are recorded, through each proposed set with its thresholds (weekly for a month and within a year; two or more 2–3 day periods; the first three of nine caffeine criteria; 5 of 9 gaming criteria; more than minimal prenatal exposure and the B–D thresholds; an attempt within 24 months; 5 or more days of self-injury), to a side-by-side comparison, cross-chapter look-alikes and an exam section.", href: "#/c/ch25/guide", link: "Open the guide" },
+      { type: "feature", text: "Library entries for the seven conditions with the recording route for each (F28, F31.89, F88, T14.91XA/XD, R45.88, and the no-code situation of caffeine use disorder and Internet gaming disorder), eight comparison presets and a time ladder; the “Conditions for further study” decision tree; and new complaints “Gaming or screen use that has taken over” and “Can’t cut down on coffee or energy drinks”.", href: "#/dx/attenuated-psychosis-syndrome", link: "Attenuated psychosis syndrome" },
+      { type: "feature", text: "Section III chapters 23 (Assessment Measures), 24 (Culture and Psychiatric Diagnosis) and 26 (Alternative DSM-5 Model for Personality Disorders) are listed as coming soon; the numbering is the app’s, not the manual’s." }
+    ]
+  },
+  {
     id: 48,
     date: "2026-10-27",
     title: "Practice pack for Chapter 22, and Section II complete",

@@ -1,5 +1,6 @@
 /*
- * Chapter registry: the 22 chapters of DSM-5-TR Section II (Diagnostic Criteria and Codes).
+ * Chapter registry: the 22 chapters of DSM-5-TR Section II (Diagnostic Criteria and Codes), followed by the
+ * optional Section III chapters (numbered 23–26 by the app; `section: 3`).
  * Every chapter is listed so the menu shows the whole roadmap. Set `ready: true` once data/chNN/
  * exists; only ready chapters are loaded. `pages` are the manual's printed page numbers.
  */
@@ -80,7 +81,18 @@ SP.manifest = [
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch22', number: 22, ready: true, pages: '821–836', title: 'Other Conditions That May Be a Focus of Clinical Attention', short: 'Other conditions of clinical focus',
     summary: 'The four reasons a non-disorder condition may be coded; suicidal behavior (some intent to die, initiated; T14.91XA/XD, Z91.51) and nonsuicidal self-injury (R45.88, Z91.52); child and adult abuse and neglect with the confirmed/suspected T74/T76 codes, the A/D encounter characters and the victim, perpetrator and history Z codes; parent-child, sibling and partner relational problems and the family-environment codes; educational, occupational, housing, economic, social, legal and other psychosocial problems; wandering, uncomplicated bereavement, phase of life and religious problems; antisocial behavior, nonadherence, obesity, malingering and its four indicators, age-related cognitive decline and borderline intellectual functioning; and the codes corrected or changed since 2022, current to October 2026.',
-    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) }
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
+  /* Section III (Emerging Measures and Models), pp. 837–927: optional chapters numbered 23–26 by the app, not by the manual.
+     The alternative model for personality disorders is summarized in Chapter 18 and gets its own chapter last. */
+  { id: 'ch23', number: 23, section: 3, ready: false, pages: '841–858', title: 'Assessment Measures', short: 'Assessment measures',
+    summary: 'Section III: the cross-cutting symptom measures, the clinician-rated dimensions of psychosis symptom severity, and the WHODAS 2.0.' },
+  { id: 'ch24', number: 24, section: 3, ready: false, pages: '859–880', title: 'Culture and Psychiatric Diagnosis', short: 'Culture and diagnosis',
+    summary: 'Section III: the outline for cultural formulation, the Cultural Formulation Interview and its supplementary modules, and the cultural concepts of distress.' },
+  { id: 'ch25', number: 25, section: 3, ready: true, pages: '903–927', title: 'Conditions for Further Study', short: 'Conditions for further study',
+    summary: 'Section III: why these seven proposed criteria sets are research tools rather than diagnoses, and how each is recorded in a chart; attenuated psychosis syndrome (weekly for a month, within a year, insight kept; F28); depressive episodes with short-duration hypomania (two or more periods of 2–3 days; F31.89); caffeine use disorder (the first three of nine criteria are required); Internet gaming disorder (5 of 9 in 12 months, nongambling games only, ICD-11); neurobehavioral disorder associated with prenatal alcohol exposure (more than minimal exposure, the B–D thresholds, with or without facial features; F88); suicidal behavior disorder (an attempt within 24 months, current versus early remission; T14.91XA/XD) and nonsuicidal self-injury disorder (5 or more days in a year; R45.88), each contrasted with its Section II look-alikes.',
+    files: SP.CHAPTER_FILES },
+  { id: 'ch26', number: 26, section: 3, ready: false, pages: '881–902', title: 'Alternative DSM-5 Model for Personality Disorders', short: 'Alternative PD model',
+    summary: 'Section III: the level of personality functioning scale, the five trait domains and 25 facets, and the six specific personality disorders of the alternative model (an overview is already in Chapter 18).' }
 ];
 
 /* Shared data loaded with the chapters: the disorder library, diagnostic helpers, and release notes. */
@@ -151,6 +163,9 @@ SP.extraFiles = [
   'data/db/disorders-ch22.js',
   'data/helpers/ch22-psychosocial.js',
   'data/db/clinical-ch22.js',
+  'data/db/disorders-ch25.js',
+  'data/helpers/ch25-further-study.js',
+  'data/db/clinical-ch25.js',
   'data/tools/substance.js',
   'data/tools/scales.js',
   'data/tools/psychosis.js',
