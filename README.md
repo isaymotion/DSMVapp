@@ -2,11 +2,11 @@
 
 A chapter-by-chapter study app for psychiatry residents, built from the *Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision* (DSM-5-TR, 2022). It runs entirely in the browser, works offline after the first visit, and can be installed on iPhone, iPad and desktop.
 
-**Live site:** https://isaymotion.github.io/DSMVapp/ (after GitHub Pages is switched on; see below)
+**Live site:** https://isaymotion.github.io/DSMVapp/ (published from the `main` branch with GitHub Pages; see below)
 
 ## Chapters
 
-The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), one chapter at a time.
+The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), one chapter at a time, and then adds the Section III chapters (Emerging Measures and Models) as optional chapters 23–26 (the app's numbering; the manual does not number them). Section III criteria sets are research proposals, not diagnoses, and the app says so on every entry.
 
 | Chapter | Status |
 | --- | --- |
@@ -32,6 +32,10 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 | 20. Other Mental Disorders and Additional Codes | Ready |
 | 21. Medication-Induced Movement Disorders and Other Adverse Effects of Medication | Ready |
 | 22. Other Conditions That May Be a Focus of Clinical Attention | Ready |
+| 23. Assessment Measures (Section III) | Planned |
+| 24. Culture and Psychiatric Diagnosis (Section III) | Planned |
+| 25. Conditions for Further Study (Section III) | Ready |
+| 26. Alternative DSM-5 Model for Personality Disorders (Section III) | Planned |
 
 ## Case tools
 
@@ -52,7 +56,7 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 - **Diagnostic helper**: a step-by-step decision tree for the chapter's look-alike diagnoses, with the reasoning trail shown (e.g., “Which psychotic disorder?”).
 - **Disorder library entries**: one page per diagnosis, with **How to ask it** (plain-language interview questions per criterion) and a **Treatment bridge** (clearly labeled as outside the DSM, linking to the [Stahl Study Companion](https://isaymotion.github.io/Stahl/)).
 - **Mnemonics** deck (`data/chNN/mnemonics.js`): each mnemonic letter by letter with a “DSM check” caveat, drilled with spaced repetition and collected on the Library’s Mnemonics page (`#/mnemonics`). `#/mnemonics/pdf` prints them as a study sheet, a fill-in worksheet with answer key, or a one-page pocket card; chapter high-yield PDFs can append the chapter’s mnemonics. Mark mnemonics written for the app with `original: true`.
-- **Practice pack** (Chapters 1–22): **Board vignettes** (longer cases, some in two parts, every option explained), **Practice drills** (*Write the diagnosis* with code and specifiers, *Count the criteria*) and **Exam traps** (also shown at the end of the guide and in high yield). Chapter entries in **Start from the complaint**.
+- **Practice pack** (Chapters 1–22 and 25): **Board vignettes** (longer cases, some in two parts, every option explained), **Practice drills** (*Write the diagnosis* with code and specifiers, *Count the criteria*) and **Exam traps** (also shown at the end of the guide and in high yield). Chapter entries in **Start from the complaint**.
 
 ## Across the app
 
@@ -92,7 +96,7 @@ js/practice.js             Practice drills, exam traps, complaint hub, clinical 
 js/study.js                Study tools: today's session, progress and weak-spot drill, time-rule drill,
                            notes and highlights, listen mode, one-page summary (uses SP._app from app.js)
 js/pdf.js, pdf-fonts.js    PDF generator for handouts
-data/chapters.js           Chapter registry (all 22 Section II chapters; `ready: true` for those built)
+data/chapters.js           Chapter registry (the 22 Section II chapters and the Section III chapters 23–26, `section: 3`; `ready: true` for those built)
 data/chNN/                 Chapter content
   guide.js                 Study guide
   highyield.js             High-yield topics

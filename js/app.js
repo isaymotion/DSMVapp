@@ -105,6 +105,7 @@
   }
   function allChapters() { return SP.manifest.filter(function (m) { return m.ready; }).map(function (m) { return chapter(m.id); }); }
   function plannedChapters() { return SP.manifest.slice(); }
+  function sectionDivider(m, prev) { return m.section === 3 && (!prev || prev.section !== 3); }
   function sectionCount(ch) { var n = 0; (ch.guide && ch.guide.parts || []).forEach(function (p) { n += p.sections.length; }); return n; }
   function hyCount(ch) { var n = 0; (ch.highYield || []).forEach(function (t) { n += t.items.length; }); return n; }
   function cardCount(ch) { var n = 0; DECKS.forEach(function (d) { n += (ch[d.key] || []).length; }); return n; }
@@ -342,8 +343,9 @@
     if (!body) return;
     var cur = parts();
     var curCh = cur[0] === 'c' || cur[0] === 'soon' ? cur[1] : null;
-    var chList = plannedChapters().map(function (m) {
+    var chList = plannedChapters().map(function (m, i, arr) {
       var ch = m.ready ? chapter(m.id) : null;
+      var divider = sectionDivider(m, arr[i - 1]) ? '<li class="nav-sect" aria-hidden="true">Section III · Emerging measures and models</li>' : '';
       var open = curCh === m.id && ch;
       var sub = '';
       if (open) {
@@ -353,7 +355,7 @@
         }).join('') + '<li><a class="nav-mode c-hy' + (active === 'handout' ? ' is-active' : '') + '" href="#/c/' + ch.id + '/handout">High-yield PDF</a></li><li><a class="nav-mode c-hy' + (active === 'summary' ? ' is-active' : '') + '" href="#/c/' + ch.id + '/summary">One-page summary</a></li></ul>';
       }
       var href = m.ready ? '#/c/' + m.id + '/guide' : '#/soon/' + m.id;
-      return '<li class="nav-ch' + (m.ready ? '' : ' is-soon') + (open ? ' is-open' : '') + (curCh === m.id ? ' is-current' : '') + '">' +
+      return divider + '<li class="nav-ch' + (m.ready ? '' : ' is-soon') + (open ? ' is-open' : '') + (curCh === m.id ? ' is-current' : '') + '">' +
         '<a href="' + href + '" data-navch="' + m.id + '"' + (curCh === m.id ? ' aria-current="true"' : '') + '><span class="nav-ch__n">' + m.number + '</span><span class="nav-ch__t">' + esc(m.short) + '</span>' + (m.ready ? '' : '<span class="nav-soon">Soon</span>') + '</a>' + sub + '</li>';
     }).join('');
     function item(href, key, label, icon, badge) {
@@ -505,9 +507,10 @@
     var newsStrip = unseen.length
       ? '<div class="wrap news-strip-wrap"><a class="news-strip" href="#/whats-new"><span class="news-strip__tag">New</span><span class="news-strip__text">' + esc(unseen[0].title) + (unseen.length > 1 ? ' and ' + plural(unseen.length - 1, 'more update') : '') + '</span><span class="news-strip__go">See what changed</span></a></div>'
       : '';
-    var rows = plannedChapters().map(function (m) {
+    var rows = plannedChapters().map(function (m, i, arr) {
+      var divider = sectionDivider(m, arr[i - 1]) ? '<li class="chapter-sect"><h2>Section III · Emerging measures and models</h2><p>Optional chapters: measures, the cultural formulation, the alternative personality model and the proposed criteria sets, which are not official diagnoses.</p></li>' : '';
       if (!m.ready) {
-        return '<li><a class="chapter-row is-soon" href="#/soon/' + m.id + '"><span class="chapter-row__num" aria-hidden="true">' + m.number + '</span>' +
+        return divider + '<li><a class="chapter-row is-soon" href="#/soon/' + m.id + '"><span class="chapter-row__num" aria-hidden="true">' + m.number + '</span>' +
           '<div><h3><span class="sr-only">Chapter ' + m.number + ': </span>' + esc(m.title) + ' <span class="soon-tag">Coming soon</span></h3><p>' + esc(m.summary) + '</p></div><span></span></a></li>';
       }
       var ch = chapter(m.id);
@@ -515,7 +518,7 @@
       DECKS.forEach(function (d) { keys = keys.concat(deckKeys(ch, d.key)); });
       var t = tallyKeys(keys);
       var started = t.total - t.fresh;
-      return '<li><a class="chapter-row" href="#/c/' + ch.id + '/guide">' +
+      return divider + '<li><a class="chapter-row" href="#/c/' + ch.id + '/guide">' +
         '<span class="chapter-row__num" aria-hidden="true">' + ch.number + '</span>' +
         '<div><h3><span class="sr-only">Chapter ' + ch.number + ': </span>' + esc(ch.title) + (upd[ch.id] ? ' <span class="upd">Updated</span>' : '') + '</h3><p>' + esc(ch.summary) + '</p>' +
         '<div class="chapter-row__stats"><span><b>' + sectionCount(ch) + '</b> guide sections</span><span><b>' + hyCount(ch) + '</b> high-yield points</span><span><b>' + t.total + '</b> cards and questions</span><span>DSM-5-TR pp. ' + esc(ch.pages) + '</span></div></div>' +
@@ -525,7 +528,7 @@
 
     var html =
       '<section class="hero"><div class="wrap hero__grid">' +
-        '<div><p class="hero__kicker">DSM-5-TR · Section II · Diagnostic criteria and codes</p><h1>The DSM, one chapter at a time</h1>' +
+        '<div><p class="hero__kicker">DSM-5-TR · Sections II and III · Diagnostic criteria, codes and emerging models</p><h1>The DSM, one chapter at a time</h1>' +
         '<p class="hero__lede">Study guides, high-yield summaries, criteria flashcards, board-style vignettes, diagnostic helpers and a cross-linked disorder library for psychiatry residents, built chapter by chapter from the DSM-5-TR.</p>' +
         '<div class="hero__actions">' + cont + '<a class="btn" href="#/helpers">Open the diagnostic helpers</a></div></div>' +
         '<nav class="bloom" aria-label="Study modes for Chapter ' + focus.number + '">' +
