@@ -7,7 +7,7 @@
    Suicidal behavior and self-injury are described clinically, at the level of the manual’s definitions. */
 SP.add("ch25", "highYield", [
   { id: "hy25-frame", topic: "Section III and the status of these conditions", items: [
-    "The official name of Section III is **Emerging Measures and Models** (pp. 839–840).",
+    "The official name of Section III is **Emerging Measures and Models** (pp. 837, 839).",
     "Section III also holds the assessment measures, the cultural formulation and the **Alternative DSM-5 Model for Personality Disorders** (pp. 839–840).",
     "Number of proposed criteria sets in Conditions for Further Study: **seven** (pp. 903–927).",
     "The proposed thresholds were set by **expert consensus**, drawing on literature review, data reanalysis and field trials (p. 903).",
@@ -40,7 +40,7 @@ SP.add("ch25", "highYield", [
     "Criterion C: the symptoms **began or worsened** within the past year (p. 903).",
     "Criterion D: the symptoms are **distressing and disabling** enough to warrant clinical attention (p. 903).",
     "The named example of a disorder that could better explain the symptoms: a depressive or bipolar disorder **with psychotic features** (p. 903).",
-    "Criterion F: criteria for **any psychotic disorder** have never been met (p. 904).",
+    "Criterion F: criteria for **any psychotic disorder** have never been met (p. 903).",
     "Attenuated symptoms are less severe and **more transient** than full psychotic symptoms (p. 904).",
     "Insight is **relatively preserved**: the person can still recognize the experience as altered (p. 904).",
     "In attenuated delusions, **doubt** about the belief can be elicited by the interviewer (p. 904).",
@@ -56,7 +56,7 @@ SP.add("ch25", "highYield", [
     "Among those who convert, **73%** develop a schizophrenia spectrum disorder and 11% an affective psychosis (p. 905).",
     "Overall transition to psychosis over 10 years: **34.9%** (p. 905).",
     "The thirds rule: one-third convert, one-third **remit**, one-third stay disabled (p. 905).",
-    "The criteria are validated for ages **12–35** (p. 905).",
+    "Most validation evidence for the criteria covers ages **12–35**, with little in the youngest (p. 905).",
     "A family history of psychosis **does not** add transition risk over 4 years (p. 906).",
     "Schizotypal personality disorder is a **stable trait** that fails Criterion C (p. 906).",
     "Does a history of attention problems or ADHD exclude the syndrome? **No** (p. 907).",
@@ -76,7 +76,7 @@ SP.add("ch25", "highYield", [
   ] },
   { id: "hy25-sdh-features", topic: "Short-duration hypomania: features and differential", items: [
     "A single **4-day** hypomanic episode with a lifetime MDE makes the diagnosis bipolar II (p. 910).",
-    "Once bipolar II is diagnosed, it stays bipolar II **permanently**, whatever the length of later hypomanias (pp. 909–910).",
+    "Once bipolar II is diagnosed, it remains bipolar II **regardless of the duration** of later hypomanic periods (p. 910); a later manic episode would make it bipolar I.",
     "Family history of bipolar disorder is **3–4 times** more common than in MDD (p. 909).",
     "U.S. prevalence of MDD with subthreshold hypomania: up to **6.7%** (p. 909).",
     "In clinics, the condition is about **one-fourth** as common as depression with full-duration hypomania (p. 909).",
@@ -125,7 +125,7 @@ SP.add("ch25", "highYield", [
     "Severity is rated mild, moderate or severe by the degree of **disruption** of normal activities (p. 914)."
   ] },
   { id: "hy25-igd-features", topic: "Internet gaming disorder: features, numbers and differential", items: [
-    "The only behavioral addiction in Section II: **gambling disorder** (p. 914).",
+    "The only non-substance-related disorder in the Section II substance-related and addictive disorders chapter: **gambling disorder** (p. 914).",
     "The work group reviewed more than **240** articles (p. 914).",
     "The manual notes that gaming disorder is included in **ICD-11** (p. 914).",
     "Typical daily play in the disorder: **8–10 hours** or more (p. 915).",
@@ -152,10 +152,10 @@ SP.add("ch25", "highYield", [
     "Criterion G’s other-teratogen example: **fetal hydantoin** syndrome (p. 917)."
   ] },
   { id: "hy25-ndpae-features", topic: "ND-PAE: features, numbers and differential", items: [
-    "More than minimal exposure means more than **13 drinks** in any month of pregnancy (p. 918).",
+    "More than minimal exposure means more than **13 drinks** per month during pregnancy (p. 918).",
     "Or more than **2 drinks** on any one occasion (p. 918).",
     "ND-PAE can be diagnosed **with or without** the physical features of fetal alcohol syndrome (p. 917).",
-    "A clinical diagnosis of fetal alcohol syndrome can itself serve as **evidence of exposure** (p. 918).",
+    "A clinical diagnosis of fetal alcohol syndrome can itself serve as **evidence of exposure** (pp. 917–918).",
     "In children aged **3 years** and younger, the diagnosis should be deferred (p. 918).",
     "U.S. prevalence including FASD: **15.2 per 1,000** (p. 918).",
     "Prevalence among children in care settings: **251.5 per 1,000** (p. 918).",

@@ -23,8 +23,8 @@
         ["Insight", "“When this happens, could it be your mind playing tricks on you?”", "Doubt can be raised in APS; full, unshakable conviction points to a psychotic disorder (p. 904)."],
         ["B Frequency", "“How often in the past month: at least once a week?”", "At least weekly over the past month (p. 903)."],
         ["C Onset", "“When did this start, or when did it get worse? Was that within the past year?”", "Must have begun or worsened in the past year; a stable lifelong pattern suggests schizotypal personality disorder (pp. 903, 906)."],
-        ["D Distress", "“What made you come in? How is it affecting school, work, family or friends?”", "Distress or disability enough to need clinical attention (p. 904)."],
-        ["E–F Rule-outs", "“Any alcohol, cannabis, shabu or other drugs? Has there ever been a stretch when you were completely sure of these things for days?”", "Substances and medical causes; criteria for a psychotic disorder never met (p. 904)."],
+        ["D Distress", "“What made you come in? How is it affecting school, work, family or friends?”", "Distress or disability enough to need clinical attention (pp. 903–904)."],
+        ["E–F Rule-outs", "“Any alcohol, cannabis, shabu or other drugs? Has there ever been a stretch when you were completely sure of these things for days?”", "Substances and medical causes; criteria for a psychotic disorder never met (p. 903)."],
         ["Comorbidity", "“How has your mood been? Any worry, panic or poor sleep?”", "Depression (41%) and anxiety (15%) are common companions (p. 907)."],
         ["Development", "“Any attention problems in childhood?”", "An ADHD history does not rule APS out (p. 907)."]
       ],
@@ -41,7 +41,7 @@
       ask: [
         ["MDE", "“Has there ever been a stretch of 2 weeks or more when you felt low or lost interest in things most of the day, nearly every day?”", "At least one lifetime major depressive episode (pp. 907–908)."],
         ["Highs", "“Apart from drugs, alcohol or medicines, have there been times when you felt unusually up, energetic or irritable, and needed much less sleep?”", "Screen for hypomanic periods (p. 908)."],
-        ["Duration", "“How many days in a row did each of those times last: 2 or 3, or 4 or more?”", "At least 2 but fewer than 4 consecutive days; one period of 4 days or more makes it bipolar II for good (pp. 908–910)."],
+        ["Duration", "“How many days in a row did each of those times last: 2 or 3, or 4 or more?”", "At least 2 but fewer than 4 consecutive days; one period of 4 days or more makes it bipolar II, regardless of the duration of later hypomanic periods (p. 910); a later manic episode would make it bipolar I (pp. 908–910)."],
         ["Count", "“How many separate times has this happened in your life?”", "At least two lifetime periods (p. 908)."],
         ["Symptoms", "“During those days, were you more talkative, full of ideas, extra confident, busier than usual, spending or taking risks, or easily distracted?”", "Three symptoms, or four if the mood was only irritable (p. 908)."],
         ["Collateral", "Ask family or friends whether they noticed the change and on how many days.", "Criterion D of the hypomanic period requires that the mood change and the change in functioning were observable by others (p. 908); patients often undercount highs (app guidance)."],
@@ -105,7 +105,7 @@
     {
       id: "nd-pae",
       ask: [
-        ["A Exposure", "Ask the mother, privately and without blame: “During the pregnancy, including before you knew, how often did you drink, and how much on a usual day and on a heavy day?”", "More than minimal means more than 13 drinks a month or more than 2 on any one occasion (p. 918)."],
+        ["A Exposure", "Ask the mother, privately and without blame: “During the pregnancy, including before you knew, how often did you drink, and how much on a usual day and on a heavy day?”", "More than minimal means more than 13 drinks per month in pregnancy, or more than 2 drinks on any one occasion (p. 918)."],
         ["A Other sources", "If the mother cannot be asked: relatives, prenatal and birth records, foster or adoption files.", "Maternal report, records or clinical observation (p. 916)."],
         ["B Neurocognition", "“How is the child doing in school: reading, math, remembering lessons, following steps, puzzles or drawing?”", "One of five areas, including global intellect, executive function, learning, memory and visual-spatial skills (pp. 916–917)."],
         ["C Self-regulation", "“How are the child’s moods, tantrums, attention and acting without thinking?”", "One of three (p. 917)."],
@@ -135,15 +135,15 @@
         ["Clear mind", "“Were you confused at the time? Had you been drinking or taking something?”", "Delirium or confusion excludes; drinking beforehand to steady oneself does not (p. 921)."],
         ["Motive", "Rule out an act undertaken solely for political or religious ends.", "p. 920."],
         ["When", "“When was the most recent time?”", "Current if within 12 months; early remission if 12–24 months ago (p. 920)."],
-        ["Specifiers", "“Did it need a hospital stay beyond the emergency room? Was it planned ahead or done on impulse?”", "Lethality and planning specifiers (p. 920)."],
-        ["Risk markers", "“Did you arrange things so no one would find you? Were you recently discharged? Have you recently stopped lithium or clozapine?”", "Markers named on p. 921."],
+        ["Descriptive dimensions", "“Did it need a hospital stay beyond the emergency room? Was it planned ahead or done on impulse?”", "Lethality and planning dimensions the text describes, not formal specifiers (pp. 920–921)."],
+        ["Risk markers", "“Did you arrange things so no one would find you? Were you recently discharged? Have you recently stopped a mood stabilizer (lithium, for example) or an antipsychotic (for example, clozapine)?”", "Markers named on p. 921."],
         ["Triggers", "“Has something happened lately: a serious diagnosis, a sudden loss, losing work or your home?”", "p. 921."],
         ["Now", "“Are you having thoughts of ending your life now? Is there a plan? Could you get to what you thought of using?”", "Tagalog aside: “Naiisip mo ba ngayon na wakasan ang buhay mo?” Current risk (app guidance)."]
       ],
       tx: care("a full **suicide risk assessment** at every contact, a written **safety plan** made with the person (warning signs, coping steps, people and places for support, professional contacts, making the home safer), **means safety** counseling with the family in general terms, treatment of the underlying disorder, and **close follow-up after discharge**, a high-risk period (established guidelines).", [
         "Do not rely on a **no-suicide contract** or on talk of future plans; the manual calls both less reliable (p. 921).",
         "No screening instrument has a useful positive predictive value (p. 921): use tools to structure the interview, not to sort people into “low” and “high” risk (app guidance).",
-        "**Stopping lithium or clozapine** is a risk marker in the manual (p. 921); both have evidence for lowering suicidal behavior, lithium in mood disorders and clozapine in schizophrenia (outside the DSM).",
+        "**Stopping a mood stabilizer such as lithium**, or in schizophrenia **an antipsychotic such as clozapine**, is a risk marker in the manual (p. 921); both have evidence for lowering suicidal behavior, lithium in mood disorders and clozapine in schizophrenia (outside the DSM).",
         "**Recent discharge** is a risk marker (p. 921): book the first follow-up within days and confirm it happened (app guidance).",
         "About **25–30%** make another attempt (p. 921): psychotherapies with evidence for suicidal behavior (suicide-focused CBT, DBT) and brief contact interventions help (outside the DSM).",
         "Record **T14.91XA** in active treatment or **T14.91XD** in follow-up (printed T14.91A/D on p. 920), and **Z91.51** for history (Chapter 22).",
@@ -195,7 +195,7 @@
     },
     {
       id: "caffeine-problems", title: "Can’t cut down on coffee or energy drinks",
-      intro: "Count every source of caffeine, then ask the **three required** questions of the Section III proposal: failed efforts to cut down, use despite a physical or psychological problem, and withdrawal (pp. 910–911). Tolerance and withdrawal alone describe ordinary users (p. 913). The proposal is **not an official diagnosis** (p. 903): what Section II offers is **caffeine intoxication** and **caffeine withdrawal**.",
+      intro: "Count every source of caffeine, then ask the **three required** questions of the Section III proposal: failed efforts to cut down, use despite a physical or psychological problem, and withdrawal (pp. 910–911). Tolerance and withdrawal alone describe ordinary users (p. 913). The proposal is **not an official diagnosis** (p. 903): what Section II offers is **caffeine intoxication**, **caffeine withdrawal**, the caffeine-induced disorders and **unspecified caffeine-related disorder (F15.99)**.",
       ask: ["How much coffee, 3-in-1, tea, soda or energy drinks a day?", "Have you tried to cut down?", "Do you keep having it despite palpitations, poor sleep, nerves or stomach problems?", "What happens if you skip it for a day?", "Do you also smoke, vape, drink alcohol or use other drugs?", "Are you pregnant or planning to be?"],
       mustNotMiss: ["**Panic or anxiety** that is really caffeine (p. 913).", "**Other stimulants**, including amphetamine-type drugs (p. 913).", "**Pregnancy** (p. 913).", "Co-occurring **tobacco, alcohol or cannabis** problems (p. 913)."],
       helpers: ["further-study", "substance"],

@@ -81,15 +81,15 @@
       name: "Depressive episodes with short-duration hypomania", code: "No code (Section III)",
       codes: [["F31.89", "Other specified bipolar and related disorder (Section II example: short-duration hypomanic episodes (2–3 days) and major depressive episodes)", REC]],
       aka: ["DESDH", "short-duration hypomania", "subthreshold hypomania", "bipolar II with brief hypomania (informal)", "soft bipolar spectrum (outside the DSM)"],
-      essence: "A **proposed** set (not for clinical use, p. 903): at least one **lifetime major depressive episode** plus at least **two lifetime** periods that meet the full hypomanic **symptom** criteria but last **2–3 days** (at least 2, fewer than 4 consecutive days). One 4-day hypomania makes it **bipolar II** for good (pp. 907–910).",
+      essence: "A **proposed** set (not for clinical use, p. 903): at least one **lifetime major depressive episode** plus at least **two lifetime** periods that meet the full hypomanic **symptom** criteria but last **2–3 days** (at least 2, fewer than 4 consecutive days). One 4-day hypomania makes it **bipolar II**, regardless of the duration of later hypomanic periods (p. 910); a later manic episode would make it bipolar I (pp. 907–910).",
       duration: "At least two lifetime periods of ≥2 but <4 consecutive days of hypomanic symptoms, plus a lifetime MDE of at least 2 weeks (pp. 907–908)",
       functioning: "Each brief period is an unequivocal, observable change in functioning but not severe enough for marked impairment or hospitalization (p. 908); global functioning scores resemble those with full-duration hypomania (p. 909)",
       mood: "Defined by a lifetime MDE plus brief hypomanic periods occurring at different times; hypomanic features during the depression point instead to MDD with mixed features (pp. 907–910)",
       criteria: [
-        ["MDE", "At least one lifetime major depressive episode: five or more of the nine depressive symptoms over the same 2 weeks, one being depressed mood or loss of interest or pleasure; with distress or impairment; not due to a substance or medical condition; not better explained by a schizophrenia spectrum or other psychotic disorder (pp. 907–908)."],
+        ["MDE", "At least one lifetime major depressive episode: five or more of the nine depressive symptoms over the same 2 weeks, one being depressed mood or loss of interest or pleasure; with distress or impairment; not due to a substance or medical condition; not better explained by schizoaffective disorder and not superimposed on schizophrenia, schizophreniform, delusional or another psychotic disorder (pp. 907–908)."],
         ["Periods", "At least two lifetime periods of hypomanic symptoms that meet the symptom criteria below but last at least 2 and fewer than 4 consecutive days (p. 908)."],
         ["A", "A clear-cut period of abnormally and persistently raised, expansive or irritable mood with abnormally and persistently increased activity or energy."],
-        ["B", "Three or more of the seven mania symptoms (four if the mood is only irritable), present to a marked degree and clearly different from usual: grandiosity or inflated self-esteem; less need for sleep; talkativeness or pressured speech; flight of ideas or racing thoughts; distractibility; more goal-directed activity or psychomotor agitation; excess involvement in risky activities with painful consequences."],
+        ["B", "Three or more of the seven hypomanic symptoms (four if the mood is only irritable), present to a significant degree and clearly different from usual: grandiosity or inflated self-esteem; less need for sleep; talkativeness or pressured speech; flight of ideas or racing thoughts; distractibility; more goal-directed activity or psychomotor agitation; excess involvement in risky activities with painful consequences."],
         ["C", "An unmistakable change in functioning that is not typical of the person."],
         ["D", "Others can see the change in mood and functioning."],
         ["E", "Not severe enough for marked impairment or hospitalization; any psychotic features make the episode manic."],
@@ -110,24 +110,25 @@
         "Suicide (app note): attempt rates resemble bipolar II, so screen for suicidal behavior as in any bipolar presentation (p. 909)."
       ],
       differential: [
-        { id: "bipolar-ii", how: "Needs a hypomanic episode of 4 days or more; once one has occurred with a lifetime MDE, the diagnosis becomes and stays bipolar II, whatever the length of later periods (pp. 909–910)." },
+        { id: "bipolar-ii", how: "Needs a hypomanic episode of 4 days or more; once one has occurred with a lifetime MDE, the diagnosis becomes bipolar II and remains bipolar II regardless of the duration of later hypomanic periods (pp. 909–910); a later manic episode would make it bipolar I." },
         { id: "mdd", how: "Shares the lifetime MDE; two or more lifetime 2–3-day hypomanic periods move the picture to this set (p. 910)." },
         { name: "MDD with mixed features", how: "Hypomanic features occur during the depressive episode; in DESDH the brief hypomania and the depression occur at different times (p. 910)." },
         { id: "bipolar-i", how: "A manic episode lasts a week or more, or any length with hospitalization; psychotic features at any length make the episode manic (p. 910)." },
         { id: "cyclothymic", how: "Hypomanic and depressive symptom periods without full episodes; any lifetime MDE rules cyclothymic disorder out (p. 910)." },
         { id: "other-specified-bipolar", how: "The Section II home: F31.89, whose first example is short-duration hypomanic episodes (2–3 days) with MDEs (Chapter 3; app guidance)." },
-        { id: "other-specified-depressive", how: "Only one brief hypomanic period with an MDE does not meet this set; depending on the picture it stays MDD or Chapter 4 territory (app guidance)." }
+        { name: "MDE with a single short high", how: "An MDE with only one 2–3-day hypomanic period does not meet this set; the diagnosis remains major depressive disorder (p. 910; app guidance)." },
+        { name: "Hypomanic periods of 4+ days with too few symptoms", how: "With a lifetime MDE, this is Chapter 3’s second F31.89 example, hypomanic episodes with insufficient symptoms and major depressive episodes (p. 168): other specified bipolar and related disorder, not this set (app guidance)." }
       ],
       pearls: [
         "Everything is full-strength **except the clock**: 2–3 days instead of 4 (p. 908).",
         "Count **two** lifetime brief periods, not one (p. 908).",
         "Mixed features = **same time**; DESDH = **different times** (p. 910).",
-        "A single 4-day hypomania converts the diagnosis to **bipolar II permanently** (pp. 909–910).",
+        "A single 4-day hypomania converts the diagnosis to **bipolar II**, regardless of the duration of later hypomanic periods (p. 910); a later manic episode would make it bipolar I.",
         "Ask families: the change must be **observable by others** (Criterion D).",
         "In the chart (app guidance): F31.89 other specified bipolar and related disorder, with the reason stated."
       ],
-      cmp: { symptoms: "Lifetime MDE + ≥2 lifetime periods of full hypomanic symptoms lasting 2–3 days", exclusions: "Any ≥4-day hypomania (bipolar II); any mania or psychosis (bipolar I); substance cause", prevalence: "Up to 6.7% (U.S., subthreshold hypomania broadly)", course: "Resembles bipolar disorder: earlier onset, recurrent depression, more suicide attempts than MDD" },
-      clues: [["Core picture", "A 31-year-old nurse with two MDEs and three 2–3-day stretches of little sleep, nonstop talk and overspending, noticed by her husband"], ["Key number", "2–3 days, at least twice"], ["Recording (app guidance)", "F31.89, other specified bipolar and related disorder"]],
+      cmp: { symptoms: "Lifetime MDE + ≥2 lifetime periods of full hypomanic symptoms lasting 2–3 days", exclusions: "Any ≥4-day hypomania (bipolar II); any manic episode, including psychotic features or hospitalization during a high (bipolar I); substance cause", prevalence: "Up to 6.7% (U.S., subthreshold hypomania broadly)", course: "Resembles bipolar disorder: earlier onset, recurrent depression, more suicide attempts than MDD" },
+      clues: [["Core picture", "A 31-year-old nurse with two MDEs and three 2–3-day stretches of elevated mood and energy, little sleep, nonstop talk and overspending, noticed by her husband"], ["Key number", "2–3 days, at least twice"], ["Recording (app guidance)", "F31.89, other specified bipolar and related disorder"]],
       updates: upd("Recording route checked October 2026", "**App guidance**: a presentation that matches this proposed set is recorded as **F31.89, other specified bipolar and related disorder**, with “short-duration hypomanic episodes (2–3 days) and major depressive episodes” as the reason, which is Chapter 3’s own first example. F31.89 was not individually rechecked for this chapter; see the Chapter 3 entry." + NOTCLIN + CONFIRM)
     },
     {
@@ -183,7 +184,7 @@
       ],
       pearls: [
         "Not “any three”: the **first three** (cut-down, harm, withdrawal) are all required (p. 910).",
-        "Compare every other substance: any **2 of 11** (Chapter 16).",
+        "Compare the other substance use disorders: **2 of 11** (10 for hallucinogen, phencyclidine and inhalant use disorders) (Chapter 16).",
         "Tolerance + craving + time spent = three items but **does not** meet the set (p. 910).",
         "Tolerance and withdrawal alone are **not enough** (p. 913).",
         "Ask about energy drinks, 3-in-1 coffee sachets and night-shift work (app guidance; Philippine practice).",
@@ -226,7 +227,7 @@
       ],
       risk: [
         "Environmental: having a computer with an Internet connection (p. 915).",
-        "Highest risk group: adolescent males; boys aged 12–15 face more adverse effects (p. 915).",
+        "Highest risk group: adolescent males; boys aged 12–15 may be at greater risk of adverse effects (p. 915).",
         "Action, fighting, strategy and role-playing games may carry greater addictive potential than puzzle or social games (p. 915).",
         "Associated traits: negative affectivity, detachment, antagonism, disinhibition, psychoticism (p. 915).",
         "Suicide: problematic Internet and gaming behavior has been linked to suicidal thoughts and attempts in Australian, Taiwanese and European youth; sleep may mediate the effect (p. 916)."
@@ -244,8 +245,8 @@
         "**5 of 9** in **12 months**: a deliberately conservative threshold (p. 915).",
         "Withdrawal is **psychological only**: irritability, anxiety, sadness (p. 913).",
         "**Nongambling** games only; money on the line means gambling disorder (pp. 913–914).",
-        "Gambling disorder is still the **only** behavioral addiction in Section II (p. 914).",
-        "ICD-11 lists gaming disorder; the DSM does not, yet (p. 914; ICD-11 6C51 is outside the DSM).",
+        "Gambling disorder is still the **only** non-substance-related disorder in the Section II substance-related and addictive disorders chapter (p. 914).",
+        "ICD-11 lists gaming disorder; the DSM does not (p. 914; ICD-11 6C51 is outside the DSM).",
         "Ask about computer shops, “pisonet” and mobile MOBA games (app guidance; Philippine practice)."
       ],
       cmp: { symptoms: "≥5 of 9 (preoccupation, withdrawal, tolerance, failed control, lost interests, use despite problems, deception, escape, jeopardized roles) in 12 months", exclusions: "Online gambling (gambling disorder); social media, pornography, work use", prevalence: "Mean 4.7% (0.7%–15.6%); U.S. ≤1%; adolescent boys 6.8%", course: "Adolescent and young adult males most affected; school, job and marriage failure" },
@@ -256,7 +257,7 @@
       id: "nd-pae", ch: "ch25", sec: "s25-ndpae-criteria", pages: "916–920", critPages: "916–917",
       name: "Neurobehavioral disorder associated with prenatal alcohol exposure", code: "No code (Section III)",
       codes: [["F88", "Other specified neurodevelopmental disorder (Section II example: neurodevelopmental disorder associated with prenatal alcohol exposure)", REC]],
-      aka: ["ND-PAE", "fetal alcohol spectrum disorder (FASD; related framework, outside the DSM)", "alcohol-related neurodevelopmental disorder (ARND; outside the DSM)", "fetal alcohol syndrome with neurobehavioral impairment (when facial features are present)"],
+      aka: ["ND-PAE", "fetal alcohol spectrum disorder (FASD; related framework, outside the DSM)", "alcohol-related neurodevelopmental disorder (ARND; outside the DSM)"],
       essence: "A **proposed** set (not for clinical use, p. 903): **more than minimal** alcohol exposure in gestation plus childhood-onset impairment in three domains, **neurocognitive (1 of 5)**, **self-regulation (1 of 3)** and **adaptive functioning (2 of 4, one being communication or social communication)**, not better explained by postnatal substances, a medical or genetic condition, another teratogen or neglect. It applies **with or without** the facial features of fetal alcohol syndrome (pp. 916–917).",
       duration: "Onset of the B, C and D impairments in childhood (Criterion E, p. 917); defer the diagnosis at age 3 years or younger (p. 918)",
       functioning: "Clinically significant distress or impairment (Criterion F, p. 917); lifelong adaptive deficits, disrupted schooling, poor employment, legal trouble, legal or psychiatric confinement and dependent living (p. 919)",
@@ -267,7 +268,7 @@
         ["C", "Self-regulation impairment in one or more of: (1) mood or behavioral regulation; (2) attention; (3) impulse control."],
         ["D", "Adaptive impairment in two or more of the following, at least one being (1) or (2): (1) communication; (2) social communication and interaction; (3) daily living skills; (4) motor skills."],
         ["E", "The B, C and D impairments begin in childhood."],
-        ["F", "The picture causes marked distress or impairs social, school, work or other key areas of life."],
+        ["F", "The picture causes clinically significant distress, or impairs functioning at school, at work, socially or in other important areas."],
         ["G", "Not better explained by postnatal substance effects (medication, alcohol, other drugs), a medical condition (traumatic brain injury, delirium, dementia), another known teratogen (fetal hydantoin syndrome), a genetic condition (Williams, Down, Cornelia de Lange syndromes) or environmental neglect."]
       ],
       specifiers: [],
@@ -276,7 +277,7 @@
         ["U.S. children with full evaluations only", "31.1–98.5 per 1,000 (p. 918)"],
         ["Children in care settings (multinational meta-analysis)", "251.5 per 1,000 (p. 918)"],
         ["Global FASD prevalence, 2012", "7.7 per 1,000; Americas 8.8 per 1,000 (p. 918)"],
-        ["“More than minimal” exposure", "More than 13 drinks in a month of pregnancy, or more than 2 drinks on one occasion (p. 918)"],
+        ["“More than minimal” exposure", "More than 13 drinks per month in pregnancy, or more than 2 drinks on any one occasion (p. 918)"],
         ["Exposed young children with marked delay in the first 3 years", "About one-half; others show signs only at preschool or school age (p. 918)"],
         ["Drinking in pregnancy worldwide", "0.2% (Eastern Mediterranean region) to 25.2% (European region) (p. 919)"],
         ["Mental health problems after significant exposure", "More than 90% (p. 920)"]
@@ -303,7 +304,7 @@
         "Counts to memorize: **1 of 5**, **1 of 3**, **2 of 4** (pp. 916–917).",
         "Criterion D needs **communication or social communication** among its two (p. 917).",
         "No face needed: diagnosable **with or without** fetal alcohol syndrome features (p. 917).",
-        "“More than minimal” = **>13 drinks a month** or **>2 on one occasion** (p. 918).",
+        "“More than minimal” = **more than 13 drinks per month** in pregnancy, or **more than 2 drinks on any one occasion** (p. 918).",
         "**Defer** at 3 years and younger; diagnosis is most likely in the **school years** (pp. 918–919).",
         "In the chart (app guidance): F88 other specified neurodevelopmental disorder, with the reason stated."
       ],
@@ -323,7 +324,7 @@
       essence: "A **proposed** set (not for clinical use, p. 903): a **suicide attempt** within the last **24 months**, meaning a self-started sequence of acts that the person, **when beginning to apply the method**, expected to end in death. Excluded: NSSI, ideation and preparatory acts alone, acts begun in delirium or confusion, and acts done only for a political or religious aim. **Current** if the last attempt was within 12 months, **in early remission** at 12–24 months (p. 920).",
       duration: "Attempt within the last 24 months; current ≤12 months, in early remission 12–24 months (p. 920)",
       functioning: "No impairment criterion; the defining feature is the act itself, which may or may not cause injury (pp. 920–921)",
-      mood: "Seen most often with bipolar disorder and MDD (p. 923); genetic risk for depression raises attempt risk across diagnoses (p. 922)",
+      mood: "Commonly seen with bipolar disorder and MDD, among many other disorders (p. 923); genetic risk for depression raises attempt risk across diagnoses (p. 922)",
       criteria: [
         ["A", "A suicide attempt within the last 24 months: a self-started sequence of acts that, at the moment of starting (when a behavior applying the method took place), the person expected would bring about their death."],
         ["B", "The act does not meet the definition of nonsuicidal self-injury, that is, body-surface injury done to relieve a negative state or to bring on a positive one."],
@@ -345,7 +346,7 @@
         ["Prediction tools", "No clinical instrument has a positive predictive value useful for the individual patient; no robust biomarker (p. 921)"]
       ],
       risk: [
-        "Markers the text names: planning, including choosing a time and place that limit rescue; acute agitation; recent discharge from inpatient care; recent stopping of lithium, or of clozapine in schizophrenia (p. 921).",
+        "Markers the text names: planning, including choosing a time and place that limit rescue; acute agitation; recent discharge from inpatient care; recent stopping of a mood stabilizer such as lithium, or in schizophrenia an antipsychotic such as clozapine (p. 921).",
         "Triggers the text names: news of a potentially fatal illness, sudden loss of a partner or close relative, job loss, losing one’s housing (p. 921).",
         "Less reliable reassurance: talk about future plans and willingness to sign a safety contract (p. 921).",
         "Genetic: in the largest genome-wide study (Psychiatric Genomics Consortium), depression risk alleles raised attempt risk across MDD, bipolar disorder and schizophrenia (p. 922).",
@@ -385,14 +386,14 @@
       aka: ["NSSI disorder", "NSSID", "deliberate self-injury without suicidal intent", "nonsuicidal self-injury (Chapter 22 code; not this entry)"],
       essence: "A **proposed** set (not for clinical use, p. 903): on **5 or more days in the last year**, deliberate injury to the **body surface** likely to bleed, bruise or hurt, expected to cause only minor or moderate harm, with **no suicidal intent** (stated, or inferred from repetition of a behavior the person knows is not lethal); done for **relief**, to **resolve an interpersonal difficulty** or to **feel good**; preceded by distress, hard-to-control preoccupation or frequent thoughts of it; not a sanctioned practice and not better explained by another condition (p. 923).",
       duration: "5 or more days within the last year (p. 923)",
-      functioning: "Marked distress, or interference with relationships, schooling or other key areas of life (Criterion E, p. 923); burns, infection, permanent scarring and blood-borne infection from shared implements (p. 925)",
+      functioning: "Clinically significant distress, or interference with relationships, schooling or other important areas (Criterion E, p. 923); burns, infection, permanent scarring and blood-borne infection from shared implements (p. 925)",
       mood: "Negative feelings (depression, anxiety, tension, anger, distress, self-criticism) just before the act are one C option (p. 923); frequent comorbidity with depressive disorders (p. 925)",
       criteria: [
         ["A", "On 5 or more days in the last year, deliberate self-inflicted damage to the body surface that would be expected to bleed, bruise or hurt (the manual’s examples: cutting, burning, stabbing, hitting, excessive rubbing), expected to cause only minor or moderate harm, with no suicidal intent. Absence of intent is stated by the person or inferred from repeated use of a behavior known not to be lethal."],
         ["B", "Done with one or more of these expectations: (1) relief from a negative feeling or thought; (2) resolving an interpersonal difficulty; (3) bringing on a positive feeling. The effect comes during or soon after the act, and the pattern may suggest dependence on it."],
         ["C", "Linked to at least one of: (1) interpersonal difficulty or negative feelings or thoughts just before the act; (2) a hard-to-control period of preoccupation with the intended act; (3) frequent thoughts of self-injury even when not acted on."],
         ["D", "Not socially sanctioned (body piercing, tattooing, a religious or cultural ritual) and not limited to scab picking or nail biting."],
-        ["E", "The self-injury or what follows from it brings marked distress or gets in the way of relationships, school or other key areas of life."],
+        ["E", "The self-injury or what follows from it causes clinically significant distress, or interferes with relationships, schooling or other important areas."],
         ["F", "Not only during psychotic episodes, delirium, intoxication or withdrawal; not part of repetitive stereotypies in a neurodevelopmental disorder; not better explained by another mental disorder or medical condition (psychotic disorder, autism spectrum disorder, intellectual developmental disorder, Lesch-Nyhan syndrome, stereotypic movement disorder with self-injury, trichotillomania, excoriation disorder)."]
       ],
       specifiers: [],

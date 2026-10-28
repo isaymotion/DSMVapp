@@ -38,7 +38,7 @@
         { label: "Code", options: ["F31.89", "F31.81", "F31.32", "F33.1"], answer: 1 }
       ],
       line: "**F31.81** Bipolar II disorder, current episode depressed, moderate severity",
-      why: "This is a **Section II** answer. One hypomanic episode of **4 days or more** with a lifetime MDE is bipolar II, and the diagnosis **stays** bipolar II whatever the length of later or earlier short periods (pp. 909–910). The proposed short-duration set no longer applies. Bipolar I would need a manic episode: a week or more, marked impairment, hospitalization or psychotic features (p. 910). Mixed features would require hypomanic symptoms **during** the depression (p. 910)."
+      why: "This is a **Section II** answer. One hypomanic episode of **4 days or more** with a lifetime MDE is bipolar II, and the diagnosis remains bipolar II **regardless of the duration** of later hypomanic periods (pp. 909–910); a later manic episode would make it bipolar I. The proposed short-duration set no longer applies. Bipolar I would need a manic episode: 1 week or more with marked impairment, or any length with psychosis or hospitalization (p. 910). Mixed features would require hypomanic symptoms **during** the depression (p. 910)."
     },
     {
       id: "w25-04", tag: "Coffee stopped on a retreat",
@@ -84,11 +84,11 @@
       id: "w25-08", tag: "Adopted boy, prenatal alcohol",
       "case": "An 8-year-old boy, adopted at age 2, is referred for school failure. Records confirm that his birth mother drank heavily throughout the pregnancy. His IQ is 84, but testing shows marked problems with planning and memory; he has daily outbursts and cannot wait his turn; his language is delayed and he is overly friendly with strangers. The problems began in early childhood. There is no head injury, genetic syndrome, other prenatal exposure or neglect since adoption, and his face shows no fetal alcohol syndrome features.",
       parts: [
-        { label: "Record as", options: ["Other specified neurodevelopmental disorder (neurobehavioral disorder associated with prenatal alcohol exposure)", "Intellectual developmental disorder, mild", "Nothing, because there are no facial features", "Neurobehavioral disorder associated with prenatal alcohol exposure, as a stand-alone diagnosis"], answer: 0 },
+        { label: "Record as", options: ["Other specified neurodevelopmental disorder (neurodevelopmental disorder associated with prenatal alcohol exposure)", "Intellectual developmental disorder, mild", "Nothing, because there are no facial features", "Neurobehavioral disorder associated with prenatal alcohol exposure, as a stand-alone diagnosis"], answer: 0 },
         { label: "Code", options: ["F88", "F70", "F89", "No code: Section III"], answer: 0 }
       ],
-      line: "**F88** Other specified neurodevelopmental disorder (neurobehavioral disorder associated with prenatal alcohol exposure)",
-      why: "Documented heavy exposure meets A; executive and memory impairment meet B (**one of five** is enough, so an IQ above 70 does not exclude); outbursts and impulsivity meet C (**one of three**); delayed language and indiscriminate friendliness meet D (**two of four**, with communication or social communication among them); onset is in childhood (pp. 916–917). The diagnosis can be made **without** fetal alcohol syndrome features (p. 917). The set is not official (p. 903); Chapter 1 gives this condition as its other specified example (p. 99; app guidance). An IQ of 84 is well above the range for intellectual developmental disorder (Chapter 1)."
+      line: "**F88** Other specified neurodevelopmental disorder (neurodevelopmental disorder associated with prenatal alcohol exposure)",
+      why: "Documented heavy exposure meets A; executive and memory impairment meet B (**one of five** is enough, so an IQ above 70 does not exclude); outbursts and impulsivity meet C (**one of three**); delayed language and indiscriminate friendliness meet D (**two of four**, with communication or social communication among them); onset is in childhood (pp. 916–917). The diagnosis can be made **without** fetal alcohol syndrome features (p. 917). The set is not official (p. 903); Chapter 1 gives this condition as its other specified example, under the name “neurodevelopmental disorder associated with prenatal alcohol exposure” (p. 99; app guidance); Section III calls it “neurobehavioral”. An IQ of 84 is well above the range for intellectual developmental disorder (Chapter 1)."
     },
     {
       id: "w25-09", tag: "Attempt in the emergency room",
@@ -245,19 +245,19 @@
       ],
       need: 2,
       met: false,
-      why: "D needs **two of four** adaptive areas **with at least one being communication (D1) or social communication and interaction (D2)** (p. 917). She has two (daily living and motor), but neither is D1 or D2, so D is **not met**. B (**one of five**) and C (**one of three**) are satisfied by her executive and self-regulation problems (pp. 916–917)."
+      why: "Two items count, but that is not enough: neither is communication or social communication, so Criterion D is **not met** even though 2 items count. D needs **two of four** adaptive areas **with at least one being communication (D1) or social communication and interaction (D2)** (p. 917). She has two (daily living and motor), but neither is D1 or D2, so D is **not met**. B (**one of five**) and C (**one of three**) are satisfied by her executive and self-regulation problems (pp. 916–917)."
     },
     {
       id: "n25-08", tag: "Suicide attempt: what counts",
       "case": "Adults seen today in a psychiatric outpatient clinic, each describing one event (method details omitted):",
       ask: "Mark the events that satisfy Criterion A of the proposed suicidal behavior disorder (an attempt within the last 24 months, with the exclusions applied). Are at least three present?",
       items: [
-        ["8 months ago began swallowing tablets meaning to die, then stopped partway on his own", true, "Initiated with intent; stopping after starting still counts (p. 921). Within 12 months: **current** (p. 920)."],
-        ["20 months ago took an overdose meaning to die; no injury resulted", true, "Injury is not required (p. 921). 12–24 months: **in early remission** (pp. 920–921)."],
+        ["8 months ago began a self-poisoning attempt meaning to die, then stopped partway on his own", true, "Initiated with intent; stopping after starting still counts (p. 921). Within 12 months: **current** (p. 920)."],
+        ["20 months ago made a suicide attempt meaning to die; no injury resulted", true, "Injury is not required (p. 921). 12–24 months: **in early remission** (pp. 920–921)."],
         ["30 months ago made an attempt meaning to die", false, "Outside the **24-month** window (p. 920)."],
-        ["3 months ago gathered tablets and wrote a note, but her sister talked her out of it before she took any", false, "Dissuaded **before initiating**: preparatory acts do not count (pp. 920–921)."],
-        ["Cuts her arm on many days to relieve tension, with no wish to die", false, "Nonsuicidal self-injury is excluded (Criterion B, p. 920)."],
-        ["6 months ago took an overdose, saying she wanted to die, while acutely delirious after surgery", false, "Not initiated during **delirium or confusion** (Criterion D, p. 920)."]
+        ["3 months ago prepared for an attempt and wrote a note, but her sister talked her out of it before she began", false, "Dissuaded **before initiating**: preparatory acts do not count (pp. 920–921)."],
+        ["Injures herself superficially on many days to relieve tension, with no wish to die", false, "Nonsuicidal self-injury is excluded (Criterion B, p. 920)."],
+        ["6 months ago made an attempt, saying she wanted to die, while acutely delirious after surgery", false, "Not initiated during **delirium or confusion** (Criterion D, p. 920)."]
       ],
       need: 3,
       met: false,

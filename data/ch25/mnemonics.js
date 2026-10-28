@@ -24,9 +24,9 @@ SP.add("ch25", "mnemonics", [
       ["2", "Two periods", "At least two lifetime hypomanic periods"],
       ["2–3", "Two to three days", "Each lasts at least 2 but fewer than 4 consecutive days"],
       ["3 (4)", "Three symptoms", "Three hypomanic symptoms, or four if the mood is only irritable, plus observable change without marked impairment"],
-      ["4", "Four days ends it", "One hypomania of 4 or more days with a lifetime MDE = bipolar II, permanently"]
+      ["4", "Four days ends it", "One hypomania of 4 or more days with a lifetime MDE = bipolar II, regardless of the duration of later hypomanic periods (p. 910); a later manic episode would make it bipolar I"]
     ],
-    caveat: "DSM check: pp. 907–910. The ladder skips the remaining hypomanic criteria: unequivocal change seen by others, no marked impairment or hospitalization, not substance-induced, and **psychotic features make it manic** (p. 908). The short periods occur at **different times** from the depression; concurrent symptoms suggest mixed features (p. 910). Proposed set only; record **other specified bipolar and related disorder (F31.89)** (app guidance on recording)."
+    caveat: "DSM check: pp. 907–910. The ladder skips the remaining hypomanic criteria: the mood criterion (elevated, expansive or irritable mood with increased energy, Criterion A, p. 908), unequivocal change seen by others, no marked impairment or hospitalization, not substance-induced, and **psychotic features make it manic** (p. 908). The short periods occur at **different times** from the depression; concurrent symptoms suggest mixed features (p. 910). Proposed set only; record **other specified bipolar and related disorder (F31.89)** (app guidance on recording)."
   },
   {
     id: "m25-03", short: "Caffeine: the 3 Cs gate", name: "The 3 Cs gate: Can't cut down, Carries on despite harm, Crashes without it", original: true, dx: "caffeine-use-disorder", sec: "s25-cud-criteria",
@@ -64,7 +64,7 @@ SP.add("ch25", "mnemonics", [
       ["D", "Daily life: 2 of 4", "Communication; social communication and interaction; daily living skills; motor skills"],
       ["T", "Talker required", "At least one of the two adaptive areas must be communication or social communication"]
     ],
-    caveat: "DSM check: pp. 916–917. The mnemonic omits A (**more than minimal** exposure: more than 13 drinks a month or more than 2 on one occasion, p. 918), E (childhood onset), F (distress or impairment) and G (not better explained by postnatal substances, medical conditions, other teratogens, genetic syndromes or neglect) (p. 917). FAS facial features are **not required** (p. 917); defer in children **3 and younger** (p. 918). Proposed set only; record **other specified neurodevelopmental disorder (F88)**, where ND-PAE is the manual's example (app guidance on recording)."
+    caveat: "DSM check: pp. 916–917. The mnemonic omits A (**more than minimal** exposure: more than 13 drinks per month in pregnancy, or more than 2 drinks on any one occasion, p. 918), E (childhood onset), F (distress or impairment) and G (not better explained by postnatal substances, medical conditions, other teratogens, genetic syndromes or neglect) (p. 917). FAS facial features are **not required** (p. 917); defer in children **3 and younger** (p. 918). Proposed set only; record **other specified neurodevelopmental disorder (F88)**, where ND-PAE is the manual's example (app guidance on recording)."
   },
   {
     id: "m25-06", short: "Suicidal behavior: ABCDE on a 24-month clock", name: "ABCDE on a 24-month clock (12 current, 12–24 early remission)", original: true, dx: "suicidal-behavior-disorder", sec: "s25-sbd-criteria",
