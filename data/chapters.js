@@ -90,7 +90,7 @@ SP.manifest = [
     summary: 'Section III: the outline for cultural formulation, the Cultural Formulation Interview and its supplementary modules, and the cultural concepts of distress.' },
   { id: 'ch25', number: 25, section: 3, ready: true, pages: '903–927', title: 'Conditions for Further Study', short: 'Conditions for further study',
     summary: 'Section III: why these seven proposed criteria sets are research tools rather than diagnoses, and how each is recorded in a chart; attenuated psychosis syndrome (weekly for a month, within a year, insight kept; F28); depressive episodes with short-duration hypomania (two or more periods of 2–3 days; F31.89); caffeine use disorder (the first three of nine criteria are required); Internet gaming disorder (5 of 9 in 12 months, nongambling games only, ICD-11); neurobehavioral disorder associated with prenatal alcohol exposure (more than minimal exposure, the B–D thresholds, with or without facial features; F88); suicidal behavior disorder (an attempt within 24 months, current versus early remission; T14.91XA/XD) and nonsuicidal self-injury disorder (5 or more days in a year; R45.88), each contrasted with its Section II look-alikes.',
-    files: SP.CHAPTER_FILES },
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch26', number: 26, section: 3, ready: false, pages: '881–902', title: 'Alternative DSM-5 Model for Personality Disorders', short: 'Alternative PD model',
     summary: 'Section III: the level of personality functioning scale, the five trait domains and 25 facets, and the six specific personality disorders of the alternative model (an overview is already in Chapter 18).' }
 ];

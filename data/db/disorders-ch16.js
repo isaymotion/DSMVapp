@@ -79,7 +79,7 @@
       duration: "Onset 12–24 h, peak 1–2 days, lasts 2–9 days (headache up to 21 days)",
       criteria: [["A", "Prolonged daily use."], ["B", "Three or more within 24 hours: headache; fatigue or drowsiness; dysphoria, depression or irritability; difficulty concentrating; flu-like symptoms."], ["C", "Distress or impairment."], ["D", "Not due to a medical condition (migraine, viral illness)."]],
       epi: [["Headache", "About 50% of abstinence episodes"], ["Average intake", "280 mg/day"]],
-      differential: [{ name: "Migraine, viral illness, sinusitis", how: "Caffeine challenge relieves withdrawal within 30–60 minutes." }],
+      differential: [{ name: "Migraine, viral illness, sinusitis", how: "Caffeine challenge relieves withdrawal within 30–60 minutes." }, { id: "caffeine-use-disorder", how: "Section II has no caffeine use disorder; the proposed Section III set requires the first three of nine criteria (cut-down efforts, use despite problems, withdrawal) within 12 months (Section III, pp. 910–911)." }],
       pearls: ["Can follow stopping only 100 mg/day.", "Common before procedures and during religious fasts."],
       cmp: { symptoms: "3 of 5 within 24 h", exclusions: "Medical causes", prevalence: "Common", course: "2–9 days" },
       clues: [["Core picture", "Worst headache ever on a fasting morning before a colonoscopy"]] }),
@@ -317,7 +317,8 @@
       specifiers: ["Episodic or persistent", "In early or sustained remission", "Mild 4–5, moderate 6–7, severe 8–9"],
       epi: [["Past-year", "0.2%–0.3%"], ["Lifetime", "0.4%–1.0% (men 0.6%, women 0.2%)"], ["Treatment seeking", "<10%"]],
       risk: ["Childhood gambling; antisocial PD; mood disorders; alcohol use disorder (also in relatives); ADHD; anxiety."],
-      differential: [{ id: "bipolar-i", how: "Gambling only during mania." }, { id: "antisocial-pd", how: "Both can be diagnosed." }, { name: "Social or professional gambling", how: "Acceptable losses; discipline." }],
+      differential: [
+        { id: "internet-gaming-disorder", how: "Internet gaming disorder is a Section III proposed set for nongambling games only; online gambling for money is gambling disorder (Section III, pp. 913–914)." },{ id: "bipolar-i", how: "Gambling only during mania." }, { id: "antisocial-pd", how: "Both can be diagnosed." }, { name: "Social or professional gambling", how: "Acceptable losses; discipline." }],
       pearls: ["Threshold is 4, not 2.", "Dopamine-agonist gambling still counts.", "15-fold suicide mortality."],
       cmp: { symptoms: "4+ of 9", exclusions: "Mania", prevalence: "0.2%–0.3%", course: "Episodic or persistent; spontaneous remissions" },
       clues: [["Core picture", "Online sports betting, chasing losses, lying to his wife, borrowing from parents"], ["Code", "F63.0"]]

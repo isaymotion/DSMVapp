@@ -4,6 +4,16 @@
  */
 SP.changelog = [
   {
+    id: 50,
+    date: "2026-10-28",
+    title: "Practice pack for Chapter 25, and Section II links to the proposed conditions",
+    summary: "Board vignettes, write-the-diagnosis and counting drills and exam traps for the seven Section III proposed criteria sets, with the chart answer always a Section II category or Chapter 22 code. Chapters 1, 2, 3, 16 and 22 now point to the new entries where they name these conditions.",
+    items: [
+      { type: "chapter", ch: "ch25", text: "Chapter 25: 22 board vignettes, eight in two parts (attenuated psychosis that converts; a 4-day hypomania that makes it bipolar II for good; caffeine withdrawal after stopping; panic attacks that outlast the caffeine; gaming severity by disruption; prenatal alcohol exposure versus ADHD; the 12-month boundary of suicidal behavior disorder; the suicide-risk evaluation that every self-injury case needs), 12 “Write the diagnosis” lines from F28 to R45.88 (three of them Section II diagnoses: bipolar II, gambling disorder and trichotillomania), 9 counting drills (the first-three-of-nine caffeine rule, 5 of 9 for gaming, the adaptive rule for prenatal alcohol exposure, 5 days of self-injury) and 22 exam traps.", href: "#/c/ch25/practice", link: "Chapter 25 drills" },
+      { type: "update", text: "Other specified neurodevelopmental disorder, ADHD, other specified psychotic disorder, schizotypal personality disorder, other specified bipolar disorder, bipolar II, caffeine withdrawal, gambling disorder, suicidal behavior and nonsuicidal self-injury now link to the matching Section III proposed set in their differential lists.", href: "#/dx/other-specified-bipolar", link: "Other specified bipolar disorder" }
+    ]
+  },
+  {
     id: 49,
     date: "2026-10-28",
     title: "Chapter 25: Conditions for Further Study (the first Section III chapter)",

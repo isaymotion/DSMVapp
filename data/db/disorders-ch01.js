@@ -270,6 +270,7 @@
       epi: [["Children", "About 7.2%"], ["Adults", "2.5%"], ["Male:female", "2:1 children; 1.6:1 adults"], ["Heritability", "About 74%"]],
       risk: ["Very low birth weight and prematurity.", "Prenatal smoking exposure.", "Lead, encephalitis, prenatal alcohol (causation unclear).", "Family history."],
       differential: [
+        { id: "nd-pae", how: "ADHD is the most common comorbidity of neurobehavioral disorder associated with prenatal alcohol exposure, which has a different neuropsychological profile and medication response (Section III, p. 920); ask about prenatal alcohol exposure." },
         { id: "oppositional-defiant", how: "Defiance rather than difficulty sustaining effort." },
         { id: "asd", how: "Social indifference and restricted, repetitive behavior." },
         { id: "sld", how: "Inattention only when the impaired skill is needed." },
@@ -553,6 +554,7 @@
       epi: [["Prevalence", "Not given"]],
       risk: ["Prenatal alcohol for ND-PAE."],
       differential: [
+        { id: "nd-pae", how: "The full proposed criteria set for ND-PAE (exposure, neurocognitive, self-regulation and adaptive thresholds) is in Section III, Chapter 25; the chart still records F88 with the reason (Section III, p. 903; app guidance)." },
         { id: "gdd", how: "Shares code F88: under 5, untestable." },
         { id: "other-specified-adhd", how: "Use the narrower residual when ADHD-like." },
         { id: "unspecified-nd", how: "Reason not recorded." }

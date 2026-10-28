@@ -45,6 +45,7 @@
       epi: [["Prevalence", "Not given in the chapter (p. 822)"]],
       risk: ["The chapter gives no risk factors; suicide risk factors are covered under the individual disorders (app note).", "Safety (app guidance): ask about intent, plans, access to means and protective factors at every encounter, and act on current risk regardless of the code chosen."],
       differential: [
+        { id: "suicidal-behavior-disorder", how: "The proposed Section III diagnosis adds a 24-month window with current (12 months) and early remission (12–24 months) specifiers; the chart still uses these Chapter 22 codes (Section III, pp. 920–921)." },
         { id: "nssi", how: "Self-inflicted damage likely to cause bleeding, bruising or pain **without suicidal intent**: intent, not method, separates the two (p. 822)." },
         { id: "borderline-pd", how: "Recurrent suicidal behavior is one of its criteria (Chapter 18); the T14.91 or Z91.51 code can sit beside the diagnosis (app guidance)." },
         { id: "mdd", how: "A depressive disorder is diagnosed in its own right; the behavior code records the act, not the disorder (app guidance)." },
@@ -78,6 +79,7 @@
       epi: [["Prevalence", "Not given in the chapter (p. 822)"]],
       risk: ["The chapter gives no risk factors (p. 822).", "Safety (app guidance): ask about suicidal intent each time; NSSI and suicidal behavior can occur in the same person at different times."],
       differential: [
+        { id: "nssi-disorder", how: "The proposed Section III diagnosis requires 5 or more days of self-injury in the last year with the expectation and preoccupation criteria; the chart still uses R45.88 or Z91.52 (Section III, pp. 923–924)." },
         { id: "suicidal-behavior", how: "Same acts can occur, but with **at least some intent to die** (p. 822)." },
         { id: "borderline-pd", how: "Self-injury is among its criteria; record R45.88 beside the diagnosis when it is a focus (Chapter 18; app guidance)." },
         { name: "Stereotypic self-injurious movements", how: "Repetitive, driven self-hitting or biting in a neurodevelopmental context belongs to stereotypic movement disorder with self-injurious behavior (Chapter 1; app guidance)." },

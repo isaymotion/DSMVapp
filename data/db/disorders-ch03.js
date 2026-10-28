@@ -57,6 +57,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["12-month prevalence", "0.8% (US); 0.3% internationally"], ["Onset", "Mid-20s; usually begins with depression"], ["Diagnostic delay", "Typically >10 years"], ["Conversion to bipolar I", "5%–15%"], ["Suicide attempts", "About one-third"]],
     risk: ["Risk highest in relatives of people with bipolar II.", "Rapid cycling predicts poorer prognosis.", "Childbirth can trigger hypomania (10%–20% of females in nonclinical samples).", "Anxiety disorders in 75%, most often social anxiety."],
     differential: [
+        { id: "short-duration-hypomania", how: "Hypomanic periods of 2–3 days with full symptoms never reaching 4 days match the Section III proposed set, not bipolar II; one 4-day hypomania makes it bipolar II (Section III, pp. 909–910)." },
       { name: "Major depressive disorder", how: "Only a history of at least one full hypomanic episode distinguishes them." },
       { id: "bipolar-i", how: "Any lifetime manic episode." },
       { id: "cyclothymic", how: "Only subthreshold hypomanic and depressive symptoms." },
@@ -175,6 +176,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [],
     risk: [],
     differential: [
+        { id: "short-duration-hypomania", how: "The proposed Section III criteria for depressive episodes with short-duration hypomania (two or more lifetime periods of 2–3 days) are in Chapter 25; the chart records F31.89 with the reason (Section III, pp. 907–908; app guidance)." },
       { id: "bipolar-ii", how: "Full hypomania (≥4 days, full symptoms) plus an MDE." },
       { name: "MDE with mixed features", how: "Hypomanic symptoms that overlap the depression." },
       { id: "cyclothymic", how: "Full 2 years (1 in youth)." }
