@@ -21,7 +21,7 @@ SP.add("ch23", "mnemonics", [
       ["P", "Personality functioning", "XII. Two questions; mild or greater; no Level 2"],
       ["S", "Substance use", "XIII. Three questions (alcohol, tobacco, drugs or misused medicines); slight or greater; Level 2 adapted NIDA-Modified ASSIST"]
     ],
-    caveat: "DSM check: pp. 843–844 (Table 1). **13 domains, 23 questions, past 2 weeks.** Five domains have **no Level 2 measure**: suicidal ideation, psychosis, memory, dissociation and personality functioning (p. 844). The parent/guardian form has a **different set of 12 domains** (adds inattention and irritability, drops memory, dissociation and personality functioning; p. 845). The app names the domains; it does not reprint the questions."
+    caveat: "DSM check: pp. 843–844 (Table 1). **13 domains, 23 questions, past 2 weeks.** Five domains have **no Level 2 measure**: suicidal ideation, psychosis, memory, dissociation and personality functioning (p. 844). The parent/guardian form has a **different set of 12 domains** (adds inattention and irritability, drops memory, dissociation and personality functioning; pp. 844–845, app comparison). The app names the domains; it does not reprint the questions."
   },
   {
     id: "m23-02", short: "Slight Starts Probing: Substance use, Suicidal ideation, Psychosis", name: "Slight Starts Probing: the three adult Level 1 domains flagged at slight (1) or greater", original: true, dx: "level1-adult", sec: "s23-scoring-adult",
@@ -31,7 +31,7 @@ SP.add("ch23", "mnemonics", [
       ["S", "Suicidal ideation", "The single question about thoughts of self-harm rated slight or greater; no Level 2, so assess directly the same day"],
       ["P", "Psychosis", "Either psychosis question rated slight or greater; no Level 2, so ask which experience was endorsed"]
     ],
-    caveat: "DSM check: pp. 845–846 and Table 1 (p. 844). Every other adult domain uses **mild (2) or greater** on any item. On the **parent/guardian form the slight domains are inattention and psychosis** (p. 846), while the child substance and suicide items are **Yes/No/Don't Know**, with Yes or Don't Know prompting inquiry (pp. 845–846). A threshold is a cue to ask, not a diagnosis; clinical judgment guides decisions (p. 846)."
+    caveat: "DSM check: pp. 845–846 and Table 1 (p. 844). Every other adult domain uses **mild (2) or greater** on any item. On the **parent/guardian form the slight domains are inattention and psychosis** (p. 846), while the child substance and suicide items are **Yes/No/Don't Know**, with Yes or Don't Know prompting inquiry (pp. 845–846). A threshold is a cue to ask, not a diagnosis; clinical judgment guides decisions (p. 846). The follow-up steps in the letters (assess directly, ask which experience) are app guidance."
   },
   {
     id: "m23-03", short: "WHODAS: Uncle Gets Sick, Grandma Lends Pesos (6-5-4-5-8-8 = 36)", name: "Uncle Gets Sick, Grandma Lends Pesos: the six WHODAS 2.0 domains and their item counts", original: true, dx: "whodas", sec: "s23-whodas",
@@ -59,6 +59,6 @@ SP.add("ch23", "mnemonics", [
       ["D", "Depression", "VII. Added dimension: flags co-occurring mood pathology"],
       ["M", "Mania", "VIII. Added dimension: flags co-occurring mood pathology"]
     ],
-    caveat: "DSM check: pp. 851–853 and Ch 2, p. 109. **Clinician-rated, each item 0–4 (none, equivocal, mild, moderate, severe) at its most severe in the past 7 days**, with symptom-specific definitions for each level (p. 851). The **first five (H, D, D, A, N) are the primary symptoms** used for the Chapter 2 current severity specifier, which is optional: the diagnosis can be made without it (Ch 2, p. 109). Items are not summed into a diagnostic total. For the condensed levels, see the psychosis severity tool in Case tools."
+    caveat: "DSM check: pp. 851–853 and Ch 2, p. 109. **Clinician-rated, each item 0–4 (none, equivocal, mild, moderate, severe) at its most severe in the past 7 days**, with symptom-specific definitions for each level (p. 851). The **first five (H, D, D, A, N) are the primary symptoms** named by the Chapter 2 current severity specifier in the criteria text, which is optional: the diagnosis can be made without it (Ch 2, p. 109); the Classification footnote lists all eight dimensions (p. xxix; app note). Items are not summed into a diagnostic total (app reading). For the condensed levels, see the psychosis severity tool in Case tools."
   }
 ]);

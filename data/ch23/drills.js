@@ -19,7 +19,7 @@
         { label: "Next step for psychosis", options: ["Give the adult psychosis Level 2 measure", "Nothing yet: slight is below threshold", "Direct inquiry about the voice-hearing item; no Level 2 exists", "Repeat Level 1 in 2 weeks before asking"], answer: 2 }
       ],
       line: "Level 1 adult (self-rated, past 2 weeks): highest domain scores anxiety **3**, psychosis **1** (voice-hearing item), sleep 1 → **PROMIS anxiety Level 2**; **direct inquiry** on the voice-hearing item (no Level 2); no diagnosis from the form",
-      why: "For adults the threshold is **mild (2)** on any item for most domains, but **slight (1)** for **substance use, suicidal ideation and psychosis** (pp. 845–846), so the single slight psychosis rating counts and the slight sleep rating does not. Anxiety has a PROMIS short form as its Level 2 (p. 844); psychosis has **none**, so the clinician’s own questions are the follow-up, and reviewing which psychosis item was endorsed tells you where to start (pp. 844–845). The plan line records scores and next steps, not a disorder (p. 846; app guidance)."
+      why: "For adults the threshold is **mild (2)** on any item for most domains, but **slight (1)** for **substance use, suicidal ideation and psychosis** (pp. 845–846), so the single slight psychosis rating counts and the slight sleep rating does not. Anxiety has a PROMIS short form as its Level 2 (p. 844); psychosis has **none**, so the clinician’s own questions are the follow-up (app guidance), and reviewing which psychosis item was endorsed tells you where to start (pp. 844–845). The plan line records scores and next steps, not a disorder (p. 846; app guidance)."
     },
     {
       id: "w23-02", tag: "Informant for major NCD",
@@ -41,7 +41,7 @@
         { label: "Level 2 for depression", options: ["PROMIS Emotional Distress—Depression—Parent Item Bank", "PHQ-15 Somatic Symptom Severity Scale", "Affective Reactivity Index", "PROMIS Calibrated Anger Measure—Parent"], answer: 0 }
       ],
       line: "Level 1 parent/guardian (mother, past 2 weeks): depression **3**; alcohol item **Don’t Know** → PROMIS depression parent Level 2; **ask the adolescent** about substance use and consider the **child-rated** substance Level 2 (11–17); no diagnosis from the form",
-      why: "In the parent version most domains flag at **mild (2)**, so the slight anger and irritability ratings do not reach threshold (p. 846). A parent’s **Don’t Know** on a substance item, especially at ages **11–17**, calls for **probing with the child** and the child-rated Level 2 for that domain (p. 846); Table 2 names the child-rated adapted NIDA-modified ASSIST for that case (p. 845). Depression has the PROMIS parent item bank (p. 845). He could also complete the child-rated Level 1, which is online (p. 844)."
+      why: "In the parent version most domains flag at **mild (2)**, so the slight anger and irritability ratings do not reach threshold (p. 846). A parent’s **Don’t Know** on a substance item, especially at ages **11–17**, may lead to **probing with the child**, including the child-rated Level 2 for that domain (p. 846); Table 2 names the child-rated adapted NIDA-modified ASSIST for that case (p. 845). Depression has the PROMIS parent item bank (p. 845). He could also complete the child-rated Level 1, which is online (p. 844)."
     },
     {
       id: "w23-04", tag: "A 9-year-old and the inattention item",
@@ -60,10 +60,10 @@
       parts: [
         { label: "Suicidal ideation domain", options: ["Waiting for a Yes/No answer first", "Below threshold: needs mild (2)", "At threshold: slight (1) or more is enough", "Flagged only together with depression"], answer: 2 },
         { label: "Next step for that item", options: ["The suicidal ideation Level 2 measure", "Repeat Level 1 at the next visit", "The PROMIS depression form covers it", "A direct conversation about the thoughts the same day; no Level 2 exists"], answer: 3 },
-        { label: "Level 2 for depression", options: ["Altman Self-Rating Mania Scale", "PHQ-15 Somatic Symptom Severity Scale", "PROMIS Emotional Distress—Depression—Short Form", "None exists"], answer: 2 }
+        { label: "Level 2 for depression", options: ["Altman Self-Rating Mania Scale", "PHQ-15 Somatic Symptom Severity Scale", "PROMIS Emotional Distress—Short Form (depression)", "None exists"], answer: 2 }
       ],
       line: "Level 1 adult (self-rated, past 2 weeks): depression **3**, suicidal ideation **1** → **direct inquiry on thoughts of self-harm today** (no Level 2) with a safety plan if risk is present; PROMIS depression Level 2; no diagnosis from the form",
-      why: "Suicidal ideation is one of the three adult domains flagged at **slight (1) or greater** (p. 846), and it has **no Level 2** measure (p. 844), so the clinician’s own questions are the follow-up. Depression flags at mild and has a PROMIS short form (p. 844). Doing that conversation the same day, and the NCMH Crisis Hotline 1553 if risk is present (confirm before giving out), is app guidance."
+      why: "Suicidal ideation is one of the three adult domains flagged at **slight (1) or greater** (p. 846), and it has **no Level 2** measure (p. 844), so the clinician’s own questions are the follow-up (app guidance). Depression flags at mild and has a PROMIS short form (p. 844). Doing that conversation the same day, and the NCMH Crisis Hotline (1553 (toll-free from landlines) or 1800-1888-1553; 0919-057-1553 (Smart/TNT); 0917-899-8727 and 0966-351-4518 (Globe/TM)) if risk is present (outside the DSM; confirm before giving out), is app guidance."
     },
     {
       id: "w23-06", tag: "Rating the psychosis dimensions",
@@ -74,7 +74,7 @@
         { label: "Delusions score (app judgment)", options: ["1 (equivocal)", "2 (mild)", "3 (moderate)", "4 (severe)"], answer: 2 }
       ],
       line: "Psychosis severity dimensions (clinician-rated, worst in past 7 days): delusions **3**, hallucinations 0, disorganized speech 0, abnormal psychomotor behavior 0; remaining dimensions as assessed → repeat weekly to track response; scores in the progress note",
-      why: "The measure is **clinician-rated**, using all available information, for each symptom at its **most severe in the past 7 days**, on a **0–4** scale (p. 851). The delusion levels are graded by **pressure to act** on the belief and **how bothered** the person is (pp. 852–853): here the belief clearly changes his eating and distresses him, but not to the severe end, so **moderate** is the app’s rating (the condensed anchors are in the psychosis severity tool in Case tools). Level 1 is a screen, not a severity rating, and no psychosis Level 2 exists (p. 844). The diagnosis stands on the Chapter 2 criteria with or without the rating (Ch 2)."
+      why: "The measure is **clinician-rated**, using all available information, for each symptom at its **most severe in the past 7 days**, on a **0–4** scale (p. 851). The delusion levels are graded by **pressure to act** on the belief and **how bothered** the person is (p. 852): here the belief clearly changes his eating and distresses him, but not to the severe end, so **moderate** is the app’s rating (the condensed anchors are in the psychosis severity tool in Case tools). Level 1 is a screen, not a severity rating, and no psychosis Level 2 exists (p. 844). The diagnosis stands on the Chapter 2 criteria with or without the rating (Ch 2)."
     },
     {
       id: "w23-07", tag: "WHODAS average scores",
@@ -91,11 +91,11 @@
       id: "w23-08", tag: "WHODAS with 12 blanks",
       "case": "A 60-year-old market vendor completes the WHODAS 2.0 at home and returns it with **12** items blank: 2 of the 6 understanding-and-communicating items, none of the getting-around items, 1 of the 4 self-care items, 3 of the 5 getting-along items, 2 of the 8 life-activities items and 4 of the 8 participation items. The resident is about to score it.",
       parts: [
-        { label: "General disability score", options: ["Use the simple sum", "Use the average general score instead", "Neither is useful: 10 or more items are missing", "Prorate the blanks to 36 items"], answer: 2 },
+        { label: "General disability score", options: ["Use the simple sum", "Use the average general score instead", "Neither may be helpful: 10 or more items are missing", "Prorate the blanks to 36 items"], answer: 2 },
         { label: "Domains still usable", options: ["Getting around only", "Getting around, self-care and life activities", "All except participation", "None"], answer: 1 },
         { label: "Best first step", options: ["Go over the blank items with her in the interview", "Record the form as invalid and stop", "Replace it with a GAF rating", "Fill each blank with the domain average"], answer: 0 }
       ],
-      line: "WHODAS 2.0 (self-administered, past 30 days): **12 items missing** → general disability scores not interpretable; domain scores usable for getting around (5/5), self-care (3/4) and life activities (6/8); review the blank items with her and rescore",
+      line: "WHODAS 2.0 (self-administered, past 30 days): **12 items missing** → general disability scores may not be helpful; domain scores usable for getting around (5/5), self-care (3/4) and life activities (6/8); review the blank items with her and rescore",
       why: "When **10 or more** items are unanswered (more than **25%** of 36), the simple and average **general** scores may not be useful; a domain may still be scored when it is **75%–100%** complete (p. 855). Here that is 5/5, 3/4 and 6/8; cognition (4/6), getting along (2/5) and participation (4/8) fall short (app arithmetic). The manual asks clinicians to **encourage completion** of every item (p. 855), and the clinician reviews each response in the interview anyway (p. 855). The GAF was replaced by the WHODAS (Section I, p. 16); imputing blanks is not part of the DSM-5-TR guidance (app reading)."
     }
   ]);
@@ -110,7 +110,7 @@
         ["The sleep item rated slight (1)", false, "Sleep needs **mild (2)** (p. 844)."],
         ["One anxiety item rated mild (2), the other two none", true, "**Any single item** at mild is enough; there is no domain sum (pp. 845–846)."],
         ["The anger item rated slight (1)", false, "Anger needs **mild** (p. 844)."],
-        ["The memory item rated mild (2)", true, "Memory flags at mild; it has **no Level 2**, so the follow-up is your own inquiry (p. 844)."],
+        ["The memory item rated mild (2)", true, "Memory flags at mild; it has **no Level 2** (p. 844), so the follow-up is your own inquiry (app guidance)."],
         ["Both mania items rated slight (1)", false, "Two slight ratings do not add up to mild: the unit is the **highest item**, and mania needs mild (pp. 844–846; app reading)."]
       ],
       need: 3,
@@ -192,7 +192,7 @@
       items: [
         ["The adult Level 1 measure has 23 items over 13 domains", true, "p. 843."],
         ["The parent/guardian version has 25 items over 12 domains", true, "p. 844."],
-        ["The psychosis severity measure has five items, one per primary symptom", false, "It has **eight**; only the five primary symptoms feed the Chapter 2 specifier (p. 851; Ch 2)."],
+        ["The psychosis severity measure has five items, one per primary symptom", false, "It has **eight** (p. 851); the Chapter 2 criteria-text specifier names the five primary symptoms (Ch 2, p. 109)."],
         ["The printed WHODAS 2.0 has 36 items in six domains", true, "p. 854."],
         ["Six parent-version items are answered Yes, No or Don’t Know", true, "Four substance items and the two suicide items; the other **19** use 0–4 (p. 846)."],
         ["The adult substance use domain has four items", false, "**Three** in the adult form (alcohol, tobacco, other drugs or misused medicines); the parent form has **four** (pp. 848, 850)."]
@@ -225,7 +225,7 @@
       items: [
         ["Hallucinations", true, "A primary symptom (p. 851; Ch 2)."],
         ["Delusions", true, "A primary symptom (p. 851; Ch 2)."],
-        ["Impaired cognition", false, "One of the measure’s **three added** dimensions, not part of the specifier (p. 851)."],
+        ["Impaired cognition", false, "One of the measure’s **three added** dimensions (p. 851), not named in the criteria-text specifier (Ch 2, p. 109)."],
         ["Disorganized speech", true, "A primary symptom (p. 851; Ch 2)."],
         ["Negative symptoms", true, "A primary symptom (p. 851; Ch 2)."],
         ["Depression", false, "An added dimension for co-occurring mood pathology (p. 851)."],
@@ -234,7 +234,7 @@
       need: 5,
       met: false,
       metLabel: "So, are all five present?",
-      why: "Four of the five are listed; **abnormal psychomotor behavior** is missing. The specifier rates the **five primary symptoms** 0–4 for the worst of the last 7 days, and the diagnosis can be made without it (Ch 2, p. 109). The full measure has **eight** dimensions, adding cognition, depression and mania (p. 851)."
+      why: "Four of the five are listed; **abnormal psychomotor behavior** is missing. In the criteria text the specifier rates the **five primary symptoms** 0–4 for the worst of the last 7 days, and the diagnosis can be made without it (Ch 2, p. 109); the Classification footnote lists all eight dimensions (p. xxix; app note). The full measure has **eight** dimensions, adding cognition, depression and mania (p. 851)."
     }
   ]);
 })();

@@ -3,22 +3,22 @@
    its adult and child versions, the Level 2 measures, the disorder-specific severity measures, the psychosis severity
    dimensions (CRDPSS) and WHO’s disability schedule, WHODAS 2.0). None has a DSM or ICD-10-CM code. The `criteria` field
    holds the manual’s DESCRIPTION of each measure as labeled items, in the app’s own words, never a criteria set. A score is
-   a prompt for inquiry (pp. 846, 851, 855): it never goes on the diagnosis line; it belongs in the formulation and the
+   a prompt for inquiry (pp. 846, 851, 855; clinical judgment, pp. 846, 851): it never goes on the diagnosis line; it belongs in the formulation and the
    progress note (app guidance). The forms are copyrighted (APA; WHO for the WHODAS): entries describe what the items
    cover and how they are scored and never reprint an item, an anchor or an instruction. Item counts per domain are the
    app’s count of the printed forms. Research, Philippine context and exam strategy are outside the DSM and labeled.
    Self-harm content stays at general wording. */
 (function () {
   var CODE = "No code (assessment measure)";
-  var REC = "An assessment measure, not a diagnosis: the scores go in the formulation and progress notes; the diagnosis line holds the Section II disorder that is met, an other specified or unspecified category, or a Chapter 22 code (pp. 846, 851, 855; app guidance)";
+  var REC = "An assessment measure, not a diagnosis: the scores go in the formulation and progress notes; the diagnosis line holds the Section II disorder that is met, an other specified or unspecified category, or a Chapter 22 code (pp. 846, 851; app guidance)";
   function codes(extra) {
     var rows = [["—", REC, "App guidance"]];
     if (extra) rows.push(extra);
     return rows;
   }
   function upd(name, text) {
-    return [{ kind: "post", year: "2026", title: "Not a diagnosis: how to record", source: "DSM-5-TR pp. 846, 851, 855; app guidance",
-      text: "**App guidance**: the " + name + " is an **assessment measure** and carries **no code**. A score at or above threshold **may** point to a problem that **warrants further assessment**, and **clinical judgment** decides (pp. 846, 851, 855). **Never** write a measure or a score on the **diagnosis line**: record it in the formulation and the progress note, and diagnose on Section II criteria. " + text }];
+    return [{ kind: "post", year: "2026", title: "Not a diagnosis: how to record", source: "DSM-5-TR pp. 846, 851; app guidance",
+      text: "**App guidance**: the " + name + " is an **assessment measure** and carries **no code**. A score at or above threshold **may** point to a problem that **warrants further assessment** (pp. 846, 851, 855), and **clinical judgment** decides (pp. 846, 851). **Never** write a measure or a score on the **diagnosis line**: record it in the formulation and the progress note, and diagnose on Section II criteria. " + text }];
   }
 
   SP.disorders = (SP.disorders || []).concat([
@@ -37,9 +37,9 @@
         ["Structure", "**23 items, 13 domains**: depression 2, anger 1, mania 2, anxiety 3, somatic symptoms 2, suicidal ideation 1, psychosis 2, sleep problems 1, memory 1, repetitive thoughts and behaviors 2, dissociation 1, personality functioning 2, substance use 3 (Table 1 order, p. 844; counts from the form, pp. 847–848)."],
         ["Window and scale", "Each item asks about the **past 2 weeks**, rated **0 none, 1 slight, 2 mild, 3 moderate, 4 severe**, the levels tied to how many days the symptom was present (pp. 843, 845)."],
         ["Threshold", "**Mild (2) or greater** on **any single item** in a domain suggests further inquiry, which may include the Level 2 measure (pp. 845–846)."],
-        ["Three exceptions", "**Slight (1) or greater** is enough for **substance use, suicidal ideation and psychosis** (p. 846)."],
-        ["Reading the form", "Review **each item** within a multi-item domain to find the symptom driving the score, above all where no Level 2 exists; write the **highest item score** per domain in the clinician column (pp. 845–846). There is **no total score** (app reading)."],
-        ["Domains with no Level 2", "**Suicidal ideation, psychosis, memory, dissociation, personality functioning**: the clinician’s own questions are the follow-up (p. 844)."],
+        ["Three exceptions", "**Slight (1) or greater** may serve as a guide for **substance use, suicidal ideation and psychosis** (p. 846)."],
+        ["Reading the form", "Review **each item** within a multi-item domain to find the symptom driving the score, especially if a Level 2 is not indicated; write the **highest item score** per domain in the clinician column (pp. 845–846). There is **no total score** (app reading)."],
+        ["Domains with no Level 2", "**Suicidal ideation, psychosis, memory, dissociation, personality functioning** (p. 844); the clinician’s own questions are the follow-up (app guidance)."],
         ["Evidence in the text", "DSM-5 Field Trials in U.S. and Canadian adult clinical samples: clinically useful, good reliability; scores shared before the visit helped communication; a large study of non-treatment-seeking U.S. college students showed acceptable internal consistency and validity (p. 844)."],
         ["Frequency of use", "Repeat at regular intervals as clinically indicated; use the **same informant** at follow-up when one was used (p. 846)."],
         ["Chart", "Scores go in the formulation and progress note; diagnose on Section II criteria (p. 846; app guidance)."]
@@ -55,10 +55,10 @@
       ],
       differential: [
         { id: "mdd", how: "The depression domain (two items) feeds a Level 2 PROMIS depression form; a threshold score is a reason to interview against the MDD criteria, not a diagnosis (pp. 844–846; app guidance)." },
-        { id: "gad", how: "Three anxiety items lead to the PROMIS anxiety Level 2; the disorder-specific GAD severity measure is for a diagnosed patient (pp. 842, 844)." },
+        { id: "gad", how: "Three anxiety items lead to the PROMIS anxiety Level 2; the disorder-specific GAD severity measure is for a patient with the diagnosis or a near-threshold syndrome (pp. 842, 844)." },
         { id: "bipolar-i", how: "Two mania items lead to the Altman Self-Rating Mania Scale; elevated scores prompt inquiry for a manic episode (p. 844; app guidance)." },
         { id: "ocd", how: "The repetitive thoughts and behaviors domain leads to the FOCI Severity Scale (p. 844)." },
-        { id: "schizophrenia", how: "The psychosis domain flags at slight and has no Level 2; the interview and, once a psychotic disorder is diagnosed, the psychosis severity dimensions follow (pp. 844, 846, 851)." },
+        { id: "schizophrenia", how: "The psychosis domain flags at slight and has no Level 2; the interview and, for a psychotic disorder or a near-threshold syndrome, the psychosis severity dimensions follow (pp. 842, 844, 846, 851)." },
         { id: "major-ncd", how: "The memory domain has no Level 2; when capacity is impaired an informant completes the form (pp. 843–844)." },
         { id: "no-diagnosis", how: "A threshold score that the interview does not confirm leaves no disorder to record (Chapter 20; app guidance)." },
         { id: "other-specified-mental-disorder", how: "A clinically significant flagged picture that fits no specific disorder may land here; the score itself is never the diagnosis (app guidance)." }
@@ -69,7 +69,7 @@
         "No Level 2: **suicidal ideation, psychosis, memory, dissociation, personality functioning** (p. 844).",
         "Window: **past 2 weeks** (p. 843).",
         "Scores seen **before** the visit helped patient–clinician communication in the Field Trials (p. 844).",
-        "Section I calls it a **review of mental systems** and the APA evaluation guideline endorses it as a first step (p. 15)."
+        "Section I calls it a **review of mental systems** and the APA evaluation guideline endorses it as a first step (Section I, p. 15)."
       ],
       cmp: {
         symptoms: "23 items over 13 domains, self-rated 0–4",
@@ -98,7 +98,7 @@
         ["Structure", "**25 items, 12 domains** in Table 2 order: somatic symptoms 2, sleep problems 1, inattention 1, depression 2, anger and irritability 2 (shared), mania 2, anxiety 3, psychosis 2, repetitive thoughts and behaviors 4, substance use 4, suicidal ideation/suicide attempts 2 (p. 845; counts from the form, pp. 849–850)."],
         ["Window and response types", "Past **2 weeks**; **19** items on the 0–4 scale, **6** on Yes / No / Don’t Know (pp. 844, 846). The attempt item asks about **any lifetime** attempt (p. 850)."],
         ["Threshold", "**Mild (2) or greater** on any 0–4 item; **slight (1) or greater** for **inattention and psychosis** (p. 846)."],
-        ["Yes / Don’t Know items", "Substance use: **Yes** → the parent Level 2; **Don’t Know** → the **child-rated** substance Level 2 (11–17). Suicide items: **Yes or Don’t Know** → no Level 2 exists, so ask directly (pp. 845–846)."],
+        ["Yes / Don’t Know items", "Substance use: **Yes** → the parent Level 2; **Don’t Know** → the **child-rated** substance Level 2 (11–17). Suicide items: **Yes or Don’t Know** → no Level 2 exists (pp. 845–846), so ask directly (app guidance)."],
         ["Domains with no Level 2", "**Psychosis, repetitive thoughts and behaviors, suicidal ideation/attempts** (p. 845)."],
         ["Reading the form", "Review items within a domain (the text contrasts a visual with an auditory hallucination item); record the **highest item score** per domain (p. 846)."],
         ["Child-rated version (11–17)", "Online only; instructions and scoring similar to the parent version but with **no Don’t Know** option (pp. 842, 846)."],
@@ -150,7 +150,7 @@
       name: "Level 2 Cross-Cutting Symptom Measures", code: CODE,
       codes: codes(),
       aka: ["Level 2", "cross-cutting measure, in-depth", "domain-specific follow-up measures"],
-      essence: "When a Level 1 domain reaches threshold, the **Level 2** measure for that domain is **one way** to get more detailed information to inform diagnosis, planning and follow-up (p. 846). They are **online** at www.psychiatry.org/dsm5, with **adult and pediatric** (parent and child) versions for **most** domains; Tables 1 and 2 list them (pp. 844–846). Several domains have **none**, and there the clinician’s own questions are the follow-up (pp. 844–845).",
+      essence: "When a Level 1 domain reaches threshold, the **Level 2** measure for that domain is **one way** to get more detailed information to inform diagnosis, planning and follow-up (p. 846). They are **online** at www.psychiatry.org/dsm5, with **adult and pediatric** (parent and child) versions for **most** domains; Tables 1 and 2 list them (pp. 844–846). Several domains have **none** (pp. 844–845), and there the clinician’s own questions are the follow-up (app guidance).",
       duration: "Not applicable; varies by measure (online)",
       functioning: "Not rated (app reading)",
       mood: "PROMIS depression and anger forms, the ARI for irritability, and the Altman scale for mania (pp. 844–845)",
@@ -161,12 +161,12 @@
         ["Adult domains with none", "Suicidal ideation, psychosis, memory, dissociation, personality functioning (p. 844)."],
         ["Child Level 2 (Table 2)", "PHQ-15 (somatic); PROMIS Sleep Disturbance; **SNAP-IV** (inattention); PROMIS parent item banks for depression and anxiety; PROMIS Calibrated Anger Measure—Parent; **Affective Reactivity Index (ARI)** (irritability); ASRM (mania); adapted NIDA-modified ASSIST, parent or **child-rated** (substance use) (p. 845)."],
         ["Child domains with none", "Psychosis, repetitive thoughts and behaviors, suicidal ideation/suicide attempts (p. 845)."],
-        ["Parent Don’t Know", "On a substance item, especially at 11–17, the **child-rated** Level 2 is the route (p. 846)."],
+        ["Parent Don’t Know", "On a substance item, especially at 11–17, a Don’t Know may lead to probing with the child, including the **child-rated** Level 2 (p. 846)."],
         ["Frequency of use", "Level 1 and the relevant Level 2 may be repeated at regular intervals as clinically indicated, with the same informant or parent where one is used (p. 846)."]
       ],
       specifiers: [],
       epi: [
-        ["APA site (research notes, outside the DSM)", "Eight adult and nine pediatric Level 2 measures listed as of October 2026; confirm online"]
+        ["APA site (research notes, outside the DSM)", "Eight adult, nine parent-rated and nine child-rated (11–17) Level 2 measures listed as of October 2026; confirm online"]
       ],
       risk: [
         "Not applicable as risk factors.",
@@ -181,7 +181,7 @@
         { id: "no-diagnosis", how: "An elevated Level 2 score is still not a diagnosis; if criteria are not met, nothing is coded (app guidance)." }
       ],
       pearls: [
-        "Level 2 is **optional**; inquiry is not (p. 846).",
+        "Level 2 is **one method**; further inquiry is what the threshold calls for (p. 846; app reading).",
         "Online only: **www.psychiatry.org/dsm5** (p. 846).",
         "Mania: **ASRM** in both tables; inattention: **SNAP-IV**; irritability: **ARI**; repetitive: **FOCI** (adult only) (pp. 844–845).",
         "Substance: **adapted NIDA-Modified ASSIST** for adults, parents and youths 11–17 (pp. 844–845)."
@@ -216,7 +216,7 @@
         ["Diagnoses named", "Generalized anxiety disorder, social anxiety disorder, psychotic disorders, PTSD, autism spectrum disorder, social (pragmatic) communication disorder, among others (p. 842)."],
         ["When", "At the initial interview and over time, to follow severity and treatment response (p. 842)."],
         ["Where", "Online at www.psychiatry.org/dsm5; only the psychosis measure is printed (pp. 842, 851–853)."],
-        ["Contrast with Level 1", "A severity measure follows a **diagnosed** (or near-threshold) disorder; Level 1 screens **everyone** (p. 842; Section I, p. 15)."]
+        ["Contrast with Level 1", "A severity measure follows a **diagnosed** (or near-threshold) disorder; Level 1 is recommended for **every individual presenting for psychiatric care** (p. 842; Section I, p. 15)."]
       ],
       specifiers: [],
       epi: [
@@ -224,7 +224,7 @@
       ],
       risk: ["Not applicable as risk factors."],
       differential: [
-        { id: "gad", how: "Named on p. 842 among diagnoses with a severity measure; given after the diagnosis, not as a screen." },
+        { id: "gad", how: "Named on p. 842 among diagnoses with a severity measure; given with the diagnosis or a near-threshold syndrome, not as a screen (app guidance)." },
         { id: "social-anxiety", how: "Named on p. 842 among diagnoses with a severity measure." },
         { id: "panic-disorder", how: "An anxiety disorder with an online severity measure (APA site; research notes, outside the DSM)." },
         { id: "ptsd", how: "Named on p. 842 among diagnoses with a severity measure." },
@@ -266,16 +266,16 @@
         ["Rationale", "Psychotic disorders are heterogeneous, and severity predicts features such as cognitive and neurobiological deficits; dimensions help with planning, prognosis and mechanism research (p. 851)."],
         ["Eight items", "I hallucinations; II delusions; III disorganized speech; IV abnormal psychomotor behavior; V negative symptoms (restricted emotional expression or avolition); VI impaired cognition; VII depression; VIII mania (pp. 851–853)."],
         ["Rater and window", "The clinician, at the assessment, using all available information; each item rated at its **worst in the past 7 days** (p. 851)."],
-        ["Scale", "**0–4**: not present, equivocal, present but mild, present and moderate, present and severe, each level defined for that symptom (p. 851). Hallucinations and delusions are graded by pressure to act and distress; speech by how hard it is to follow; psychomotor behavior by frequency; negative symptoms by degree of decrease (pp. 852–853; app paraphrase)."],
+        ["Scale", "**0–4**: none (not present on the form), equivocal, present but mild, present and moderate, present and severe, each level defined for that symptom (pp. 851–852). Hallucinations and delusions are graded by pressure to act and distress; speech by how hard it is to follow; psychomotor behavior by frequency; negative symptoms by degree of decrease (pp. 852–853; app paraphrase)."],
         ["Cognition anchors", "Graded in **standard deviations** below the level expected for **age and socioeconomic status**: within 0.5 SD equivocal, 0.5–1 SD mild, 1–2 SD moderate, more than 2 SD severe (p. 853)."],
         ["Recording", "Tick the level and enter the number in the Score column; no total is described (p. 851; app reading)."],
-        ["Link to Chapter 2", "The five primary-symptom items are the **“specify current severity”** rating for schizophrenia and the other psychotic disorders; the diagnosis can be made **without** it. Cognition, depression and mania are the measure’s own additions (p. 851; Ch 2, p. 109)."],
+        ["Link to Chapter 2", "In the Chapter 2 criteria text, the five primary-symptom items are the **“specify current severity”** rating for schizophrenia and the other psychotic disorders; the diagnosis can be made **without** it (Ch 2, p. 109). Cognition, depression and mania are added dimensions (p. 851); the DSM-5-TR Classification footnote lists all eight dimensions under the specifier (p. xxix; app note)."],
         ["Frequency of use", "Repeat at regular intervals as clinically indicated; consistently high scores warrant further assessment, guided by judgment (p. 851)."],
         ["App tool", "The psychosis severity tool in Case tools (#/assess/scale/crdpss) holds condensed anchors for the same eight dimensions (app guidance)."]
       ],
       specifiers: [],
       epi: [
-        ["Numbers to know", "8 items; 5 used by the Chapter 2 specifier; 0–4; past 7 days at worst; cognition anchored at 0.5, 1 and 2 SD (pp. 851–853)"],
+        ["Numbers to know", "8 items; 5 named by the Chapter 2 criteria-text specifier (Ch 2, p. 109); 0–4; past 7 days at worst; cognition anchored at 0.5, 1 and 2 SD (pp. 851–853)"],
         ["Reliability (research, outside the DSM)", "Low inter-rater agreement for most items except delusions in a recent-onset sample (Berendsen et al. 2020); rater training matters"]
       ],
       risk: ["Not applicable as risk factors; higher severity predicts more cognitive and neurobiological deficit (p. 851)."],
@@ -284,11 +284,11 @@
         { id: "schizophreniform-disorder", how: "Same optional severity specifier (Ch 2)." },
         { id: "brief-psychotic-disorder", how: "Ch 2, p. 109 carries the severity specifier pointing to this measure." },
         { id: "schizoaffective-disorder", how: "Specifier as above; the depression and mania items capture the mood component (p. 851; Ch 2)." },
-        { id: "delusional-disorder", how: "Specifier as above; the delusions item is graded by pressure to act and distress, not bizarreness (pp. 852–853; Ch 2)." },
+        { id: "delusional-disorder", how: "Specifier as above; the delusions item is graded by pressure to act and distress (p. 852; Ch 2), not bizarreness (app reading)." },
         { id: "bipolar-i", how: "A high mania rating flags co-occurring mood pathology; whether a mood disorder is present is decided on its own criteria (p. 851; app guidance)." }
       ],
       pearls: [
-        "**8** items, but the Chapter 2 specifier uses **5** (p. 851; Ch 2).",
+        "**8** items (p. 851), but the Chapter 2 criteria-text specifier names **5** (Ch 2, p. 109).",
         "Window: **7 days, at worst** (p. 851).",
         "**Clinician**-rated, unlike Level 1 and the WHODAS (p. 851).",
         "Cognition is the only item anchored to **SD** from the expected level for age and SES (p. 853).",
@@ -325,7 +325,7 @@
         ["WHO simple scoring", "Score each item **1 (none) to 5 (extreme)** and **sum**, with no recoding or weighting: maximum **180**; suited to hand scoring and busy clinics, and WHO treats the sum as sufficient to describe the degree of limitation (p. 854)."],
         ["WHO complex (IRT) scoring", "Computer-based item-response-theory scoring that weights item difficulty and each response level: recode items to **0–4** and sum per domain (raw maximum **144**), sum the six domains, convert to **0–100** (0 = no disability, 100 = full disability); domain scores are named cognition, mobility, self-care, getting along, life activities and participation; WHO publishes population norms (p. 854)."],
         ["DSM-5-TR review step", "The clinician reviews every answer in the interview, records it under **Clinician Use Only**, and may enter a **corrected** raw item score (p. 855)."],
-        ["DSM-5-TR average scores", "Based on Field Trials at six U.S. sites and one in Canada: **average domain score** = raw domain score ÷ items in the domain (all six cognition items moderate → 18 ÷ 6 = **3**, moderate); **average general disability score** = raw total ÷ **36**; both read on **1 none – 5 extreme** (p. 855)."],
+        ["DSM-5-TR average scores", "Based on Field Trials at six U.S. sites and one in Canada: **average domain score** = raw domain score ÷ items in the domain (all six understanding-and-communicating items moderate → 18 ÷ 6 = **3**, moderate); **average general disability score** = raw total ÷ **36**; both read on **1 none – 5 extreme** (p. 855)."],
         ["Missing data", "If **10 or more** items are unanswered (**more than 25%**), the simple and average **general** scores may not be useful; a domain that is **75%–100% complete** can still be scored by its simple or average score (p. 855)."],
         ["Frequency of use", "Repeat at regular intervals as clinically indicated; consistently high domain scores may mark problem areas for further assessment and intervention (p. 855)."],
         ["Copyright", "WHO’s form; clinicians may reproduce it for their own patients, other uses including electronic use need WHO permission (p. 857)."]
@@ -340,14 +340,14 @@
         { id: "mdd", how: "Residual disability after an episode carries relapse risk; follow it with average domain scores (p. 842; app guidance)." },
         { id: "major-ncd", how: "Impaired capacity → the online proxy version completed by an informant (p. 854)." },
         { id: "schizophrenia", how: "Pairs with the psychosis dimensions: symptoms from one, disability from the other (pp. 851, 854; app reading)." },
-        { id: "cultural-formulation", how: "Functioning is judged against the person’s cultural background; use the CFI where cultural dynamics matter (Section I, p. 20; Chapter 24)." },
+        { id: "cultural-formulation", how: "Functioning is judged against the person’s cultural background (app guidance); where cultural dynamics matter, the CFI should be considered (Section I, p. 20; Chapter 24)." },
         { id: "no-diagnosis", how: "Disability alone is not a diagnosis; most criteria sets need clinically significant distress or impairment, which the WHODAS helps document (p. 842; app guidance)." }
       ],
       pearls: [
         "Domain items **6-5-4-5-8-8 = 36** (app count of the form, pp. 856–857).",
         "**180** simple max; **144** IRT raw max; **0–100** IRT metric (p. 854).",
         "Average domain = raw ÷ items; general = raw ÷ **36**; read on **1–5** (p. 855).",
-        "**10 or more** missing spoils the general scores; a domain **75%–100%** complete is still usable (p. 855).",
+        "With **10 or more** missing, the general scores may not be helpful; a domain **75%–100%** complete is still usable (p. 855).",
         "Window: **past 30 days** (p. 854).",
         "It **replaced the GAF** (Section I, p. 16)."
       ],
@@ -362,7 +362,7 @@
         ["Key test", "Average domain scores and how many items are missing"],
         ["Recording (app guidance)", "Average domain and general scores in the note as the functioning statement"]
       ],
-      updates: upd("WHODAS 2.0", "The average-score and missing-data guidance is the section the text revision added for DSM-5-TR users (p. 855; app comparison with DSM-5).")
+      updates: upd("WHODAS 2.0", "Between editions, the WHODAS guidance heading now names DSM-5-TR users; the expanded introduction (pp. 841–842) and the college-student study (p. 844) are the visible additions (app comparison).")
     }
   ]);
 

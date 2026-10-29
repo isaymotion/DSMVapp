@@ -31,7 +31,7 @@ SP.add("ch23", "highYield", [
     "Each adult domain has **one to three** questions (p. 843).",
     "Every Level 1 item asks how much or how often the symptom bothered the person over the **past 2 weeks** (p. 843).",
     "If impaired capacity prevents self-report, a **knowledgeable adult informant** may complete the adult form (p. 843).",
-    "The two adult domains with three questions each are anxiety and **substance use** (pp. 847–848; app count of the form).",
+    "The two adult domains with three questions each are **anxiety and substance use** (pp. 847–848; app count of the form).",
     "In the Field Trials, ratings shared with the clinician **before the meeting** helped communication in the encounter (p. 844)."
   ] },
   { id: "hy23-table1", topic: "Adult scoring, thresholds and Table 1", items: [
@@ -54,7 +54,7 @@ SP.add("ch23", "highYield", [
     "**19** of the 25 parent items use the same 0–4 scale as the adult form (p. 846).",
     "The suicidal ideation, suicide attempt and four substance items are answered **Yes, No or Don’t Know** (pp. 846, 850).",
     "Parent version: slight (1) or greater is the threshold for **inattention and psychosis** (p. 846).",
-    "A parent’s Don’t Know on a suicide or substance item, especially at ages 11–17, calls for **probing with the child** (p. 846).",
+    "A parent’s Don’t Know on a suicide or substance item, especially at ages 11–17, may lead to **probing with the child** (p. 846).",
     "Yes or Don’t Know on the suicide items has no Level 2, so the follow-up is **direct inquiry** (p. 845; app reading).",
     "Child Level 2 for inattention: the **SNAP-IV** (p. 845).",
     "The parent form’s suicide attempt item asks whether one has **ever** occurred, not only in the past 2 weeks (p. 850).",
@@ -69,14 +69,14 @@ SP.add("ch23", "highYield", [
   ] },
   { id: "hy23-crdpss", topic: "Clinician-Rated Dimensions of Psychosis Symptom Severity", items: [
     "The psychosis dimensions measure has **8** items (p. 851).",
-    "It is completed by the **clinician** at the time of the clinical assessment (p. 851).",
+    "The rater is the **clinician**, who may complete it during the clinical assessment (p. 851).",
     "Each symptom is rated at its most severe during the **past 7 days** (p. 851).",
     "Beyond the five primary symptoms, the measure adds **impaired cognition, depression and mania** (p. 851).",
     "The depression and mania ratings alert the clinician to **co-occurring mood pathology** (p. 851).",
     "The five levels are none, **equivocal**, mild, moderate and severe, each with symptom-specific definitions (p. 851).",
     "The cognition item is graded in **standard deviations** below the level expected for age and socioeconomic status (p. 853).",
     "On the cognition item, severe means more than **2 SD** below the expected mean (p. 853).",
-    "Chapter 2’s “specify current severity” rates only the **five primary symptoms**, 0–4, for the last 7 days (Ch 2, p. 109).",
+    "In the Chapter 2 criteria text, “specify current severity” rates the **five primary symptoms**, 0–4, for the last 7 days (Ch 2, p. 109); the Classification footnote lists all eight dimensions (p. xxix; app note).",
     "A Chapter 2 psychotic disorder diagnosis **can be made without** the severity specifier (Ch 2, p. 109)."
   ] },
   { id: "hy23-whodas", topic: "WHODAS 2.0: structure", items: [
@@ -84,7 +84,7 @@ SP.add("ch23", "highYield", [
     "The printed WHODAS is for adults aged **18 and older** (p. 854).",
     "The WHODAS has been validated across many cultures and shown to be **sensitive to change** (p. 854).",
     "WHODAS items ask about difficulty in functioning over the **past 30 days** (p. 854).",
-    "A knowledgeable informant completes the **proxy-administered** version, which is online, when capacity is impaired (p. 854).",
+    "A knowledgeable informant may complete the **proxy-administered** version, which is online, when capacity is impaired (p. 854).",
     "The life activities domain’s work/school items are skipped by people who **neither work nor study** (p. 857).",
     "DSM-5 replaced DSM-IV’s Axis V **Global Assessment of Functioning (GAF)** with the WHODAS (Section I, p. 16)."
   ] },
@@ -104,8 +104,8 @@ SP.add("ch23", "highYield", [
     "The two adult **mania** items had the weakest test–retest reliability in the Field Trials (research, outside the DSM; Narrow et al. 2013).",
     "A 2020 study in recent-onset psychosis found **low** inter-rater agreement for most of the eight dimensions, an argument for rater training (research, outside the DSM).",
     "Philippine context (outside the DSM): no validated **Filipino** version of the Level 1 measure or the WHODAS was found, a limitation to record in the note.",
-    "Philippine context (outside the DSM): the NCMH Crisis Hotline is **1553**, toll-free from landlines; confirm before giving out.",
-    "The visible DSM-5-TR addition is the WHODAS **average-score and missing-data** guidance (p. 855; app comparison, confirm against both editions).",
+    "Philippine context (outside the DSM): the NCMH Crisis Hotline is **1553** (toll-free from landlines) or 1800-1888-1553; 0919-057-1553 (Smart/TNT); 0917-899-8727 and 0966-351-4518 (Globe/TM); confirm before giving out.",
+    "DSM-5 to DSM-5-TR: the WHODAS guidance heading now names **DSM-5-TR users**; the expanded introduction (pp. 841–842) and the college-student study (p. 844) are the visible additions (app comparison).",
     "Exam strategy: a threshold score on any of these measures is a prompt for inquiry, **never a diagnosis** (p. 846; app guidance)."
   ] }
 ]);
