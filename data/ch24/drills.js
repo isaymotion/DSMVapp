@@ -13,8 +13,8 @@
       id: "w24-01", tag: "Khyâl attacks, recorded",
       "case": "A 46-year-old Cambodian woman who resettled abroad after years in a refugee camp is seen at a community clinic during an overseas elective. For 4 months she has had sudden spells of pounding heart, dizziness, breathlessness, cold hands and feet, ringing in the ears and a sore neck. Some come on when she stands up quickly; others wake her at night with no trigger at all. She explains that wind is surging upward with her blood and could block her breathing or burst into her head and make her faint and die. Since the spells began she worries daily about the next one and no longer rides the bus alone. Thyroid tests, ECG and blood count are normal; she takes no stimulants.",
       parts: [
-        { label: "Record as", options: ["Panic disorder", "Khyâl cap, as the diagnosis", "Illness anxiety disorder", "Other specified anxiety disorder"], answer: 0 },
-        { label: "Code", options: ["F41.0", "F41.1", "F41.8", "No code: cultural concept of distress"], answer: 0 }
+        { label: "Record as", options: ["Illness anxiety disorder", "Panic disorder", "Khyâl cap, as the diagnosis", "Other specified anxiety disorder"], answer: 1 },
+        { label: "Code", options: ["F41.1", "F41.8", "F41.0", "No code: cultural concept of distress"], answer: 2 }
       ],
       line: "**F41.0** Panic disorder; formulation: attacks experienced as **khyâl cap** (a cultural syndrome; wind rising with the blood), with the catastrophic cognitions addressed in treatment",
       why: "Recurrent attacks, some **unexpected** (the night spells), and more than a month of worry and avoidance satisfy the Section II disorder (app's Ch 5). Khyâl attacks usually **meet panic attack criteria**, and the feared effects of the rising wind are **culturally specific catastrophic cognitions** that can drive the escalation (pp. 872, 875–876). The concept goes in the formulation, not the diagnosis line (p. 873). Standing up is one of the triggers the chapter lists (p. 876)."
@@ -23,8 +23,8 @@
       id: "w24-02", tag: "Ataque with brief dissociation",
       "case": "A 34-year-old Puerto Rican woman married to a Filipino seafarer is brought to a Bataan emergency room after a phone call telling her that her brother was killed in a road crash. Her husband says she screamed, wept, shook, struck at the wall and then sat staring, later unable to recall the half hour that followed. She says heat rose from her chest into her head and she felt she was not in control. Over the next three days she has two shorter episodes of feeling detached and unreal when relatives call. Between episodes she is grieving but oriented. There is no seizure history, no substance use, no recurrent unexpected panic, and the episodes stop within the week.",
       parts: [
-        { label: "Record as", options: ["Other specified dissociative disorder (acute dissociative reactions to stressful events)", "Ataque de nervios, as the diagnosis", "Panic disorder", "Dissociative identity disorder"], answer: 0 },
-        { label: "Code", options: ["F44.89", "F41.0", "F43.10", "No code: cultural concept of distress"], answer: 0 }
+        { label: "Record as", options: ["Ataque de nervios, as the diagnosis", "Panic disorder", "Other specified dissociative disorder (acute dissociative reactions to stressful events)", "Dissociative identity disorder"], answer: 2 },
+        { label: "Code", options: ["F41.0", "F43.10", "No code: cultural concept of distress", "F44.89"], answer: 3 }
       ],
       line: "**F44.89** Other specified dissociative disorder (acute dissociative reactions to stressful events); formulation: episodes understood by the patient and family as **ataque de nervios** (a cultural syndrome), triggered by news of a relative’s death",
       why: "Ataque has **no one-to-one relationship** with any disorder, but other specified dissociative disorder is on its related list, and amnesia and derealization are prominent in some ataques (p. 874). The trigger is the **family-related stressor** the chapter describes (p. 874). The episodes are brief and stress-bound, which fits the Section II example of an acute dissociative reaction (app's Ch 8); panic disorder needs recurrent unexpected attacks with a month of worry (app guidance)."
@@ -33,8 +33,8 @@
       id: "w24-03", tag: "Ataque at a wake",
       "case": "At her father’s wake, a 52-year-old Dominican woman visiting relatives in Manila collapses to her knees, cries out and shakes for several minutes, then is comforted by her sisters. Her Filipino in-laws, alarmed, bring her to the clinic the next morning. She is sad but calm, sleeping and eating, says this is how grief comes out in her family, and has had no other episodes, no dissociation, and no thoughts of self-harm. Her functioning is intact and she is planning the burial.",
       parts: [
-        { label: "Record as", options: ["No diagnosis or condition", "Panic disorder", "Other specified dissociative disorder", "Functional neurological symptom disorder"], answer: 0 },
-        { label: "Code", options: ["Z03.89", "F41.0", "F44.89", "No code: cultural concept of distress"], answer: 0 }
+        { label: "Record as", options: ["Panic disorder", "Other specified dissociative disorder", "Functional neurological symptom disorder", "No diagnosis or condition"], answer: 3 },
+        { label: "Code", options: ["F41.0", "Z03.89", "F44.89", "No code: cultural concept of distress"], answer: 1 }
       ],
       line: "**Z03.89** No diagnosis or condition; formulation: a single **normative ataque de nervios** (a cultural syndrome used here as an expression of acute grief) at a funeral, without clinical sequelae",
       why: "Some ataques are **normative expressions of acute distress**, the funeral being the chapter’s own example, with no clinical consequences (p. 874). Cultural concepts **span the severity range**, including pictures that meet no criteria (p. 872). Record what was evaluated and found; a grief-related Chapter 22 entry is an alternative if the loss itself is the focus (app guidance)."
@@ -43,8 +43,8 @@
       id: "w24-04", tag: "Dhat, persistent and consuming",
       "case": "A 23-year-old Indian deck cadet on a cargo vessel is seen at a port clinic in Mariveles. For about 9 months he has been convinced that a whitish discharge he notices when passing urine is semen leaking away, and that this is draining his strength. He reports fatigue, weakness and backache, checks his urine several times a day, has seen four doctors, and spends hours reading about it; his officer says his work has slipped. Urinalysis, urine culture and STI testing are normal. His mood is anxious, not depressed, he has no erectile complaint, and reassurance helps for only a day.",
       parts: [
-        { label: "Record as", options: ["Somatic symptom disorder", "Dhat syndrome, as the diagnosis", "Delusional disorder, somatic type", "Erectile disorder"], answer: 0 },
-        { label: "Code", options: ["F45.1", "F22", "F41.1", "No code: cultural concept of distress"], answer: 0 }
+        { label: "Record as", options: ["Dhat syndrome, as the diagnosis", "Delusional disorder, somatic type", "Somatic symptom disorder", "Erectile disorder"], answer: 2 },
+        { label: "Code", options: ["F22", "F41.1", "No code: cultural concept of distress", "F45.1"], answer: 3 }
       ],
       line: "**F45.1** Somatic symptom disorder; formulation: symptoms attributed to semen loss (**dhat**, a cultural explanation rather than a discrete syndrome)",
       why: "Despite its name, dhat is **a cultural explanation**, not a discrete syndrome; its cardinal feature is anxiety and distress about loss of dhat with **no identifiable physiological dysfunction** (p. 874). Somatic symptom disorder is on its related list (p. 875). Here the symptoms are distressing, persist well over 6 months, and bring excessive time, checking and anxiety, which meets the Section II disorder (app's Ch 9). Ideas about harm from semen loss are widespread in the general population, so the belief alone is not a delusion (p. 875)."
@@ -53,7 +53,7 @@
       id: "w24-05", tag: "Withdrawn son, secondary type",
       "case": "A Japanese-Filipino couple in Pampanga bring their 21-year-old son. For 10 months he has left his room only at night, stopped college, and talks to people only through online games. When pressed, he says he cannot face classmates or neighbors because they will see how awkward he is and laugh at him; he had similar dread of reciting and eating in front of others since high school. He has no psychotic symptoms, normal social reciprocity as a child, and no depressive episode. He is increasingly unhappy about the isolation.",
       parts: [
-        { label: "Record as", options: ["Social anxiety disorder", "Hikikomori, as the diagnosis", "Schizoid personality disorder", "Internet gaming disorder"], answer: 0 },
+        { label: "Record as", options: ["Hikikomori, as the diagnosis", "Social anxiety disorder", "Schizoid personality disorder", "Internet gaming disorder"], answer: 1 },
         { label: "Code", options: ["F40.10", "F41.1", "F42.8", "No code: cultural concept of distress"], answer: 0 }
       ],
       line: "**F40.10** Social anxiety disorder; formulation: withdrawal of the **hikikomori** type (a cultural syndrome), **secondary** to the anxiety disorder",
@@ -63,8 +63,8 @@
       id: "w24-06", tag: "Thinking too much",
       "case": "A 38-year-old Zimbabwean nurse working in a Manila hospital comes to the staff clinic. For about 8 months she has been “thinking too much” about her unemployed husband, school fees for her children back home and her own health. She worries most of the day about many things, cannot stop, and has muscle tension, restlessness, poor sleep, irritability and tiredness. She says the thinking is what makes her heart ache. She has had no panic attacks, no trauma exposure, and her mood is not persistently low. She uses no substances and her thyroid is normal.",
       parts: [
-        { label: "Record as", options: ["Generalized anxiety disorder", "Kufungisisa, as the diagnosis", "Posttraumatic stress disorder", "Persistent depressive disorder"], answer: 0 },
-        { label: "Code", options: ["F41.1", "F43.10", "F41.0", "No code: cultural concept of distress"], answer: 0 }
+        { label: "Record as", options: ["Kufungisisa, as the diagnosis", "Posttraumatic stress disorder", "Persistent depressive disorder", "Generalized anxiety disorder"], answer: 3 },
+        { label: "Code", options: ["F43.10", "F41.1", "F41.0", "No code: cultural concept of distress"], answer: 1 }
       ],
       line: "**F41.1** Generalized anxiety disorder; formulation: distress named as **kufungisisa** (“thinking too much”; here both an **idiom** of social difficulty and a **cultural explanation** for her somatic pain)",
       why: "Among the Shona, kufungisisa works as **both an idiom of distress and a cultural explanation**: as an explanation it is held to cause anxiety, depression and somatic problems, and as an idiom it signals interpersonal and money troubles (p. 876). GAD is on its related list (p. 876). Six months of hard-to-control worry with fatigue, restlessness, tension, irritability and poor sleep meet the Section II disorder (app's Ch 5)."
@@ -73,18 +73,18 @@
       id: "w24-07", tag: "Sent sickness, not a delusion",
       "case": "During an overseas rotation, a resident sees a 41-year-old Haitian man who was promoted to supervisor 3 months ago. For 5 weeks he has had low mood most days, lost interest in church and family, slept poorly, lost weight, felt worthless and struggled to concentrate; he denies thoughts of self-harm. He is sure a jealous co-worker paid someone to send the illness to him. His wife and pastor share this view, they have sought prayer, and he accepts that medicine may help too. He has no hallucinations, no other unusual beliefs, and no earlier episodes.",
       parts: [
-        { label: "Record as", options: ["Major depressive disorder, single episode, moderate", "Delusional disorder, persecutory type", "Maladi dyab, as the diagnosis", "Schizophrenia"], answer: 0 },
-        { label: "Code", options: ["F32.1", "F22", "F33.1", "No code: cultural concept of distress"], answer: 0 }
+        { label: "Record as", options: ["Delusional disorder, persecutory type", "Maladi dyab, as the diagnosis", "Major depressive disorder, single episode, moderate", "Schizophrenia"], answer: 2 },
+        { label: "Code", options: ["F22", "F33.1", "No code: cultural concept of distress", "F32.1"], answer: 3 }
       ],
       line: "**F32.1** Major depressive disorder, single episode, moderate; formulation: illness attributed to **maladi dyab** (“sent sickness”, a cultural explanation) following his promotion",
-      why: "Maladi dyab is a **cultural explanation** that can be attached to many disorders; visible success such as a new job is the classic provocation (pp. 876–877). The chapter warns that the supernatural explanation can lead to **misdiagnosis of delusional disorder, persecutory type, or schizophrenia** (p. 877). A belief shared by his family and pastor is culturally accepted, not a fixed false belief (app's Ch 2). Seven depressive symptoms for over 2 weeks meet the episode (app's Ch 4; severity here is app judgment)."
+      why: "Maladi dyab is a **cultural explanation** that can be attached to many disorders; visible success such as a new job is the classic provocation (pp. 876–877). The chapter warns that the supernatural explanation can lead to **misdiagnosis of delusional disorder, persecutory type, or schizophrenia** (p. 877). A belief shared by his family and pastor is culturally accepted, not a fixed false belief (app's Ch 2). Six depressive symptoms (low mood, loss of interest, insomnia, weight loss, worthlessness, poor concentration) for over 2 weeks meet the episode (app's Ch 4; severity here is app judgment)."
     },
     {
       id: "w24-08", tag: "Susto after a crash",
       "case": "A 29-year-old Mexican woman working in Subic survived a jeepney crash 3 months ago in which another passenger died. Her mother, on a video call, says she has susto: the fright knocked her soul out. Since the crash she has had intrusive memories, nightmares, a racing heart at the sound of brakes, refusal to ride any public vehicle, feeling cut off from friends, irritability and jumpiness. Her work and sleep have suffered. She drinks no alcohol and has no head injury.",
       parts: [
-        { label: "Record as", options: ["Posttraumatic stress disorder", "Susto, as the diagnosis", "Major depressive disorder", "Somatic symptom disorder"], answer: 0 },
-        { label: "Code", options: ["F43.10", "F43.89", "F45.1", "No code: cultural concept of distress"], answer: 0 }
+        { label: "Record as", options: ["Susto, as the diagnosis", "Posttraumatic stress disorder", "Major depressive disorder", "Somatic symptom disorder"], answer: 1 },
+        { label: "Code", options: ["F43.89", "F45.1", "F43.10", "No code: cultural concept of distress"], answer: 2 }
       ],
       line: "**F43.10** Posttraumatic stress disorder; formulation: her family frames the illness as **susto** (a cultural explanation; the post-trauma type)",
       why: "Susto is a **cultural explanation** in which a fright makes the soul leave the body (p. 879). Of its three syndromic types, the one where **a traumatic event shapes the symptoms** points to PTSD; the interpersonal type points to MDD, and the recurrent somatic type to somatic symptom disorder (p. 879). Her intrusion, avoidance, mood and arousal symptoms for more than a month meet the Section II disorder (app's Ch 7)."
@@ -93,7 +93,7 @@
       id: "w24-09", tag: "Fear of offending by smell",
       "case": "A 26-year-old Japanese call-center agent in Taguig is referred by her team lead. For 2 years she has been preoccupied with the idea that she gives off a bad body odor that offends coworkers, though no one has noticed any smell. She showers four times a day, sniffs her clothes, changes shirts at lunch, keeps her distance, and asks her sister for reassurance; she says the idea may be exaggerated but she cannot shake it. She has no concern about her appearance, no other fixed beliefs, and no psychotic symptoms.",
       parts: [
-        { label: "Record as", options: ["Other specified obsessive-compulsive and related disorder (olfactory reference syndrome)", "Taijin kyofusho, as the diagnosis", "Social anxiety disorder", "Delusional disorder, somatic type"], answer: 0 },
+        { label: "Record as", options: ["Taijin kyofusho, as the diagnosis", "Social anxiety disorder", "Delusional disorder, somatic type", "Other specified obsessive-compulsive and related disorder (olfactory reference syndrome)"], answer: 3 },
         { label: "Code", options: ["F42.8", "F40.10", "F22", "No code: cultural concept of distress"], answer: 0 }
       ],
       line: "**F42.8** Other specified obsessive-compulsive and related disorder (olfactory reference syndrome); formulation: the **jiko-shu-kyofu** (body odor) variant of offensive-type **taijin kyofusho** (a cultural syndrome)",
@@ -104,7 +104,7 @@
       "case": "A 44-year-old Puerto Rican woman moved to Olongapo 6 months ago when her Filipino husband retired home. She says she has nervios: headaches at the back of her neck, some trouble sleeping, nervousness and easy tears when she cannot follow conversations in Tagalog or find the foods and church she knows. She is still running the household, enjoys her grandchildren and is taking language lessons. Her symptoms do not reach the threshold for an anxiety, depressive or adjustment disorder after a full evaluation; she asks for help settling in.",
       parts: [
         { label: "Record as", options: ["Acculturation difficulty", "Nervios, as the diagnosis", "Generalized anxiety disorder", "Somatic symptom disorder"], answer: 0 },
-        { label: "Code", options: ["Z60.3", "Z65.8", "F41.1", "No code: cultural concept of distress"], answer: 0 }
+        { label: "Code", options: ["Z65.8", "F41.1", "Z60.3", "No code: cultural concept of distress"], answer: 2 }
       ],
       line: "**Z60.3** Acculturation difficulty; formulation: distress expressed as **nervios** (a cultural **idiom of distress** and causal explanation) during adjustment to a new country",
       why: "Nervios is an idiom and causal explanation for a **general vulnerability** to hard circumstances, and it **spans the severity range from no disorder** upward (p. 877). When no disorder is met, the person may still need care, and the chapter points to **acculturation problems** among the Chapter 22 conditions (p. 873). Whether her distress warrants an adjustment disorder instead is a clinical judgment; here the evaluation found it subthreshold (app guidance)."
@@ -194,7 +194,7 @@
       "case": "Answers a patient gave during a core CFI (described, not quoted):",
       ask: "Mark the answers that fall in the domain Cultural Perceptions of Cause, Context, and Support (questions 4–10). Are at least three?",
       items: [
-        ["She thinks the problem began because of a curse after a land dispute", true, "Perceived cause (questions 4–5; pp. 864–865)."],
+        ["She thinks the problem began because of a curse after a land dispute", true, "Perceived cause (questions 4–5; p. 864)."],
         ["Her prayer group helps her feel better", true, "Supports (question 6; p. 865)."],
         ["Being the only daughter in a family of migrants matters to how she sees the problem", true, "Role of cultural identity (questions 8–10; p. 865)."],
         ["She has tried herbal baths on her own", false, "Self-coping: question 11, in the **Self-Coping and Past Help Seeking** domain (questions 11–13; p. 865)."],

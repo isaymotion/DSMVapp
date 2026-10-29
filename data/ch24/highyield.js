@@ -67,7 +67,7 @@ SP.add("ch24", "highYield", [
     "Questions 14–16 form the domain **Cultural Factors Affecting Current Help Seeking** (p. 863).",
     "Question 1 aims to elicit the person’s **own description** of the problem, beyond symptoms or a medical label (p. 864).",
     "After question 1 the interviewer uses **the person’s own term** for the problem in later questions (p. 864).",
-    "Question 4 elicits the person’s **explanatory model** of causes, and several causes may be given (pp. 864–865).",
+    "Question 4 elicits the person’s **explanatory model** of causes, and several causes may be given (p. 864).",
     "Questions 6 and 7 cover, in turn, **supports** that ease the problem and stresses that worsen it (p. 865).",
     "Question 8 asks which aspects of background or identity are **most important** to the person (p. 865).",
     "Question 9 explores how identity makes a difference to the problem, with a probe for **discrimination** (p. 865).",
@@ -160,7 +160,7 @@ SP.add("ch24", "highYield", [
     "The Korean concept related to taijin kyofusho is **taein kong po** (p. 879)."
   ] },
   { id: "hy24-related-dsm", topic: "Related DSM-5-TR conditions and misdiagnosis traps", items: [
-    "Related DSM-5-TR conditions for ataque de nervios include panic attack, panic disorder, dissociative disorders, functional neurological symptom disorder and **intermittent explosive disorder** (p. 874).",
+    "Related DSM-5-TR conditions for ataque de nervios include panic attack, panic disorder, other specified or unspecified dissociative disorder, functional neurological symptom disorder and **intermittent explosive disorder** (p. 874).",
     "Hikikomori is also linked to Internet gaming disorder and, in adolescents, **school refusal** (p. 875).",
     "Related conditions for khyâl cap: panic attack, panic disorder, GAD, agoraphobia, PTSD and **illness anxiety disorder** (p. 876).",
     "The manual’s example of a disorder frequently attributed to an idiom is PTSD and **kufungisisa** (p. 874).",

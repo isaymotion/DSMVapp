@@ -11,7 +11,7 @@
   var ASOF = "October 2026";
   var NOTDX = "**Not a diagnosis**: a cultural concept of distress has no code. Chart the **Section II disorder that is met**, or an **other specified** category when the picture is clinically significant but below threshold, and name the concept in the **case formulation** (p. 873).";
   var INTERP = "Use a **trained interpreter** whenever the person’s best language is not yours; the Outline asks you to note language abilities and the need for an interpreter (p. 861). Avoid using children or the relative at the center of the conflict as the interpreter (app guidance).";
-  var CRISIS = "If suicidal thoughts come up, ask about them directly and plan for safety; the Philippine **NCMH Crisis Hotline** is **1553** or **1800-1888-1553** nationwide, **0919-057-1553** (Smart/TNT), and **0917-899-8727** or **0966-351-4518** (Globe/TM), as published in September 2026 (outside the DSM; confirm current numbers before giving them out).";
+  var CRISIS = "If suicidal thoughts come up, ask about them directly and plan for safety; the Philippine **NCMH Crisis Hotline** is **1553** (toll-free from landlines) or **1800-1888-1553**; **0919-057-1553** (Smart/TNT); **0917-899-8727** and **0966-351-4518** (Globe/TM) (outside the DSM; confirm before giving out).";
   function care(first, points) {
     return { asOf: ASOF, first: "Outside the DSM / app guidance: " + first, points: [NOTDX].concat(points), stahl: [] };
   }
@@ -23,7 +23,7 @@
         ["Before the interview", "Collect the background details first: birthplace, age, gender, ethnic or racialized background, civil status and household, schooling, languages, faith, work, income and any migration.", "Tagalog aside: “Saan ka ipinanganak at lumaki? Anong wika ang pinakakomportable ka?” Tailor the later questions to these answers (p. 863)."],
         ["Domain 1: the problem in their words", "“Tell me about the trouble you’ve been having. If you had to give it a name, what would you call it?”", "Purpose: the person’s own understanding of the problem. Write down their word and keep using it in every later question (p. 864)."],
         ["Domain 1: how others hear it, what weighs most", "“When this comes up with your family or friends, how do you describe it to them? Which part of it bothers you the most?”", "Purpose: the framing used with the social network, and the aspect that matters most to the person (p. 864)."],
-        ["Domain 2: causes", "“What do you think is behind this? And what do the people around you say is causing it?”", "Tagalog aside: “Ano sa tingin mo ang dahilan nito? Ano naman ang sabi ng pamilya mo?” Purpose: the explanatory model, which may hold several causes and may differ from the family’s (pp. 864–865)."],
+        ["Domain 2: causes", "“What do you think is behind this? And what do the people around you say is causing it?”", "Tagalog aside: “Ano sa tingin mo ang dahilan nito? Ano naman ang sabi ng pamilya mo?” Purpose: the explanatory model, which may hold several causes and may differ from the family’s (p. 864)."],
         ["Domain 2: supports and stresses", "“Who or what helps you get through this? What makes it harder: money, family, work, school, being treated unfairly?”", "Purpose: social support and resilience on one side, stressors on the other (p. 865)."],
         ["Domain 2: identity", "“Which parts of who you are matter most to you: where you come from, your language, your faith, your family role, your gender or sexuality? Do any of them make this problem better or worse, or cause other worries?”", "Purpose: the role of cultural identity, including discrimination, migration and conflict across generations or over gender roles (p. 865)."],
         ["Domain 3: coping and past help", "“What have you done on your own to deal with this? Who else have you gone to: a doctor, a counselor, a priest or pastor, a healer? What helped, and what didn’t?”", "Tagalog aside: “Nagpatingin ka na ba sa albularyo o nagpadasal?” (the albularyo is a Philippine resource, outside the DSM). Purpose: self-coping and every source of care tried (pp. 865–866)."],
@@ -46,7 +46,7 @@
         ["Loss of control", "“While it is happening, do you feel you can’t control yourself?”", "Feeling out of control is the general feature (p. 874)."],
         ["Trigger", "“What was going on just before? Bad news about someone in the family, a fight with your partner or children, an accident?”", "Most attacks follow a family stressor; a minority come from accumulated suffering with no single trigger (p. 874)."],
         ["Dissociation and fainting", "“Afterward, do you remember everything? Did you feel outside yourself or as if things were unreal? Have you ever fainted or had something that looked like a seizure?”", "Screen dissociative disorders and functional neurological symptom disorder (p. 874)."],
-        ["Unexpected attacks", "“Have you ever had a sudden surge of fear out of the blue, with a pounding heart and trouble breathing, when nothing upsetting had happened?”", "Uncued attacks with persistent worry point to panic disorder; stressor-bound ataques usually do not meet it (p. 874)."],
+        ["Unexpected attacks", "“Have you ever had a sudden surge of fear out of the blue, with a pounding heart and trouble breathing, when nothing upsetting had happened?”", "Uncued attacks with persistent worry point to panic disorder; stressor-bound ataques usually do not meet it (Chapter 5; app guidance)."],
         ["Anger between episodes", "“Apart from these attacks, do you have outbursts of anger that are much bigger than the situation?”", "Intermittent explosive disorder is on the manual’s related list (p. 874)."],
         ["Meaning and setting", "“What do you and your family call these episodes, and what do you think causes them? Did any happen where others would see them as expected, like at a wake or funeral?”", "Some ataques are normative expressions of distress with no lasting problems (p. 874)."],
         ["Suicidal thoughts", "“During or after an attack, have you had thoughts of ending your life, or done anything to hurt yourself?”", "Tagalog aside: “Naiisip mo bang wakasan ang buhay mo?” Ataque can include suicidal behavior and is linked to suicidal thoughts (p. 874)."],
@@ -85,7 +85,7 @@
       ask: [
         ["Duration", "To the parent: “When did he last go out to meet anyone in person? Has it been 6 months or more?”", "Tagalog aside: “Kailan siya huling lumabas ng bahay para makipagkita sa ibang tao?” Japan’s ministry guideline (2010) uses 6 months of withdrawal (p. 875)."],
         ["Extent", "“Do you leave your room or the house at all? Do you see anyone face to face, even family?”", "The typical picture is a young man who stays in his room in the parents’ home with no in-person contact (p. 875)."],
-        ["Screens", "“What do you do online most of the day? How many hours do you game, and what happens when you can’t?”", "Heavy Internet use is common; screen Internet gaming disorder, a Section III proposal (p. 875)."],
+        ["Screens", "“What do you do online most of the day? How many hours do you game, and what happens when you can’t?”", "Heavy Internet use is common; screen Internet gaming disorder, a Section III proposal (Chapter 25; p. 875)."],
         ["School and work", "“When did you stop going to school or work? What made you stop?”", "Loss of interest in school or work; school refusal in adolescents (p. 875)."],
         ["How it feels", "“At first, did staying in feel like a relief? How do you feel about it now?”", "It may begin as ego-syntonic and usually becomes distressing (p. 875)."],
         ["Fear of others", "“When you think about going out, what worries you? Being judged or embarrassed?”", "Screen social anxiety disorder and avoidant personality disorder (p. 875)."],
@@ -264,7 +264,7 @@
         { ch: "ch24", dx: "shenjing-shuairuo", when: "Exhaustion explained as weakness of the nervous system or depleted qi (Chinese contexts); not a diagnosis (pp. 877–878)." },
         { ch: "ch02", dx: "delusional-disorder", when: "Only when the belief is not shared by the person’s group and has a delusional quality; the manual names it as a misdiagnosis risk (p. 877)." },
         { ch: "ch02", dx: "schizophrenia", when: "Hallucinations, disorganization or decline beyond the shared explanation (p. 877)." },
-        { ch: "ch04", dx: "mdd", when: "A depressive syndrome under the explanation, such as interpersonal susto or a sent sickness (pp. 877, 879)." },
+        { ch: "ch04", dx: "mdd", when: "A depressive syndrome under the explanation, such as interpersonal susto or a sent sickness (pp. 876, 879)." },
         { ch: "ch07", dx: "ptsd", when: "The explanation is attached to a traumatic event with re-experiencing and avoidance (pp. 876, 879)." },
         { ch: "ch09", dx: "ssd", when: "Recurrent bodily symptoms with much worry and many healers consulted (pp. 875, 879)." },
         { ch: "ch22", dx: "religious-spiritual-problem", when: "The concern is spiritual or religious and no disorder is met (p. 873)." },
@@ -287,7 +287,7 @@
         { ch: "ch18", dx: "avoidant-pd", when: "A long-standing pattern of avoiding people for fear of rejection or criticism (p. 875)." },
         { ch: "ch18", dx: "schizoid-pd", when: "A long-standing lack of interest in close relationships, without fear (p. 875)." },
         { ch: "ch02", dx: "schizophrenia", when: "Withdrawal with hallucinations, delusions or disorganization (p. 875)." },
-        { ch: "ch25", dx: "internet-gaming-disorder", when: "Gaming has taken over, with the proposed features; a Section III proposal (p. 875)." },
+        { ch: "ch25", dx: "internet-gaming-disorder", when: "Gaming has taken over, with the proposed features; a Section III proposal (Chapter 25; p. 875)." },
         { ch: "ch22", dx: "parent-child-relational", when: "Conflict between the young person and parents is the main focus and no disorder is met (app guidance)." },
         { ch: "ch22", dx: "educational-problem", when: "Dropping out or school problems are the focus and no disorder is met (app guidance)." }
       ]

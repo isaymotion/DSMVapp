@@ -60,11 +60,11 @@
       ],
       pearls: [
         "The Outline is for **everyone**, not only for patients who seem culturally different (p. 860).",
-        "Category 4, the **clinician-patient relationship**, is the one most often forgotten; core question 16 covers it (pp. 861–862, 867).",
+        "Category 4, the **clinician-patient relationship**, is the one most often forgotten (app guidance); core question 16 covers it (pp. 861–862, 867).",
         "Use the person’s **own word** for the problem in every later question (p. 864).",
         "Informant version = **17** questions; it can **replace** the core CFI in children, florid psychosis or cognitive impairment (p. 868).",
         "Modules are **online**, not printed (p. 863).",
-        "No right or wrong answers: that is how the CFI avoids stereotyping (p. 862)."
+        "Person-centered, eliciting the person’s own views: that is how the CFI avoids stereotyping; because it asks for personal views, there are no right or wrong answers (p. 862)."
       ],
       cmp: {
         symptoms: "Not applicable: a five-category outline and a 16-question interview in 4 domains",
@@ -159,7 +159,7 @@
         ["Context", "Named in South Asia a little over 50 years ago; most often young men from lower socioeconomic backgrounds, though middle-aged men are affected too (pp. 874–875)."],
         ["Core picture", "Anxiety, fatigue, weakness, weight loss, erectile dysfunction, many somatic complaints and depressed mood, blamed on semen loss (p. 874)."],
         ["Explanation", "Dhatu (semen) is one of seven essential bodily fluids in Ayurveda whose balance keeps a person healthy; losing it is feared to harm the body (pp. 874–875)."],
-        ["Triggers", "Noticing a white discharge on urination or defecation (p. 874)."],
+        ["Triggers", "Not described; dhat itself is identified by the person as a white discharge noticed on defecation or urination (p. 874)."],
         ["Course", "Not described; beliefs about the harm of semen loss are widespread in the general population (p. 875)."],
         ["Figures", "64% of men at Indian psychiatric clinics for sexual complaints; 30% of men at Pakistani general medical clinics (p. 875)."],
         ["Related elsewhere", "Koro (Southeast Asia, especially Singapore); shen-k’uei, “kidney deficiency” (China); a female variant centers on white vaginal discharge (leukorrhea) (p. 875)."],
@@ -188,7 +188,7 @@
         { id: "unspecified-sexual", how: "Listed among the related conditions (p. 875)." },
         { id: "educational-problem", how: "Listed among the related conditions; a Chapter 22 focus rather than a disorder (p. 875)." },
         { name: "Sexually transmitted infection", how: "“Dhat” can be a lay word for an STI such as gonorrhea or chlamydia without distress: examine and test (p. 875; app guidance)." },
-        { name: "Koro (cultural concept)", how: "A related genital-focused concept of Southeast Asia (p. 875)." }
+        { name: "Koro (cultural concept)", how: "A related concept in Southeast Asia, particularly Singapore (p. 875); its genital focus is described in Chapter 6 (app note)." }
       ],
       pearls: [
         "“Syndrome” is in the name, but the manual calls it an **explanation** (p. 874).",
@@ -215,7 +215,7 @@
       name: "Hikikomori", code: CODE,
       codes: rec(),
       aka: ["protracted social withdrawal", "primary hikikomori", "secondary hikikomori", "hiku + moru (pull back + seclude oneself)"],
-      essence: "A **cultural syndrome** first described in **Japan**: protracted, severe **social withdrawal**, typically an adolescent or young adult man who stays in his room in his parents’ home with **no in-person contact**, often with heavy **Internet** use and no interest in school or work (p. 875). It may start out **ego-syntonic** but usually becomes distressing; it is **secondary** when it occurs within an established disorder and **primary** when it stands alone (p. 875). The **6-month** figure comes from a **2010 Japanese ministry guideline**, not from the DSM (p. 875).",
+      essence: "A **cultural syndrome** observed in **Japan**: protracted, severe **social withdrawal**, typically an adolescent or young adult man who stays in his room in his parents’ home with **no in-person contact**, often with heavy **Internet** use and no interest in school or work (p. 875). It may start out **ego-syntonic** but usually becomes distressing; it is **secondary** when it occurs within an established disorder and **primary** when it stands alone (p. 875). The **6-month** figure comes from a **2010 Japanese ministry guideline**, not from the DSM (p. 875).",
       duration: "6 months by the 2010 Japanese ministry guideline, not a DSM figure (p. 875)",
       functioning: "No school or work; moderate functional impairment, high loneliness and limited networks in samples from Japan, India, South Korea and the United States (p. 875)",
       mood: "Usually becomes distressing over time; depressive and anxiety disorders are among the related conditions (p. 875)",
@@ -248,7 +248,7 @@
         { id: "asd", how: "Lifelong social-communication differences with restricted interests point here (p. 875; app guidance)." },
         { id: "schizoid-pd", how: "A pervasive, lifelong lack of desire for relationships, often without distress (p. 875; app guidance)." },
         { id: "avoidant-pd", how: "Withdrawal from fear of rejection with longing for contact (p. 875; app guidance)." },
-        { id: "schizophrenia", how: "Withdrawal can be a negative or prodromal feature; screen for psychotic symptoms (p. 875)." },
+        { id: "schizophrenia", how: "Withdrawal can be a negative or prodromal feature; screen for psychotic symptoms (p. 875 lists it; app guidance)." },
         { id: "internet-gaming-disorder", how: "Associated with hikikomori; a Section III proposal, not a codable diagnosis (pp. 875; Chapter 25)." },
         { name: "School refusal (adolescents)", how: "Associated in adolescents; not a DSM diagnosis itself (p. 875; app guidance)." }
       ],
@@ -283,7 +283,7 @@
       mood: "Anxiety during attacks; the khyâl idea can color how other anxiety disorders and trauma-related disorders are experienced (p. 876)",
       criteria: [
         ["Type", "A cultural syndrome (p. 875)."],
-        ["Context", "Cambodian cultural contexts, in Cambodia and abroad; “wind attacks” (p. 875)."],
+        ["Context", "Cambodian cultural contexts; “wind attacks” (p. 875)."],
         ["Core picture", "Panic-type symptoms (dizziness, palpitations, shortness of breath, cold hands and feet) with other anxiety and autonomic symptoms, especially ringing ears and a sore neck (p. 875)."],
         ["Explanation", "Khyâl rising in the body with the blood: squeezing the lungs (breathlessness, asphyxia) or entering the cranium (tinnitus, dizziness, blurred vision, fatal fainting) (pp. 875–876)."],
         ["Triggers", "Can come unprompted, but often follows worrying thoughts, standing up (orthostasis), unpleasant smells with bad associations, or crowds and car rides (p. 876)."],
@@ -371,13 +371,13 @@
       pearls: [
         "One phrase, two types: **idiom and explanation** (p. 876).",
         "The manual’s example of a disorder **attributed** to an idiom: **PTSD and kufungisisa** (p. 874).",
-        "Two-thirds of community cases had it (p. 876).",
+        "In a random community sample, two-thirds of the cases picked up by a general psychopathology measure included the complaint (p. 876).",
         "Ask what the person thinks the thinking is doing to them (app guidance)."
       ],
       cmp: {
         symptoms: "Rumination and worry; anxiety, depressive symptoms, irritability, somatic complaints",
         exclusions: "Not a diagnosis",
-        prevalence: "Two-thirds of community cases on a general measure",
+        prevalence: "Two-thirds of cases identified by a general measure in a community sample",
         course: "Feared to lead to worse illness in some contexts"
       },
       clues: [
@@ -425,7 +425,7 @@
         { id: "brief-psychotic-disorder", how: "A sudden psychotic onset may be read as spiritual attack; a true psychosis still needs its Section II diagnosis (p. 877; app guidance)." }
       ],
       pearls: [
-        "The chapter’s clearest case of **socially warranted belief mistaken for paranoia** (pp. 872, 877).",
+        "The chapter’s clearest case of a **culturally shared explanation at risk of being misread as a delusion** (p. 877; compare p. 872).",
         "Label driven by **onset, social status and what treatment works**, not symptoms (p. 877).",
         "**Success** makes a person vulnerable: one person’s gain is another’s loss (p. 877).",
         "Philippine parallels such as kulam or usog are outside the DSM; handle them the same way (app guidance)."
@@ -546,7 +546,7 @@
         { name: "Burnout syndrome (outside the DSM)", how: "Closely related per the manual; not a DSM diagnosis (p. 879)." }
       ],
       pearls: [
-        "The only example with a **formal criteria set in another system**: three of five clusters, CCMD-2-R (p. 877).",
+        "The only example with a **symptom-count definition in another classification**: three of five clusters, CCMD-2-R (p. 877).",
         "Classification history: **CCMD-3 → ICD-10 adopted in 2011 → ICD-11 has no neurasthenia** (p. 878).",
         "**Up to 45%** meet no DSM-IV disorder: concepts apply across all severity (pp. 872, 878).",
         "**Fan nao** = feeling vexed (p. 878)."
@@ -568,7 +568,7 @@
       id: "susto", ch: "ch24", sec: "s24-susto", pages: "879", critPages: "879",
       name: "Susto", code: CODE,
       codes: rec(),
-      aka: ["fright", "espanto (Andes; related)", "soul loss (South and Southeast Asia; related)", "cibih (Zapotec; the three types)"],
+      aka: ["fright", "espanto (Andes; related)", "soul loss (South and Southeast Asia; related)", "cibih (Zapotec)"],
       essence: "“**Fright**”: a **cultural explanation** in some **Latinx** contexts of North, Central and South America (but **not** among Caribbean Latinx) in which a frightening event makes the **soul leave the body**, bringing unhappiness, sickness and trouble in social roles (p. 879). Symptoms can begin **days to years** after the fright and have **no defining set** (p. 879). Three types point to different disorders: **interpersonal** (MDD), **traumatic** (PTSD) and **recurrent somatic** (somatic symptom disorder) (p. 879).",
       duration: "Not applicable",
       functioning: "Difficulty functioning in key social roles (p. 879)",
@@ -580,7 +580,7 @@
         ["Explanation", "A fright drives the soul from the body (p. 879)."],
         ["Triggers", "Natural phenomena, animals, interpersonal situations, supernatural agents, among others (p. 879)."],
         ["Course", "Onset any time from days to years after the fright; in extreme cases fatal (p. 879)."],
-        ["Three types", "Three syndromic types (cibih in Zapotec): interpersonal (loss, abandonment, feeling unloved; sadness, poor self-image, suicidal thoughts) close to MDD; trauma-shaped closer to PTSD; recurrent somatic with many practitioners resembling somatic symptom disorder (p. 879)."],
+        ["Three types", "Three syndromic types of susto (cibih in Zapotec): interpersonal (loss, abandonment, feeling unloved; sadness, poor self-image, suicidal thoughts) close to MDD; trauma-shaped closer to PTSD; recurrent somatic with many practitioners resembling somatic symptom disorder (p. 879)."],
         ["Related elsewhere", "Espanto in the Andes; soul loss in South and Southeast Asia, where a fright may cost the soul, part of it, or one of several souls (p. 879)."],
         ["Related DSM-5-TR", "Major depressive disorder, posttraumatic stress disorder, other specified or unspecified trauma and stressor-related disorder, somatic symptom disorder (p. 879)."],
         ["Chart", "The disorder the type points to, if met, with the soul-loss explanation in the formulation (p. 873; app guidance)."]
@@ -600,7 +600,7 @@
         { id: "other-specified-trauma", how: "A trauma-linked picture that fits no specific disorder (p. 879)." },
         { id: "unspecified-trauma", how: "Listed among the related conditions (p. 879)." },
         { id: "ssd", how: "Recurrent somatic susto with visits to several practitioners (p. 879)." },
-        { id: "ataque-de-nervios", how: "Geography check: ataque is reported in Caribbean Latinx contexts, where susto is not recognized (pp. 874, 879; app guidance)." }
+        { id: "ataque-de-nervios", how: "Geography check: ataque is described across Latinx cultural contexts and has related concepts in the Caribbean (blacking out, p. 874), whereas susto is not recognized among Caribbean Latinx (p. 879; app guidance)." }
       ],
       pearls: [
         "**Explanation**, not syndrome; **no defining symptoms** (p. 879).",
