@@ -13,7 +13,7 @@ SP.add("ch23", "vignettes", [
     "tag": "Which domains cross the line",
     "sec": "s23-scoring-adult",
     "dx": "level1-adult",
-    "stem": "At the Mariveles OPD, a 29-year-old call-center agent who works night shifts comes in for poor sleep. In the waiting area she completes the adult self-rated Level 1 Cross-Cutting Symptom Measure, which asks about the past 2 weeks. She rates the single sleep question **mild (2)**. Of the three anxiety questions she rates one **slight (1)** and the other two none. Of the two psychosis questions she rates the one about hearing things other people cannot hear **slight (1)** and the other none. She rates the single anger question **slight (1)**. Every other item, including the three substance questions and the suicidal ideation question, is rated none.",
+    "stem": "At the Mariveles OPD, a 29-year-old call-center agent who works night shifts comes in for poor sleep. In the waiting area she completes the adult self-rated Level 1 Cross-Cutting Symptom Measure, which asks about the past 2 weeks. She rates the single sleep question **mild (2)**. Of the three anxiety questions she rates one **slight (1)** and the other two none. Of the two psychosis questions she rates the voice-hearing question **slight (1)** and the other none. She rates the single anger question **slight (1)**. Every other item, including the three substance questions and the suicidal ideation question, is rated none.",
     "q": "Which domains reach the threshold that calls for further inquiry?",
     "choices": [
       "None: no item is rated moderate or higher",
@@ -23,7 +23,7 @@ SP.add("ch23", "vignettes", [
       "Anxiety only, because its three items add up to more than the single sleep item"
     ],
     "answer": 2,
-    "why": "Every adult item is rated **0–4** (none, slight, mild, moderate, severe) for the **past 2 weeks** (pp. 843, 845). For most domains a rating of **mild (2) or greater on any item** calls for further inquiry (pp. 845–846); for **substance use, suicidal ideation and psychosis** the bar is **slight (1) or greater** (p. 846). Her sleep item is mild, so sleep is flagged, and its Level 2 measure is the PROMIS Sleep Disturbance short form (Table 1, p. 844). Her slight psychosis item crosses the lower psychosis threshold; psychosis has **no Level 2 measure**, so the follow-up is the clinician’s own questions (p. 844). Anxiety and anger are mild-threshold domains rated only slight, so they are not flagged (p. 844). The scores prompt inquiry; they are not a diagnosis (p. 846).",
+    "why": "Every adult item is rated **0–4** (none, slight, mild, moderate, severe) for the **past 2 weeks** (pp. 843, 845). For most domains a rating of **mild (2) or greater on any item** calls for further inquiry (pp. 845–846); for **substance use, suicidal ideation and psychosis** the bar is **slight (1) or greater** (p. 846). Her sleep item is mild, so sleep is flagged, and its Level 2 measure is the PROMIS Sleep Disturbance short form (Table 1, p. 844). Her slight psychosis item crosses the lower psychosis threshold; psychosis has **no Level 2 measure**, so the follow-up is the clinician’s own questions (p. 844). Anxiety and anger are mild-threshold domains rated only slight, so they are not flagged (p. 844). The scores prompt inquiry; they are not a diagnosis (p. 846; app guidance).",
     "whyNot": [
       "The adult threshold is mild (2), or slight (1) in three domains, not moderate (pp. 845–846).",
       "Psychosis, substance use and suicidal ideation use the lower slight (1) threshold (p. 846).",
@@ -141,7 +141,7 @@ SP.add("ch23", "vignettes", [
     "tag": "The daughter fills in the form",
     "sec": "s23-level1-adult",
     "dx": "level1-adult",
-    "stem": "A 78-year-old retired fisherman with major neurocognitive disorder is brought to the Mariveles OPD by his daughter, who lives with him and cares for him most of the day. He cannot follow the written instructions or keep the 2-week window in mind. His daughter completes the adult Level 1 measure about him, filling in the informant lines with her relationship and the hours a week they spend together. She rates the single memory question **severe (4)**, the sleep question **moderate (3)**, the anger question **mild (2)**, the hearing-things psychosis question **slight (1)**, and everything else none. His son, who visits once a month, offers to bring him to the next visit.",
+    "stem": "A 78-year-old retired fisherman with major neurocognitive disorder is brought to the Mariveles OPD by his daughter, who lives with him and cares for him most of the day. He cannot follow the written instructions or keep the 2-week window in mind. His daughter completes the adult Level 1 measure about him, filling in the informant lines with her relationship and the hours a week they spend together. She rates the single memory question **severe (4)**, the sleep question **moderate (3)**, the anger question **mild (2)**, the voice-hearing psychosis question **slight (1)**, and everything else none. His son, who visits once a month, offers to bring him to the next visit.",
     "q": "Which plan follows the manual?",
     "choices": [
       "Set the form aside, because Level 1 is valid only when the person rates himself",
@@ -168,7 +168,7 @@ SP.add("ch23", "vignettes", [
     "tag": "Rating a delusion on the ward",
     "sec": "s23-crdpss-rating",
     "dx": "psychosis-severity-dimensions",
-    "stem": "On the male ward, the resident rates a 31-year-old tricycle driver with schizophrenia on the Clinician-Rated Dimensions of Psychosis Symptom Severity, at the end of his first week of admission. Using the interview, the nurses’ notes and his mother’s account, the resident notes that over the past 7 days he has been certain that his neighbors are poisoning the household water. On the worst day he refused all food and water at home and went to the neighbors’ gate shouting at them until the barangay tanod led him away; he is very distressed by the belief. He hears a voice commenting on him a few times a day, says it does not bother him and ignores it. His speech is at times hard to follow. He shows no abnormal or bizarre motor behavior.",
+    "stem": "On the male ward, the resident rates a 31-year-old tricycle driver with schizophrenia on the Clinician-Rated Dimensions of Psychosis Symptom Severity, at the end of his first week of admission. Using the interview, the nurses’ notes and his mother’s account, the resident notes that over the past 7 days he has been certain that his neighbors are poisoning the household water. On the worst day, four days ago, he refused all ward food and water, saying the neighbors had reached the hospital supply, and tried to push past the nurses to go and confront them; he is very distressed by the belief. He hears a voice commenting on him a few times a day, says it does not bother him and ignores it. His speech is at times hard to follow. He shows no abnormal or bizarre motor behavior.",
     "q": "What score does the delusions dimension receive?",
     "choices": [
       "0, not present",
@@ -178,12 +178,12 @@ SP.add("ch23", "vignettes", [
       "4, present and severe"
     ],
     "answer": 4,
-    "why": "The clinician rates each of the **8** dimensions on **0–4** (none, equivocal, mild, moderate, severe), using **all available information**, for the symptom **at its most severe in the past 7 days**, and writes the number in the Score column (p. 851). For delusions, the mild, moderate and severe levels are graded by how much **pressure to act** on the belief the person feels and how **bothered** he is by it; the severe level is reached by severe pressure to act **or** being very bothered (p. 852). On his worst day he acted on the belief and he is very distressed, so delusions rate **4**. By the same anchors his voice, with little pressure to act and little distress, rates mild, and his speech, sometimes hard to follow, rates mild too (p. 852). The ratings document severity; they do not change the diagnosis (Ch 2; app guidance).",
+    "why": "The clinician rates each of the **8** dimensions on **0–4** (none, equivocal, mild, moderate, severe), using **all available information**, for the symptom **at its most severe in the past 7 days**, and writes the number in the Score column (p. 851). For delusions, the mild, moderate and severe levels are graded by **pressure to act** on the belief and by **distress**: mild = little pressure and little distress; moderate = some pressure or some distress; severe = severe pressure **or** marked distress (p. 852, app paraphrase). On his worst day this week he acted on the belief and he is markedly distressed, so delusions rate **4**. By the same ladder his voice, with little pressure to act and little distress, rates mild, and his speech, sometimes hard to follow, rates mild too (p. 852). The ratings document severity; they do not change the diagnosis (Ch 2; app guidance).",
     "whyNot": [
-      "The belief is present and fixed.",
+      "The belief is clearly present in the past 7 days, so it cannot rate none (pp. 851–852).",
       "Equivocal is for a belief whose severity or duration is not enough to count as psychosis (p. 852).",
-      "Mild means little pressure to act and not very bothered (p. 852); he acted on the belief and is very distressed.",
-      "Moderate means some pressure to act or being somewhat bothered (p. 852); his worst day went beyond that.",
+      "Mild means little pressure to act and little distress (p. 852, app paraphrase); he acted on the belief and is markedly distressed.",
+      "Moderate means some pressure to act or some distress (p. 852, app paraphrase); his worst day went beyond that.",
       "Correct."
     ],
     "then": {
@@ -200,9 +200,9 @@ SP.add("ch23", "vignettes", [
       "whyNot": [
         "Correct.",
         "Equivocal describes a symptom present in the window but too slight to count as psychosis (p. 852); nothing was present in the past 7 days.",
-        "Mild would need a voice within the past 7 days with little pressure to act (p. 852).",
-        "Moderate would need a voice within the past 7 days with some pressure to respond or some distress (p. 852).",
-        "Severe would need severe pressure to respond or marked distress within the past 7 days (p. 852)."
+        "Mild would need a voice within the past 7 days with little pressure to act and little distress (p. 852, app paraphrase).",
+        "Moderate would need a voice within the past 7 days with some pressure to respond or some distress (p. 852, app paraphrase).",
+        "Severe would need severe pressure to respond or marked distress within the past 7 days (p. 852, app paraphrase)."
       ]
     },
     "discuss": [
@@ -231,7 +231,7 @@ SP.add("ch23", "vignettes", [
       "The manual keeps the domain scores that are 75%–100% complete (p. 855).",
       "Correct.",
       "It is the reverse: the general scores lose their value at 10 or more missing items, while complete domains keep theirs (p. 855).",
-      "The manual’s missing-data rule applies to the general scores whatever the method; IRT scoring weights items and response levels, it does not supply missing answers (pp. 854–855)."
+      "The manual’s missing-data guidance names the simple and average scores and never says computer scoring fills gaps; IRT weights items and response levels, it does not supply missing answers (pp. 854–855)."
     ]
   },
   {
@@ -253,7 +253,7 @@ SP.add("ch23", "vignettes", [
     "whyNot": [
       "Raw scores are the starting point; DSM-5-TR asks for averages read on the 1–5 scale (p. 855).",
       "The divisors are swapped: domain ÷ its own items, general ÷ 36 (p. 855).",
-      "Getting along has 5 items, not 8, and 180 is the maximum simple score, not a divisor (pp. 854–855).",
+      "Getting along has 5 items, not 8 (form, pp. 856–857), and 180 is the maximum simple score, not a divisor (p. 854).",
       "Correct.",
       "The 0–100 metric is WHO’s computer-based IRT conversion, not the DSM-5-TR average (pp. 854–855)."
     ],
@@ -301,10 +301,10 @@ SP.add("ch23", "vignettes", [
       "Level 1 records the highest item score in each domain; it has no total (p. 846).",
       "The manual sets no fixed interval; it says regular intervals as clinically indicated (p. 846).",
       "The psychosis dimensions measure is for psychotic disorders; its depression item flags mood pathology in psychosis (pp. 842, 851).",
-      "The measures are meant for both the initial interview and follow-up (pp. 842, 846)."
+      "The measures are meant for both the initial interview and follow-up (pp. 841–842, 846)."
     ],
     "discuss": [
-      "If her sister completed the form at baseline because she could not read the English version, who should complete it now (p. 846)?"
+      "If she could not read the English form and the resident read it aloud to her at baseline, how should it be given now, and when would the manual’s same-informant rule apply instead (pp. 843, 846; app guidance)?"
     ]
   },
   {
@@ -312,17 +312,17 @@ SP.add("ch23", "vignettes", [
     "tag": "A positive screen, no disorder",
     "sec": "s23-level2",
     "dx": "level2-measures",
-    "stem": "A 23-year-old nursing graduate reviewing for the licensure exam comes to the Mariveles OPD for a medical certificate. On the adult self-rated Level 1 measure (past 2 weeks) she rates two of the three anxiety questions **mild (2)** and the sleep question **mild (2)**; the suicidal ideation, psychosis and substance questions are all none. The resident gives the PROMIS anxiety short form as the Level 2 measure. In the interview she describes 3 weeks of worry about the exam that she can set aside when she chooses; she studies 6 hours a day as planned, sleeps 6–7 hours most nights, and has had no panic attacks, avoidance or other symptoms. She and her family see no change in how she functions. The resident concludes that she meets the criteria for no mental disorder.",
+    "stem": "A 23-year-old nursing graduate reviewing for the licensure exam comes to the Mariveles OPD for a medical certificate. On the adult self-rated Level 1 measure (past 2 weeks) she rates two of the three anxiety questions **mild (2)** and the sleep question **mild (2)**; the suicidal ideation, psychosis and substance questions are all none. The resident gives the PROMIS anxiety short form as the Level 2 measure. In the interview she describes 3 weeks of worry about the exam that she can set aside when she chooses; she studies 6 hours a day as planned, sleeps 6–7 hours most nights, and has had no panic attacks, avoidance or other symptoms. She and her family see no change in how she functions. The resident concludes that she does not meet the criteria for any mental disorder.",
     "q": "How should the screening result be recorded?",
     "choices": [
       "As other specified anxiety disorder, because the Level 1 threshold was reached",
-      "No diagnosis on the diagnosis line; the Level 1 and Level 2 scores go in the note as a baseline, with follow-up if she wishes",
+      "No disorder is recorded from the screen (if the evaluation is complete, the record can state no diagnosis or condition, Ch 20); the Level 1 and Level 2 scores go in the note as a baseline, with follow-up if she wishes",
       "As the anxiety domain score on the diagnosis line, in place of a diagnosis",
       "As generalized anxiety disorder, since both Level 1 and Level 2 were positive",
       "Leave the encounter open until the Level 1 anxiety domain falls below threshold"
     ],
     "answer": 1,
-    "why": "A threshold score on Level 1 signals a **possible need for detailed clinical inquiry**, and a Level 2 measure is **one way** to get more information (p. 846). Scores may **indicate** a problem that **warrants further assessment**, and **clinical judgment should guide decision making** (p. 846). When the interview finds no criteria met, the screen does not create a diagnosis; the scores belong in the formulation or progress note, not on the diagnosis line (app guidance), and they serve as a baseline if she returns (Section I, p. 20).",
+    "why": "A threshold score on Level 1 signals a **possible need for detailed clinical inquiry**, and a Level 2 measure is **one way** to get more information (p. 846). Scores may **indicate** a problem that **warrants further assessment**, and **clinical judgment should guide decision making** (p. 846). When the interview finds no criteria met, the screen does not create a diagnosis; if anything is recorded it is no diagnosis or condition (Ch 20), and the scores belong in the formulation or progress note, never on the diagnosis line (app guidance), and they serve as a baseline if she returns (Section I, p. 20).",
     "whyNot": [
       "Other specified categories still need clinically significant distress or impairment from the symptoms (Ch 5); a screen alone does not supply that.",
       "Correct.",
