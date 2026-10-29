@@ -43,7 +43,7 @@ SP.add("ch24", "vignettes", [
       "answer": 4,
       "why": "One reason cultural concepts matter is that they can yield **useful clinical information** about risk, resilience and outcome (p. 872). Ataque in particular is associated with **suicidal thoughts, disability and outpatient psychiatric use**, even when psychiatric diagnoses, trauma exposure and other factors are taken into account (p. 874). In her case it came with a stated wish to die, so it belongs in the risk formulation.",
       "whyNot": [
-        "The concepts are not DSM-5-TR diagnoses and have no criteria sets (p. 873).",
+        "The ten concepts are examples chosen to illustrate how culture affects diagnosis, not DSM-5-TR diagnoses; the chart records the disorder that is met (p. 873).",
         "Dissociative features are prominent in some ataques and absent in others (p. 874).",
         "The manual found no one-to-one link between ataque and any single disorder (p. 874).",
         "Demographic information is gathered before the CFI to tailor it (p. 863); the reason to explore ataque here is clinical risk.",
@@ -52,7 +52,7 @@ SP.add("ch24", "vignettes", [
     },
     "discuss": [
       "How would you ask what happened during the ataque without implying it was “only nerves” or a sign of being “crazy” (app guidance)?",
-      "Which of the chapter’s seven reasons for attending to cultural concepts does this case show best (p. 872)?"
+      "Which of the chapter’s seven reasons for attending to cultural concepts does this case show best (pp. 872–873)?"
     ]
   },
   {
@@ -88,7 +88,7 @@ SP.add("ch24", "vignettes", [
     "tag": "Strength draining away",
     "sec": "s24-dhat",
     "dx": "dhat-syndrome",
-    "stem": "A 23-year-old medical student from a village in Uttar Pradesh, India, who is studying in Manila, comes to the university clinic. For 8 months he has been unable to keep an erection on nearly every attempt at intercourse with his girlfriend, which distresses him greatly; before that he had no difficulty. He is sure the cause is a whitish discharge he notices after urinating, which he believes is semen draining his strength, and he calls this dhat. He feels tired in exam weeks but sleeps and eats well, enjoys his classes and friends, and has no persistent worry about other topics or about having a serious illness. The couple get along well. Examination, fasting glucose, lipids, hormone tests and urinalysis are normal; he takes no medicines, does not smoke and rarely drinks alcohol. He has no trauma history.",
+    "stem": "A 23-year-old medical student from a village in Uttar Pradesh, India, who is studying in Manila, comes to the university clinic. For 8 months he has been unable to keep an erection on nearly every attempt at intercourse with his girlfriend, which distresses him greatly; before that he had no difficulty. He is sure the cause is a whitish discharge he notices after urinating, which he believes is semen draining his strength, and he calls this dhat. He says many men in his village, including his older brother, hold the same view, and he accepts that the tests are normal while still worrying about the discharge. He feels tired in exam weeks but sleeps and eats well, enjoys his classes and friends, and has no persistent worry about other topics or about having a serious illness. The couple get along well. Examination, fasting glucose, lipids, hormone tests and urinalysis are normal; he takes no medicines, does not smoke and rarely drinks alcohol. He has no trauma history.",
     "q": "Which diagnosis best fits?",
     "choices": [
       "Erectile disorder, acquired; dhat named in the formulation as his cultural explanation",
@@ -135,7 +135,7 @@ SP.add("ch24", "vignettes", [
     "tag": "Nine months in his room",
     "sec": "s24-hikikomori",
     "dx": "hikikomori",
-    "stem": "During an elective at a youth mental health clinic in Nagoya, Japan, a resident meets a 19-year-old man whose mother is Filipina and whose father is Japanese. For 9 months he has stayed in his room in his parents’ apartment, coming out at night to eat, and has seen no one in person except his parents. He says he wants to go back to university but is terrified that classmates will judge him as stupid. Since age 15 he has dreaded speaking in class or eating in front of others, blushes and trembles in these situations and avoided them whenever he could; he stopped attending after classmates laughed at him during a presentation. As a child he had close friends and easy back-and-forth conversation, and he still chats warmly with two friends online. His mood is mostly fine, he enjoys games and music, and he has no unusual beliefs or perceptual experiences. He uses no alcohol or drugs and has no trauma history beyond the teasing. His parents call it hikikomori.",
+    "stem": "During an elective at a youth mental health clinic in Nagoya, Japan, a resident meets a 19-year-old man whose mother is Filipina and whose father is Japanese. For 9 months he has stayed in his room in his parents’ apartment, coming out at night to eat, and has seen no one in person except his parents. He says he wants to go back to university but is terrified that classmates will judge him as stupid. Since age 15 he has dreaded speaking in class or eating in front of others, blushes and trembles in these situations and avoided them whenever he could; these situations almost always make him anxious, and his parents and former teachers say his fear is far beyond what such situations call for; he stopped attending after classmates laughed at him during a presentation. As a child he had close friends and easy back-and-forth conversation, and he still chats warmly with two friends online. His mood is mostly fine, he enjoys games and music, and he has no unusual beliefs or perceptual experiences. He uses no alcohol or drugs and has no trauma history beyond the teasing. His parents call it hikikomori.",
     "q": "Which diagnosis should be recorded?",
     "choices": [
       "Hikikomori, primary type, as the diagnosis, because withdrawal has lasted more than 6 months",
@@ -341,7 +341,7 @@ SP.add("ch24", "vignettes", [
     "tag": "Nervios after every argument",
     "sec": "s24-nervios",
     "dx": "nervios",
-    "stem": "On a U.S. elective in Houston, a resident sees a 48-year-old Honduran woman who has lived in Texas for 22 years, manages a school cafeteria and is comfortable in English and Spanish. She says her nervios have been acting up for 4 months: headaches with tightness at the back of the neck, irritability and some restless nights, all on the days after arguments with her 16-year-old daughter, who has started skipping Sunday Mass and dating against the family’s wishes. Their talks end in shouting, and the two now avoid each other at home. Between arguments she sleeps well, works fully, enjoys her friends and feels her reactions match the situation. She has no low mood most of the day, no loss of interest, no panic attacks and no persistent worry about other matters. A separate assessment finds no disorder in her daughter, no one has been harmed, nobody in the family uses substances, and there is no trauma history.",
+    "stem": "On a U.S. elective in Houston, a resident sees a 48-year-old Honduran woman who has lived in Texas for 22 years, manages a school cafeteria and is comfortable in English and Spanish. She says her nervios have been acting up for 4 months: headaches with tightness at the back of the neck, irritability and some restless nights, all on the days after arguments with her 16-year-old biological daughter, who has started skipping Sunday Mass and dating against the family’s wishes. Their talks end in shouting, and the two now avoid each other at home. Between arguments she sleeps well, works fully, enjoys her friends and feels her reactions match the situation. She has no low mood most of the day, no loss of interest, no panic attacks and no persistent worry about other matters. A separate assessment finds no disorder in her daughter, no one has been harmed, nobody in the family uses substances, and there is no trauma history.",
     "q": "What best captures the focus of clinical attention?",
     "choices": [
       "Adjustment disorder with mixed anxiety and depressed mood",
@@ -354,7 +354,7 @@ SP.add("ch24", "vignettes", [
     "why": "Her symptoms are proportionate, tied to the arguments and not impairing, so **no disorder is met**. The focus is the **quality of the parent-child relationship**, which the app’s Chapter 22 material codes **Z62.820** for a biological child (Ch 22; app guidance on the code). The chapter names **parent-child relational problems** among the Chapter 22 conditions a cultural assessment may bring to light (p. 873). Nervios here works as an **idiom of distress**, one that can be used even when no mental disorder is present (p. 877), and people who meet no criteria may still need help, judged case by case (p. 873).",
     "whyNot": [
       "Adjustment disorder needs distress out of proportion to the stressor or significant impairment; she has neither (Ch 7).",
-      "She has lived in Texas for 22 years and moves easily between both cultures; the conflict lies in the mother-daughter relationship, which the app reads as relational rather than acculturative (app guidance).",
+      "Acculturation difficulty is difficulty adjusting to a new culture, for example after migration (Ch 22). She has lived in Texas for 22 years and moves easily between both cultures; the focus is the quality of the mother-daughter relationship.",
       "There is no excessive worry across many matters, and 4 months is short of the 6 that GAD needs (Ch 5).",
       "No clinically significant anxiety syndrome is present, and a cultural term is never the diagnosis label (p. 873).",
       "Correct."
@@ -500,7 +500,7 @@ SP.add("ch24", "vignettes", [
     "tag": "What comes next in the CFI",
     "sec": "s24-cfi-domains",
     "dx": "cultural-formulation",
-    "stem": "In the Mariveles outpatient clinic, a resident uses the core CFI with a 50-year-old woman who has had 2 months of low mood. So far she has described the problem in her own words (“mabigat ang loob,” a heavy heart; a Filipino idiom, outside the DSM; app guidance), what she and her husband think is causing it, what helps and what makes it worse, which parts of her identity matter most, what she has done on her own (prayer and a parish novena), whom she has consulted (an albularyo and her parish priest) and what got in the way of earlier care (the fare to Balanga and fear of gossip). The resident now wants to learn what kind of help she thinks would be most useful at this point and what her family has suggested.",
+    "stem": "In the Mariveles outpatient clinic, a resident uses the core CFI with a 50-year-old woman who has had 2 months of low mood. So far she has described the problem in her own words (“mabigat ang loob,” a heavy heart; a Filipino idiom, outside the DSM; app guidance), what she and her husband think is causing it, what helps and what makes it worse, which parts of her identity matter most, what she has done on her own (prayer and a parish novena), whom she has consulted (an albularyo, a Filipino folk healer; outside the DSM; app guidance; and her parish priest) and what got in the way of earlier care (the fare to Balanga and fear of gossip). The resident now wants to learn what kind of help she thinks would be most useful at this point and what her family has suggested.",
     "q": "Which CFI domain does the resident move to next?",
     "choices": [
       "Cultural Definition of the Problem (Q1–3)",
@@ -530,7 +530,7 @@ SP.add("ch24", "vignettes", [
       "answer": 2,
       "why": "The final subtopic, the **clinician-patient relationship (question 16)**, explores concerns about the clinic or the clinician, including perceived racism, language barriers or cultural differences, and what the team can do about them (p. 867). It belongs to **cultural factors affecting current help seeking (14–16)** (p. 863). Her experience also fits the Outline’s category on the **relationship between the individual and the clinician** (pp. 861–862).",
       "whyNot": [
-        "Question 13 asks what has kept her from help in the past; her concern is about the relationship with clinicians now, which question 16 covers (pp. 866–867).",
+        "Question 13 asks what has kept her from help in the past; her concern is about the relationship with clinicians now, which question 16 covers (pp. 866–867). Question 16 is also where the CFI returns to relationship concerns raised earlier (p. 867).",
         "The identity questions ask which parts of her background matter and how; they come earlier (p. 865).",
         "Correct.",
         "The Informant version collects collateral from family or caregivers, or replaces the core CFI when the person cannot answer (p. 868); she can answer.",
@@ -562,7 +562,7 @@ SP.add("ch24", "vignettes", [
       "Correct.",
       "The manual provides the Informant version for exactly this situation (p. 868).",
       "The core CFI depends on his own account, which he cannot give now (p. 868).",
-      "That module is for people who have migrated; neither he nor his aunt has, and his parents’ work abroad does not make him a migrant (p. 863; app guidance).",
+      "Supplementary modules expand the core CFI domains for particular populations (p. 863); they do not solve the problem tonight, which is that he cannot answer. The Informant version is the tool for that (p. 868).",
       "The core CFI is for the identified person; relatives give collateral through the Informant version (p. 868), and the aunt, who sees him daily, is the knowledgeable informant here."
     ],
     "discuss": [
