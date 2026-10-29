@@ -4,6 +4,18 @@
  */
 SP.changelog = [
   {
+    id: 52,
+    date: "2026-10-30",
+    title: "Chapter 23: Assessment Measures (Section III)",
+    summary: "The third Section III chapter and the last of the measures: the manual’s case for dimensional assessment; the DSM-5 Level 1 Cross-Cutting Symptom Measure (23 items in 13 domains for adults, 25 items in 12 domains for a parent or guardian of a child aged 6–17, past 2 weeks) with its mild-or-greater threshold, the slight-or-greater exceptions and the Level 2 measures that follow a flagged domain; the Clinician-Rated Dimensions of Psychosis Symptom Severity (8 items, 0–4, worst in the past 7 days) behind the Chapter 2 severity specifier; and the WHODAS 2.0 (36 items, 6 domains, past 30 days) with WHO’s two scoring methods, DSM-5-TR’s average scores and the missing-data rule. The forms are copyrighted: the app describes what each item asks and never reprints them. No score is a diagnosis.",
+    items: [
+      { type: "chapter", ch: "ch23", text: "Chapter 23: a 23-section study guide, high-yield points, three card decks, board questions, glossary, four mnemonics, board vignettes, plan-line and scoring drills, exam traps, six library entries (the adult and child Level 1 measures, the Level 2 measures, the disorder-specific severity measures, the psychosis severity dimensions and the WHODAS 2.0), compare presets and a recall-window ladder, the measures helper, scripts for introducing the forms, and labeled research and Philippine sections outside the DSM.", href: "#/c/ch23", link: "Open Chapter 23" },
+      { type: "feature", text: "New helper: from a clinical purpose (screen, follow a flagged domain, rate psychosis severity, measure disability, track change) to the right measure, its rater, recall window, threshold or score, and the next step.", href: "#/helpers/measures", link: "The measures helper" },
+      { type: "update", text: "Schizophrenia, schizophreniform, schizoaffective, brief psychotic, delusional, substance/medication-induced psychotic and psychotic disorder due to another medical condition now point to the psychosis severity dimensions behind their “specify current severity” line; major neurocognitive disorder points to the informant and proxy versions of the measures.", href: "#/dx/psychosis-severity-dimensions", link: "Psychosis severity dimensions" },
+      { type: "feature", text: "New complaint-hub entries “A screening form flags a domain” and “How do I show whether the patient is getting better?”; the psychosis, low-mood, anxiety, suicidal-thoughts, heavy-use, inattention, memory, bodily-symptom and elevated-mood entries now name their Level 1 domain, threshold and Level 2 measure.", href: "#/complaints/screen-positive", link: "A screening form flags a domain" }
+    ]
+  },
+  {
     id: 51,
     date: "2026-10-28",
     title: "Chapter 24: Culture and Psychiatric Diagnosis (Section III)",

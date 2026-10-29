@@ -101,6 +101,7 @@
       epi: [["Age 65", "1%–2%"], ["Age 85", "Up to 30%"], ["Sex", "More women (longer life)"]],
       risk: ["Age (strongest).", "Low education and literacy.", "Vascular risk factors, head injury, social determinants."],
       differential: [
+        { id: "level1-adult", how: "When impaired capacity prevents self-report, a knowledgeable informant completes the adult Level 1 Cross-Cutting Symptom Measure, and a proxy-administered WHODAS 2.0 is online (Chapter 23, pp. 843, 854)." },
         { id: "mild-ncd", how: "Independence preserved." },
         { id: "delirium", how: "Acute, fluctuating, inattentive; may coexist." },
         { id: "mdd", how: "Variable test performance; improves with treatment." }

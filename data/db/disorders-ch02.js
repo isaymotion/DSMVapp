@@ -47,6 +47,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Prevalence", "About 0.2% lifetime (Finnish sample)"], ["Commonest type", "Persecutory"], ["Sex", "No major overall difference; jealous type probably more common in men; men have worse outcomes"], ["Course", "About one-third of cases lasting 1–3 months become schizophrenia; stable after 6–12 months"], ["Age", "May be more prevalent in older people"]],
     risk: ["Significant familial link with schizophrenia and schizotypal PD.", "Traditional beliefs unfamiliar to Western clinicians can be mislabeled as delusional."],
     differential: [
+        { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
         { id: "maladi-dyab", how: "A Haitian sent-sickness explanation shared by the community; the manual warns it may lead to misdiagnosis of delusional disorder, persecutory type (Chapter 24, p. 877)." },
         { id: "taijin-kyofusho", how: "Consider delusional disorder only when the fear of offending others has a delusional quality that resists reassurance or counterexample (Chapter 24, p. 879)." },
       { name: "OCD or body dysmorphic disorder", how: "Fully convinced OCD or BDD beliefs → that disorder **with absent insight/delusional beliefs**." },
@@ -76,6 +77,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Share of first-onset psychosis", "2%–7%"], ["Average onset", "Mid-30s"], ["Relapse", "More than 50%"], ["Diagnostic change", "In under half, more often to a schizophrenia spectrum disorder"], ["Suicide", "Increased risk of suicidal behavior, especially when acute"]],
     risk: ["Distinguish culturally sanctioned experiences: voices during a religious ceremony, bereaved relatives sensing the deceased."],
     differential: [
+        { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
       { id: "psychotic-due-to-amc", how: "Evidence of a direct medical cause (e.g., Cushing’s syndrome, brain tumor), or delirium." },
       { id: "substance-induced-psychotic", how: "A substance is causal: drug screen, blood alcohol, timeline." },
       { name: "Mood disorder with psychotic features", how: "Psychosis only within a full mood episode." },
@@ -104,6 +106,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Incidence", "Possibly fivefold lower than schizophrenia in high-income countries; may equal it in lower-income settings"], ["Course", "About one-third recover within 6 months; most of the rest become schizophrenia or schizoaffective disorder"], ["Familial", "Relatives at increased risk of schizophrenia"]],
     risk: ["Differential and associated features follow schizophrenia."],
     differential: [
+        { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
       { id: "brief-psychotic-disorder", how: "Lasts less than 1 month." },
       { id: "schizophrenia", how: "Lasts 6 months or more and requires functional decline." },
       { id: "schizoaffective-disorder", how: "Mood episodes for the majority of the illness." }
@@ -131,6 +134,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Lifetime prevalence", "About 0.3%–0.7%"], ["Onset", "Late teens to mid-30s; peak early–mid 20s (men), late 20s (women)"], ["First-episode outcome", "Remission 56%, recovery 30% (pooled)"], ["Suicide", "5%–6% die by suicide; about 20% attempt"], ["Tobacco", "More than half have tobacco use disorder"]],
     risk: ["Urban upbringing, migration and refugee status, discrimination, social adversity, childhood trauma.", "Season of birth (late winter/early spring; summer for the deficit form).", "Polygenic risk shared with bipolar disorder, depression and autism; most patients have no family history.", "Obstetric complications with hypoxia, older paternal age, prenatal infection, stress, malnutrition, maternal diabetes.", "Women: later onset with a midlife peak, more affective symptoms, better social functioning; symptoms track estrogen.", "Underserved ethnic and racialized groups (e.g., African Americans in the US) are more often misdiagnosed with schizophrenia."],
     differential: [
+        { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
       { name: "MDD or bipolar disorder with psychotic or catatonic features", how: "Psychosis only during mood episodes." },
       { id: "schizoaffective-disorder", how: "Concurrent mood episode, mood present for the majority of the illness." },
       { id: "schizophreniform-disorder", how: "Less than 6 months." },
@@ -164,6 +168,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Prevalence", "About one-third as common as schizophrenia; 0.3% lifetime (Finnish sample)"], ["Sex", "Higher in women (DSM-IV criteria)"], ["Onset", "Usually early adulthood"], ["Prognosis", "Better than schizophrenia, worse than mood disorders"], ["Suicide", "Lifetime risk 5% (with schizophrenia); higher with depressive symptoms"]],
     risk: ["Relatives of people with schizophrenia, bipolar disorder or schizoaffective disorder are at higher risk.", "Polygenic risk scores for schizophrenia, bipolar disorder and MDD may all be elevated.", "African American and Hispanic patients who meet criteria are more often diagnosed with schizophrenia."],
     differential: [
+        { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
       { id: "schizophrenia", how: "Mood episodes for only a minority of the illness (Criterion C)." },
       { name: "Bipolar or major depressive disorder with psychotic features", how: "No psychosis outside mood episodes (Criterion B)." },
       { id: "psychotic-due-to-amc", how: "A medical condition producing both psychotic and mood symptoms." },
@@ -202,6 +207,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["First-episode psychosis", "7%–25% are substance/medication-induced"], ["Long-term", "32% later schizophrenia spectrum (26%) or bipolar (8%); cannabis-induced highest at 44%"]],
     risk: ["New delusions in a man older than 35 with no psychotic history suggest a substance or medication cause.", "In later life, polypharmacy makes prescription-induced psychosis more likely."],
     differential: [
+        { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
       { name: "Intoxication or withdrawal with perceptual disturbances", how: "Reality testing intact: the person knows the perceptions are drug effects." },
       { name: "Hallucinogen persisting perception disorder", how: "Flashbacks long after hallucinogen use has stopped." },
       { name: "Delirium", how: "Psychosis only during a delirium is part of the delirium." },
@@ -233,6 +239,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Lifetime prevalence", "0.21%–0.54%; 0.74% over age 65"], ["Epilepsy", "Postictal psychosis is the most common form (2%–7.8% of people with epilepsy)"], ["Older adults", "About 60% of new-onset psychosis has a medical cause"]],
     risk: ["Preexisting CNS injury may worsen the course.", "Vision, hearing and cognitive impairment may lower the threshold for psychosis in older people."],
     differential: [
+        { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
       { name: "Delirium", how: "Psychosis only during delirium: no separate diagnosis." },
       { name: "Major or mild neurocognitive disorder", how: "Can be co-diagnosed when the same disease causes the psychosis (e.g., Lewy body disease)." },
       { id: "substance-induced-psychotic", how: "Symptoms within about 4 weeks of intoxication, withdrawal or medication use; both can be given." },

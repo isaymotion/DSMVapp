@@ -84,8 +84,9 @@ SP.manifest = [
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   /* Section III (Emerging Measures and Models), pp. 837–927: optional chapters numbered 23–26 by the app, not by the manual.
      The alternative model for personality disorders is summarized in Chapter 18 and gets its own chapter last. */
-  { id: 'ch23', number: 23, section: 3, ready: false, pages: '841–858', title: 'Assessment Measures', short: 'Assessment measures',
-    summary: 'Section III: the cross-cutting symptom measures, the clinician-rated dimensions of psychosis symptom severity, and the WHODAS 2.0.' },
+  { id: 'ch23', number: 23, section: 3, ready: true, pages: '841–858', title: 'Assessment Measures', short: 'Assessment measures',
+    summary: 'Section III: why the manual adds dimensional measures to categorical diagnosis; the DSM-5 Level 1 Cross-Cutting Symptom Measure as a review of mental systems (23 items in 13 domains for adults, 25 items in 12 domains for a parent or guardian of a child aged 6–17, past 2 weeks, the mild-or-greater threshold and its slight-or-greater exceptions, the “Don’t Know” rule) and the Level 2 measures that follow a flagged domain; the Clinician-Rated Dimensions of Psychosis Symptom Severity (8 items, 0–4, worst in the past 7 days) behind the Chapter 2 severity specifier; the WHODAS 2.0 (36 items, 6 domains, past 30 days) with WHO’s simple and IRT scoring, DSM-5-TR’s average scores and the missing-data rule, and its replacement of the GAF; frequency-of-use and same-informant rules. The forms are described, never reprinted; no score is a diagnosis.',
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
   { id: 'ch24', number: 24, section: 3, ready: true, pages: '859–880', title: 'Culture and Psychiatric Diagnosis', short: 'Culture and diagnosis',
     summary: 'Section III: culture, race and ethnicity as the manual defines them; the Outline for Cultural Formulation (five categories) and the Cultural Formulation Interview (16 core questions in four domains, the 17-question Informant version, the online supplementary modules, the seven situations where it helps most); cultural idioms, explanations and syndromes in place of “culture-bound syndromes,” their four key features and the reasons they matter; the recording rule (the Section II disorder that is met or an other specified category, with the concept in the formulation); and the ten worked examples from ataque de nervios to taijin kyofusho with their related DSM-5-TR conditions and misdiagnosis traps; Philippine concepts of distress in a labeled section outside the DSM.',
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
@@ -167,6 +168,9 @@ SP.extraFiles = [
   'data/db/disorders-ch25.js',
   'data/helpers/ch25-further-study.js',
   'data/db/clinical-ch25.js',
+  'data/db/disorders-ch23.js',
+  'data/helpers/ch23-measures.js',
+  'data/db/clinical-ch23.js',
   'data/db/disorders-ch24.js',
   'data/helpers/ch24-cultural.js',
   'data/db/clinical-ch24.js',
