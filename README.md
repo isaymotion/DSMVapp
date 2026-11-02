@@ -46,6 +46,8 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 - **Schizophrenia assessment**: criteria, course, severity, induced versus independent psychosis, adherence, violence and suicide risk.
 - **Case presentation builder**: follows the residency case protocol; prints, or sends the protocol fields to PsychInterview (`isaymotion.github.io/case-psychinterview/`) through the shared-origin localStorage key `psyCaseApp.inbox`. PsychInterview asks which case to merge into and never overwrites typed text.
 
+- **Text size** (the *Aa* button in the top bar): four sizes, saved on the device and included in progress backups.
+
 ## What's in each chapter
 
 - **Study guide**: the whole chapter reorganized for learning, in the app's own words, with DSM-5-TR page references on every section, criteria boxes, duration ladders, comparison tables, clinical pearls, exam tips, culture checks and clinical vignettes. Every section has a **bookmark** ribbon.

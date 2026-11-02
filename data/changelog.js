@@ -4,6 +4,14 @@
  */
 SP.changelog = [
   {
+    id: 53,
+    date: "2026-11-02",
+    title: "Text size",
+    items: [
+      { type: "feature", text: "Text size: tap Aa in the top bar to make text smaller or larger. Your choice is saved on this device." }
+    ]
+  },
+  {
     id: 52,
     date: "2026-10-30",
     title: "Chapter 23: Assessment Measures (Section III)",

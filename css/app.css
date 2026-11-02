@@ -1151,6 +1151,8 @@ body { padding-bottom: 0; }
   .topbar__inner { flex-wrap: wrap; }
   .search { order: 5; flex-basis: 100%; max-width: none; margin: 0; }
   .theme-btn { margin-left: auto; }
+  .text-size-btn { margin-left: auto; }
+  .text-size-btn + .theme-btn { margin-left: 0; }
   .histnav .hist-btn { width: 34px; height: 34px; }
   .icon-btn { width: 38px; height: 38px; }
 }
@@ -2204,3 +2206,26 @@ main h1, main h2, main h3, main h4, .crumb, .card__q, .card__a { overflow-wrap: 
 .chapter-sect h2 { font: 700 .78rem/1.3 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 4px; }
 .chapter-sect p { margin: 0; color: var(--ink-3); font-size: .9rem; }
 .nav-sect { list-style: none; margin: 10px 0 4px; padding: 8px 10px 0; border-top: 1px solid var(--rule); font: 700 .66rem/1.3 var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+
+/* ---------- text size adjuster ---------- */
+.text-size-btn span { font: 800 1rem/1 var(--sans); letter-spacing: -.02em; }
+.text-size-btn small { font-size: .7em; font-weight: inherit; }
+.text-size-panel { position: fixed; z-index: 45; top: calc(env(safe-area-inset-top, 0px) + var(--top) + 6px); right: max(10px, env(safe-area-inset-right, 0px)); width: min(360px, calc(100vw - 20px)); padding: 16px 18px; background: var(--surface); color: var(--ink); border: 1px solid var(--rule); border-radius: var(--r-md); box-shadow: 0 14px 40px rgba(0,0,0,.25); }
+.text-size-panel[hidden] { display: none; }
+.text-size-panel__title { margin: 0 0 8px; font: 800 .76rem/1 var(--sans); text-transform: uppercase; letter-spacing: .07em; color: var(--ink-3); }
+.text-size-panel .seg { display: flex; }
+.text-size-panel .seg label { flex: 1; }
+.text-size-panel .seg span { width: 100%; justify-content: center; padding: 0 6px; }
+@media print { .text-size-panel { display: none !important; } }
+@media (max-width: 480px) {
+  .topbar__inner { gap: 8px 6px; }
+  .topbar .icon-btn { width: 36px; height: 36px; }
+  .histnav .hist-btn { width: 32px; height: 32px; }
+  .brand { gap: 8px; }
+  .brand img { width: 32px; height: 32px; }
+}
+@media (max-width: 380px) {
+  .brand__name { font-size: .98rem; }
+  .brand__sub { font-size: .74rem; }
+  .brand img { width: 28px; height: 28px; }
+}
