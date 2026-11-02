@@ -93,8 +93,9 @@ SP.manifest = [
   { id: 'ch25', number: 25, section: 3, ready: true, pages: '903–927', title: 'Conditions for Further Study', short: 'Conditions for further study',
     summary: 'Section III: why these seven proposed criteria sets are research tools rather than diagnoses, and how each is recorded in a chart; attenuated psychosis syndrome (weekly for a month, within a year, insight kept; F28); depressive episodes with short-duration hypomania (two or more periods of 2–3 days; F31.89); caffeine use disorder (the first three of nine criteria are required); Internet gaming disorder (5 of 9 in 12 months, nongambling games only, ICD-11); neurobehavioral disorder associated with prenatal alcohol exposure (more than minimal exposure, the B–D thresholds, with or without facial features; F88); suicidal behavior disorder (an attempt within 24 months, current versus early remission; T14.91XA/XD) and nonsuicidal self-injury disorder (5 or more days in a year; R45.88), each contrasted with its Section II look-alikes.',
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) },
-  { id: 'ch26', number: 26, section: 3, ready: false, pages: '881–902', title: 'Alternative DSM-5 Model for Personality Disorders', short: 'Alternative PD model',
-    summary: 'Section III: the level of personality functioning scale, the five trait domains and 25 facets, and the six specific personality disorders of the alternative model (an overview is already in Chapter 18).' }
+  { id: 'ch26', number: 26, section: 3, ready: true, pages: '881–902', title: 'Alternative DSM-5 Model for Personality Disorders', short: 'Alternative PD model',
+    summary: 'Section III: the hybrid dimensional–categorical model and why the APA kept both models; the general criteria A–G and the two determinations behind them; Criterion A as self (identity, self-direction) and interpersonal (empathy, intimacy) functioning graded 0–4 on the Level of Personality Functioning Scale, with moderate impairment as the threshold; Criterion B as five trait domains with their adaptive poles and 25 facets, including the cross-listed and “lack of” facets; the six proposed criteria sets (antisocial 6 of 7 at age 18 with the psychopathic-features specifier, avoidant 3 of 4 with anxiousness, borderline 4 of 7 with impulsivity, risk taking or hostility, narcissistic both traits, obsessive-compulsive 3 of 4 with rigid perfectionism, schizotypal 4 of 6) and personality disorder—trait specified for everything else, including the paranoid, schizoid, histrionic and dependent patterns; traits versus symptoms, the review-of-systems approach with the PID-5, and clinical utility; and, labeled as outside the DSM, how to chart it with Section II codes, ICD-11, the instruments, treatment evidence and Philippine context.',
+    files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) }
 ];
 
 /* Shared data loaded with the chapters: the disorder library, diagnostic helpers, and release notes. */
@@ -171,6 +172,9 @@ SP.extraFiles = [
   'data/db/disorders-ch23.js',
   'data/helpers/ch23-measures.js',
   'data/db/clinical-ch23.js',
+  'data/db/disorders-ch26.js',
+  'data/helpers/ch26-ampd.js',
+  'data/db/clinical-ch26.js',
   'data/db/disorders-ch24.js',
   'data/helpers/ch24-cultural.js',
   'data/db/clinical-ch24.js',

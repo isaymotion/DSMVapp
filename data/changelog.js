@@ -4,6 +4,15 @@
  */
 SP.changelog = [
   {
+    id: 54,
+    date: "2026-11-02",
+    title: "Chapter 26: Alternative DSM-5 Model for Personality Disorders",
+    items: [
+      { type: "chapter", ch: "ch26", text: "Chapter 26, the last chapter, is ready: the Section III alternative model. Study guide (31 sections: the general criteria A–G, the four elements of personality functioning and the five LPFS levels, the five trait domains with their adaptive poles and the 25 facets, the six proposed criteria sets and PD-TS, rating the LPFS, traits versus symptoms, the PID-5 review-of-systems approach, clinical utility, and labeled sections on charting with Section II codes, ICD-11, the instruments, treatment evidence and Philippine context), high yield, three card decks, board questions, glossary, six original mnemonics, a practice pack (vignettes, drills, traps), ten library entries (the six disorders, PD-TS, the general criteria, the LPFS and the trait model), compare presets, the “ampd” diagnostic helper and clinical extras with a new complaint-hub entry, Describing personality dimensionally." },
+      { type: "feature", text: "With Chapter 26 the chapter list is complete: all 22 Section II chapters and the four Section III chapters are built." }
+    ]
+  },
+  {
     id: 53,
     date: "2026-11-02",
     title: "Text size",

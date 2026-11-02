@@ -17,6 +17,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Prevalence", "3.3% (NCS-R subsample), 3.9% (NESARC); median 0.6% across five studies"], ["Course", "Relatively stable; a small proportion develop schizophrenia or another psychotic disorder"], ["Sex", "Slightly more common in men"], ["Familial", "More common in first-degree relatives of people with schizophrenia"]],
     risk: ["Twin studies: stable genetic factors; schizophrenia risk variants may be linked to schizotypal PD.", "Judge supernatural and religious beliefs (sixth sense, evil eye, mind reading) against the person’s cultural norms."],
     differential: [
+        { id: "ampd-schizotypal", how: "Section III alternative model: 2 of 4 functioning areas plus 4 of 6 traits in Psychoticism and Detachment (pp. 889–890); features present only during schizophrenia do not count (p. 883); a Section III proposal, not a chart diagnosis (app guidance)." },
         { id: "attenuated-psychosis-syndrome", how: "Attenuated psychosis syndrome is a recent, state-like change (within a year) whereas schizotypal features are stable traits (Section III, p. 906)." },
       { id: "schizophrenia", how: "Persistent psychosis. Schizotypal PD is added only if it preceded the psychosis and persists in remission." },
       { id: "delusional-disorder", how: "Has true delusions held with delusional conviction, not ideas of reference." },

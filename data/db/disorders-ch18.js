@@ -20,6 +20,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Any personality disorder", "Median 10.5%"], ["Cluster A", "3.6%"], ["Cluster B", "4.5%"], ["Cluster C", "2.8%"]],
     risk: ["Varies by disorder.", "Late-life personality change suggests a medical or substance cause."],
     differential: [
+        { id: "ampd-general", how: "Section III alternative model: the general criteria A–G there define a personality disorder by moderate or greater impairment in self and interpersonal functioning plus one or more pathological traits, with its own Criterion G for developmental stage and sociocultural environment (pp. 881–882; see also the LPFS and trait model entries)." },
       { id: "personality-change-amc", how: "A change from baseline due to a medical condition." },
       { id: "mdd", how: "Cross-sectional features during an episode can mimic traits." },
       { id: "ptsd", how: "Personality changes emerging after extreme stress." },
@@ -44,6 +45,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "3.2% (NCS-R 2.3%, NESARC 4.4%)"], ["Forensic", "Up to 23%"], ["Sex", "Mixed findings"]],
     risk: ["Childhood trauma; social stressors (inequality, racism).", "Familial link with schizophrenia and delusional disorder, persecutory type."],
     differential: [
+        { id: "ampd-pd-ts", how: "Section III alternative model: paranoid PD has no criteria set of its own and is represented by personality disorder—trait specified, moderate or greater impairment with the relevant traits, suspiciousness and hostility among them (p. 891; trait choice is app guidance)." },
       { id: "delusional-disorder", how: "Persistent persecutory delusions." },
       { id: "schizotypal-pd", how: "Adds magical thinking, odd perceptions and speech." },
       { id: "schizoid-pd", how: "Aloof without paranoid ideation." },
@@ -70,6 +72,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "1.3% (NCS-R 4.9%, NESARC 3.1%)"], ["Clinical", "Uncommon"]],
     risk: ["More prevalent in relatives of people with schizophrenia or schizotypal PD."],
     differential: [
+        { id: "ampd-pd-ts", how: "Section III alternative model: schizoid PD is represented by personality disorder—trait specified with Detachment traits such as withdrawal, intimacy avoidance, anhedonia and restricted affectivity (p. 891; trait choice is app guidance)." },
       { id: "avoidant-pd", how: "Wants relationships; fears rejection." },
       { id: "schizotypal-pd", how: "Cognitive-perceptual distortions." },
       { id: "paranoid-pd", how: "Suspiciousness." },
@@ -97,6 +100,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "3.6% (NCS-R 0.6%, NESARC 3.6%)"], ["Severe AUD, prisons", ">70%"], ["Sex", "About 3:1 men"], ["Course", "Often remits by 40"]],
     risk: ["Child abuse or neglect, erratic parenting, inconsistent discipline.", "Childhood-onset conduct disorder (before 10) with ADHD.", "Familial; relatives have more substance use and somatization."],
     differential: [
+        { id: "ampd-antisocial", how: "Section III alternative model: the same name with a different threshold, 2 of 4 functioning areas plus 6 of 7 traits in Antagonism and Disinhibition at age 18, with a “with psychopathic features” specifier (pp. 884–885); a Section III proposal, not a chart diagnosis (app guidance)." },
       { id: "conduct-disorder", how: "Under 18, or after 18 only if antisocial PD is not met." },
       { name: "Substance use disorder", how: "Antisocial acts only in service of use, without childhood onset." },
       { id: "bipolar-i", how: "Antisocial acts only during mania." },
@@ -122,6 +126,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "2.7% (NCS-R 1.4%, NESARC 5.9%)"], ["Settings", "≈6% primary care, 10% outpatient, 20% inpatient"], ["Sex", "Equal in community"], ["Suicide", "≈6% over 24 years (inpatients)"]],
     risk: ["About 5 times more common in first-degree relatives.", "Childhood abuse, neglect, conflict, early parental loss (sexual abuse neither necessary nor sufficient)."],
     differential: [
+        { id: "ampd-borderline", how: "Section III alternative model: 2 of 4 functioning areas plus 4 of 7 traits, at least one of impulsivity, risk taking or hostility; Psychoticism traits are a specifier, not a criterion (pp. 886–887); a Section III proposal, not a chart diagnosis (app guidance)." },
       { id: "bipolar-ii", how: "Distinct episodes of days with decreased need for sleep." },
       { id: "mdd", how: "Do not diagnose borderline from a cross-section during an episode." },
       { id: "histrionic-pd", how: "No self-destructiveness, rage or emptiness." },
@@ -148,6 +153,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "0.9% (NCS-R 0.0%, NESARC 1.8%)"], ["Sex", "Similar in structured studies"]],
     risk: ["Associated with somatic symptom and functional neurological disorders."],
     differential: [
+        { id: "ampd-pd-ts", how: "Section III alternative model: histrionic PD is represented by personality disorder—trait specified with traits such as attention seeking, emotional lability and manipulativeness (p. 891; trait choice is app guidance)." },
       { id: "borderline-pd", how: "Self-destructiveness, rage, emptiness." },
       { id: "narcissistic-pd", how: "Wants admiration for superiority." },
       { id: "antisocial-pd", how: "Manipulates for gain; antisocial acts." },
@@ -171,6 +177,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "1.6% (NCS-R 0.0%, NESARC 6.2%)"], ["Sex", "50%–75% men"]],
     risk: ["May present after crises (bankruptcy, demotion, divorce) or with aging.", "Narcissistic traits common in adolescents without predicting the disorder."],
     differential: [
+        { id: "ampd-narcissistic", how: "Section III alternative model: 2 of 4 functioning areas plus both grandiosity (overt or covert) and attention seeking, with “malignant” and “vulnerable” trait specifiers (pp. 887–888); a Section III proposal, not a chart diagnosis (app guidance)." },
       { id: "histrionic-pd", how: "Any attention, even appearing fragile." },
       { id: "antisocial-pd", how: "Impulsive aggression, deceit, conduct disorder history." },
       { id: "borderline-pd", how: "Unstable self-image, self-destructive." },
@@ -196,6 +203,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "2.1% (NCS-R 5.2%, NESARC 2.4%)"], ["Over 65", "0.8%"], ["Sex", "Slightly more in women"]],
     risk: ["Childhood shyness that increases in adolescence.", "May remit with age."],
     differential: [
+        { id: "ampd-avoidant", how: "Section III alternative model: 2 of 4 functioning areas plus 3 of 4 traits, anxiousness required (pp. 885–886); a Section III proposal, not a chart diagnosis (app guidance)." },
       { id: "social-anxiety", how: "Overlap; avoidant PD has more entrenched inferiority." },
       { id: "schizoid-pd", how: "No wish for relationships." },
       { id: "dependent-pd", how: "Seeks proximity rather than avoiding." },
@@ -220,6 +228,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "0.4% (NCS-R 0.6%, NESARC 0.5%)"], ["Sex", "Diagnosed more in women"]],
     risk: ["Chronic physical illness or separation anxiety disorder in childhood."],
     differential: [
+        { id: "ampd-pd-ts", how: "Section III alternative model: dependent PD is represented by personality disorder—trait specified with Negative Affectivity traits such as submissiveness, separation insecurity and anxiousness (p. 891; trait choice is app guidance)." },
       { id: "borderline-pd", how: "Rage and emptiness rather than appeasement." },
       { id: "histrionic-pd", how: "Flamboyant, demanding." },
       { id: "avoidant-pd", how: "Withdraws until certain of acceptance." },
@@ -244,6 +253,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "4.7% (NCS-R 2.4%, NESARC 7.9%)"], ["Sex", "Equal"]],
     risk: ["More likely with anxiety disorders and OCD.", "Overlaps with type A traits."],
     differential: [
+        { id: "ampd-ocpd", how: "Section III alternative model: 2 of 4 functioning areas plus 3 of 4 traits, rigid perfectionism required (pp. 888–889); a Section III proposal, not a chart diagnosis (app guidance)." },
       { id: "ocd", how: "True obsessions and compulsions; both can be diagnosed." },
       { id: "hoarding", how: "Extreme hoarding; both can be diagnosed." },
       { id: "narcissistic-pd", how: "Believes they have achieved perfection." },
@@ -291,7 +301,8 @@ SP.disorders = (SP.disorders || []).concat([
     specifiers: [],
     epi: [["Prevalence", "Not established"]],
     risk: ["Varies."],
-    differential: [{ id: "unspecified-pd", how: "Reason not given." }],
+    differential: [
+        { id: "ampd-pd-ts", how: "Section III alternative model: personality disorder—trait specified is the model’s answer to the “often correct but mostly uninformative” residual category, specifying the level of functioning and the trait profile (pp. 881, 890–891)." },{ id: "unspecified-pd", how: "Reason not given." }],
     pearls: ["Record the reason after the name."],
     cmp: { symptoms: "Subthreshold or mixed", exclusions: "Specific PDs", prevalence: "—", course: "—" },
     clues: [["Code", "F60.89"]]

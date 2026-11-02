@@ -35,7 +35,7 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 | 23. Assessment Measures (Section III) | Ready |
 | 24. Culture and Psychiatric Diagnosis (Section III) | Ready |
 | 25. Conditions for Further Study (Section III) | Ready |
-| 26. Alternative DSM-5 Model for Personality Disorders (Section III) | Planned |
+| 26. Alternative DSM-5 Model for Personality Disorders (Section III) | Ready |
 
 ## Case tools
 
@@ -58,7 +58,7 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 - **Diagnostic helper**: a step-by-step decision tree for the chapter's look-alike diagnoses, with the reasoning trail shown (e.g., “Which psychotic disorder?”).
 - **Disorder library entries**: one page per diagnosis, with **How to ask it** (plain-language interview questions per criterion) and a **Treatment bridge** (clearly labeled as outside the DSM, linking to the [Stahl Study Companion](https://isaymotion.github.io/Stahl/)).
 - **Mnemonics** deck (`data/chNN/mnemonics.js`): each mnemonic letter by letter with a “DSM check” caveat, drilled with spaced repetition and collected on the Library’s Mnemonics page (`#/mnemonics`). `#/mnemonics/pdf` prints them as a study sheet, a fill-in worksheet with answer key, or a one-page pocket card; chapter high-yield PDFs can append the chapter’s mnemonics. Mark mnemonics written for the app with `original: true`.
-- **Practice pack** (Chapters 1–25): **Board vignettes** (longer cases, some in two parts, every option explained), **Practice drills** (*Write the diagnosis* with code and specifiers, *Count the criteria*) and **Exam traps** (also shown at the end of the guide and in high yield). Chapter entries in **Start from the complaint**.
+- **Practice pack** (Chapters 1–26): **Board vignettes** (longer cases, some in two parts, every option explained), **Practice drills** (*Write the diagnosis* with code and specifiers, *Count the criteria*) and **Exam traps** (also shown at the end of the guide and in high yield). Chapter entries in **Start from the complaint**.
 
 ## Across the app
 
@@ -135,6 +135,6 @@ sw.js                      Offline cache
 
 ## Attribution
 
-App created by Isabella Navarro, MD. Latest version October 2026. isaymotion@gmail.com
+App created by Isabella Navarro, MD. Latest version November 2026. isaymotion@gmail.com
 
 An independent study aid built from the DSM-5-TR. Not affiliated with or endorsed by the American Psychiatric Association. Criteria are summarized in the app's own words with page references. Always confirm exact wording, specifiers and codes against the manual.
