@@ -12,7 +12,7 @@ SP.add("ch26", "mnemonics", [
       ["You?", "Empathy", "Interpersonal: Do I understand you? Grasping others' experiences and motives, tolerating different views, seeing one's own effect on others"],
       ["Us?", "Intimacy", "Interpersonal: How close are we? Depth and duration of connection, the wish and capacity for closeness, mutual regard"]
     ],
-    caveat: "DSM check: pp. 882–883 (Table 1). Each element is rated across five levels, from Level 0 (little or no impairment) to Level 4 (extreme), and the clinician picks the level that best captures **current overall** impairment (p. 892). A PD needs **moderate (Level 2) or greater** impairment (p. 882); each specific set and PD-TS needs characteristic difficulty in **two or more of the four** elements (pp. 884–890)."
+    caveat: "DSM check: pp. 882–883 (Table 1). The LPFS uses the four elements to describe five levels, from Level 0 (little or no impairment) to Level 4 (extreme), and the clinician picks the one level that best captures **current overall** impairment (p. 892). A PD needs **moderate (Level 2) or greater** impairment (p. 882); each specific set and PD-TS needs characteristic difficulty in **two or more of the four** elements (pp. 884–890)."
   },
   {
     id: "m26-02", short: "Domains: New Doctors Always Double-check Prescriptions", name: "New Doctors Always Double-check Prescriptions; Every Excellent Attending Checks Labs", original: true, dx: "trait-model", sec: "s26-domains",
@@ -52,7 +52,7 @@ SP.add("ch26", "mnemonics", [
       ["Run", "Risk taking", "Must-have option 2: needless dangerous, potentially self-damaging activity (Disinhibition)"],
       ["Hot", "Hostility", "Must-have option 3: frequent anger, irritability at minor slights (labeled Antagonism in this set)"]
     ],
-    caveat: "DSM check: pp. 886–887. Rule: **four or more of seven**, at least one of which is **impulsivity, risk taking or hostility**; four 'SAD LAB' traits alone do **not** meet the set. Criterion A also needs moderate or greater impairment in **two or more of four** areas. Psychoticism traits (e.g., cognitive and perceptual dysregulation) are optional specifiers (p. 887). Section II borderline PD (5 of 9 criteria, F60.3; Ch 18) is what goes on the chart (app guidance)."
+    caveat: "DSM check: pp. 886–887. Rule: **four or more of seven**, at least one of which is **impulsivity, risk taking or hostility**; four 'SAD LAB' traits alone do **not** meet the set. Criterion A also needs moderate or greater impairment in **two or more of four** areas. Psychoticism traits (e.g., cognitive and perceptual dysregulation) are optional specifiers (p. 887). Section II borderline PD (5 of 9 criteria, F60.3; Ch 18) goes on the chart if its own criteria are met (app guidance)."
   },
   {
     id: "m26-05", short: "Antisocial: the swindler's portrait", name: "The swindler's portrait: Manipulative, Cold, Deceitful, Hot-tempered, Reckless, Impulsive, IOU-dodger", original: true, dx: "ampd-antisocial", sec: "s26-antisocial",

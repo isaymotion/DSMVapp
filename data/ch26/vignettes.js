@@ -21,7 +21,7 @@ SP.add("ch26", "vignettes", [
       "Antisocial PD is not met, because hostility is a required trait and is absent",
       "Antisocial PD is not met, because all seven traits must be elevated",
       "Antisocial PD is met, but the psychopathic features specifier cannot be added because callousness has already been counted",
-      "Antisocial PD is met (six of seven traits; impairment in all four areas), specified with psychopathic features (low anxiousness, low withdrawal, high attention seeking)",
+      "Antisocial PD is met, with the psychopathic features specifier",
       "Narcissistic PD rather than antisocial PD, because his attention seeking is high"
     ],
     "answer": 3,
@@ -31,7 +31,7 @@ SP.add("ch26", "vignettes", [
       "Six of seven is the threshold, not seven of seven (p. 884).",
       "The specifier uses different traits (anxiousness, withdrawal, attention seeking) from the B list, so nothing is double counted; it records the bold psychopathic variant (p. 885).",
       "Correct.",
-      "Narcissistic PD needs both grandiosity and attention seeking (pp. 887–888); his pattern matches the antisocial set, and high attention seeking here is part of the psychopathic specifier (p. 885)."
+      "Narcissistic PD needs both grandiosity and attention seeking (pp. 887–888); nothing in the stem shows grandiosity, and his high attention seeking belongs to the psychopathic specifier (p. 885)."
     ],
     "discuss": [
       "Which parts of his presentation reflect social potency and which reflect stress immunity (p. 885)?",
@@ -47,13 +47,13 @@ SP.add("ch26", "vignettes", [
     "q": "What does the alternative model allow the clinician to conclude today?",
     "choices": [
       "Antisocial PD is met; the age requirement applies only to Section II",
-      "The antisocial set cannot be diagnosed yet: its note requires age 18, and Criterion G asks whether features are better understood as part of his developmental stage; his functioning and traits can still be described, and a Section II diagnosis suited to his age (such as conduct disorder) is evaluated (app guidance)",
+      "Antisocial PD cannot be diagnosed yet because of the set’s age note; his traits are described for now",
       "PD-TS with an Antagonism–Disinhibition profile, because PD-TS is the required diagnosis for everyone younger than 18",
       "Antisocial PD with psychopathic features, because the specifier overrides the age note",
       "No personality assessment should be done before age 18, because traits are not yet formed"
     ],
     "answer": 1,
-    "why": "The antisocial set carries a **note that the individual is at least 18 years of age** (p. 885), so at 17 the set is not applied however complete the picture. General Criterion G excludes features **better understood as normal for the person’s developmental stage** or sociocultural setting (p. 881), and the chapter notes that **teenagers are generally higher on trait impulsivity than older adults** (p. 892); his pattern goes well beyond that, but G must still be weighed. Describing traits and functioning remains useful: it is always appropriate to assess personality for context (p. 883), and the profile may be relevant whether or not a PD is present (p. 894). Section II also requires age 18 for antisocial PD, with conduct disorder before 15 as the childhood route (Ch 18, p. 748); evaluating conduct disorder now is the Section II path (app guidance).",
+    "why": "The antisocial set carries a **note that the individual is at least 18 years of age** (p. 885), so at 17 the set is not applied however complete the picture. General Criterion G excludes features **better understood as normal for the person’s developmental stage** or sociocultural setting (p. 881), and the chapter notes that **teenagers are generally higher on trait impulsivity than older adults** (p. 892); his pattern goes well beyond that, but G must still be weighed. Describing traits and functioning remains useful: it is always appropriate to assess personality for context (p. 883), and the profile may be relevant whether or not a PD is present (p. 894). Section II antisocial PD also requires age 18 and evidence of conduct disorder with onset before 15 (Ch 18, p. 748); evaluating conduct disorder now is the Section II path (app guidance).",
     "whyNot": [
       "The age note is part of the alternative model’s own antisocial set (p. 885), not only Section II.",
       "Correct.",
@@ -71,14 +71,14 @@ SP.add("ch26", "vignettes", [
     "tag": "Resigned, or afraid?",
     "sec": "s26-avoidant",
     "dx": "ampd-avoidant",
-    "stem": "Marites, 29, an encoder at an export processing zone in Mariveles, comes for help after her mother urged her to ‘go out more’. She sees herself as plain, awkward and less capable than her coworkers and feels deep shame about it. She turned down two promotions because they meant leading meetings, and avoids any new activity that involves people. She is sure coworkers think poorly of her and replays small comments for days. She has never dated; she will not get close to anyone unless she is certain she is liked. On interview she eats alone, does not start conversations, gets little enjoyment from anything, and avoids close or romantic ties. When asked about nervousness, she says she does not feel tense or afraid: ‘I just know how it will end, so I don’t bother.’ The resident judges impairment moderate in identity, self-direction, empathy and intimacy, and rates withdrawal, anhedonia and intimacy avoidance as elevated; anxiousness is not rated elevated on the information available.",
+    "stem": "Marites, 29, an encoder at an export processing zone in Mariveles, comes for help after her mother urged her to ‘go out more’. She sees herself as plain, awkward and less capable than her coworkers and feels deep shame about it. She turned down two promotions because they meant leading meetings, and has stopped trying any new activity that involves people because she expects it to go badly. She is sure coworkers think poorly of her, but says this leaves her resigned rather than worried. She has never dated; she will not get close to anyone unless she is certain she is liked. On interview she eats alone, does not start conversations, gets little enjoyment from anything, and avoids close or romantic ties. When asked about nervousness, she says she does not feel tense or afraid: ‘I just know how it will end, so I don’t bother.’ The resident judges impairment moderate in identity, self-direction, empathy and intimacy, and rates withdrawal, anhedonia and intimacy avoidance as elevated; anxiousness is not rated elevated on the information available.",
     "q": "On the information available today, what is the alternative-model conclusion?",
     "choices": [
       "Avoidant PD is met, because three of the four traits are elevated",
       "Avoidant PD is met, because her shame and low self-esteem satisfy the identity area",
       "Avoidant PD is met if depressivity is added in place of anxiousness",
       "Schizotypal PD, because withdrawal and intimacy avoidance are elevated",
-      "Avoidant PD is not met as assessed, because anxiousness is mandatory and has not been found; if a PD is judged present, PD-TS describes her for now"
+      "Avoidant PD is not met: the required anxiousness has not been found"
     ],
     "answer": 4,
     "why": "Avoidant PD needs **three or more of four traits, one of which must be anxiousness** (p. 885). She has **three** (withdrawal, anhedonia, intimacy avoidance, all Detachment facets; pp. 885–886) but anxiousness is **not elevated on current data**, so the set is not met. Her A picture is clearly avoidant in flavor: low self-esteem and shame (identity), reluctance to pursue goals involving people (self-direction), sensitivity to criticism with negative inferences about others (empathy), and holding back unless sure of being liked (intimacy) (p. 885). A PD judged present whose pattern does not match a specific set is **PD-TS** (p. 891). Because her account may understate fear, more data (interview, informant report) are worth gathering (p. 894; app guidance).",
@@ -86,14 +86,14 @@ SP.add("ch26", "vignettes", [
       "The count is right but the mandatory trait is missing (p. 885).",
       "Criterion A is met, but Criterion B still fails without anxiousness (p. 885).",
       "Depressivity can be added only as a specifier in avoidant PD; it never replaces a criterion (p. 886).",
-      "Schizotypal PD needs four of six traits and centers on Psychoticism; she has two of its traits (withdrawal only; intimacy avoidance is not in that set) and no odd beliefs, perceptions or behavior (p. 889).",
+      "Schizotypal PD needs four of six traits and draws on Psychoticism and Detachment; she has one of its traits (withdrawal; intimacy avoidance is not in that set) and no odd beliefs, perceptions or behavior (p. 889).",
       "Correct."
     ],
     "then": {
       "q": "At the next visit her sister completes the informant-report form and describes Marites shaking and nauseated before every office gathering and dreading being laughed at. Marites then admits she ‘goes cold with fear’ at the thought of embarrassing herself and has spent years bracing for it. The resident now rates anxiousness as elevated. What is the conclusion?",
       "choices": [
         "Still PD-TS, because the first conclusion stands once recorded",
-        "Avoidant PD is now met: anxiousness plus withdrawal, anhedonia and intimacy avoidance (four of four), with her LPFS level recorded",
+        "Avoidant PD is now met, with four of the four traits",
         "Avoidant PD is met only if her impairment is rerated at Level 3 or more",
         "Avoidant PD cannot be met, because the new information comes from an informant",
         "Social anxiety disorder replaces any personality diagnosis"
@@ -123,7 +123,7 @@ SP.add("ch26", "vignettes", [
     "choices": [
       "Borderline PD is met, because four of the seven traits are elevated",
       "Borderline PD is met, because her dissociative episodes count as cognitive and perceptual dysregulation and complete the trait list",
-      "Borderline PD is not met, because none of impulsivity, risk taking or hostility is present; PD-TS with her LPFS level and Negative Affectivity profile describes her",
+      "Borderline PD is not met, because none of the three required traits is present; PD-TS applies",
       "Borderline PD is not met, because Level 3 impairment points to a psychotic disorder instead",
       "No PD can be diagnosed, because her traits are all from a single domain"
     ],
@@ -137,9 +137,9 @@ SP.add("ch26", "vignettes", [
       "PD-TS Criterion B accepts one or more domains or facets from any domain (p. 890)."
     ],
     "then": {
-      "q": "A year later Joanna returns after a new breakup. For several months, when overwhelmed, she has acted on urges without stopping to think, with a sense of urgency and repeated self-harming behavior under emotional distress; once she needed emergency care. Her other traits and the impaired areas are unchanged. What follows?",
+      "q": "A year later Joanna returns after a new breakup. For several months, when overwhelmed, she has acted on urges without stopping to think, with a sense of urgency and repeated self-harming behavior under emotional distress. Her other traits and the impaired areas are unchanged. What follows?",
       "choices": [
-        "Borderline PD is now met: impulsivity (which includes urgency and self-harming behavior under distress) makes five of seven, including a required trait; the LPFS level is rerated and her safety is assessed now (app guidance)",
+        "Borderline PD is now met; her LPFS level and current safety are reassessed",
         "Still PD-TS, because a PD diagnosis cannot change once made",
         "Borderline PD is met only after the behavior has lasted 2 years",
         "Self-harming behavior is a symptom, never part of a trait, so nothing changes",
@@ -150,7 +150,7 @@ SP.add("ch26", "vignettes", [
       "whyNot": [
         "Correct.",
         "The model describes the current pattern; traits can change and the conclusion is revised (pp. 882, 892).",
-        "The alternative model has no such duration rule; Criterion D asks for relative stability over time with onset by adolescence or early adulthood (p. 881), which her lifelong pattern meets.",
+        "The alternative model has no such duration rule; Criterion D asks for relative stability over time with onset by adolescence or early adulthood (p. 881), which her pattern since her late teens meets.",
         "The manual writes self-harming behavior under distress into the impulsivity trait itself (p. 887); repeated across months it is part of a pattern, not a one-off behavior (p. 893).",
         "Antisocial PD needs six of seven antisocial traits (p. 884); she has one of them (impulsivity)."
       ]
@@ -165,10 +165,10 @@ SP.add("ch26", "vignettes", [
     "tag": "Good enough is good enough",
     "sec": "s26-ocpd",
     "dx": "ampd-ocpd",
-    "stem": "Lorna, 47, a nurse supervisor at a provincial hospital in Bataan, is referred by her chief nurse after staff complaints. For as long as anyone remembers, her worth has come almost entirely from work, and she rarely shows or seems to feel strong emotion; colleagues call her ‘the wall’. She has kept using the same paper-based staffing method for two years although it fails every month and the staff have shown her its errors; she simply repeats it. Her marriage and friendships come a distant second to her shifts, and she avoids close or romantic ties outside work. She is not a perfectionist: she accepts reports with small errors (‘pwede na’), submits her own on time even when imperfect, changes plans readily when shown a better way, and does not care about neatness or detail. She worries a great deal about future problems. The resident judges impairment moderate in identity and intimacy and rates perseveration, intimacy avoidance, restricted affectivity and anxiousness as elevated.",
+    "stem": "Lorna, 47, a nurse supervisor at a provincial hospital in Bataan, is referred by her chief nurse after staff complaints. For as long as anyone remembers, her worth has come almost entirely from work, and she rarely shows or seems to feel strong emotion; colleagues call her ‘the wall’. She has kept using the same paper-based staffing method for two years although it fails every month; out of habit she simply repeats it without reviewing it. Her marriage and friendships come a distant second to her shifts, and she avoids close or romantic ties outside work. She is not a perfectionist: she accepts reports with small errors (‘pwede na’), submits her own on time even when imperfect, changes plans readily when shown a better way, and does not care about neatness or detail. She worries a great deal about future problems. The resident judges impairment moderate in identity and intimacy and rates perseveration, intimacy avoidance, restricted affectivity and anxiousness as elevated.",
     "q": "Which alternative-model conclusion fits best?",
     "choices": [
-      "Obsessive-compulsive PD is not met, because rigid perfectionism is mandatory and absent; if a PD is judged present, PD-TS with her trait profile applies",
+      "Obsessive-compulsive PD is not met, because rigid perfectionism is absent",
       "Obsessive-compulsive PD is met, because anxiousness counts as the fourth trait",
       "Obsessive-compulsive PD is met, because two A areas are impaired and three B traits are elevated",
       "Avoidant PD is met, because anxiousness and intimacy avoidance are elevated",
@@ -200,13 +200,13 @@ SP.add("ch26", "vignettes", [
       "Avoidant PD, because he is shy and anxious",
       "Narcissistic PD is met with grandiosity alone, because vulnerable presentations do not need attention seeking",
       "Borderline PD, because depressivity and anxiousness are elevated",
-      "Narcissistic PD is met (both grandiosity and attention seeking), with depressivity and anxiousness specified for a more vulnerable presentation"
+      "Narcissistic PD is met, with depressivity and anxiousness as specifiers"
     ],
     "answer": 4,
     "why": "Narcissistic PD needs **both** grandiosity and attention seeking (pp. 887–888). Grandiosity includes entitlement that is **overt or covert**, self-centeredness, belief in being better than others and condescension (p. 887); attention seeking includes **admiration seeking** (p. 888). Criterion A is met in at least two areas: identity (self-esteem set by others’ reactions, swinging between inflated and deflated, with mood mirroring it), self-direction (goals for approval, unaware of motives), empathy (attuned to others only as they bear on him) and intimacy (superficial ties serving self-esteem) (p. 887). Other **Negative Affectivity** traits such as depressivity and anxiousness **can be specified to record more ‘vulnerable’ presentations** (p. 888).",
     "whyNot": [
       "Entitlement may be overt or covert (p. 887).",
-      "Avoidant PD needs three of four traits including anxiousness; he has anxiousness only (p. 885), and his shyness sits beside covert grandiosity and admiration seeking.",
+      "Avoidant PD needs three of four traits including anxiousness; the resident records only anxiousness from that set, and even if his shyness were rated as withdrawal he would have two of four (p. 885); his shyness sits beside covert grandiosity and admiration seeking.",
       "Both traits are always required; the vulnerable presentation is recorded by adding Negative Affectivity specifiers, not by dropping a criterion (p. 888).",
       "Borderline PD needs four of seven traits including impulsivity, risk taking or hostility; he has two of its traits (depressivity, anxiousness) (p. 886).",
       "Correct."
@@ -217,7 +217,7 @@ SP.add("ch26", "vignettes", [
         "Antisocial PD replaces narcissistic PD, because three Antagonism traits are added",
         "The psychopathic features specifier is added",
         "PD-TS replaces narcissistic PD, because the profile has become mixed",
-        "Narcissistic PD remains; manipulativeness, deceitfulness and callousness are added as specifiers for more pervasive antagonistic features (‘malignant narcissism’), alongside the earlier Negative Affectivity specifiers",
+        "Narcissistic PD remains, with three Antagonism traits added as specifiers",
         "The vulnerable specifiers must be removed, because malignant and vulnerable features cannot be recorded together"
       ],
       "answer": 3,
@@ -245,12 +245,12 @@ SP.add("ch26", "vignettes", [
     "choices": [
       "No: a schizophrenia diagnosis rules out schizotypal PD in every case",
       "No: the set needs five of six traits",
-      "Yes, on clinical judgment: Criterion A (four areas) and four of six traits are met, and the features predate and persist apart from the schizophrenia, unlike the chapter’s example of schizotypal features present only during schizophrenia",
+      "Yes: his features predate and outlast the psychosis",
       "Yes, but only the traits seen during the psychotic episode can be counted",
       "No: Criterion F excludes it because he is taking antipsychotic medication"
     ],
     "answer": 2,
-    "why": "Schizotypal PD needs **four or more of six** traits (p. 889). Bayani has **four**: cognitive and perceptual dysregulation (vague, metaphorical speech; odd sensations), unusual beliefs and experiences (sensing intentions, viewed by his community as bizarre), eccentricity, and suspiciousness. Restricted affectivity and withdrawal are absent. Criterion A areas: identity (confused self–other boundaries), self-direction (incoherent goals), empathy (misreading motives) and intimacy (no close ties because of mistrust) (p. 889). Criterion E rules out a PD when its features are **clearly an expression of another mental disorder**, and the chapter’s example is schizotypal features **present only in the context of schizophrenia** (p. 883). His features started years before the psychosis and continue in remission, so E does not exclude them on the app’s reading; the judgment remains clinical. Section II has the same idea: when its schizotypal criteria were met before schizophrenia began, ‘premorbid’ is added (Section II, p. 745).",
+    "why": "Schizotypal PD needs **four or more of six** traits (p. 889). Bayani has **four**: cognitive and perceptual dysregulation (vague, metaphorical speech; odd sensations), unusual beliefs and experiences (sensing intentions, viewed by his community as bizarre), eccentricity, and suspiciousness. Restricted affectivity and withdrawal are absent. Criterion A areas: identity (confused self–other boundaries), self-direction (incoherent goals), empathy (misreading motives) and intimacy (no close ties because of mistrust) (p. 889). Criterion E rules out a PD when its features are **clearly an expression of another mental disorder**, and the chapter’s example is schizotypal features **present only in the context of schizophrenia** (p. 883). His features started years before the psychosis and continue in remission, so E does not exclude them on the app’s reading; the judgment remains clinical. Section II has the same idea: when its schizotypal criteria were met before schizophrenia began, ‘premorbid’ is added (Ch 18, p. 745).",
     "whyNot": [
       "Criterion E excludes features that are clearly an expression of the other disorder, such as features seen only during schizophrenia (p. 883); it does not bar every person with schizophrenia.",
       "The threshold is four of six (p. 889).",
@@ -271,7 +271,7 @@ SP.add("ch26", "vignettes", [
     "stem": "Celia, 36, a public-school teacher in Balanga, is seen for a generalized anxiety picture after a transfer to a new school. She has a clear sense of who she is, although under strong emotion she sometimes loses track of where her feelings end and her husband’s begin. Criticism from her principal knocks her self-esteem for a day or two before she recovers. She sets realistic goals but drives herself hard and occasionally feels torn about what she wants. She understands colleagues’ views, though she finds it hard to accept views that clash with her own. She has a lasting, warm marriage and old friendships, though she keeps her deepest feelings to herself. Since her twenties she has been quick to worry, her moods rise and fall more than most people’s, and she tends to keep at a lesson plan after it has stopped working. The resident rates personality functioning at Level 1 and judges anxiousness, emotional lability and perseveration to be elevated.",
     "q": "How should the alternative model be used in her formulation?",
     "choices": [
-      "No AMPD personality disorder (every set, including PD-TS, needs Level 2 or more); record Level 1 as a global indicator of her personality functioning, with her elevated traits as context for treatment",
+      "No PD; record Level 1 as a global indicator, with her traits as context",
       "PD-TS, because PD-TS covers subthreshold presentations",
       "Borderline PD, because emotional lability and anxiousness are elevated",
       "Obsessive-compulsive PD, because perseveration is elevated",
@@ -302,11 +302,11 @@ SP.add("ch26", "vignettes", [
       "Borderline PD, because four Negative Affectivity traits are elevated",
       "Dependent PD under its own alternative-model criteria set",
       "Avoidant PD, because anxiousness is elevated",
-      "PD-TS (dependent-like), specified by moderate impairment and submissiveness, separation insecurity, anxiousness and depressivity",
+      "PD-TS (dependent-like), specified by his traits",
       "No PD: Criterion E excludes it because grief explains the picture"
     ],
     "answer": 3,
-    "why": "The model has no dependent PD set: **paranoid, schizoid, histrionic and dependent PDs are represented by PD-TS**, defined by moderate or greater impairment plus the relevant trait combination (p. 891). PD-TS needs moderate impairment in **two or more** areas (here identity and self-direction) and **one or more** elevated domains or facets (p. 890); the recorded traits **are** the specifiers (p. 890). His facets are all **Negative Affectivity**; submissiveness is defined there (p. 899) and is used by none of the six specific sets (app count). For the chart, Section II dependent PD (F60.7) is used if its own criteria (five of eight) are met, with the AMPD profile in the formulation (Ch 18, p. 768; app guidance).",
+    "why": "The model has no dependent PD set: **paranoid, schizoid, histrionic and dependent PDs are represented by PD-TS**, defined by moderate or greater impairment plus the relevant trait combination (p. 891). PD-TS needs moderate impairment in **two or more** areas (here identity and self-direction) and **one or more** elevated domains or facets (p. 890); the recorded traits **are** the specifiers (p. 890). Three of his facets (submissiveness, separation insecurity, anxiousness) are defined under **Negative Affectivity**, and depressivity is defined under Detachment and cross-listed there (p. 899); submissiveness is used by none of the six specific sets (app count). For the chart, Section II dependent PD (F60.7) is used if its own criteria (five of eight) are met, with the AMPD profile in the formulation (Ch 18, p. 768; app guidance).",
     "whyNot": [
       "Only three of his traits are in the borderline set (anxiousness, separation insecurity, depressivity), and none of the required three (impulsivity, risk taking, hostility) is present (p. 886).",
       "No such set exists; dependent PD is represented through PD-TS (p. 891).",
@@ -328,7 +328,7 @@ SP.add("ch26", "vignettes", [
     "q": "Which conclusion fits the alternative model?",
     "choices": [
       "Schizotypal PD, because suspiciousness is the core schizotypal trait",
-      "PD-TS (paranoid-like), specified by suspiciousness, hostility and intimacy avoidance; for the chart, Section II paranoid PD (F60.0) if its own criteria are met (app guidance)",
+      "PD-TS (paranoid-like), specified by his three traits",
       "Paranoid PD under its own alternative-model criteria set",
       "Antisocial PD, because hostility is elevated",
       "No PD, because suspiciousness is a Negative Affectivity trait and cannot count"
@@ -359,7 +359,7 @@ SP.add("ch26", "vignettes", [
       "Narcissistic PD, because attention seeking is elevated",
       "Unspecified PD, because the alternative model has no place for mixed presentations",
       "No PD, because she does not meet any of the six specific sets",
-      "PD-TS (mixed presentation), specified by her LPFS level and the six elevated facets across Negative Affectivity and Antagonism"
+      "PD-TS (mixed presentation), specified by her LPFS level and traits"
     ],
     "answer": 4,
     "why": "Count each set (app count): borderline has **three** of seven (emotional lability, depressivity, hostility) and needs four (p. 886); narcissistic has attention seeking but **not grandiosity**, and both are required (pp. 887–888); antisocial has **three** of seven (manipulativeness, callousness, hostility) and needs six (p. 884). With moderate impairment and a pattern that differs from every specific set, the diagnosis is **PD-TS**, which covers **mixed or atypical** presentations (p. 891). There are no PD-TS subtypes; the recorded traits are the specifiers, and the chapter’s own example notes that two people with emotional lability, hostility and depressivity differ when one also has callousness (p. 890). For the chart, Section II other specified PD (F60.89) recorded with the reason, such as ‘mixed personality features’, is used if no Section II set is met (Ch 18, p. 778; app guidance).",
@@ -380,13 +380,13 @@ SP.add("ch26", "vignettes", [
     "tag": "One model says yes, the other no",
     "sec": "s26-recording",
     "dx": "ampd-borderline",
-    "stem": "Rhea, 25, is admitted to the psychiatry ward of a Bataan hospital after a crisis with her partner. Since her late teens her relationships have been intense and unstable, swinging between idealizing and devaluing partners, with frantic efforts to avoid being left. She often feels slighted and assumes the worst of others. Her moods shift within hours and she has frequent, intense anger. Her sense of herself is steady, she does not describe emptiness, she has never acted on sudden urges or harmed herself, and she has had no stress-related paranoid or dissociative episodes. The resident rates impairment at Level 2, moderate in empathy and intimacy, and records elevated emotional lability, anxiousness, separation insecurity and hostility. Counting Section II borderline criteria, the resident finds four of nine (abandonment efforts, unstable relationships, affective instability, intense anger).",
+    "stem": "Rhea, 25, is admitted to the psychiatry ward of a Bataan hospital after a crisis with her partner. Since her late teens her relationships have been intense and unstable, swinging between idealizing and devaluing partners, with frantic efforts to avoid being left. She often feels slighted and assumes the worst of others. Her moods shift within hours, she has frequent, intense anger, and she worries constantly that she will fall apart or lose control once a conflict starts. Her sense of herself is steady, she does not describe emptiness, she has never acted on sudden urges or harmed herself, and she has had no stress-related paranoid or dissociative episodes. The resident rates impairment at Level 2, moderate in empathy and intimacy, and records elevated emotional lability, anxiousness, separation insecurity and hostility. Counting Section II borderline criteria, the resident finds four of nine (abandonment efforts, unstable relationships, affective instability, intense anger).",
     "q": "What should go on the diagnosis line of the chart?",
     "choices": [
       "Borderline personality disorder, F60.3, because the alternative-model set is met",
       "‘Alternative-model borderline PD, Level 2’ with no code",
       "Unspecified personality disorder, F60.9, which is required whenever the two models disagree",
-      "Other specified personality disorder, F60.89, with the reason stated (borderline features below the Section II threshold), and the AMPD profile in the formulation (app guidance)",
+      "Other specified personality disorder, F60.89, with the reason stated",
       "No personality diagnosis, because the Section II criteria are not met and Section III conclusions cannot be charted"
     ],
     "answer": 3,
@@ -408,12 +408,12 @@ SP.add("ch26", "vignettes", [
     "tag": "A review of systems for personality",
     "sec": "s26-assessment",
     "dx": "trait-model",
-    "stem": "Amelia, 40, a market vendor in Balanga, is admitted with a major depressive episode. Her consultant asks the first-year resident for ‘a personality picture’ before discharge, mainly to guide follow-up; personality is not the planned focus of treatment. Amelia can complete a self-report questionnaire in Filipino with help, and her husband of 18 years visits daily and is willing to answer questions about her. The ward is busy and the resident has limited time. In her notes the resident wonders whether a trait can be called elevated without a local cutoff score.",
+    "stem": "Amelia, 40, a market vendor in Balanga, is admitted with a major depressive episode. Her consultant asks the first-year resident for ‘a personality picture’ before discharge, mainly to guide follow-up; personality is not the planned focus of treatment. Amelia can complete an English self-report questionnaire if a staff member reads and explains the items in Filipino, and her husband of 18 years visits daily and is willing to answer questions about her. The ward is busy and the resident has limited time. In her notes the resident wonders whether a trait can be called elevated without a local cutoff score.",
     "q": "Which assessment plan best follows the chapter?",
     "choices": [
       "Wait until the depression remits, because traits cannot be assessed while symptoms are present",
       "Assess only Negative Affectivity, because her presenting problem is depressive",
-      "Review all five domains, at the domain level since only a general portrait is needed; collect self-report and her husband’s informant report; judge elevation against population norms and/or by clinical judgment; move to all 25 facets if personality problems become the focus of treatment",
+      "Review all five domains at domain level, using self- and informant-report",
       "Use the self-report form only, because informant reports are not part of the model",
       "Count a trait as elevated only if a formal test score passes a cutoff normed in the Philippines"
     ],
@@ -424,7 +424,7 @@ SP.add("ch26", "vignettes", [
       "The review-of-systems approach covers all five domains (p. 894).",
       "Correct.",
       "The PID-5 includes an informant-report form, and a detailed assessment uses both sources (p. 894).",
-      "Elevation may be judged against norms and/or by clinical judgment supported by interview data (p. 894); no local cutoff is required by the chapter."
+      "Elevation may be judged against norms and/or by clinical judgment supported by interview data (p. 894); no local cutoff is required by the chapter, and no Filipino validation of the PID-5 was found (outside the DSM)."
     ],
     "discuss": [
       "What would make you move from a domain-level portrait to a facet-level assessment for Amelia (p. 894)?",

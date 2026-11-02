@@ -140,7 +140,7 @@
       id: "ampd-avoidant", ch: "ch26", sec: "s26-avoidant", pages: "883, 885–886", critPages: "885–886",
       name: "Avoidant personality disorder (alternative model)", code: CODE3,
       codes: [["F60.6", "Avoidant personality disorder (Section II, Ch 18), when its own criteria are met", REC]],
-      aka: ["AMPD avoidant PD", "Section III avoidant personality disorder", "anxious (avoidant) personality (ICD-10 wording, outside the DSM)"],
+      aka: ["AMPD avoidant PD", "Section III avoidant personality disorder"],
       essence: "A **proposed** Section III set (p. 881): moderate or greater impairment in **2 or more of 4** areas (low self-esteem with a self-view as inept, unappealing or inferior and much shame; standards that block goals, risks and new social activities; preoccupation with criticism and rejection, reading others as negative; holding back unless sure of being liked) plus **3 or more of 4** traits, **anxiousness required**, with withdrawal, anhedonia and intimacy avoidance (Negative Affectivity and Detachment) (pp. 885–886).",
       duration: "Relatively stable, onset traceable to at least adolescence or early adulthood (general Criterion D, p. 881)",
       functioning: "Moderate or greater impairment in 2 or more of identity, self-direction, empathy and intimacy (Criterion A, p. 885); level can also be specified (p. 886)",
@@ -157,7 +157,7 @@
       epi: NOEPI,
       risk: ["Not given in the chapter.", "Fears of embarrassment are part of the anxiousness definition in this set (p. 885); in the borderline set the same facet is framed around fears of falling apart or losing control (p. 886)."],
       differential: [
-        { id: "avoidant-pd", how: "Section II needs 4 of 7 criteria beginning by early adulthood (Ch 18, p. 763); the Section III set needs 2 of 4 A areas plus 3 of 4 traits with anxiousness. The Section II set decides the code (app guidance)." },
+        { id: "avoidant-pd", how: "Section II needs 4 of 7 criteria beginning by early adulthood (Ch 18, p. 764); the Section III set needs 2 of 4 A areas plus 3 of 4 traits with anxiousness. The Section II set decides the code (app guidance)." },
         { id: "ampd-schizotypal", how: "Shares withdrawal (and restricted affect is in schizotypal, not avoidant); schizotypal adds Psychoticism and suspiciousness, while the avoidant person wants contact but fears shame (pp. 885–889; app comparison)." },
         { id: "ampd-ocpd", how: "Shares intimacy avoidance; OCPD needs rigid perfectionism, avoidant needs anxiousness (pp. 885–888)." },
         { id: "ampd-borderline", how: "Shares anxiousness; borderline adds lability, separation insecurity and at least one of impulsivity, risk taking or hostility (pp. 886–887)." },
@@ -173,13 +173,13 @@
       ],
       cmp: { symptoms: "≥2 of 4 A areas + ≥3 of 4 traits incl. anxiousness (withdrawal, anhedonia, intimacy avoidance)", exclusions: "No anxiousness = not met; general criteria E–G", prevalence: "Not given in the chapter", course: "Onset traceable to adolescence or early adulthood" },
       clues: [["Core picture", "A 29-year-old laboratory aide in Balanga who turns down promotions that involve meetings, sure she will be laughed at, and avoids dating unless certain of acceptance"], ["Gate", "Anxiousness required; 3 of 4"], ["Recording (app guidance)", "F60.6 if the Section II criteria are met"]],
-      updates: upd("Recording route checked November 2026", "**App guidance**: a presentation that matches this proposed set goes on the chart as **avoidant personality disorder, F60.6**, if the **Section II** criteria are met (Ch 18, p. 763); otherwise other specified (F60.89) or unspecified (F60.9) personality disorder. ICD-10-CM title of F60.6: “Avoidant personality disorder”." + ALT + CONFIRM)
+      updates: upd("Recording route checked November 2026", "**App guidance**: a presentation that matches this proposed set goes on the chart as **avoidant personality disorder, F60.6**, if the **Section II** criteria are met (Ch 18, p. 764); otherwise other specified (F60.89) or unspecified (F60.9) personality disorder. ICD-10-CM title of F60.6: “Avoidant personality disorder”." + ALT + CONFIRM)
     },
     {
       id: "ampd-borderline", ch: "ch26", sec: "s26-borderline", pages: "883, 886–887", critPages: "886–887",
       name: "Borderline personality disorder (alternative model)", code: CODE3,
       codes: [["F60.3", "Borderline personality disorder (Section II, Ch 18), when its own criteria are met", REC]],
-      aka: ["AMPD borderline PD", "Section III borderline personality disorder", "emotionally unstable personality disorder, borderline type (ICD-10, outside the DSM)"],
+      aka: ["AMPD borderline PD", "Section III borderline personality disorder"],
       essence: "A **proposed** Section III set (p. 881): moderate or greater impairment in **2 or more of 4** areas (poor or unstable self-image with self-criticism, emptiness and stress-related dissociation; shifting goals and values; hypersensitivity with a negative bias about others; intense, unstable, mistrustful relationships with abandonment fears, idealization and devaluation) plus **4 or more of 7** traits, **at least one of impulsivity, risk taking or hostility**. Domains: **Negative Affectivity** plus **Antagonism and/or Disinhibition** (pp. 886–887).",
       duration: "Relatively stable, onset traceable to at least adolescence or early adulthood (general Criterion D, p. 881)",
       functioning: "Moderate or greater impairment in 2 or more of identity, self-direction, empathy and intimacy (Criterion A, p. 886); level can also be specified (p. 887)",
@@ -246,7 +246,7 @@
         { id: "ampd-pd-ts", how: "Grandiosity without attention seeking (or the reverse) fails Criterion B; with moderate impairment the model calls it PD-TS (pp. 887, 891)." }
       ],
       pearls: [
-        "Only **2** traits, and **both** are needed: grandiosity and attention seeking (p. 887).",
+        "Only **2** traits, and **both** are needed: grandiosity and attention seeking (pp. 887–888).",
         "A “vulnerable” presentation still needs both; depressivity or anxiousness is **added** as a specifier (p. 888).",
         "“Malignant narcissism” = specify manipulativeness, deceitfulness, callousness (p. 888).",
         "Self-appraisal can be **inflated, deflated or vacillating** (p. 887).",
@@ -260,7 +260,7 @@
       id: "ampd-ocpd", ch: "ch26", sec: "s26-ocpd", pages: "884, 888–889", critPages: "888",
       name: "Obsessive-compulsive personality disorder (alternative model)", code: CODE3,
       codes: [["F60.5", "Obsessive-compulsive personality disorder (Section II, Ch 18), when its own criteria are met", REC]],
-      aka: ["AMPD OCPD", "Section III obsessive-compulsive personality disorder", "anankastic personality (ICD-10 wording, outside the DSM)"],
+      aka: ["AMPD OCPD", "Section III obsessive-compulsive personality disorder"],
       essence: "A **proposed** Section III set (p. 881): moderate or greater impairment in **2 or more of 4** areas (self defined by work and productivity, constricted emotion; tasks left unfinished because of rigid, unreasonably high standards; difficulty appreciating others’ views and feelings; relationships placed after work, harmed by stubbornness) plus **3 or more of 4** traits, **rigid perfectionism required**, with perseveration, intimacy avoidance and restricted affectivity. Domains: Negative Affectivity and/or Detachment, with rigid perfectionism at the extreme Conscientiousness pole (p. 888).",
       duration: "Relatively stable, onset traceable to at least adolescence or early adulthood (general Criterion D, p. 881)",
       functioning: "Moderate or greater impairment in 2 or more of identity, self-direction, empathy and intimacy (Criterion A, p. 888); level can also be specified (p. 889)",
@@ -296,7 +296,7 @@
     {
       id: "ampd-schizotypal", ch: "ch26", sec: "s26-schizotypal", pages: "884, 889–890", critPages: "889",
       name: "Schizotypal personality disorder (alternative model)", code: CODE3,
-      codes: [["F21", "Schizotypal personality disorder (Section II; criteria in Ch 2 and listed in Ch 18), when its own criteria are met", REC]],
+      codes: [["F21", "Schizotypal personality disorder (Section II; criteria and text in Ch 18, p. 744; listed in Ch 2, p. 104), when its own criteria are met", REC]],
       aka: ["AMPD schizotypal PD", "Section III schizotypal personality disorder", "schizotypal disorder (ICD-10-CM title, outside the DSM)"],
       essence: "A **proposed** Section III set (p. 881): moderate or greater impairment in **2 or more of 4** areas (blurred self–other boundaries and a distorted self-concept with incongruent emotion; unrealistic or incoherent goals without clear standards; misreading others and one’s own impact; marked trouble forming close relationships through mistrust and anxiety) plus **4 or more of 6** traits from **Psychoticism** (cognitive and perceptual dysregulation, unusual beliefs and experiences, eccentricity) and **Detachment** (restricted affectivity, withdrawal, suspiciousness) (p. 889).",
       duration: "Relatively stable, onset traceable to at least adolescence or early adulthood (general Criterion D, p. 881)",
@@ -379,7 +379,7 @@
         "**No subtypes**; the traits **are** the specifiers (p. 890).",
         "Paranoid, schizoid, histrionic, dependent → **PD-TS** in the model (p. 891).",
         "Covers **subthreshold, mixed, atypical** (p. 891).",
-        "Submissiveness (and distractibility) belong to no specific set’s B list (app count of pp. 884–889), so a submissive profile is always PD-TS."
+        "Submissiveness (and distractibility) belong to no specific set’s B list (app count of pp. 884–889), so a profile defined by submissiveness falls to PD-TS unless another set is met; submissiveness can still be a specifier, e.g., in avoidant PD (pp. 886, 891)."
       ],
       cmp: { symptoms: "≥2 of 4 A areas + ≥1 trait domain or facet, reviewing all five domains", exclusions: "A pattern that matches one of the six sets takes that diagnosis; general criteria E–G", prevalence: "Not given in the chapter", course: "Onset traceable to adolescence or early adulthood" },
       clues: [["Core picture", "A 27-year-old in Balanga who cannot decide anything without her mother, agrees to avoid conflict and panics at the thought of living alone; Level 2"], ["Profile", "Submissiveness, separation insecurity, anxiousness (Negative Affectivity)"], ["Recording (app guidance)", "F60.7 if the Section II dependent criteria are met; else F60.89 with the profile named"]],
@@ -445,10 +445,10 @@
       mood: "Depressivity is a trait that raises the chance of depressive episodes; episode symptoms such as poor concentration come and go and are not part of the trait (p. 893)",
       criteria: [
         ["Type", "A dimensional trait taxonomy, Table 3; not a diagnosis (pp. 882, 899)."],
-        ["Negative Affectivity (vs Emotional Stability)", "Emotional lability (fast, strong mood shifts); anxiousness (nervous worry, fear of uncertainty); separation insecurity (dread of being left, with fear of over-dependence); submissiveness (yielding to others to stay safe or liked); hostility (frequent anger and spite; “see also” Antagonism); perseveration (keeping on after a behavior stops working). Cross-listed: depressivity and suspiciousness (defined under Detachment) and restricted affectivity “(lack of)” (p. 899; condensed in the app’s words)."],
+        ["Negative Affectivity (vs Emotional Stability)", "Emotional lability (fast, strong mood shifts); anxiousness (nervous worry, fear of uncertainty); separation insecurity (dread of being left alone, from doubt that one can look after oneself); submissiveness (going along with others’ wishes even against one’s own interests); hostility (frequent anger and spite; “see also” Antagonism); perseveration (keeping on after a behavior stops working). Cross-listed: depressivity and suspiciousness (defined under Detachment) and restricted affectivity “(lack of)” (p. 899; condensed in the app’s words)."],
         ["Detachment (vs Extraversion)", "Withdrawal (prefers solitude, starts little contact); intimacy avoidance (keeps away from close, romantic or sexual ties); anhedonia (little pleasure, interest or energy); depressivity (low, hopeless, ashamed, with possible thoughts of suicide); restricted affectivity (flat, cool response); suspiciousness (expects ill will, doubts loyalty) (p. 899; condensed)."],
         ["Antagonism (vs Agreeableness)", "Manipulativeness (steering others by charm or subterfuge); deceitfulness (lies, fraud, embellishment); grandiosity (entitlement, superiority); attention seeking (wanting notice and admiration); callousness (no concern or remorse for harm). Hostility cross-listed (p. 900; condensed)."],
-        ["Disinhibition (vs Conscientiousness)", "Irresponsibility (ignoring obligations and promises); impulsivity (acting in the moment without a plan); distractibility (trouble keeping focus on tasks); risk taking (needless danger, boredom-driven); rigid perfectionism “(lack of)”, listed here with the table’s note linking it to low levels of the domain (p. 900; condensed)."],
+        ["Disinhibition (vs Conscientiousness)", "Irresponsibility (ignoring obligations and promises); impulsivity (acting in the moment without a plan); distractibility (trouble keeping focus on tasks); risk taking (needless danger, denial of personal danger, reckless pursuit of goals); rigid perfectionism “(lack of)”, listed here with the table’s note linking it to low levels of the domain (p. 900; condensed)."],
         ["Psychoticism (vs Lucidity)", "Unusual beliefs and experiences (e.g., believed special abilities such as mind reading, hallucination-like experiences); eccentricity (odd behavior, appearance or speech); cognitive and perceptual dysregulation (odd thinking and sensations, depersonalization, derealization and other dissociative experiences, sleep–wake mixed experiences) (p. 901; condensed)."],
         ["Count", "25 facets (p. 882): 6 Negative Affectivity + 6 Detachment + 5 Antagonism + 5 Disinhibition + 3 Psychoticism, counting each facet once where it is defined (app count of Table 3)."],
         ["Domains vs facets", "Domains are broad; facets are specific; facets that tend to occur together form a domain (withdrawal and anhedonia in Detachment). The broad domains are relatively consistent across cultures (p. 893)."],
@@ -471,7 +471,7 @@
       differential: [
         { id: "lpfs", how: "Criterion A rates functioning; the trait model rates Criterion B. Both are needed for a diagnosis in the model, and each contributes independently (pp. 882, 894)." },
         { id: "ampd-pd-ts", how: "The domains and facets the clinician records for PD-TS are its specifiers (p. 890)." },
-        { id: "ampd-borderline", how: "Uses 7 facets across Negative Affectivity, Disinhibition and Antagonism, the widest spread of any set (p. 886; app count)." },
+        { id: "ampd-borderline", how: "Uses 7 facets across Negative Affectivity, Disinhibition and Antagonism, one of two sets drawing on three domains, the other being OCPD (pp. 886–888; app count)." },
         { id: "ampd-schizotypal", how: "The only set that draws on Psychoticism (p. 889; app count)." },
         { id: "mdd", how: "Depressivity (trait) differs from a depressive episode (state); the trait raises the likelihood of episodes (p. 893)." },
         { id: "level1-adult", how: "Ch 23’s personality functioning domain is a screen; the PID-5 measures the 25 facets (p. 894; app comparison)." }
@@ -486,7 +486,7 @@
       ],
       cmp: { symptoms: "Five domains with opposite poles, 25 facets; rated by interview and/or PID-5 self- and informant-report", exclusions: "Not a diagnosis; traits alone do not meet Criterion A", prevalence: "Not applicable; traits are dimensional in everyone", course: "Relatively consistent but can change with maturation and life experience (p. 892)" },
       clues: [["Five domains", "Negative Affectivity, Detachment, Antagonism, Disinhibition, Psychoticism"], ["Poles", "Emotional Stability, Extraversion, Agreeableness, Conscientiousness, Lucidity"], ["Recording (app guidance)", "In the formulation: the elevated domains and facets"]],
-      updates: measureUpd("personality trait model", "Outside the DSM: the PID-5 forms are posted by the APA for clinical and research use (full 220 items; brief 25 items); the 100-item short form is from Maples et al. 2015. Describe them; never copy items (research file of November 2, 2026).")
+      updates: measureUpd("personality trait model", "Outside the DSM: the PID-5 forms are listed on the APA’s online assessment-measures page (full 220 items; brief 25 items); the 100-item short form is from Maples et al. 2015. Describe them; never copy items (research file of November 2, 2026).")
     }
   ]);
 

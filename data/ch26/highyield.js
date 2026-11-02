@@ -47,7 +47,7 @@ SP.add("ch26", "highYield", [
   { id: "hy26-domains", topic: "Traits, domains and poles", items: [
     "A trait is a disposition to feel, perceive, act and think in fairly consistent ways **across time and situations** (p. 892).",
     "Group named as generally higher on trait impulsivity than older adults: **teenagers** (p. 892).",
-    "The manual’s two-pole example: callousness versus **kind-heartedness** (p. 892).",
+    "The manual’s two-pole example: callousness versus **kind-heartedness** (pp. 892–893).",
     "Despite cross-cultural variation in facets, the broad domains are **relatively consistent** across cultures (p. 893).",
     "The adaptive pole of Negative Affectivity: **Emotional Stability** (pp. 890, 893).",
     "The adaptive pole of Detachment: **Extraversion** (pp. 890, 893).",
@@ -105,7 +105,7 @@ SP.add("ch26", "highYield", [
   { id: "hy26-assessment", topic: "Traits vs symptoms, assessment and clinical utility", items: [
     "A single unusual act by a rarely impulsive person is a **behavior**, not a trait (p. 893).",
     "Symptoms, unlike traits, tend to **wax and wane** (p. 893).",
-    "Poor concentration during a depressive episode is **not part of** the depressivity trait definition (p. 893).",
+    "Poor concentration during a depressive episode is **not part of** the depressivity trait definition (pp. 893–894).",
     "The manual’s analogy for reviewing all five domains: the medical **review of systems** (p. 894).",
     "The instrument that puts the trait model into practice: the **Personality Inventory for DSM-5 (PID-5)** (p. 894).",
     "Besides the self-report version, the PID-5 has an **informant-report** form, for example completed by a spouse (p. 894).",
@@ -118,7 +118,7 @@ SP.add("ch26", "highYield", [
     "Schizotypal features present only during schizophrenia do **not** earn a personality disorder diagnosis (p. 883).",
     "Personality disorders **can** be diagnosed alongside another disorder such as major depressive disorder (p. 883).",
     "The diagnosis line carries the **Section II** personality disorder and its ICD-10-CM code; the model’s profile goes in the formulation (app guidance).",
-    "A presentation recorded as PD-TS that fits no Section II type is charted as other specified personality disorder, **F60.89** (app guidance; Ch 18).",
+    "A presentation recorded as PD-TS that fits no Section II type is charted as other specified personality disorder, **F60.89**, with the reason stated, or as unspecified personality disorder, F60.9 (app guidance; Ch 18; Section I, pp. 22–23).",
     "Section II borderline personality disorder requires **5 of 9** criteria, a common distractor here (Ch 18, p. 752).",
     "Section II antisocial personality disorder requires **3 of 7** with conduct disorder before age 15 (Ch 18, p. 748).",
     "Change to the alternative model from DSM-5 to DSM-5-TR: **none**, per the APA’s Section III summary (outside the DSM; app comparison)."
@@ -128,7 +128,7 @@ SP.add("ch26", "highYield", [
     "ICD-11 trait domain with no AMPD equivalent that captures obsessive-compulsive features: **anankastia** (ICD-11, outside the DSM).",
     "ICD-11 counterpart of Antagonism: **dissociality** (ICD-11, outside the DSM).",
     "ICD-11 has no named types, only a **borderline pattern** qualifier (6D11.5) (ICD-11, outside the DSM).",
-    "Number of items in the full PID-5: **220** (Krueger et al. 2012; outside the DSM).",
+    "Number of items in the full PID-5: **220** (APA online assessment measures; outside the DSM).",
     "Number of items in the PID-5 brief form, which covers the five domains only: **25** (APA; outside the DSM)."
   ] }
 ]);

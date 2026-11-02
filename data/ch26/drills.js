@@ -62,7 +62,7 @@
         { label: "Chart line", options: ["F60.89 Other specified personality disorder", "F40.10 Social anxiety disorder", "F60.1 Schizoid personality disorder", "F60.6 Avoidant personality disorder", "F21 Schizotypal personality disorder"], answer: 3 }
       ],
       line: "**F60.6** Avoidant personality disorder. Formulation: personality functioning **Level 2 (moderate)**; elevated anxiousness, withdrawal, anhedonia, intimacy avoidance (app guidance)",
-      why: "Identity (low self-esteem, shame, feels inferior) and intimacy (will not get involved unless sure of being liked) are impaired; self-direction and empathy are not described as impaired: **two** areas, which is enough (pp. 885, 891). B needs **3 of 4** with **anxiousness** among them; he has all four (pp. 885–886). Schizoid-like PD-TS would lack the anxious wish to be accepted (app guidance). The chart carries the Section II code (Ch 18, p. 763; app guidance); if social anxiety disorder were also present, it would be recorded in its own right (app guidance)."
+      why: "Identity (low self-esteem, shame, feels inferior) and intimacy (will not get involved unless sure of being liked) are impaired; self-direction and empathy are not described as impaired: **two** areas, which is enough (pp. 885, 891). B needs **3 of 4** with **anxiousness** among them; he has all four (pp. 885–886). Schizoid-like PD-TS would lack the anxious wish to be accepted (app guidance). The chart carries the Section II code (Ch 18, p. 764; app guidance); if social anxiety disorder were also present, it would be recorded in its own right (app guidance)."
     },
     {
       id: "w26-05", tag: "Obsessive-compulsive",
@@ -86,7 +86,7 @@
         { label: "When could a personality disorder be added", options: ["Never once schizophrenia is diagnosed", "If the traits clearly predated the illness (Section II adds “premorbid”)", "After 6 months of illness", "When the PID-5 shows Psychoticism", "Whenever four schizotypal traits are present"], answer: 1 }
       ],
       line: "**F20.9** Schizophrenia. Formulation: odd, suspicious and detached traits seen only during the psychotic illness; no personality disorder (app guidance)",
-      why: "A personality disorder is **not** diagnosed when its features are clearly an expression of another mental disorder, and the manual’s own example is schizotypal features present **only in the context of schizophrenia** (Criterion E, p. 883). His premorbid personality was ordinary, so the pattern also fails the stability and onset requirement (Criterion D, p. 881). In Section II, schizotypal PD whose criteria were met **before** schizophrenia began is recorded with “**premorbid**” (Ch 18, p. 744)."
+      why: "A personality disorder is **not** diagnosed when its features are clearly an expression of another mental disorder, and the manual’s own example is schizotypal features present **only in the context of schizophrenia** (Criterion E, p. 883). In Section II, schizotypal PD whose criteria were met **before** schizophrenia began is recorded with “**premorbid**” (Ch 18, p. 745)."
     },
     {
       id: "w26-07", tag: "Narcissistic, vulnerable",
@@ -98,7 +98,7 @@
         { label: "Chart line", options: ["F32.1 Major depressive disorder", "F60.6 Avoidant personality disorder", "F60.89 Other specified personality disorder", "F60.4 Histrionic personality disorder", "F60.81 Narcissistic personality disorder"], answer: 4 }
       ],
       line: "**F60.81** Narcissistic personality disorder. Formulation: personality functioning **Level 2 (moderate)**; elevated grandiosity and attention seeking, with depressivity and anxiousness specified (vulnerable presentation) (app guidance)",
-      why: "All four areas are impaired (pp. 887–888). B requires **both** grandiosity and attention seeking; entitlement may be **overt or covert**, so his quiet sense of being owed still counts (pp. 887–888). Depressivity and anxiousness are not criteria but can be specified for a more **vulnerable** presentation; manipulativeness, deceitfulness and callousness would be specified for “malignant” narcissism (p. 888). The chart carries Section II F60.81 (Ch 18, p. 760; app guidance)."
+      why: "All four areas are impaired (p. 887). B requires **both** grandiosity and attention seeking; entitlement may be **overt or covert**, so his quiet sense of being owed still counts (pp. 887–888). Depressivity and anxiousness are not criteria but can be specified for a more **vulnerable** presentation; manipulativeness, deceitfulness and callousness would be specified for “malignant” narcissism (p. 888). The chart carries Section II F60.81 (Ch 18, p. 760; app guidance)."
     },
     {
       id: "w26-08", tag: "Dependent-like, trait specified",
@@ -253,7 +253,7 @@
       items: [
         ["Elevated submissiveness on interview and her sister’s report", true, "A Negative Affectivity facet; PD-TS considers all five domains (p. 890)."],
         ["Elevated separation insecurity", true, "Negative Affectivity facet (p. 899)."],
-        ["Poor concentration during a depressive episode last year", false, "An episode **symptom**, not a trait (p. 893)."],
+        ["Poor concentration during a depressive episode last year", false, "An episode **symptom**, not a trait (pp. 893–894)."],
         ["One impulsive large purchase after a lotto win", false, "A single **behavior**, not a trait (p. 893)."],
         ["Distractibility that has been steady for years", true, "A Disinhibition facet, used by none of the six sets but valid for PD-TS (pp. 890, 900)."]
       ],

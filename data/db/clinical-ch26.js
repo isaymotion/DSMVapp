@@ -12,7 +12,7 @@
   var ASOF = "November 2026";
   var SEC3 = "Section III alternative model: these sets are an **alternative**, not the official criteria (p. 881). Chart the **Section II personality disorder and its ICD-10-CM code** (Ch 18) on the diagnosis line, and write the **LPFS level and trait profile** in the formulation; which code to chart is app guidance, since the chapter gives no coding instruction.";
   var CRISIS = "When thoughts of suicide or self-harming behavior under distress come up, ask about them directly and plan for safety; the Philippine **NCMH Crisis Hotline** is **1553** (toll-free from landlines) or **1800-1888-1553**; **0919-057-1553** (Smart/TNT); **0917-899-8727** and **0966-351-4518** (Globe/TM) (app guidance; confirm current numbers before giving them out).";
-  var NOAPPROVED = "No medication is FDA-approved for any personality disorder as of November 2026; medicines treat comorbid disorders or specific target symptoms, time-limited and alongside psychotherapy (outside the DSM; see the Ch 18 treatment bridge).";
+  var NOAPPROVED = "Medication: for borderline personality disorder the APA 2024 guideline found no evidence that any medicine treats the core symptoms and advises that any psychotropic be time-limited, aimed at a measurable target symptom and adjunctive to psychotherapy; a 2022 Cochrane review found no drug effective for borderline pathology itself (outside the DSM). Extending this to other personality disorders is app guidance; not verified in this session.";
   var APA24 = "APA practice guideline for borderline personality disorder (December 2024): a **structured psychotherapy** with literature support that targets the core features, with **no single gold-standard** therapy; no evidence that any medication treats the core symptoms; any psychotropic should be **time-limited, aimed at a measurable target and adjunctive** to psychotherapy, with medications reconciled at least **every 6 months** (outside the DSM).";
   var COCH20 = "Cochrane psychotherapy review (Storebø et al. 2020; 75 trials): **DBT** and **MBT** were the most studied; DBT reduced severity and self-harm and improved functioning versus usual care, MBT reduced self-harm and suicidality, all at **low certainty** (outside the DSM).";
   var COCH22 = "Cochrane pharmacotherapy review (Stoffers-Winterling et al. 2022; 46 trials): **no clear benefit** over placebo on severity, self-harm, suicide-related outcomes or functioning (mostly very low certainty) (outside the DSM).";
@@ -65,12 +65,12 @@
         ["C–G and age", "“Has this been true since your teens, everywhere, and also when sober and not in a high mood?”", "At least 18 years old (p. 885); C–G apply to all six PDs (p. 884); exclude behavior only during substance use or manic episodes (app guidance)."],
         ["Specifier: psychopathic features", "Notice the style: calm under threat, socially bold, comfortable being the centre of attention.", "Specify with psychopathic features for low anxiousness and low withdrawal with high attention seeking; this bold style may mask fraudulence (p. 885). The LPFS level can also be specified (p. 885)."]
       ],
-      tx: care("no treatment has strong evidence for the core disorder; focus on **risk management**, **comorbid substance use and ADHD**, and structured cognitive-behavioral programs for aggression and offending (outside the DSM; see the Ch 18 treatment bridge).", [
+      tx: care("focus on **risk management** and on treating comorbid disorders such as substance use; the evidence for structured programs aimed at aggression and offending was not reviewed for this chapter (app guidance; not verified in this session; see the Ch 18 treatment bridge).", [
         "Assess **violence risk** (weapons, partners, children) and suicide risk at each contact (app guidance).",
         "A **psychopathic features** specifier (low anxiousness, low withdrawal, high attention seeking; p. 885) warns that a confident, engaging manner may hide deceit; rely on records and informants (app guidance).",
         SEVERITY,
         "**Traits set targets**: impulsivity and risk taking for safety planning and substance treatment; hostility for anger work; deceitfulness for collateral checks and careful prescribing (app guidance).",
-        NOAPPROVED + " Avoid benzodiazepines and other misusable drugs (outside the DSM).",
+        NOAPPROVED + " Prescribe drugs that can be misused with care (app guidance; not verified in this session).",
         RERATE
       ], [["Impulse control disorders and violence", "c/ch13/guide/s13-impulse"]])
     },
@@ -78,17 +78,17 @@
       id: "ampd-avoidant",
       ask: [
         ["A Identity", "“How do you see yourself next to other people? Do you often feel ashamed or not good enough?”", "Low self-esteem, a view of oneself as inept, unappealing or inferior, strong shame (p. 885)."],
-        ["A Self-direction", "“Have you held back from a course, a job or a promotion because it meant meeting new people?”", "Standards set unrealistically high, with reluctance to pursue goals, take risks or try activities that involve people (p. 885)."],
+        ["A Self-direction", "“Have you held back from a course, a job or a promotion because it meant meeting new people?”", "Unrealistic standards, with reluctance to pursue goals, take risks or try activities that involve people (p. 885)."],
         ["A Empathy", "“When people look at you or talk to you, what do you think they are thinking about you?”", "Preoccupied with and sensitive to criticism or rejection; assumes others judge negatively (p. 885)."],
         ["A Intimacy", "“Would you like closer friends or a partner? What holds you back?”", "Tagalog aside: “Gusto mo bang magkaroon ng mas malapit na kaibigan? Ano ang pumipigil sa iyo?” Holds back unless sure of being liked; fear of shame or ridicule limits mutuality (p. 885). Two or more A areas (p. 885)."],
-        ["B1 Anxiousness (required)", "“How nervous do you get before you meet people or speak up? What are you afraid will happen?”", "Strong nervousness or tension, often about social situations and embarrassment. One of the three must be anxiousness (p. 885)."],
+        ["B1 Anxiousness (required)", "“How nervous do you get before you meet people or speak up? What are you afraid will happen?”", "Strong nervousness or tension, often about social situations and embarrassment. Three or more of the four B traits, one of which must be anxiousness (p. 885)."],
         ["B2 Withdrawal (Detachment)", "“Do you choose to be alone? Do you stay quiet in groups?”", "Reticence and avoidance of social contact and activity (pp. 885, 899)."],
         ["B3 Anhedonia (Detachment)", "“What do you still enjoy? Do you have the energy to do things for fun?”", "Little enjoyment of, interest in or energy for life (pp. 886, 899)."],
         ["B4 Intimacy avoidance (Detachment)", "“Have you avoided dating or close relationships, even when you were interested?”", "Avoidance of close or romantic ties and sexual relationships (pp. 886, 899). Three or more of the four B traits (p. 885)."],
         ["C–G", "“Has this been true since your teens, in every setting? Are you shy mostly in one situation, like public speaking?”", "C–G apply (p. 884). Fear tied to one performance situation points to social anxiety disorder (app guidance)."],
         ["Specifiers", "Note other negative-affect traits: low mood, fear of losing people, giving in to others, mistrust, anger.", "Considerable heterogeneity; depressivity, separation insecurity, submissiveness, suspiciousness or hostility can be specified, and so can the LPFS level (p. 886)."]
       ],
-      tx: care("**CBT** (individual or group) with graded exposure, social skills practice and work on beliefs of inferiority; medicines used for social anxiety disorder can help the anxiety component (outside the DSM; see the Ch 18 treatment bridge).", [
+      tx: care("psychotherapy that targets avoidance, social skills and beliefs of inferiority, with treatment of any comorbid social anxiety or depressive disorder by its own guidance (app guidance; not verified in this session; see the Ch 18 treatment bridge).", [
         "**Traits set targets**: anxiousness points to comorbid social anxiety or other anxiety disorders; anhedonia or a specified depressivity points to depression to treat (app guidance).",
         SEVERITY,
         "Expect avoidance of the therapy itself: missed visits, quiet sessions, fear of being judged by the clinician; name it early and agree on small steps (app guidance).",
@@ -113,7 +113,7 @@
         ["C–G", "“Has this been your pattern since your teens, in every setting, and also between mood episodes and when not using?”", "C–G apply (p. 884); screen for bipolar episodes, PTSD and substance use (app guidance)."],
         ["Specifiers", "“Under stress, do you hear things, feel watched, or have odd experiences that pass when you calm down?”", "Psychoticism traits such as cognitive and perceptual dysregulation are not criteria but can be specified; so can the LPFS level (p. 887)."]
       ],
-      tx: care("a **structured, evidence-based psychotherapy** that targets the core features (DBT, MBT and other structured approaches), a written **crisis plan**, psychoeducation, and treatment of comorbid depression, PTSD, substance use and eating disorders (outside the DSM; see the Ch 18 treatment bridge).", [
+      tx: care("a **structured psychotherapy** with literature support that targets the core features (DBT and MBT are the most studied), with comorbid disorders treated by their own guidance (outside the DSM; APA 2024, Cochrane 2020, NICE CG78 as summarized). A written crisis plan and psychoeducation are app guidance; not verified in this session (see the Ch 18 treatment bridge).", [
         APA24,
         COCH20,
         COCH22,
@@ -136,10 +136,10 @@
         ["C–G", "“Has this been true since your teens, everywhere? Any periods of very high mood and little sleep?”", "C–G apply (p. 884); exclude grandiosity confined to hypomanic or manic episodes (app guidance)."],
         ["Specifiers", "Note manipulation, deceit or callousness (“malignant” picture), or low mood and anxiety (“vulnerable” picture).", "Other Antagonism traits can be specified for more pervasive antagonism; depressivity or anxiousness for vulnerable presentations; the LPFS level too (p. 888). Both B traits are still required (app guidance)."]
       ],
-      tx: care("psychotherapy aimed at **self-esteem regulation** and empathy (transference-focused, mentalization-based or schema approaches are used), expecting ruptures and addressing them directly; treat comorbid depression and substance use (outside the DSM; see the Ch 18 treatment bridge).", [
+      tx: care("psychotherapy aimed at **self-esteem regulation** and empathy, expecting ruptures and addressing them directly, and treatment of comorbid depression and substance use (app guidance; not verified in this session; see the Ch 18 treatment bridge).", [
         "**Traits set targets**: specified depressivity or anxiousness (a vulnerable picture) points to comorbid mood or anxiety disorders; specified callousness or deceitfulness (a malignant picture) calls for risk review and firm limits (p. 888; app guidance).",
         SEVERITY,
-        "Assess suicide risk after failures, losses or humiliation (outside the DSM; Ch 18 treatment bridge).",
+        "Assess suicide risk after failures, losses or humiliation (app guidance; not verified in this session).",
         NOAPPROVED,
         RERATE
       ], [])
@@ -151,14 +151,14 @@
         ["A Self-direction", "“Do you miss deadlines because the work is not yet good enough? Are your standards higher than other people’s?”", "Rigid, very high standards that block finishing tasks; overly conscientious and moralistic (p. 888)."],
         ["A Empathy", "“When coworkers or family do things differently from you, how do you understand why?”", "Trouble understanding and appreciating others’ ideas, feelings or behavior (p. 888)."],
         ["A Intimacy", "“How do work and your rules affect your marriage, family and friends?”", "Tagalog aside: “Naaapektuhan ba ng trabaho at mga patakaran mo ang pamilya mo?” Relationships come after work; rigidity and stubbornness strain them (p. 888). Two or more A areas (p. 888)."],
-        ["B1 Rigid perfectionism (required)", "“Must things be done one right way, every detail perfect, even if that makes you late?”", "An aspect of extreme Conscientiousness, the opposite pole of Disinhibition. One of the three must be rigid perfectionism (p. 888)."],
+        ["B1 Rigid perfectionism (required)", "“Must things be done one right way, every detail perfect, even if that makes you late?”", "An aspect of extreme Conscientiousness, the opposite pole of Disinhibition. Three or more of the four B traits, one of which must be rigid perfectionism (p. 888)."],
         ["B2 Perseveration (NA)", "“Do you keep at a task the same way long after it has stopped working?”", "Persistence after the approach has failed (pp. 888, 899)."],
         ["B3 Intimacy avoidance (Detachment)", "“Do you keep away from close or romantic relationships?”", "pp. 888, 899."],
         ["B4 Restricted affectivity (Detachment)", "Observe, and ask: “Do people tell you that you seem cold or hard to read?”", "Little emotional reaction or expression (pp. 888, 899). Three or more of the four B traits (p. 888)."],
         ["C–G", "“Has this been true since your teens? Do you have unwanted thoughts you neutralize with rituals? Are these standards shared by your church or community?”", "C–G apply (p. 884); true obsessions point to OCD; shared religious or cultural standards are weighed under G (p. 881; app guidance)."],
         ["Specifiers", "Note worry and tension, or other traits that stand out.", "Anxiousness, for example, can be specified, and so can the LPFS level (p. 889)."]
       ],
-      tx: care("**CBT** targeting perfectionism, rigidity and work–life balance, or psychodynamic therapy; the traits are often felt as right, so start from the distress or costs they cause; treat comorbid OCD, depression and anxiety (outside the DSM; see the Ch 18 treatment bridge).", [
+      tx: care("psychotherapy targeting perfectionism, rigidity and work–life balance; the traits are often felt as right, so start from the distress or costs they cause; treat comorbid OCD, depression and anxiety by their own guidance (app guidance; not verified in this session; see the Ch 18 treatment bridge).", [
         "**Traits set targets**: rigid perfectionism and perseveration for flexibility work; restricted affectivity and intimacy avoidance for couple or family sessions; a specified anxiousness for comorbid anxiety (app guidance).",
         SEVERITY,
         NOAPPROVED,
@@ -181,10 +181,10 @@
         ["C–G", "“Have you been like this since your teens? Have you ever been sure of these beliefs for weeks, or heard voices clearly?”", "C–G apply (p. 884); not when present only within schizophrenia (p. 883)."],
         ["Specifiers", "Note low mood or worry.", "Negative Affectivity traits such as depressivity or anxiousness can be specified, and so can the LPFS level (pp. 889–890)."]
       ],
-      tx: care("**supportive psychotherapy**, social skills work and a predictable, respectful stance; follow up for emerging psychosis; low-dose antipsychotics are sometimes used for brief psychotic-like episodes (outside the DSM; see the Ch 2 treatment bridge).", [
+      tx: care("**supportive psychotherapy**, social skills work and a predictable, respectful stance, with follow-up for emerging psychosis (app guidance; not verified in this session; see the Ch 2 treatment bridge).", [
         "**Traits set targets**: unusual beliefs and cognitive or perceptual dysregulation for psychosis monitoring; suspiciousness for transparency in every step; withdrawal for gradual social contact (app guidance).",
         SEVERITY,
-        "Treat comorbid depression and anxiety, often the reason for the visit (outside the DSM).",
+        "Treat comorbid depression and anxiety, often the reason for the visit (app guidance).",
         NOAPPROVED,
         RERATE
       ], [])
@@ -197,10 +197,10 @@
         ["A Empathy", "“When people disagree with you, what do you think is going on for them?”", "p. 890."],
         ["A Intimacy", "“Who do you rely on, and who relies on you? How close are you?”", "p. 890."],
         ["B Negative Affectivity", "“How often do you feel nervous, low, angry or afraid of being left? Do you go along with others even when you don’t want to?”", "Tagalog aside: “Sumusunod ka ba kahit ayaw mo?” Submissiveness with separation insecurity suggests a dependent-like profile (app guidance). B considers all five domains, by domain or facet (p. 890)."],
-        ["B Detachment", "“Do you keep to yourself? Do things still give you pleasure? Do you trust people?”", "Withdrawal, anhedonia, intimacy avoidance, suspiciousness (pp. 890, 899). A schizoid-like profile leans here (p. 891; app reading)."],
+        ["B Detachment", "“Do you keep to yourself? Do things still give you pleasure? Do you trust people?”", "Withdrawal, anhedonia, intimacy avoidance, suspiciousness (pp. 890, 899). A schizoid-like profile leans here; suspiciousness with hostility (a Negative Affectivity facet) leans paranoid-like (p. 891; app reading)."],
         ["B Antagonism", "“Do you like to be the centre of attention? Do you bend the truth to get your way?”", "Attention seeking leans toward a histrionic-like profile (p. 891; app reading)."],
         ["B Disinhibition", "“Do you act on impulse, get easily distracted or let obligations slide? Or are you the opposite, rigidly perfect?”", "Either pole matters: rigid perfectionism is the lack-of pole (pp. 890, 900)."],
-        ["B Psychoticism", "“Any odd experiences, unusual beliefs or moments of feeling unreal?”", "Suspiciousness with hostility leans paranoid-like (p. 891; app reading)."],
+        ["B Psychoticism", "“Any odd experiences, unusual beliefs or moments of feeling unreal?”", "Unusual beliefs and experiences, eccentricity, cognitive and perceptual dysregulation (pp. 890, 901); these are criteria only in the schizotypal set (p. 889)."],
         ["C–G", "“Has this been your way since your teens, everywhere, and apart from episodes or substance use?”", "C–G apply (p. 884)."],
         ["Specifiers", "Write the profile: LPFS level plus each elevated domain or facet.", "No subtypes; the traits recorded for B are the specifiers (p. 890). PD-TS also covers subthreshold, mixed and atypical pictures and the paranoid, schizoid, histrionic and dependent types (p. 891)."]
       ],
@@ -263,7 +263,7 @@
       id: "trait-profile", title: "Describing personality dimensionally",
       intro: "Use this when a personality disorder is suspected, or when traits seem to colour another disorder. Make the **two determinations** (p. 882): rate the **current overall level** of self and interpersonal functioning on the [[dx:lpfs|LPFS]] (moderate, Level 2, or greater is needed for a PD; p. 882), then review **all five trait domains** like a review of systems (p. 894) with the [[dx:trait-model|trait model]], adding an informant. Check Criteria C–G (p. 881). A pattern that matches one of the six sets gets that PD; a substantially different, subthreshold or mixed one gets **PD-TS** (p. 891). The chart carries the **Section II diagnosis and code** (Ch 18), and the level and traits go in the formulation (app guidance). Even without a PD, the profile may inform treatment and course (p. 894).",
       ask: ["Is impairment present in at least two of identity, self-direction, empathy and intimacy, and at what overall level?", "Which of the five domains are elevated, by history, informant and any PID-5 data?", "Does the pattern go back to adolescence or early adulthood, and does it appear across settings?", "Is it better explained by another mental disorder, a substance, a medical condition, or the person’s developmental stage or culture?", "Does the profile match one of the six sets, or is it PD-TS?", "Which Section II diagnosis and code go on the chart?"],
-      mustNotMiss: ["**Thoughts of suicide and self-harming behavior under distress** (part of depressivity and impulsivity, p. 887): ask directly and plan for safety; NCMH Crisis Hotline 1553 (toll-free from landlines) or 1800-1888-1553; 0919-057-1553 (Smart/TNT); 0917-899-8727 and 0966-351-4518 (Globe/TM) (app guidance; confirm current numbers before giving them out).", "Features present **only during** a mood or psychotic episode or substance use (Criteria E–F, pp. 881, 883).", "A **new change** in personality in later life: look for a medical cause (Ch 18; app guidance).", "**Cultural norms** mistaken for traits (Criterion G, p. 881).", "Treating a **PID-5 printout** as a diagnosis; elevation needs clinical judgment (p. 894)."],
+      mustNotMiss: ["**Thoughts of suicide and self-harming behavior under distress** (part of depressivity and impulsivity, p. 887): ask directly and plan for safety; the Philippine **NCMH Crisis Hotline** is **1553** (toll-free from landlines) or **1800-1888-1553**; **0919-057-1553** (Smart/TNT); **0917-899-8727** and **0966-351-4518** (Globe/TM) (app guidance; confirm current numbers before giving them out).", "Features present **only during** a mood or psychotic episode or substance use (Criteria E–F, pp. 881, 883).", "A **new change** in personality in later life: look for a medical cause (Ch 18; app guidance).", "**Cultural norms** mistaken for traits (Criterion G, p. 881).", "Treating a **PID-5 printout** as a diagnosis; elevation needs clinical judgment (p. 894)."],
       helpers: ["ampd", "personality"],
       items: [
         { ch: "ch26", dx: "lpfs", when: "Rate current overall impairment 0–4 across identity, self-direction, empathy and intimacy; moderate or greater for a PD (pp. 882, 892)." },

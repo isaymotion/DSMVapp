@@ -100,7 +100,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "3.6% (NCS-R 0.6%, NESARC 3.6%)"], ["Severe AUD, prisons", ">70%"], ["Sex", "About 3:1 men"], ["Course", "Often remits by 40"]],
     risk: ["Child abuse or neglect, erratic parenting, inconsistent discipline.", "Childhood-onset conduct disorder (before 10) with ADHD.", "Familial; relatives have more substance use and somatization."],
     differential: [
-        { id: "ampd-antisocial", how: "Section III alternative model: the same name with a different threshold, 2 of 4 functioning areas plus 6 of 7 traits in Antagonism and Disinhibition at age 18, with a “with psychopathic features” specifier (pp. 884–885); a Section III proposal, not a chart diagnosis (app guidance)." },
+        { id: "ampd-antisocial", how: "Section III alternative model: the same name with a different threshold, 2 of 4 functioning areas plus 6 of 7 traits in Antagonism and Disinhibition at age 18 or older, with a “with psychopathic features” specifier (pp. 884–885); a Section III proposal, not a chart diagnosis (app guidance)." },
       { id: "conduct-disorder", how: "Under 18, or after 18 only if antisocial PD is not met." },
       { name: "Substance use disorder", how: "Antisocial acts only in service of use, without childhood onset." },
       { id: "bipolar-i", how: "Antisocial acts only during mania." },
