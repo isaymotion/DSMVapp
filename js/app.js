@@ -1,4 +1,6 @@
-/* DSM-5-TR Study Companion — app logic (no build step, no dependencies). */
+/* DSM-5-TR Study Companion — app logic (no build step, no dependencies).
+   The shell (theme, text size, back/forward with Alt+arrows and scroll restoration, docked menu / drawer,
+   tab bar, backup panel, language hook) follows the isaymotion starter; everything else is DSM-5-TR's own. */
 (function () {
   'use strict';
 
@@ -19,6 +21,24 @@
     del: function (k) { try { localStorage.removeItem(PREFIX + k); } catch (e) {} }
   };
 
+  /* ---------- app identity (data/app-meta.js) ---------- */
+  var META = window.APP_META || {};
+  var CHANGELOG = window.APP_CHANGELOG || [];
+  var APP_LINKS = window.APP_LINKS || [];
+
+  /* ---------- language: 'en' (default) or 'tl'. Shell UI strings live in data/strings.js ---------- */
+  var STRINGS = window.STRINGS || {};
+  var lang = store.get('lang', 'en') === 'tl' ? 'tl' : 'en';
+  function has(o, k) { return Object.prototype.hasOwnProperty.call(o, k); }
+  function t(key) {
+    var s = STRINGS[lang] && has(STRINGS[lang], key) ? STRINGS[lang][key] : null;
+    if (typeof s !== 'string' || !s) s = STRINGS.en && has(STRINGS.en, key) ? STRINGS.en[key] : null;
+    return typeof s === 'string' && s ? s : key;
+  }
+  function tf(key, vars) { return t(key).replace(/\{(\w+)\}/g, function (m, k) { return vars && has(vars, k) ? String(vars[k]) : m; }); }
+  function rich(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\[\[(.+?)\]\]/g, '<kbd>$1</kbd>'); }   // **bold** and [[key]] in strings
+  function locale() { return lang === 'tl' ? 'fil' : undefined; }
+
   /* ---------- modes ---------- */
   var MODES = [
     { key: 'guide', label: 'Study guide', short: 'Study guide', css: 'guide', blurb: 'The whole chapter, explained and organized for learning.' },
@@ -36,7 +56,7 @@
   function modeHref(ch, m) { return m.deck ? '#/c/' + ch.id + '/cards/' + m.key : '#/c/' + ch.id + '/' + m.key; }
   function chapterModes(ch) { return MODES.filter(function (m) { return m.need ? (ch[m.need] || []).length : !m.deck || (ch[m.key] || []).length; }); }
   var BOOK = SP.BOOK || 'DSM-5-TR (2022)';
-  var APP = 'DSM-5-TR Study Companion';
+  var APP = META.name || 'DSM-5-TR Study Companion';
 
   /* ---------- text helpers ---------- */
   function esc(s) {
@@ -222,6 +242,8 @@
 
   /* ---------- router ---------- */
   var view = { key: null, focus: null, cleanup: null };
+  /* Scroll positions per hash, restored only on back/forward (see the history section near the end). */
+  var scrollMemo = {}, scrollKey = location.hash || '#/', fromHistory = false, scrollPending = false, pendingRestore = null;
 
   function parts() {
     var h = location.hash.replace(/^#\/?/, '');
@@ -234,7 +256,11 @@
     view.key = key;
     view.focus = focusFn || null;
     main.innerHTML = html;
-    if (!(opts && opts.keepScroll)) window.scrollTo(0, 0);
+    if (!(opts && opts.keepScroll)) {
+      // Back/forward: put the page back where it was (once, for the first view this navigation renders).
+      if (pendingRestore !== null) { var y = pendingRestore; pendingRestore = null; window.scrollTo(0, y); requestAnimationFrame(function () { window.scrollTo(0, y); }); }
+      else window.scrollTo(0, 0);
+    }
     var modes = main.querySelector('.modes'), act = modes && modes.querySelector('.is-active');
     if (act && modes.scrollWidth > modes.clientWidth) modes.scrollLeft = act.offsetLeft - (modes.clientWidth - act.offsetWidth) / 2;
     buildNav();
@@ -243,6 +269,10 @@
   function route() {
     closeSuggest();
     closeDrawer();
+    scrollMemo[scrollKey] = window.scrollY;                 // the page we are leaving
+    scrollKey = location.hash || '#/';
+    pendingRestore = fromHistory && has(scrollMemo, scrollKey) ? scrollMemo[scrollKey] : null;
+    fromHistory = false;
     var p = parts();
     if (!p.length) return renderHome();
     if (SP.routes && SP.routes[p[0]]) return SP.routes[p[0]](p);
@@ -272,6 +302,7 @@
       case 'helpers': return p[1] ? renderHelper(p[1]) : renderHelpers();
       case 'teach': return p[1] === 'run' ? renderTeachRun() : renderTeachSetup();
       case 'whats-new': return renderNews();
+      case 'about': return renderAbout();
       case 'c':
         var ch = chapter(p[1]);
         if (!ch) return planned(p[1]) ? renderSoon(p[1]) : renderMissing();
@@ -310,16 +341,16 @@
      One menu for every screen size: a persistent sidebar on wide screens (collapsible) and a
      slide-in drawer on phones and tablets, opened from the menu button or the Chapters tab. */
   var LIBRARY = [
-    { key: 'dx', href: '#/dx', label: 'Disorder library', blurb: 'Every diagnosis: code, criteria in brief, time rules, specifiers, course and differential.', css: 'mech' },
-    { key: 'mnemonics', href: '#/mnemonics', label: 'Mnemonics', blurb: 'Every mnemonic in the app, letter by letter, with where it differs from the DSM, and a spell-it-out drill.', css: 'gloss' },
-    { key: 'complaints', href: '#/complaints', label: 'Start from the complaint', blurb: 'Pick what the patient presents with and see every diagnosis to consider, across chapters, with first questions and must-not-miss causes.', css: 'guide' },
-    { key: 'assess', href: '#/assess', label: 'Case tools', blurb: 'Assess a patient (substance use, schizophrenia, rating scales) and build a case presentation, ready to send to PsychInterview for slides.', css: 'clin' },
-    { key: 'helpers', href: '#/helpers', label: 'Diagnostic helpers', blurb: 'Step-by-step decision trees that tell look-alike diagnoses apart, with the reasoning shown.', css: 'case' },
-    { key: 'compare', href: '#/compare', label: 'Compare disorders', blurb: 'Two or three diagnoses side by side.', css: 'drug' },
-    { key: 'time', href: '#/time', label: 'Time criteria', blurb: 'Every duration rule in one table: the most tested numbers in the manual.', css: 'hy' },
-    { key: 'codes', href: '#/codes', label: 'ICD-10-CM codes', blurb: 'Codes and coding notes, filterable.', css: 'clin' },
-    { key: 'glossary', href: '#/glossary', label: 'Glossary', blurb: 'Terms defined in the chapters, tap-to-define everywhere.', css: 'gloss' },
-    { key: 'updates', href: '#/updates', label: 'DSM-5-TR changes & updates', blurb: 'What the text revision changed, and anything newer than the 2022 manual.', css: 'upd' }
+    { key: 'dx', tkey: 'nav.dx', href: '#/dx', label: 'Disorder library', blurb: 'Every diagnosis: code, criteria in brief, time rules, specifiers, course and differential.', css: 'mech' },
+    { key: 'mnemonics', tkey: 'nav.mnemonics', href: '#/mnemonics', label: 'Mnemonics', blurb: 'Every mnemonic in the app, letter by letter, with where it differs from the DSM, and a spell-it-out drill.', css: 'gloss' },
+    { key: 'complaints', tkey: 'nav.complaints', href: '#/complaints', label: 'Start from the complaint', blurb: 'Pick what the patient presents with and see every diagnosis to consider, across chapters, with first questions and must-not-miss causes.', css: 'guide' },
+    { key: 'assess', tkey: 'nav.assess', href: '#/assess', label: 'Case tools', blurb: 'Assess a patient (substance use, schizophrenia, rating scales) and build a case presentation, ready to send to PsychInterview for slides.', css: 'clin' },
+    { key: 'helpers', tkey: 'nav.helpers', href: '#/helpers', label: 'Diagnostic helpers', blurb: 'Step-by-step decision trees that tell look-alike diagnoses apart, with the reasoning shown.', css: 'case' },
+    { key: 'compare', tkey: 'nav.compare', href: '#/compare', label: 'Compare disorders', blurb: 'Two or three diagnoses side by side.', css: 'drug' },
+    { key: 'time', tkey: 'nav.time', href: '#/time', label: 'Time criteria', blurb: 'Every duration rule in one table: the most tested numbers in the manual.', css: 'hy' },
+    { key: 'codes', tkey: 'nav.codes', href: '#/codes', label: 'ICD-10-CM codes', blurb: 'Codes and coding notes, filterable.', css: 'clin' },
+    { key: 'glossary', tkey: 'nav.glossary', href: '#/glossary', label: 'Glossary', blurb: 'Terms defined in the chapters, tap-to-define everywhere.', css: 'gloss' },
+    { key: 'updates', tkey: 'nav.updates', href: '#/updates', label: 'DSM-5-TR changes & updates', blurb: 'What the text revision changed, and anything newer than the 2022 manual.', css: 'upd' }
   ];
   function navIcon(name) {
     var p = {
@@ -334,7 +365,10 @@
       today: 'M12 3v3 M12 18v3 M3 12h3 M18 12h3 M12 8a4 4 0 1 0 0 8a4 4 0 1 0 0-8z',
       progress: 'M4 20V10 M10 20V4 M16 20v-7 M21 20H3',
       timer: 'M12 7a7 7 0 1 0 0 14a7 7 0 1 0 0-14z M12 11v3 M10 3h4 M12 3v4',
-      notes: 'M5 4h10l4 4v12H5z M15 4v4h4 M8 12h8 M8 16h6'
+      notes: 'M5 4h10l4 4v12H5z M15 4v4h4 M8 12h8 M8 16h6',
+      save: 'M12 3v11m0 0l-4-4m4 4l4-4M5 15v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3',
+      info: 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18z M12 11v6 M12 7.5v.5',
+      external: 'M14 4h6v6 M20 4l-9 9 M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5'
     }[name];
     return '<svg class="nav-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="' + p + '" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   }
@@ -343,47 +377,72 @@
     if (!body) return;
     var cur = parts();
     var curCh = cur[0] === 'c' || cur[0] === 'soon' ? cur[1] : null;
+    var curMode = cur[0] === 'c' ? modeBy(cur[2] === 'cards' ? cur[3] : (cur[2] || 'guide')) : null;
     var chList = plannedChapters().map(function (m, i, arr) {
       var ch = m.ready ? chapter(m.id) : null;
-      var divider = sectionDivider(m, arr[i - 1]) ? '<li class="nav-sect" aria-hidden="true">Section III · Emerging measures and models</li>' : '';
+      var divider = sectionDivider(m, arr[i - 1]) ? '<li class="nav-sect" aria-hidden="true">' + esc(t('nav.section3')) + '</li>' : '';
       var open = curCh === m.id && ch;
       var sub = '';
       if (open) {
         var active = cur[2] === 'cards' ? cur[3] : (cur[2] || 'guide');
         sub = '<ul class="nav-modes">' + chapterModes(ch).map(function (md) {
           return '<li><a class="nav-mode c-' + md.css + (md.key === active ? ' is-active' : '') + '" href="' + modeHref(ch, md) + '"' + (md.key === active ? ' aria-current="page"' : '') + '>' + esc(md.short) + '</a></li>';
-        }).join('') + '<li><a class="nav-mode c-hy' + (active === 'handout' ? ' is-active' : '') + '" href="#/c/' + ch.id + '/handout">High-yield PDF</a></li><li><a class="nav-mode c-hy' + (active === 'summary' ? ' is-active' : '') + '" href="#/c/' + ch.id + '/summary">One-page summary</a></li></ul>';
+        }).join('') + '<li><a class="nav-mode c-hy' + (active === 'handout' ? ' is-active' : '') + '" href="#/c/' + ch.id + '/handout">' + esc(t('nav.highYieldPdf')) + '</a></li><li><a class="nav-mode c-hy' + (active === 'summary' ? ' is-active' : '') + '" href="#/c/' + ch.id + '/summary">' + esc(t('nav.summary')) + '</a></li></ul>';
       }
-      var href = m.ready ? '#/c/' + m.id + '/guide' : '#/soon/' + m.id;
+      // Keep the current study mode when jumping to another chapter (as the old ☰ panel did), if that chapter has it.
+      var keepMode = ch && curMode && chapterModes(ch).indexOf(curMode) > -1 ? curMode : null;
+      var href = m.ready ? (keepMode ? modeHref(ch, keepMode) : '#/c/' + m.id + '/guide') : '#/soon/' + m.id;
       return divider + '<li class="nav-ch' + (m.ready ? '' : ' is-soon') + (open ? ' is-open' : '') + (curCh === m.id ? ' is-current' : '') + '">' +
-        '<a href="' + href + '" data-navch="' + m.id + '"' + (curCh === m.id ? ' aria-current="true"' : '') + '><span class="nav-ch__n">' + m.number + '</span><span class="nav-ch__t">' + esc(m.short) + '</span>' + (m.ready ? '' : '<span class="nav-soon">Soon</span>') + '</a>' + sub + '</li>';
+        '<a href="' + href + '" data-navch="' + m.id + '"' + (curCh === m.id ? ' aria-current="true"' : '') + '><span class="nav-ch__n">' + m.number + '</span><span class="nav-ch__t"><span class="sr-only">' + esc(tf('nav.chapterN', { n: m.number })) + ': </span>' + esc(m.short) + '</span>' + (m.ready ? '' : '<span class="nav-soon">' + esc(t('nav.soon')) + '</span>') + '</a>' + sub + '</li>';
     }).join('');
     function item(href, key, label, icon, badge) {
-      return '<li><a class="nav-item" href="' + href + '" data-nav="' + key + '">' + navIcon(icon) + '<span>' + label + '</span>' + (badge ? '<span class="badge" data-badge="' + badge + '" hidden></span>' : '') + '</a></li>';
+      return '<li><a class="nav-item" href="' + href + '" data-nav="' + key + '">' + navIcon(icon) + '<span>' + esc(t(label)) + '</span>' + (badge ? '<span class="badge' + (badge === 'mistakes' ? ' badge--warn' : '') + '" data-badge="' + badge + '" hidden></span>' : '') + '</a></li>';
     }
-    body.innerHTML =
+    var html =
       '<div class="nav-group"><ul>' +
-        item('#/', 'home', 'Home', 'home') +
-        item('#/today', 'today', 'Today’s 10 minutes', 'today') +
-        item('#/review', 'review', 'Daily review', 'review', 'review') +
-        item('#/exam', 'exam', 'Board-style exam', 'exam') +
-        item('#/mistakes', 'mistakes', 'Mistakes', 'mistakes', 'mistakes') +
-        item('#/progress', 'progress', 'My progress', 'progress') +
-        item('#/time-drill', 'time-drill', 'Time-rule drill', 'timer') +
-        item('#/bookmarks', 'bookmarks', 'Bookmarks', 'bookmarks') +
-        item('#/notes', 'notes', 'Notes and highlights', 'notes') +
+        item('#/', 'home', 'nav.home', 'home') +
+        item('#/today', 'today', 'nav.today', 'today') +
+        item('#/review', 'review', 'nav.review', 'review', 'review') +
+        item('#/exam', 'exam', 'nav.exam', 'exam') +
+        item('#/mistakes', 'mistakes', 'nav.mistakes', 'mistakes', 'mistakes') +
+        item('#/progress', 'progress', 'nav.progress', 'progress') +
+        item('#/time-drill', 'time-drill', 'nav.timeDrill', 'timer') +
+        item('#/bookmarks', 'bookmarks', 'nav.bookmarks', 'bookmarks') +
+        item('#/notes', 'notes', 'nav.notes', 'notes') +
       '</ul></div>' +
-      '<div class="nav-group"><p class="nav-label">Chapters</p><ol class="nav-chapters">' + chList + '</ol></div>' +
-      '<div class="nav-group"><p class="nav-label"><a href="#/library" data-nav="library">Reference library</a></p><ul>' +
-        LIBRARY.map(function (l) { return '<li><a class="nav-item nav-item--lib c-' + l.css + '" href="' + l.href + '" data-nav="' + l.key + '"><span class="nav-dot"></span><span>' + esc(l.label) + '</span></a></li>'; }).join('') +
+      '<div class="nav-group"><p class="nav-label">' + esc(t('nav.chapters')) + '</p><ol class="nav-chapters">' + chList + '</ol></div>' +
+      '<div class="nav-group"><p class="nav-label"><a href="#/library" data-nav="library">' + esc(t('nav.library')) + '</a></p><ul>' +
+        LIBRARY.map(function (l) { return '<li><a class="nav-item nav-item--lib c-' + l.css + '" href="' + l.href + '" data-nav="' + l.key + '"><span class="nav-dot"></span><span>' + esc(l.tkey ? t(l.tkey) : l.label) + '</span></a></li>'; }).join('') +
       '</ul></div>' +
-      '<div class="nav-group"><p class="nav-label">For educators</p><ul>' +
-        item('#/teach', 'teach', 'Teaching mode', 'teach') +
-        item('#/print-all', 'print-all', 'All high-yield (PDF)', 'print') +
-        item('#/whats-new', 'whats-new', 'What’s new', 'news', 'news-nav') +
+      '<div class="nav-group"><p class="nav-label">' + esc(t('nav.educators')) + '</p><ul>' +
+        item('#/teach', 'teach', 'nav.teach', 'teach') +
+        item('#/print-all', 'print-all', 'nav.allHighYield', 'print') +
+      '</ul></div>' +
+      '<div class="nav-group"><p class="nav-label">' + esc(t('nav.app')) + '</p><ul>' +
+        item('#/backup', 'backup', 'nav.backup', 'save') +
+        item('#/whats-new', 'whats-new', 'nav.whatsNew', 'news', 'news-nav') +
+        item('#/about', 'about', 'nav.about', 'info') +
       '</ul></div>';
+    var others = otherApps();   // empty while window.SHOW_OTHER_APPS is false (data/app-meta.js)
+    if (others.length) {
+      html += '<div class="nav-group"><p class="nav-label">' + esc(t('nav.otherApps')) + '</p><ul>' + others.map(function (a) {
+        return '<li><a class="nav-item" href="' + esc(a.href) + '" target="_blank" rel="noopener">' + navIcon('external') + '<span>' + esc(a.name) + '</span><span class="sr-only"> ' + esc(t('nav.newTab')) + '</span></a></li>';
+      }).join('') + '</ul></div>';
+    }
+    body.innerHTML = html;
     markNav();
     updateNavBadges();
+  }
+  /* APP_LINKS minus this app's own entry, shown as the last menu group ("Other apps"). Menu only: never tiles,
+     search or tabs. Off until she is ready to interlink the apps: window.SHOW_OTHER_APPS in data/app-meta.js. */
+  function otherApps() {
+    if (!window.SHOW_OTHER_APPS) return [];
+    var me = String(META.repo || '').toLowerCase();
+    return APP_LINKS.filter(function (a) {
+      if (!a || !a.name || !/^https?:\/\//i.test(String(a.href || ''))) return false;
+      var slug = String(a.href).replace(/[?#].*$/, '').replace(/\/+$/, '').split('/').pop().toLowerCase();
+      return !me || slug !== me;
+    });
   }
   function markNav() {
     var p = parts()[0] || 'home';
@@ -405,7 +464,7 @@
   function updateNavBadges() {
     var s = CARD_LIST.length ? dueSummary('all') : null, n = s ? s.due + s.newToday : 0;
     document.querySelectorAll('[data-badge="review"], [data-badge="review-tab"]').forEach(function (b) { b.textContent = n; b.hidden = !n; });
-    var u = SP.changelog ? unseenNews().length : 0;
+    var u = CHANGELOG.length ? unseenNews().length : 0;
     document.querySelectorAll('[data-badge="news"], [data-badge="news-nav"]').forEach(function (b) { b.textContent = u; b.hidden = !u; });
     var k = mistakeKeys().length;
     document.querySelectorAll('[data-badge="mistakes"]').forEach(function (b) { b.textContent = k; b.hidden = !k; });
@@ -430,13 +489,14 @@
     backdrop.hidden = true;
     [menuBtn, tabCh].forEach(function (b) { if (b) b.setAttribute('aria-expanded', 'false'); });
   }
+  if (menuBtn) menuBtn.addEventListener('click', function () { openDrawer(false); });
   if (tabCh) tabCh.addEventListener('click', function () { if (document.body.classList.contains('drawer-open')) closeDrawer(); else openDrawer(true); });
   document.getElementById('nav-close').addEventListener('click', function () { closeDrawer(); if (menuBtn) menuBtn.focus(); });
   backdrop.addEventListener('click', closeDrawer);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && document.body.classList.contains('drawer-open')) { closeDrawer(); if (menuBtn) menuBtn.focus(); } });
   sidenav.addEventListener('click', function (e) { var a = e.target.closest('a'); if (a && a.getAttribute('href') === location.hash) closeDrawer(); });
   var collapseBtn = document.getElementById('collapse-btn');
-  function labelCollapse() { var c = document.documentElement.classList.contains('nav-collapsed'); collapseBtn.setAttribute('aria-label', c ? 'Show the sidebar' : 'Hide the sidebar'); collapseBtn.setAttribute('aria-expanded', String(!c)); }
+  function labelCollapse() { var c = document.documentElement.classList.contains('nav-collapsed'); collapseBtn.setAttribute('aria-label', t(c ? 'sidebar.show' : 'sidebar.hide')); collapseBtn.setAttribute('title', t(c ? 'sidebar.show' : 'sidebar.hide')); collapseBtn.setAttribute('aria-expanded', String(!c)); }
   collapseBtn.addEventListener('click', function () {
     var c = !document.documentElement.classList.contains('nav-collapsed');
     document.documentElement.classList.toggle('nav-collapsed', c);
@@ -1640,7 +1700,7 @@
      Builds a real PDF (two columns, page numbers, no browser header or footer) from the high-yield list.
      The type size is fitted automatically to the number of pages chosen. */
   var PAPER = { a4: { label: 'A4' }, letter: { label: 'Letter' } };
-  var ATTRIBUTION = 'App created by Isabella Navarro, MD. Latest version October 2026. isaymotion@gmail.com';
+  var ATTRIBUTION = META.attribution || 'App created by Isabella Navarro, MD. isaymotion@gmail.com';   // the exact line lives in data/app-meta.js
   var pdfLoading = null;
   function loadPdf() {
     if (window.SP_PDF && window.SP_PDF_FONTS) return Promise.resolve(window.SP_PDF);
@@ -2640,37 +2700,47 @@
   }
 
   /* ---------- what's new ---------- */
-  var NEWS_TYPES = { chapter: 'New chapter', feature: 'New feature', correction: 'Correction', update: 'Update' };
-  function newsList() { return (SP.changelog || []).slice().sort(function (a, b) { return b.id - a.id; }); }
-  function latestNewsId() { var l = newsList(); return l.length ? l[0].id : 0; }
-  function seenNewsId() {
+  var NEWS_TYPES = { chapter: 'New chapter', feature: 'New feature', correction: 'Correction', update: 'Update', content: 'Content' };
+  function verNum(v) {   // '12.0.0' -> 12000000; an old integer id n (earlier versions) -> n.0.0
+    if (typeof v === 'number' && isFinite(v)) return v * 1e6;
+    var m = /^(\d+)\.(\d+)\.(\d+)$/.exec(String(v == null ? '' : v));
+    return m ? (+m[1]) * 1e6 + (+m[2]) * 1e3 + (+m[3]) : -1;
+  }
+  function verStr(v) { return typeof v === 'number' ? v + '.0.0' : String(v); }
+  function newsList() { return CHANGELOG.slice().sort(function (a, b) { return verNum(b.version) - verNum(a.version); }); }
+  function latestNewsVersion() { var l = newsList(); return l.length ? String(l[0].version) : ''; }
+  /* seenNews: the newest version the resident has seen. Earlier versions stored the integer id of the newest entry;
+     ids became versions 1:1 (id n = n.0.0), so an old integer means "seen up to n.0.0". */
+  function seenNewsVersion() {
     var s = store.get('seenNews', null);
-    if (s != null) return s;
-    // First visit with this feature: returning residents (who already have progress) see everything
-    // after the original release as new; brand-new visitors start fully up to date.
+    if (typeof s === 'number' && isFinite(s)) { s = verStr(Math.floor(s)); store.set('seenNews', s); }
+    if (typeof s === 'string' && verNum(s) >= 0) return s;
+    // First visit with no record: returning residents (who already have progress) see everything after the
+    // original release as new; brand-new visitors start fully up to date.
     var returning = store.get('last', null) || Object.keys(SRS).length;
-    s = returning ? 1 : latestNewsId();
+    s = returning ? '1.0.0' : latestNewsVersion();
     store.set('seenNews', s);
     return s;
   }
-  function unseenNews() { var seen = seenNewsId(); return newsList().filter(function (e) { return e.id > seen; }); }
+  function unseenNews() { var seen = verNum(seenNewsVersion()); return newsList().filter(function (e) { return verNum(e.version) > seen; }); }
   function updatedChapters() {
     var out = {};
     unseenNews().forEach(function (e) { e.items.forEach(function (it) { if (it.ch) out[it.ch] = true; }); });
     return out;
   }
   function fmtNewsDate(d) {
-    try { var p = d.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' }); } catch (e) { return d; }
+    try { var p = d.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]).toLocaleDateString(locale(), { month: 'long', day: 'numeric', year: 'numeric' }); } catch (e) { return d; }
   }
   function renderNews() {
-    var seen = seenNewsId();
+    var seen = verNum(seenNewsVersion());
     var list = newsList();
     var html = '<div class="wrap page news">' +
       '<header class="page__head"><h1>What’s new</h1><p>New chapters, features and corrections, newest first. Entries marked <span class="news__new">New</span> were added since your last visit; corrections link straight to the changed content so you know what to revisit.</p></header>' +
       list.map(function (e) {
-        return '<article class="news__entry' + (e.id > seen ? ' is-new' : '') + '"><div class="news__date"><time datetime="' + esc(e.date) + '">' + fmtNewsDate(e.date) + '</time>' + (e.id > seen ? '<span class="news__new">New</span>' : '') + '</div>' +
+        var isNew = verNum(e.version) > seen;
+        return '<article class="news__entry' + (isNew ? ' is-new' : '') + '"><div class="news__date"><time datetime="' + esc(e.date) + '">' + fmtNewsDate(e.date) + '</time><span class="news__ver">' + esc(tf('news.version', { v: e.version })) + '</span>' + (isNew ? '<span class="news__new">' + esc(t('news.new')) + '</span>' : '') + '</div>' +
           '<div class="news__body"><h2>' + esc(e.title) + '</h2>' + (e.summary ? '<p>' + fmt(e.summary) + '</p>' : '') +
-          '<ul>' + e.items.map(function (it) {
+          '<ul>' + (e.items || []).map(function (it) {
             var ch = it.ch && chapter(it.ch);
             return '<li><span class="news__type news__type--' + esc(it.type) + '">' + esc(NEWS_TYPES[it.type] || 'Update') + '</span>' +
               '<span class="news__text">' + fmt(it.text) + (ch && plain(it.text).indexOf('Chapter ' + ch.number) < 0 ? ' <span class="muted">(Chapter ' + ch.number + ')</span>' : '') + (it.href ? ' <a href="' + esc(it.href) + '">' + esc(it.link || 'Open') + '</a>' : '') + '</span></li>';
@@ -2680,7 +2750,7 @@
       '</div>';
     setView('news', html);
     document.title = 'What’s new — ' + APP;
-    store.set('seenNews', latestNewsId());
+    store.set('seenNews', latestNewsVersion());
     updateNavBadges();
   }
 
@@ -2871,76 +2941,58 @@
     if (e.key === '/' && !(e.target.matches && e.target.matches('input, textarea, select'))) { e.preventDefault(); qInput.focus(); qInput.select(); }
   });
 
-  /* ---------- chapters and tools menu (the ☰ button, upper left, every screen size) ---------- */
+  /* ---------- theme: match device / light / dark (no data-theme attribute = match device) ----------
+     Earlier versions stored "light" or "dark" under the same key; it is read as the starting value. Nothing
+     saved now means match device (earlier versions defaulted to dark). */
+  var THEME_COLOR = { light: '#6E1C29', dark: '#200E11' };
+  var THEME_ICONS = {
+    auto: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>',
+    dark: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>',
+    light: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
+  };
+  var darkMQ = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  function getTheme() {
+    var cur = store.get('theme', 'auto');
+    return cur === 'light' || cur === 'dark' ? cur : 'auto';
+  }
+  function applyTheme(mode) {
+    var root = document.documentElement;
+    if (mode === 'light' || mode === 'dark') root.setAttribute('data-theme', mode); else root.removeAttribute('data-theme');
+    var dark = mode === 'dark' || (mode !== 'light' && darkMQ && darkMQ.matches);
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', dark ? THEME_COLOR.dark : THEME_COLOR.light);
+    var btn = document.getElementById('theme-btn');
+    if (btn) {
+      var label = tf('theme.label', { name: t('theme.' + mode) });
+      btn.innerHTML = THEME_ICONS[mode];
+      btn.setAttribute('aria-label', label);
+      btn.setAttribute('title', label);
+    }
+    var radios = document.querySelectorAll('input[name="theme"]');   // the Theme segment on the About page
+    for (var j = 0; j < radios.length; j++) radios[j].checked = radios[j].value === mode;
+  }
+  function setTheme(mode) {
+    if (mode !== 'light' && mode !== 'dark') mode = 'auto';
+    if (mode === 'auto') store.del('theme'); else store.set('theme', mode);
+    applyTheme(mode);
+  }
+  applyTheme(getTheme());
   (function () {
-    var btn = document.getElementById('menu-btn'), panel = document.getElementById('menu-panel'), scrim = document.getElementById('menu-scrim');
-    if (!btn || !panel) return;
-    function currentMode() {
-      var m = /^#\/c\/(ch\d+)\/(?:cards\/)?([\w-]+)/.exec(location.hash || '');
-      return m ? { ch: m[1], mode: modeBy(m[2]) } : { ch: null, mode: null };
-    }
-    function row(href, num, label, cur, extra) {
-      return '<a href="' + href + '"' + (cur ? ' class="is-current" aria-current="page"' : '') + '><span class="mn-num" aria-hidden="true">' + num + '</span><span class="mn-ch">' + label + '</span>' + (extra || '') + '</a>';
-    }
-    function build() {
-      var cur = currentMode(), mode = cur.mode || MODES[0];
-      var html = row('#/', '⌂', 'Home', location.hash === '' || location.hash === '#/') +
-        '<h2>Chapters · Section II</h2>' +
-        plannedChapters().map(function (m) {
-          var ch = m.ready ? chapter(m.id) : null;
-          var href = ch ? modeHref(ch, mode) : '#/soon/' + m.id;
-          return row(href, m.number, esc(m.short), m.id === cur.ch, m.ready ? '' : '<span class="mn-soon">Soon</span>');
-        }).join('') +
-        '<h2>Study tools</h2>' +
-        row('#/today', '', 'Today’s 10 minutes') +
-        row('#/review', '', 'Daily review', false, '<span class="badge" data-badge="review" hidden></span>') +
-        row('#/exam', '', 'Board-style exam') +
-        row('#/mistakes', '', 'Mistakes', false, '<span class="badge badge--warn" data-badge="mistakes" hidden></span>') +
-        row('#/progress', '', 'My progress') +
-        row('#/time-drill', '', 'Time-rule drill') +
-        row('#/bookmarks', '', 'Bookmarks') +
-        row('#/notes', '', 'Notes and highlights') +
-        '<h2>Reference library</h2>' + LIBRARY.map(function (l) { return row(l.href, '', esc(l.label)); }).join('') +
-        '<h2>For educators</h2>' + row('#/teach', '', 'Teaching mode') + row('#/print-all', '', 'All high-yield (PDF)') + row('#/whats-new', '', 'What’s new', false, '<span class="badge" data-badge="news" hidden></span>') +
-        row('#/backup', '', 'Back up progress');
-      panel.innerHTML = html;
-      updateNavBadges();
-    }
-    function open() {
-      build(); panel.hidden = false; scrim.hidden = false; btn.setAttribute('aria-expanded', 'true');
-      var c = panel.querySelector('.is-current'); if (c && c.scrollIntoView) c.scrollIntoView({ block: 'center' });
-      var f = panel.querySelector('a'); if (f) setTimeout(function () { (c || f).focus({ preventScroll: true }); }, 30);
-    }
-    function close(focus) {
-      if (panel.hidden) return;
-      panel.hidden = true; scrim.hidden = true; btn.setAttribute('aria-expanded', 'false');
-      if (focus) btn.focus();
-    }
-    btn.addEventListener('click', function () { closeDrawer(); if (panel.hidden) open(); else close(); });
-    scrim.addEventListener('click', function () { close(); });
-    panel.addEventListener('click', function (e) { var a = e.target.closest && e.target.closest('a'); if (a) { close(); if (a.getAttribute('href') === location.hash) route(); } });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(true); });
-    window.addEventListener('hashchange', function () { close(); });
+    var btn = document.getElementById('theme-btn');
+    if (btn) btn.addEventListener('click', function () {
+      var cur = document.documentElement.getAttribute('data-theme') || 'auto';
+      setTheme({ auto: 'light', light: 'dark', dark: 'auto' }[cur]);
+    });
+    function onDeviceChange() { applyTheme(document.documentElement.getAttribute('data-theme') || 'auto'); }
+    if (darkMQ) { if (darkMQ.addEventListener) darkMQ.addEventListener('change', onDeviceChange); else if (darkMQ.addListener) darkMQ.addListener(onDeviceChange); }
   })();
 
-  /* ---------- theme ---------- */
-  var themeBtn = document.getElementById('theme');
-  function currentTheme() {
-    var t = document.documentElement.getAttribute('data-theme');
-    if (t) return t;
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-  function labelTheme() { themeBtn.setAttribute('aria-label', currentTheme() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'); }
-  themeBtn.addEventListener('click', function () {
-    var next = currentTheme() === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    store.set('theme', next);
-    labelTheme();
-  });
-  labelTheme();
-
   /* ---------- text size ---------- */
-  var TEXT_SIZES = [['90', 'Smaller'], ['100', 'Default'], ['112.5', 'Larger'], ['125', 'Largest']];
+  var TEXT_SIZES = [['90', 'textsize.smaller'], ['100', 'textsize.default'], ['112.5', 'textsize.larger'], ['125', 'textsize.largest']];   // [value, strings key]
+  function syncSizeRadios(v) {   // the text-size segment on the About page
+    var radios = document.querySelectorAll('input[name="aboutTextSize"]');
+    for (var i = 0; i < radios.length; i++) radios[i].checked = radios[i].value === v;
+  }
   function applyTextSize(v) {
     var ok = TEXT_SIZES.some(function (t) { return t[0] === v; });
     document.documentElement.style.fontSize = ok && v !== '100' ? v + '%' : '';
@@ -2951,19 +3003,20 @@
     if (!btn) return;
     var panel = document.createElement('div');
     panel.className = 'text-size-panel'; panel.id = 'textSizePanel'; panel.hidden = true;
-    panel.setAttribute('role', 'dialog'); panel.setAttribute('aria-label', 'Text size');
+    panel.setAttribute('role', 'dialog'); panel.setAttribute('aria-label', t('textsize.button'));
     document.body.appendChild(panel);
     function build() {
-      var cur = store.get('textSize', '100');
-      panel.innerHTML = '<p class="text-size-panel__title">Text size</p><div class="seg">' + TEXT_SIZES.map(function (t, i) {
-        return '<label><input type="radio" name="ts" value="' + t[0] + '"' + (cur === t[0] ? ' checked' : '') + '><span style="font-size:' + (0.82 + i * 0.1).toFixed(2) + 'rem">' + t[1] + '</span></label>';
+      var cur = String(store.get('textSize', '100'));
+      panel.setAttribute('aria-label', t('textsize.button'));
+      panel.innerHTML = '<p class="text-size-panel__title">' + esc(t('textsize.title')) + '</p><div class="seg">' + TEXT_SIZES.map(function (z, i) {
+        return '<label><input type="radio" name="textSize" value="' + z[0] + '"' + (cur === z[0] ? ' checked' : '') + '><span style="font-size:' + (0.82 + i * 0.1).toFixed(2) + 'rem">' + esc(t(z[1])) + '</span></label>';
       }).join('') + '</div>';
     }
     function open() { build(); panel.hidden = false; btn.setAttribute('aria-expanded', 'true'); var f = panel.querySelector('input:checked'); if (f) f.focus(); }
     function close() { if (panel.hidden) return; panel.hidden = true; btn.setAttribute('aria-expanded', 'false'); }
     btn.addEventListener('click', function (e) { e.stopPropagation(); if (panel.hidden) open(); else close(); });
     panel.addEventListener('change', function (e) {
-      if (e.target.name === 'ts') { store.set('textSize', e.target.value); applyTextSize(e.target.value); }
+      if (e.target.name === 'textSize') { store.set('textSize', e.target.value); applyTextSize(e.target.value); syncSizeRadios(e.target.value); }
     });
     document.addEventListener('click', function (e) { if (!panel.hidden && !panel.contains(e.target) && e.target !== btn && !btn.contains(e.target)) close(); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !panel.hidden) { close(); btn.focus(); } });
@@ -3000,7 +3053,7 @@
   }
   function bkDate(iso) {
     var d = new Date(iso);
-    return isNaN(d) ? '' : d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' }) + ', ' + d.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' });
+    return isNaN(d) ? '' : d.toLocaleDateString(locale(), { year: 'numeric', month: 'short', day: 'numeric' }) + ', ' + d.toLocaleTimeString(locale(), { hour: 'numeric', minute: '2-digit' });
   }
   function bkStatus(msg, isErr) {
     var el = document.getElementById('bk-status'); if (!el) return;
@@ -3010,7 +3063,7 @@
     var meta = document.getElementById('bk-meta'), undo = document.getElementById('bk-undo');
     if (!meta) return;
     var last = store.get('lastBackup', null);
-    meta.textContent = 'On this device: ' + bkSummary(bkCollect()) + '. ' + (last ? 'Last exported ' + bkDate(last) + '.' : 'Not exported yet.');
+    meta.textContent = tf('backup.onDevice', { summary: bkSummary(bkCollect()) }) + ' ' + (last ? tf('backup.lastExported', { date: bkDate(last) }) : t('backup.notExported'));
     var hasUndo = false; try { hasUndo = !!localStorage.getItem(BK_UNDO); } catch (e) {}
     if (undo) undo.hidden = !hasUndo;
   }
@@ -3032,9 +3085,9 @@
     try { file = new File([json], name, { type: 'application/json' }); } catch (e) {}
     if (standalone && file && navigator.canShare && navigator.canShare({ files: [file] })) {
       // Installed apps on phones cannot always download files; the share sheet can save to Files or send it on.
-      navigator.share({ files: [file], title: 'DSM-5-TR progress backup' }).then(function () {
-        bkStatus('Backup ready: save it somewhere you can reach from your other device.'); bkPaint();
-      }).catch(function () { bkStatus('Export cancelled.'); });
+      navigator.share({ files: [file], title: tf('backup.shareTitle', { app: APP }) }).then(function () {
+        bkStatus(t('backup.shared')); bkPaint();
+      }).catch(function () { bkStatus(t('backup.exportCancelled')); });
       return;
     }
     var url = URL.createObjectURL(new Blob([json], { type: 'application/json' }));
@@ -3042,29 +3095,27 @@
     a.href = url; a.download = name; a.rel = 'noopener';
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
-    bkStatus('Saved ' + name + '. Move it to your other device and choose Import backup there.');
+    bkStatus(tf('backup.saved', { name: name }));
     bkPaint();
   }
   function bkImport(file) {
     if (!file) return;
     var reader = new FileReader();
-    reader.onerror = function () { bkStatus('That file could not be read.', true); };
+    reader.onerror = function () { bkStatus(t('backup.unreadable'), true); };
     reader.onload = function () {
       var p;
-      try { p = JSON.parse(reader.result); } catch (e) { bkStatus('That is not a DSM-5-TR Study Companion backup file.', true); return; }
+      try { p = JSON.parse(reader.result); } catch (e) { bkStatus(tf('backup.notBackup', { app: APP }), true); return; }
       var ok = p && p.app === BK_APP && p.data && typeof p.data === 'object' &&
         Object.keys(p.data).every(function (k) { return typeof p.data[k] === 'string' && k.length < 80; });
       if (ok) Object.keys(p.data).forEach(function (k) { try { JSON.parse(p.data[k]); } catch (e) { ok = false; } });
-      if (!ok) { bkStatus('That is not a DSM-5-TR Study Companion backup file.', true); return; }
-      var msg = 'Import the backup from ' + (bkDate(p.exported) || 'an unknown date') + '?\n\n' +
-        'Backup: ' + bkSummary(p.data) + '.\nThis device now: ' + bkSummary(bkCollect()) + '.\n\n' +
-        'Progress on this device will be replaced. You can undo this from the footer.';
-      if (!window.confirm(msg)) { bkStatus('Import cancelled.'); return; }
+      if (!ok) { bkStatus(tf('backup.notBackup', { app: APP }), true); return; }
+      var msg = tf('backup.confirmImport', { date: bkDate(p.exported) || t('backup.unknownDate'), backup: bkSummary(p.data), device: bkSummary(bkCollect()) });
+      if (!window.confirm(msg)) { bkStatus(t('backup.importCancelled')); return; }
       try {
         localStorage.setItem(BK_UNDO, JSON.stringify({ saved: new Date().toISOString(), data: bkCollect() }));
         bkReplace(p.data);
-      } catch (e) { bkStatus('Import failed: this browser would not save the data.', true); return; }
-      bkStatus('Progress imported. Reloading…');
+      } catch (e) { bkStatus(t('backup.importFailed'), true); return; }
+      bkStatus(t('backup.imported'));
       setTimeout(function () { location.reload(); }, 700);
     };
     reader.readAsText(file);
@@ -3072,9 +3123,9 @@
   function bkUndo() {
     var snap; try { snap = JSON.parse(localStorage.getItem(BK_UNDO)); } catch (e) {}
     if (!snap || !snap.data) { bkPaint(); return; }
-    if (!window.confirm('Restore the progress this device had before the last import (' + bkSummary(snap.data) + ')?')) return;
-    try { bkReplace(snap.data); localStorage.removeItem(BK_UNDO); } catch (e) { bkStatus('Undo failed.', true); return; }
-    bkStatus('Previous progress restored. Reloading…');
+    if (!window.confirm(tf('backup.confirmUndo', { summary: bkSummary(snap.data) }))) return;
+    try { bkReplace(snap.data); localStorage.removeItem(BK_UNDO); } catch (e) { bkStatus(t('backup.undoFailed'), true); return; }
+    bkStatus(t('backup.restored'));
     setTimeout(function () { location.reload(); }, 700);
   }
   document.addEventListener('click', function (e) {
@@ -3147,7 +3198,91 @@
     if (f) f.addEventListener('click', function () { if (!f.disabled) history.forward(); });
   })();
 
+  /* Alt+Left / Alt+Right (ignored while typing in a field, and with other modifiers) */
+  document.addEventListener('keydown', function (e) {
+    var tag = (e.target.tagName || '').toLowerCase();
+    var typing = tag === 'input' || tag === 'textarea' || tag === 'select' || e.target.isContentEditable;
+    if (e.altKey && !typing && !e.ctrlKey && !e.metaKey && !e.shiftKey && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) {
+      e.preventDefault();
+      if (e.key === 'ArrowLeft') history.back(); else history.forward();
+    }
+  });
+
+  /* Scroll restoration: only on back/forward (popstate with a stamped entry), otherwise each page opens at the top.
+     route() reads the remembered position; setView() applies it after rendering. */
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.addEventListener('scroll', function () {
+    if (scrollPending) return;
+    scrollPending = true;
+    setTimeout(function () { scrollPending = false; scrollMemo[scrollKey] = window.scrollY; }, 120);
+  }, { passive: true });
+  window.addEventListener('popstate', function (e) { fromHistory = !!(e.state && typeof e.state.spIdx === 'number'); });
+
   window.addEventListener('hashchange', function () { syncHist(); route(); });
+
+  /* ---------- About: version, settings (language, theme, text size), tips ---------- */
+  function segGroup(name, label, opts, cur) {   // opts: [[value, label], ...]; radios inside the shared .seg control
+    return '<fieldset class="setting"><legend>' + esc(label) + '</legend><div class="seg">' + opts.map(function (o) {
+      return '<label><input type="radio" name="' + esc(name) + '" value="' + esc(o[0]) + '"' + (cur === o[0] ? ' checked' : '') + '><span>' + esc(o[1]) + '</span></label>';
+    }).join('') + '</div></fieldset>';
+  }
+  function renderAbout() {
+    var sizes = TEXT_SIZES.map(function (z) { return [z[0], t(z[1])]; });
+    var html = '<div class="wrap page about-page"><header class="page__head"><h1>' + esc(t('nav.about')) + '</h1><p>' + esc(META.tagline || '') + '</p></header>' +
+      '<div class="prose"><p><strong>' + esc(APP) + '</strong> · ' + esc(t('about.version')) + ' ' + esc(META.version || '') + '</p>' +
+        '<p>Study guides, high-yield summaries, criteria flashcards, board-style vignettes, diagnostic helpers and a disorder library for psychiatry residents, built chapter by chapter from the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision (DSM-5-TR, 2022). An independent study aid, not affiliated with or endorsed by the American Psychiatric Association; criteria are summarized in the app’s own words, so always confirm exact wording, specifiers and codes against the manual. Progress is saved only in this browser; use the backup panel in the footer to keep a copy.</p>' +
+        '<p>' + esc(ATTRIBUTION) + '</p></div>' +
+      '<h2>' + esc(t('about.settings')) + '</h2><div class="card">' +
+        segGroup('lang', t('about.language'), [['en', t('about.langEn')], ['tl', t('about.langTl')]], lang) +
+        segGroup('theme', t('theme.title'), [['auto', t('theme.auto')], ['light', t('theme.light')], ['dark', t('theme.dark')]], getTheme()) +
+        segGroup('aboutTextSize', t('textsize.title'), sizes, String(store.get('textSize', '100'))) +
+      '</div>' +
+      '<h2>' + esc(t('about.tips')) + '</h2><div class="card"><ul class="prose" style="margin:0;padding-left:1.2em">' +
+        [1, 2, 3, 4, 5, 6].map(function (i) { return '<li>' + rich(t('about.tip' + i)) + '</li>'; }).join('') +
+      '</ul></div></div>';
+    setView('about', html);
+    document.title = t('nav.about') + ' — ' + APP;
+  }
+  main.addEventListener('change', function (e) {   // About > Settings
+    if (view.key !== 'about') return;
+    var n = e.target && e.target.name, v = e.target && e.target.value;
+    if (n === 'lang') { setLang(v); var again = main.querySelector('input[name="lang"]:checked'); if (again) again.focus(); }
+    else if (n === 'theme') setTheme(v);
+    else if (n === 'aboutTextSize') { store.set('textSize', v); applyTextSize(v); }
+  });
+
+  /* ---------- language switching: static markup (data-i18n / data-i18n-attr in index.html), then re-render ---------- */
+  function applyStatic() {
+    document.documentElement.setAttribute('lang', lang);
+    var els = document.querySelectorAll('[data-i18n]'), i, v;
+    for (i = 0; i < els.length; i++) { v = t(els[i].getAttribute('data-i18n')); if (v !== els[i].getAttribute('data-i18n')) els[i].textContent = v; }
+    els = document.querySelectorAll('[data-i18n-attr]');
+    for (i = 0; i < els.length; i++) {
+      var pairs = els[i].getAttribute('data-i18n-attr').split(';');
+      for (var j = 0; j < pairs.length; j++) {
+        var at = pairs[j].indexOf(':'), key = pairs[j].slice(at + 1);
+        if (at > 0 && t(key) !== key) els[i].setAttribute(pairs[j].slice(0, at), t(key));
+      }
+    }
+    var brand = document.querySelector('.brand');
+    if (brand) brand.setAttribute('aria-label', tf('brand.home', { name: APP }));
+    var panel = document.getElementById('textSizePanel');
+    if (panel) panel.setAttribute('aria-label', t('textsize.button'));
+    labelCollapse();
+    applyTheme(getTheme());
+  }
+  function setLang(l) {
+    lang = l === 'tl' ? 'tl' : 'en';
+    store.set('lang', lang);
+    applyStatic();
+    bkPaint();
+    var panel = document.getElementById('textSizePanel');
+    if (panel && !panel.hidden) { panel.hidden = true; var tb = document.getElementById('textSizeBtn'); if (tb) tb.setAttribute('aria-expanded', 'false'); }
+    var y = window.scrollY;
+    view.key = null; route(); window.scrollTo(0, y);   // re-render the current view and the menu in the new language
+  }
+  applyStatic();
+
   loadAll().then(function () {
     (SP.onData || []).forEach(function (fn) { try { fn(); } catch (e) { if (window.console) console.error(e); } });
     indexCards();

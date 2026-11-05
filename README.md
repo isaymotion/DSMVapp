@@ -62,8 +62,8 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 
 ## Across the app
 
-- **☰ menu** in the upper left on every screen size: all chapters (keeping your current study mode), study tools, the reference library and the educator pages. On wide screens there is also a collapsible sidebar; on phones and tablets, bottom tabs (Home, Chapters, Review, Exam, Library).
-- **Back and forward buttons** (also Alt+Left / Alt+Right) and **search** across chapters, cards, questions, disorders, helpers and glossary (press `/`).
+- **Menu**: a sidebar listing every chapter (current chapter expanded to its study modes; other chapters open in the study mode you are using), study tools, the reference library, the educator pages and an App group (Backup, What's new, About). It is docked and collapsible on wide screens, and slides in from the ☰ button or the Chapters tab on phones and tablets, with bottom tabs (Home, Chapters, Review, Exam, Library).
+- **Back and forward buttons** (also Alt+Left / Alt+Right; going back returns you to where you were on the page) and **search** across chapters, cards, questions, disorders, helpers and glossary (press `/`).
 - **Daily review**, **board-style exam** (timed or untimed, scored by topic), **mistakes**, **bookmarks**.
 - **Today's 10 minutes**: due flashcards, three board questions and five time rules, with a study streak.
 - **My progress**: accuracy by chapter and topic, a 14-day activity chart, “falsely confident” answers and a **weak-spot drill** (whole app, one chapter or one topic). Optional **“How sure?”** confidence chips on every card feed it.
@@ -74,9 +74,18 @@ The app follows the 22 chapters of Section II (Diagnostic Criteria and Codes), o
 - **Reference library**: Disorder library, Diagnostic helpers, Compare disorders (with classic look-alike presets), Time criteria, ICD-10-CM codes, Glossary, and DSM-5-TR changes & updates.
 - **For educators**: teaching mode (full-screen high-yield blanks, cards, board questions, vignettes and **“Name that disorder”**, with countdown, two teams or show-of-hands voting, discussion prompts, flags and a review PDF), all high-yield as one PDF, and a *What's new* page.
 - **Backup progress**: export and import the review schedule, mistakes, exams, bookmarks and settings (with undo).
-- Maroon and dark orange theme to match the app icon. Dark by default, with a light theme on the theme button.
+- Maroon and dark orange theme to match the app icon. **Theme**: the theme button cycles match device, light and dark (also on the About page, with language and text size). The app follows the phone's setting until you choose.
+- **About** page (menu > App > About): version, settings (language, theme, text size) and tips. The Tagalog interface strings are a draft.
 
 Progress is saved in the browser on each device under its own `dsm:v1:` keys, and the offline cache uses its own `dsm-companion-` names, so it does not clash with the other study apps on the same GitHub Pages site.
+
+## Versions
+
+Every release has a version `x.0.0` (55.0.0 is the design refresh of November 2026). The same number goes in three places: the newest entry of `data/changelog.js`, `version` in `data/app-meta.js`, and `VERSION` in `sw.js`. Change "Latest version <Month YYYY>" in `index.html`, `data/app-meta.js` and this README when the month changes.
+
+## Upgrading from version 54
+
+Nothing to do: progress is kept. Review schedules, mistakes, exams, bookmarks, notes and highlights, the case record, theme and text size stay where they were (same `dsm:v1:` storage), and backup files made with earlier versions still import. If you never chose a theme, the app now follows your device instead of always starting dark.
 
 ## Publish on GitHub Pages
 
@@ -89,7 +98,7 @@ There is no build step and no dependencies. To preview locally, run `python3 -m 
 ## Folder structure
 
 ```
-index.html                 App shell (top bar with ☰ menu, sidebar, bottom tabs)
+index.html                 App shell (top bar, sidebar / ☰ drawer, bottom tabs, footer)
 css/app.css                Styles (dark and light themes)
 js/app.js                  Router, menu, study guide, high yield, flashcards and spaced repetition,
                            review, exam, mistakes, glossary, disorder library, compare, time criteria,
@@ -109,7 +118,10 @@ data/chNN/                 Chapter content
   glossary.js              Terms defined in the chapter (tap-to-define)
 data/db/disorders-chNN.js  Disorder library entries, compare presets and time ladders for the chapter
 data/helpers/chNN-*.js     Diagnostic helper decision trees for the chapter
-data/changelog.js          What's new entries
+data/app-meta.js           App name, tagline, version and attribution (APP_META); Other apps list (hidden for now)
+data/strings.js            Menu and settings text in English and Tagalog (draft)
+data/hospital.js           Shared hospital and program details (same file in every app)
+data/changelog.js          What's new entries (semver versions, newest first)
 icons/                     App icons
 manifest.webmanifest       Install metadata
 sw.js                      Offline cache
@@ -121,7 +133,7 @@ sw.js                      Offline cache
 2. In `data/chapters.js`, set the chapter's `ready: true` and add `files: SP.CHAPTER_FILES`.
 3. Add `data/db/disorders-chNN.js` (library entries, compare presets, a time ladder) and `data/helpers/chNN-<name>.js` (the chapter's diagnostic helper), and list both in `SP.extraFiles`.
 4. Practice pack: add `vignettes.js`, `drills.js` and `traps.js` to `data/chNN/`, switch the chapter to `files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES)`, and add `data/db/clinical-chNN.js` (interview questions, treatment bridge, complaint-hub entries) to `SP.extraFiles`. See the comments at the top of `js/practice.js` and `data/db/clinical-ch04.js` for the formats.
-5. Add an entry to the top of `data/changelog.js`, and change `VERSION` in `sw.js` so returning users get the new content.
+5. Add an entry to the top of `data/changelog.js` with the next version, and use the same version in `data/app-meta.js` and `VERSION` in `sw.js` so returning users get the new content.
 
 ### Content conventions
 

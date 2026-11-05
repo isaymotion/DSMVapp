@@ -98,7 +98,7 @@ SP.manifest = [
     files: SP.CHAPTER_FILES.concat(SP.PRACTICE_FILES) }
 ];
 
-/* Shared data loaded with the chapters: the disorder library, diagnostic helpers, and release notes. */
+/* Shared data loaded with the chapters: the disorder library, diagnostic helpers and case tools. */
 SP.extraFiles = [
   'data/db/disorders-ch01.js',
   'data/helpers/ch01-neurodevelopmental.js',
@@ -181,6 +181,6 @@ SP.extraFiles = [
   'data/tools/substance.js',
   'data/tools/scales.js',
   'data/tools/psychosis.js',
-  'data/tools/teaching.js',
-  'data/changelog.js'
+  'data/tools/teaching.js'
 ];
+/* Release notes (data/changelog.js) are loaded by index.html, before the app starts. */
