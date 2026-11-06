@@ -9,6 +9,17 @@
    and "Latest version <Month YYYY>" in the footer (index.html), data/app-meta.js and README.md. */
 window.APP_CHANGELOG = [
   {
+    "version": "56.0.0",
+    "date": "2026-11-06",
+    "title": "App icon update",
+    "items": [
+      {
+        "type": "update",
+        "text": "The app icon now reads DSM-V-TR (home screen, browser tab and home page)."
+      }
+    ]
+  },
+  {
     "version": "55.0.0",
     "date": "2026-11-05",
     "title": "Design refresh",

@@ -3,7 +3,7 @@ window.APP_META = {
   name: 'DSM-5-TR Study Companion',
   short: 'DSM-5-TR',
   tagline: 'DSM-5-TR companion',
-  version: '55.0.0',
+  version: '56.0.0',
   repo: 'DSMVapp',
   attribution: 'App created by Isabella Navarro, MD. Latest version November 2026. isaymotion@gmail.com'
 };
