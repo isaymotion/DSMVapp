@@ -17,7 +17,7 @@ SP.add("ch06", "vignettes", [
     "answer": 1,
     "why": "**Taboo (sexual) obsessions**: intrusive, unwanted, ego-dystonic images, neutralized by **mental reviewing**, **avoidance** and **reassurance seeking**, taking hours a day and impairing work. This is OCD, not a paraphilia.",
     "whyNot": [
-      "Paraphilic urges are sexually arousing and not experienced as unwanted intrusions; she has no sexual interest in children. OCD Criterion D distinguishes them.",
+      "Paraphilic urges are sexually arousing and usually pleasurable (p. 271); she has no sexual interest in children. OCD Criterion D separates them.",
       "Correct.",
       "GAD worries concern real-life matters; these are intrusive images with rituals.",
       "No depressive episode or psychotic beliefs are described; she recognizes the thoughts as unwanted.",
@@ -25,7 +25,7 @@ SP.add("ch06", "vignettes", [
     ],
     "discuss": [
       "How would you ask about taboo obsessions without shaming the patient?",
-      "Why do these thoughts not indicate risk to children?"
+      "Why are taboo obsessions like these not taken as a sign of risk to children? (outside the DSM)"
     ]
   },
   {
@@ -43,7 +43,7 @@ SP.add("ch06", "vignettes", [
     "answer": 3,
     "why": "Complete conviction about OCD beliefs is captured by the **absent insight/delusional beliefs** specifier. With obsessions and compulsions and no other psychotic features, a psychotic disorder is **not** diagnosed.",
     "whyNot": [
-      "His fear drives washing rituals; illness anxiety disorder lacks compulsions of this kind and concerns having an illness now.",
+      "In illness anxiety disorder the preoccupation is usually about having a disease now; his fear of getting one, with washing rituals, fits OCD (Ch 9, p. 359).",
       "Delusional disorder lacks obsessions and compulsions; OCD with delusional insight is diagnosed as OCD.",
       "There are no hallucinations, disorganization or negative symptoms.",
       "Correct.",
@@ -56,17 +56,17 @@ SP.add("ch06", "vignettes", [
     "stem": "A 10-year-old boy touches doorframes in sets of four until it feels “just right” and arranges his pencils symmetrically, becoming distressed if anyone moves them. These rituals take about 2 hours a day. Since age 6 he has had eye blinking, shoulder shrugging and sniffing. His teacher also reports marked inattention and restlessness.",
     "q": "Which statement is most accurate?",
     "choices": [
-      "OCD, tic-related; assess for a tic disorder and ADHD, which form a recognized childhood triad",
+      "OCD, tic-related; assess for a tic disorder and ADHD",
       "His rituals are complex tics, so OCD is not diagnosed",
       "OCD cannot be diagnosed in children who cannot state the aim of their rituals",
       "Tourette’s disorder excludes OCD",
       "This is autism spectrum disorder"
     ],
     "answer": 0,
-    "why": "Symmetry obsessions with **just-right** compulsions over an hour a day: OCD. A current tic disorder gives the **tic-related** specifier, most common in boys with childhood onset. The **OCD–tic–ADHD triad** occurs in children.",
+    "why": "Symmetry obsessions with **just-right** compulsions over an hour a day: OCD. A current or past tic disorder gives the **tic-related** specifier; this is most common in males with childhood-onset OCD. The **OCD–tic–ADHD triad** occurs in children.",
     "whyNot": [
       "Correct.",
-      "Rituals performed until things feel “just right” are compulsions; when both OCD and tics are present, both are diagnosed.",
+      "Rituals performed until things feel “just right” are compulsions; when both OCD and tics are present, both diagnoses may be warranted (p. 270).",
       "The note to Criterion A says young children may not be able to articulate the aims of their rituals.",
       "OCD and tic disorders, including Tourette’s, can both be diagnosed.",
       "No social communication deficits are described."
@@ -85,7 +85,7 @@ SP.add("ch06", "vignettes", [
       "Obsessive-compulsive personality disorder"
     ],
     "answer": 4,
-    "why": "A lifelong, **ego-syntonic** pattern of perfectionism, orderliness and control, **without** intrusive thoughts or compulsions performed in response to them: OCPD.",
+    "why": "A lifelong, **ego-syntonic** pattern of perfectionism, orderliness and control, **without** intrusive thoughts or compulsions performed in response to them: OCPD (Ch 18, p. 771).",
     "whyNot": [
       "There is no excessive worry about many areas.",
       "OCD requires obsessions or compulsions, usually experienced as unwanted.",
@@ -102,17 +102,17 @@ SP.add("ch06", "vignettes", [
     "choices": [
       "Major depressive disorder with peripartum onset, with psychotic features",
       "Postpartum psychosis requiring emergency admission",
-      "Obsessive-compulsive disorder with harm obsessions; the thoughts are ego-dystonic and do not indicate intent",
+      "Obsessive-compulsive disorder with harm obsessions",
       "Normal new-parent worries; reassure and discharge",
       "Homicidal ideation requiring child protection referral"
     ],
     "answer": 2,
-    "why": "Intrusive, **unwanted** harm images with **avoidance** and **checking**: OCD, which can begin or worsen in the **peripartum** period. Ego-dystonic harm obsessions are resisted and are not intent.",
+    "why": "Intrusive, **unwanted** harm images with **avoidance** and **checking**: OCD, which can begin or worsen in the **peripartum** period. Ego-dystonic harm obsessions are resisted and are not intent (outside the DSM: infant-harm obsessions have not been linked to violent behavior).",
     "whyNot": [
       "No depressive episode or psychotic features are described; screen for depression, which often coexists.",
-      "Postpartum psychosis brings confusion, hallucinations or delusions, which are absent.",
+      "Peripartum mood episodes with psychotic features (Ch 4, p. 213) bring hallucinations or delusions, which are absent.",
       "Correct.",
-      "Hours of rituals and avoidance that disrupt infant care are not normal.",
+      "Terrifying images with hiding knives, avoiding bathing the baby and repeated checking are not normal new-parent worries.",
       "She has no wish to harm the baby; mislabeling obsessions as intent causes harm. Assess carefully and treat."
     ],
     "discuss": [
@@ -132,7 +132,7 @@ SP.add("ch06", "vignettes", [
       "Recognition that her worries are excessive"
     ],
     "answer": 1,
-    "why": "GAD worry concerns **real-life** matters; OCD obsessions often have **odd, irrational or magical** content and are linked to **compulsions** that neutralize them.",
+    "why": "GAD worries are usually about **real-life** concerns; OCD obsessions usually are not and can be **odd, irrational or magical**, and are usually linked to **compulsions** that neutralize them (p. 270).",
     "whyNot": [
       "Both can take hours.",
       "Correct.",
@@ -165,18 +165,18 @@ SP.add("ch06", "vignettes", [
     "then": {
       "q": "He asks to be referred for laser resurfacing. What is the best response?",
       "choices": [
-        "Refer to a cosmetic dermatologist as requested",
-        "Explain that cosmetic treatment rarely helps BDD and offer CBT and an SSRI, with a safety plan",
+        "Refer to a cosmetic dermatologist for laser resurfacing as he requests",
+        "Offer CBT for BDD and an SSRI, with a safety plan",
         "Prescribe an antipsychotic for delusional beliefs",
         "Recommend camouflage makeup only",
         "Tell him the acne is mild and discharge him"
       ],
       "answer": 1,
-      "why": "BDD **responds poorly** to cosmetic treatment and may worsen. Evidence-based care is CBT for BDD and an SSRI (often at high doses), with close attention to suicide risk. (Treatment knowledge, outside the DSM.)",
+      "why": "BDD **appears to respond poorly** to cosmetic treatment and sometimes becomes worse (p. 273). Evidence-based care is CBT for BDD and an SSRI (often at high doses), with close attention to suicide risk. (Treatment knowledge, outside the DSM.)",
       "whyNot": [
-        "Cosmetic procedures rarely help and can worsen BDD.",
+        "Cosmetic procedures appear to help BDD poorly and can worsen it (p. 273).",
         "Correct.",
-        "SSRIs work even with delusional insight; antipsychotics have weak evidence in BDD.",
+        "SSRIs are recommended even with delusional insight; antipsychotics are not recommended alone and may help only as SSRI add-ons (outside the DSM).",
         "Camouflage is itself a BDD behavior.",
         "Dismissal ignores serious impairment and suicide risk."
       ]
@@ -190,7 +190,7 @@ SP.add("ch06", "vignettes", [
     "choices": [
       "Body dysmorphic disorder, with muscle dysmorphia",
       "Anorexia nervosa",
-      "Anabolic steroid use disorder only",
+      "Other (anabolic steroid) substance use disorder only",
       "Obsessive-compulsive disorder",
       "Narcissistic personality disorder"
     ],
@@ -198,7 +198,7 @@ SP.add("ch06", "vignettes", [
     "why": "Preoccupation with the body being **too small or insufficiently muscular**, with checking and excessive exercise, despite a very muscular build: **BDD with muscle dysmorphia**. Steroid use is common and should be addressed too.",
     "whyNot": [
       "Correct.",
-      "He is not trying to be thin or low weight; his concern is muscularity.",
+      "He is not trying to be thin or low weight; his concern is muscularity (anorexia nervosa, Ch 10).",
       "Steroid use is a consequence of the appearance preoccupation; assess it, but it does not explain the core disorder.",
       "His preoccupation is limited to appearance.",
       "Nothing suggests a pervasive grandiose pattern."
@@ -219,9 +219,9 @@ SP.add("ch06", "vignettes", [
     "answer": 4,
     "why": "Concerns about **weight and shape** belong to anorexia nervosa. Her **nose** preoccupation is separate, so **BDD** is diagnosed as well. The two can be comorbid.",
     "whyNot": [
-      "Her restriction is driven by body image concern, which excludes ARFID.",
+      "Her restriction is driven by body image concern, which excludes ARFID (Ch 10).",
       "Her nose concern goes beyond weight and needs its own diagnosis.",
-      "Her restriction and low weight meet anorexia nervosa.",
+      "Her restriction and low weight meet anorexia nervosa (Ch 10).",
       "Delusional appearance beliefs are BDD with absent insight, not delusional disorder.",
       "Correct."
     ]
@@ -233,8 +233,8 @@ SP.add("ch06", "vignettes", [
     "q": "What is the best diagnosis?",
     "choices": [
       "Social anxiety disorder",
-      "Body dysmorphic disorder",
-      "Other specified obsessive-compulsive and related disorder (olfactory reference disorder)",
+      "Body dysmorphic disorder, with absent insight/delusional beliefs",
+      "Other specified OCRD (olfactory reference disorder)",
       "Schizophrenia",
       "Illness anxiety disorder"
     ],
@@ -257,7 +257,7 @@ SP.add("ch06", "vignettes", [
       "Hoarding disorder, with good or fair insight",
       "Hoarding disorder, with excessive acquisition, with poor insight",
       "Obsessive-compulsive disorder",
-      "Major neurocognitive disorder due to frontotemporal degeneration",
+      "Major neurocognitive disorder due to frontotemporal degeneration, with behavioral disturbance",
       "Diogenes syndrome as a separate DSM diagnosis"
     ],
     "answer": 1,
@@ -272,32 +272,32 @@ SP.add("ch06", "vignettes", [
     "then": {
       "q": "His son plans to hire a crew to clear the house completely while he is away. What is the most likely outcome?",
       "choices": [
-        "Lasting resolution",
+        "Lasting resolution of the clutter and of the hoarding",
         "Marked distress and rapid re-accumulation",
         "Improvement in insight",
         "No emotional reaction",
         "Conversion to OCD"
       ],
       "answer": 1,
-      "why": "Forced clean-outs without treatment cause **high distress** and are usually followed by re-accumulation. Third-party clearing does not remove the diagnosis (Criterion C). Treatment uses CBT for hoarding with graded discarding, coordinated with safety services.",
+      "why": "Attempts by others to discard possessions cause **high distress** (p. 279), and a cleared home still meets Criterion C (p. 278). Clean-outs without treatment usually fail, with clutter often returning within months; treatment uses CBT for hoarding with graded discarding, coordinated with safety services (outside the DSM).",
       "whyNot": [
         "Clearing does not change the underlying difficulty discarding.",
         "Correct.",
-        "Insight does not improve through forced clearing.",
+        "Forced clearing can make people refuse future help (outside the DSM).",
         "Attempts by others to discard possessions cause high distress.",
-        "Hoarding disorder does not convert to OCD."
+        "Nothing in the manual describes hoarding disorder turning into OCD."
       ]
     }
   },
   {
     "id": "v6-12",
     "tag": "Hoarding vs OCD",
-    "stem": "A 40-year-old man’s apartment is filled with bags of used tissues, receipts and food wrappers. He keeps them because he fears that throwing something away might accidentally discard an important document and cause his family to lose their home. He finds this terrifying and wishes he could stop; he takes no pleasure in his possessions and does not acquire new items.",
+    "stem": "A 40-year-old man’s apartment is filled with bags of used tissues, receipts and food wrappers. He keeps them because he fears that anything he throws away could start a fire or poison someone, so every item must be checked first, and he never finishes the checking. He finds this terrifying and wishes he could stop; he takes no pleasure in his possessions and does not acquire new items.",
     "q": "What is the most likely diagnosis?",
     "choices": [
       "Schizophrenia",
       "Hoarding disorder",
-      "Hoarding disorder and OCD",
+      "Hoarding disorder and obsessive-compulsive disorder",
       "Obsessive-compulsive disorder",
       "Major depressive disorder"
     ],
@@ -317,17 +317,17 @@ SP.add("ch06", "vignettes", [
     "stem": "A 76-year-old woman with no prior history began collecting rubbish from the street 18 months ago. Her house now contains rotting food and piles of trash, she is unwashed, and she has become disinhibited and has lost interest in her family. She does not object when her daughter throws items away. MRI shows frontal and temporal atrophy.",
     "q": "What best explains the accumulation?",
     "choices": [
-      "A neurocognitive disorder (e.g., due to frontotemporal degeneration)",
-      "Hoarding disorder",
+      "Neurocognitive disorder due to frontotemporal degeneration",
+      "Hoarding disorder, with excessive acquisition and absent insight",
       "Obsessive-compulsive disorder",
       "Normative collecting",
       "Excoriation disorder"
     ],
     "answer": 0,
-    "why": "Late onset, squalor, disinhibition, apathy and no distress at discarding, with frontotemporal atrophy: accumulation as a direct consequence of a **neurocognitive disorder** (Criterion F excludes hoarding disorder).",
+    "why": "Late onset, squalor, disinhibition, apathy and no distress at discarding, with frontotemporal atrophy: accumulation as a direct consequence of a **neurocognitive disorder** (Criterion F; differential, p. 281).",
     "whyNot": [
       "Correct.",
-      "Hoarding disorder begins early in life and involves distress when items are discarded.",
+      "Hoarding disorder appears to begin early in life, and the saving is intentional, with distress at discarding (pp. 278–279).",
       "No obsessions are described.",
       "Collecting is organized and selective.",
       "Not relevant."
@@ -348,7 +348,7 @@ SP.add("ch06", "vignettes", [
     "answer": 4,
     "why": "Recurrent pulling with **hair loss**, **repeated attempts to stop**, and distress and avoidance: **F63.3 trichotillomania**, largely **automatic**. Eyelids and eyebrows are among the commonest sites.",
     "whyNot": [
-      "Stereotypic movement disorder begins in early development, often with intellectual disability or autism.",
+      "Stereotypic movement disorder begins in early development, often with intellectual disability or autism (Ch 1).",
       "She is not pulling to improve her appearance.",
       "There are no obsessions; pulling is not a response to intrusive thoughts.",
       "She admits pulling; alopecia areata would not explain it.",
@@ -399,17 +399,17 @@ SP.add("ch06", "vignettes", [
   {
     "id": "v6-16",
     "tag": "Skin picking vs psychosis",
-    "stem": "A 39-year-old man has dug at his forearms with a knife for 3 weeks to remove “bugs” he can feel crawling under his skin. He brings a matchbox of skin fragments to show the “eggs.” He admits to daily methamphetamine use for 2 months.",
+    "stem": "A 39-year-old man has picked and dug at his forearms for 3 weeks to remove “bugs” he can feel crawling under his skin. He brings a matchbox of skin fragments to show the “eggs.” He admits to daily methamphetamine use for 2 months.",
     "q": "Why is excoriation disorder not diagnosed?",
     "choices": [
-      "Excoriation disorder requires onset in adolescence",
-      "The picking is driven by formication and a delusion of infestation, likely substance-induced",
+      "Excoriation disorder requires onset in adolescence or early adulthood",
+      "A delusion of infestation, likely substance-induced",
       "He has not had lesions",
       "Men cannot have excoriation disorder",
       "He has not been picking for 6 months"
     ],
     "answer": 1,
-    "why": "Excoriation disorder is excluded when picking follows **delusions or tactile hallucinations** (formication) or is due to a substance (Criteria D and E). Methamphetamine-induced psychotic disorder is likely.",
+    "why": "Excoriation disorder is excluded when picking follows **delusions or tactile hallucinations** (formication) or is due to a substance (Criteria D and E). Methamphetamine-induced psychotic disorder is likely (Ch 2).",
     "whyNot": [
       "There is no age requirement.",
       "Correct.",
@@ -446,8 +446,8 @@ SP.add("ch06", "vignettes", [
     "stem": "A 9-year-old girl develops jerky, irregular movements of her face and hands, emotional lability and new contamination fears with handwashing over 2 weeks. She had a sore throat 2 months ago. She has a new heart murmur, and her antistreptolysin O titer is raised.",
     "q": "How should her obsessive-compulsive symptoms be diagnosed?",
     "choices": [
-      "OCD and related disorder due to another medical condition (Sydenham’s chorea)",
-      "Obsessive-compulsive disorder, tic-related",
+      "OCRD due to another medical condition (Sydenham’s chorea)",
+      "Obsessive-compulsive disorder, tic-related, with onset after a sore throat",
       "PANDAS",
       "Conversion disorder",
       "Tourette’s disorder"
@@ -459,7 +459,7 @@ SP.add("ch06", "vignettes", [
       "Her symptoms have a demonstrable medical cause, and chorea is not a tic.",
       "PANDAS, by definition, lacks chorea, carditis and arthritis.",
       "Organic findings (chorea, murmur, raised ASO) argue against it.",
-      "Chorea is not tics, and onset is acute."
+      "Chorea is not tics, and onset is acute (Tourette’s disorder, Ch 1)."
     ]
   },
   {
@@ -470,7 +470,7 @@ SP.add("ch06", "vignettes", [
     "choices": [
       "Major neurocognitive disorder",
       "F42.2 obsessive-compulsive disorder",
-      "F06.8 OCRD due to cerebral infarction; I69.398 cerebral infarction",
+      "F06.8 obsessive-compulsive and related disorder due to cerebral infarction; I69.398 cerebral infarction",
       "F42.9 unspecified OCRD",
       "I69.398 cerebral infarction; F06.8 obsessive-compulsive and related disorder due to cerebral infarction"
     ],
@@ -491,8 +491,8 @@ SP.add("ch06", "vignettes", [
     "q": "What is the best diagnosis?",
     "choices": [
       "Paranoid personality disorder",
-      "Delusional disorder, jealous type",
-      "Other specified obsessive-compulsive and related disorder (obsessional jealousy)",
+      "Delusional disorder, jealous type (his doubts are fixed beliefs)",
+      "Other specified OCRD (obsessional jealousy)",
       "Obsessive-compulsive disorder",
       "Generalized anxiety disorder"
     ],
@@ -509,14 +509,14 @@ SP.add("ch06", "vignettes", [
   {
     "id": "v6-21",
     "tag": "Nail biting",
-    "stem": "A 30-year-old woman bites her nails and the surrounding skin until they bleed, many times a day, especially when bored. She has tried bitter nail polish, gloves and acrylic nails, without success. She hides her hands at work and has had two paronychia infections.",
+    "stem": "A 30-year-old woman bites her nails down until they bleed, many times a day, especially when bored. She has tried bitter nail polish, gloves and acrylic nails, without success. She hides her hands at work and has had two paronychia infections.",
     "q": "What is the correct diagnosis?",
     "choices": [
       "Excoriation disorder",
-      "Other specified OCRD (other body-focused repetitive behavior disorder)",
+      "Other specified OCRD (body-focused repetitive behavior)",
       "Obsessive-compulsive disorder",
       "Trichotillomania",
-      "No disorder: nail biting is a common habit"
+      "No disorder: nail biting is a common habit that needs no diagnosis"
     ],
     "answer": 1,
     "why": "Nail biting with repeated attempts to stop and distress or impairment is **other body-focused repetitive behavior disorder**, an example of other specified OCRD (F42.8).",
@@ -534,10 +534,10 @@ SP.add("ch06", "vignettes", [
     "stem": "During a rumor-fueled outbreak in his village, a 20-year-old man suddenly becomes terrified that his penis is shrinking into his abdomen. He holds it tightly and has relatives pull on it, convinced he will die if it disappears. The episode lasts a day.",
     "q": "Which statement is correct?",
     "choices": [
-      "This is delusional disorder, somatic type",
+      "This is delusional disorder, somatic type, of brief duration",
       "This is body dysmorphic disorder",
       "This is a panic attack only",
-      "This is koro, a culture-related syndrome listed under other specified OCRD",
+      "This is koro, listed under other specified OCRD",
       "This is dhat syndrome"
     ],
     "answer": 3,
@@ -556,14 +556,14 @@ SP.add("ch06", "vignettes", [
     "stem": "A 33-year-old man with stable schizophrenia on clozapine develops new intrusive thoughts that his hands are contaminated, which he recognizes as excessive, and washes for 2 hours a day. His hallucinations and delusions are unchanged and unrelated to contamination.",
     "q": "Which statement is most accurate?",
     "choices": [
-      "OCD can be diagnosed in addition to schizophrenia; it occurs in about 12% of people with schizophrenia",
+      "OCD can be diagnosed in addition to schizophrenia",
       "OCD cannot be diagnosed in someone with schizophrenia",
       "These are delusions and need a higher clozapine dose",
       "This is substance-induced OCRD and must be clozapine-related",
       "This is a prodrome of a new psychotic episode"
     ],
     "answer": 0,
-    "why": "OCD is common in schizophrenia and schizoaffective disorder (about **12%**) and can be diagnosed when true obsessions and compulsions are present. Clozapine and other antipsychotics with serotonin blockade can cause or worsen OCD symptoms, which would be worth considering.",
+    "why": "OCD is common in schizophrenia and schizoaffective disorder (about **12%**) and can be diagnosed when true obsessions and compulsions are present. Clozapine (and olanzapine) can cause or worsen obsessive-compulsive symptoms, which is worth considering (outside the DSM).",
     "whyNot": [
       "Correct.",
       "They can coexist; screen for OCD in schizophrenia.",
@@ -582,13 +582,13 @@ SP.add("ch06", "vignettes", [
       "OCD protects against suicide because of its anxiety",
       "Suicide risk in OCD is entirely explained by depression",
       "Suicidal thoughts are rare in OCD",
-      "OCD carries a markedly raised risk of suicide death, and taboo thoughts, depression and substance use raise it further"
+      "OCD markedly raises the risk of suicide death"
     ],
     "answer": 4,
     "why": "Swedish registry: suicide death **OR 9.8**, attempt OR 5.5, still high after adjusting for comorbidity. Risk is higher with **severity**, the **unacceptable thoughts** dimension, comorbid **depression**, **substance use** and personality disorders.",
     "whyNot": [
       "The taboo (unacceptable) thoughts dimension is the one linked to risk.",
-      "The opposite is true.",
+      "OCD raises, not lowers, suicide risk (p. 269).",
       "Risk remains substantial after adjustment for comorbidity.",
       "Lifetime suicidal ideation averages about 44% in clinical samples.",
       "Correct."
@@ -601,8 +601,8 @@ SP.add("ch06", "vignettes", [
     "q": "What is the best diagnosis?",
     "choices": [
       "PTSD",
-      "Body dysmorphic disorder",
-      "Other specified OCRD (BDD-like disorder with actual flaws)",
+      "Body dysmorphic disorder, with good or fair insight",
+      "Other specified OCRD (BDD-like with actual flaws)",
       "Social anxiety disorder",
       "Adjustment disorder"
     ],

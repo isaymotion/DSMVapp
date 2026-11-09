@@ -16,7 +16,7 @@ SP.dxExtra = (SP.dxExtra || []).concat([
       ["A7 Worthlessness or guilt", "“How do you feel about yourself these days? Do you blame yourself for things?”", "Guilt only about being ill does not count."],
       ["A8 Concentration or decisions", "“Can you follow a TV program or read a page? Is it hard to make decisions?”"],
       ["A9 Death and suicide", "“Have you felt that life isn’t worth living? Have you thought about killing yourself? Have you made a plan, or done anything to prepare?”", "Asking directly does not plant the idea. Ask about access to means."],
-      ["Duration", "“When did this start? Has it been there most of the day, nearly every day, for at least 2 weeks?”"],
+      ["Duration", "“When did this start? Has it been there for most of each day, on nearly all days, for 2 weeks or more?”"],
       ["Past hypomania or mania (Criterion E)", "“Has there ever been a stretch of days when you felt unusually good, hyper or irritable, needed much less sleep and still had energy, and others noticed you weren’t your usual self?”", "Ask a family member too; hypomania is often missed."],
       ["Psychotic features", "“When people feel this low, they sometimes hear voices or become convinced they are being punished or are ill. Has anything like that happened to you?”"],
       ["Substances and medical causes", "“What medicines do you take? How much do you drink or use? Any new health problems, such as weight change, feeling cold or a recent stroke?”"]
@@ -28,10 +28,10 @@ SP.dxExtra = (SP.dxExtra || []).concat([
         "Give an adequate trial (therapeutic dose for about 4–8 weeks) before judging response; then optimize the dose, switch, or augment.",
         "FDA-approved augmenting agents for MDD include [[stahl:drugs/aripiprazole|aripiprazole]], [[stahl:drugs/brexpiprazole|brexpiprazole]], [[stahl:drugs/cariprazine|cariprazine]] and extended-release [[stahl:drugs/quetiapine|quetiapine]]; [[stahl:drugs/lithium|lithium]] and [[stahl:drugs/thyroid-hormone|thyroid hormone]] are classic options.",
         "**With psychotic features**: an antidepressant plus an antipsychotic, or ECT.",
-        "**ECT** is the most effective acute treatment for severe, psychotic, catatonic or highly suicidal depression; catatonia also responds to lorazepam.",
+        "**ECT** has high response rates in severe, psychotic or catatonic depression and can reduce suicidal drive; lorazepam is also used for catatonia (app guidance; not verified).",
         "Treatment-resistant depression: [[stahl:drugs/esketamine|esketamine]] nasal spray (approved with an oral antidepressant and, since January 2025, as monotherapy), rTMS and ECT.",
-        "**Postpartum depression**: [[stahl:drugs/zuranolone|zuranolone]], an oral neuroactive steroid given for 14 days (FDA-approved 2023). Intravenous brexanolone has been discontinued by its manufacturer.",
-        "Mixed features, a family history of bipolar disorder, an early age at onset or psychotic depression raise the risk of bipolar disorder: screen carefully before an antidepressant alone.",
+        "**Postpartum depression**: [[stahl:drugs/zuranolone|zuranolone]], an oral neuroactive steroid given for 14 days (FDA-approved 2023). Intravenous brexanolone has been discontinued by its manufacturer (FDA approval withdrawn April 2025).",
+        "Mixed features, a family history of bipolar disorder, onset in adolescence or psychotic depression raise the risk of bipolar disorder: screen carefully before an antidepressant alone.",
         "Antidepressants carry a boxed warning for suicidal thoughts and behavior in people under 25: monitor closely early in treatment."
       ],
       stahl: [["Response and remission", "c/ch07/guide/s7-outcomes"], ["SSRIs", "c/ch07/guide/s7-ssri"], ["SNRIs", "c/ch07/guide/s7-snri"], ["Augmentation", "c/ch07/guide/s7-augment-sda"], ["Ketamine and esketamine", "c/ch07/guide/s7-ketamine"], ["Neuroactive steroids", "c/ch07/guide/s7-neurosteroids"], ["Symptom-based choice", "c/ch06/guide/s6-algorithm"]]
@@ -50,9 +50,9 @@ SP.dxExtra = (SP.dxExtra || []).concat([
       asOf: "October 2026",
       first: "An antidepressant combined with psychotherapy; in chronic depression the combination tends to work better than either alone. CBASP (cognitive behavioral analysis system of psychotherapy) was developed specifically for chronic depression.",
       points: [
-        "The same antidepressants as for MDD are used; response is often slower, so allow full trials.",
+        "The same antidepressants as for MDD are used; response is often slower, so allow full trials (app guidance; not verified).",
         "Treat comorbid anxiety, substance use and personality disorders, which are common and worsen outcome.",
-        "Long-term maintenance treatment is often needed."
+        "Long-term maintenance treatment is often needed (app guidance; not verified)."
       ],
       stahl: [["Response and remission", "c/ch07/guide/s7-outcomes"], ["SSRIs", "c/ch07/guide/s7-ssri"], ["Combining drugs", "c/ch07/guide/s7-combos"]]
     }
@@ -93,7 +93,7 @@ SP.dxExtra = (SP.dxExtra || []).concat([
       first: "An SSRI, taken daily or only in the luteal phase; [[stahl:drugs/fluoxetine|fluoxetine]], [[stahl:drugs/sertraline|sertraline]] and controlled-release [[stahl:drugs/paroxetine|paroxetine]] are FDA-approved for PMDD. SSRIs often work within days in PMDD.",
       points: [
         "A drospirenone–ethinyl estradiol combined oral contraceptive is FDA-approved for PMDD in women who also want contraception.",
-        "CBT and lifestyle measures help, alone or with medication.",
+        "CBT improves affective symptoms (ACOG), alone or with medication.",
         "Severe, refractory cases: ovulation suppression with a GnRH agonist (with add-back hormones), after specialist review."
       ],
       stahl: [["SSRIs", "c/ch07/guide/s7-ssri"], ["Fluoxetine", "drugs/fluoxetine"]]
@@ -103,7 +103,7 @@ SP.dxExtra = (SP.dxExtra || []).concat([
     id: "substance-induced-depressive",
     ask: [
       ["Timeline", "“Which came first, the low mood or the drinking or drug use? Have you been depressed during times you weren’t using?”", "Symptoms that preceded use suggest an independent disorder."],
-      ["Withdrawal", "“How do you feel when you stop or cut down?”", "Stimulant withdrawal and alcohol withdrawal are classic causes."],
+      ["Withdrawal", "“How do you feel when you stop or cut down?”", "Alcohol or sedative intoxication and stimulant withdrawal are the classic causes."],
       ["Medications", "“Did your mood change after starting, stopping or changing any medicine, such as steroids, interferon or blood pressure pills?”"],
       ["Persistence", "“Since you stopped, has the low mood eased?”", "Persistence about 1 month after withdrawal or intoxication ends suggests an independent disorder."]
     ],
@@ -112,7 +112,7 @@ SP.dxExtra = (SP.dxExtra || []).concat([
       first: "Stop or reduce the causative substance or medication, and treat the substance use disorder.",
       points: [
         "Reassess after about a month of abstinence: depression that persists is likely independent and needs its own treatment.",
-        "Treat sooner if symptoms are severe or suicidal; suicide risk is high during intoxication and withdrawal.",
+        "Treat sooner if symptoms are severe or suicidal; suicide attempts are more frequent in people with possible alcohol use disorder who have depressive episodes, induced or independent (p. 205).",
         "Medication causes such as interferon or corticosteroids: weigh dose changes or alternatives with the prescriber."
       ],
       stahl: [["Addiction", "c/ch13/guide"]]
@@ -121,7 +121,7 @@ SP.dxExtra = (SP.dxExtra || []).concat([
   {
     id: "depressive-due-to-amc",
     ask: [
-      ["Timeline", "“Did the change in your mood begin around the time your illness started or got worse?”", "Temporality is the strongest evidence of a medical cause."],
+      ["Timeline", "“Did the change in your mood begin around the time your illness started or got worse?”", "A temporal link is one key consideration for a medical cause."],
       ["Physical symptoms", "“Have you noticed weight change, feeling cold or hot, palpitations, weakness, tremor or headaches?”"],
       ["Neurological history", "“Any strokes, seizures, head injuries or problems with movement?”", "Left frontal stroke, Huntington’s disease and Parkinson’s disease are strongly linked to depression."],
       ["Tests", "Check TSH and other tests guided by the history and examination."]
@@ -130,7 +130,7 @@ SP.dxExtra = (SP.dxExtra || []).concat([
       asOf: "October 2026",
       first: "Treat the underlying medical condition (for example, thyroid replacement), then reassess mood.",
       points: [
-        "Antidepressants are effective in many medically caused depressions, such as poststroke depression; choose with drug interactions and medical safety in mind.",
+        "Antidepressants may help (e.g., a small benefit in poststroke depression, with more side effects; Cochrane 2020); choose with drug interactions and medical safety in mind.",
         "Coordinate with the treating physician, since some treatments for the medical illness can themselves cause depression."
       ],
       stahl: [["SSRIs", "c/ch07/guide/s7-ssri"], ["Inflammation and depression", "c/ch06/guide/s6-inflammation"]]
@@ -144,8 +144,8 @@ SP.dxExtra = (SP.dxExtra || []).concat([
     ],
     tx: {
       asOf: "October 2026",
-      first: "Treat according to severity and impairment; psychotherapy is usually first.",
-      points: ["Follow up: some presentations evolve into major depressive or bipolar disorder."],
+      first: "Treat according to severity and impairment; psychotherapy is usually first (app guidance; not verified).",
+      points: ["Follow up: some presentations evolve into major depressive or bipolar disorder (app guidance; not verified)."],
       stahl: [["Symptom-based choice", "c/ch06/guide/s6-algorithm"]]
     }
   },
@@ -153,8 +153,8 @@ SP.dxExtra = (SP.dxExtra || []).concat([
     id: "unspecified-depressive",
     tx: {
       asOf: "October 2026",
-      first: "Stabilize and gather more information; treat according to severity and safety until a specific diagnosis can be made.",
-      points: ["Revisit the diagnosis as the history, collateral information and course become clearer."],
+      first: "Stabilize and gather more information; treat according to severity and safety until a specific diagnosis can be made (app guidance; not verified).",
+      points: ["Revisit the diagnosis as the history, collateral information and course become clearer (app guidance)."],
       stahl: []
     }
   }
@@ -163,7 +163,7 @@ SP.dxExtra = (SP.dxExtra || []).concat([
 SP.complaintData = (SP.complaintData || []).concat([
   {
     id: "low-mood", title: "Low mood or sadness",
-    intro: "Depressed mood is the most common presenting complaint in psychiatry. The key questions are how long, how many other symptoms, whether there has ever been a high, and what else could be causing it.",
+    intro: "The key questions are how long, how many other symptoms, whether there has ever been a high, and what else could be causing it.",
     ask: ["How long has it lasted, and is it most of the day, nearly every day?", "What other symptoms: interest, sleep, appetite, energy, concentration, guilt, thoughts of death?", "Has there ever been a period of elevated or irritable mood with little need for sleep? Ask family.", "Any alcohol, drugs, new medicines or medical illness?", "A recent loss or stressor?"],
     mustNotMiss: ["**Suicide risk**: ask directly about thoughts, plans and means.", "**Bipolar depression**: past hypomania or mania changes the diagnosis and treatment.", "**Medical causes**: hypothyroidism, stroke, Parkinson’s disease, cancer (especially pancreatic).", "**Substance or medication causes**: alcohol, stimulant withdrawal, steroids, interferon.", "**Psychotic features**."],
     helpers: ["depressive", "episode", "grief"],
@@ -226,25 +226,25 @@ SP.complaintData = (SP.complaintData || []).concat([
     id: "after-loss", title: "Distress after a death",
     intro: "Grief is not a disorder, but a major depressive episode can occur alongside it, and grief can become prolonged and impairing.",
     ask: ["How long since the death?", "Does the sadness come in waves with reminders, or is it constant?", "How does the person see themselves: worthless, or still themselves?", "Are thoughts of death about joining the deceased, or about ending their own pain?", "Is there intense yearning or preoccupation with the deceased?"],
-    mustNotMiss: ["**Suicide risk**, which rises after the death of a spouse or child.", "A **major depressive episode** hidden by the assumption that it is “just grief.”"],
+    mustNotMiss: ["**Suicide risk** (app guidance).", "A **major depressive episode** hidden by the assumption that it is “just grief.”"],
     helpers: ["grief"],
     items: [
       { ch: "ch04", name: "Normal grief", when: "Waves of emptiness and longing; positive emotions and humor remain; self-esteem preserved." },
       { ch: "ch04", dx: "mdd", when: "Pervasive low mood, anhedonia, worthlessness and self-focused death wishes, **in addition to** grief." },
       { ch: "ch07", name: "Prolonged grief disorder", when: "Intense yearning or preoccupation **≥12 months** after the death (6 in children)." },
       { ch: "ch07", name: "Adjustment disorder", when: "Distress out of proportion to the loss without meeting other criteria." },
-      { ch: "ch07", name: "Posttraumatic stress disorder", when: "A violent or sudden death with intrusions, avoidance and hyperarousal." }
+      { ch: "ch07", name: "Posttraumatic stress disorder", when: "A violent or accidental death with intrusions, avoidance and hyperarousal (Ch 7)." }
     ]
   },
   {
     id: "suicidal", title: "Suicidal thoughts",
     intro: "Ask about suicide directly in every depressed patient. The aim is to find the disorder driving the risk and to judge immediate safety.",
     ask: ["Passive thoughts of death, or active thoughts of suicide?", "Is there a plan, intent, preparation or access to means (firearms, medicines)?", "Any past attempts?", "Alcohol or drug use now?", "Hopelessness, agitation or anxious distress?"],
-    mustNotMiss: ["**Imminent risk**: plan, intent, means, recent attempt.", "**Command hallucinations** or psychotic guilt.", "**Intoxication** or withdrawal.", "**Mixed features** or agitation, which raise risk."],
+    mustNotMiss: ["**Imminent risk**: plan, intent, means, recent attempt.", "**Command hallucinations** or psychotic guilt.", "**Intoxication** or withdrawal.", "**Anxious distress**: high anxiety is associated with higher suicide risk (p. 211)."],
     items: [
       { ch: "ch04", dx: "mdd", when: "Recurrent thoughts of death or suicide are criterion A9; a plan or attempt need occur only once." },
-      { ch: "ch03", dx: "bipolar-i", when: "Depressive and mixed episodes carry especially high risk." },
-      { ch: "ch04", dx: "substance-induced-depressive", when: "Risk peaks in intoxication and withdrawal." },
+      { ch: "ch03", dx: "bipolar-i", when: "Past attempts and more time spent depressed raise risk (Ch 3)." },
+      { ch: "ch04", dx: "substance-induced-depressive", when: "Suicide attempts are more likely with possible alcohol use disorder plus depressive episodes (p. 205)." },
       { ch: "ch02", dx: "schizophrenia", when: "About 5%–6% die by suicide and about 20% attempt." },
       { ch: "ch18", dx: "borderline-pd", when: "Recurrent suicidal behavior and self-injury in unstable relationships." },
       { ch: "ch22", dx: "suicidal-behavior", when: "Current or past suicidal behavior can be coded alongside any diagnosis." }
@@ -252,7 +252,7 @@ SP.complaintData = (SP.complaintData || []).concat([
   },
   {
     id: "fatigue", title: "Fatigue or low energy",
-    intro: "Fatigue is the commonest presenting complaint of depression in primary care, and depression is underdiagnosed because of it. Look for the other depressive symptoms, and for medical causes.",
+    intro: "The presenting complaint in depression is often fatigue or insomnia rather than low mood, and failing to probe further leads to underdiagnosis (p. 185). Look for the other depressive symptoms, and for medical causes.",
     ask: ["Is there low mood or loss of interest as well?", "How are sleep, appetite and concentration?", "Any snoring, daytime sleepiness, weight change, heavy periods or new medicines?"],
     mustNotMiss: ["**Hypothyroidism**, anemia, sleep apnea, diabetes, cancer.", "**Stimulant withdrawal**."],
     items: [
@@ -265,7 +265,7 @@ SP.complaintData = (SP.complaintData || []).concat([
   },
   {
     id: "sleep", title: "Sleeping too much or too little",
-    intro: "Sleep change is nearly universal in mood disorders. The key distinction is **insomnia** (wants to sleep, cannot, tired next day) versus **decreased need for sleep** (feels rested on little sleep), which points to mania or hypomania.",
+    intro: "Sleep disturbance is present in a high proportion of depressive episodes (p. 185). The key distinction is **insomnia** (wants to sleep, cannot, tired next day) versus **decreased need for sleep** (feels rested on little sleep), which points to mania or hypomania.",
     ask: ["Trouble falling asleep, waking in the night, or waking too early?", "Tired the next day, or rested and energetic?", "Sleeping more than usual, 10 hours or more?", "Alcohol, caffeine, stimulants or sleeping pills?"],
     mustNotMiss: ["**Decreased need for sleep**: screen for hypomania or mania.", "Obstructive **sleep apnea**."],
     items: [
@@ -278,26 +278,26 @@ SP.complaintData = (SP.complaintData || []).concat([
   },
   {
     id: "perinatal", title: "Mood change during pregnancy or after childbirth",
-    intro: "Perinatal mood problems are common and range from benign maternity blues to postpartum psychosis, a psychiatric emergency.",
+    intro: "Perinatal mood problems are common and range from benign maternity blues to postpartum psychosis, a psychiatric emergency (app guidance).",
     ask: ["When did it start: during pregnancy, or how long after delivery?", "Does it impair her functioning, and is it lasting longer than a week?", "Any thoughts of harming herself or the baby?", "Any confusion, delusions or hallucinations?", "Personal or family history of bipolar disorder?"],
-    mustNotMiss: ["**Postpartum psychosis**: an emergency, often bipolar, with risk to mother and infant.", "**Thoughts of harming the infant**.", "**Thyroid disease** and postpartum delirium."],
+    mustNotMiss: ["**Postpartum psychosis**: an emergency (app guidance), strongly associated with bipolar I disorder (Ch 3, p. 148), with risk to mother and infant.", "**Thoughts of harming the infant**.", "**Thyroid disease** and postpartum delirium."],
     items: [
       { ch: "ch04", name: "Maternity blues (not a disorder)", when: "Sudden tearfulness in the first days, no impairment, improves within about a week." },
       { ch: "ch04", dx: "mdd", when: "An MDE beginning during pregnancy or within 4 weeks after delivery: **with peripartum onset**." },
-      { ch: "ch03", dx: "bipolar-i", when: "Postpartum manic or psychotic episodes; recurrence risk 30%–50% per delivery after one." },
+      { ch: "ch03", dx: "bipolar-i", when: "Postpartum episodes with psychotic features: 30%–50% recurrence per later delivery (p. 213)." },
       { ch: "ch02", dx: "brief-psychotic-disorder", when: "Psychosis lasting less than a month, specifier with peripartum onset." },
       { ch: "ch04", dx: "depressive-due-to-amc", when: "Postpartum thyroiditis and other perinatal medical causes." }
     ]
   },
   {
     id: "memory-older", title: "Memory complaints with low mood in an older adult",
-    intro: "Depression in late life can mimic, accompany or herald a neurocognitive disorder.",
+    intro: "Depression in late life can mimic, accompany or herald a neurocognitive disorder (p. 186). The bedside clues below are app guidance.",
     ask: ["Did the low mood or the memory problem come first?", "Is the onset subacute (weeks) or gradual (years)?", "Does the person complain loudly about memory, or minimize it?", "Any fluctuation in attention or alertness?"],
-    mustNotMiss: ["**Delirium**: fluctuating attention and awareness.", "**Medical and medication causes**.", "**Suicide risk**, which stays high in later life, especially in men."],
+    mustNotMiss: ["**Delirium**: fluctuating attention and awareness.", "**Medical and medication causes**.", "**Suicide risk**: attempts become less likely in later life, but the risk of death by suicide does not (p. 190)."],
     items: [
-      { ch: "ch04", dx: "mdd", when: "Subacute onset with depressive symptoms, “don’t know” answers, effort-dependent deficits (“pseudodementia”)." },
+      { ch: "ch04", dx: "mdd", when: "Subacute onset with depressive symptoms, “don’t know” answers, effort-dependent deficits (“pseudodementia”) (app guidance)." },
       { ch: "ch04", dx: "depressive-due-to-amc", when: "Poststroke depression or depression in Parkinson’s or Huntington’s disease." },
-      { ch: "ch17", dx: "major-ncd", when: "Gradual decline that precedes the mood change, often minimized by the patient." },
+      { ch: "ch17", dx: "major-ncd", when: "Gradual decline that precedes the mood change, often minimized by the patient (app guidance)." },
       { ch: "ch17", dx: "delirium", when: "Acute, fluctuating disturbance of attention and awareness." }
     ]
   },
@@ -310,14 +310,14 @@ SP.complaintData = (SP.complaintData || []).concat([
       { ch: "ch04", dx: "pdd", when: "Low mood more days than not for ≥2 years with two of six symptoms." },
       { ch: "ch04", dx: "mdd", when: "Recurrent episodes; diagnose with PDD when both are met." },
       { ch: "ch03", dx: "cyclothymic", when: "Subthreshold highs as well as lows for ≥2 years; precludes PDD." },
-      { ch: "ch18", name: "Personality disorders", when: "Borderline, avoidant and dependent personality disorders often coexist; both can be diagnosed." }
+      { ch: "ch18", name: "Personality disorders", when: "Cluster B and C personality disorders (especially borderline) often coexist; both can be diagnosed." }
     ]
   },
   {
     id: "after-substance", title: "Mood change after a new medicine or drug",
     intro: "Always ask what changed before the mood changed. Substance- and medication-induced syndromes are common and usually resolve when the cause is removed.",
     ask: ["What was started, stopped or changed, and when?", "Did the symptoms begin during intoxication, withdrawal or after a medication change?", "Were there similar symptoms before any use?", "Do symptoms persist after about a month without the substance?"],
-    mustNotMiss: ["**Withdrawal** states that are medically dangerous (alcohol, sedatives).", "**Suicide risk** during intoxication or withdrawal."],
+    mustNotMiss: ["**Withdrawal** states that are medically dangerous (alcohol, sedatives).", "**Suicide risk**, especially with alcohol use disorder and depressive episodes (p. 205)."],
     items: [
       { ch: "ch04", dx: "substance-induced-depressive", when: "Depression during or soon after use, withdrawal or medication exposure." },
       { ch: "ch03", dx: "substance-induced-bipolar", when: "Mania or hypomania after a stimulant, steroid or antidepressant." },
@@ -335,7 +335,7 @@ SP.complaintData = (SP.complaintData || []).concat([
       { ch: "ch03", dx: "bipolar-ii", when: "Hypomania ≥4 days plus a past major depressive episode." },
       { ch: "ch03", dx: "cyclothymic", when: "Subthreshold highs and lows for ≥2 years." },
       { ch: "ch04", dx: "mdd", when: "Three or more manic symptoms during depression: **with mixed features**, if full hypomania was never met." },
-      { ch: "ch03", dx: "substance-induced-bipolar", when: "Onset after a stimulant, steroid or antidepressant that persists beyond its effects." }
+      { ch: "ch03", dx: "substance-induced-bipolar", when: "Onset during or soon after a stimulant, steroid or antidepressant; a full syndrome that persists beyond the drug’s effect counts toward bipolar I (Ch 3)." }
     ]
   },
   {
@@ -346,10 +346,10 @@ SP.complaintData = (SP.complaintData || []).concat([
     helpers: ["psychosis"],
     items: [
       { ch: "ch02", dx: "schizophrenia", when: "≥6 months of illness, including ≥1 month of active symptoms." },
-      { ch: "ch02", dx: "schizoaffective-disorder", when: "Mood episodes for most of the illness plus ≥2 weeks of psychosis without mood symptoms." },
+      { ch: "ch02", dx: "schizoaffective-disorder", when: "Mood episodes for most of the illness plus ≥2 weeks of psychosis without a major mood episode." },
       { ch: "ch04", dx: "mdd", when: "Psychosis **only** during depressive episodes: with psychotic features." },
       { ch: "ch03", dx: "bipolar-i", when: "Psychosis during a manic episode makes the episode manic, by definition." },
-      { ch: "ch04", name: "Normal grief experiences", when: "Briefly hearing or seeing the deceased, with insight." },
+      { ch: "ch07", name: "Normal grief experiences", when: "Briefly seeing or sensing the deceased, common across cultures and often reassuring (Ch 7)." },
       { ch: "ch02", dx: "substance-induced-psychotic", when: "Psychosis linked to intoxication or withdrawal." }
     ]
   }

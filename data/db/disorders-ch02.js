@@ -10,7 +10,7 @@ SP.disorders = (SP.disorders || []).concat([
     functioning: "Interpersonal deficits are part of the definition",
     mood: "Often seeks help for associated anxiety or depression",
     criteria: [
-      ["A", "Pervasive social and interpersonal deficits with cognitive or perceptual distortions and eccentric behavior, from early adulthood, shown by **five or more of nine**:", ["Ideas of reference", "Odd beliefs or magical thinking", "Unusual perceptual experiences", "Odd thinking and speech", "Suspiciousness or paranoid ideation", "Inappropriate or constricted affect", "Odd or eccentric behavior or appearance", "No close friends besides first-degree relatives", "Social anxiety that does not lessen with familiarity, driven by paranoid fears"]],
+      ["A", "Pervasive social and interpersonal deficits with cognitive or perceptual distortions and eccentric behavior, from early adulthood, shown by **five or more of nine**:", ["Ideas of reference", "Odd beliefs or magical thinking", "Unusual perceptual experiences", "Odd thinking and speech", "Suspiciousness or paranoid ideation", "Inappropriate or constricted affect", "Odd or eccentric behavior or appearance", "No close friends besides first-degree relatives", "Social anxiety that does not lessen with familiarity and tends to go with paranoid fears"]],
       ["B", "Not exclusively during schizophrenia, a mood disorder with psychotic features, another psychotic disorder or autism spectrum disorder.", null, "Add “(premorbid)” if criteria were met before schizophrenia began."]
     ],
     specifiers: ["“(Premorbid)” when it precedes schizophrenia"],
@@ -45,7 +45,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["E", "Not due to a substance or medical condition; not better explained by BDD or OCD."]
     ],
     specifiers: ["**Type**: erotomanic, grandiose, jealous, persecutory, somatic, mixed, unspecified", "**With bizarre content**", "**Course** (after 1 year)", "**Severity** 0–4"],
-    epi: [["Prevalence", "About 0.2% lifetime (Finnish sample)"], ["Commonest type", "Persecutory"], ["Sex", "No major overall difference; jealous type probably more common in men; men have worse outcomes"], ["Course", "About one-third of cases lasting 1–3 months become schizophrenia; stable after 6–12 months"], ["Age", "May be more prevalent in older people"]],
+    epi: [["Prevalence", "About 0.2% lifetime (Finnish sample)"], ["Commonest type", "Persecutory"], ["Sex", "No major overall difference; jealous type probably more common in men; men have worse outcomes"], ["Course", "About one-third of cases lasting 1–3 months are later diagnosed with schizophrenia; much less likely to change after 6–12 months"], ["Age", "May be more prevalent in older people"]],
     risk: ["Significant familial link with schizophrenia and schizotypal PD.", "Traditional beliefs unfamiliar to Western clinicians can be mislabeled as delusional."],
     differential: [
         { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
@@ -75,7 +75,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["C", "Not better explained by a mood disorder with psychotic features, another psychotic disorder or catatonia; not due to a substance or medical condition."]
     ],
     specifiers: ["**With marked stressor(s)** (brief reactive psychosis)", "**Without marked stressor(s)**", "**With peripartum onset** (pregnancy or within 4 weeks postpartum)", "**With catatonia** (+F06.1)", "**Severity** 0–4"],
-    epi: [["Share of first-onset psychosis", "2%–7%"], ["Average onset", "Mid-30s"], ["Relapse", "More than 50%"], ["Diagnostic change", "In under half, more often to a schizophrenia spectrum disorder"], ["Suicide", "Increased risk of suicidal behavior, especially when acute"]],
+    epi: [["Share of first-onset psychosis", "May account for 2%–7% in several countries"], ["Average onset", "Mid-30s"], ["Relapse", "More than 50%"], ["Diagnostic change", "In under half, more often to a schizophrenia spectrum disorder"], ["Suicide", "There appears to be an increased risk of suicidal behavior, especially when acute"]],
     risk: ["Distinguish culturally sanctioned experiences: voices during a religious ceremony, bereaved relatives sensing the deceased."],
     differential: [
         { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
@@ -87,7 +87,7 @@ SP.disorders = (SP.disorders || []).concat([
       { name: "Personality disorders", how: "Transient stress-related symptoms usually need no extra diagnosis; ≥1 day may justify adding brief psychotic disorder." }
     ],
     pearls: ["The only psychotic disorder that **requires full recovery** within a month.", "Peripartum onset = during pregnancy or **within 4 weeks** postpartum."],
-    cmp: { symptoms: "One or more of four positive symptoms (no negative symptoms)", exclusions: "Mood disorder with psychosis; other psychotic disorder; substance or medical cause", prevalence: "2%–7% of first-onset psychosis", course: ">50% relapse but usually favorable" },
+    cmp: { symptoms: "One or more of four positive symptoms (no negative symptoms)", exclusions: "Mood disorder with psychosis; other psychotic disorder; substance or medical cause", prevalence: "May be 2%–7% of first-onset psychosis", course: ">50% relapse but usually favorable" },
     clues: [["Core picture", "Sudden turmoil, delusions and hallucinations in a previously well person, gone within weeks"], ["Time criterion", "At least a day but less than a month"], ["A specifier", "With marked stressor, also called reactive psychosis"], ["Course", "Full recovery required; more than half relapse later"]]
   },
   {
@@ -104,7 +104,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["D", "Not due to a substance or another medical condition."]
     ],
     specifiers: ["**With good prognostic features** (≥2 of: psychosis within 4 weeks of first change; confusion or perplexity; good premorbid functioning; no blunted or flat affect)", "**Without good prognostic features**", "**With catatonia** (+F06.1)", "**Severity** 0–4"],
-    epi: [["Incidence", "Possibly fivefold lower than schizophrenia in high-income countries; may equal it in lower-income settings"], ["Course", "About one-third recover within 6 months; most of the rest become schizophrenia or schizoaffective disorder"], ["Familial", "Relatives at increased risk of schizophrenia"]],
+    epi: [["Incidence", "Possibly fivefold lower than schizophrenia in high-income countries; may be higher in lower-income countries, and in some settings as common as schizophrenia"], ["Course", "About one-third recover within 6 months; most of the rest become schizophrenia or schizoaffective disorder"], ["Familial", "Relatives at increased risk of schizophrenia"]],
     risk: ["Differential and associated features follow schizophrenia."],
     differential: [
         { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
@@ -133,7 +133,7 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     specifiers: ["**Course** (after 1 year): first or multiple episodes, acute, partial or full remission; continuous; unspecified", "**With catatonia** (+F06.1)", "**Severity** 0–4"],
     epi: [["Lifetime prevalence", "About 0.3%–0.7%"], ["Onset", "Late teens to mid-30s; peak early–mid 20s (men), late 20s (women)"], ["First-episode outcome", "Remission 56%, recovery 30% (pooled)"], ["Suicide", "5%–6% die by suicide; about 20% attempt"], ["Tobacco", "More than half have tobacco use disorder"]],
-    risk: ["Urban upbringing, migration and refugee status, discrimination, social adversity, childhood trauma.", "Season of birth (late winter/early spring; summer for the deficit form).", "Polygenic risk shared with bipolar disorder, depression and autism; most patients have no family history.", "Obstetric complications with hypoxia, older paternal age, prenatal infection, stress, malnutrition, maternal diabetes.", "Women: later onset with a midlife peak, more affective symptoms, better social functioning; symptoms track estrogen.", "Underserved ethnic and racialized groups (e.g., African Americans in the US) are more often misdiagnosed with schizophrenia."],
+    risk: ["Urban upbringing, migration and refugee status, discrimination, social adversity; among people with psychotic disorders, symptom severity appears to correlate with adverse childhood experiences.", "Season of birth (late winter/early spring; summer for the deficit form).", "Polygenic risk shared with bipolar disorder, depression and autism; most patients have no family history.", "Obstetric complications with hypoxia, older paternal age, prenatal infection, stress, malnutrition, maternal diabetes.", "Women: later onset with a midlife peak, more affective symptoms, better social functioning; symptoms track estrogen.", "Underserved ethnic and racialized groups (e.g., African Americans in the US) are more often misdiagnosed with schizophrenia."],
     differential: [
         { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
       { name: "MDD or bipolar disorder with psychotic or catatonic features", how: "Psychosis only during mood episodes." },
@@ -166,8 +166,8 @@ SP.disorders = (SP.disorders || []).concat([
       ["D", "Not due to a substance or another medical condition."]
     ],
     specifiers: ["**Bipolar type (F25.0)** or **depressive type (F25.1)**", "**With catatonia** (+F06.1)", "**Course** (after 1 year)", "**Severity** 0–4"],
-    epi: [["Prevalence", "About one-third as common as schizophrenia; 0.3% lifetime (Finnish sample)"], ["Sex", "Higher in women (DSM-IV criteria)"], ["Onset", "Usually early adulthood"], ["Prognosis", "Better than schizophrenia, worse than mood disorders"], ["Suicide", "Lifetime risk 5% (with schizophrenia); higher with depressive symptoms"]],
-    risk: ["Relatives of people with schizophrenia, bipolar disorder or schizoaffective disorder are at higher risk.", "Polygenic risk scores for schizophrenia, bipolar disorder and MDD may all be elevated.", "African American and Hispanic patients who meet criteria are more often diagnosed with schizophrenia."],
+    epi: [["Prevalence", "Appears to be about one-third as common as schizophrenia; 0.3% lifetime (Finnish sample)"], ["Sex", "Higher in women (DSM-IV criteria)"], ["Onset", "Usually early adulthood"], ["Prognosis", "Better than schizophrenia, worse than mood disorders"], ["Suicide", "Lifetime risk 5% (with schizophrenia); higher with depressive symptoms"]],
+    risk: ["Relatives of people with schizophrenia, bipolar disorder or schizoaffective disorder may be at higher risk.", "Polygenic risk scores for schizophrenia, bipolar disorder and MDD may all be elevated.", "Some evidence suggests African American and Hispanic patients who meet criteria are more often diagnosed with schizophrenia."],
     differential: [
         { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
       { id: "schizophrenia", how: "Mood episodes for only a minority of the illness (Criterion C)." },
@@ -176,7 +176,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "delusional-disorder", how: "Delusions only, mood brief." }
     ],
     pearls: ["Criterion B separates it from **mood disorders**; Criterion C from **schizophrenia**.", "The depressive episode needs **depressed mood**, not just anhedonia.", "Schizophrenia’s B (decline), C (6 months) and F (autism) are **not** required.", "Diagnoses shift over time, most often **to schizophrenia**."],
-    cmp: { symptoms: "Schizophrenia Criterion A plus a major mood episode", exclusions: "Substance or medical cause", prevalence: "≈0.3%; one-third of schizophrenia", course: "Between schizophrenia and mood disorders" },
+    cmp: { symptoms: "Schizophrenia Criterion A plus a major mood episode", exclusions: "Substance or medical cause", prevalence: "≈0.3%; appears to be one-third as common as schizophrenia", course: "Between schizophrenia and mood disorders" },
     clues: [["Core picture", "Recurrent mood episodes with psychosis, and voices that persist between episodes"], ["Time rule", "Two weeks of psychosis without a mood episode; mood for the majority of the illness"], ["Types", "Bipolar type or depressive type"], ["Prognosis", "Better than schizophrenia, worse than mood disorders"]]
   },
   {
@@ -205,10 +205,10 @@ SP.disorders = (SP.disorders || []).concat([
       ["E", "Clinically significant distress or impairment."]
     ],
     specifiers: ["**With onset during intoxication**", "**With onset during withdrawal**", "**With onset after medication use**", "**Severity** 0–4 (no disorganized speech rating)"],
-    epi: [["First-episode psychosis", "7%–25% are substance/medication-induced"], ["Long-term", "32% later schizophrenia spectrum (26%) or bipolar (8%); cannabis-induced highest at 44%"]],
-    risk: ["New delusions in a man older than 35 with no psychotic history suggest a substance or medication cause.", "In later life, polypharmacy makes prescription-induced psychosis more likely."],
+    epi: [["First-episode psychosis", "7%–25% are substance/medication-induced"], ["Long-term", "Danish registry, 20 years: 32% later schizophrenia spectrum (26%) or bipolar (8%); cannabis-induced highest at 44%"]],
+    risk: ["New delusions in a man older than 35 with no psychotic history suggest a substance or medication cause.", "In later life, polypharmacy may be associated with a greater likelihood of prescription-induced psychosis."],
     differential: [
-        { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
+        { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates four primary symptoms (delusions, hallucinations, abnormal psychomotor behavior, negative symptoms; no disorganized speech rating) 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
       { name: "Intoxication or withdrawal with perceptual disturbances", how: "Reality testing intact: the person knows the perceptions are drug effects." },
       { name: "Hallucinogen persisting perception disorder", how: "Flashbacks long after hallucinogen use has stopped." },
       { name: "Delirium", how: "Psychosis only during a delirium is part of the delirium." },
@@ -231,16 +231,16 @@ SP.disorders = (SP.disorders || []).concat([
     mood: "—",
     criteria: [
       ["A", "Prominent hallucinations or delusions."],
-      ["B", "Evidence that the disturbance is the direct pathophysiological consequence of another medical condition."],
+      ["B", "Evidence that another medical condition directly causes the disturbance through its pathophysiology."],
       ["C", "Not better explained by another mental disorder."],
       ["D", "Not exclusively during delirium."],
       ["E", "Clinically significant distress or impairment."]
     ],
     specifiers: ["**With delusions (F06.2)**", "**With hallucinations (F06.0)**", "**Severity** 0–4 (no disorganized speech rating)"],
-    epi: [["Lifetime prevalence", "0.21%–0.54%; 0.74% over age 65"], ["Epilepsy", "Postictal psychosis is the most common form (2%–7.8% of people with epilepsy)"], ["Older adults", "About 60% of new-onset psychosis has a medical cause"]],
+    epi: [["Lifetime prevalence", "0.21%–0.54% (Sweden, Finland); 0.74% over age 65 (Finland)"], ["Epilepsy", "Postictal psychosis is the most common form (2%–7.8% of people with epilepsy)"], ["Older adults", "About 60% of new-onset psychosis has a medical cause"]],
     risk: ["Preexisting CNS injury may worsen the course.", "Vision, hearing and cognitive impairment may lower the threshold for psychosis in older people."],
     differential: [
-        { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
+        { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates four primary symptoms (delusions, hallucinations, abnormal psychomotor behavior, negative symptoms; no disorganized speech rating) 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
       { name: "Delirium", how: "Psychosis only during delirium: no separate diagnosis." },
       { name: "Major or mild neurocognitive disorder", how: "Can be co-diagnosed when the same disease causes the psychosis (e.g., Lewy body disease)." },
       { id: "substance-induced-psychotic", how: "Symptoms within about 4 weeks of intoxication, withdrawal or medication use; both can be given." },
@@ -268,7 +268,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "nms", name: "Neuroleptic malignant syndrome (G21.0)", how: "On antipsychotics, with vital sign and laboratory abnormalities." },
       { id: "medication-induced-acute-dystonia", name: "Medication-induced movement disorders", how: "E.g., acute dystonia producing abnormal postures." }
     ],
-    pearls: ["Rare signs such as **waxy flexibility** are overtaught; most catatonia is mutism, negativism, staring and posturing.", "Complications: malnutrition, exhaustion, thromboembolism, pressure ulcers, contractures, hyperpyrexia."],
+    pearls: ["Overemphasis in teaching on rare signs such as **waxy flexibility** contributes to missed catatonia.", "Complications: malnutrition, exhaustion, thromboembolism, pressure ulcers, muscle contractions, hyperpyrexia."],
     cmp: { symptoms: "≥3 of 12 catatonic features", exclusions: "Medical causes, medication effects, NMS", prevalence: "≈9% of clinical samples; up to 35% in schizophrenia", course: "Follows the associated disorder" },
     clues: [["Core picture", "A mute, rigid patient with depression who holds a raised arm in place for minutes"], ["Threshold", "Three or more of twelve psychomotor features"], ["Coding", "F06.1, after the associated mental disorder"], ["Rule out first", "Neuroleptic malignant syndrome"]]
   },
@@ -278,7 +278,7 @@ SP.disorders = (SP.disorders || []).concat([
     essence: "Catatonia (≥3 of 12 features) judged to be the **direct physiological effect** of another medical condition.",
     duration: "No time criterion",
     functioning: "Distress or impairment required (Criterion E)",
-    mood: "Not better explained by another mental disorder (e.g., a manic episode)",
+    mood: "Another mental disorder, such as a manic episode, does not explain it better",
     criteria: [
       ["A", "Three or more of the 12 catatonic features."],
       ["B", "Evidence that it is the direct pathophysiological consequence of another medical condition."],
@@ -286,7 +286,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["D", "Not exclusively during delirium."],
       ["E", "Clinically significant distress or impairment."]
     ],
-    specifiers: ["Code the medical condition first (e.g., K72.90 hepatic encephalopathy), then F06.1 catatonic disorder due to that condition"],
+    specifiers: ["Code the medical condition first (e.g., K76.82 hepatic encephalopathy; printed as K72.90, updated October 1, 2022), then F06.1 catatonic disorder due to that condition"],
     epi: [["Causes", "Neoplasms, head trauma, stroke, encephalitis; hypercalcemia, hepatic encephalopathy, homocystinuria, diabetic ketoacidosis"]],
     risk: [],
     differential: [
@@ -313,7 +313,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "catatonia-associated", how: "Underlying mental disorder known and ≥3 features." },
       { id: "catatonic-due-to-amc", how: "Medical cause established." }
     ],
-    pearls: ["The only catatonia diagnosis with **two codes**."],
+    pearls: ["The only catatonia diagnosis whose first code is a **symptom code** (R29.818)."],
     cmp: { symptoms: "Catatonic symptoms, criteria possibly incomplete", exclusions: "—", prevalence: "—", course: "—" },
     clues: [["Core picture", "A mute, posturing patient in the emergency room with no history available"], ["Coding", "R29.818 first, then F06.1"]]
   },
@@ -324,7 +324,7 @@ SP.disorders = (SP.disorders || []).concat([
     duration: "—",
     functioning: "Distress or impairment required",
     mood: "Includes delusions with substantial overlapping mood episodes",
-    criteria: ["Record “other specified schizophrenia spectrum and other psychotic disorder” followed by the reason. Examples: persistent auditory hallucinations alone; delusions with significant overlapping mood episodes; attenuated psychosis syndrome; delusional symptoms in a partner of someone with prominent delusions."],
+    criteria: ["Record “other specified schizophrenia spectrum and other psychotic disorder” followed by the reason. Examples: persistent auditory hallucinations alone; delusions with significant overlapping mood episodes; attenuated psychosis syndrome; delusional symptoms in someone in a close relationship with a person who has prominent delusions."],
     specifiers: ["The specific reason in parentheses"],
     epi: [],
     risk: [],

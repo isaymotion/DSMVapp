@@ -20,10 +20,10 @@ SP.add("ch02", "mnemonics", [
       ["A", "Affect, blunted", "Diminished emotional expression: face, eye contact, prosody, gestures"],
       ["A", "Alogia", "Diminished speech output"],
       ["A", "Avolition", "Less self-initiated, purposeful activity"],
-      ["A", "Anhedonia", "Less pleasure from positive stimuli, or anticipating it"],
+      ["A", "Anhedonia", "Decreased ability to experience pleasure; in schizophrenia, pleasurable activity is pursued less often"],
       ["A", "Asociality", "Apparent lack of interest in social interaction"]
     ],
-    caveat: "Criterion A5 names only **diminished emotional expression** and **avolition**; all five make up the negative symptom domain. Rule out secondary causes first: depression, medication side effects, demoralization, lack of stimulation."
+    caveat: "Criterion A5 names only **diminished emotional expression** and **avolition**; all five make up the negative symptom domain. Rule out secondary causes first: depression, medication side effects, demoralization, lack of stimulation (app guidance)."
   },
   {
     id: "m2-03", short: "Delusional disorder ≥1 month; schizoaffective ≥2 weeks of psychosis without mood", name: "1 day, 1 month, 6 months", original: true, dx: "schizophreniform-disorder", sec: "s2-schizophreniform",

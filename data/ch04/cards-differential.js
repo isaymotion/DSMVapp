@@ -1,11 +1,11 @@
 /* Chapter 4 differential diagnosis flashcards. Card ids are the key for each card's review schedule: keep them stable. */
 SP.add("ch04", "differential", [
   { id: "d4-01", tag: "DMDD vs bipolar", q: "An 11-year-old has been irritable and explosive for 2 years with no distinct episodes. Pediatric bipolar disorder?", a: "**No.** Bipolar disorder is **episodic**; chronic, nonepisodic irritability with frequent outbursts points to **DMDD**." },
-  { id: "d4-02", tag: "DMDD vs bipolar", q: "A child meets DMDD criteria but had 5 days of euphoria, grandiosity and no sleep last year. Diagnosis?", a: "**Bipolar disorder**, not DMDD. Any full hypomanic or manic episode (or manic-like spell over 1 day) rules out DMDD." },
+  { id: "d4-02", tag: "DMDD vs bipolar", q: "A child meets DMDD criteria but had 5 days of euphoria, grandiosity, racing thoughts and no need for sleep last year. Diagnosis?", a: "**Bipolar disorder**, not DMDD. Any full hypomanic or manic episode (or manic-like spell over 1 day) rules out DMDD." },
   { id: "d4-03", tag: "DMDD vs ODD", q: "A child meets criteria for both DMDD and ODD. What do you diagnose?", a: "**Only DMDD.**" },
   { id: "d4-04", tag: "DMDD vs IED", q: "Severe outbursts twice a week for 4 months, calm and pleasant between them. DMDD?", a: "**No.** No persistent irritability between outbursts and only 4 months: consider **intermittent explosive disorder**, which needs only 3 months." },
   { id: "d4-05", tag: "DMDD vs autism", q: "A child with autism has rages only when routines change. DMDD?", a: "**No.** The outbursts are **secondary to autism spectrum disorder**." },
-  { id: "d4-06", tag: "DMDD vs MDD", q: "A 10-year-old is irritable and explosive only during a 3-week episode with anhedonia and poor sleep. DMDD?", a: "**No.** Irritability confined to a **major depressive episode** means MDD." },
+  { id: "d4-06", tag: "DMDD vs MDD", q: "A 10-year-old is irritable and explosive only during a 3-week major depressive episode with anhedonia and poor sleep. DMDD?", a: "**No.** Irritability confined to a **major depressive episode** means MDD." },
   { id: "d4-07", tag: "DMDD age", q: "A 4-year-old has daily tantrums and irritability. DMDD?", a: "**No.** DMDD is not diagnosed for the first time **before age 6**." },
   { id: "d4-08", tag: "MDD vs bipolar II", q: "Recurrent depression plus one past 5-day hypomanic episode. MDD?", a: "**No: bipolar II disorder.** Any lifetime hypomania excludes MDD." },
   { id: "d4-09", tag: "MDD vs bipolar", q: "Depression with past hypomanic-like periods that were all on cocaine. MDD possible?", a: "**Yes.** The exclusion does not apply if all manic-like or hypomanic-like episodes were **substance-induced**." },

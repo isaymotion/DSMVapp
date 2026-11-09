@@ -152,7 +152,7 @@ SP.helpers = (SP.helpers || []).concat([
       },
       sub: {
         q: "Which best describes the subthreshold depression?",
-        help: "All other specified examples require that the person has never met criteria for another depressive or bipolar disorder and is not currently psychotic.",
+        help: "Examples 1–3 of other specified depressive disorder require that the person has never met criteria for another depressive or bipolar disorder and is not currently psychotic.",
         options: [
           { label: "Depressed mood + four symptoms for 2–13 days, at least monthly, for 12 months", to: "r:rbd", note: "Monthly brief episodes of five symptoms for a year." },
           { label: "Depressed affect + four symptoms for 4–13 days", to: "r:sde", note: "One short episode of five symptoms." },

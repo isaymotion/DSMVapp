@@ -23,7 +23,7 @@ SP.add("ch04", "guide", {
           title: "How the chapter is built",
           pages: "177",
           blocks: [
-            { type: "p", text: "The depressive disorders are grouped because they all involve **sad, empty or irritable mood** plus changes that significantly affect function, such as the somatic and cognitive changes of major depression. The disorders differ in **duration**, **timing** (for example, the premenstrual week) and **presumed etiology** (a substance or a medical condition). Unlike DSM-IV, DSM-5 separates the depressive disorders from the bipolar disorders into their own chapter." },
+            { type: "p", text: "The depressive disorders are grouped because they all involve **sad, empty or irritable mood** plus changes that significantly affect function, such as the somatic and cognitive changes of major depression. The disorders differ in **duration**, **timing** (for example, the premenstrual week) and **presumed etiology** (a substance or a medical condition). Unlike DSM-IV, DSM-5 puts the depressive and bipolar disorders in separate chapters (app note; the Chapter 3 introduction, p. 139, explains why the bipolar chapter sits between the psychotic and depressive chapters)." },
             { type: "table", caption: "Diagnoses in this chapter (codes as listed in DSM-5-TR)", head: ["Diagnosis", "Code", "Core idea", "Page"], rows: [
               ["[[dx:dmdd|Disruptive mood dysregulation disorder]]", "F34.81", "Children 6–18: severe outbursts ≥3/week + persistently irritable mood, ≥12 months, onset <10", "178–182"],
               ["[[dx:mdd|Major depressive disorder]]", "F32.x / F33.x", "≥1 major depressive episode (≥2 weeks), never mania or hypomania", "183–192"],
@@ -39,7 +39,7 @@ SP.add("ch04", "guide", {
               ["Duration", "2 weeks (major depressive episode) · 2 years, 1 in youth (persistent depressive) · 12 months (DMDD)", "drug"],
               ["Timing", "Premenstrual week (PMDD) · seasonal pattern · peripartum onset", "hy"],
               ["Etiology", "A substance, a medication or another medical condition", "case"]
-            ], note: "Every primary depressive disorder requires that there has **never** been a manic or hypomanic episode (DMDD: never a manic-like period lasting more than 1 day). Any lifetime mania or hypomania moves the diagnosis to [[ch:ch03|Chapter 3]]." },
+            ], note: "Major depressive and persistent depressive disorder require that there has **never** been a manic or hypomanic episode; DMDD excludes any manic-like period lasting more than 1 day; the PMDD criteria have no such exclusion. For MDD or PDD, any lifetime mania or hypomania moves the diagnosis to [[ch:ch03|Chapter 3]]." },
             { type: "callout", kind: "key", title: "Five questions, in this order", text: "**1. Cause?** (substance, medication, medical condition, delirium). **2. Ever manic or hypomanic?** If yes, it is a bipolar disorder. **3. A child with chronic irritability and outbursts?** Consider DMDD. **4. Tied to the menstrual cycle?** Consider PMDD. **5. Full major depressive episode, chronic course, or neither?** That decides between major depressive disorder, persistent depressive disorder (or both) and the other specified categories. The [[helper:depressive|depressive helper]] asks exactly these." }
           ]
         }
@@ -57,16 +57,16 @@ SP.add("ch04", "guide", {
               ["A", "Severe **recurrent temper outbursts**, verbal (rages) and/or behavioral (aggression toward people or property), **grossly out of proportion** to the situation."],
               ["B", "Outbursts are **inconsistent with developmental level**."],
               ["C", "Outbursts occur on average **three or more times per week**."],
-              ["D", "Between outbursts, mood is **persistently irritable or angry** most of the day, nearly every day, and **observable by others** (parents, teachers, peers)."],
+              ["D", "Between outbursts, mood stays **irritable or angry** for most of each day on almost all days, and others (parents, teachers, peers) **can see it**."],
               ["E", "Criteria A–D present for **12 or more months**, with no period of **3 or more consecutive months** without all of them."],
-              ["F", "A and D are present in **at least two of three settings** (home, school, with peers) and **severe in at least one**."],
+              ["F", "Outbursts and irritable mood show up in **two or more of three settings** (home, school, with peers) and are **severe in at least one**."],
               ["G", "Not diagnosed for the first time **before age 6** or **after age 18**."],
               ["H", "By history or observation, onset of A–E is **before age 10**."],
               ["I", "Never a distinct period lasting **more than 1 day** with full symptom criteria (except duration) for a **manic or hypomanic** episode.", [], "Developmentally appropriate mood elevation, such as excitement about a highly positive event, does not count as mania."],
               ["J", "Not only during a **major depressive episode** and not better explained by another disorder (autism spectrum disorder, PTSD, separation anxiety disorder, persistent depressive disorder).", [], "**Cannot coexist** with oppositional defiant disorder, intermittent explosive disorder or bipolar disorder. **Can coexist** with major depressive disorder, ADHD, conduct disorder and substance use disorders. If criteria for DMDD and ODD are both met, diagnose **only DMDD**. Any lifetime manic or hypomanic episode rules DMDD out."],
               ["K", "Not due to a substance or another medical or neurological condition."]
             ] },
-            { type: "callout", kind: "mnemonic", title: "The numbers: 3 · 12 · 3 · 2 · 6–18 · 10 · 1", text: "Outbursts **3**×/week · for **12** months · no break of **3** months · in **2** of 3 settings · first diagnosed age **6–18** · onset before **10** · never a manic-like spell longer than **1** day. A teaching device, not part of the manual." },
+            { type: "callout", kind: "mnemonic", title: "3-12-2, 6-18-10", text: "Outbursts **3**×/week · for **12** months · no break of **3** months · in **2** of 3 settings · first diagnosed age **6–18** · onset before **10** · never a manic-like spell longer than **1** day. A teaching device, not part of the manual." },
             { type: "p", text: "DMDD was added in DSM-5 because of concern, in the United States and increasingly elsewhere, about the **overdiagnosis and treatment of bipolar disorder in children**. Late in the twentieth century, some researchers argued that severe, **nonepisodic irritability** was how mania looked in children, and rates of pediatric bipolar diagnoses rose sharply. The rise came from lumping two presentations together: **classic, episodic** mania and **chronic, nonepisodic** severe irritability. DSM-5 reserves the term bipolar disorder for **episodic** presentations and gives the nonepisodic group its own diagnosis (p. 179)." },
             { type: "p", text: "It sits in the depressive chapter because children with this pattern typically develop **unipolar depressive or anxiety disorders**, not bipolar disorders, as they grow into adolescence and adulthood (p. 177)." },
             { type: "defs", title: "The two faces of severe irritability (p. 178)", items: [
@@ -87,14 +87,14 @@ SP.add("ch04", "guide", {
               "Possibly more common in younger children: **8.2%** in a US community sample of **6-year-olds**.",
               "No consistent sex difference in **population** samples, but **clinic** samples are mostly boys (up to **80%** in one Turkish chart review)."
             ] },
-            { type: "list", title: "Development and course (pp. 179–180)", items: [
+            { type: "list", title: "Development and course (p. 179)", items: [
               "Onset must be **before 10**; the diagnosis is not applied below a **developmental age of 6**. Use it in the age range where its validity was established, **6–18 years**.",
               "About **half** still meet criteria **1 year later** (a large, mainly rural US study); those who no longer do often keep clinically impairing irritability.",
               "Conversion to **bipolar disorder is very low**. The usual adult outcome is **unipolar depressive and/or anxiety disorders**."
             ] },
-            { type: "defs", title: "Risk and prognostic factors (p. 180)", items: [
+            { type: "defs", title: "Risk and prognostic factors (pp. 179–180)", items: [
               ["Temperamental", "A long history of chronic irritability, often first meeting criteria for **ODD**. Many also meet criteria for **ADHD** and an **anxiety disorder** from an early age; some meet criteria for major depressive disorder."],
-              ["Environmental", "Disrupted family life: psychological abuse or neglect, parental psychiatric disorder, limited parental education, single-parent household, early trauma, parental death or grief, divorce, and malnutrition (e.g., vitamin deficiency)."],
+              ["Environmental", "Disrupted family life: a parent with a psychiatric disorder or little schooling, psychological abuse or neglect, early trauma, a single-parent home, divorce, a parent’s death or grief, and malnutrition (e.g., vitamin deficiency)."],
               ["Genetic and physiological", "A family history of **depression** may be a risk factor; twin data suggest the link between early irritability and later depression and anxiety is partly genetic. Children with DMDD share some information-processing deficits with pediatric bipolar disorder (face-emotion labeling, decision-making, cognitive control), but the same behavior may rest on different neural dysfunction."]
             ] },
             { type: "callout", kind: "culture", text: "Culture-related data are limited. Sociocultural factors shape impulsivity and emotion, reward, threat and behavior dysregulation, especially in **postconflict zones** or communities affected by long-standing **racism and discrimination**. Distinguish DMDD from **adaptive, context-dependent and transitory** responses to adversity (p. 180)." },
@@ -123,8 +123,8 @@ SP.add("ch04", "guide", {
               ["**Intermittent explosive disorder** → diagnose DMDD only", "**Conduct disorder**"],
               ["", "**Substance use disorders**"]
             ] },
-            { type: "p", text: "**Comorbidity** (p. 182) is **extremely high**, higher than for many other pediatric disorders; DMDD alone is rare. The strongest overlap is with **ODD**, and the range of comorbid disruptive, mood, anxiety and even autism spectrum symptoms is unusually wide. Do not diagnose DMDD when the outbursts occur only in an **anxiety-provoking** context, when the routines of a child with **autism or OCD** are disturbed, or only during a **major depressive episode**." },
-            { type: "callout", kind: "exam", text: "The asymmetry is the classic question: with **bipolar** disorder, keep bipolar and drop DMDD; with **ODD or IED**, keep DMDD and drop the other. Most children with DMDD also meet ODD criteria, but only about **15%** of children with ODD meet DMDD criteria." }
+            { type: "p", text: "**Comorbidity** (p. 182) is **extremely high**, higher than for many other pediatric disorders; DMDD alone is rare. The strongest overlap is with **ODD**, and the range of comorbid disruptive, mood, anxiety and even autism spectrum symptoms is unusually wide. Do not diagnose DMDD when the symptoms appear only in situations that provoke **anxiety**, only when a child with **autism or OCD** has a routine disrupted, or only during a **major depressive episode**." },
+            { type: "callout", kind: "exam", text: "The asymmetry is the classic question: with **bipolar** disorder, keep bipolar and drop DMDD; with **ODD or IED**, keep DMDD and drop the other. Most children with DMDD also meet ODD criteria, but only about **15%** of children with ODD meet DMDD criteria (app guidance)." }
           ]
         }
       ]
@@ -140,28 +140,28 @@ SP.add("ch04", "guide", {
             { type: "criteria", title: "Major depressive disorder in brief", code: "F32.x / F33.x", pages: "183", items: [
               ["A", "**Five or more** symptoms during the same **2-week** period, a change from previous functioning; at least one is **(1) depressed mood** or **(2) loss of interest or pleasure**. Do not count symptoms clearly due to another medical condition.", [
                 "**Depressed mood** most of the day, nearly every day, by report or observation (in children and adolescents, can be **irritable mood**)",
-                "Markedly diminished **interest or pleasure** in all or almost all activities, most of the day, nearly every day",
+                "Markedly reduced **interest or pleasure** in nearly all activities, most of the day, nearly every day",
                 "Significant **weight loss** when not dieting or **weight gain** (more than **5%** of body weight in a month), or appetite change nearly every day (in children, failure to make expected weight gain)",
                 "**Insomnia or hypersomnia** nearly every day",
                 "**Psychomotor agitation or retardation** nearly every day, **observable by others**, not just subjective restlessness or slowing",
                 "**Fatigue** or loss of energy nearly every day",
                 "**Worthlessness** or excessive or inappropriate **guilt** (may be delusional) nearly every day, not just self-reproach about being sick",
                 "Diminished ability to **think or concentrate**, or **indecisiveness**, nearly every day",
-                "Recurrent **thoughts of death** (not just fear of dying), recurrent suicidal ideation without a plan, a suicide attempt or a specific plan"
+                "Recurrent **thoughts of death** (more than fear of dying) or of suicide without a plan, or a suicide attempt or specific plan"
               ]],
               ["B", "Clinically significant **distress or impairment**."],
               ["C", "Not attributable to a **substance** or another **medical condition**.", [], "Criteria A–C define a **major depressive episode**."],
               ["D", "At least one episode is **not better explained by schizoaffective disorder** and not superimposed on schizophrenia, schizophreniform disorder, delusional disorder or other psychotic disorders."],
               ["E", "There has **never** been a manic or hypomanic episode.", [], "Does not apply if every manic-like or hypomanic-like episode was **substance-induced** or due to a **medical condition**."]
             ], note: "A note after Criterion C covers responses to a **significant loss** (bereavement, financial ruin, losses from a natural disaster, serious illness or disability). They may include intense sadness, rumination, insomnia, poor appetite and weight loss that resemble depression. These may be understandable, but a major depressive episode **in addition to** the normal response should still be carefully considered, using the person’s history and **cultural norms** for expressing distress after loss." },
-            { type: "callout", kind: "mnemonic", title: "SIG E CAPS", text: "**S**leep · **I**nterest · **G**uilt · **E**nergy · **C**oncentration · **A**ppetite · **P**sychomotor change · **S**uicidality, plus depressed mood. Five of nine, for 2 weeks, with mood or interest among them. A teaching mnemonic, not part of the manual." },
+            { type: "callout", kind: "mnemonic", title: "SIGECAPS", text: "**S**leep · **I**nterest · **G**uilt · **E**nergy · **C**oncentration · **A**ppetite · **P**sychomotor change · **S**uicidality, plus depressed mood. Five of nine, for 2 weeks, with mood or interest among them. A teaching mnemonic, not part of the manual." },
             { type: "defs", title: "Counting rules (p. 185)", items: [
               ["New or worse", "A symptom counts only if it is **newly present** or **clearly worse** than before the episode."],
               ["Nearly every day", "All symptoms must be present nearly every day for **2 consecutive weeks**, except **thoughts of death and suicidal ideation** (must be **recurrent**) and a **suicide attempt or specific plan** (once is enough)."],
               ["Effortful normality", "In milder episodes, functioning may look normal but take **markedly increased effort**."],
-              ["Medical illness", "Symptoms count **unless clearly and fully** due to the medical condition (weight loss with untreated diabetes, fatigue with cancer, hypersomnia early in pregnancy, insomnia late in pregnancy or postpartum). Weigh the **nonvegetative** symptoms (dysphoria, anhedonia, guilt or worthlessness, poor concentration or indecision, suicidal thoughts) with particular care. Criteria limited to these identify **nearly the same people** as the full criteria (p. 187)."]
+              ["Medical illness", "Symptoms count **unless clearly and fully** due to the medical condition (for example, weight loss in untreated diabetes, fatigue in cancer, oversleeping in early pregnancy, insomnia in late pregnancy or after delivery). Weigh the **nonvegetative** symptoms (dysphoria, anhedonia, guilt or worthlessness, poor concentration or indecision, suicidal thoughts) with particular care. Criteria limited to these identify **nearly the same people** as the full criteria (p. 187)."]
             ] },
-            { type: "callout", kind: "exam", text: "The presenting complaint is often **insomnia or fatigue**, not low mood, so not probing for the other symptoms leads to **underdiagnosis**. **Psychomotor** changes are much less common than fatigue and sleep problems but mark **greater severity**, as does **delusional or near-delusional guilt** (p. 185)." }
+            { type: "callout", kind: "exam", text: "The presenting complaint is often **insomnia or fatigue**, not low mood, so not probing for the other symptoms leads to **underdiagnosis**. **Psychomotor** changes are much less common than fatigue and sleep problems but mark **greater severity**, as does **delusional or near-delusional guilt** (p. 185) (app guidance)." }
           ]
         },
         {
@@ -210,7 +210,7 @@ SP.add("ch04", "guide", {
               ["Death and suicide (A9)", "From a passive wish not to wake up, or a belief others would be better off, to recurrent thoughts of suicide and a specific plan. Warning signs: putting affairs in order, acquiring means, choosing a time and place. Motives include giving up, ending unbearable pain, seeing no future enjoyment, and not wanting to be a burden. **Resolution of such thinking** may be a better measure of reduced risk than denial of plans."]
             ] },
             { type: "p", text: "**Impairment** (Criterion B) ranges from mild interference that others barely notice to inability to manage basic self-care or hygiene. The person’s report may be limited by poor concentration and memory or a tendency to deny or explain away symptoms, so **collateral informants** help, both for the current episode and to look for **past mania or hypomania**. Because episodes can begin gradually, asking about the **worst part** of the current episode is most likely to detect symptoms (p. 187)." },
-            { type: "p", text: "**Associated features** (p. 187): high mortality, mostly but not only from **suicide** (depressed people admitted to nursing homes have a markedly higher chance of dying in the first year). Tearfulness, irritability, brooding, obsessive rumination, anxiety, phobias, health worry and **pain** complaints are common; children may show **separation anxiety**. No laboratory test is sensitive or specific enough for diagnosis. **HPA axis hyperactivity** is the most studied abnormality and is linked to **melancholia**, psychotic features and later suicide; neurotrophic factor variants, pro-inflammatory cytokines and imaging changes in emotion, reward and regulation circuits are also implicated." }
+            { type: "p", text: "**Associated features** (p. 187): high mortality, mostly but not only from **suicide** (depressed people admitted to nursing homes have a markedly higher chance of dying in the first year). Tearfulness, irritability, brooding, obsessive rumination, anxiety, phobias, health worry and **pain** complaints are common; children may show **separation anxiety**. No laboratory test is sensitive or specific enough for diagnosis. Until recently, **HPA axis hyperactivity** had been the most studied abnormality, and it appears to be associated with **melancholia**, psychotic features and later suicide; neurotrophic factor variants, pro-inflammatory cytokines and imaging changes in emotion, reward and regulation circuits are also implicated." }
           ]
         },
         {
@@ -229,13 +229,13 @@ SP.add("ch04", "guide", {
             { type: "list", title: "Development and course (pp. 188–189)", items: [
               "Can start at any age; the likelihood of onset rises markedly with **puberty**. US incidence **peaks in the 20s**, but first onset in **late life** is not uncommon.",
               "The course varies: some people rarely if ever remit; others have years with few or no symptoms between discrete episodes. Course may reflect **poverty, racism and marginalization**.",
-              "**Remission** = **2 or more months** with no symptoms, or only one or two mild symptoms.",
+              "**Remission** = at least **2 months** free of symptoms, or with no more than one or two mild ones.",
               "Ask for the last **2-month period entirely free** of symptoms: chronicity raises the likelihood of underlying **personality, anxiety and substance use disorders** and lowers the chance of full recovery. Symptoms most days may warrant an added diagnosis of **persistent depressive disorder**.",
               "Recovery begins within **3 months** for **40%** and within **1 year** for **80%**. **Recency of onset** strongly predicts near-term recovery.",
               "Lower recovery rates: **psychotic features**, prominent **anxiety**, **personality disorders**, greater **severity** (and longer current episode).",
               "Recurrence risk **falls** the longer remission lasts, and is higher after a **severe** episode, in **younger** people and after **multiple** episodes. Even **mild leftover symptoms** strongly predict recurrence."
             ] },
-            { type: "callout", kind: "exam", title: "Who turns out to be bipolar?", text: "A substantial proportion of people who first look like major depressive disorder later prove to have **bipolar disorder**. This is more likely with onset in **adolescence**, **psychotic features**, a **family history of bipolar illness** and the **mixed features** specifier. Major depression, especially **with psychotic features**, can also transition to **schizophrenia**, much more often than the reverse (p. 188)." },
+            { type: "callout", kind: "exam", title: "Who turns out to be bipolar?", text: "A substantial proportion of people who first look like major depressive disorder later prove to have **bipolar disorder**. This is more likely with onset in **adolescence**, **psychotic features**, a **family history of bipolar illness** and the **mixed features** specifier. Major depression, especially **with psychotic features**, can also transition to **schizophrenia**, much more often than the reverse (p. 188) (app guidance)." },
             { type: "p", text: "**Age** has no clear effect on course or treatment response, but **hypersomnia and hyperphagia** are more likely in younger people and **melancholic** symptoms, especially psychomotor change, in older people. Earlier-onset depression is **more familial** and more often involves personality disturbance. Mean time to recovery does not change across episodes, and the chance of being in an episode does not generally rise or fall with time (p. 189)." }
           ]
         },
@@ -246,11 +246,11 @@ SP.add("ch04", "guide", {
           blocks: [
             { type: "defs", title: "Risk and prognostic factors (p. 189)", items: [
               ["Temperamental", "**Negative affectivity (neuroticism)** is well established; high levels make depressive episodes after stressful life events more likely."],
-              ["Environmental", "**Adverse childhood experiences**, especially multiple and varied ones, are potent risk factors. Women may be disproportionately exposed (including **sexual abuse**). Low income, limited education, **racism and discrimination** also raise risk. Stressful events often **precipitate** episodes, but their presence or absence near onset does **not** guide prognosis or treatment."],
+              ["Environmental", "**Adverse childhood experiences**, especially multiple and varied ones, are potent risk factors. Women may be disproportionately exposed (including **sexual abuse**). Low income, limited education, **racism and discrimination** also raise risk. Stressful events often **precipitate** episodes, but their presence or absence near onset does **not appear** to guide prognosis or treatment."],
               ["Genetic and physiological", "First-degree relatives have **2–4 times** the general risk, higher for **early-onset and recurrent** forms. Heritability is about **40%**, much of it shared with **neuroticism**. Women are also at risk at specific reproductive stages: **premenstrual**, **postpartum** and **perimenopause**."],
-              ["Course modifiers", "Essentially all major nonmood disorders (anxiety, substance use, trauma- and stressor-related, feeding and eating, obsessive-compulsive) raise the risk of depression, and depression arising on top of them is often **more refractory**. Substance use, anxiety and **borderline personality** disorders are among the most common and may be **obscured** by the depression. Chronic medical illness (**diabetes, morbid obesity, cardiovascular disease**) raises risk, and those episodes more often become **chronic**."]
+              ["Course modifiers", "Essentially all major nonmood disorders (anxiety, substance use, trauma- and stressor-related, feeding and eating, obsessive-compulsive) raise the risk of depression, and depression arising on top of them is often **more refractory**. The commonest of these include substance use, anxiety and **borderline personality** disorders, which the depression may **obscure**. Chronic medical illness (**diabetes, morbid obesity, cardiovascular disease**) raises risk, and those episodes more often become **chronic**."]
             ] },
-            { type: "callout", kind: "culture", text: "A syndrome like major depression is found across cultures, though prevalence, course and symptoms vary. Common symptoms not in the criteria include **social isolation or loneliness, anger, crying and diffuse pain**, plus many culturally variable somatic complaints. Underdetection can lead to **overdiagnosis of schizophrenia spectrum disorders** in some ethnic and racialized groups facing discrimination. Greater **income inequality** goes with higher prevalence. In the US, depression appears **more chronic** among African Americans and Caribbean Blacks than non-Latinx Whites, possibly from racism, discrimination, sociostructural adversity and poor access to care (pp. 189–190)." },
+            { type: "callout", kind: "culture", text: "A syndrome like major depression is found across cultures, though prevalence, course and symptoms vary. Common symptoms not in the criteria include **social isolation or loneliness, anger, crying and diffuse pain**, plus many culturally variable somatic complaints. Underdetection can lead to **schizophrenia spectrum disorders being overdiagnosed** in some ethnic and racialized groups that face discrimination. Greater **income inequality** goes with higher prevalence. In the US, depression appears **more chronic** among African Americans and Caribbean Blacks than non-Latinx Whites, possibly from racism, discrimination, sociostructural adversity and poor access to care (pp. 189–190)." },
             { type: "p", text: "**Sex and gender** (p. 190): no clear differences in treatment response or functional consequences. Women have more appetite and sleep disturbance (including **hyperphagia and hypersomnia**), **interpersonal sensitivity** and **gastrointestinal** symptoms. Men more often report maladaptive coping: **alcohol or drug misuse, risk taking and poor impulse control**." },
             { type: "list", title: "Association with suicidal thoughts or behavior (p. 190)", items: [
               "US age-adjusted suicide rates rose from **10.5 to 14.0 per 100,000** over two decades.",
@@ -263,7 +263,7 @@ SP.add("ch04", "guide", {
               "Women **attempt** more often; men more often **die by suicide**, though the sex gap is smaller in depression than in the general population.",
               "Comorbid aggressive-impulsive traits, borderline personality disorder, substance use, anxiety, medical illness and functional impairment add risk."
             ] },
-            { type: "update", kind: "tr", title: "New in the text revision: a suicide section for every disorder", text: "DSM-5-TR added an **“Association With Suicidal Thoughts or Behavior”** section to the text of disorders where the evidence supports it, after review by a cross-cutting **Suicide** review group. In this chapter, the sections for MDD, PDD, PMDD, the substance-induced and the medically caused disorders all address it." },
+            { type: "update", kind: "tr", title: "New in the text revision: a suicide section for every disorder", text: "DSM-5-TR added an **“Association With Suicidal Thoughts or Behavior”** section to the text of each disorder for which the literature provides such information (Section I, p. 19); a cross-cutting **Suicide** review group took part in the revision. In this chapter, the sections for MDD, PDD, PMDD, the substance-induced and the medically caused disorders all address it." },
             { type: "p", text: "**Functional consequences** (p. 190): from impairment so mild others do not notice to complete incapacity, mutism or catatonia. In general medical settings, people with major depression have **more pain and physical illness** and greater declines in physical, social and role function. Depressed women report more impairment in **relationships** than men." }
           ]
         },
@@ -287,7 +287,7 @@ SP.add("ch04", "guide", {
               ["Sadness", "A normal part of life. Do not diagnose an episode unless **severity** (five of nine), **duration** (2 weeks) and **impairment** are met; impairing subthreshold depression may be **other specified depressive disorder**."]
             ] },
             { type: "p", text: "**Comorbidity** (p. 192): substance-related disorders, **panic disorder**, **generalized anxiety disorder**, **PTSD**, **OCD**, anorexia and bulimia nervosa, and **borderline personality disorder**. Women more often report comorbid anxiety disorders, bulimia and somatic symptom disorders; men more often report comorbid **alcohol and substance** use." },
-            { type: "callout", kind: "exam", text: "Two pairs that are **both** diagnosed: **MDD + PDD** when criteria for each are met, and **MDD + ADHD**. A pair where only **one** is diagnosed: a depressive episode in someone with past **hypomania** is bipolar II, never MDD." }
+            { type: "callout", kind: "exam", text: "Two pairs that are **both** diagnosed: **MDD + PDD** when criteria for each are met, and **MDD + ADHD**. A pair where only **one** is diagnosed: a depressive episode in someone with past **hypomania** is bipolar II, never MDD (app guidance)." }
           ]
         },
         {
@@ -335,7 +335,7 @@ SP.add("ch04", "guide", {
                 "Feelings of hopelessness"
               ]],
               ["C", "During the 2 years (1 for youth), **never without** the A and B symptoms for **more than 2 months** at a time."],
-              ["D", "Criteria for major depressive disorder **may be continuously present** for 2 years."],
+              ["D", "Major depressive disorder criteria **can be met continuously** throughout the 2 years."],
               ["E", "There has **never** been a manic or hypomanic episode."],
               ["F", "Not better explained by a persistent **schizoaffective disorder**, schizophrenia, delusional disorder or another psychotic disorder."],
               ["G", "Not due to a **substance** or another **medical condition** (e.g., hypothyroidism)."],
@@ -349,7 +349,7 @@ SP.add("ch04", "guide", {
             ], note: "If a major depressive episode is met at any time during the 2 years, **also diagnose major depressive disorder**, with the matching course specifier on the persistent depressive disorder (p. 193)." },
             { type: "callout", kind: "mnemonic", title: "HE’S 2 SAD", text: "**H**opelessness · **E**nergy low · **S**elf-esteem low · **2** years · **S**leep · **A**ppetite · **D**ecisions or concentration. Two of the six, more days than not. A teaching mnemonic, not part of the manual." },
             { type: "p", text: "The disorder **consolidates** DSM-IV **dysthymic disorder** and **chronic major depressive disorder** (p. 193). Major depression may precede it, and major depressive episodes may occur during it. People whose symptoms meet MDD criteria for 2 years receive **both** diagnoses (p. 194)." },
-            { type: "callout", kind: "exam", title: "Look at what is missing", text: "The six PDD symptoms leave out **anhedonia**, **psychomotor change**, **guilt** and **suicidality**, and add **hopelessness** and **low self-esteem**. So a few people have 2+ years of depression that meets **neither** PDD nor MDD; they receive **other specified** or **unspecified** depressive disorder (p. 196)." }
+            { type: "callout", kind: "exam", title: "Look at what is missing", text: "The six PDD symptoms leave out **anhedonia**, **psychomotor change**, **guilt** and **suicidality**, and add **hopelessness** and **low self-esteem**. So a few people have 2+ years of depression that meets **neither** PDD nor MDD; they receive **other specified** or **unspecified** depressive disorder (p. 196) (app guidance)." }
           ]
         },
         {
@@ -381,7 +381,7 @@ SP.add("ch04", "guide", {
               ["Genetic and physiological", "No clear differences between DSM-IV dysthymia and chronic major depression, so findings for either apply. Relatives likely have more persistent depressive disorder and more depressive disorders in general than relatives of people with nonchronic MDD. Prefrontal cortex, anterior cingulate, amygdala and hippocampus are implicated; polysomnographic abnormalities are possible."]
             ] },
             { type: "callout", kind: "culture", text: "Cultures and age cohorts differ in how abnormal they consider chronic low mood; some regard **long-standing depressive symptoms** as a normal reaction to adversity, which affects detection and acceptance of treatment (p. 195)." },
-            { type: "p", text: "**Suicide and function** (p. 195): elevated suicide risk in high-, middle- and low-income countries alike. Effects on social and occupational function vary widely but can be **as great as or greater than** those of major depressive disorder." }
+            { type: "p", text: "**Suicide and function** (p. 195): elevated suicide risk in high-, middle- and low-income countries alike. Effects on social and occupational function vary widely but can **equal or exceed** those of major depressive disorder." }
           ]
         },
         {
@@ -452,7 +452,7 @@ SP.add("ch04", "guide", {
               "Expression is shaped by social and cultural background, religious beliefs, attitudes toward the reproductive cycle and gender roles.",
               "Delusions and hallucinations in the late luteal phase have been described but are **rare**."
             ] },
-            { type: "list", title: "Prevalence and course (pp. 198–199)", items: [
+            { type: "list", title: "Prevalence and course (p. 198)", items: [
               "12-month community prevalence **5.8%** (a large German study).",
               "**1.3%** of menstruating US women over two cycles of prospective ratings, with impairment and no co-occurring mental disorder (the most rigorous US estimate).",
               "Retrospective estimates run **higher** than prospective ones, but daily ratings may undercount the most severe cases.",
@@ -469,13 +469,13 @@ SP.add("ch04", "guide", {
             ] },
             { type: "callout", kind: "culture", text: "PMDD has been observed in the United States, Europe, India, Nigeria, Brazil and Asia. Frequency, intensity, perceived consequences and help-seeking are shaped by **sexual abuse or domestic violence**, limited social support and cultural attitudes toward **menstruation** (p. 199)." },
             { type: "defs", title: "Differential diagnosis (pp. 199–200)", items: [
-              ["Premenstrual syndrome", "Does **not** require five symptoms or **mood** symptoms and is usually milder. More common, around **20%**. Somatic or behavioral symptoms without affective ones = PMS, not PMDD."],
+              ["Premenstrual syndrome", "Does **not** require five symptoms or **mood** symptoms and is usually milder. It may be more common, around **20%**. Somatic or behavioral symptoms without affective ones = PMS, not PMDD."],
               ["Dysmenorrhea", "Painful menses, not an affective syndrome; begins **with** menses, whereas PMDD begins **before**."],
               ["Bipolar, major depressive and persistent depressive disorders", "Many women with these believe they have PMDD, but **charting** shows no premenstrual pattern; menses are memorable, so retrospective reports mislead. This is why **prospective daily ratings** are required. Overlap is greatest with MDE, PDD, bipolar disorder and **borderline personality disorder**."],
               ["Hormonal treatments", "Symptoms that began after starting **hormonal contraceptives** or other exogenous hormones, and disappear when they stop, point to **substance/medication-induced depressive disorder**."],
               ["Other medical conditions", "Rule out conditions such as **thyroid deficiency** and **anemia**."]
             ] },
-            { type: "callout", kind: "exam", title: "Premenstrual exacerbation is not PMDD", text: "Many conditions (migraine, asthma, seizures, depressive, bipolar, anxiety and eating disorders) **worsen premenstrually**. With **no symptom-free postmenstrual interval**, the diagnosis is premenstrual exacerbation of that condition, not PMDD. PMDD can be added only if the premenstrual symptoms are characteristic of PMDD and **markedly different** from the ongoing disorder. The most common prior disorder in women presenting with PMDD is a **major depressive episode** (p. 200)." },
+            { type: "callout", kind: "exam", title: "Premenstrual exacerbation is not PMDD", text: "Many conditions (migraine, asthma, seizures, depressive, bipolar, anxiety and eating disorders) **worsen premenstrually**. With **no symptom-free postmenstrual interval**, the diagnosis is premenstrual exacerbation of that condition, not PMDD. PMDD can be added only if the premenstrual symptoms are characteristic of PMDD and **markedly different** from the ongoing disorder. The most common prior disorder in women presenting with PMDD is a **major depressive episode** (p. 200) (app guidance)." },
             { type: "case", title: "Clinical vignette: the week before", text: "A 27-year-old teacher reports that for about a week before each period she becomes tearful, snaps at colleagues, feels overwhelmed, craves sweets, sleeps badly and has breast tenderness. Within 2–3 days of her period starting she feels herself again, and she is well for the rest of the month. This has happened most months for 2 years and has led to arguments at work. She has not yet kept a symptom diary.", point: "Five or more symptoms including affective ones, confined to the luteal phase with a clear symptom-free follicular phase, causing impairment: **premenstrual dysphoric disorder, provisional (F32.81)** until two cycles of prospective daily ratings confirm it. Check thyroid function and whether she uses hormonal contraception." }
           ]
         }
@@ -491,7 +491,7 @@ SP.add("ch04", "guide", {
           blocks: [
             { type: "criteria", title: "Substance/medication-induced depressive disorder in brief", pages: "201", items: [
               ["A", "A prominent, persistent mood disturbance that **predominates** in the picture: **depressed mood** or markedly diminished **interest or pleasure**."],
-              ["B", "Evidence of both: (1) it developed **during or soon after** intoxication or withdrawal, or after exposure to or withdrawal from a medication; and (2) the substance **can produce** these symptoms."],
+              ["B", "Evidence of both: (1) it began **during or soon after** intoxication or withdrawal, or after a medication was started or stopped; and (2) the substance **can produce** these symptoms."],
               ["C", "Not better explained by an **independent** depressive disorder. Evidence for independence: symptoms **preceded** the substance use; they **persist** for a substantial time (e.g., **about 1 month**) after acute withdrawal or severe intoxication ends; or other evidence such as recurrent non-substance-related episodes."],
               ["D", "Not exclusively during **delirium**."],
               ["E", "Clinically significant distress or impairment."]
@@ -514,7 +514,7 @@ SP.add("ch04", "guide", {
               ["Add the onset. ", "Example: **F14.24** severe cocaine use disorder with cocaine-induced depressive disorder, with onset during withdrawal. Example without use disorder: **F16.94** phencyclidine-induced depressive disorder, with onset during intoxication."],
               ["More than one substance. ", "List each separately (e.g., F15.24 severe methylphenidate use disorder with methylphenidate-induced depressive disorder, with onset during withdrawal; F19.94 dexamethasone-induced depressive disorder, with onset during intoxication)."]
             ] },
-            { type: "callout", kind: "exam", text: "Look at which classes are **not** in the depressive table: **cannabis**, **caffeine** and **tobacco** have no substance-induced depressive disorder code. The two drug-of-abuse groups most likely to cause depression are **depressants on intoxication** (alcohol, benzodiazepines and other sedatives) and **stimulants on withdrawal** (amphetamine-type substances, cocaine) (p. 203)." },
+            { type: "callout", kind: "exam", text: "Look at which classes are **not** in the depressive table: **cannabis**, **caffeine** and **tobacco** have no substance-induced depressive disorder code. The two drug-of-abuse groups most likely to cause depression are **depressants on intoxication** (alcohol, benzodiazepines and other sedatives) and **stimulants on withdrawal** (amphetamine-type substances, cocaine) (p. 203) (app guidance)." },
             { type: "defs", title: "Medications implicated (p. 203)", items: [
               ["Especially likely", "**Steroids**; antihypertensives **clonidine, guanethidine, methyldopa and reserpine**; **interferon**; **L-dopa**."],
               ["With varying evidence", "Antibiotics; antivirals (**efavirenz**); cardiovascular agents (**beta-blockers, calcium channel blockers**); retinoic acid derivatives (**isotretinoin**); antidepressants; anticonvulsants; antimigraine agents (**triptans**); antipsychotics; hormonal agents (**corticosteroids, oral contraceptives, GnRH agonists, tamoxifen**); chemotherapy; smoking cessation agents (**varenicline**)."]
@@ -534,7 +534,7 @@ SP.add("ch04", "guide", {
               ["Intoxication or withdrawal", "Dysphoria is typical of **cocaine withdrawal**; diagnose the induced disorder only when mood symptoms predominate and need separate attention."],
               ["Independent depressive disorder", "Depression seen at times **other than** substance use is independent, even with heavy use."],
               ["Due to another medical condition", "The illness, not its treatment, may be causing it. Sometimes a **medication change** is needed to tell. Both can be diagnosed; if the evidence is insufficient, use **other specified or unspecified depressive disorder**."],
-              ["Comorbidity", "Compared with independent MDD: more comorbidity overall, more **tobacco use disorder, gambling disorder and antisocial personality disorder**, and less **persistent depressive disorder**."]
+              ["Comorbidity", "In one DSM-IV study, compared with independent MDD without a substance use disorder: more comorbidity overall, more **tobacco use disorder, gambling disorder and antisocial personality disorder**, and less **persistent depressive disorder**."]
             ] }
           ]
         },
@@ -546,12 +546,12 @@ SP.add("ch04", "guide", {
             { type: "criteria", title: "Depressive disorder due to another medical condition in brief", pages: "206", items: [
               ["A", "A prominent, persistent period of **depressed mood** or markedly diminished **interest or pleasure** that predominates."],
               ["B", "Evidence that it is the **direct pathophysiological consequence** of another medical condition."],
-              ["C", "Not better explained by another mental disorder (e.g., **adjustment disorder with depressed mood**, where the stressor is the illness)."],
+              ["C", "Another mental disorder does not explain it better (e.g., **adjustment disorder with depressed mood**, where the stressor is the illness)."],
               ["D", "Not exclusively during **delirium**."],
               ["E", "Clinically significant distress or impairment."]
             ], specifiers: [
               ["F06.31 With depressive features", "Full criteria for a major depressive episode are **not** met."],
-              ["F06.32 With major depressive–like episode", "Full criteria are met (**except Criterion C**)."],
+              ["F06.32 With major depressive–like episode", "All major depressive episode criteria are met **apart from Criterion C**."],
               ["F06.34 With mixed features", "Manic or hypomanic symptoms are also present but **do not predominate**."]
             ], note: "Code the medical condition **first**, then the depressive disorder with the condition in its name: **E03.9** hypothyroidism; **F06.31** depressive disorder due to hypothyroidism, with depressive features." },
             { type: "defs", title: "Is the condition causing it? (pp. 206–208)", items: [
@@ -561,7 +561,7 @@ SP.add("ch04", "guide", {
               ["Ruling out primary depression", "**No** depressive episodes before the condition began; the condition **can** cause depression; and depression began **shortly after** onset or worsening, especially if it **remits** when the condition is treated (p. 208)."]
             ] },
             { type: "table", caption: "Conditions with the strongest links (pp. 207–208)", head: ["Condition", "What to know"], rows: [
-              ["**Stroke (CVA)**", "Onset often **within days**; major depressive episode lasts **9–11 months** on average. Acute risk (1 day to a week) is greatest with **left frontal** strokes and least with right frontal; the laterality link fades for depression 2–6 months later. Women may be at higher risk after stroke."],
+              ["**Stroke (CVA)**", "In the largest series, onset was often **within days** and the major depressive episode lasted **9–11 months** on average. Acute risk (1 day to a week) is greatest with **left frontal** strokes and least with right frontal; the laterality link fades for depression 2–6 months later. Women may be at higher risk after stroke."],
               ["**Huntington’s disease**", "Depression often precedes motor and cognitive signs; considered the **first neuropsychiatric symptom**. May become less common as the neurocognitive disorder progresses."],
               ["**Parkinson’s disease**", "Depression often precedes major motor and cognitive impairment; risk rises with **early onset**, heavier motor burden and longer illness."],
               ["**Traumatic brain injury**", "Risk with **female gender**, prior depression, early psychiatric symptoms after injury, lower brain volume and unemployment."],
@@ -592,13 +592,13 @@ SP.add("ch04", "guide", {
               ["3. Depressive episode with insufficient symptoms", "Depressed affect + **at least one** of the other eight MDE symptoms with distress or impairment for **at least 2 weeks**. Never met another depressive or bipolar disorder; not psychotic; not mixed anxiety-depressive symptoms."],
               ["4. Major depressive episode superimposed on a psychotic disorder", "On schizophrenia, schizophreniform disorder, delusional disorder or other psychotic disorders. Episodes that are part of **schizoaffective disorder** do **not** get this extra diagnosis."]
             ] },
-            { type: "table", caption: "The three catch-all codes (p. 210)", head: ["Category", "Code", "When"], rows: [
+            { type: "table", caption: "The three catch-all codes (pp. 209–210)", head: ["Category", "Code", "When"], rows: [
               ["[[dx:other-specified-depressive|Other specified depressive disorder]]", "F32.89", "Subthreshold or atypical depression; the reason is recorded"],
               ["[[dx:unspecified-depressive|Unspecified depressive disorder]]", "F32.A", "Reason not recorded, or insufficient information"],
               ["[[dx:unspecified-mood|Unspecified mood disorder]]", "F39", "Mood symptoms where it is hard to choose between unspecified **bipolar** and unspecified **depressive** disorder (e.g., acute agitation)"]
             ] },
             { type: "update", kind: "tr", title: "A new code for unspecified depressive disorder", text: "DSM-5-TR lists unspecified depressive disorder under **F32.A**, an ICD-10-CM code created after DSM-5 was published. In DSM-5 it shared **F32.9**, which now belongs only to **major depressive disorder, single episode, unspecified**." },
-            { type: "callout", kind: "exam", text: "Recurrent brief depression and short-duration depression both need depressed mood **plus four** other symptoms (five in all, as for an MDE). They differ only in **time**: **2–13 days monthly for a year** versus **4–13 days** once. Insufficient-symptom depression has the full **2 weeks** but only **two to four** symptoms in total (depressed affect plus at least one)." }
+            { type: "callout", kind: "exam", text: "Recurrent brief depression and short-duration depression both need depressed mood **plus four** other symptoms (five in all, as for an MDE). They differ only in **time**: **2–13 days monthly for a year** versus **4–13 days** once. Insufficient-symptom depression has the full **2 weeks** but only **two to four** symptoms in total (depressed affect plus at least one) (app guidance)." }
           ]
         }
       ]
@@ -625,7 +625,7 @@ SP.add("ch04", "guide", {
               ["Severity (mild, moderate, severe)", "✓", "✓", "Changes the MDD code"],
               ["Early / late onset; course over the last 2 years", "—", "✓", "No"]
             ] },
-            { type: "callout", kind: "exam", text: "Compare with [[ch:ch03|Chapter 3]]: **rapid cycling** exists only for bipolar disorders. **Mixed features** in a depressive episode is a significant risk factor for later **bipolar I or II** disorder." }
+            { type: "callout", kind: "exam", text: "Compare with [[ch:ch03|Chapter 3]]: **rapid cycling** exists only for bipolar disorders. **Mixed features** in a depressive episode is a significant risk factor for later **bipolar I or II** disorder (app guidance)." }
           ]
         },
         {
@@ -656,7 +656,7 @@ SP.add("ch04", "guide", {
               ["C", "If full criteria for **mania or hypomania** are met, the diagnosis is **bipolar I or II**."],
               ["D", "Not due to a substance (drug, medication or other treatment)."]
             ], note: "Mixed features in a major depressive episode are a **significant risk factor for bipolar I or II**, so note them for treatment planning." },
-            { type: "callout", kind: "pearl", title: "What the list leaves out", text: "**Distractibility**, **irritability** and **psychomotor agitation** are not on the depressive mixed-features list, because they overlap with depression itself. Only symptoms that clearly point toward mania count." }
+            { type: "callout", kind: "pearl", title: "What the list leaves out", text: "**Distractibility**, **irritability** and **psychomotor agitation** are not on the depressive mixed-features list. A likely reason is that they overlap with depression itself (app explanation; not stated in the manual)." }
           ]
         },
         {
@@ -665,7 +665,7 @@ SP.add("ch04", "guide", {
           pages: "211–212",
           blocks: [
             { type: "criteria", title: "With melancholic features", pages: "211", items: [
-              ["A", "During the **most severe** period of the episode, **one** of:", ["Loss of pleasure in all or almost all activities", "Lack of **reactivity** to usually pleasurable stimuli (does not feel much better, even briefly, when something good happens)"]],
+              ["A", "During the **most severe** period of the episode, **one** of:", ["Loss of pleasure in all or almost all activities", "No mood **reactivity** to things that usually give pleasure (no real lift, even briefly, when something good happens)"]],
               ["B", "**Three or more** of:", [
                 "A **distinct quality** of depressed mood: profound despondency, despair, moroseness or “empty” mood",
                 "Depression regularly **worse in the morning**",
@@ -676,7 +676,7 @@ SP.add("ch04", "guide", {
               ]]
             ], note: "Capacity for pleasure is **nearly absent**, not just reduced. Even highly desired events do not brighten mood, or brighten it only partly (up to **20%–40%** of normal, for minutes). A mood that is simply more severe, longer or unexplained is **not** a distinct quality. Psychomotor changes are **nearly always present**. Melancholia repeats only modestly across episodes and is more frequent in **inpatients**, in **severe** episodes and with **psychotic features** (pp. 211–212)." },
             { type: "criteria", title: "With atypical features", pages: "212", items: [
-              ["A", "**Mood reactivity**: mood brightens in response to actual or potential positive events."],
+              ["A", "**Mood reactivity**: mood lifts when good things happen or are expected."],
               ["B", "**Two or more** of:", [
                 "Significant **weight gain** or increased appetite",
                 "**Hypersomnia**",
@@ -684,11 +684,11 @@ SP.add("ch04", "guide", {
                 "A long-standing pattern of **interpersonal rejection sensitivity**, not limited to mood episodes, causing significant impairment"
               ]],
               ["C", "Criteria are **not** met for melancholic features or catatonia in the same episode."]
-            ], note: "Applies when these features predominate during the majority of days of the current (or most recent) major depressive episode, or of current persistent depressive disorder." },
+            ], note: "Use it when these features dominate most days of the current (or most recent) major depressive episode, or of current persistent depressive disorder." },
             { type: "defs", title: "Atypical features, defined (p. 212)", items: [
               ["“Atypical”", "A historical term, contrasting with the classic agitated, “endogenous” depression seen when depression was rarely diagnosed in outpatients and young people. It does **not** mean uncommon."],
               ["Mood reactivity", "Can be cheered by positive events (a visit from children, compliments); mood may stay euthymic for long periods if circumstances stay good."],
-              ["Hypersomnia", "Night sleep plus naps totaling at least **10 hours a day**, or at least **2 hours more** than when not depressed."],
+              ["Hypersomnia", "Night sleep plus naps adding up to **10 hours a day** or more, or **2 hours more** than the person’s nondepressed norm."],
               ["Leaden paralysis", "Feeling heavy or weighted down, usually in the arms or legs, generally **at least an hour a day**, often many hours."],
               ["Rejection sensitivity", "A **trait** with early onset that persists through most of adult life, present whether or not the person is depressed (may worsen during episodes)."]
             ] },
@@ -729,11 +729,11 @@ SP.add("ch04", "guide", {
               "After one postpartum psychotic episode, recurrence risk is **30%–50%** with each later delivery."
             ] },
             { type: "defs", title: "Distinguish from (p. 213)", items: [
-              ["Maternity blues", "Much more common and **not a disorder**: sudden mood changes (tearfulness without depression), sleep disturbance and even confusion soon after delivery, **without functional impairment**, improving **within a week** without treatment."],
+              ["Maternity blues", "Much more common and **not a disorder**: sudden mood changes (tearfulness without depression), sleep disturbance and even confusion soon after delivery, **without functional impairment**, typically improving **within a week** without treatment."],
               ["Postpartum delirium", "Marked by a **fluctuating** level of awareness or attention."],
               ["Medical causes", "Perinatal **thyroid abnormalities** and other conditions; if causal, diagnose **depressive disorder due to another medical condition** instead."]
             ] },
-            { type: "callout", kind: "caution", text: "**Infanticide** is rare and most often linked to **postpartum psychotic** episodes with command hallucinations to kill the infant or delusions that the infant is possessed. Psychotic symptoms can also occur in severe postpartum episodes without such content. Ask directly about thoughts of harming the baby." }
+            { type: "callout", kind: "caution", text: "**Infanticide** is rare and most often linked to **postpartum psychotic** episodes, with voices commanding the mother to kill the baby or a belief that the baby is possessed. Psychotic symptoms can also occur in severe postpartum episodes without such content. Ask directly about thoughts of harming the baby (app guidance)." }
           ]
         },
         {

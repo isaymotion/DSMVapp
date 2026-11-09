@@ -3,7 +3,7 @@
    Written in the app’s own words from the manual, with page references. Criteria are paraphrased: confirm exact
    wording, specifiers and codes against the manual. */
 SP.add("ch02", "guide", {
-  intro: "This chapter covers every diagnosis built on psychosis. They share **five domains** of psychopathology: **delusions**, **hallucinations**, **disorganized thinking (speech)**, **grossly disorganized or abnormal motor behavior (including catatonia)** and **negative symptoms**. The chapter is arranged as a **gradient**: first the presentations that stay below the psychotic threshold or involve a single domain (schizotypal personality disorder, delusional disorder, catatonia), then the **time-limited** disorders (brief psychotic and schizophreniform disorder), then **schizophrenia** and **schizoaffective disorder**, and finally psychosis with an identifiable cause (a substance, a medication or another medical condition). Most of the board-level difficulty lives in four questions: **What caused it? Where do the mood episodes fall? Which domains are present? How long has it lasted?** The guide follows that logic, and the chapter’s [[helper:psychosis|diagnostic helper]] walks you through it case by case.",
+  intro: "This chapter covers every diagnosis built on psychosis. They share **five domains** of psychopathology: **delusions**, **hallucinations**, **disorganized thinking (speech)**, **grossly disorganized or abnormal motor behavior (including catatonia)** and **negative symptoms**. The chapter is arranged as a **gradient**: first the presentations that stay below the psychotic threshold or involve a single domain (schizotypal personality disorder, delusional disorder, catatonia), then the **time-limited** disorders (brief psychotic and schizophreniform disorder), then **schizophrenia** and **schizoaffective disorder**, and finally psychosis with an identifiable cause (a substance, a medication or another medical condition). Most of the board-level difficulty lives in four questions: **What caused it? Where do the mood episodes fall? Which domains are present? How long has it lasted?** (app guidance) The guide follows that logic, and the chapter’s [[helper:psychosis|diagnostic helper]] walks you through it case by case.",
   objectives: [
     "Define the **five psychotic domains** and distinguish **bizarre** from nonbizarre delusions, true hallucinations from **hypnagogic/hypnopompic** experiences, and **diminished emotional expression** from **avolition**.",
     "State the **time rules** that separate **brief psychotic disorder** (≥1 day, <1 month), **schizophreniform disorder** (≥1 month, <6 months) and **schizophrenia** (≥6 months, including ≥1 month of active phase).",
@@ -47,7 +47,7 @@ SP.add("ch02", "guide", {
               ["[[dx:other-specified-psychotic|Other specified schizophrenia spectrum and other psychotic disorder]]", "F28", "Subthreshold presentation, reason stated", "138"],
               ["[[dx:unspecified-psychotic|Unspecified schizophrenia spectrum and other psychotic disorder]]", "F29", "Subthreshold or unclear presentation, reason not stated", "138"]
             ] },
-            { type: "callout", kind: "key", title: "Four questions, in this order", text: "**1. Cause?** (substance, medication, medical condition, delirium). **2. Mood?** (Is psychosis confined to mood episodes, or present for ≥2 weeks without them? Do mood episodes fill most of the illness?). **3. Domains?** (delusions only, or two or more of the five?). **4. Time?** (<1 day, 1 day to <1 month, 1 to <6 months, ≥6 months). The [[helper:psychosis|psychosis helper]] asks exactly these." }
+            { type: "callout", kind: "key", title: "Four questions, in this order", text: "**1. Cause?** (substance, medication, medical condition, delirium). **2. Mood?** (Is psychosis confined to mood episodes, or present for ≥2 weeks without them? Do mood episodes fill most of the illness?). **3. Domains?** (delusions only, or two or more of the five?). **4. Time?** (<1 day, 1 day to <1 month, 1 to <6 months, ≥6 months). The [[helper:psychosis|psychosis helper]] asks exactly these (app guidance)." }
           ]
         },
         {
@@ -55,7 +55,7 @@ SP.add("ch02", "guide", {
           title: "Delusions",
           pages: "101–102",
           blocks: [
-            { type: "p", text: "A **delusion** is a **fixed belief** that does **not change** when the person meets conflicting evidence. The line between a delusion and a strongly held idea can be hard to draw; it depends largely on **how firmly the belief is held** despite clear or reasonable evidence against it." },
+            { type: "p", text: "A **delusion** is a **fixed belief** that does **not change** when the person meets conflicting evidence. The line between a delusion and a strongly held idea can be hard to draw; it depends in part on **how firmly the belief is held** despite clear or reasonable evidence against it." },
             { type: "table", caption: "Delusional themes named in the chapter (p. 101)", head: ["Theme", "The belief", "Note"], rows: [
               ["**Persecutory**", "One will be harmed or harassed by a person, organization or group", "The **most common** theme"],
               ["**Referential**", "Gestures, comments or cues in the environment are aimed at oneself", "Also common"],
@@ -70,8 +70,8 @@ SP.add("ch02", "guide", {
               ["Nonbizarre delusion", "Implausible in this case but possible in life, e.g., being under police surveillance despite no convincing evidence."],
               ["Loss-of-control delusions", "Generally considered **bizarre**: **thought withdrawal** (thoughts removed by an outside force), **thought insertion** (alien thoughts put into one’s mind) and **delusions of control** (body or actions manipulated from outside)."]
             ] },
-            { type: "callout", kind: "culture", text: "Some religious and supernatural beliefs (**evil eye**, illness caused by **curses**, the influence of **spirits**) look bizarre in one cultural context and are widely accepted in another. People who have survived **torture, political violence or discrimination** may voice fears that sound persecutory but are realistic fears of recurrence or posttraumatic symptoms; judge whether the fear is justified by what actually happened before calling it a delusion." },
-            { type: "callout", kind: "exam", text: "Bizarreness no longer earns a special place in the schizophrenia criteria: Criterion A simply lists **delusions**. Bizarreness survives as the **“with bizarre content”** specifier of [[dx:delusional-disorder|delusional disorder]]." }
+            { type: "callout", kind: "culture", text: "Some religious and supernatural beliefs (**evil eye**, illness caused by **curses**, the influence of **spirits**) look bizarre in one cultural context and are widely accepted in another. People who have survived **torture, political violence or discrimination** may voice fears that sound persecutory but may instead be intense fears of recurrence or posttraumatic symptoms; judge whether the fear is justified by what actually happened before calling it a delusion." },
+            { type: "callout", kind: "exam", text: "Edition comparison (not in the DSM-5-TR text): bizarreness no longer earns a special place in the schizophrenia criteria; Criterion A simply lists **delusions**. Bizarreness survives as the **“with bizarre content”** specifier of [[dx:delusional-disorder|delusional disorder]] (app guidance)." }
           ]
         },
         {
@@ -79,13 +79,13 @@ SP.add("ch02", "guide", {
           title: "Hallucinations",
           pages: "102",
           blocks: [
-            { type: "p", text: "A **hallucination** is a **perception-like experience without an external stimulus**. It is vivid and clear, carries the full force of a normal perception, and is **not under voluntary control**. Any sensory modality can be involved, but **auditory** hallucinations are the most common in schizophrenia and related disorders, usually **voices** (familiar or not) that the person experiences as **distinct from their own thoughts**." },
+            { type: "p", text: "A **hallucination** is a **perception-like experience without an external stimulus**. It is vivid and clear, carries the full force of a normal perception, and is **not under voluntary control**. Any sensory modality can be involved; in schizophrenia and related disorders **auditory** hallucinations lead, usually **voices** (familiar or not) that the person experiences as **distinct from their own thoughts**." },
             { type: "list", title: "What does not count", items: [
               "Experiences that occur **without a clear sensorium** (the hallucination must occur in a clear sensorium).",
               "**Hypnagogic** (falling asleep) and **hypnopompic** (waking) experiences: within the range of normal experience.",
               "Hallucinations that are a **normal part of religious experience** in some cultural contexts, e.g., hearing God’s voice."
             ] },
-            { type: "callout", kind: "pearl", text: "Modality is a clue, not a verdict. **Visual**, **olfactory**, **gustatory** and **tactile** hallucinations raise suspicion of a medical or substance cause (olfactory → **temporal lobe epilepsy**; formication → **stimulants**), yet visual hallucinations are not rare in schizophrenia or bipolar disorder and unpleasant smells are consistent with schizophrenia. Never decide on one hallucination alone (p. 134)." }
+            { type: "callout", kind: "pearl", text: "Modality is a clue, not a verdict. **Visual** and **olfactory** hallucinations raise suspicion of a medical or toxic cause (olfactory → **temporal lobe epilepsy**), and formication points to **stimulants**, yet visual hallucinations are not rare in schizophrenia or bipolar disorder and unpleasant smells are consistent with schizophrenia. Never decide on one hallucination alone (p. 134)." }
           ]
         },
         {
@@ -100,7 +100,7 @@ SP.add("ch02", "guide", {
               ["Incoherence (“word salad”)", "Rare: speech so disorganized it is nearly incomprehensible, resembling **receptive aphasia**."]
             ] },
             { type: "callout", kind: "culture", text: "**Glossolalia** (“speaking in tongues”) and **possession trance** produce disorganized speech but are **not psychosis** unless clearly psychotic symptoms accompany them. A clinician from a different linguistic background may misjudge severity, and narrative styles vary across cultures." },
-            { type: "p", text: "Milder disorganization is expected in the **prodromal** and **residual** periods of schizophrenia." }
+            { type: "p", text: "Milder disorganization may occur in the **prodromal** and **residual** periods of schizophrenia." }
           ]
         },
         {
@@ -126,14 +126,14 @@ SP.add("ch02", "guide", {
               ["Anhedonia", "Decreased ability to experience pleasure. People with schizophrenia can still enjoy an activity **in the moment** and recall it, but they **engage in pleasurable activities less often**."],
               ["Asociality", "Apparent lack of interest in social interaction; can go with avolition, or reflect **limited opportunities** for social contact."]
             ] },
-            { type: "callout", kind: "mnemonic", text: "The five A’s plus one D: **D**iminished emotional expression, **A**volition, **A**logia, **A**nhedonia, **A**sociality. Only **diminished emotional expression** and **avolition** are written into Criterion A5." },
-            { type: "callout", kind: "caution", text: "Before calling something a negative symptom, consider the alternatives: **depression** (withdrawal and poor self-care), **medication effects**, and **culture or language** (alogia when the interview is not in the person’s primary language; different norms for eye contact and emotional display). Negative symptoms that **begin after psychosis onset** are more variable and may be **secondary** (p. 117)." }
+            { type: "callout", kind: "mnemonic", text: "The 5 A’s: **A**ffect blunted (diminished emotional expression), **A**logia, **A**volition, **A**nhedonia, **A**sociality. Only **diminished emotional expression** and **avolition** are written into Criterion A5." },
+            { type: "callout", kind: "caution", text: "Before calling something a negative symptom, consider the alternatives: **depression** (withdrawal and poor self-care) and **medication effects** (both app guidance), and **culture or language** (alogia when the interview is not in the person’s primary language; different norms for eye contact and emotional display). When negative symptoms **start only after psychosis onset**, they vary more and may be **secondary** (p. 117)." }
           ]
         },
         {
           id: "s2-assessment",
           title: "Rating severity and assessing across cultures",
-          pages: "103–104",
+          pages: "104",
           blocks: [
             { type: "p", text: "Psychotic disorders are heterogeneous, and symptom severity predicts things that matter, such as the degree of cognitive or neurobiological deficit. Section III (“Assessment Measures”) provides the **Clinician-Rated Dimensions of Psychosis Symptom Severity**." },
             { type: "table", caption: "The severity specifier used throughout the chapter", head: ["Feature", "Rule"], rows: [
@@ -157,7 +157,7 @@ SP.add("ch02", "guide", {
         {
           id: "s2-schizotypal",
           title: "Schizotypal (personality) disorder",
-          pages: "104; criteria 744–748",
+          pages: "104; criteria 744–745, text 745–748 (Ch 18)",
           blocks: [
             { type: "p", text: "Schizotypal personality disorder is listed here because it sits on the **schizophrenia spectrum** (ICD-10 calls it **schizotypal disorder**), but its criteria and text live in the Personality Disorders chapter. It is a **pervasive pattern** of social and interpersonal deficits with **cognitive or perceptual distortions** and **eccentric behavior**, beginning by **early adulthood**. Beliefs, thinking and perception stay **below the threshold** of a psychotic disorder." },
             { type: "criteria", title: "Schizotypal personality disorder in brief", code: "F21", pages: "744–745", items: [
@@ -170,9 +170,9 @@ SP.add("ch02", "guide", {
                 "**Inappropriate or constricted affect**",
                 "**Odd, eccentric or peculiar** behavior or appearance",
                 "**No close friends** or confidants other than first-degree relatives",
-                "**Excessive social anxiety** that does not ease with familiarity and comes from **paranoid fears**, not negative self-judgment"
+                "**Excessive social anxiety** that does not ease with familiarity and tends to go with **paranoid fears**, not negative self-judgment"
               ]],
-              ["B", "Not only during schizophrenia, a bipolar or depressive disorder with psychotic features, another psychotic disorder, or autism spectrum disorder.", null, "If criteria were met **before** schizophrenia began, add **“(premorbid)”**, e.g., schizotypal personality disorder (premorbid)."]
+              ["B", "Does not occur only in the course of schizophrenia, another psychotic disorder, a mood disorder with psychotic features, or autism spectrum disorder.", null, "If criteria were met **before** schizophrenia began, add **“(premorbid)”**, e.g., schizotypal personality disorder (premorbid)."]
             ] },
             { type: "compare", title: "Telling schizotypal PD from its neighbors (pp. 747–748)", items: [
               { title: "Psychotic disorders", color: "mech", points: ["They have a **period of persistent psychosis**.", "Schizotypal PD is diagnosed alongside only if it **preceded** the psychosis and **persists** in remission."] },
@@ -188,7 +188,7 @@ SP.add("ch02", "guide", {
               ["Sex", "Slightly more common in **men**."],
               ["Help-seeking", "People usually seek treatment for associated **anxiety or depression**, not the personality features."]
             ] },
-            { type: "callout", kind: "pearl", text: "The **dinner-party test**: people with social anxiety disorder or avoidant PD relax as the evening goes on; a person with schizotypal PD may grow **more tense and suspicious**, because the anxiety comes from suspicion about others’ motives." }
+            { type: "callout", kind: "pearl", text: "The **dinner-party test**: a person with schizotypal PD does not relax as the evening goes on and may grow **more tense and suspicious**, because the anxiety goes with suspicion about others’ motives." }
           ]
         },
         {
@@ -197,11 +197,11 @@ SP.add("ch02", "guide", {
           pages: "104–108",
           blocks: [
             { type: "criteria", title: "Delusional disorder in brief", code: "F22", pages: "104–105", items: [
-              ["A", "**One or more delusions** lasting **1 month or longer**."],
+              ["A", "**One or more delusions** lasting **at least 1 month**."],
               ["B", "**Criterion A for schizophrenia has never been met.**", null, "Hallucinations, if present, are **not prominent** and fit the delusional theme (e.g., feeling insects crawling with a delusion of infestation)."],
-              ["C", "Apart from the delusion and its ramifications, functioning is **not markedly impaired** and behavior is **not obviously bizarre or odd**."],
+              ["C", "Outside the delusion and what follows from it, behavior is **not obviously bizarre or odd** and functioning is **not markedly impaired**."],
               ["D", "Any manic or major depressive episodes have been **brief relative to** the delusional periods."],
-              ["E", "Not due to a substance or another medical condition, and not better explained by another mental disorder such as **body dysmorphic disorder** or **OCD**."]
+              ["E", "Not due to a substance or another medical condition, and not better accounted for by another mental disorder, e.g., **body dysmorphic disorder** or **OCD**."]
             ], specifiers: [
               ["Type", "**Erotomanic**, **grandiose**, **jealous**, **persecutory**, **somatic**, **mixed** (no theme predominates) or **unspecified** (e.g., referential delusions without a prominent persecutory or grandiose component)."],
               ["With bizarre content", "Delusions that are clearly implausible, not understandable and not derived from ordinary experience."],
@@ -249,9 +249,9 @@ SP.add("ch02", "guide", {
             { type: "criteria", title: "Brief psychotic disorder in brief", code: "F23", pages: "108–109", items: [
               ["A", "**One or more** of the following, at least one being (1), (2) or (3):", ["Delusions", "Hallucinations", "Disorganized speech (frequent derailment or incoherence)", "Grossly disorganized or catatonic behavior"], "A **culturally sanctioned response** does not count. Note that **negative symptoms are not on this list**."],
               ["B", "An episode lasts **at least 1 day but less than 1 month**, with an **eventual full return** to the premorbid level of functioning."],
-              ["C", "Not better explained by a depressive or bipolar disorder with psychotic features, another psychotic disorder (such as schizophrenia) or catatonia, and not due to a substance or another medical condition."]
+              ["C", "Not better accounted for by a mood disorder with psychotic features, another psychotic disorder (such as schizophrenia) or catatonia, and not caused by a substance or another medical condition."]
             ], specifiers: [
-              ["With marked stressor(s)", "Also called **brief reactive psychosis**: symptoms follow events that would be markedly stressful to almost anyone in similar circumstances in the person’s culture."],
+              ["With marked stressor(s)", "Also called **brief reactive psychosis**: symptoms follow events that almost anyone in similar circumstances in the person’s culture would find markedly stressful."],
               ["Without marked stressor(s)", "No such events."],
               ["With peripartum onset", "Onset **during pregnancy or within 4 weeks postpartum**."],
               ["With catatonia", "Add **F06.1** catatonia associated with brief psychotic disorder."],
@@ -260,7 +260,7 @@ SP.add("ch02", "guide", {
             { type: "defs", title: "Associated features, epidemiology and course", items: [
               ["Experience", "Typically **emotional turmoil** or overwhelming confusion with rapid shifts between intense affects."],
               ["Severity", "Brief but can be **severe**: supervision may be needed for nutrition, hygiene and protection from poor judgment."],
-              ["Suicide", "**Increased risk of suicidal behavior**, especially during the acute episode."],
+              ["Suicide", "There **appears to be an increased risk of suicidal behavior**, especially during the acute episode."],
               ["Prevalence", "About **2%–7%** of first-onset psychosis in several countries."],
               ["Onset", "Adolescence or early adulthood onward; **average onset in the mid-30s**."],
               ["Course", "Full remission within 1 month by definition, sometimes after only a few days. **More than 50% relapse** later, yet outcome is **usually favorable**. In **under half** of cases the diagnosis later changes, more often to a **schizophrenia spectrum** disorder."]
@@ -273,7 +273,7 @@ SP.add("ch02", "guide", {
               ["Malingering and factitious disorder", "Symptoms are **intentionally produced**; in malingering for an understandable goal."],
               ["Personality disorders", "Stress can cause transient psychotic symptoms that usually need no extra diagnosis; if they last **at least 1 day**, brief psychotic disorder may be added."]
             ] },
-            { type: "callout", kind: "culture", text: "Voices heard during a **religious ceremony** that do not persist and are not seen as abnormal by the community are not psychosis. In many cultures, **bereaved relatives** commonly hear, see or interact with the spirit of a recently deceased loved one without pathological consequences." },
+            { type: "callout", kind: "culture", text: "Voices heard during a **religious ceremony** that do not persist and are not seen as abnormal by the community are not psychosis. In many cultures it is common for **bereaved relatives** to sense, see or hear a loved one who has recently died, or to interact with that person’s spirit, without pathological consequences." },
             { type: "case", title: "Clinical vignette: three days after the flood", text: "A 34-year-old man is brought in 3 days after his home and shop were destroyed in a flood. He is terrified, says the rescue workers are poisoning the water to kill survivors, and hears voices calling his name. He is confused at times and his mood swings from weeping to rage. He has no psychiatric history; toxicology and the medical workup are negative. Sixteen days later he is calm, insightful and back to helping his family rebuild.", point: "Delusions and hallucinations lasting ≥1 day and <1 month with a full return to baseline, triggered by an event that would be markedly stressful to almost anyone: **brief psychotic disorder, with marked stressor (brief reactive psychosis)**. Watch for relapse, which happens in more than half." }
           ]
         },
@@ -288,7 +288,7 @@ SP.add("ch02", "guide", {
               ["C", "Schizoaffective disorder and mood disorders with psychotic features ruled out: **no concurrent mood episodes**, or mood episodes present for only a **minority** of the active and residual periods."],
               ["D", "Not due to a substance or another medical condition."]
             ], specifiers: [
-              ["With good prognostic features", "**At least two** of: onset of prominent psychotic symptoms **within 4 weeks** of the first noticeable change in behavior or functioning; **confusion or perplexity**; **good premorbid** social and occupational functioning; **absence of blunted or flat affect**."],
+              ["With good prognostic features", "**At least two** of: prominent psychosis beginning **within 4 weeks** of the first clear change in behavior or functioning; **confusion or perplexity**; **good premorbid** work and social functioning; **no blunted or flat affect**."],
               ["Without good prognostic features", "Fewer than two of the above."],
               ["With catatonia", "Add **F06.1** catatonia associated with schizophreniform disorder."],
               ["Severity", "Optional 0–4 ratings over the last 7 days."]
@@ -307,7 +307,7 @@ SP.add("ch02", "guide", {
               ["Familial", "Relatives have an increased risk of **schizophrenia**."],
               ["Tests", "As in schizophrenia, **no laboratory or psychometric test**; imaging and other research findings are not diagnostic."]
             ] },
-            { type: "callout", kind: "exam", text: "The differential of schizophreniform disorder is essentially that of schizophrenia, because the two differ mainly in duration. The classic trap: a 4-month illness with clear decline is still **schizophreniform**, not schizophrenia; the **time rule** decides, not the severity." }
+            { type: "callout", kind: "exam", text: "The differential of schizophreniform disorder is essentially that of schizophrenia, because the two differ mainly in duration. The classic trap: a 4-month illness with clear decline is still **schizophreniform**, not schizophrenia; the **time rule** decides, not the severity (app guidance)." }
           ]
         }
       ]
@@ -333,13 +333,13 @@ SP.add("ch02", "guide", {
               ["Severity", "Optional 0–4 ratings of the primary psychotic symptoms, most severe in the last 7 days."]
             ] },
             { type: "p", text: "**No single symptom is pathognomonic.** The diagnosis rests on a **constellation** of signs and symptoms together with impaired functioning, and the disorder is heterogeneous: individuals vary substantially on most features." },
-            { type: "list", title: "Reading the criteria correctly (pp. 114–115)", items: [
+            { type: "list", title: "Reading the criteria correctly (p. 115)", items: [
               "**Criterion A**: if active symptoms **remit within a month because of treatment**, A is still met when the clinician judges they would have persisted untreated.",
               "**Criterion B**: compare with **unaffected siblings** when onset is in childhood. **Avolition** (A5) links directly to the social dysfunction of B, and **cognitive impairment** is strongly related to functional impairment.",
               "**Criterion C**: the **prodrome** often precedes the active phase and **residual** symptoms may follow: odd beliefs short of delusion (**ideas of reference**, **magical thinking**), unusual perceptions (sensing an unseen presence), vague but understandable speech, odd behavior (mumbling in public). **Negative symptoms** are common and can be severe in these phases; withdrawal from routines is often the **first sign**.",
               "**Criterion D**: mood symptoms and even full mood episodes are common in schizophrenia, but the diagnosis needs **delusions or hallucinations in the absence of mood episodes**, and mood episodes must fill only a **minority** of the total illness."
             ] },
-            { type: "callout", kind: "exam", text: "Negative symptoms + catatonia, or negative symptoms + disorganized behavior, can give “two symptoms” but **never satisfy Criterion A**: one of the first three (**delusions, hallucinations, disorganized speech**) is mandatory." },
+            { type: "callout", kind: "exam", text: "Negative symptoms + catatonia, or negative symptoms + disorganized behavior, can give “two symptoms” but **never satisfy Criterion A**: one of the first three (**delusions, hallucinations, disorganized speech**) is mandatory (app guidance)." },
             { type: "case", title: "Clinical vignette: the engineering student", text: "A 22-year-old engineering student stopped attending lectures 9 months ago and gradually withdrew from friends. Over the past 6 weeks he has heard a running commentary on his actions and believes his professors broadcast his thoughts through the campus Wi-Fi. He sits for hours without doing anything, his face shows little expression, and he has not showered in weeks. He had no mood episodes, the drug screen is negative and the medical workup is unremarkable.", point: "Criterion A (hallucinations, delusions, negative symptoms) for >1 month, marked decline (B), and **≥6 months** of continuous signs counting the prodromal withdrawal (C), with mood, substance and medical causes excluded: **schizophrenia**. Course specifiers cannot be used until the illness has lasted 1 year." }
           ]
         },
@@ -349,7 +349,7 @@ SP.add("ch02", "guide", {
           pages: "116",
           blocks: [
             { type: "list", title: "Associated features", items: [
-              "**Inappropriate affect** (laughing without an appropriate stimulus); dysphoric mood (depression, anxiety, anger); **disturbed sleep** (sleeping by day, active at night); lack of interest in eating or **food refusal**.",
+              "**Inappropriate affect** (laughing without an appropriate stimulus); dysphoric mood (depression, anxiety, anger); **disturbed sleep** (sleeping by day, active at night); poor interest in food or **refusal to eat**.",
               "**Depersonalization, derealization and somatic concerns**, sometimes reaching delusional proportions; anxiety and phobias are common.",
               "**Cognitive deficits** are common and strongly linked to vocational and functional impairment: declarative and **working memory**, language and other **executive functions**, **slower processing speed**, sensory processing, inhibition and attention.",
               "**Social cognition** deficits, including **theory of mind** (inferring others’ intentions); attending to irrelevant events and treating them as meaningful may generate **explanatory delusions**. These impairments often **persist in remission**."
@@ -375,7 +375,7 @@ SP.add("ch02", "guide", {
           blocks: [
             { type: "defs", title: "Prevalence", items: [
               ["Lifetime", "About **0.3%–0.7%**, varying over a **fivefold** range across nationally representative surveys."],
-              ["Higher in", "Some groups defined by **migration and refugee status**, **urbanicity**, and the **economic status and latitude** of the country; some groups are also more likely to be **misdiagnosed or overdiagnosed**."],
+              ["Higher in", "Some groups defined by **migration or refugee status** and **urban living**, and by a country’s **latitude and economic status**; some groups are also more likely to be **misdiagnosed or overdiagnosed**."],
               ["Sex", "Presentations with **prominent negative symptoms and long duration** (poorer outcome) show higher incidence in **men**; definitions that include more mood symptoms and brief presentations show **equal risk**. A large worldwide study found **no sex difference in prevalence**."]
             ] },
             { type: "timeline", title: "Typical age at onset", cols: ["Teens", "20s", "30s", "40+"], rows: [
@@ -400,7 +400,7 @@ SP.add("ch02", "guide", {
             { type: "callout", kind: "key", text: "Schizophrenia is **generally not a progressive neurodegenerative disorder**. Life challenges, lifestyle changes and persistent symptoms can still produce progressive dysfunction in severe chronic cases, and many people need long-term mental health care and living support." },
             { type: "defs", title: "Age-related features", items: [
               ["Childhood onset", "Same essential features but harder to diagnose. Delusions and hallucinations are **less elaborate**; **visual hallucinations are more common** and must be distinguished from **normal fantasy play**. Disorganized speech (autism spectrum disorder) and disorganized behavior (ADHD) are common in other childhood disorders, so consider those first. Childhood-onset cases resemble **poor-outcome adult cases**: gradual onset, prominent negative symptoms. Antecedents: nonspecific emotional-behavioral problems, intellectual and language changes, subtle **motor delays**."],
-              ["Late onset (after 40)", "**Overrepresented by women** (who may have married); **predominantly psychotic** symptoms with **preserved affect and social functioning**. It is not yet clear whether this is the same condition as schizophrenia diagnosed before midlife (e.g., before 55)."]
+              ["Late onset (after 40)", "**Overrepresented by women** (who may have married); **predominantly psychotic** symptoms with **preserved affect and social functioning**. Whether this is the same condition as schizophrenia diagnosed before midlife (e.g., before 55) remains unclear."]
             ] }
           ]
         },
@@ -467,12 +467,12 @@ SP.add("ch02", "guide", {
           pages: "121–123",
           blocks: [
             { type: "criteria", title: "Schizoaffective disorder in brief", code: "F25.0 / F25.1", pages: "121–122", items: [
-              ["A", "An **uninterrupted period of illness** with a **major mood episode** (major depressive or manic) **concurrent** with **Criterion A of schizophrenia**.", null, "The major depressive episode must include **depressed mood** (A1); loss of interest alone does not count, because it is so common in schizophrenia."],
+              ["A", "An **uninterrupted period of illness** in which **Criterion A of schizophrenia** and a **major mood episode** (depressive or manic) occur **together**.", null, "The major depressive episode must include **depressed mood** (A1); loss of interest alone does not count, because it is so common in schizophrenia."],
               ["B", "**Delusions or hallucinations for 2 or more weeks without a major mood episode** at some point in the lifetime course of the illness."],
-              ["C", "Symptoms meeting criteria for a major mood episode are present for the **majority** of the total active and residual illness."],
+              ["C", "Major mood episode symptoms are present for the **majority** of the total active and residual illness."],
               ["D", "Not due to a substance or another medical condition."]
             ], specifiers: [
-              ["Bipolar type (F25.0)", "A **manic episode** is part of the presentation; major depressive episodes may also occur."],
+              ["Bipolar type (F25.0)", "Applies if the presentation includes a **manic episode**; major depressive episodes can also occur."],
               ["Depressive type (F25.1)", "**Only major depressive episodes**."],
               ["With catatonia", "Add **F06.1** catatonia associated with schizoaffective disorder."],
               ["Course (after 1 year)", "First or multiple episodes, acute / partial / full remission; continuous; unspecified."],
@@ -489,7 +489,7 @@ SP.add("ch02", "guide", {
               { label: "Major depressive episode", from: 28.6, to: 85.7, color: "drug", span: "4 of 7 months", note: "Mood present for the **majority** → Criterion C met" },
               { label: "Psychosis alone", from: 0, to: 28.6, color: "hy", span: "2 months + 1 month", note: "≥2 weeks without a mood episode → Criterion B met" }
             ], note: "Result: schizoaffective disorder, depressive type." },
-            { type: "callout", kind: "exam", title: "The counter-example", text: "Four years of active and residual schizophrenia, with depressive and manic episodes adding up to **no more than 1 year**: mood is present for a **minority**, Criterion C is **not** met, and the diagnosis stays **schizophrenia** (p. 123)." },
+            { type: "callout", kind: "exam", title: "The counter-example", text: "Four years of active and residual schizophrenia, with depressive and manic episodes adding up to **no more than 1 year**: mood is present for a **minority**, Criterion C is **not** met, and the diagnosis stays **schizophrenia** (p. 123; app guidance)." },
             { type: "case", title: "Clinical vignette: voices that outlast the mania", text: "A 27-year-old woman has had three hospital admissions over 5 years. Each began with weeks of elevated mood, little sleep, pressured speech and grandiose plans, together with voices commenting on her. Collateral history shows the manic and depressive episodes have filled about 3½ of the 5 years. Between episodes, when her mood was normal, the voices and the belief that she is being watched persisted for a month or more at a time. Drug screens have been negative.", point: "Mood episodes concurrent with Criterion A, mood present for the **majority** of the illness (C), and **≥2 weeks** of psychosis without a mood episode (B), with a manic episode in the history: **schizoaffective disorder, bipolar type (F25.0)**. Without the mood-free psychosis this would be bipolar I disorder with psychotic features; with mood for only a minority of the illness it would be schizophrenia." }
           ]
         },
@@ -500,23 +500,23 @@ SP.add("ch02", "guide", {
           blocks: [
             { type: "list", title: "Associated features", items: [
               "Occupational and social functioning is **frequently impaired**, but impairment is **not a defining criterion** (unlike schizophrenia).",
-              "Restricted social contact and difficulty with self-care occur, but **negative symptoms are less severe and less persistent** than in schizophrenia.",
-              "**Anosognosia** is common but usually **less severe and pervasive** than in schizophrenia.",
+              "Restricted social contact and difficulty with self-care occur, but **negative symptoms may be less severe and less persistent** than in schizophrenia.",
+              "**Anosognosia** is common but may be **less severe and pervasive** than in schizophrenia.",
               "If mood symptoms continue after Criterion A symptoms remit, there may be a later risk of **major depressive or bipolar disorder**. Alcohol and other substance-related disorders may be associated.",
-              "No definitive test. Cognitive deficits (executive function, verbal memory, processing speed) are often **less pronounced** than in schizophrenia; **gray matter volume loss** resembles schizophrenia."
+              "No definitive test. Cognitive deficits (executive function, verbal memory, processing speed) may be **less pronounced** than in schizophrenia; **gray matter volume loss** resembles schizophrenia."
             ] },
             { type: "defs", title: "Epidemiology and course", items: [
-              ["Prevalence", "About **one-third as common as schizophrenia**; **0.3%** lifetime in a Finnish sample, **higher in women** under DSM-IV criteria. Expected to be **lower** under the stricter DSM-5 Criterion C (“majority” rather than DSM-IV’s “substantial portion”)."],
+              ["Prevalence", "Appears to be about **one-third as common as schizophrenia**; **0.3%** lifetime in a Finnish sample, **higher in women** under DSM-IV criteria. Expected to be **lower** under the stricter DSM-5 Criterion C (“majority” rather than DSM-IV’s “substantial portion”)."],
               ["Onset", "Typically **early adulthood**, but anywhere from adolescence to late life."],
-              ["Diagnostic shifts", "Diagnoses move **into** schizoaffective disorder as mood episodes become clear, and **out of** it to schizophrenia or a mood disorder; a change **to schizophrenia** is more common, and more so under DSM-5. If later follow-up shows only residual psychosis or negative symptoms, the diagnosis may change to schizophrenia."],
+              ["Diagnostic shifts", "Diagnoses move **into** schizoaffective disorder as mood episodes become clear, and **out of** it to schizophrenia or a mood disorder; a change **to schizophrenia** is more common, and the difference is expected to be more pronounced under DSM-5. If later follow-up shows only residual psychosis or negative symptoms, the diagnosis may change to schizophrenia."],
               ["Prognosis", "**Better than schizophrenia, worse than mood disorders.**"],
               ["Type by age", "**Bipolar type** may be more common in **young adults**; **depressive type** in **older adults**."],
-              ["Genetics", "Increased risk in first-degree relatives of people with schizophrenia, bipolar disorder or schizoaffective disorder; **polygenic risk scores** for schizophrenia, bipolar disorder and MDD may all be elevated."],
-              ["Suicide", "Lifetime suicide risk for schizophrenia and schizoaffective disorder is **5%**; **depressive symptoms** raise it. Rates appear higher in **North American** populations than in European, Eastern European, South American and Indian populations."],
+              ["Genetics", "Possibly increased risk in first-degree relatives of people with schizophrenia, bipolar disorder or schizoaffective disorder; **polygenic risk scores** for schizophrenia, bipolar disorder and MDD may all be elevated."],
+              ["Suicide", "Lifetime suicide risk for schizophrenia and schizoaffective disorder is **5%**; **depressive symptoms** raise it. Rates appear higher in **North American** samples than in samples from Europe, Eastern Europe, South America and India."],
               ["Comorbidity", "Especially **substance use and anxiety disorders**; increased **metabolic syndrome** and reduced life expectancy."]
             ] },
             { type: "callout", kind: "caution", text: "Mood symptoms during the **prodrome** of schizophrenia do not make it schizoaffective: what counts is the **co-occurrence** of a full mood episode with active psychosis. And because the proportion of mood to psychosis changes, the right diagnosis can change over time: a 4-month major depressive episode early in a chronic psychosis that then runs for years without another mood episode becomes **schizophrenia**." },
-            { type: "callout", kind: "culture", text: "**African American and Hispanic** people who meet criteria for schizoaffective disorder are **more likely to be diagnosed with schizophrenia**. Guard against bias by evaluating **both psychotic and mood symptoms** comprehensively." },
+            { type: "callout", kind: "culture", text: "Some evidence suggests that **African American and Hispanic** people whose symptoms fit schizoaffective disorder are **more often given a schizophrenia diagnosis**. Guard against bias by evaluating **both psychotic and mood symptoms** comprehensively." },
             { type: "p", text: "The differential is wide: delirium, major NCD, substance-induced psychotic or neurocognitive disorder, bipolar or major depressive disorder with psychotic features, mood disorders with catatonic features, schizotypal, schizoid or paranoid PD, brief psychotic, schizophreniform and delusional disorders, schizophrenia, other specified/unspecified psychotic disorders, and **psychotic disorder due to another medical condition**, which can combine psychotic and mood symptoms and must be excluded." }
           ]
         }
@@ -561,7 +561,7 @@ SP.add("ch02", "guide", {
               { title: "Points to substance/medication", color: "case", points: ["Onset **during or soon after** exposure, intoxication or withdrawal.", "**Atypical features**, e.g., new delusions in a **man older than 35** with no psychotic history.", "Symptoms continue while use continues and settle after removal (though they can persist for weeks)."] },
               { title: "Points to an independent disorder", color: "mech", points: ["Symptoms **before** the substance use, or during **sustained abstinence**.", "Persistence for **a month or more** after intoxication, withdrawal or medication ends.", "**Prior recurrent** independent episodes."] }
             ] },
-            { type: "callout", kind: "exam", title: "Reality testing decides", text: "If a person **knows** the perception is drug-induced and neither believes nor acts on it, the diagnosis is **intoxication or withdrawal with perceptual disturbances**, not a psychotic disorder. That specifier exists for **alcohol withdrawal; cannabis intoxication; sedative, hypnotic or anxiolytic withdrawal; and stimulant intoxication**." },
+            { type: "callout", kind: "exam", title: "Reality testing decides", text: "If a person **knows** the perception is drug-induced and neither believes nor acts on it, the diagnosis is **intoxication or withdrawal with perceptual disturbances**, not a psychotic disorder. That specifier exists for **alcohol withdrawal; cannabis intoxication; sedative, hypnotic or anxiolytic withdrawal; and stimulant intoxication** (app guidance)." },
             { type: "table", caption: "Which substances cause psychosis, and when (p. 129)", head: ["Phase", "Substance classes"], rows: [
               ["During **intoxication**", "Alcohol; cannabis; hallucinogens (including **phencyclidine**); inhalants; sedatives, hypnotics and anxiolytics; stimulants (including cocaine); other or unknown"],
               ["During **withdrawal**", "**Alcohol**; **sedatives, hypnotics and anxiolytics**; other or unknown"]
@@ -570,13 +570,13 @@ SP.add("ch02", "guide", {
               "Anesthetics and analgesics", "Anticholinergic agents", "Anticonvulsants", "Antihistamines", "Antihypertensive and cardiovascular drugs", "Antimicrobials", "Antiparkinsonian drugs", "Chemotherapy (e.g., cyclosporine, procarbazine)", "**Corticosteroids**", "Gastrointestinal drugs", "Muscle relaxants", "NSAIDs", "OTC drugs (phenylephrine, pseudoephedrine)", "Antidepressants", "Disulfiram",
               "Toxins: anticholinesterases, **organophosphate insecticides**, sarin and other nerve gases, **carbon monoxide**, carbon dioxide, volatile substances (fuel, paint)"
             ] },
-            { type: "table", caption: "Course by substance (pp. 129–130)", head: ["Substance", "What to expect"], rows: [
+            { type: "table", caption: "Course by substance (p. 129)", head: ["Substance", "What to expect"], rows: [
               ["**Cocaine** (high dose, smoked)", "Psychosis within **minutes**"],
-              ["**Alcohol**, sedatives", "**Days or weeks** of high-dose use. **Alcohol-induced psychotic disorder with hallucinations** follows prolonged heavy drinking in moderate to severe alcohol use disorder; hallucinations are usually **auditory**."],
+              ["**Alcohol**, sedatives", "**Days or weeks** of high-dose use. **Alcohol-induced psychotic disorder with hallucinations** usually follows only prolonged heavy drinking in moderate to severe alcohol use disorder; hallucinations are usually **auditory**."],
               ["**Amphetamine-type** and cocaine", "Similar pictures: **persecutory delusions** soon after use; **formication** (bugs crawling in or under the skin) with scratching and excoriation."],
               ["**Cannabis**", "Soon after high-dose use: **persecutory delusions, marked anxiety, emotional lability, depersonalization**; usually **remits within a day**."],
-              ["Amphetamine-type, **PCP**, cocaine", "Can persist **for weeks or longer** after removal despite antipsychotic treatment."],
-              ["Later life", "**Polypharmacy** and drugs for parkinsonism and cardiovascular disease make **prescription-induced** psychosis more likely than drug-of-abuse psychosis."]
+              ["Amphetamine-type, **PCP**, cocaine", "Reported to sometimes persist **for weeks or longer** after removal despite antipsychotic treatment."],
+              ["Later life", "**Polypharmacy** and drugs for parkinsonism and cardiovascular disease may make **prescription-induced** psychosis more likely than drug-of-abuse psychosis."]
             ] },
             { type: "defs", title: "Epidemiology and outcome", items: [
               ["Prevalence", "Unknown in the general population; **7%–25%** of people with a **first episode of psychosis** in different settings."],
@@ -603,7 +603,7 @@ SP.add("ch02", "guide", {
           blocks: [
             { type: "criteria", title: "Psychotic disorder due to another medical condition in brief", code: "F06.2 / F06.0", pages: "131", items: [
               ["A", "**Prominent hallucinations or delusions.**"],
-              ["B", "History, examination or laboratory evidence that the disturbance is the **direct pathophysiological consequence** of another medical condition."],
+              ["B", "History, examination or laboratory evidence that another medical condition **directly causes** the disturbance through its pathophysiology."],
               ["C", "Not better explained by another mental disorder."],
               ["D", "Not exclusively during a **delirium**."],
               ["E", "Clinically significant **distress or impairment**."]
@@ -660,7 +660,7 @@ SP.add("ch02", "guide", {
           title: "Catatonia: one syndrome, three diagnoses",
           pages: "134–137",
           blocks: [
-            { type: "p", text: "The manual does **not** treat catatonia as an independent class. It recognizes **catatonia associated with another mental disorder** (a specifier for neurodevelopmental, psychotic, bipolar, depressive and other mental disorders), **catatonic disorder due to another medical condition**, and **unspecified catatonia**. All are defined by **3 or more of 12** psychomotor features." },
+            { type: "p", text: "The manual does **not** treat catatonia as an independent class. It recognizes **catatonia associated with another mental disorder** (a specifier for neurodevelopmental, psychotic, bipolar, depressive and other mental disorders), **catatonic disorder due to another medical condition**, and **unspecified catatonia**. The two full diagnoses need **3 or more of 12** psychomotor features; unspecified catatonia can be used when full criteria are not met." },
             { type: "criteria", title: "The 12 features (Criterion A of both full catatonia diagnoses)", code: "≥3 of 12", pages: "135–136", items: [
               ["1", "**Stupor**: no psychomotor activity; not actively relating to the environment."],
               ["2", "**Catalepsy**: a posture held against gravity after it is **passively induced** by the examiner."],
@@ -675,19 +675,20 @@ SP.add("ch02", "guide", {
               ["11", "**Echolalia**: mimicking another’s speech."],
               ["12", "**Echopraxia**: mimicking another’s movements."]
             ] },
-            { type: "callout", kind: "mnemonic", text: "Catalepsy versus posturing: in **catalepsy** the examiner **places** the limb and it stays; in **posturing** the person **adopts** the posture **spontaneously**. Waxy flexibility is the even resistance felt while moving the limb." },
+            { type: "callout", kind: "pearl", text: "Catalepsy versus posturing: in **catalepsy** the examiner **places** the limb and it stays; in **posturing** the person **adopts** the posture **spontaneously**. Waxy flexibility is the even resistance felt while moving the limb." },
             { type: "compare", title: "The three catatonia diagnoses", items: [
               { title: "Associated with another mental disorder", color: "mech", points: ["**F06.1**, the **catatonia specifier**.", "Code the mental disorder **first**: e.g., F25.1 schizoaffective disorder, depressive type; **F06.1** catatonia associated with schizoaffective disorder.", "Rule out medical causes and **medication effects** first."] },
-              { title: "Due to another medical condition", color: "case", points: ["**F06.1**; code the medical condition first: e.g., **K72.90** hepatic encephalopathy; **F06.1** catatonic disorder due to hepatic encephalopathy.", "Not better explained by another mental disorder (e.g., a manic episode); not only during **delirium**; causes distress or impairment."] },
+              { title: "Due to another medical condition", color: "case", points: ["**F06.1**; code the medical condition first: e.g., **K76.82** hepatic encephalopathy; **F06.1** catatonic disorder due to hepatic encephalopathy.", "Another mental disorder (e.g., a manic episode) does not explain it better; not only during **delirium**; causes distress or impairment."] },
               { title: "Unspecified", color: "hy", points: ["Catatonic symptoms causing distress or impairment when the **cause is unclear**, **full criteria are not met**, or information is insufficient (e.g., the **emergency room**).", "Code **R29.818** first, then **F06.1**."] }
             ] },
+            { type: "update", kind: "post", year: "2022", title: "Hepatic encephalopathy code in the catatonia example", source: "APA, DSM-5-TR Update, September 2022; ICD-10-CM FY2023", text: "The printed coding example for catatonic disorder due to another medical condition (p. 137) uses **K72.90** for hepatic encephalopathy. Effective **October 1, 2022**, hepatic encephalopathy is coded **K76.82**, so the example now reads K76.82 hepatic encephalopathy; F06.1 catatonic disorder due to hepatic encephalopathy. F06.1 itself did not change." },
             { type: "defs", title: "Clinical picture (p. 135)", items: [
               ["Decreased activity", "Severe immobility (**stupor**) or moderate (**catalepsy**, **waxy flexibility**)."],
               ["Decreased engagement", "Severe (**mutism**) or moderate (**negativism**)."],
               ["Excessive or peculiar activity", "Complex (**stereotypy**) or simple (**agitation**), including echolalia and echopraxia."],
               ["Waxing and waning", "The same person may swing between decreased and excessive motor activity."],
               ["Why it is missed", "Opposite-looking features, variable presentations and teaching that **overemphasizes rare signs** such as waxy flexibility."],
-              ["Dangers", "**Malnutrition, exhaustion, thromboembolism, pressure ulcers, muscle contractures, hyperpyrexia** and self-injury; severe stages need close supervision."]
+              ["Dangers", "**Malnutrition, exhaustion, thromboembolism, pressure ulcers, muscle contractions, hyperpyrexia** and self-injury; severe stages need close supervision."]
             ] },
             { type: "defs", title: "How common", items: [
               ["Schizophrenia", "Catatonia occurs in **up to 35%** of people with schizophrenia (usually diagnosed in inpatients)."],
@@ -723,9 +724,9 @@ SP.add("ch02", "guide", {
               "**Persistent auditory hallucinations** with no other features.",
               "**Delusions with significant overlapping mood episodes**: persistent delusions with mood episodes present for a **substantial portion** of the delusional disturbance, so delusional disorder’s “brief mood” rule fails.",
               "**Attenuated psychosis syndrome**: psychotic-like symptoms **below the threshold** for full psychosis: less severe, more transient, and with **insight relatively maintained**.",
-              "**Delusional symptoms in the context of a relationship** with a person who has prominent delusions: the partner’s delusional material supplies the content of the same delusion in someone who may not otherwise meet criteria for a psychotic disorder (formerly called **shared psychotic disorder** or folie à deux)."
+              "**Delusional symptoms in the context of a relationship** with a person who has prominent delusions: the delusional material of the person with a psychotic disorder supplies the content of the same delusion in someone who may not otherwise meet criteria for a psychotic disorder (earlier editions called this **shared psychotic disorder**, or folie à deux; app guidance)."
             ] },
-            { type: "callout", kind: "exam", text: "Shared delusions (folie à deux) no longer have their own diagnosis; they are an **example under F28**. Attenuated psychosis syndrome is likewise an F28 example here, and is described more fully among the conditions for further study in Section III." }
+            { type: "callout", kind: "exam", text: "Shared delusions (folie à deux), a separate diagnosis in earlier editions, are an **example under F28** in DSM-5-TR. Attenuated psychosis syndrome is likewise an F28 example here, and is described more fully among the conditions for further study in Section III (app guidance)." }
           ]
         },
         {
@@ -750,7 +751,7 @@ SP.add("ch02", "guide", {
               ["Continuous", "Symptoms meeting criteria for **most of the course**, with only very brief subthreshold periods."],
               ["Unspecified", "None of the above can be determined."]
             ] },
-            { type: "callout", kind: "exam", text: "Course specifiers are used **only after the disorder has lasted 1 year**, and only if they do not contradict the diagnostic course criteria. They apply to **delusional disorder, schizophrenia and schizoaffective disorder**: the three diagnoses that can last that long." }
+            { type: "callout", kind: "exam", text: "Course specifiers are used **only after the disorder has lasted 1 year**, and only if they do not contradict the diagnostic course criteria. They apply to **delusional disorder, schizophrenia and schizoaffective disorder**: the three diagnoses that can last that long (app guidance)." }
           ]
         },
         {

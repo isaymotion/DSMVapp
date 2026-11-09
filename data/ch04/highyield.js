@@ -2,7 +2,7 @@
 SP.add("ch04", "highYield", [
   { id: "hy4-overview", topic: "The chapter", items: [
     "All depressive disorders share sad, empty or irritable mood; they differ in **duration, timing or presumed etiology**.",
-    "Every primary depressive disorder requires that there has **never** been a manic or hypomanic episode.",
+    "Major depressive and persistent depressive disorder require that there has **never** been a manic or hypomanic episode.",
     "DMDD is placed with the depressive disorders because these children usually develop **unipolar depression or anxiety**, not bipolar disorder.",
     "Persistent depressive disorder merges DSM-IV **dysthymia** and **chronic major depression**.",
     "PMDD moved from a DSM-IV **appendix** into the main manual in DSM-5."
@@ -10,7 +10,7 @@ SP.add("ch04", "highYield", [
   { id: "hy4-dmdd", topic: "Disruptive mood dysregulation disorder", items: [
     "DMDD code: **F34.81**.",
     "Temper outbursts must occur on average **three or more times per week**.",
-    "Between outbursts, mood is **persistently irritable or angry** most of the day, nearly every day.",
+    "Between outbursts, mood stays **irritable or angry** for most of each day on almost all days.",
     "Symptoms for **12 months** or more, with no break of **3 consecutive months**.",
     "Present in **two of three settings** (home, school, peers) and severe in at least one.",
     "Not diagnosed for the first time before age **6** or after age **18**.",
@@ -36,7 +36,7 @@ SP.add("ch04", "highYield", [
     "Typical depressive insomnia is **middle** or **terminal** insomnia.",
     "Blaming oneself for being sick does **not** count as guilt unless delusional.",
     "Memory complaints in older adults may be mistaken for dementia: **pseudodementia**.",
-    "The most studied biological abnormality is **HPA axis hyperactivity**, linked to melancholia."
+    "Until recently, the most studied biological abnormality was **HPA axis hyperactivity**, which appears to be associated with melancholia."
   ] },
   { id: "hy4-mdd-coding", topic: "MDD coding", items: [
     "MDD single episode codes start with **F32**; recurrent with **F33**.",
@@ -62,7 +62,7 @@ SP.add("ch04", "highYield", [
     "Psychotic depression can transition to **schizophrenia**, much more often than the reverse."
   ] },
   { id: "hy4-suicide", topic: "Suicide in depression", items: [
-    "Depressive illness carries about a **17-fold** increased risk of suicide.",
+    "An earlier review found a **17-fold** increased risk of suicide in depressive illness, compared with the age- and sex-adjusted population rate.",
     "The most consistent risk factor is a **past suicide attempt** or threat.",
     "**Most** suicides are not preceded by a nonfatal attempt.",
     "**Anhedonia** has a particularly strong link with suicidal ideation.",
@@ -83,7 +83,7 @@ SP.add("ch04", "highYield", [
     "In children and adolescents, the mood can be **irritable**.",
     "PDD needs **two** of six symptoms while depressed.",
     "Never symptom-free for more than **2 months** at a time.",
-    "The six PDD symptoms include **hopelessness** and low self-esteem, which are not MDE criteria.",
+    "The six PDD symptoms include **hopelessness** and low self-esteem, which are not separate MDE criterion symptoms.",
     "If an MDE occurs during PDD, diagnose **both** MDD and PDD.",
     "Early onset means before age **21**.",
     "“With **pure dysthymic syndrome**” means no MDE in the preceding 2 years.",
@@ -120,7 +120,7 @@ SP.add("ch04", "highYield", [
     "Acute poststroke depression risk is greatest with **left frontal** lesions.",
     "In Huntington’s disease, depression is considered the **first** neuropsychiatric symptom.",
     "In **pancreatic cancer**, depression often precedes other features.",
-    "Poststroke major depressive episodes last **9–11 months** on average."
+    "In the largest series, poststroke major depressive episodes lasted **9–11 months** on average."
   ] },
   { id: "hy4-other", topic: "Catch-all categories", items: [
     "Other specified depressive disorder code: **F32.89**.",
@@ -144,7 +144,7 @@ SP.add("ch04", "highYield", [
     "About **50%** of postpartum major depressive episodes begin before delivery.",
     "Postpartum psychotic episodes occur in **1 in 500 to 1 in 1,000** deliveries.",
     "After a postpartum psychotic episode, recurrence risk is **30%–50%** per delivery.",
-    "Maternity blues improve within **a week** and cause no impairment.",
+    "Maternity blues typically improve within **a week** and cause no impairment.",
     "Seasonal pattern needs **two** seasonal episodes in the last 2 years and no nonseasonal ones.",
     "Full remission means no significant symptoms for **2 months**."
   ] }

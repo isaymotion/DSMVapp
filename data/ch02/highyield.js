@@ -23,7 +23,7 @@ SP.add("ch02", "highYield", [
   ] },
   { id: "hy2-scz", topic: "Schizophrenia criteria", items: [
     "Criterion A needs **two or more** symptoms, and at least one must be **delusions, hallucinations or disorganized speech**.",
-    "Active symptoms that remit within a month **because of treatment** still satisfy Criterion A.",
+    "Active symptoms that remit within a month **because of treatment** still satisfy Criterion A if the clinician judges they would have persisted untreated.",
     "Criterion B requires **functional decline** (or failure to reach the expected level in youth).",
     "Prodromal and residual phases may show only **negative symptoms** or attenuated Criterion A symptoms.",
     "With autism or a childhood communication disorder, schizophrenia also needs prominent delusions or hallucinations for **≥1 month** (Criterion F).",
@@ -45,7 +45,7 @@ SP.add("ch02", "highYield", [
     "**Anosognosia** is the most common predictor of nonadherence.",
     "Most people with schizophrenia are not aggressive and are more often **victimized** than the general population.",
     "About **5%–6%** die by suicide and about **20%** attempt suicide.",
-    "Suicide risk may be highest in **younger men with comorbid substance use**.",
+    "Suicide risk may be especially high in **younger men with comorbid substance use**.",
     "More than half have **tobacco use disorder**.",
     "**OCD** and **panic disorder** are more common in schizophrenia than in the general population.",
     "Schizotypal or **paranoid** personality disorder may precede schizophrenia.",
@@ -70,7 +70,7 @@ SP.add("ch02", "highYield", [
     "The major depressive episode must include **depressed mood**; anhedonia alone is not enough.",
     "Bipolar type is **F25.0**; depressive type is **F25.1**.",
     "Schizophrenia’s criteria for decline, 6 months and autism are **not** required.",
-    "Schizoaffective disorder is about **one-third** as common as schizophrenia.",
+    "Compared with schizophrenia, schizoaffective disorder appears to be about **one-third** as common.",
     "Prognosis: **better** than schizophrenia, **worse** than mood disorders.",
     "Diagnoses most often shift from schizoaffective disorder to **schizophrenia**."
   ] },
@@ -114,7 +114,7 @@ SP.add("ch02", "highYield", [
     "Schizotypal PD that preceded schizophrenia is recorded as “**premorbid**.”",
     "Schizotypal social anxiety does **not** lessen with familiarity.",
     "Other specified psychotic disorder is **F28**; unspecified is **F29**.",
-    "Shared delusions (folie à deux) are now an example under **F28**.",
+    "Shared delusions (folie à deux; a separate diagnosis in earlier editions) are an example under **F28**.",
     "Attenuated psychosis syndrome: subthreshold, transient symptoms with relatively **maintained insight**."
   ] }
 ]);

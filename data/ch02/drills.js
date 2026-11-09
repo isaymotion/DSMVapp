@@ -10,9 +10,9 @@
       id: "w2-01", tag: "Schizophrenia",
       "case": "A 24-year-old has had schizophrenia for 3 years: a first episode, partial recovery, a relapse, and now a second acute episode with hallucinations and delusions. For most of the current episode he has been mute, posturing and resisting being moved. NMS and medical causes are excluded.",
       parts: [
-        { label: "Diagnosis", options: ["Schizophrenia", "Schizophreniform disorder", "Schizoaffective disorder", "Brief psychotic disorder"], answer: 0 },
+        { label: "Diagnosis", options: ["Schizophreniform disorder", "Schizophrenia", "Schizoaffective disorder", "Brief psychotic disorder"], answer: 1 },
         { label: "Course (after 1 year)", options: COURSE, answer: 3 },
-        { label: "Other specifier", options: ["With catatonia", "With good prognostic features", "With marked stressor", "None"], answer: 0 },
+        { label: "Other specifier", options: ["With good prognostic features", "With marked stressor", "With catatonia", "None"], answer: 2 },
         { label: "ICD-10-CM code(s)", options: ["F20.9", "F20.9 plus F06.1", "F20.81 plus F06.1", "F06.1 alone"], answer: 1 }
       ],
       line: "**F20.9** Schizophrenia, multiple episodes, currently in acute episode, with catatonia; **F06.1** catatonia associated with schizophrenia",
@@ -22,10 +22,10 @@
       id: "w2-02", tag: "Schizophreniform",
       "case": "A 20-year-old who was doing well at college became acutely psychotic within 2 weeks of first changing, appears perplexed, and has a reactive affect. She has been ill for 6 weeks and has not yet recovered.",
       parts: [
-        { label: "Diagnosis", options: ["Schizophreniform disorder", "Schizophrenia", "Brief psychotic disorder", "Delusional disorder"], answer: 0 },
-        { label: "Status", options: ["Provisional", "Confirmed (recovered within 6 months)"], answer: 0 },
+        { label: "Diagnosis", options: ["Schizophrenia", "Brief psychotic disorder", "Schizophreniform disorder", "Delusional disorder"], answer: 2 },
+        { label: "Status", options: ["Confirmed (recovered within 6 months)", "Provisional"], answer: 1 },
         { label: "Prognostic specifier", options: ["With good prognostic features", "Without good prognostic features"], answer: 0 },
-        { label: "ICD-10-CM code", options: ["F20.81", "F20.9", "F23", "F29"], answer: 0 }
+        { label: "ICD-10-CM code", options: ["F20.9", "F23", "F29", "F20.81"], answer: 3 }
       ],
       line: "**F20.81** Schizophreniform disorder, provisional, with good prognostic features",
       why: "Ill 1–6 months and not yet recovered = **provisional**. Rapid onset (within 4 weeks), perplexity, good premorbid functioning and no flat affect give at least two **good prognostic features**."
@@ -34,9 +34,9 @@
       id: "w2-03", tag: "Brief psychotic",
       "case": "A 42-year-old man became psychotic the day after his house burned down and his business failed, and recovered fully 2 weeks later. No mood episode, substance or medical cause.",
       parts: [
-        { label: "Diagnosis", options: ["Brief psychotic disorder", "Schizophreniform disorder", "Acute stress disorder", "Other specified psychotic disorder"], answer: 0 },
-        { label: "Stressor specifier", options: ["With marked stressor(s)", "Without marked stressor(s)", "With peripartum onset"], answer: 0 },
-        { label: "ICD-10-CM code", options: ["F23", "F20.81", "F43.0", "F28"], answer: 0 }
+        { label: "Diagnosis", options: ["Schizophreniform disorder", "Acute stress disorder", "Brief psychotic disorder", "Other specified psychotic disorder"], answer: 2 },
+        { label: "Stressor specifier", options: ["Without marked stressor(s)", "With marked stressor(s)", "With peripartum onset"], answer: 1 },
+        { label: "ICD-10-CM code", options: ["F20.81", "F43.0", "F28", "F23"], answer: 3 }
       ],
       line: "**F23** Brief psychotic disorder, with marked stressor(s)",
       why: "At least 1 day but less than 1 month, with full recovery, after events that would be markedly stressful to almost anyone in his culture: **with marked stressor(s)** (brief reactive psychosis)."
@@ -45,11 +45,11 @@
       id: "w2-04", tag: "Delusional disorder",
       "case": "A 58-year-old man has been convinced for 18 months, without interruption, that his wife is having an affair. He checks her phone and follows her, but otherwise functions well. No hallucinations, mood episodes or substances.",
       parts: [
-        { label: "Diagnosis", options: ["Delusional disorder", "Schizophrenia", "Paranoid personality disorder", "Obsessive-compulsive disorder"], answer: 0 },
-        { label: "Type", options: ["Jealous type", "Persecutory type", "Erotomanic type", "Mixed type"], answer: 0 },
-        { label: "Bizarre content?", options: ["Not bizarre (no specifier)", "With bizarre content"], answer: 0 },
+        { label: "Diagnosis", options: ["Schizophrenia", "Paranoid personality disorder", "Delusional disorder", "Obsessive-compulsive disorder"], answer: 2 },
+        { label: "Type", options: ["Persecutory type", "Erotomanic type", "Jealous type", "Mixed type"], answer: 2 },
+        { label: "Bizarre content?", options: ["With bizarre content", "Not bizarre (no specifier)"], answer: 1 },
         { label: "Course (after 1 year)", options: COURSE, answer: 5 },
-        { label: "ICD-10-CM code", options: ["F22", "F20.9", "F60.0", "F28"], answer: 0 }
+        { label: "ICD-10-CM code", options: ["F20.9", "F60.0", "F28", "F22"], answer: 3 }
       ],
       line: "**F22** Delusional disorder, jealous type, continuous",
       why: "A spouse’s infidelity is the **jealous** type and is not implausible, so no bizarre-content specifier. Course specifiers can be used after 1 year; symptoms meeting criteria throughout = **continuous**."
@@ -58,10 +58,10 @@
       id: "w2-05", tag: "Schizoaffective",
       "case": "A 29-year-old has had two manic episodes with psychosis, plus 3 weeks of hallucinations and delusions without any mood episode; mood episodes have filled most of the 10-month illness.",
       parts: [
-        { label: "Diagnosis", options: ["Schizoaffective disorder", "Bipolar I disorder", "Schizophrenia", "Delusional disorder"], answer: 0 },
+        { label: "Diagnosis", options: ["Bipolar I disorder", "Schizoaffective disorder", "Schizophrenia", "Delusional disorder"], answer: 1 },
         { label: "Type", options: ["Bipolar type", "Depressive type"], answer: 0 },
         { label: "Course (after 1 year)", options: COURSE, answer: 0 },
-        { label: "ICD-10-CM code", options: ["F25.0", "F25.1", "F31.2", "F20.9"], answer: 0 }
+        { label: "ICD-10-CM code", options: ["F25.1", "F31.2", "F25.0", "F20.9"], answer: 2 }
       ],
       line: "**F25.0** Schizoaffective disorder, bipolar type",
       why: "A manic episode makes it the **bipolar type** (F25.0). At 10 months, course specifiers cannot be used yet."
@@ -70,10 +70,10 @@
       id: "w2-06", tag: "Schizoaffective with catatonia",
       "case": "A 35-year-old with schizoaffective disorder (only major depressive episodes, never mania) has catatonia throughout his current depressive episode: stupor, mutism, waxy flexibility.",
       parts: [
-        { label: "Diagnosis", options: ["Schizoaffective disorder", "Major depressive disorder", "Schizophrenia", "Catatonic disorder due to another medical condition"], answer: 0 },
+        { label: "Diagnosis", options: ["Major depressive disorder", "Schizophrenia", "Schizoaffective disorder", "Catatonic disorder due to another medical condition"], answer: 2 },
         { label: "Type", options: ["Bipolar type", "Depressive type"], answer: 1 },
-        { label: "Other specifier", options: ["With catatonia", "None"], answer: 0 },
-        { label: "ICD-10-CM codes", options: ["F25.1 plus F06.1", "F25.1 alone", "F25.0 plus F06.1", "R29.818 plus F06.1"], answer: 0 }
+        { label: "Other specifier", options: ["None", "With catatonia"], answer: 1 },
+        { label: "ICD-10-CM codes", options: ["F25.1 alone", "F25.0 plus F06.1", "R29.818 plus F06.1", "F25.1 plus F06.1"], answer: 3 }
       ],
       line: "**F25.1** Schizoaffective disorder, depressive type, with catatonia; **F06.1** catatonia associated with schizoaffective disorder",
       why: "This is the manual’s own example: code the schizoaffective disorder first, then **F06.1** catatonia associated with it."
@@ -83,8 +83,8 @@
       "case": "A 23-year-old with moderate cannabis use disorder develops persecutory delusions during heavy use. No independent psychotic disorder is evident.",
       parts: [
         { label: "Comorbid use disorder (named first)", options: ["None", "Mild cannabis use disorder", "Moderate cannabis use disorder", "Severe cannabis use disorder"], answer: 2 },
-        { label: "Induced disorder", options: ["Cannabis-induced psychotic disorder", "Cannabis intoxication, with perceptual disturbances", "Schizophreniform disorder", "Brief psychotic disorder"], answer: 0 },
-        { label: "Onset", options: ["With onset during intoxication", "With onset during withdrawal", "With onset after medication use"], answer: 0 },
+        { label: "Induced disorder", options: ["Cannabis intoxication, with perceptual disturbances", "Schizophreniform disorder", "Cannabis-induced psychotic disorder", "Brief psychotic disorder"], answer: 2 },
+        { label: "Onset", options: ["With onset during withdrawal", "With onset during intoxication", "With onset after medication use"], answer: 1 },
         { label: "ICD-10-CM code", options: ["F12.159", "F12.259", "F12.959", "F12.24"], answer: 1 }
       ],
       line: "**F12.259** moderate cannabis use disorder with cannabis-induced psychotic disorder, with onset during intoxication",
@@ -94,9 +94,9 @@
       id: "w2-08", tag: "Substance-induced",
       "case": "A 19-year-old with no substance use disorder takes phencyclidine once at a party and develops delusions and hallucinations during intoxication, needing admission.",
       parts: [
-        { label: "Comorbid use disorder", options: ["None", "Mild phencyclidine use disorder", "Moderate phencyclidine use disorder"], answer: 0 },
-        { label: "Onset", options: ["With onset during intoxication", "With onset during withdrawal"], answer: 0 },
-        { label: "ICD-10-CM code", options: ["F16.959", "F16.159", "F16.259", "F19.959"], answer: 0 }
+        { label: "Comorbid use disorder", options: ["Mild phencyclidine use disorder", "Moderate phencyclidine use disorder", "None"], answer: 2 },
+        { label: "Onset", options: ["With onset during withdrawal", "With onset during intoxication"], answer: 1 },
+        { label: "ICD-10-CM code", options: ["F16.159", "F16.259", "F19.959", "F16.959"], answer: 3 }
       ],
       line: "**F16.959** phencyclidine-induced psychotic disorder, with onset during intoxication",
       why: "Without a use disorder (a one-time use), the 4th character is **9** and only the induced disorder is recorded. Phencyclidine shares the F16 class with other hallucinogens."
@@ -105,10 +105,10 @@
       id: "w2-09", tag: "Medical cause",
       "case": "A 64-year-old with metastatic lung cancer develops fixed persecutory delusions, the predominant symptom, attributed to brain metastases. No delirium.",
       parts: [
-        { label: "Listed first", options: ["C34.90 malignant lung neoplasm", "The psychotic disorder"], answer: 0 },
-        { label: "Diagnosis", options: ["Psychotic disorder due to malignant lung neoplasm", "Delusional disorder", "Brief psychotic disorder", "Delirium"], answer: 0 },
-        { label: "Specifier (predominant symptom)", options: ["With delusions", "With hallucinations"], answer: 0 },
-        { label: "ICD-10-CM code", options: ["F06.2", "F06.0", "F22", "F06.1"], answer: 0 }
+        { label: "Listed first", options: ["The psychotic disorder", "C34.90 malignant lung neoplasm"], answer: 1 },
+        { label: "Diagnosis", options: ["Delusional disorder", "Brief psychotic disorder", "Psychotic disorder due to malignant lung neoplasm", "Delirium"], answer: 2 },
+        { label: "Specifier (predominant symptom)", options: ["With hallucinations", "With delusions"], answer: 1 },
+        { label: "ICD-10-CM code", options: ["F06.0", "F22", "F06.1", "F06.2"], answer: 3 }
       ],
       line: "**C34.90** malignant lung neoplasm; **F06.2** psychotic disorder due to malignant lung neoplasm, with delusions",
       why: "The code depends on the **predominant** symptom: **F06.2 with delusions**, F06.0 with hallucinations. The medical condition is coded and listed immediately before. This is the manual’s own example."
@@ -117,8 +117,8 @@
       id: "w2-10", tag: "Unspecified catatonia",
       "case": "An unidentified man in the emergency department is mute, posturing and staring. No history is available and the workup is pending.",
       parts: [
-        { label: "Diagnosis", options: ["Unspecified catatonia", "Catatonia associated with schizophrenia", "Catatonic disorder due to another medical condition", "Unspecified psychotic disorder"], answer: 0 },
-        { label: "Codes, in order", options: ["R29.818 then F06.1", "F06.1 then R29.818", "F06.1 alone", "F29"], answer: 0 }
+        { label: "Diagnosis", options: ["Catatonia associated with schizophrenia", "Unspecified catatonia", "Catatonic disorder due to another medical condition", "Unspecified psychotic disorder"], answer: 1 },
+        { label: "Codes, in order", options: ["F06.1 then R29.818", "F06.1 alone", "R29.818 then F06.1", "F29"], answer: 2 }
       ],
       line: "**R29.818** other symptoms involving nervous and musculoskeletal systems; **F06.1** unspecified catatonia",
       why: "Unspecified catatonia is coded with **R29.818 first, then F06.1**."
@@ -211,7 +211,7 @@
     {
       id: "k2-07", tag: "Primary negative symptoms",
       "case": "A 28-year-old with schizophrenia shows the following.",
-      ask: "Which findings are best counted as **primary** negative symptoms of the illness, rather than secondary to something else?",
+      ask: "Which findings are best counted as **primary** negative symptoms of the illness, rather than secondary to something else? (App guidance: the manual says only that negative symptoms beginning after psychosis onset may reflect secondary causes, p. 117.)",
       items: [
         ["Has done almost nothing all day for a year, despite no depression or side effects", true, "Avolition: primary."],
         ["Speaks very little, giving one-word answers, since his first episode", true, "Alogia: primary."],
@@ -220,7 +220,7 @@
         ["Lost interest in everything during a recent major depressive episode", false, "Secondary to **depression**."]
       ],
       met: true,
-      why: "Two findings count as primary negative symptoms. Always rule out secondary causes (positive symptoms, depression, medication, lack of stimulation) before attributing symptoms to the illness."
+      why: "Two findings count as primary negative symptoms. Always rule out secondary causes (positive symptoms, depression, medication, lack of stimulation) before attributing symptoms to the illness (app guidance)."
     },
     {
       id: "k2-08", tag: "Medical cause clues",

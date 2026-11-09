@@ -50,7 +50,7 @@ SP.add("ch04", "mnemonics", [
       ["I", "Irritability", "Common in depression itself"],
       ["P", "Psychomotor agitation", "Also a depressive symptom"]
     ],
-    caveat: "Mixed features needs **3** of: elevated mood, grandiosity, talkativeness, racing thoughts, increased energy or activity, risky activities and **decreased need for sleep**, on most days of the episode and observable by others. Full mania or hypomania means bipolar disorder instead."
+    caveat: "Mixed features needs **3** of: elevated mood, grandiosity, talkativeness, racing thoughts, increased energy or activity, risky activities and **decreased need for sleep**, on most days of the episode and observable by others. Full mania or hypomania means bipolar disorder instead. The overlap reasons given for D, I and P are an app explanation; the manual does not state them."
   },
   {
     id: "m4-05", short: "+ irritability between outbursts; never a manic-like period >1 day", name: "3-12-2, 6-18-10", original: true, dx: "dmdd", sec: "s4-dmdd-criteria",
@@ -63,5 +63,15 @@ SP.add("ch04", "mnemonics", [
       ["10", "Onset before age 10", ""]
     ],
     caveat: "Plus **persistent irritability between outbursts**, and never a manic-like period lasting **more than 1 day**. DMDD absorbs ODD and intermittent explosive disorder but yields to bipolar disorder."
+  },
+  {
+    id: "m4-06", short: "Five symptoms, one affective, two cycles of daily ratings", name: "5 · 1 · 2", original: true, dx: "pmdd", sec: "s4-pmdd-criteria",
+    "for": "Premenstrual dysphoric disorder: the numbers",
+    letters: [
+      ["5", "Symptoms in total", "In the final week before menses, in most cycles of the past year"],
+      ["1", "Affective symptom at least", "Lability, irritability or anger, depressed mood or hopelessness, anxiety or tension"],
+      ["2", "Cycles of prospective daily ratings", "Until then, record “provisional”"]
+    ],
+    caveat: "Symptoms must improve within a few days after menses begin and be **minimal or absent** in the week after. A teaching device, not part of the manual."
   }
 ]);

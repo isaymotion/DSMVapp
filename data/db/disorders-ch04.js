@@ -55,7 +55,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["E", "**Never** a manic or hypomanic episode (unless all were substance- or medically induced)."]
     ],
     specifiers: ["**Single or recurrent**; **severity** (mild, moderate, severe), **with psychotic features**, or **partial/full remission**", "With anxious distress, mixed features, melancholic, atypical, mood-congruent or incongruent psychotic features, catatonia (+F06.1), peripartum onset", "**With seasonal pattern** (recurrent only)"],
-    epi: [["12-month prevalence (US)", "About 7%; ages 18–29 threefold those 60+"], ["Sex", "Women about 2×"], ["Onset", "Rises with puberty; US incidence peaks in the 20s"], ["Recovery", "40% begin within 3 months, 80% within 1 year"], ["Heritability", "About 40%; first-degree relatives 2–4×"], ["Suicide", "17-fold increased risk"]],
+    epi: [["12-month prevalence (US)", "About 7%; ages 18–29 threefold those 60+"], ["Sex", "Women about 2×"], ["Onset", "Rises with puberty; US incidence peaks in the 20s"], ["Recovery", "40% begin within 3 months, 80% within 1 year"], ["Heritability", "About 40%; first-degree relatives 2–4×"], ["Suicide", "17-fold vs the age- and sex-adjusted population rate (earlier review)"]],
     risk: ["Neuroticism (negative affectivity).", "Multiple adverse childhood experiences.", "Low income, limited education, racism and discrimination.", "Nonmood disorders (anxiety, substance use, trauma, eating, OCD) and chronic medical illness.", "Reproductive stages: premenstrual, postpartum, perimenopause."],
     differential: [
       { id: "bipolar-ii", how: "Any lifetime hypomania (bipolar II) or mania (bipolar I) excludes MDD." },
@@ -95,7 +95,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "bipolar-ii", how: "Hypomania with a past MDE → bipolar II; hypomania without any MDE → other specified bipolar." },
       { name: "Personality disorders", how: "Commonly co-occur; diagnose both." }
     ],
-    pearls: ["Merges DSM-IV dysthymia and chronic major depression.", "Hopelessness and low self-esteem are PDD symptoms but not MDE symptoms.", "Early onset predicts Cluster B and C personality disorders."],
+    pearls: ["Merges DSM-IV dysthymia and chronic major depression.", "Hopelessness and low self-esteem are PDD symptoms but not separate MDE criterion symptoms.", "Early onset predicts Cluster B and C personality disorders."],
     cmp: { symptoms: "Depressed mood + two of six", exclusions: "Mania, hypomania, cyclothymia; psychotic disorders; substance or medical cause", prevalence: "0.5% + 1.5% (12-month, US)", course: "Early, insidious, chronic" },
     clues: [["Core picture", "Low most days since college: tired, poor sleep, low self-worth, hopeless, but never a full episode"], ["Time", "Two years in adults, one in youth; never well >2 months"], ["Overlap", "If a major episode appears, the other diagnosis is added"], ["Code", "F34.1"]]
   },
@@ -183,7 +183,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["D", "**Criteria D–E.** Not only during delirium; distress or impairment."]
     ],
     specifiers: ["F06.31 with depressive features", "F06.32 with major depressive–like episode", "F06.34 with mixed features"],
-    epi: [["Sex", "Follows the medical condition (lupus more in women; stroke more in middle-aged men)"], ["Poststroke MDE", "Lasts 9–11 months on average"], ["Suicide", "Risk assumed no lower, perhaps higher"]],
+    epi: [["Sex", "Follows the medical condition (lupus more in women; stroke more in middle-aged men)"], ["Poststroke MDE", "Lasted 9–11 months on average (largest series)"], ["Suicide", "Risk assumed no lower, perhaps higher"]],
     risk: ["Stroke: acute risk with left frontal lesions.", "Parkinson’s: early onset, heavier motor burden, longer illness.", "TBI: female gender, prior depression, early symptoms, lower brain volume, unemployment."],
     differential: [
       { id: "mdd", how: "Prior episodes, no plausible mechanism or no temporal link." },
@@ -228,7 +228,7 @@ SP.disorders = (SP.disorders || []).concat([
     criteria: ["Depressive symptoms predominate and cause distress or impairment, but criteria for any depressive disorder or adjustment disorder are not met, and the reason is not specified or information is insufficient."],
     specifiers: [], epi: [], risk: [],
     differential: [{ id: "other-specified-depressive", how: "The reason is recorded." }, { id: "unspecified-mood", how: "Cannot choose between bipolar and depressive." }],
-    pearls: ["F32.A replaced F32.9 for this category; F32.9 is now MDD, single episode, unspecified."],
+    pearls: ["In DSM-5 (2013) this category used F32.9; DSM-5-TR uses F32.A, and F32.9 is MDD, single episode, unspecified (DSM-5 → DSM-5-TR comparison)."],
     cmp: { symptoms: "Depressive symptoms", exclusions: "Full criteria for a specific disorder", prevalence: "—", course: "—" },
     clues: [["Code", "F32.A, reason not stated"]]
   }

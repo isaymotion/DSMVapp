@@ -17,14 +17,14 @@
       id: "schizophrenia",
       ask: PSYCHOSIS_ASK.concat([
         ["Duration and prodrome", "To family: “When did you first notice a change, even before the voices or beliefs? How has school, work and self-care been since then?”", "The 6 months include prodromal and residual periods."],
-        ["Insight", "“Do you think these experiences could be part of an illness?”", "Anosognosia is common and the strongest predictor of nonadherence."]
+        ["Insight", "“Do you think these experiences could be part of an illness?”", "Anosognosia is common and the most common predictor of nonadherence."]
       ]),
       tx: {
         asOf: "October 2026",
-        first: "An antipsychotic, usually second-generation, chosen by side-effect profile, together with psychosocial treatment: coordinated specialty care for a first episode, family psychoeducation, CBT for psychosis, supported employment and social-skills training.",
+        first: "An antipsychotic chosen by side-effect profile, together with psychosocial treatment: coordinated specialty care for a first episode, family psychoeducation, CBT for psychosis, supported employment and social-skills training.",
         points: [
-          "Use the lowest effective dose; judge response after an adequate trial, usually 4–6 weeks.",
-          "**Treatment-resistant** schizophrenia (failure of two adequate antipsychotic trials): [[stahl:drugs/clozapine|clozapine]], also approved to reduce recurrent suicidal behavior. The FDA ended the clozapine REMS program in 2025; follow the labeling for neutrophil monitoring.",
+          "Use the lowest effective dose and judge response after an adequate trial (app guidance; not verified).",
+          "**Treatment-resistant** schizophrenia (commonly defined as failure of two adequate antipsychotic trials; app guidance): [[stahl:drugs/clozapine|clozapine]], also approved to reduce recurrent suicidal behavior. The FDA ended the clozapine REMS program in 2025; follow the labeling for neutrophil monitoring.",
           "**Long-acting injectables** help when adherence is a problem; options include risperidone, paliperidone, aripiprazole and olanzapine, among them a once-monthly subcutaneous olanzapine approved in October 2026.",
           "[[stahl:drugs/xanomeline|Xanomeline-trospium]] (2024) treats schizophrenia through muscarinic receptors rather than D2 blockade.",
           "Monitor weight, glucose, lipids, prolactin and movement; treat tardive dyskinesia with a VMAT2 inhibitor ([[stahl:drugs/valbenazine|valbenazine]], [[stahl:drugs/deutetrabenazine|deutetrabenazine]]).",
@@ -47,13 +47,13 @@
       id: "brief-psychotic-disorder",
       ask: PSYCHOSIS_ASK.slice(0, 2).concat([
         ["Stressor", "“What was happening in the days or weeks before this started?”", "Marked stressors are judged against the person’s culture."],
-        ["Postpartum", "“Are you pregnant, or have you given birth in the last month?”", "Peripartum onset; postpartum psychosis is often bipolar."],
+        ["Postpartum", "“Are you pregnant, or have you given birth in the last month?”", "Peripartum onset; postpartum psychosis is often bipolar (app guidance; not verified)."],
         ["Recovery", "On follow-up: “Are you back to your usual self?”", "Full recovery within 1 month is required."]
       ]),
       tx: {
         asOf: "October 2026",
-        first: "Ensure safety; a short course of an antipsychotic, with a benzodiazepine for agitation if needed, and support around any stressor.",
-        points: ["Follow up after recovery: more than half of people with brief psychotic disorder relapse.", "Postpartum psychosis is an emergency: admit and screen for bipolar disorder."],
+        first: "Ensure safety; a short course of an antipsychotic, with a benzodiazepine for agitation if needed, and support around any stressor (app guidance; not verified).",
+        points: ["Follow up after recovery: more than half of people with brief psychotic disorder relapse.", "Postpartum psychosis is an emergency: admit and screen for bipolar disorder (app guidance; not verified)."],
         stahl: [["D2 antagonists", "c/ch05/guide/s5-fga"]]
       }
     },
@@ -64,12 +64,12 @@
         ["Theme", "Persecution, jealousy, love from a higher-status person, grandiosity, bodily concerns?", "The theme gives the type."],
         ["Hallucinations", "“Do you ever hear or feel things others don’t?”", "Allowed only if not prominent and related to the theme."],
         ["Functioning", "“Apart from this, how are work and family?”", "Functioning outside the delusion is preserved."],
-        ["Danger", "“Have you thought about confronting or harming the person involved?”", "Jealous and erotomanic types can lead to violence or stalking."]
+        ["Danger", "“Have you thought about confronting or harming the person involved?”", "Persecutory, jealous and erotomanic types can lead to anger and violence."]
       ],
       tx: {
         asOf: "October 2026",
-        first: "Build a therapeutic alliance without confronting the belief; offer an antipsychotic, framed around distress, sleep or anxiety.",
-        points: ["CBT can reduce conviction and distress.", "Somatic type (for example delusional parasitosis) often responds to antipsychotics; coordinate with dermatology or primary care.", "Assess and manage risk in jealous and erotomanic types."],
+        first: "Build a therapeutic alliance without confronting the belief; offer an antipsychotic, framed around distress, sleep or anxiety (app guidance; not verified).",
+        points: ["Trial evidence for CBT and antipsychotics is very limited (Cochrane review).", "Somatic type (for example delusional parasitosis) often responds to antipsychotics; coordinate with dermatology or primary care (app guidance; not verified).", "Assess and manage risk in jealous and erotomanic types."],
         stahl: [["D2 antagonists", "c/ch05/guide/s5-fga"]]
       }
     },
@@ -93,7 +93,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "Stop the substance or medication, keep the person safe, and use a short course of an antipsychotic or benzodiazepine for agitation if needed.",
+        first: "Stop the substance or medication, keep the person safe, and use a short course of an antipsychotic or benzodiazepine for agitation if needed (app guidance; not verified).",
         points: ["Treat the substance use disorder.", "Follow up: in a 20-year Danish registry, about a third of substance-induced psychoses were later diagnosed as a schizophrenia spectrum or bipolar disorder, 44% for cannabis."],
         stahl: [["Addiction", "c/ch13/guide"]]
       }
@@ -103,13 +103,13 @@
       ask: [
         ["Onset and age", "“When did this start? Any new health problems around then?”", "Late or abrupt onset suggests a medical cause."],
         ["Neurological symptoms", "“Any seizures, headaches, weakness, memory problems or changes in vision or smell?”"],
-        ["Hallucination type", "“Are the experiences things you hear, see, smell or feel?”", "Visual, olfactory and tactile hallucinations are more typical of medical causes."],
+        ["Hallucination type", "“Are the experiences things you hear, see, smell or feel?”", "Visual and olfactory hallucinations suggest a medical cause."],
         ["Workup", "Physical and neurological examination, labs, and imaging or EEG guided by the history."]
       ],
       tx: {
         asOf: "October 2026",
         first: "Treat the underlying medical condition; use a low-dose antipsychotic for distress or danger.",
-        points: ["Parkinson’s disease psychosis: [[stahl:drugs/pimavanserin|pimavanserin]] is FDA-approved; low-dose quetiapine or clozapine are alternatives; avoid D2 antagonists that worsen parkinsonism.", "Dementia with Lewy bodies is highly sensitive to antipsychotics."],
+        points: ["Parkinson’s disease psychosis: [[stahl:drugs/pimavanserin|pimavanserin]] is FDA-approved; clozapine is an alternative; quetiapine is widely used but its evidence is limited; avoid D2 antagonists that worsen parkinsonism.", "Dementia with Lewy bodies is highly sensitive to antipsychotics."],
         stahl: [["Parkinson’s disease psychosis", "c/ch04/guide/s4-pdp"], ["Dementia-related psychosis", "c/ch04/guide/s4-drp"]]
       }
     },
@@ -130,7 +130,7 @@
     {
       id: "catatonic-due-to-amc",
       ask: [["Medical history", "“Any recent infection, seizure, head injury, liver or kidney disease?”", "Neurological and metabolic causes are common."], ["Delirium screen", "Check attention and awareness.", "Not diagnosed if it occurs only during delirium."]],
-      tx: { asOf: "October 2026", first: "Treat the medical cause; benzodiazepines often help the catatonic features.", points: ["Monitor for complications of immobility."], stahl: [] }
+      tx: { asOf: "October 2026", first: "Treat the medical cause; benzodiazepines often help the catatonic features (app guidance; not verified).", points: ["Monitor for complications of immobility."], stahl: [] }
     },
     {
       id: "schizotypal-pd",
@@ -139,7 +139,7 @@
         ["Relationships", "“Do you have close friends? How comfortable are you in social situations?”", "Social anxiety does not lessen with familiarity."],
         ["Course", "“Have you always been this way, since adolescence?”", "A long-standing pattern, unlike a prodrome."]
       ],
-      tx: { asOf: "October 2026", first: "Supportive psychotherapy and social-skills work; low-dose antipsychotics for transient psychotic-like symptoms.", points: ["Follow up for emerging psychosis."], stahl: [] }
+      tx: { asOf: "October 2026", first: "Supportive psychotherapy and social-skills work; low-dose antipsychotics for transient psychotic-like symptoms (app guidance; not verified).", points: ["Follow up for emerging psychosis."], stahl: [] }
     }
   ]);
 
@@ -191,7 +191,7 @@
         { ch: "ch02", dx: "psychotic-due-to-amc", when: "A medical condition with a plausible mechanism and time link." },
         { ch: "ch02", dx: "substance-induced-psychotic", when: "Onset after a medication change." },
         { ch: "ch17", dx: "ncd-lewy", when: "Psychosis in Alzheimer’s disease or Lewy body disease (visual hallucinations, parkinsonism, fluctuations)." },
-        { ch: "ch02", dx: "delusional-disorder", when: "Late-onset fixed delusions with intact cognition, often with hearing loss." },
+        { ch: "ch02", dx: "delusional-disorder", when: "Late-onset fixed delusions with intact cognition." },
         { ch: "ch04", dx: "mdd", when: "Psychotic depression with nihilistic or guilt delusions." }
       ]
     },
