@@ -13,7 +13,7 @@ SP.helpers = (SP.helpers || []).concat([
     start: "aenergy",
     nodes: {
       aenergy: {
-        q: "Was there a distinct period of abnormally and persistently elevated, expansive or irritable mood AND abnormally increased activity or energy?",
+        q: "Was there a clearly bounded period when mood was abnormally, persistently elevated, expansive or irritable AND activity or energy was abnormally raised?",
         help: "Both are required for Criterion A. Mood change alone, or energy change alone, is not enough.",
         options: [
           { label: "Yes: both mood and energy changed, most of the day, nearly every day", to: "cause", note: "Criterion A mood and energy change is present." },
@@ -98,7 +98,7 @@ SP.helpers = (SP.helpers || []).concat([
       notA: { label: "Not an episode", dx: "Criterion A not met", line: "Both a mood change and an increase in activity or energy are required.", points: ["Consider ADHD (persistent energy and distractibility), anxiety (restlessness), personality traits, or depression with irritability."], link: { ch: "ch03", sec: "s3-manic", label: "Manic episode criteria" } },
       notobserved: { label: "Not an episode", dx: "Not a hypomanic episode", line: "Hypomania needs an unequivocal change in functioning that others can observe.", points: ["Get **collateral history**: people often fail to recognize their own hypomania.", "Do not mistake restored energy after depression remits for hypomania."], link: { ch: "ch03", sec: "s3-hypomanic", label: "The hypomanic episode" } },
       sideeffect: { label: "Not an episode", dx: "Antidepressant side effects, not hypomania", line: "One or two symptoms such as irritability, edginess or agitation are not enough.", points: ["They do not necessarily indicate a bipolar diathesis.", "Reassess if a full syndrome develops and persists beyond the drug’s effect."], link: { ch: "ch03", sec: "s3-antidepressant", label: "Treatment-emergent mania and hypomania" } },
-      induced: { dx: "Substance/medication-induced or medically caused mood disturbance", line: "Elevated mood caused by a substance, medication or medical condition does not count toward bipolar I or II.", points: ["Consider **substance/medication-induced bipolar and related disorder** (stimulants, PCP, steroids) or **bipolar disorder due to another medical condition** (Cushing’s, MS, stroke, TBI).", "Persistence about a month after stopping a substance suggests an independent disorder."], link: { ch: "ch03", sec: "s3-substance", label: "Substance/medication-induced bipolar disorder" }, also: { href: "#/helpers/bipolar", label: "Which bipolar disorder?" } }
+      induced: { dx: "Substance/medication-induced or medically caused mood disturbance", line: "Elevated mood caused by a substance, medication or medical condition does not count toward bipolar I or II.", points: ["Consider **substance/medication-induced bipolar and related disorder** (stimulants, PCP, steroids) or **bipolar disorder due to another medical condition** (Cushing’s, MS, stroke, TBI).", "Persistence about a month after acute withdrawal or severe intoxication ends suggests an independent disorder."], link: { ch: "ch03", sec: "s3-substance", label: "Substance/medication-induced bipolar disorder" }, also: { href: "#/helpers/bipolar", label: "Which bipolar disorder?" } }
     }
   },
   {
@@ -120,8 +120,8 @@ SP.helpers = (SP.helpers || []).concat([
         ]
       },
       persist: {
-        q: "Was it an antidepressant, ECT or light therapy, with a full syndrome persisting beyond the treatment’s effect? Or does it persist about a month after the substance stopped?",
-        help: "Persisting full antidepressant-emergent episodes count as true bipolar episodes. Persistence about 1 month after stopping a drug of abuse suggests an independent disorder.",
+        q: "Was it an antidepressant, ECT or light therapy, with a full syndrome persisting beyond the treatment’s effect? Or does it persist about a month after acute withdrawal or severe intoxication ended?",
+        help: "Persisting full antidepressant-emergent episodes count as true bipolar episodes. Persistence about 1 month after acute withdrawal or severe intoxication ends suggests an independent disorder.",
         options: [
           { label: "Yes: a full syndrome persists beyond the treatment or substance effect", to: "psychosis", note: "The episode persists beyond the substance or treatment effect, so it counts as a true bipolar episode." },
           { label: "No: it resolves as the substance or medication clears", to: "r:substance", note: "The mood disturbance resolves as the agent clears." }

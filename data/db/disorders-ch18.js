@@ -26,7 +26,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "ptsd", how: "Personality changes emerging after extreme stress." },
       { name: "Substance use disorders", how: "Behavior from intoxication, withdrawal or sustaining use." }
     ],
-    pearls: ["Assess the long-term pattern, often over several interviews.", "Use informants.", "Diagnose all personality disorders that are met."],
+    pearls: ["Assess the long-term pattern, often over several interviews.", "Use informants.", "All personality disorders that are met can be diagnosed."],
     cmp: { symptoms: "Enduring pattern in ≥2 of 4 areas", exclusions: "Other mental disorder, substance, medical condition", prevalence: "10.5% any PD", course: "Stable from adolescence or early adulthood" },
     clues: [["Four areas", "Cognition, affectivity, interpersonal, impulse control"], ["Age rule", "Under 18: ≥1 year; antisocial never"]]
   },
@@ -45,7 +45,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "3.2% (NCS-R 2.3%, NESARC 4.4%)"], ["Forensic", "Up to 23%"], ["Sex", "Mixed findings"]],
     risk: ["Childhood trauma; social stressors (inequality, racism).", "Familial link with schizophrenia and delusional disorder, persecutory type."],
     differential: [
-        { id: "ampd-pd-ts", how: "Section III alternative model: paranoid PD has no criteria set of its own and is represented by personality disorder—trait specified, moderate or greater impairment with the relevant traits, suspiciousness and hostility among them (p. 891; trait choice is app guidance)." },
+        { id: "ampd-pd-ts", how: "Section III alternative model: paranoid PD has no criteria set of its own and is represented by personality disorder—trait specified, moderate or greater impairment with the relevant traits, suspiciousness and hostility among them (p. 890; trait choice is app guidance)." },
       { id: "delusional-disorder", how: "Persistent persecutory delusions." },
       { id: "schizotypal-pd", how: "Adds magical thinking, odd perceptions and speech." },
       { id: "schizoid-pd", how: "Aloof without paranoid ideation." },
@@ -72,7 +72,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "1.3% (NCS-R 4.9%, NESARC 3.1%)"], ["Clinical", "Uncommon"]],
     risk: ["More prevalent in relatives of people with schizophrenia or schizotypal PD."],
     differential: [
-        { id: "ampd-pd-ts", how: "Section III alternative model: schizoid PD is represented by personality disorder—trait specified with Detachment traits such as withdrawal, intimacy avoidance, anhedonia and restricted affectivity (p. 891; trait choice is app guidance)." },
+        { id: "ampd-pd-ts", how: "Section III alternative model: schizoid PD is represented by personality disorder—trait specified with Detachment traits such as withdrawal, intimacy avoidance, anhedonia and restricted affectivity (p. 890; trait choice is app guidance)." },
       { id: "avoidant-pd", how: "Wants relationships; fears rejection." },
       { id: "schizotypal-pd", how: "Cognitive-perceptual distortions." },
       { id: "paranoid-pd", how: "Suspiciousness." },
@@ -109,12 +109,12 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "antisocial-behavior", name: "Adult antisocial behavior", how: "Crime without the personality features (Z72.811)." }
     ],
     pearls: ["Never before 18.", "Conduct disorder before 15 is required.", "Use collateral information.", "Premature death from natural causes and suicide."],
-    cmp: { symptoms: "Unlawful, deceitful, impulsive, aggressive, reckless, irresponsible, remorseless", exclusions: "Schizophrenia or bipolar episodes only", prevalence: "3.6%", course: "Chronic; remits by 40" },
+    cmp: { symptoms: "Unlawful, deceitful, impulsive, aggressive, reckless, irresponsible, remorseless", exclusions: "Schizophrenia or bipolar episodes only", prevalence: "3.6%", course: "Chronic; may remit, often by 40" },
     clues: [["Core picture", "Fraud, assaults, aliases and unpaid child support, with fights and theft since age 12"], ["Code", "F60.2"]]
   },
   {
     id: "borderline-pd", ch: "ch18", sec: "s18-borderline", pages: "752–757", critPages: "752–753",
-    name: "Borderline personality disorder", code: "F60.3", aka: ["BPD", "emotionally unstable personality disorder"],
+    name: "Borderline personality disorder", code: "F60.3", aka: ["BPD", "emotionally unstable personality disorder (ICD/older term)"],
     essence: "Pervasive **instability** of relationships, self-image and affect, with marked **impulsivity**: abandonment fear, idealization–devaluation, self-harm, emptiness and anger.",
     duration: "From early adulthood (can meet criteria at 12–13)",
     functioning: "Job losses, interrupted education, divorce",
@@ -127,24 +127,24 @@ SP.disorders = (SP.disorders || []).concat([
     risk: ["About 5 times more common in first-degree relatives.", "Childhood abuse, neglect, conflict, early parental loss (sexual abuse neither necessary nor sufficient)."],
     differential: [
         { id: "ampd-borderline", how: "Section III alternative model: 2 of 4 functioning areas plus 4 of 7 traits, at least one of impulsivity, risk taking or hostility; Psychoticism traits are a specifier, not a criterion (pp. 886–887); a Section III proposal, not a chart diagnosis (app guidance)." },
-      { id: "bipolar-ii", how: "Distinct episodes of days with decreased need for sleep." },
+      { id: "bipolar-ii", how: "Distinct episodes of days with decreased need for sleep (Ch 3)." },
       { id: "mdd", how: "Do not diagnose borderline from a cross-section during an episode." },
-      { id: "histrionic-pd", how: "No self-destructiveness, rage or emptiness." },
+      { id: "histrionic-pd", how: "Lacks borderline’s self-destructiveness, rage and emptiness." },
       { id: "dependent-pd", how: "Appeasement and replacement rather than rage." },
       { id: "antisocial-pd", how: "Manipulates for profit, not care." },
       { id: "separation-anxiety", how: "Abandonment fear without identity and impulsivity problems." },
       { name: "Identity problem", how: "Developmental, not a disorder." }
     ],
     pearls: ["Self-harm counts only under Criterion 5.", "Remissions are common; impulsivity remits first.", "Psychotic-like symptoms last minutes to hours."],
-    cmp: { symptoms: "Abandonment fear, splitting, identity, impulsivity, self-harm, mood reactivity, emptiness, anger, stress paranoia", exclusions: "Cross-sectional mood episode", prevalence: "2.7%; 20% inpatients", course: "Frequent remission; recovery harder" },
+    cmp: { symptoms: "Abandonment fear, idealization–devaluation, identity, impulsivity, self-harm, mood reactivity, emptiness, anger, stress paranoia", exclusions: "Cross-sectional mood episode", prevalence: "2.7%; 20% inpatients", course: "Frequent remission; recovery harder" },
     clues: [["Core picture", "Cutting after breakups, rage when her partner is late, hours-long mood shifts, feeling empty"], ["Code", "F60.3"]]
   },
   {
     id: "histrionic-pd", ch: "ch18", sec: "s18-histrionic", pages: "757–760", critPages: "757",
-    name: "Histrionic personality disorder", code: "F60.4", aka: ["histrionic PD", "hysterical personality"],
+    name: "Histrionic personality disorder", code: "F60.4", aka: ["histrionic PD", "hysterical personality (ICD/older term)"],
     essence: "Pervasive **excessive emotionality and attention seeking**: center stage, seductive, theatrical, shallow, suggestible.",
     duration: "From early adulthood",
-    functioning: "Impairment lower than most PDs; mainly romantic and interpersonal",
+    functioning: "Impairment lower than in many other PDs; mainly romantic and interpersonal",
     mood: "Rapidly shifting, shallow emotion",
     criteria: [
       ["", "Five or more of eight: needs to be center of attention; seductive; shallow shifting emotions; uses appearance; impressionistic speech; theatricality; suggestible; overestimates intimacy."]
@@ -153,7 +153,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "0.9% (NCS-R 0.0%, NESARC 1.8%)"], ["Sex", "Similar in structured studies"]],
     risk: ["Associated with somatic symptom and functional neurological disorders."],
     differential: [
-        { id: "ampd-pd-ts", how: "Section III alternative model: histrionic PD is represented by personality disorder—trait specified with traits such as attention seeking, emotional lability and manipulativeness (p. 891; trait choice is app guidance)." },
+        { id: "ampd-pd-ts", how: "Section III alternative model: histrionic PD is represented by personality disorder—trait specified with traits such as attention seeking, emotional lability and manipulativeness (p. 890; trait choice is app guidance)." },
       { id: "borderline-pd", how: "Self-destructiveness, rage, emptiness." },
       { id: "narcissistic-pd", how: "Wants admiration for superiority." },
       { id: "antisocial-pd", how: "Manipulates for gain; antisocial acts." },
@@ -185,13 +185,13 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "bipolar-i", how: "Grandiosity with mood episodes." },
       { id: "pdd", how: "Diagnose both if both met." }
     ],
-    pearls: ["Fragile self-esteem.", "Cognitive but not emotional empathy.", "Suicide attempts less impulsive, more lethal."],
+    pearls: ["Fragile self-esteem.", "Cognitive but not emotional empathy.", "Suicide attempts tend to be less impulsive."],
     cmp: { symptoms: "Grandiose, entitled, exploitative, unempathic, envious", exclusions: "Mania", prevalence: "1.6%", course: "Can improve with real achievement and durable relationships" },
     clues: [["Core picture", "A surgeon who demands the top lawyer, takes credit for residents’ work and rages after mild criticism"], ["Code", "F60.81"]]
   },
   {
     id: "avoidant-pd", ch: "ch18", sec: "s18-avoidant", pages: "764–768", critPages: "764–765",
-    name: "Avoidant personality disorder", code: "F60.6", aka: ["avoidant PD", "anxious personality disorder"],
+    name: "Avoidant personality disorder", code: "F60.6", aka: ["avoidant PD", "anxious personality disorder (ICD/older term)"],
     essence: "Pervasive **social inhibition**, **feelings of inadequacy** and **hypersensitivity to negative evaluation**, despite **wanting** relationships.",
     duration: "From early adulthood",
     functioning: "Restricted social and occupational life",
@@ -228,7 +228,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Median prevalence", "0.4% (NCS-R 0.6%, NESARC 0.5%)"], ["Sex", "Diagnosed more in women"]],
     risk: ["Chronic physical illness or separation anxiety disorder in childhood."],
     differential: [
-        { id: "ampd-pd-ts", how: "Section III alternative model: dependent PD is represented by personality disorder—trait specified with Negative Affectivity traits such as submissiveness, separation insecurity and anxiousness (p. 891; trait choice is app guidance)." },
+        { id: "ampd-pd-ts", how: "Section III alternative model: dependent PD is represented by personality disorder—trait specified with Negative Affectivity traits such as submissiveness, separation insecurity and anxiousness (p. 890; trait choice is app guidance)." },
       { id: "borderline-pd", how: "Rage and emptiness rather than appeasement." },
       { id: "histrionic-pd", how: "Flamboyant, demanding." },
       { id: "avoidant-pd", how: "Withdraws until certain of acceptance." },
@@ -241,7 +241,7 @@ SP.disorders = (SP.disorders || []).concat([
   },
   {
     id: "ocpd", ch: "ch18", sec: "s18-ocpd", pages: "771–775", critPages: "771–772",
-    name: "Obsessive-compulsive personality disorder", code: "F60.5", aka: ["OCPD", "anankastic personality", "compulsive personality"],
+    name: "Obsessive-compulsive personality disorder", code: "F60.5", aka: ["OCPD", "anankastic personality (ICD/older term)", "compulsive personality (older term)"],
     essence: "Pervasive preoccupation with **orderliness, perfectionism and control** at the expense of flexibility, openness and efficiency.",
     duration: "From early adulthood",
     functioning: "Missed deadlines, strained relationships",
@@ -260,12 +260,12 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "schizoid-pd", how: "Lacks capacity for intimacy." }
     ],
     pearls: ["Most people with OCD do not have OCPD.", "Moderate traits can be adaptive."],
-    cmp: { symptoms: "Perfectionism, rigidity, workaholism, miserliness", exclusions: "—", prevalence: "4.7% (highest)", course: "Stable" },
+    cmp: { symptoms: "Perfectionism, rigidity, workaholism, miserliness", exclusions: "—", prevalence: "4.7% (highest; app comparison)", course: "Stable" },
     clues: [["Core picture", "An engineer who misses deadlines perfecting reports, won’t delegate and keeps broken appliances"], ["Code", "F60.5"]]
   },
   {
     id: "personality-change-amc", ch: "ch18", sec: "s18-change-amc", pages: "775–778", critPages: "775–776",
-    name: "Personality change due to another medical condition", code: "F07.0", aka: ["organic personality disorder", "frontal lobe syndrome"],
+    name: "Personality change due to another medical condition", code: "F07.0", aka: ["organic personality disorder (ICD/older term)", "frontal lobe syndrome (older term)"],
     essence: "A persistent **change** from previous personality that is the **direct pathophysiological** consequence of a medical condition.",
     duration: "Persistent; in children ≥1 year",
     functioning: "Distress or impairment required",
@@ -302,7 +302,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Prevalence", "Not established"]],
     risk: ["Varies."],
     differential: [
-        { id: "ampd-pd-ts", how: "Section III alternative model: personality disorder—trait specified is the model’s answer to the “often correct but mostly uninformative” residual category, specifying the level of functioning and the trait profile (pp. 881, 890–891)." },{ id: "unspecified-pd", how: "Reason not given." }],
+        { id: "ampd-pd-ts", how: "Section III alternative model: personality disorder—trait specified is the model’s answer to the “often correct but mostly uninformative” residual category, specifying the level of functioning and the trait profile (pp. 881, 890)." },{ id: "unspecified-pd", how: "Reason not given." }],
     pearls: ["Record the reason after the name."],
     cmp: { symptoms: "Subthreshold or mixed", exclusions: "Specific PDs", prevalence: "—", course: "—" },
     clues: [["Code", "F60.89"]]

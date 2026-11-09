@@ -24,7 +24,7 @@ SP.add("ch03", "vignettes", [
       "Her presentation meets criteria for a specific disorder."
     ],
     "then": {
-      "q": "She has 9 of the possible symptoms, cannot function and was hospitalized for safety, with no psychotic features. What is the code?",
+      "q": "She has all 7 Criterion B symptoms and needs almost continual supervision to prevent harm, with no psychotic features. What is the code?",
       "choices": [
         "F31.11",
         "F31.12",
@@ -46,7 +46,7 @@ SP.add("ch03", "vignettes", [
   {
     "id": "v3-02",
     "tag": "Bipolar I coding",
-    "stem": "A 44-year-old man had a manic episode with hospitalization at 29. For the past 3 weeks he has had depressed mood, anhedonia, insomnia, guilt, fatigue and poor concentration. He is struggling at work but still working, with substantial but manageable distress. No psychosis.",
+    "stem": "A 44-year-old man had a manic episode with hospitalization at 29. For the past 3 weeks he has had depressed mood, anhedonia, insomnia, guilt, fatigue, poor concentration and poor appetite. He has had to cut back his hours at work, and his distress is hard to manage. No psychosis.",
     "q": "What is the diagnosis?",
     "choices": [
       "Major depressive disorder, single episode",
@@ -87,7 +87,7 @@ SP.add("ch03", "vignettes", [
   {
     "id": "v3-03",
     "tag": "Hypomania with psychosis",
-    "stem": "A 25-year-old has had 5 days of elevated mood, decreased need for sleep, racing thoughts and increased activity. She keeps working, but has become convinced that she has been chosen to receive messages from a television host. She has had a major depressive episode before.",
+    "stem": "A 25-year-old has had 8 days of elevated mood, decreased need for sleep, racing thoughts and increased activity. She keeps working, but has become convinced that she has been chosen to receive messages from a television host. She has had a major depressive episode before.",
     "q": "What is the current episode?",
     "choices": [
       "Manic episode",
@@ -97,12 +97,12 @@ SP.add("ch03", "vignettes", [
       "Major depressive episode with mixed features"
     ],
     "answer": 0,
-    "why": "If there are **psychotic features**, the episode is **by definition manic**, whatever its length or the level of functioning. Hypomania cannot include psychosis. She therefore has bipolar I disorder.",
+    "why": "If there are **psychotic features**, the episode is **by definition manic**, whatever the level of functioning (psychosis satisfies Criterion C). At 8 days it also meets the 1-week duration. Hypomania cannot include psychosis. She therefore has bipolar I disorder.",
     "whyNot": [
       "Correct.",
       "Hypomania excludes psychotic features.",
       "There is no hypomanic episode with psychotic features.",
-      "DSM-5 removed the mixed episode; mixed features is a specifier.",
+      "DSM-5-TR has no mixed episode; mixed features is a specifier (pp. 170–171).",
       "The predominant episode is manic, not depressive."
     ]
   },
@@ -122,7 +122,7 @@ SP.add("ch03", "vignettes", [
     "why": "A manic episode with at least **three depressive symptoms** (prominent dysphoria, anhedonia, psychomotor retardation, fatigue, worthlessness or guilt, recurrent thoughts of death) on most days, observable by others: **manic episode, with mixed features**.",
     "whyNot": [
       "Anxious distress is tension, restlessness and worry.",
-      "The DSM-IV mixed episode no longer exists.",
+      "DSM-5-TR has no mixed episode; mixed features is a specifier (pp. 170–171).",
       "Rapid cycling describes four or more episodes in 12 months.",
       "Melancholic features apply to depressive episodes.",
       "Correct."
@@ -144,7 +144,7 @@ SP.add("ch03", "vignettes", [
     "why": "When full criteria for **both** mania and depression are met at the same time, the diagnosis is a **manic episode, with mixed features**, because mania is more impairing and clinically urgent.",
     "whyNot": [
       "Mania takes precedence when both are fully met.",
-      "The mixed episode was removed in DSM-5.",
+      "DSM-5-TR has no mixed episode; mixed features is a specifier (pp. 170–171).",
       "Correct.",
       "Only one current episode is recorded.",
       "There is no psychosis outside mood episodes."
@@ -197,7 +197,7 @@ SP.add("ch03", "vignettes", [
   {
     "id": "v3-08",
     "tag": "Cyclothymia",
-    "stem": "A 15-year-old boy has had 13 months of frequent mood shifts: several days at a time of feeling unusually confident, chatty and energetic, alternating with stretches of low mood and fatigue. None has met criteria for a hypomanic or major depressive episode, and he has rarely been at his baseline for more than a few weeks.",
+    "stem": "A 15-year-old boy has had 13 months of frequent mood shifts: several days at a time of feeling unusually confident, chatty and energetic, alternating with stretches of low mood and fatigue. None has met criteria for a hypomanic or major depressive episode, he has rarely been at his baseline for more than a few weeks, and the swings are hurting his schoolwork.",
     "q": "What is the diagnosis?",
     "choices": [
       "Cyclothymic disorder",
@@ -211,8 +211,8 @@ SP.add("ch03", "vignettes", [
     "whyNot": [
       "Correct.",
       "Bipolar II needs full hypomanic and depressive episodes.",
-      "The hypomanic-symptom periods exclude PDD.",
-      "DMDD is chronic irritability with severe outbursts, not up-and-down mood cycling.",
+      "Cyclothymic disorder precludes PDD (Ch 4).",
+      "DMDD is chronic irritability with severe outbursts, not up-and-down mood cycling (Ch 4).",
       "Short-duration cyclothymia applies when the duration falls short; in youth 1 year is enough."
     ]
   },
@@ -234,14 +234,14 @@ SP.add("ch03", "vignettes", [
       "The two are not given together after the initial period.",
       "A full episode changes the diagnosis.",
       "Bipolar II needs a full hypomanic episode.",
-      "PDD is excluded by the history of hypomanic symptoms.",
+      "Cyclothymic disorder precludes PDD (Ch 4).",
       "Correct."
     ]
   },
   {
     "id": "v3-10",
     "tag": "Medical cause",
-    "stem": "A 46-year-old woman develops 2 weeks of irritability, pressured speech, decreased need for sleep and racing thoughts. She has lost weight, has a tremor and palpitations, and her TSH is suppressed with a high free T4. She has never had a mood episode. Full criteria for a manic episode are met except that a medical cause explains it.",
+    "stem": "A 46-year-old woman develops 2 weeks of irritability and increased energy, with pressured speech, decreased need for sleep, racing thoughts and distractibility, and has started many projects she cannot finish. She has lost weight, has a tremor and palpitations, and her TSH is suppressed with a high free T4. She has never had a mood episode. Full criteria for a manic episode are met except that a medical cause explains it.",
     "q": "What is the diagnosis?",
     "choices": [
       "Bipolar I disorder, current episode manic",
@@ -254,7 +254,7 @@ SP.add("ch03", "vignettes", [
     "why": "A manic syndrome that is the **direct physiological consequence** of hyperthyroidism, meeting full criteria except the exclusion for medical causes: **with manic- or hypomanic-like episode** (F06.33).",
     "whyNot": [
       "Bipolar I is excluded when a medical condition causes the episode.",
-      "There are no prominent depressive symptoms.",
+      "No depressive symptoms are described.",
       "Correct.",
       "No substance or medication is involved.",
       "Her decreased need for sleep, pressured speech and racing thoughts are manic symptoms."
@@ -333,13 +333,13 @@ SP.add("ch03", "vignettes", [
       "Disruptive mood dysregulation disorder"
     ],
     "answer": 3,
-    "why": "Mood swings lasting **hours** and triggered by interpersonal events, with emptiness, abandonment fears, self-harm and unstable relationships, point to **borderline personality disorder**. Hypomania needs a **distinct period of at least 4 days**.",
+    "why": "Mood swings lasting **hours** and triggered by interpersonal events, with emptiness, abandonment fears, self-harm and unstable relationships, point to **borderline personality disorder** (Ch 18). Hypomania needs a **distinct period of at least 4 days**.",
     "whyNot": [
       "There has never been a hypomanic episode.",
-      "Cyclothymic mood periods last days, not hours, and are not mainly reactive.",
+      "She has no periods of hypomanic symptoms such as elation or increased energy; her shifts are in sadness and irritability.",
       "Rapid cycling still needs four full episodes, demarcated by remission or a polarity switch.",
       "Correct.",
-      "DMDD is diagnosed first between 6 and 18, with onset before 10."
+      "DMDD is diagnosed first between 6 and 18, with onset before 10 (Ch 4)."
     ]
   },
   {
@@ -355,7 +355,7 @@ SP.add("ch03", "vignettes", [
       "Delusional disorder"
     ],
     "answer": 0,
-    "why": "Psychosis for **≥2 weeks without a major mood episode**, with mood episodes for the majority of the illness: **schizoaffective disorder, bipolar type**.",
+    "why": "Psychosis for **≥2 weeks without a major mood episode**, with mood episodes for the majority of the illness: **schizoaffective disorder, bipolar type** (Ch 2).",
     "whyNot": [
       "Correct.",
       "In bipolar I with psychotic features, psychosis occurs only during mood episodes.",
@@ -374,7 +374,7 @@ SP.add("ch03", "vignettes", [
       "Bipolar I disorder",
       "Cyclothymic disorder",
       "Substance-induced bipolar and related disorder",
-      "Antidepressant activation side effects, not evidence of a bipolar diathesis"
+      "Antidepressant activation side effects, not necessarily a sign of a bipolar diathesis"
     ],
     "answer": 4,
     "why": "One or two symptoms (especially **irritability, edginess or agitation**) after starting an antidepressant are **not sufficient** for a hypomanic episode and do not necessarily indicate a bipolar diathesis.",
@@ -421,13 +421,13 @@ SP.add("ch03", "vignettes", [
       "Start an antidepressant"
     ],
     "answer": 1,
-    "why": "First-onset mania in later life, especially with **new neurological signs**, strongly suggests a **medical cause** such as stroke. Evaluate before labeling it bipolar I; the diagnosis may be bipolar and related disorder due to another medical condition.",
+    "why": "First-onset mania in later life, especially with **new neurological signs**, should prompt a search for a **medical cause** (e.g., stroke) or substance. Evaluate before labeling it bipolar I; the diagnosis may be bipolar and related disorder due to another medical condition. The next-step framing is app guidance.",
     "whyNot": [
       "A medical cause must be excluded first.",
       "Correct.",
       "Cyclothymia needs 2 years of subthreshold symptoms.",
-      "First-episode mania after 60 is uncommon and should prompt a search for a cause.",
-      "Antidepressants do not treat mania."
+      "Late-life first onset can occur, but it should prompt a search for medical and substance causes.",
+      "An antidepressant does not address a possible manic or medical cause (app guidance)."
     ]
   },
   {
@@ -455,7 +455,7 @@ SP.add("ch03", "vignettes", [
   {
     "id": "v3-18",
     "tag": "Bipolar I coding",
-    "stem": "A 36-year-old with bipolar I disorder (two past manic episodes) now has 6 days of elevated mood, little need for sleep and talkativeness. She is functioning, without psychosis or hospitalization, and friends notice the change.",
+    "stem": "A 36-year-old with bipolar I disorder (two past manic episodes) now has 6 days of elevated mood, little need for sleep, talkativeness and a burst of new projects. She is functioning, without psychosis or hospitalization, and friends notice the change.",
     "q": "How is the current episode coded?",
     "choices": [
       "F31.0",
@@ -487,10 +487,10 @@ SP.add("ch03", "vignettes", [
       "F31.13 plus F06.1"
     ],
     "answer": 4,
-    "why": "Three or more catatonic features during the episode: **with catatonia**, which carries the coding note to add **F06.1**. Manic, severe, no psychosis = F31.13.",
+    "why": "Three or more catatonic features (Ch 2) during most of the episode: **with catatonia**, which carries the coding note to add **F06.1**. Manic, severe, no psychosis = F31.13.",
     "whyNot": [
       "The catatonia needs its own additional code.",
-      "R29.818 is used only for unspecified catatonia.",
+      "R29.818 is coded first with F06.1 only for unspecified catatonia (Ch 2).",
       "F31.2 is for psychotic features, which he does not have.",
       "Catatonia associated with a mental disorder is coded together with that disorder.",
       "Correct."
@@ -509,7 +509,7 @@ SP.add("ch03", "vignettes", [
       "No specifier: these are not psychotic features"
     ],
     "answer": 2,
-    "why": "In mania, mood-congruent themes are **grandiosity, invulnerability, persecution related to special status**, and so on. Thought insertion and delusions of control do not fit those themes: **mood-incongruent**.",
+    "why": "In mania, mood-congruent themes are **grandiosity, invulnerability**, and so on, and may include suspicion about others' doubts of the person's abilities. Thought insertion and delusions of control do not fit those themes: **mood-incongruent**.",
     "whyNot": [
       "The content does not match manic themes.",
       "There are no depressive symptoms.",
@@ -521,7 +521,7 @@ SP.add("ch03", "vignettes", [
   {
     "id": "v3-21",
     "tag": "Other specified bipolar",
-    "stem": "A 25-year-old has had 20 months of numerous subthreshold hypomanic and depressive periods, never meeting criteria for a full episode, and has rarely been symptom-free for more than a few weeks.",
+    "stem": "A 25-year-old has had 20 months of numerous subthreshold hypomanic and depressive periods, never meeting criteria for a full episode, has rarely been symptom-free for more than a few weeks, and the swings are causing distress at work.",
     "q": "What is the diagnosis?",
     "choices": [
       "Cyclothymic disorder",
@@ -536,7 +536,7 @@ SP.add("ch03", "vignettes", [
       "Adults need at least 2 years.",
       "Correct.",
       "There have been no full episodes.",
-      "The hypomanic symptoms rule out PDD.",
+      "PDD needs 2 years, and cyclothymic-type presentations preclude it (Ch 4).",
       "The presentation matches a named example, so it should be specified."
     ]
   },
@@ -579,7 +579,7 @@ SP.add("ch03", "vignettes", [
     "whyNot": [
       "Correct.",
       "It applies to bipolar disorders too.",
-      "Most seasonal patterns are fall or winter onset.",
+      "Seasonal depressions usually begin in fall or winter; no single season is required.",
       "The two specifiers are separate.",
       "It describes a recurrent pattern."
     ]
@@ -619,7 +619,7 @@ SP.add("ch03", "vignettes", [
       "Unspecified bipolar and related disorder"
     ],
     "answer": 2,
-    "why": "Without a manic or hypomanic episode, the diagnosis is **MDD**. Early onset, psychotic features, a family history of bipolar disorder and atypical-like features increase the risk that the course will become bipolar, so monitor closely and be cautious with antidepressant monotherapy.",
+    "why": "Without a manic or hypomanic episode, the diagnosis is **MDD**. Psychotic features and a family history of bipolar illness make a later bipolar course more likely (Ch 4, p. 188), so monitor closely.",
     "whyNot": [
       "She has never had a hypomanic episode.",
       "Family history raises risk but does not make the diagnosis.",

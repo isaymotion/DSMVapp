@@ -15,7 +15,7 @@ SP.add("ch03", "highYield", [
     "Hypomania requires an unequivocal change in functioning that is **observable by others**.",
     "Hypomania must **not** cause marked impairment or require hospitalization.",
     "If psychotic features are present, the episode is **manic** by definition.",
-    "People rarely complain of hypomania, so **collateral history** from relatives is often essential.",
+    "People rarely complain of hypomania, so **collateral history** from relatives is often useful.",
     "Restored energy after depression remits should not be mistaken for **hypomania**."
   ] },
   { id: "hy3-mde", topic: "Major depressive episode and grief", items: [
@@ -41,7 +41,7 @@ SP.add("ch03", "highYield", [
     "US mean age at onset of bipolar I: **22 years**.",
     "Peak onset of bipolar I is between **20 and 30** years.",
     "A first-degree relative with bipolar disorder raises the risk about **10-fold**.",
-    "Twin heritability of bipolar disorder: about **90%**; monozygotic concordance **40%–70%**.",
+    "Heritability of bipolar disorder in some twin studies: about **90%**; monozygotic concordance **40%–70%**.",
     "Manic relapse is linked to **goal-attainment** life events; depressive relapse to negative events.",
     "Mixed features in mania predict poorer **lithium** response."
   ] },
@@ -82,7 +82,7 @@ SP.add("ch03", "highYield", [
     "Classic causes of substance-induced mania: **stimulants**, **phencyclidine** and **steroids**.",
     "Stimulant-induced mania begins within minutes to **1 hour** and resolves over 1–2 days.",
     "Steroid-induced mania follows **several days** of use and is more likely at higher doses.",
-    "Persistence for about **1 month** after stopping a substance suggests an independent bipolar disorder.",
+    "Persistence for about **1 month** after acute withdrawal or severe intoxication ends suggests an independent bipolar disorder.",
     "Best-known medical causes of mania: **Cushing’s disease** and **multiple sclerosis**, plus stroke and TBI.",
     "New mania in late life should prompt a search for causes such as **frontotemporal** neurocognitive disorder."
   ] },
@@ -94,7 +94,7 @@ SP.add("ch03", "highYield", [
     "In rapid cycling, mania and hypomania count as the **same** pole.",
     "Melancholic features include early-morning awakening at least **2 hours** early.",
     "Atypical features require **mood reactivity** plus two of four symptoms.",
-    "Atypical hypersomnia means at least **10 hours** of sleep a day.",
+    "Atypical hypersomnia means at least **10 hours** of sleep a day (or at least 2 hours more than when not depressed).",
     "Peripartum onset: during pregnancy or within **4 weeks** after delivery.",
     "About **50%** of postpartum major depressive episodes begin before delivery.",
     "Postpartum psychotic episodes occur in **1 in 500 to 1 in 1,000** deliveries.",

@@ -52,7 +52,7 @@
         },
         cluster: {
           q: "Which overall picture fits best?",
-          help: "If features from several clusters are present, follow the most prominent first, then come back: all personality disorders that are met are diagnosed.",
+          help: "If features from several clusters are present, follow the most prominent first, then come back: all personality disorders that are met can be diagnosed.",
           options: [
             { label: "Odd or eccentric: suspicious, detached or peculiar", to: "clA", note: "Cluster A." },
             { label: "Dramatic, emotional or erratic", to: "clB", note: "Cluster B." },
@@ -114,7 +114,7 @@
         aab: { label: "Not antisocial PD", dx: "Adult antisocial behavior (Z72.811) or another disorder", line: "Without conduct disorder before 15, antisocial PD is not diagnosed.", points: ["Consider substance use, mania, psychosis or another personality disorder (paranoid revenge, narcissistic exploitation).", "Crime for gain without personality features: adult antisocial behavior."], link: L("s18-antisocial", "Differential"), dxId: "antisocial-behavior" },
         borderline: { dx: "Borderline personality disorder (F60.3)", line: "Instability of relationships, self-image and affect with impulsivity; five or more of nine.", points: ["Self-harm counts only once (Criterion 5).", "Separate from bipolar disorder: hours-long reactive shifts, not episodes of days.", "Assess suicide risk; screen for depression, PTSD, substance use, eating disorders and ADHD."], link: L("s18-borderline", "Borderline PD"), dxId: "borderline-pd" },
         histrionic: { dx: "Histrionic personality disorder (F60.4)", line: "Excessive emotionality and attention seeking; five or more of eight.", points: ["Separate from narcissistic (admiration) and borderline (self-destructiveness, emptiness).", "Screen for somatic symptom and functional neurological disorders."], link: L("s18-histrionic", "Histrionic PD"), dxId: "histrionic-pd" },
-        narcissistic: { dx: "Narcissistic personality disorder (F60.81)", line: "Grandiosity, need for admiration and lack of empathy; five or more of nine.", points: ["Exclude hypomania or mania.", "Watch for depression and high-lethality suicide attempts after failure or humiliation."], link: L("s18-narcissistic", "Narcissistic PD"), dxId: "narcissistic-pd" },
+        narcissistic: { dx: "Narcissistic personality disorder (F60.81)", line: "Grandiosity, need for admiration and lack of empathy; five or more of nine.", points: ["Exclude hypomania or mania.", "Watch for depression and suicide risk after failure or humiliation; attempts tend to be less impulsive."], link: L("s18-narcissistic", "Narcissistic PD"), dxId: "narcissistic-pd" },
         avoidant: { dx: "Avoidant personality disorder (F60.6)", line: "Social inhibition, inadequacy and hypersensitivity to negative evaluation; four or more of seven.", points: ["Social anxiety disorder often coexists; both can be diagnosed.", "Not schizoid: wants relationships."], link: L("s18-avoidant", "Avoidant PD"), dxId: "avoidant-pd" },
         dependent: { dx: "Dependent personality disorder (F60.7)", line: "Excessive need to be taken care of; five or more of eight.", points: ["Exclude realistic fear of retribution and dependency explained by illness, depression or culture.", "Ask about abuse and safety."], link: L("s18-dependent", "Dependent PD"), dxId: "dependent-pd" },
         ocpd: { dx: "Obsessive-compulsive personality disorder (F60.5)", line: "Orderliness, perfectionism and control at the expense of flexibility; four or more of eight.", points: ["Check for true obsessions and compulsions (OCD) and extreme hoarding: diagnose both if present.", "Moderate traits can be adaptive."], link: L("s18-ocpd", "OCPD"), dxId: "ocpd" }
@@ -125,7 +125,7 @@
       chapter: "ch18",
       title: "Personality look-alikes",
       summary: "Separate the classic look-alike pairs by asking why the person behaves as they do and how long the states last.",
-      caution: "A teaching aid built from the differential sections of DSM-5-TR pp. 733–778. When criteria for more than one disorder are met, diagnose all of them.",
+      caution: "A teaching aid built from the differential sections of DSM-5-TR pp. 733–778. When criteria for more than one disorder are met, all can be diagnosed.",
       start: "pair",
       nodes: {
         pair: {
@@ -173,7 +173,7 @@
         },
         mood: {
           q: "What is the time course of the mood changes?",
-          help: "Borderline affective shifts are reactive and last hours. Mood episodes last days to weeks and include neurovegetative change.",
+          help: "Borderline affective shifts are reactive and last hours. Mood episodes last days to weeks and include neurovegetative change (Ch 3–4).",
           options: [
             { label: "Hours, triggered by interpersonal events, on a background of emptiness", to: "r:borderline", note: "Reactivity." },
             { label: "Distinct episodes of days with elevated mood and decreased need for sleep", to: "r:bipolar", note: "Episodes." },
@@ -213,7 +213,7 @@
         dependent: { dx: "Dependent personality disorder", line: "Reacts to loss with appeasement and urgently finds a replacement caregiver.", points: ["Relationships are clinging, not unstable."], link: L("s18-dependent", "Dependent PD"), dxId: "dependent-pd" },
         sepanx: { label: "Consider", dx: "Separation anxiety disorder", line: "Fear of separation and of harm to attachment figures, without the identity, impulsivity and relationship instability of borderline PD.", points: ["Can begin in adulthood."], link: { ch: "ch05", sec: "s5-sad-criteria", label: "Separation anxiety" }, dxId: "separation-anxiety" },
         narcissistic: { dx: "Narcissistic personality disorder", line: "Needs admiration; grandiose; believes they are already perfect.", points: ["Exclude hypomania or mania."], link: L("s18-narcissistic", "Narcissistic PD"), dxId: "narcissistic-pd" },
-        histrionic: { dx: "Histrionic personality disorder", line: "Seeks any attention, theatrical and seductive; shallow emotion.", points: ["No self-destructiveness or emptiness (borderline)."], link: L("s18-histrionic", "Histrionic PD"), dxId: "histrionic-pd" },
+        histrionic: { dx: "Histrionic personality disorder", line: "Seeks any attention, theatrical and seductive; shallow emotion.", points: ["Lacks borderline’s self-destructiveness and emptiness."], link: L("s18-histrionic", "Histrionic PD"), dxId: "histrionic-pd" },
         antisocial: { dx: "Antisocial personality disorder", line: "Manipulates for profit, power or gain; callous, without remorse.", points: ["Needs age ≥18 and conduct disorder before 15."], link: L("s18-antisocial", "Antisocial PD"), dxId: "antisocial-pd" },
         bipolar: { label: "Consider", dx: "A bipolar disorder", line: "Distinct episodes of days with elevated mood and decreased need for sleep.", points: ["Diagnose borderline PD too only if the long-term pattern exists outside episodes."], link: { ch: "ch03", sec: "s3-bp2-criteria", label: "Bipolar II disorder" }, dxId: "bipolar-ii" },
         mdd: { label: "Consider", dx: "A depressive episode", line: "Two weeks or more of depressed mood or anhedonia with neurovegetative symptoms.", points: ["Do not diagnose a personality disorder from the cross-section during the episode."], link: { ch: "ch04", sec: "s4-mdd-criteria", label: "Major depressive disorder" }, dxId: "mdd" },

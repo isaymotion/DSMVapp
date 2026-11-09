@@ -6,9 +6,12 @@
   var EP = ["Current episode manic", "Current episode hypomanic", "Current episode depressed", "Most recent episode manic", "Most recent episode hypomanic", "Most recent episode depressed"];
   var SEV = ["Mild", "Moderate", "Severe", "With psychotic features", "In partial remission", "In full remission", "None (hypomanic episode)"];
   var SPEC = ["With anxious distress", "With mixed features", "With rapid cycling", "With melancholic features", "With atypical features", "With mood-congruent psychotic features", "With mood-incongruent psychotic features", "With catatonia", "With peripartum onset", "With seasonal pattern"];
-  function bp1(ep, sev, spec, codes, code) {
+  function bp1(ep, sev, spec, codes, code, dxi) {
+    var DX = ["Bipolar II disorder", "Cyclothymic disorder", "Schizoaffective disorder, bipolar type"];
+    dxi = dxi || 0;
+    DX.splice(dxi, 0, "Bipolar I disorder");
     return [
-      { label: "Diagnosis", options: ["Bipolar I disorder", "Bipolar II disorder", "Cyclothymic disorder", "Schizoaffective disorder, bipolar type"], answer: 0 },
+      { label: "Diagnosis", options: DX, answer: dxi },
       { label: "Current or most recent episode", options: EP, answer: ep },
       { label: "Severity, psychotic features or remission (the coded slot)", options: SEV, answer: sev },
       { label: "Specifiers without codes", options: SPEC, answer: spec, multi: true },
@@ -20,21 +23,21 @@
     {
       id: "w3-01", tag: "Bipolar I",
       "case": "A 30-year-old is admitted in a manic episode, believing he is a messenger chosen by God to save the world. He has had one previous manic episode.",
-      parts: bp1(0, 3, [5], ["F31.13", "F31.2", "F31.5", "F25.0"], 1),
+      parts: bp1(0, 3, [5], ["F31.13", "F31.2", "F31.5", "F25.0"], 1, 2),
       line: "**F31.2** Bipolar I disorder, current episode manic, with mood-congruent psychotic features",
       why: "Psychotic features are coded **regardless of severity** (F31.2 for a manic episode). Grandiose, divine-mission themes fit mania: **mood-congruent**."
     },
     {
       id: "w3-02", tag: "Bipolar I",
       "case": "A 42-year-old with bipolar I disorder (one past manic episode) has a current moderate major depressive episode. On most days she feels tense, restless and worried something terrible will happen.",
-      parts: bp1(2, 1, [0], ["F31.31", "F31.32", "F31.4", "F33.1"], 1),
+      parts: bp1(2, 1, [0], ["F31.31", "F31.32", "F31.4", "F33.1"], 1, 1),
       line: "**F31.32** Bipolar I disorder, current episode depressed, moderate, with anxious distress",
       why: "Current depressed, moderate = **F31.32**. Three anxious distress symptoms: with anxious distress (moderate)."
     },
     {
       id: "w3-03", tag: "Bipolar I",
-      "case": "A 37-year-old with bipolar I disorder has 5 days of elevated mood, little need for sleep and talkativeness, without impairment, psychosis or hospitalization.",
-      parts: bp1(1, 6, [], ["F31.0", "F31.81", "F31.11", "F31.71"], 0),
+      "case": "A 37-year-old with bipolar I disorder has 5 days of elevated mood and energy, little need for sleep, talkativeness and several new projects; her family notices the change, but there is no marked impairment, psychosis or hospitalization.",
+      parts: bp1(1, 6, [], ["F31.0", "F31.81", "F31.11", "F31.71"], 0, 3),
       line: "**F31.0** Bipolar I disorder, current episode hypomanic",
       why: "A current hypomanic episode in bipolar I is **F31.0**; severity and psychotic specifiers do not apply to hypomania."
     },
@@ -48,14 +51,14 @@
     {
       id: "w3-05", tag: "Bipolar I",
       "case": "A 34-year-old with bipolar I disorder is in a moderate manic episode; on most days she is also tearful, feels worthless and has lost interest in things, which her family notices. She has had five mood episodes in the last 12 months, each separated by switches or 2-month remissions.",
-      parts: bp1(0, 1, [1, 2], ["F31.12", "F31.13", "F31.32", "F31.0"], 0),
+      parts: bp1(0, 1, [1, 2], ["F31.12", "F31.13", "F31.32", "F31.0"], 0, 1),
       line: "**F31.12** Bipolar I disorder, current episode manic, moderate, with mixed features, with rapid cycling",
       why: "Three depressive symptoms during mania = **with mixed features**. Four or more properly separated episodes in 12 months = **with rapid cycling**, which describes the pattern of episodes."
     },
     {
       id: "w3-06", tag: "Bipolar I",
       "case": "A 47-year-old with bipolar I disorder is in a severe major depressive episode that began in November, as her last three depressive episodes did; they all remitted in spring. Nothing gives her pleasure, she is worst in the mornings, wakes 3 hours early and has lost weight. No psychosis.",
-      parts: bp1(2, 2, [3, 9], ["F31.32", "F31.4", "F31.5", "F33.2"], 1),
+      parts: bp1(2, 2, [3, 9], ["F31.32", "F31.4", "F31.5", "F33.2"], 1, 2),
       line: "**F31.4** Bipolar I disorder, current episode depressed, severe, with melancholic features, with seasonal pattern",
       why: "Bipolar I depressed, **severe = F31.4**: the depressed codes run F31.31, F31.32, then F31.4 (severe) and F31.5 (psychotic). Loss of pleasure plus morning worsening, early waking and weight loss = melancholic features. A regular fall onset with spring remissions = seasonal pattern."
     },
@@ -63,7 +66,7 @@
       id: "w3-07", tag: "Bipolar II",
       "case": "A 28-year-old has had two hypomanic episodes and is now in a moderate major depressive episode. On most days she is also unusually talkative, her thoughts race and she has started several new projects, which her partner notices.",
       parts: [
-        { label: "Diagnosis", options: ["Bipolar II disorder", "Bipolar I disorder", "Major depressive disorder", "Cyclothymic disorder"], answer: 0 },
+        { label: "Diagnosis", options: ["Bipolar I disorder", "Major depressive disorder", "Bipolar II disorder", "Cyclothymic disorder"], answer: 2 },
         { label: "Current or most recent episode", options: ["Current episode depressed", "Current episode hypomanic"], answer: 0 },
         { label: "Severity or remission", options: ["Mild", "Moderate", "Severe", "In partial remission"], answer: 1 },
         { label: "Specifiers", options: SPEC, answer: [1], multi: true },
@@ -74,11 +77,11 @@
     },
     {
       id: "w3-08", tag: "Cyclothymic",
-      "case": "A 26-year-old has had 3 years of many subthreshold hypomanic and depressive periods, never a full episode, never well for more than a few weeks. During the low periods she is often keyed up and worried.",
+      "case": "A 26-year-old has had 3 years of many subthreshold hypomanic and depressive periods, never a full episode, never well for more than a few weeks. On most symptomatic days she feels keyed up and unusually restless.",
       parts: [
-        { label: "Diagnosis", options: ["Cyclothymic disorder", "Bipolar II disorder", "Persistent depressive disorder", "Other specified bipolar disorder"], answer: 0 },
-        { label: "Specifier", options: ["With anxious distress", "With mixed features", "With rapid cycling", "None"], answer: 0 },
-        { label: "ICD-10-CM code", options: ["F34.0", "F34.1", "F31.81", "F31.89"], answer: 0 }
+        { label: "Diagnosis", options: ["Bipolar II disorder", "Persistent depressive disorder", "Other specified bipolar disorder", "Cyclothymic disorder"], answer: 3 },
+        { label: "Specifier", options: ["None", "With mixed features", "With anxious distress", "With rapid cycling"], answer: 2 },
+        { label: "ICD-10-CM code", options: ["F34.1", "F34.0", "F31.81", "F31.89"], answer: 1 }
       ],
       line: "**F34.0** Cyclothymic disorder, with anxious distress",
       why: "Cyclothymic disorder is **F34.0** (F34.1 is persistent depressive disorder). With anxious distress is its only specifier."
@@ -88,20 +91,20 @@
       "case": "A 24-year-old with moderate amphetamine use disorder becomes grandiose, sleepless and pressured during a binge; the manic symptoms predominate and need attention.",
       parts: [
         { label: "Comorbid use disorder (named first)", options: ["None", "Mild amphetamine use disorder", "Moderate amphetamine use disorder", "Severe amphetamine use disorder"], answer: 2 },
-        { label: "Induced disorder", options: ["Amphetamine-induced bipolar and related disorder", "Bipolar I disorder", "Amphetamine-induced psychotic disorder", "Stimulant intoxication"], answer: 0 },
-        { label: "Onset", options: ["With onset during intoxication", "With onset during withdrawal", "With onset after medication use"], answer: 0 },
+        { label: "Induced disorder", options: ["Bipolar I disorder", "Stimulant intoxication", "Amphetamine-induced bipolar and related disorder", "Amphetamine-induced psychotic disorder"], answer: 2 },
+        { label: "Onset", options: ["With onset during withdrawal", "With onset during intoxication", "With onset after medication use"], answer: 1 },
         { label: "ICD-10-CM code", options: ["F15.14", "F15.24", "F15.94", "F15.259"], answer: 1 }
       ],
       line: "**F15.24** moderate amphetamine use disorder with amphetamine-induced bipolar and related disorder, with onset during intoxication",
-      why: "Bipolar and related disorder codes end in **.x4** (as for depression); psychotic disorder codes end in .x59. Moderate or severe use disorder = 4th character **2**."
+      why: "Bipolar and related disorder codes end in **.x4** (as for substance-induced depressive disorder, Ch 4); substance-induced psychotic disorder codes end in .x59 (Ch 2). Moderate or severe use disorder = 4th character **2**."
     },
     {
       id: "w3-10", tag: "Medical cause",
       "case": "A 50-year-old with untreated hyperthyroidism has elevated mood, increased energy and pressured speech that do not meet full criteria for a manic or hypomanic episode.",
       parts: [
-        { label: "Listed first", options: ["E05.90 hyperthyroidism", "The bipolar and related disorder"], answer: 0 },
-        { label: "Specifier", options: ["With manic features", "With manic- or hypomanic-like episode", "With mixed features"], answer: 0 },
-        { label: "ICD-10-CM code", options: ["F06.33", "F06.34", "F31.0", "F06.32"], answer: 0 }
+        { label: "Listed first", options: ["The bipolar and related disorder", "E05.90 hyperthyroidism"], answer: 1 },
+        { label: "Specifier", options: ["With mixed features", "With manic- or hypomanic-like episode", "With manic features"], answer: 2 },
+        { label: "ICD-10-CM code", options: ["F06.34", "F06.33", "F31.0", "F06.32"], answer: 1 }
       ],
       line: "**E05.90** hyperthyroidism; **F06.33** bipolar and related disorder due to hyperthyroidism, with manic features",
       why: "Full criteria for an episode are not met = **with manic features**. Both manic specifiers share **F06.33**; F06.34 is with mixed features. The medical condition is listed first."
@@ -110,9 +113,9 @@
       id: "w3-11", tag: "Other specified",
       "case": "A 32-year-old has had three major depressive episodes and five separate periods of 2–3 days of full hypomanic symptoms, never a hypomanic episode lasting 4 days.",
       parts: [
-        { label: "Diagnosis", options: ["Other specified bipolar and related disorder", "Bipolar II disorder", "Cyclothymic disorder", "Major depressive disorder"], answer: 0 },
-        { label: "Reason recorded", options: ["Short-duration hypomanic episodes (2–3 days) and major depressive episodes", "Hypomanic episodes with insufficient symptoms", "Hypomanic episode without prior major depressive episode", "Short-duration cyclothymia"], answer: 0 },
-        { label: "ICD-10-CM code", options: ["F31.89", "F31.9", "F31.81", "F39"], answer: 0 }
+        { label: "Diagnosis", options: ["Bipolar II disorder", "Other specified bipolar and related disorder", "Cyclothymic disorder", "Major depressive disorder"], answer: 1 },
+        { label: "Reason recorded", options: ["Hypomanic episodes with insufficient symptoms", "Hypomanic episode without prior major depressive episode", "Short-duration hypomanic episodes (2–3 days) and major depressive episodes", "Short-duration cyclothymia"], answer: 2 },
+        { label: "ICD-10-CM code", options: ["F31.9", "F31.81", "F39", "F31.89"], answer: 3 }
       ],
       line: "**F31.89** Other specified bipolar and related disorder, short-duration hypomanic episodes and major depressive episodes",
       why: "Hypomanic episodes need **4 days**. Shorter ones with past major depressive episodes are a named example of other specified bipolar and related disorder, recorded with the reason."
@@ -166,9 +169,9 @@
       ask: "Mixed features in mania needs three of six depressive symptoms. Mark the findings that count.",
       items: [
         ["Feels deeply sad and is tearful", true, "Prominent dysphoria or depressed mood."],
-        ["Cannot sleep", false, "Insomnia is **not** on the list (it overlaps with mania)."],
+        ["Cannot sleep", false, "Insomnia is **not** on the list (app reasoning: it overlaps with mania)."],
         ["Has lost interest in everything", true, "Diminished interest or pleasure."],
-        ["Cannot concentrate", false, "Poor concentration is not on the list (it overlaps with distractibility)."],
+        ["Cannot concentrate", false, "Poor concentration is not on the list (app reasoning: it overlaps with distractibility)."],
         ["Feels worthless and guilty", true, "Worthlessness or guilt."],
         ["Thinks about death every day", true, "Recurrent thoughts of death."]
       ],
@@ -182,7 +185,7 @@
       items: [
         ["A major depressive episode in January", true, "A full episode."],
         ["A hypomanic episode right after it, in February", true, "A switch to the opposite pole separates episodes."],
-        ["A 2-week return of depression in March, after 3 weeks of normal mood", false, "Without a 2-month remission or a switch, it continues the same episode (and 2 weeks of depression is not a new episode here)."],
+        ["10 days of low mood with three depressive symptoms in March", false, "Too short and too few symptoms for a major depressive episode, so it is not an episode."],
         ["A major depressive episode in July, after 3 months of normal mood", true, "Separated by a remission of at least 2 months."],
         ["A hypomanic episode in October", true, "A switch to the opposite pole."]
       ],

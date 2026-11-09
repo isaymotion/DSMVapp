@@ -34,5 +34,20 @@ SP.add("ch03", "mnemonics", [
       ["I", "Impairment, marked", "In social or occupational functioning"]
     ],
     caveat: "Any one of the three makes the episode **manic**, whatever its length. A hypomanic episode is a clear, observable change in functioning but has **none** of them."
+  },
+  {
+    id: "m3-04", short: "Five of nine for 2 weeks, with depressed mood or loss of interest", name: "SIG E CAPS", dx: "bipolar-ii", sec: "s3-mde",
+    "for": "Major depressive episode: the eight symptoms besides depressed mood",
+    letters: [
+      ["S", "Sleep", "Insomnia or hypersomnia"],
+      ["I", "Interest", "Markedly diminished interest or pleasure"],
+      ["G", "Guilt", "Worthlessness or excessive or inappropriate guilt"],
+      ["E", "Energy", "Fatigue or loss of energy"],
+      ["C", "Concentration", "Poor concentration or indecisiveness"],
+      ["A", "Appetite", "Weight or appetite change"],
+      ["P", "Psychomotor", "Agitation or retardation observable by others"],
+      ["S", "Suicidality", "Recurrent thoughts of death, suicidal ideation, a plan or an attempt"]
+    ],
+    caveat: "A common teaching mnemonic, not part of the manual. Add **depressed mood** to make nine; **five** are needed for **2 weeks**, and one must be depressed mood or loss of interest or pleasure."
   }
 ]);

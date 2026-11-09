@@ -10,7 +10,7 @@ SP.add("ch18", "mnemonics", [
       ["W", "Wild: Cluster B", "Antisocial, borderline, histrionic, narcissistic (dramatic, emotional, erratic)"],
       ["W", "Worried: Cluster C", "Avoidant, dependent, obsessive-compulsive (anxious, fearful)"]
     ],
-    caveat: "The clusters are a teaching device with **serious limitations**; disorders across clusters often co-occur, and all that are met are diagnosed."
+    caveat: "The clusters are a teaching device with **serious limitations**; disorders across clusters often co-occur, and all that are met can be diagnosed."
   },
   {
     id: "m18-02", short: "4 of 7", name: "SUSPECT", dx: "paranoid-pd", sec: "s18-paranoid",
@@ -55,7 +55,7 @@ SP.add("ch18", "mnemonics", [
       ["A", "Anxiety in social situations", "Does not lessen with familiarity; paranoid fears (A9)"],
       ["R", "Rule out psychosis and autism", "Not only during a psychotic disorder or ASD (B)"]
     ],
-    caveat: "Five or more of the nine A items. Code **F21**, also listed with the schizophrenia spectrum disorders."
+    caveat: "Five or more of the nine A items. Code **F21**, also listed with the schizophrenia spectrum disorders (Ch 2, p. 104)."
   },
   {
     id: "m18-05", short: "3 of 7 + ages", name: "CORRUPT", dx: "antisocial-pd", sec: "s18-antisocial",
@@ -173,5 +173,16 @@ SP.add("ch18", "mnemonics", [
       ["P", "Paranoid", "Suspiciousness or paranoid ideation"]
     ],
     caveat: "Also **other**, **combined** and **unspecified** types. Code the medical condition first, then **F07.0**."
+  },
+  {
+    id: "m18-13", short: "Criterion A areas", name: "CAPI", original: true, dx: "general-pd", sec: "s18-general",
+    "for": "General personality disorder: the four areas of Criterion A",
+    letters: [
+      ["C", "Cognition", "Ways of perceiving and interpreting self, others and events"],
+      ["A", "Affectivity", "Range, intensity, lability and appropriateness of emotion"],
+      ["P", "People", "Interpersonal functioning"],
+      ["I", "Impulse control", ""]
+    ],
+    caveat: "Two or more of the four areas are required (Criterion A)."
   }
 ]);

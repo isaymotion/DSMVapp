@@ -5,7 +5,7 @@
    Complaint hub entries (SP.complaintData) are shared across chapters: entries with the same id merge.
    Schizotypal personality disorder’s extras live in clinical-ch02.js. */
 (function () {
-  var NOAPPROVED = "No medication is FDA-approved for any personality disorder as of October 2026; medicines treat comorbid disorders or specific target symptoms, time-limited and alongside psychotherapy.";
+  var NOAPPROVED = "No medication is approved for borderline personality disorder (Cochrane 2022); no approved drug for any other personality disorder is known to the app (app guidance; not verified as of October 2026). Medicines treat comorbid disorders or specific target symptoms, time-limited and alongside psychotherapy.";
   SP.dxExtra = (SP.dxExtra || []).concat([
     {
       id: "general-pd",
@@ -21,7 +21,7 @@
       tx: {
         asOf: "October 2026",
         first: "**Structured psychotherapy** matched to the disorder is the mainstay; establish a clear frame, shared goals and a crisis plan.",
-        points: [NOAPPROVED, "Treat co-occurring depression, anxiety, PTSD and substance use, which worsen outcomes.", "Review medications at least every 6 months and taper what does not help."],
+        points: [NOAPPROVED, "Treat co-occurring depression, anxiety, PTSD and substance use, which worsen outcomes.", "Review medications at least every 6 months and taper what does not help (APA 2024 borderline PD guideline; extended to other PDs as app guidance)."],
         stahl: [["SSRIs", "c/ch07/guide/s7-ssri"]]
       }
     },
@@ -39,8 +39,8 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "**Supportive, respectful psychotherapy** with transparency: explain everything, avoid premature confrontation of beliefs, and keep a consistent, predictable stance.",
-        points: [NOAPPROVED, "A low-dose antipsychotic (e.g., [[stahl:drugs/risperidone|risperidone]]) may be considered briefly for stress-related psychotic-like episodes or severe agitation.", "Treat comorbid depression, anxiety and substance use."],
+        first: "**Supportive, respectful psychotherapy** with transparency: explain everything, avoid premature confrontation of beliefs, and keep a consistent, predictable stance (app guidance; not verified).",
+        points: [NOAPPROVED, "A low-dose antipsychotic (e.g., [[stahl:drugs/risperidone|risperidone]]) may be considered briefly for stress-related psychotic-like episodes or severe agitation (app guidance; not verified).", "Treat comorbid depression, anxiety and substance use."],
         stahl: [["Antipsychotics", "c/ch05/guide/s5-dones"]]
       }
     },
@@ -56,7 +56,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "Seldom seeks treatment. Offer **low-pressure supportive therapy** focused on the person’s goals (often work or a comorbid problem), respecting the need for distance; group or skills work only if wanted.",
+        first: "Seldom seeks treatment. Offer **low-pressure supportive therapy** focused on the person’s goals (often work or a comorbid problem), respecting the need for distance; group or skills work only if wanted (app guidance; not verified).",
         points: [NOAPPROVED, "Treat comorbid depression if present."],
         stahl: []
       }
@@ -75,7 +75,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "No treatment has strong evidence for the core disorder. Focus on **risk management** and **comorbidities**: substance use treatment (often contingency management), structured cognitive-behavioral programs targeting aggression and offending, and mentalization-based approaches under study.",
+        first: "No treatment has strong evidence for the core disorder. Focus on **risk management** and **comorbidities**: substance use treatment and structured group cognitive-behavioral programs targeting aggression and offending (NICE CG77).",
         points: [NOAPPROVED, "Treat substance use disorders (e.g., [[stahl:drugs/naltrexone|naltrexone]] for alcohol use disorder) and ADHD, which drive risk.", "Be alert to malingering and medication diversion; avoid benzodiazepines and other misusable drugs."],
         stahl: [["Naltrexone", "drugs/naltrexone"]]
       }
@@ -97,9 +97,9 @@
         asOf: "October 2026",
         first: "A **structured, evidence-based psychotherapy** targeting core features: **DBT**, **mentalization-based treatment**, **transference-focused psychotherapy**, **schema therapy**, or **good psychiatric management**. The APA guideline (December 2024) found no single gold standard.",
         points: [
-          "No medication improves the core symptoms. Any medicine should be **time-limited**, aimed at a **measurable target**, adjunctive to therapy, and reviewed at least every **6 months**.",
+          "No medication has been shown to improve the core symptoms (APA 2024). Any medicine should be **time-limited**, aimed at a **measurable target**, adjunctive to therapy, and reviewed at least every **6 months**.",
           "Lamotrigine did not beat placebo in the LABILE trial; avoid relying on mood stabilizers. Brief, low-dose second-generation antipsychotics (e.g., [[stahl:drugs/aripiprazole|aripiprazole]], [[stahl:drugs/quetiapine|quetiapine]]) are sometimes used for specific symptoms.",
-          "Avoid benzodiazepines; prescribe in small quantities because of overdose risk.",
+          "Avoid benzodiazepines; prescribe in small quantities because of overdose risk (app guidance; not verified).",
           "Psychoeducation about the good prognosis; a crisis plan; treat comorbid depression, PTSD, substance use and eating disorders."
         ],
         stahl: [["Partial agonists", "c/ch05/guide/s5-pa"], ["SSRIs", "c/ch07/guide/s7-ssri"]]
@@ -116,7 +116,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "**Psychodynamic or cognitive therapy** focusing on the need for attention, emotional depth and relationships; set clear, consistent boundaries.",
+        first: "**Psychodynamic or cognitive therapy** focusing on the need for attention, emotional depth and relationships; set clear, consistent boundaries (app guidance; not verified).",
         points: [NOAPPROVED, "Treat comorbid depression and somatic presentations; take suicidal threats seriously."],
         stahl: []
       }
@@ -129,12 +129,12 @@
         ["5 Entitlement", "“How do you react when rules apply to you like everyone else?”"],
         ["7 Empathy", "“How did your partner feel when that happened?”"],
         ["Vulnerability", "“How do you feel after criticism or a setback?”", "Shame, rage or withdrawal."],
-        ["Safety", "“Since the setback, have you thought about ending your life?”", "Attempts tend to be planned and lethal."],
+        ["Safety", "“Since the setback, have you thought about ending your life?”", "Attempts tend to be less impulsive."],
         ["Mood", "“Have there been days of unusually high mood and little sleep?”", "Exclude hypomania."]
       ],
       tx: {
         asOf: "October 2026",
-        first: "Psychotherapy, often **transference-focused**, **mentalization-based** or **schema** therapy, aiming at self-esteem regulation and empathy; expect ruptures and address them directly.",
+        first: "Psychotherapy aiming at self-esteem regulation and empathy; expect ruptures and address them directly (app guidance; not verified).",
         points: [NOAPPROVED, "Treat comorbid depression, PDD and substance use (especially cocaine).", "Assess suicide risk carefully after failures or humiliation."],
         stahl: [["SSRIs", "c/ch07/guide/s7-ssri"]]
       }
@@ -152,7 +152,7 @@
       tx: {
         asOf: "October 2026",
         first: "**CBT** (individual or group) with graded exposure, social skills training and work on core beliefs of inferiority; schema therapy also has support.",
-        points: ["Medications used for social anxiety disorder help the anxiety component: an [[stahl:c/ch07/guide/s7-ssri|SSRI]] or [[stahl:drugs/venlafaxine|venlafaxine]].", "Treat comorbid depression and substance use."],
+        points: ["Medications used for social anxiety disorder may help the anxiety component (app guidance; not verified): an [[stahl:c/ch07/guide/s7-ssri|SSRI]] or [[stahl:drugs/venlafaxine|venlafaxine]].", "Treat comorbid depression and substance use."],
         stahl: [["Social anxiety disorder", "c/ch08/guide/s8-social"], ["SSRIs", "c/ch07/guide/s7-ssri"]]
       }
     },
@@ -168,7 +168,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "**CBT** and assertiveness training, gradually building independent decisions; time-limited goals help avoid fostering dependence on the therapist.",
+        first: "**CBT** and assertiveness training, gradually building independent decisions; time-limited goals help avoid fostering dependence on the therapist (app guidance; not verified).",
         points: [NOAPPROVED, "Treat comorbid depression and anxiety; address abuse and safety."],
         stahl: [["SSRIs", "c/ch07/guide/s7-ssri"]]
       }
@@ -185,7 +185,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "**CBT** targeting perfectionism, rigidity and work–life balance, or psychodynamic therapy; the traits are often ego-syntonic, so start from the distress they cause.",
+        first: "**CBT** targeting perfectionism, rigidity and work–life balance, or psychodynamic therapy; the traits are often ego-syntonic, so start from the distress they cause (app guidance; not verified).",
         points: [NOAPPROVED, "Treat comorbid OCD, depression and anxiety (e.g., an [[stahl:c/ch07/guide/s7-ssri|SSRI]])."],
         stahl: [["OCD", "c/ch13/guide/s13-ocd"]]
       }
@@ -202,7 +202,7 @@
       tx: {
         asOf: "October 2026",
         first: "Treat the **underlying condition**; use environmental structure, caregiver education and behavioral strategies.",
-        points: ["Target symptoms: an [[stahl:c/ch07/guide/s7-ssri|SSRI]] for lability or irritability; cautious antipsychotics for severe aggression or paranoia, weighing risks in older or brain-injured patients.", "Apathy may respond to activation strategies; review contributing medications.", "Consider capacity and safeguarding."],
+        points: ["Target symptoms (app guidance; not verified): an [[stahl:c/ch07/guide/s7-ssri|SSRI]] for lability or irritability; cautious antipsychotics for severe aggression or paranoia, weighing risks in older or brain-injured patients.", "Apathy may respond to activation strategies; review contributing medications.", "Consider capacity and safeguarding."],
         stahl: [["Agitation in dementia", "c/ch12/guide/s12-agitation"], ["Pseudobulbar affect and apathy", "c/ch12/guide/s12-pba-apathy"]]
       }
     }
@@ -213,12 +213,12 @@
       id: "unstable", title: "Emotional storms, self-harm and unstable relationships",
       intro: "Ask about the time course: hours-long reactive shifts point to borderline personality disorder; distinct episodes of days point to bipolar disorder. Document a long-standing pattern before diagnosing a personality disorder.",
       ask: ["How long do mood shifts last, and what sets them off?", "Have you hurt yourself or tried to end your life?", "What happens when someone might leave you?", "Any days of high energy with little sleep?", "Any trauma, substance use or binge eating?"],
-      mustNotMiss: ["**Suicide risk** and lethal means.", "**Bipolar disorder** and major depression.", "**PTSD**, substance use and eating disorders."],
+      mustNotMiss: ["**Suicide risk** and access to means.", "**Bipolar disorder** and major depression.", "**PTSD**, substance use and eating disorders."],
       helpers: ["personality", "pdpair"],
       items: [
         { ch: "ch18", dx: "borderline-pd", when: "Abandonment fear, idealization–devaluation, self-harm, emptiness, hours-long shifts." },
         { ch: "ch03", dx: "bipolar-ii", when: "Hypomanic episodes of at least 4 days with decreased need for sleep." },
-        { ch: "ch18", dx: "histrionic-pd", when: "Theatrical, shallow emotion without self-destructiveness." },
+        { ch: "ch18", dx: "histrionic-pd", when: "Theatrical, shallow emotion without borderline’s self-destructiveness." },
         { ch: "ch18", dx: "dependent-pd", when: "Fear of abandonment met with appeasement." },
         { ch: "ch07", dx: "ptsd", when: "Mood and impulsivity driven by trauma reminders." },
         { ch: "ch08", dx: "did", when: "Shifts with amnesia and identity states." }

@@ -3,7 +3,7 @@
    Written in the app’s own words from the manual, with page references. Criteria are paraphrased: confirm exact
    wording against the manual. */
 SP.add("ch18", "guide", {
-  intro: "A **personality disorder** is an enduring pattern of inner experience and behavior that **deviates markedly** from the expectations of the person’s culture, is **pervasive and inflexible**, begins by **adolescence or early adulthood**, is **stable** over time and causes **distress or impairment** (p. 733). DSM-5-TR keeps the familiar **10 categorical disorders** in three **clusters**: **A** odd or eccentric (paranoid, schizoid, schizotypal), **B** dramatic, emotional or erratic (antisocial, borderline, histrionic, narcissistic) and **C** anxious or fearful (avoidant, dependent, obsessive-compulsive), plus **personality change due to another medical condition** and the other specified and unspecified categories. Exams test three things above all: the **thresholds** (how many of how many), the **age rules** (antisocial needs age ≥18 and conduct disorder before 15; any personality disorder under 18 needs ≥1 year of features) and the **look-alike pairs** (borderline vs bipolar, avoidant vs schizoid, OCPD vs OCD). The [[helper:personality|personality helper]] and the [[helper:pdpair|look-alike helper]] walk you through the reasoning.",
+  intro: "A **personality disorder** is a lasting way of experiencing and behaving that **departs markedly** from the expectations of the person’s culture, is **pervasive and inflexible**, begins by **adolescence or early adulthood**, is **stable** over time and causes **distress or impairment** (p. 733). DSM-5-TR keeps the familiar **10 categorical disorders** in three **clusters**: **A** odd or eccentric (paranoid, schizoid, schizotypal), **B** dramatic, emotional or erratic (antisocial, borderline, histrionic, narcissistic) and **C** anxious or fearful (avoidant, dependent, obsessive-compulsive), plus **personality change due to another medical condition** and the other specified and unspecified categories. Exams test three things above all (app guidance): the **thresholds** (how many of how many), the **age rules** (antisocial needs age ≥18 and conduct disorder before 15; any personality disorder under 18 needs ≥1 year of features) and the **look-alike pairs** (borderline vs bipolar, avoidant vs schizoid, OCPD vs OCD). The [[helper:personality|personality helper]] and the [[helper:pdpair|look-alike helper]] walk you through the reasoning.",
   objectives: [
     "State the **general criteria** for personality disorder (A–F) and the rules for diagnosing it **before age 18**, during another disorder, and as “**premorbid**.”",
     "Name the **10 personality disorders**, their **clusters**, **codes** and **thresholds** (4 of 7, 5 of 9, 3 of 7 and so on).",
@@ -45,9 +45,9 @@ SP.add("ch18", "guide", {
             { type: "callout", kind: "mnemonic", title: "Clusters: weird, wild, worried", text: "**A** = **weird** (odd, eccentric; related to the psychotic spectrum). **B** = **wild** (dramatic, emotional, erratic). **C** = **worried** (anxious, fearful)." },
             { type: "defs", title: "About the clusters (p. 734)", items: [
               ["Use", "Useful for teaching and some research, but the clustering has **serious limitations** and has not been consistently validated."],
-              ["Overlap", "Disorders from **different clusters** often co-occur; when criteria for more than one are met, **all are diagnosed**."],
+              ["Overlap", "Disorders from **different clusters** can often co-occur; when criteria for more than one are met, **all can be diagnosed**."],
               ["Prevalence (median across countries)", "Cluster A **3.6%**, Cluster B **4.5%**, Cluster C **2.8%**, **any personality disorder 10.5%**."],
-              ["Two models", "Section II keeps the categorical criteria carried over from DSM-IV; **Section III** offers the dimensional **Alternative DSM-5 Model**."]
+              ["Two models", "Section II keeps the categorical criteria carried over from DSM-IV-TR; **Section III** offers the dimensional **Alternative DSM-5 Model**."]
             ] }
           ]
         },
@@ -57,8 +57,8 @@ SP.add("ch18", "guide", {
           pages: "734–736",
           blocks: [
             { type: "criteria", title: "General personality disorder", code: "No code (applies to all)", pages: "734–735", items: [
-              ["A", "An enduring pattern of inner experience and behavior that **deviates markedly** from cultural expectations, in **two or more** of:", ["**Cognition** (perceiving and interpreting self, others, events).", "**Affectivity** (range, intensity, lability, appropriateness of emotion).", "**Interpersonal functioning.**", "**Impulse control.**"]],
-              ["B", "**Inflexible and pervasive** across a broad range of personal and social situations."],
+              ["A", "A lasting pattern of inner experience and behavior that **departs markedly** from cultural expectations, in **two or more** of:", ["**Cognition** (perceiving and interpreting self, others, events).", "**Affectivity** (range, intensity, lability, appropriateness of emotion).", "**Interpersonal functioning.**", "**Impulse control.**"]],
+              ["B", "**Inflexible and pervasive** across many personal and social situations."],
               ["C", "Clinically significant **distress or impairment**."],
               ["D", "**Stable** and of long duration; onset traceable to at least **adolescence or early adulthood**."],
               ["E", "Not better explained by **another mental disorder**."],
@@ -77,7 +77,7 @@ SP.add("ch18", "guide", {
               ["The exception", "**Antisocial personality disorder cannot be diagnosed under 18**"],
               ["Change with age", "**Antisocial and borderline** become less evident or remit with age; **obsessive-compulsive and schizotypal** less so"],
               ["Late onset", "A personality change in **middle or later life** calls for a search for a **medical condition** or an unrecognized **substance use disorder**"],
-              ["Exacerbation", "Loss of a supporting person (spouse) or stabilizing situation (job) can unmask or worsen a disorder"]
+              ["Exacerbation", "Loss of a supporting person (spouse) or stabilizing situation (job) may worsen (exacerbate) a disorder"]
             ] },
             { type: "callout", kind: "culture", title: "Culture and gender (p. 736)", text: "Do not confuse personality disorder with **acculturation** problems or with customs, religious or political values. Rigid-looking patterns may be **adaptive responses** to cultural constraints (relying on an abusive partner where divorce is forbidden is not necessarily dependency; risky political protest is not necessarily callousness). Consider clinician bias, instruments not normed for the person’s group, and **poverty, racism and discrimination**. **Antisocial** is diagnosed more in men; **borderline, histrionic and dependent** more in women (for borderline, possibly because women seek help more). Avoid over- or underdiagnosis based on gender stereotypes." }
           ]
@@ -91,13 +91,13 @@ SP.add("ch18", "guide", {
               ["Another mental disorder", "Diagnose a personality disorder only if features began **before early adulthood**, are typical of **long-term** functioning, and do **not occur only during an episode** of another disorder"],
               ["Spectrum relationships", "Schizotypal ↔ **schizophrenia**; avoidant ↔ **social anxiety disorder**. Early-onset persistent disorders (persistent depressive disorder) can be hard and not useful to separate"],
               ["Psychotic disorders", "Paranoid, schizoid and schizotypal exclude patterns occurring **only** during psychosis. If the personality disorder preceded schizophrenia, record it with “**(premorbid)**”"],
-              ["Depressive and anxiety episodes", "Be **cautious** diagnosing personality disorder during an episode: symptoms mimic traits and distort recall"],
+              ["Depressive and anxiety episodes", "Be **cautious** diagnosing personality disorder during an episode: symptoms may mimic traits and may make the long-term pattern harder to judge"],
               ["PTSD", "Personality changes that **emerge after extreme stress** suggest PTSD"],
               ["Substance use disorders", "Do not diagnose from behavior caused by intoxication, withdrawal or **sustaining use** (e.g., stealing for drugs)"],
               ["Medical condition", "Enduring changes caused physiologically by a medical condition → **personality change due to another medical condition**"],
               ["Traits", "Traits below threshold are not a disorder; only when inflexible, maladaptive, persisting and impairing"]
             ] },
-            { type: "callout", kind: "exam", text: "Three classic stems: **(1)** a woman during a severe depressive episode seems dependent and clingy → do **not** diagnose dependent personality disorder from the cross-section; **(2)** a 50-year-old with new disinhibition → look for a **frontal lesion** or substance, not a personality disorder; **(3)** a man with schizophrenia who was suspicious and isolated since adolescence → “paranoid personality disorder **(premorbid)**.”" }
+            { type: "callout", kind: "exam", text: "Three classic stems: **(1)** a woman during a severe depressive episode seems dependent and clingy → do **not** diagnose dependent personality disorder from the cross-section; **(2)** a 50-year-old with new disinhibition → look for a **frontal lesion** or substance, not a personality disorder; **(3)** a man with schizophrenia who was suspicious and isolated since adolescence → “paranoid personality disorder **(premorbid)**.” (app guidance)" }
           ]
         }
       ]
@@ -161,7 +161,7 @@ SP.add("ch18", "guide", {
               ]],
               ["B", "Not exclusively during schizophrenia, a mood disorder with psychotic features, another psychotic disorder or **autism spectrum disorder**, and not due to a medical condition."]
             ], note: "If criteria were met before schizophrenia, add “(premorbid).”" },
-            { type: "defs", title: "Features and epidemiology (pp. 742–743)", items: [
+            { type: "defs", title: "Features and epidemiology (pp. 742–744)", items: [
               ["Style", "“Loner”; prefers mechanical or abstract tasks; difficulty expressing anger; drifts in goals; may do well in **socially isolated work**."],
               ["Prevalence", "NCS-R 4.9%, NESARC 3.1%, **median 1.3%**; uncommon in clinical settings."],
               ["Risk", "More prevalent in relatives of people with **schizophrenia or schizotypal PD**."],
@@ -197,14 +197,14 @@ SP.add("ch18", "guide", {
                 "**Excessive social anxiety** that does not lessen with familiarity, tied to **paranoid fears** rather than negative self-judgment."
               ]],
               ["B", "Not exclusively during schizophrenia, a mood disorder with psychotic features, another psychotic disorder or autism spectrum disorder."]
-            ], note: "Also listed in the schizophrenia spectrum chapter. If criteria were met before schizophrenia, add “(premorbid).”" },
+            ], note: "Also listed in the schizophrenia spectrum chapter (Ch 2, p. 104). If criteria were met before schizophrenia, add “(premorbid).”" },
             { type: "defs", title: "Features and epidemiology (pp. 745–747)", items: [
               ["Examples", "Magical control (walking past an object three times to prevent harm); sensing a presence or hearing a voice murmur one’s name; speech loose and vague but **without derailment**."],
               ["At a party", "Becomes **more tense and suspicious** as the evening goes on, not more relaxed."],
               ["Help seeking", "Usually for **anxiety or depression**, not the personality features."],
               ["Prevalence", "NCS-R 3.3%, NESARC 3.9%, **median 0.6%**; slightly more in **men**."],
               ["Course", "**Relatively stable**; only a **small proportion** develop schizophrenia or another psychotic disorder."],
-              ["Genetics", "More common in first-degree relatives of people with **schizophrenia**; shared genetic risk variants."],
+              ["Genetics", "More common in first-degree relatives of people with **schizophrenia**; genetic risk variants for schizophrenia may be linked to it."],
               ["Culture", "Speaking in tongues, voodoo, shamanism, evil eye and similar beliefs can look schizotypal to an uninformed clinician."]
             ] },
             { type: "table", caption: "Differential diagnosis (pp. 747–748)", head: ["Condition", "How it differs"], rows: [
@@ -233,7 +233,7 @@ SP.add("ch18", "guide", {
           pages: "748–752",
           blocks: [
             { type: "criteria", title: "Antisocial personality disorder in brief", code: "F60.2", pages: "748", items: [
-              ["A", "Pervasive **disregard for and violation of the rights of others**, occurring **since age 15**, with **three or more** of:", [
+              ["A", "Pervasive **disregard for and violation of others’ rights**, present **since age 15**, with **three or more** of:", [
                 "**Failure to conform** to lawful norms: repeated acts that are grounds for arrest.",
                 "**Deceitfulness**: lying, aliases, conning for profit or pleasure.",
                 "**Impulsivity** or failure to plan ahead.",
@@ -249,11 +249,11 @@ SP.add("ch18", "guide", {
             { type: "callout", kind: "mnemonic", title: "CORRUPT (the seven A items)", text: "**C**annot conform to law · **O**bligations ignored (irresponsible) · **R**eckless disregard for safety · **R**emorseless · **U**nderhanded (deceitful) · **P**lanning failure (impulsive) · **T**emper (irritable, aggressive). Three or more, since age 15." },
             { type: "defs", title: "Features and epidemiology (pp. 748–751)", items: [
               ["Also called", "**Psychopathy**, sociopathy, dyssocial personality disorder. Use **collateral information** because deceit is central."],
-              ["Psychopathy features", "Lack of empathy, inflated self-appraisal, **glib superficial charm**: may best predict **recidivism** in forensic settings."],
+              ["Psychopathy features", "Lack of empathy, inflated self-appraisal, **glib superficial charm**: may be more predictive of **recidivism** in prison or forensic settings."],
               ["Prevalence", "NCS-R 0.6%, NESARC 3.6%, **median 3.6%**; **>70%** in men with the most severe alcohol use disorders and in prisons, forensic and substance clinics."],
               ["Sex", "About **3 times** more common in men; women more often have abuse histories and comorbid mood and anxiety disorders; may be **underdiagnosed in women** because conduct disorder criteria emphasize aggression."],
-              ["Course", "Chronic, but becomes less evident or **remits with age, often by 40**, especially criminal behavior."],
-              ["Risk", "Child abuse or neglect, erratic parenting and inconsistent discipline turn conduct disorder into antisocial PD; **childhood-onset conduct disorder (before 10)** with **ADHD** raises the risk."],
+              ["Course", "Chronic, but may become less evident or **remit with age, often by 40**, especially criminal behavior."],
+              ["Risk", "Child abuse or neglect, erratic parenting and inconsistent discipline may increase the likelihood that conduct disorder evolves into antisocial PD; **childhood-onset conduct disorder (before 10)** with **ADHD** raises the risk."],
               ["Family", "Relatives have more antisocial PD and substance use (men) and somatization (women)."],
               ["Mortality", "More premature death from **natural causes and suicide**."]
             ] },
@@ -292,11 +292,11 @@ SP.add("ch18", "guide", {
             { type: "callout", kind: "mnemonic", title: "IMPULSIVE (the nine criteria)", text: "**I**dentity disturbance · **M**ood instability (hours) · **P**aranoia or dissociation under stress · **U**nstable relationships · **L**onely, empty · **S**uicidal or self-harm · **I**mpulsivity in two areas · **V**ery angry · **E**fforts to avoid abandonment. Five or more." },
             { type: "defs", title: "Reading the criteria (pp. 753–754)", items: [
               ["Abandonment", "Panic or fury when someone is a few minutes late or a session ends; linked to intolerance of being alone."],
-              ["Splitting", "Idealizes a new partner or clinician, then **devalues** them as uncaring or absent."],
+              ["Idealization–devaluation", "Idealizes a new partner or clinician, then **devalues** them as uncaring or absent."],
               ["Identity", "Sudden shifts in self-image (needy supplicant ↔ righteous avenger); a self-image of being **bad or evil**; at times feeling one does not exist."],
-              ["Self-harm", "Cutting or burning, often during **dissociation**, brings relief by reaffirming the ability to feel or expiating badness; usually triggered by **separation or rejection**."],
+              ["Self-harm", "Cutting or burning, sometimes during **dissociation**, brings relief by reaffirming the ability to feel or expiating badness; usually triggered by **separation or rejection**."],
               ["Affect", "Basic dysphoria broken by anger, panic or despair, **rarely** by well-being."],
-              ["Psychotic-like", "Transient (minutes to hours), triggered by real or imagined **abandonment**; may remit when nurturance returns."],
+              ["Psychotic-like", "Transient (minutes to hours), most often after real or imagined **abandonment**; may remit when nurturance returns."],
               ["Self-undermining", "Drops out just before graduation, regresses after a good session, ends a relationship that could last."],
               ["Other", "**Transitional objects** (a pet or possession) may feel safer than people. Childhood abuse, neglect, conflict and early parental loss are more common."]
             ] }
@@ -311,7 +311,7 @@ SP.add("ch18", "guide", {
               ["Community prevalence", "NCS-R 1.4%, NESARC 5.9%, **median 2.7%**"],
               ["Clinical settings", "About **6%** primary care, **10%** mental health outpatients, **20%** psychiatric inpatients"],
               ["Onset", "Full criteria can be met at **age 12–13** in treatment settings"],
-              ["Remission", "Stable remissions are **very common**; **impulsive** symptoms remit fastest, **affective** symptoms slowest"],
+              ["Remission", "Stable remissions are **very common**; **impulsive** symptoms remit fastest, **affective** symptoms much more slowly"],
               ["Recovery", "Remission **plus** good psychosocial functioning is harder and less stable; worse with disability benefits and poor physical health"],
               ["Family", "About **5 times** more common in first-degree relatives; also familial substance use, anxiety, antisocial PD, mood disorders"],
               ["Abuse", "Childhood abuse and neglect common; sexual abuse is **neither necessary nor sufficient** and relates as much to severity"],
@@ -321,7 +321,7 @@ SP.add("ch18", "guide", {
             { type: "table", caption: "Differential diagnosis (pp. 756–757)", head: ["Condition", "How it differs"], rows: [
               ["[[dx:mdd|Depressive]] and [[dx:bipolar-ii|bipolar disorders]]", "Often co-occur; **diagnose both** when both are met, but do not diagnose borderline from a **cross-sectional** picture during an episode"],
               ["[[dx:separation-anxiety|Separation anxiety disorder]] (adult)", "Fear of abandonment without central problems of identity, self-direction and impulsivity"],
-              ["[[dx:histrionic-pd|Histrionic PD]]", "Attention seeking and shifting emotions, but **no self-destructiveness**, angry ruptures or deep emptiness"],
+              ["[[dx:histrionic-pd|Histrionic PD]]", "Attention seeking and shifting emotions, but lacks borderline’s **self-destructiveness**, angry ruptures and deep emptiness"],
               ["[[dx:schizotypal-pd|Schizotypal PD]]", "Enduring psychotic-like symptoms less tied to affect"],
               ["[[dx:paranoid-pd|Paranoid]] and [[dx:narcissistic-pd|narcissistic PD]]", "Stable self-image; little self-destructiveness, impulsivity or abandonment fear"],
               ["[[dx:antisocial-pd|Antisocial PD]]", "Manipulates for **profit or power**; borderline for **concern of caretakers**"],
@@ -330,7 +330,7 @@ SP.add("ch18", "guide", {
               ["Medical condition or substances", "Personality change due to AMC; symptoms of persistent substance use"]
             ] },
             { type: "p", text: "**Comorbidity** (p. 757): depressive and bipolar disorders, substance use, anxiety (especially **panic** and **social anxiety**), eating disorders (**bulimia**, **binge eating**), **PTSD**, **ADHD** and other personality disorders." },
-            { type: "case", title: "Clinical vignette: the 9-minute wait", text: "A 24-year-old woman storms out of her session when her therapist is 9 minutes late, texts that she will kill herself, then apologizes tearfully an hour later. She has had five intense relationships in two years that began with “finding my soulmate” and ended in rage. She binge drinks and spends impulsively, cuts her thighs when she feels “nothing,” and describes herself as a different person depending on whom she is with. Her moods swing within hours; she has never had days of elevated mood or decreased need for sleep.", point: "Abandonment fear, idealization–devaluation, identity disturbance, impulsivity in two areas, self-harm and suicidal threats, hours-long reactivity, emptiness: well over five of nine since early adulthood → **F60.3 borderline personality disorder**. No hypomanic episodes, so not bipolar." }
+            { type: "case", title: "Clinical vignette: the 9-minute wait", text: "A 24-year-old woman, with a similar pattern since about age 16, storms out of her session when her therapist is 9 minutes late, texts that she will kill herself, then apologizes tearfully an hour later. She has had five intense relationships in two years that began with “finding my soulmate” and ended in rage. She binge drinks and spends impulsively, cuts her thighs when she feels “nothing,” and describes herself as a different person depending on whom she is with. Her moods swing within hours; she has never had days of elevated mood or decreased need for sleep.", point: "Abandonment fear, idealization–devaluation, identity disturbance, impulsivity in two areas, self-harm and suicidal threats, hours-long reactivity, emptiness: well over five of nine since early adulthood → **F60.3 borderline personality disorder**. No hypomanic episodes, so not bipolar." }
           ]
         },
         {
@@ -351,7 +351,7 @@ SP.add("ch18", "guide", {
               ]]
             ] },
             { type: "callout", kind: "mnemonic", title: "PRAISE ME (the eight criteria)", text: "**P**rovocative or seductive · **R**elationships seen as closer than they are · **A**ttention needed (center stage) · **I**nfluenced easily (suggestible) · **S**peech impressionistic · **E**motions shallow, rapidly shifting · **M**akes a show (theatrical) · **E**ye-catching appearance. Five or more." },
-            { type: "defs", title: "Features and epidemiology (pp. 758–759)", items: [
+            { type: "defs", title: "Features and epidemiology (pp. 757–760)", items: [
               ["With clinicians", "Flattery, gifts, dramatic descriptions with **new symptoms each visit**; calls a doctor seen once by first name."],
               ["Speech", "Strong opinions with flair but **no supporting detail** (“a wonderful human being,” without examples)."],
               ["Impairment", "Generally **lower** than in many other PDs; mainly **interpersonal** and romantic (more divorce or never marrying)."],
@@ -377,7 +377,7 @@ SP.add("ch18", "guide", {
             { type: "criteria", title: "Narcissistic personality disorder in brief", code: "F60.81", pages: "760", items: [
               ["", "Pervasive **grandiosity** (fantasy or behavior), **need for admiration** and **lack of empathy**, from early adulthood, with **five or more** of:", [
                 "**Grandiose** sense of self-importance.",
-                "Preoccupied with **fantasies** of unlimited success, power, brilliance, beauty or ideal love.",
+                "Absorbed in **fantasies** of limitless success, power, brilliance, beauty or perfect love.",
                 "Believes they are **special**; associates only with high-status people or institutions.",
                 "Requires **excessive admiration**.",
                 "Sense of **entitlement**.",
@@ -388,14 +388,14 @@ SP.add("ch18", "guide", {
               ]]
             ] },
             { type: "callout", kind: "mnemonic", title: "SPECIAL ME (the nine criteria)", text: "**S**pecial and unique · **P**reoccupied with fantasies · **E**ntitled · **C**an’t empathize · **I**nterpersonally exploitative · **A**rrogant · **L**ooks for admiration · **M**y importance is grandiose · **E**nvious. Five or more." },
-            { type: "defs", title: "Features and epidemiology (pp. 761–763)", items: [
+            { type: "defs", title: "Features and epidemiology (pp. 761–764)", items: [
               ["Fragile self-esteem", "**Very fragile** self-esteem beneath grandiosity; criticism brings shame and humiliation, with rage, counterattack, or **withdrawal** and apparent humility masking grandiosity."],
               ["Empathy", "Some **cognitive** empathy, but little **emotional** empathy."],
               ["Functioning", "Ranges from high-achieving to very low vocational functioning from fear of failure."],
               ["Vulnerability", "Shame, envy, insecurity and perfectionism can bring depression and emptiness."],
               ["Prevalence", "NCS-R **0.0%**, NESARC 6.2%, **median 1.6%**; **50%–75%** of those diagnosed are men."],
               ["Course", "Narcissistic traits are common in **adolescents** without predicting the disorder; may present after **crises** (bankruptcy, demotion, divorce) or with aging; durable relationships and real achievements can be corrective."],
-              ["Suicide", "Attempts tend to be **less impulsive** and of **higher lethality** than in other PDs, often after failure or exposure of imperfection."],
+              ["Suicide", "Attempts tend to be **less impulsive** and of **higher lethality** than in other PDs (the manual’s wording, p. 763), often after failure or exposure of imperfection."],
               ["Comorbidity", "PDD, MDD, **anorexia nervosa**, substance use (especially **cocaine**); histrionic, borderline, antisocial, paranoid PD."]
             ] },
             { type: "table", caption: "Differential diagnosis (pp. 763–764)", head: ["Condition", "How it differs"], rows: [
@@ -418,7 +418,7 @@ SP.add("ch18", "guide", {
               ["Histrionic", "**Attention**, any kind (even appearing fragile)", "Coquettish, theatrical, shallow", "Seductiveness, impressionistic speech"],
               ["Narcissistic", "**Admiration** for superiority", "Grandiose, entitled, cold", "Grandiosity; fragile self-esteem"]
             ] },
-            { type: "callout", kind: "exam", text: "The manual’s one-word styles: histrionic **coquettish**, antisocial **callous**, borderline **needy**; narcissistic is marked by **grandiosity**. All three of borderline, histrionic and narcissistic want attention, but narcissistic needs it to be **admiring**." }
+            { type: "callout", kind: "exam", text: "The manual’s one-word styles: histrionic **coquettish**, antisocial **callous**, borderline **needy**; narcissistic is marked by **grandiosity**. All three of borderline, histrionic and narcissistic want attention, but narcissistic needs it to be **admiring**. (app guidance)" }
           ]
         }
       ]
@@ -443,7 +443,7 @@ SP.add("ch18", "guide", {
               ]]
             ] },
             { type: "callout", kind: "mnemonic", title: "CRINGES (the seven criteria)", text: "**C**ertain of being liked before getting involved · **R**ejection or criticism preoccupies · **I**nhibited in new situations · **N**ew activities and risks avoided · **G**ets restrained in intimacy (fear of shame) · **E**mployment with contact avoided · **S**elf seen as inferior. Four or more." },
-            { type: "defs", title: "Features and epidemiology (pp. 765–767)", items: [
+            { type: "defs", title: "Features and epidemiology (pp. 765–768)", items: [
               ["Core", "**Wants** relationships but fears humiliation; tests others stringently; may decline promotions; repeated job changes after growing conviction colleagues see them as inferior."],
               ["Attachment", "Insecure, “**preoccupied**” or “**fearful**” attachment."],
               ["Prevalence", "NCS-R 5.2%, NESARC 2.4%, **median 2.1%**; **0.8%** in adults over 65; slightly more in **women**."],
@@ -514,7 +514,7 @@ SP.add("ch18", "guide", {
               ]]
             ] },
             { type: "callout", kind: "mnemonic", title: "PERFECTS (the eight criteria)", text: "**P**reoccupied with details · **E**thically rigid (overconscientious) · **R**eluctant to delegate · **F**inishing tasks blocked by perfectionism · **E**conomical (miserly) · **C**an’t discard objects · **T**ied to work, no leisure · **S**tubborn and rigid. Four or more." },
-            { type: "defs", title: "Features and epidemiology (pp. 772–774)", items: [
+            { type: "defs", title: "Features and epidemiology (pp. 772–775)", items: [
               ["Style", "Rewrites a report until deadlines pass; turns play into work; anger expressed indirectly (ruminating over the tip) or as righteous indignation; deference to respected authority, resistance to others."],
               ["Emotion", "Stilted, controlled affection; uncomfortable with emotional people; rarely pays compliments."],
               ["Prevalence", "NCS-R 2.4%, NESARC 7.9%, **median 4.7%**; **equal** in men and women."],
@@ -531,7 +531,7 @@ SP.add("ch18", "guide", {
             ] },
             { type: "compare", title: "OCPD or OCD?", items: [
               { title: "OCPD", color: "drug", points: ["Pervasive **personality style**: perfectionism, control, rigidity.", "Usually **ego-syntonic**: “this is the right way.”", "No true obsessions or compulsions.", "F60.5"] },
-              { title: "OCD", color: "case", points: ["**Obsessions and compulsions**, often time-consuming.", "Usually **ego-dystonic**, with insight specifiers.", "Most people with OCD do not have OCPD.", "F42.2"] }
+              { title: "OCD", color: "case", points: ["**Obsessions and compulsions**, often time-consuming.", "Usually **ego-dystonic**, with insight specifiers (Ch 6).", "Most people with OCD do not have OCPD.", "F42.2 (Ch 6)"] }
             ] }
           ]
         },
@@ -564,7 +564,7 @@ SP.add("ch18", "guide", {
             { type: "criteria", title: "Personality change due to another medical condition in brief", code: "F07.0", pages: "775–776", items: [
               ["A", "A persistent personality disturbance that is a **change** from the previous characteristic pattern (in children, a marked deviation lasting **at least 1 year**)."],
               ["B", "Evidence that it is the **direct pathophysiological consequence** of a medical condition."],
-              ["C", "Not better explained by another mental disorder (including another mental disorder due to AMC)."],
+              ["C", "Not better accounted for by another mental disorder, including one due to AMC."],
               ["D", "Not exclusively during **delirium**."],
               ["E", "Distress or impairment."]
             ], specifiers: [["Subtypes", "**Labile**, **disinhibited**, **aggressive**, **apathetic**, **paranoid**, other, **combined**, unspecified"], ["Coding", "Code the medical condition **first**, e.g., G40.209 temporal lobe epilepsy; F07.0 personality change due to temporal lobe epilepsy"]] },

@@ -42,7 +42,7 @@ SP.glossary = (SP.glossary || []).concat([
   ["goal-attainment events", "Life events such as marrying or finishing a degree; linked to manic relapse in bipolar disorder.", "Ch 3"],
   ["grief", "The normal response to loss: emptiness and longing that come in waves tied to reminders, with self-esteem usually preserved.", "Ch 3"],
   ["pangs of grief", "Waves of intense grief triggered by thoughts or reminders of the deceased.", "Ch 3"],
-  ["disruptive mood dysregulation disorder", "A childhood depressive disorder of severe, persistent irritability and frequent temper outbursts; the diagnosis for chronic nonepisodic irritability rather than bipolar disorder.", "Ch 3"],
+  ["disruptive mood dysregulation disorder", "A childhood depressive disorder of severe, persistent irritability and frequent temper outbursts; the diagnosis for chronic nonepisodic irritability rather than bipolar disorder.", "Ch 4"],
   ["Cushing’s disease", "Excess cortisol from a pituitary tumor; a well-known medical cause of manic and depressive syndromes.", "Ch 3"],
   ["anti-NMDA receptor encephalitis", "Autoimmune encephalitis with antibodies to NMDA receptors; can cause manic or mixed mood and psychosis.", "Ch 3"],
   ["bath salts", "Synthetic cathinone stimulants, an example of new substances that can induce manic states.", "Ch 3"]

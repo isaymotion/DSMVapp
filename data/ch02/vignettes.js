@@ -15,7 +15,7 @@ SP.add("ch02", "vignettes", [
       "Schizotypal personality disorder"
     ],
     "answer": 1,
-    "why": "The 6-month requirement (Criterion C) counts **prodromal and residual** periods, which may show only negative symptoms or attenuated Criterion A symptoms (odd beliefs, unusual perceptual experiences). Six months of prodrome plus 5 weeks of active-phase symptoms is more than 6 months: **schizophrenia**.",
+    "why": "The 6-month requirement (Criterion C) counts **prodromal and residual** periods, which may show only negative symptoms or two or more attenuated Criterion A symptoms (odd beliefs, unusual perceptual experiences). Six months of prodrome plus 5 weeks of active-phase symptoms is more than 6 months: **schizophrenia**.",
     "whyNot": [
       "Schizophreniform needs a total duration under 6 months, including the prodrome. His illness is already longer.",
       "Correct.",
@@ -46,7 +46,7 @@ SP.add("ch02", "vignettes", [
   {
     "id": "v2-02",
     "tag": "Schizophreniform",
-    "stem": "A 19-year-old who had been a popular, high-achieving student becomes acutely suspicious and confused over 10 days, hearing voices and appearing bewildered. Her affect is anxious and reactive, not flat. She has now been ill for 7 weeks and is improving on treatment, but has not yet returned to baseline. No mood episode, substance or medical cause.",
+    "stem": "A 19-year-old who had been a popular, high-achieving student becomes acutely convinced she is being watched and followed, and confused, over 10 days, hearing voices and appearing bewildered. Her affect is anxious and reactive, not flat. She has now been ill for 7 weeks and is improving on treatment, but has not yet returned to baseline. No mood episode, substance or medical cause.",
     "q": "What is the most appropriate diagnosis now?",
     "choices": [
       "Schizophrenia",
@@ -100,10 +100,10 @@ SP.add("ch02", "vignettes", [
     "why": "Delusions and hallucinations lasting at least 1 day but less than 1 month, with full recovery, after events that would be markedly stressful to almost anyone in the person’s culture: **brief psychotic disorder with marked stressor(s)**, also called brief reactive psychosis.",
     "whyNot": [
       "Correct.",
-      "Acute stress disorder involves intrusions, dissociation, avoidance and arousal, not delusions and hallucinations.",
+      "Acute stress disorder involves intrusions, dissociation, avoidance and arousal, not delusions and hallucinations (Ch 7).",
       "Schizophreniform needs at least 1 month.",
       "A catastrophe of this size is a marked stressor.",
-      "PTSD needs symptoms for more than 1 month, and DSM-5-TR has no psychotic-features specifier for it."
+      "PTSD needs symptoms for more than 1 month, and DSM-5-TR has no psychotic-features specifier for it (Ch 7)."
     ],
     "then": {
       "q": "What is the ICD-10-CM code?",
@@ -182,7 +182,7 @@ SP.add("ch02", "vignettes", [
     "why": "Contamination obsessions with washing compulsions are **OCD**, even when held with full conviction. The insight specifier **with absent insight/delusional beliefs** captures this; delusional disorder is excluded when OCD better explains the beliefs.",
     "whyNot": [
       "Criterion E of delusional disorder excludes beliefs better explained by OCD or body dysmorphic disorder.",
-      "Illness anxiety disorder does not involve compulsions of this kind or delusional conviction.",
+      "In illness anxiety disorder the preoccupation is with having a disease; intrusive fears of catching one, with washing compulsions, point to OCD (Ch 9, p. 359).",
       "Correct.",
       "There are no other psychotic symptoms.",
       "A specific disorder explains the picture."
@@ -305,7 +305,7 @@ SP.add("ch02", "vignettes", [
       "Prednisone-induced psychotic disorder"
     ],
     "answer": 4,
-    "why": "Psychosis beginning days after starting a medication known to cause it, with no evidence of CNS lupus, is **medication-induced**. Corticosteroids are coded as an **other (or unknown) substance**: F19.959 without a use disorder.",
+    "why": "Psychosis beginning days after starting a medication known to cause it, with no evidence of CNS lupus, is **medication-induced**. Corticosteroids are coded as an **other (or unknown) substance**: F19.959 prednisone-induced psychotic disorder, with onset after medication use (no use disorder).",
     "whyNot": [
       "Workup shows no CNS involvement, and the timing follows the medication. When both may contribute, clinical judgment decides.",
       "Schizophreniform needs at least 1 month and no substance explanation.",
@@ -327,7 +327,7 @@ SP.add("ch02", "vignettes", [
       "Epilepsy-related psychosis is diagnosed as schizophrenia when hallucinations are prominent"
     ],
     "answer": 2,
-    "why": "Psychosis after a cluster of seizures, typically following a **lucid interval**, is **postictal psychosis**, the most common epilepsy-related psychosis. It is diagnosed as **psychotic disorder due to another medical condition** (F06.0 if hallucinations predominate, F06.2 if delusions predominate).",
+    "why": "Psychosis after a cluster of seizures is **postictal psychosis**, the most common epilepsy-related psychosis (p. 133). It is diagnosed as **psychotic disorder due to another medical condition** (F06.0 if hallucinations predominate, F06.2 if delusions predominate).",
     "whyNot": [
       "Brief psychotic disorder is excluded when a medical condition explains the psychosis.",
       "Delirium requires a disturbance of attention and awareness, which is absent here.",
@@ -345,11 +345,11 @@ SP.add("ch02", "vignettes", [
       "Brief psychotic disorder",
       "Delirium",
       "Psychotic disorder due to another medical condition",
-      "Major neurocognitive disorder with psychotic features",
+      "Major neurocognitive disorder, with behavioral disturbance",
       "Late-onset schizophrenia"
     ],
     "answer": 1,
-    "why": "An acute, **fluctuating disturbance of attention and awareness** after surgery is **delirium**. Psychotic symptoms that occur only during delirium are not diagnosed separately.",
+    "why": "An acute, **fluctuating disturbance of attention and awareness** after surgery is **delirium** (Ch 17). Psychotic symptoms that occur only during delirium are not diagnosed separately.",
     "whyNot": [
       "Brief psychotic disorder occurs in a clear sensorium.",
       "Correct.",
@@ -361,7 +361,7 @@ SP.add("ch02", "vignettes", [
   {
     "id": "v2-12",
     "tag": "Catatonia due to medical condition",
-    "stem": "A 55-year-old man with cirrhosis is brought in mute, holding rigid postures, resisting all attempts to move him and staring. He is awake and follows the examiner with his eyes, with no fluctuation in alertness. His ammonia is markedly elevated, and the same picture cleared with lactulose at a previous admission. He has no psychiatric history.",
+    "stem": "A 55-year-old man with cirrhosis is brought in mute, holding rigid postures, resisting all attempts to move him and staring. He is awake and follows the examiner with his eyes, with no fluctuation in alertness. He takes no antipsychotic or antiemetic, and vital signs are normal. His ammonia is markedly elevated, and the same picture cleared with lactulose at a previous admission. He has no psychiatric history.",
     "q": "What is the best diagnosis?",
     "choices": [
       "Catatonia associated with schizophrenia",
@@ -371,7 +371,7 @@ SP.add("ch02", "vignettes", [
       "Major depressive disorder, with catatonia"
     ],
     "answer": 3,
-    "why": "Three or more catatonic features (mutism, posturing, negativism, staring/stupor) with evidence that they are the **direct pathophysiological consequence of a medical condition**: catatonic disorder due to another medical condition.",
+    "why": "Three or more catatonic features (mutism, posturing, negativism) with evidence that they are the **direct pathophysiological consequence of a medical condition**: catatonic disorder due to another medical condition.",
     "whyNot": [
       "There is no evidence of schizophrenia.",
       "There is no exposure to a dopamine blocker, fever or autonomic instability.",
@@ -382,14 +382,14 @@ SP.add("ch02", "vignettes", [
     "then": {
       "q": "How is it recorded?",
       "choices": [
-        "F06.1 catatonic disorder due to hepatic encephalopathy; K72.90 hepatic encephalopathy",
-        "K72.90 hepatic encephalopathy; F06.1 catatonic disorder due to hepatic encephalopathy",
+        "F06.1 catatonic disorder due to hepatic encephalopathy; K76.82 hepatic encephalopathy",
+        "K76.82 hepatic encephalopathy; F06.1 catatonic disorder due to hepatic encephalopathy",
         "R29.818; F06.1 unspecified catatonia",
         "F06.1 catatonia associated with another mental disorder",
-        "K72.90 hepatic encephalopathy only"
+        "K76.82 hepatic encephalopathy only"
       ],
       "answer": 1,
-      "why": "The medical condition is coded and listed **immediately before** the catatonic disorder due to it, and its name goes into the disorder’s name.",
+      "why": "The medical condition is coded and listed **immediately before** the catatonic disorder due to it, and its name goes into the disorder’s name. Update: DSM-5-TR (2022) printed K72.90 for hepatic encephalopathy; the code has been K76.82 since October 2022 (APA code update).",
       "whyNot": [
         "The order is reversed.",
         "Correct.",
@@ -412,7 +412,7 @@ SP.add("ch02", "vignettes", [
       "Schizotypal personality disorder"
     ],
     "answer": 0,
-    "why": "Experiences shared and accepted within the person’s religious or cultural group, without distress, impairment or other psychotic features, are **not** symptoms of a psychotic disorder. Brief psychotic disorder explicitly excludes culturally sanctioned responses, and glossolalia alone is not disorganized speech.",
+    "why": "Experiences shared and accepted within the person’s religious or cultural group, without distress, impairment or other psychotic features, are **not** symptoms of a psychotic disorder. Brief psychotic disorder explicitly excludes culturally sanctioned responses, and glossolalia is not a sign of psychosis unless other clearly psychotic symptoms are present (p. 102).",
     "whyNot": [
       "Correct.",
       "A culturally sanctioned response is not counted as a symptom.",
@@ -428,7 +428,7 @@ SP.add("ch02", "vignettes", [
   {
     "id": "v2-14",
     "tag": "Secondary negative symptoms",
-    "stem": "A 27-year-old man with schizophrenia has been stable on haloperidol for a year. Two weeks after his dose was doubled for a relapse, his family reports he barely shows any facial expression, speaks less, moves slowly and stays in his room. On exam he has cogwheel rigidity and a shuffling gait.",
+    "stem": "A 27-year-old man with schizophrenia has been stable on haloperidol for a year. Two weeks after his dose was doubled for a relapse, his family reports he barely shows any facial expression, speaks less, moves slowly and stays in his room. He denies low mood. On exam he has cogwheel rigidity and a shuffling gait.",
     "q": "What best explains his new “negative” symptoms?",
     "choices": [
       "Progression of primary negative symptoms",
@@ -438,7 +438,7 @@ SP.add("ch02", "vignettes", [
       "Medication-induced parkinsonism"
     ],
     "answer": 4,
-    "why": "Reduced expression and movement that begin soon after a **dose increase**, with rigidity and shuffling gait, are **secondary** negative symptoms from **medication-induced parkinsonism**. Always rule out secondary causes before attributing negative symptoms to the illness.",
+    "why": "Reduced expression and movement that begin soon after a **dose increase**, with rigidity and shuffling gait, are **secondary** negative symptoms from **medication-induced parkinsonism**. Negative symptoms that begin after psychosis onset may reflect secondary causes (p. 117), such as medication effects. Medication-induced parkinsonism is in the Medication-Induced Movement Disorders chapter (p. 807).",
     "whyNot": [
       "Primary negative symptoms do not come with new rigidity and gait change after a dose increase.",
       "Depression can mimic negative symptoms, but there is no depressed mood here, and the parkinsonian signs point elsewhere.",
@@ -482,11 +482,11 @@ SP.add("ch02", "vignettes", [
       "Body dysmorphic disorder"
     ],
     "answer": 1,
-    "why": "Since DSM-5, a single bizarre delusion no longer means schizophrenia, and delusional disorder **can** have bizarre content: add the specifier **with bizarre content**. The theme concerns bodily organs, so the type is somatic.",
+    "why": "Since DSM-5 (edition history, outside the DSM-5-TR text), a single bizarre delusion no longer means schizophrenia, and delusional disorder **can** have bizarre content: add the specifier **with bizarre content**. The theme concerns bodily organs, so the type is somatic.",
     "whyNot": [
       "Schizophrenia needs two Criterion A symptoms; one delusion is not enough, bizarre or not.",
       "Correct.",
-      "DSM-IV excluded bizarre delusions; DSM-5 and DSM-5-TR do not.",
+      "DSM-IV excluded bizarre delusions; DSM-5 and DSM-5-TR do not (edition history, outside the DSM-5-TR text).",
       "Schizophreniform also needs two Criterion A symptoms.",
       "Body dysmorphic disorder is a preoccupation with perceived flaws in appearance."
     ]
@@ -526,11 +526,11 @@ SP.add("ch02", "vignettes", [
       "Other specified psychotic disorder"
     ],
     "answer": 0,
-    "why": "When schizotypal personality disorder criteria were met **before** the onset of schizophrenia, it is recorded with the word **“(premorbid)”** after it.",
+    "why": "When schizotypal personality disorder criteria were met **before** the onset of schizophrenia, it is recorded with the word **“(premorbid)”** after it (Ch 18, p. 745).",
     "whyNot": [
       "Correct.",
       "The manual allows it to be recorded, marked premorbid.",
-      "Attenuated psychosis syndrome is a condition for further study, and his pattern was long-standing and trait-like.",
+      "Attenuated psychosis syndrome is a condition for further study (Section III), and his pattern was long-standing and trait-like.",
       "Schizoid personality lacks the cognitive-perceptual distortions and eccentricity.",
       "Not applicable to a long-standing personality pattern."
     ]
@@ -538,7 +538,7 @@ SP.add("ch02", "vignettes", [
   {
     "id": "v2-19",
     "tag": "Substance vs independent",
-    "stem": "A 26-year-old man had persecutory delusions and auditory hallucinations during a 2-week methamphetamine binge. He has now been abstinent in a supervised setting for 7 weeks, but the voices and delusions continue unchanged, and his family says he had been withdrawn and suspicious for a year before he started using.",
+    "stem": "A 26-year-old man had persecutory delusions and auditory hallucinations during a 2-week methamphetamine binge. He has now been abstinent in a supervised setting for 7 weeks, but the voices and delusions continue unchanged, and his family says that for a year before he started using he had been hearing a voice and believed neighbors were spying on him.",
     "q": "What is the most appropriate interpretation?",
     "choices": [
       "Methamphetamine-induced psychotic disorder, which can last many months",
@@ -552,7 +552,7 @@ SP.add("ch02", "vignettes", [
     "whyNot": [
       "Although stimulant psychosis can be prolonged, persistence beyond about a month plus prior symptoms points to an independent disorder.",
       "Nothing suggests feigning.",
-      "Stimulant withdrawal brings dysphoria, fatigue and hypersomnia, not persistent psychosis.",
+      "Stimulant withdrawal (Ch 16) brings dysphoria, fatigue and sleep change, not persistent psychosis.",
       "HPPD involves recurring perceptual disturbances after hallucinogens, with intact reality testing.",
       "Correct."
     ]
@@ -570,9 +570,9 @@ SP.add("ch02", "vignettes", [
       "Other specified psychotic disorder"
     ],
     "answer": 2,
-    "why": "Re-experiencing perceptual disturbances (“flashbacks”) after stopping a hallucinogen, with **intact reality testing**, is **hallucinogen persisting perception disorder**, not a psychotic disorder.",
+    "why": "Re-experiencing perceptual disturbances (“flashbacks”) after stopping a hallucinogen, with **intact reality testing**, is **hallucinogen persisting perception disorder** (Ch 16, p. 598), not a psychotic disorder.",
     "whyNot": [
-      "Psychotic disorders require the experiences to be taken as real; she has insight.",
+      "A hallucinogen-induced psychotic disorder is not diagnosed when the person recognizes the perceptions as drug effects (p. 128); she has insight.",
       "There are no delusions or other Criterion A symptoms.",
       "Correct.",
       "Nothing suggests a medical cause, though migraine and seizures belong in the differential.",
@@ -614,11 +614,11 @@ SP.add("ch02", "vignettes", [
       "Delusional disorder"
     ],
     "answer": 3,
-    "why": "Psychosis lasting at least 1 day but less than 1 month with full recovery, beginning **during pregnancy or within 4 weeks postpartum**, without a mood episode: **brief psychotic disorder, with peripartum onset**. Postpartum psychosis is often bipolar, so follow-up matters.",
+    "why": "Psychosis lasting at least 1 day but less than 1 month with full recovery, beginning **during pregnancy or within 4 weeks postpartum**, without a mood episode: **brief psychotic disorder, with peripartum onset**. “Postpartum psychosis” is strongly associated with bipolar I disorder (Ch 3, p. 148), so follow-up matters.",
     "whyNot": [
       "Attention and awareness are intact.",
       "There is no major depressive episode.",
-      "There is no manic episode, though bipolar disorder is the leading concern in postpartum psychosis.",
+      "There is no manic episode, though postpartum psychosis is strongly associated with bipolar I disorder (Ch 3, p. 148).",
       "Correct.",
       "Delusional disorder needs at least 1 month and does not resolve in 3 weeks."
     ]
@@ -626,7 +626,7 @@ SP.add("ch02", "vignettes", [
   {
     "id": "v2-23",
     "tag": "Delusional disorder vs schizophrenia",
-    "stem": "A 52-year-old man has believed for 2 years that his former employer is having him followed. He files police complaints and has changed his locks, but works as an engineer and is pleasant with his family. He has never had hallucinations, disorganized speech or negative symptoms. A brief depressive episode last year lasted 3 weeks.",
+    "stem": "A 52-year-old man has believed for 2 years that his former employer is having him followed. He files police complaints and has changed his locks, but works as an engineer and is pleasant with his family. He has never had hallucinations, disorganized speech or negative symptoms. A major depressive episode last year lasted 3 weeks.",
     "q": "Which feature is consistent with delusional disorder here?",
     "choices": [
       "A brief mood episode relative to the duration of the delusional periods",
@@ -648,7 +648,7 @@ SP.add("ch02", "vignettes", [
   {
     "id": "v2-24",
     "tag": "Clozapine and suicide",
-    "stem": "A 25-year-old woman with schizoaffective disorder, depressive type, has had two serious suicide attempts in the past year despite adequate trials of risperidone and aripiprazole, both taken reliably.",
+    "stem": "A 25-year-old woman with schizoaffective disorder, depressive type, has had two suicide attempts in the past year despite adequate trials of risperidone and aripiprazole, both taken reliably.",
     "q": "Which medication is FDA-approved to reduce the risk of recurrent suicidal behavior in schizophrenia or schizoaffective disorder?",
     "choices": [
       "Xanomeline-trospium",
@@ -670,17 +670,17 @@ SP.add("ch02", "vignettes", [
   {
     "id": "v2-25",
     "tag": "Hallucinations without psychosis",
-    "stem": "A 71-year-old woman with advanced macular degeneration describes seeing vivid, silent images of small people and flowers in her visual field. She knows they are not real, is not frightened and has no other psychiatric symptoms. Cognition is normal.",
+    "stem": "A 71-year-old woman with advanced macular degeneration describes seeing vivid, silent images of small people and flowers in her visual field. She knows they are not real, is not frightened and has no other psychiatric symptoms. Cognition is normal, her neurological exam is normal and her alertness does not fluctuate.",
     "q": "What is the most appropriate interpretation?",
     "choices": [
       "Late-onset schizophrenia",
       "Delirium",
-      "Charles Bonnet syndrome: visual hallucinations from vision loss, with insight",
+      "Charles Bonnet syndrome",
       "Psychotic disorder due to another medical condition",
       "Major neurocognitive disorder with Lewy bodies"
     ],
     "answer": 2,
-    "why": "Vivid visual hallucinations in someone with significant vision loss, **with intact insight** and no other symptoms, fit **Charles Bonnet syndrome**. Insight and the absence of delusions argue against a psychotic disorder; visual hallucinations in late life should prompt a medical and neurological review.",
+    "why": "Vivid visual hallucinations in someone with significant vision loss, **with intact insight** and no other symptoms, fit **Charles Bonnet syndrome** (outside the DSM). Insight and the absence of delusions argue against a psychotic disorder; visual hallucinations in late life should prompt a medical and neurological review.",
     "whyNot": [
       "There are no delusions, and insight is intact.",
       "Attention and awareness are normal.",

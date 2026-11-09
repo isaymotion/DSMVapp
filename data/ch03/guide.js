@@ -2,7 +2,7 @@
    Written in the app’s own words from the manual, with page references. Criteria are paraphrased: confirm exact
    wording, specifiers and codes against the manual. */
 SP.add("ch03", "guide", {
-  intro: "Bipolar and related disorders sit **between** the psychotic disorders and the depressive disorders, because they bridge the two in symptoms, family history and genetics. Everything in the chapter is built from three **mood episodes**: the **manic episode** (≥1 week, marked impairment, hospitalization or psychosis), the **hypomanic episode** (≥4 days, a clear change others can see, but no marked impairment) and the **major depressive episode** (≥2 weeks, five of nine symptoms). **Bipolar I** needs one lifetime manic episode, nothing more. **Bipolar II** needs at least one hypomanic and one major depressive episode and **never** a manic episode. **Cyclothymic disorder** is two years of subthreshold highs and lows that never reach any full episode. The rest of the chapter covers manic syndromes caused by **substances, medications and medical conditions**, the **other specified** presentations (short hypomanias, too-few-symptom hypomanias), and the long list of **specifiers** that describe the current episode and the course. The chapter’s [[helper:bipolar|diagnostic helper]] and the [[helper:episode|episode helper]] walk you through the reasoning.",
+  intro: "Bipolar and related disorders sit **between** the psychotic disorders and the depressive disorders, because they bridge the two in symptoms, family history and genetics. Everything in the chapter is built from three **mood episodes**: the **manic episode** (≥1 week, marked impairment, hospitalization or psychosis), the **hypomanic episode** (≥4 days, a clear change others can see, but no marked impairment) and the **major depressive episode** (≥2 weeks, five of nine symptoms). **Bipolar I** needs one lifetime manic episode that is not part of schizoaffective disorder or superimposed on a psychotic disorder; depression is not required. **Bipolar II** needs at least one hypomanic and one major depressive episode and **never** a manic episode. **Cyclothymic disorder** is two years of subthreshold highs and lows that never reach any full episode. The rest of the chapter covers manic syndromes caused by **substances, medications and medical conditions**, the **other specified** presentations (short hypomanias, too-few-symptom hypomanias), and the long list of **specifiers** that describe the current episode and the course. The chapter’s [[helper:bipolar|diagnostic helper]] and the [[helper:episode|episode helper]] walk you through the reasoning.",
   objectives: [
     "State the full criteria for a **manic**, **hypomanic** and **major depressive episode**, including durations, symptom counts (three, or **four if mood is only irritable**) and the impairment rules that separate mania from hypomania.",
     "Apply the **antidepressant rule**: a full manic or hypomanic syndrome that **persists beyond the physiological effect** of a treatment counts; one or two symptoms such as irritability or edginess do not.",
@@ -32,14 +32,14 @@ SP.add("ch03", "guide", {
             { type: "table", caption: "Diagnoses in this chapter (codes as listed in DSM-5-TR)", head: ["Diagnosis", "Code", "Core idea", "Page"], rows: [
               ["[[dx:bipolar-i|Bipolar I disorder]]", "F31.x (by episode, severity, remission)", "At least one lifetime manic episode", "139–150"],
               ["[[dx:bipolar-ii|Bipolar II disorder]]", "F31.81", "≥1 hypomanic + ≥1 major depressive episode; never mania", "150–159"],
-              ["[[dx:cyclothymic|Cyclothymic disorder]]", "F34.0", "≥2 years (1 in youth) of subthreshold highs and lows", "159–161"],
+              ["[[dx:cyclothymic|Cyclothymic disorder]]", "F34.0", "≥2 years (1 in youth) of subthreshold highs and lows", "159–162"],
               ["[[dx:substance-induced-bipolar|Substance/medication-induced bipolar and related disorder]]", "By substance (e.g., F15.94)", "Elevated or irritable mood and energy caused by a substance or medication", "162–165"],
               ["[[dx:bipolar-due-to-amc|Bipolar and related disorder due to another medical condition]]", "F06.33 / F06.34", "Manic picture caused directly by a medical condition", "166–168"],
               ["[[dx:other-specified-bipolar|Other specified bipolar and related disorder]]", "F31.89", "Subthreshold bipolar presentation, reason stated", "168–169"],
               ["[[dx:unspecified-bipolar|Unspecified bipolar and related disorder]]", "F31.9", "Reason not stated or not enough information", "169"],
               ["[[dx:unspecified-mood|Unspecified mood disorder]]", "F39", "Mood disorder where bipolar vs depressive cannot yet be chosen", "169"]
             ] },
-            { type: "callout", kind: "key", title: "Four questions, in this order", text: "**1. Cause?** (substance, medication, medical condition, delirium). **2. Has there ever been a manic episode?** If yes, it is bipolar I, whatever else happened. **3. If not, a full hypomanic episode plus a major depressive episode?** Then bipolar II. **4. If neither, two years of subthreshold swings?** Then cyclothymic disorder; anything else goes to other specified or unspecified. The [[helper:bipolar|bipolar helper]] asks exactly these." }
+            { type: "callout", kind: "key", title: "Four questions, in this order", text: "**1. Cause?** (substance, medication, medical condition, delirium). **2. Has there ever been a manic episode?** If yes, it is bipolar I, whatever else happened, unless the mania is part of schizoaffective disorder or superimposed on a psychotic disorder (then other specified, example 5). **3. If not, a full hypomanic episode plus a major depressive episode?** Then bipolar II. **4. If neither, two years of subthreshold swings?** Then cyclothymic disorder; anything else goes to other specified or unspecified. The [[helper:bipolar|bipolar helper]] asks exactly these." }
           ]
         },
         {
@@ -48,7 +48,7 @@ SP.add("ch03", "guide", {
           pages: "140, 143–145",
           blocks: [
             { type: "criteria", title: "Manic episode in brief", pages: "140", items: [
-              ["A", "A distinct period of abnormally and persistently **elevated, expansive or irritable mood** **and** abnormally and persistently **increased activity or energy**, lasting **at least 1 week**, most of the day, nearly every day (**any duration if hospitalization is needed**)."],
+              ["A", "A clearly bounded period in which mood is abnormally and persistently **elevated, expansive or irritable** **and** activity or energy is abnormally and persistently **increased**, lasting **at least 1 week**, most of the day, nearly every day (**any duration if hospitalization is needed**)."],
               ["B", "During that period, **three or more** of the following (**four if the mood is only irritable**), to a significant degree and as a clear change from usual behavior:", [
                 "**Inflated self-esteem** or grandiosity",
                 "**Decreased need for sleep** (e.g., rested after 3 hours)",
@@ -58,7 +58,7 @@ SP.add("ch03", "guide", {
                 "Increased **goal-directed activity** (social, work or school, sexual) or **psychomotor agitation**",
                 "Excessive involvement in **risky activities** with painful consequences (buying sprees, sexual indiscretions, foolish investments)"
               ]],
-              ["C", "Severe enough to cause **marked impairment** in social or occupational functioning, **or** to need **hospitalization** to prevent harm, **or** there are **psychotic features**."],
+              ["C", "**Marked impairment** in social or occupational life, **or** severity that needs **hospitalization** to prevent harm, **or** there are **psychotic features**."],
               ["D", "Not due to a **substance** (drug of abuse, medication, other treatment) or another **medical condition**.", null, "A full manic episode that begins during antidepressant treatment (medication or ECT) but **persists at a fully syndromal level beyond the treatment’s physiological effect** counts as a manic episode, and therefore as bipolar I."]
             ], note: "Criteria A–D define a manic episode. One lifetime manic episode is enough for bipolar I disorder." },
             { type: "callout", kind: "mnemonic", title: "DIGFAST for Criterion B", text: "**D**istractibility · **I**ndiscretion (risky activities) · **G**randiosity · **F**light of ideas or racing thoughts · **A**ctivity increase or agitation · **S**leep need decreased · **T**alkativeness. Three needed (four if only irritable). This is a common teaching mnemonic, not part of the manual." },
@@ -68,13 +68,13 @@ SP.add("ch03", "guide", {
               ["Decreased need for sleep (B2)", "Distinct from **insomnia**: the person does not want or need sleep and feels rested. May go days without sleep without fatigue. Often **heralds** a manic episode."],
               ["Speech (B3)", "Rapid, pressured, loud, hard to interrupt; jokes, puns, theatricality, singing. If irritable: complaints, hostile comments, **angry tirades**."],
               ["Thoughts (B4)", "Racing faster than speech can express; **flight of ideas** with abrupt topic shifts; in severe cases disorganized or incoherent speech."],
-              ["Distractibility (B5)", "Cannot screen out trivial stimuli (the interviewer’s clothes, background noise), so cannot hold a rational conversation."],
+              ["Distractibility (B5)", "Cannot screen out trivial stimuli (the interviewer’s clothes, background noise), so often cannot hold a rational conversation."],
               ["Activity (B6)", "Excessive planning and many simultaneous projects (sexual, occupational, political, religious), intrusive **sociability**, pacing, many letters, emails and texts."],
               ["Risky behavior (B7)", "Spending sprees, giving possessions away, reckless driving, foolish investments, sexual indiscretions that are **unusual for the person**."],
               ["Impairment (C)", "Financial losses, job loss, school failure, divorce, or hospitalization for **exhaustion, hyperthermia** or self-injury. **Psychotic features automatically satisfy C.**"]
             ] },
-            { type: "callout", kind: "caution", title: "Mania in children", text: "Happiness, silliness and “goofiness” are normal in many settings. They meet Criterion A only if they are **recurrent, inappropriate to the context, beyond developmental expectations**, distinctly increased from the **child’s own baseline**, and accompanied by **persistently increased energy** that people who know the child find clearly unusual. Believing one is the best at a sport is normal; grandiosity counts only against clear contrary evidence, with dangerous feats, and as a **change** from the child’s usual behavior. Developmentally inappropriate sexual preoccupation counts only when not explained by **abuse or exposure** to sexual material." },
-            { type: "p", text: "Associated features (pp. 145–146): during mania people usually **do not see themselves as ill** and resist treatment. Dress and makeup may become more flamboyant or sexually suggestive; some report sharper senses; **gambling** and antisocial behavior can occur. Mood can turn quickly to **anger or depression**, and some become threatening, assaultive or suicidal, especially when delusional. Involuntary hospitalization, legal trouble and financial ruin come from poor judgment, lost insight and hyperactivity." }
+            { type: "callout", kind: "caution", title: "Mania in children", text: "Happiness, silliness and “goofiness” are normal in many settings. They meet Criterion A only if they are **recurrent, inappropriate to the context, beyond developmental expectations**, distinctly increased from the **child’s own baseline**, and accompanied by **persistently increased energy** that people who know the child find clearly unusual. Believing one is the best at a sport is normal; grandiosity counts when the belief holds despite clear contrary evidence or the child attempts clearly dangerous feats, and above all when it is a **change** from the child’s usual behavior. Developmentally inappropriate sexual preoccupation counts only when not explained by **abuse or exposure** to sexual material." },
+            { type: "p", text: "Associated features (pp. 145–146): during mania people often **do not see themselves as ill** and resist treatment. Dress and makeup may become more flamboyant or sexually suggestive; some report sharper senses; **gambling** and antisocial behavior can occur. Mood can turn quickly to **anger or depression**, and some become threatening, assaultive or suicidal, especially when delusional. Involuntary hospitalization, legal trouble and financial ruin often come from poor judgment, lost insight and hyperactivity." }
           ]
         },
         {
@@ -83,7 +83,7 @@ SP.add("ch03", "guide", {
           pages: "140–141, 153–154",
           blocks: [
             { type: "criteria", title: "Hypomanic episode in brief", pages: "140–141", items: [
-              ["A", "A distinct period of abnormally and persistently elevated, expansive or irritable mood **and** increased activity or energy, lasting **at least 4 consecutive days**, most of the day, nearly every day."],
+              ["A", "A clearly bounded period of abnormally, persistently elevated, expansive or irritable mood **and** raised activity or energy, lasting **at least 4 consecutive days**, most of the day, nearly every day."],
               ["B", "**Three or more** of the same seven symptoms as mania (**four if mood is only irritable**), persisting and clearly changed from usual."],
               ["C", "An **unequivocal change in functioning**, uncharacteristic of the person when well."],
               ["D", "The change in mood and functioning is **observable by others**."],
@@ -139,12 +139,12 @@ SP.add("ch03", "guide", {
           title: "Treatment-emergent mania and hypomania",
           pages: "140–141, 145, 164–165",
           blocks: [
-            { type: "p", text: "Manic symptoms caused directly by a **drug of abuse** (cocaine, amphetamine), **medication side effects** (steroids, L-dopa, antidepressants, stimulants) or another **medical condition** do not count toward bipolar I. The important exception is a **treatment-emergent** episode." },
+            { type: "p", text: "Manic symptoms caused directly by a **drug of abuse** (cocaine, amphetamine), **medication side effects** (steroids, L-dopa, antidepressants, stimulants) or by another **medical condition** are not counted toward bipolar I. The important exception is a **treatment-emergent** episode." },
             { type: "compare", title: "The antidepressant rule", items: [
               { title: "Counts as a true episode", color: "case", points: ["A **fully syndromal** manic or hypomanic episode that begins during treatment (antidepressant medication, **ECT**, **light therapy**)…", "…and **persists beyond the physiological effect** of the treatment (after the drug has cleared, or after ECT effects should have dissipated).", "Diagnose **bipolar I** (mania) or **bipolar II** (hypomania, if a major depressive episode preceded it), not a substance-induced disorder."] },
               { title: "Does not count", color: "clin", points: ["**One or two symptoms**, especially **irritability, edginess or agitation** after starting an antidepressant.", "These are not enough for an episode and do not by themselves show a **bipolar diathesis**.", "Mania criterion symptoms are specific: simple agitation is not the same as excessive purposeful activity."] }
             ] },
-            { type: "callout", kind: "exam", text: "Treatment-emergent hypomania that persists counts toward bipolar II **only if preceded by a major depressive episode** (p. 165), which is almost always the case, since the treatment was for depression. Treatment-emergent hypomania must last **at least 4 days** at a fully syndromal level beyond the drug’s effects (p. 154)." },
+            { type: "callout", kind: "exam", text: "Treatment-emergent hypomania that persists counts toward bipolar II **only if preceded by a major depressive episode** (p. 165), which is almost always the case, since the treatment was for depression. Treatment-emergent hypomania must last **at least 4 days** at a fully syndromal level beyond the drug’s effects (p. 154). (app guidance)" },
             { type: "p", text: "Even when a manic syndrome is truly substance-induced, it **may suggest an underlying bipolar diathesis** in someone never before diagnosed (p. 164)." }
           ]
         }
@@ -160,7 +160,7 @@ SP.add("ch03", "guide", {
           blocks: [
             { type: "criteria", title: "Bipolar I disorder in brief", code: "F31.x", pages: "142", items: [
               ["A", "Criteria met for **at least one manic episode**."],
-              ["B", "At least one manic episode is **not better explained by schizoaffective disorder** and is **not superimposed on** schizophrenia, schizophreniform disorder, delusional disorder, or other specified/unspecified psychotic disorder."]
+              ["B", "At least one manic episode is **not accounted for by schizoaffective disorder** and does **not sit on top of** schizophrenia, schizophreniform disorder, delusional disorder, or other specified/unspecified psychotic disorder."]
             ], note: "Hypomanic and major depressive episodes often precede or follow the manic episode but are **not required**." },
             { type: "table", caption: "ICD-10-CM codes for bipolar I disorder (p. 142)", head: ["Status", "Current or most recent: manic", "Hypomanic", "Depressed", "Unspecified"], rows: [
               ["Mild", "F31.11", "—", "F31.31", "—"],
@@ -171,13 +171,13 @@ SP.add("ch03", "guide", {
               ["In full remission", "F31.74", "F31.72", "F31.76", "—"],
               ["Unspecified", "F31.9", "F31.9", "F31.9", "F31.9"]
             ], note: "**Current hypomanic** (not in remission): **F31.0**; severity and psychotic specifiers do not apply. **Episode unspecified**: **F31.9**. **Psychotic features** take the psychotic code **whatever the severity**. Severity and psychotic codes apply only if a full manic or depressive episode is **current**; remission codes only if no full episode is current." },
-            { type: "steps", title: "Recording order (p. 142)", items: [
+            { type: "steps", title: "Recording order (p. 143)", items: [
               ["Disorder and episode. ", "“Bipolar I disorder, current (or most recent, if in remission) episode manic / hypomanic / depressed.”"],
               ["Coded specifier. ", "Severity, psychotic features, or partial/full remission."],
               ["Uncoded specifiers. ", "Anxious distress, mixed features, rapid cycling, melancholic, atypical, mood-congruent or incongruent psychotic features, catatonia (**+F06.1**), peripartum onset, seasonal pattern."],
               ["Example. ", "F31.2 bipolar I disorder, current episode manic, with mood-congruent psychotic features, with anxious distress."]
             ] },
-            { type: "callout", kind: "exam", text: "“With rapid cycling” and “with seasonal pattern” describe the **pattern** of episodes over time; all the others describe the **current (or most recent) episode**." }
+            { type: "callout", kind: "exam", text: "“With rapid cycling” and “with seasonal pattern” describe the **pattern** of episodes over time; all the others describe the **current (or most recent) episode**. (app guidance)" }
           ]
         },
         {
@@ -188,8 +188,8 @@ SP.add("ch03", "guide", {
             { type: "p", text: "Bipolar I disorder is a course of **recurring** manic, depressive and hypomanic episodes, but **one manic episode is sufficient**. The diagnostic features describe the manic episode (see the manic episode section); hypomanic features are described with bipolar II and depressive features with major depressive disorder." },
             { type: "defs", title: "Associated features (pp. 145–146)", items: [
               ["Mixed features", "Depressive symptoms occur in about **35%** of manic episodes; mixed features predict a **poorer outcome** and **more suicide attempts**."],
-              ["Quality of life", "Significant decrements in quality of life and well-being."],
-              ["Trait-like features", "**Hyperthymic, depressive, cyclothymic, anxious and irritable temperaments**; sleep and circadian rhythm disturbances; **reward sensitivity**; **creativity**."],
+              ["Quality of life", "Quality of life and well-being are markedly reduced."],
+              ["Trait-like features", "Temperaments: **hyperthymic, depressive, cyclothymic, anxious, irritable**; disturbed sleep and circadian rhythms; **reward sensitivity**; **creativity**."],
               ["Family history", "A first-degree relative with bipolar disorder raises the risk about **10-fold**."]
             ] },
             { type: "case", title: "Clinical vignette: the start-up", text: "A 26-year-old software developer has slept 2–3 hours a night for 10 days, saying he feels “more rested than ever.” He has quit his job to found three companies at once, spent his savings on equipment and talks so fast his partner cannot get a word in. He is sure a tech billionaire is about to fund him personally. His family brings him to the emergency department after he drives at 180 km/h “to test the car.” No substances; thyroid and other tests are normal.", point: "Elevated mood and energy for over a week with grandiosity, decreased need for sleep, pressured speech, increased activity and risky behavior, plus a grandiose delusion: a **manic episode with psychotic features**. One manic episode is enough: **F31.2 bipolar I disorder, current episode manic, with mood-congruent psychotic features**." }
@@ -219,7 +219,7 @@ SP.add("ch03", "guide", {
               "Patterns tend to repeat: psychotic mania predicts psychotic features in later manias. **Depressive onset** predicts more depressive episodes and more suicidal behavior.",
               "**Mixed features** in mania predict a poorer prognosis, **poorer lithium response** and suicidal behavior."
             ] },
-            { type: "callout", kind: "exam", text: "One manic episode almost never stands alone: **>90% recur**. That is why a single lifetime manic episode is enough for a lifelong bipolar I diagnosis." }
+            { type: "callout", kind: "exam", text: "One manic episode almost never stands alone: **>90% recur**. That is why a single lifetime manic episode is enough for a lifelong bipolar I diagnosis. (app guidance)" }
           ]
         },
         {
@@ -228,13 +228,13 @@ SP.add("ch03", "guide", {
           pages: "147–148",
           blocks: [
             { type: "table", caption: "Risk and prognostic factors (p. 147)", head: ["Domain", "Findings"], rows: [
-              ["**Environmental**", "**Childhood adversity** (early emotional trauma, parental psychopathology, family conflict) raises risk, predisposes to **early onset**, and predicts a worse course with comorbidity, suicide and psychosis. Recent **negative life events** raise **depressive** relapse risk; **goal-attainment events** (marrying, finishing a degree) are linked to **manic** relapse. **Cannabis** and other substances worsen mania and are associated with first manic symptoms."],
+              ["**Environmental**", "**Childhood adversity** (early emotional trauma, parental psychopathology, family conflict) raises risk, predisposes to **early onset**, and predicts a worse course with comorbidity, suicide and psychosis. Recent **negative life events** raise **depressive** relapse risk; **goal-attainment events** (marrying, finishing a degree) are linked to **manic** relapse. **Cannabis** and other substances are associated with worse manic symptoms and with first manic symptoms."],
               ["**Marriage**", "Marrying may be less common, and the diagnosis is associated with being **previously** rather than currently married."],
               ["**Genetic**", "Heritability around **90%** in some twin studies. Population risk about **1%**; first-degree relative **5%–10%**. Monozygotic concordance only **40%–70%**, so genes do not explain everything. Non-Mendelian, many small-effect genes; mania- and depression-proneness may be **inherited separately**; shared genetic origin with **schizophrenia**."]
             ] },
             { type: "callout", kind: "culture", text: "Symptoms are broadly consistent across cultures, but flight of ideas and delusion types (grandiose, persecutory, sexual, religious, somatic) vary. Countries with **reward-oriented** cultural values have relatively **higher** prevalence. In the United States, onset is **earlier** than in Europe, with more family history. **African Americans with bipolar I** are at higher risk of being **misdiagnosed with schizophrenia**: mood symptoms are under-recognized, **cultural mistrust** is misread as **paranoia**, delays in care lead to more florid psychosis at presentation, and assessments are shorter." },
             { type: "defs", title: "Sex- and gender-related features", items: [
-              ["Women", "More **rapid cycling** and **mixed states**, more **depressive** symptoms, higher lifetime rates of **eating disorders**, and a higher lifetime risk of **alcohol use disorder** than men (and much higher than women in general)."],
+              ["Women", "May have more **rapid cycling** and **mixed states**; more **depressive** symptoms, higher lifetime rates of **eating disorders**, and a higher lifetime risk of **alcohol use disorder** than men (and much higher than women in general)."],
               ["Reproductive cycle", "**Premenstrual** worsening (linked to a worse course) and severe disturbance in **perimenopause**. **No** increased episode risk in **pregnancy** unless medication is stopped; strong evidence of increased risk of mania and depression **postpartum**."],
               ["Postpartum psychosis", "Typically resembles a **manic or mixed episode with psychotic symptoms** and is strongly associated with **bipolar I**. Use “with peripartum onset” for episodes starting in pregnancy or within **4 weeks** of delivery."]
             ] },
@@ -287,9 +287,9 @@ SP.add("ch03", "guide", {
           pages: "150–153",
           blocks: [
             { type: "criteria", title: "Bipolar II disorder in brief", code: "F31.81", pages: "150–152", items: [
-              ["A", "Criteria met for **at least one hypomanic episode** and **at least one major depressive episode**."],
-              ["B", "There has **never been a manic episode**."],
-              ["C", "At least one hypomanic and one major depressive episode are not better explained by schizoaffective disorder and not superimposed on a psychotic disorder."],
+              ["A", "Criteria met for **a hypomanic episode** and for **a major depressive episode** (one or more of each)."],
+              ["B", "**No manic episode**, ever."],
+              ["C", "At least one hypomanic and one major depressive episode are not accounted for by schizoaffective disorder and do not sit on top of a psychotic disorder."],
               ["D", "The **depression**, or the **unpredictability** of frequent alternation between depression and hypomania, causes clinically significant distress or impairment."]
             ], specifiers: [
               ["Current or most recent episode", "**Hypomanic** or **depressed**."],
@@ -297,7 +297,7 @@ SP.add("ch03", "guide", {
               ["If depressed", "Mild, moderate or severe (if full criteria currently met) or partial/full remission; with anxious distress, mixed features, rapid cycling, melancholic, atypical, mood-congruent or incongruent psychotic features, catatonia (**+F06.1**), peripartum onset, seasonal pattern."]
             ] },
             { type: "callout", kind: "key", title: "One code only", text: "Bipolar II has a **single code, F31.81**. Severity, psychotic features, course and other specifiers are **written out, not coded**: e.g., “F31.81 bipolar II disorder, current episode depressed, moderate severity, with mixed features.”" },
-            { type: "callout", kind: "exam", text: "Psychotic features can occur in bipolar II, but **only during major depressive episodes**. Psychosis during an elevated episode makes it **manic**, and the diagnosis becomes **bipolar I**." }
+            { type: "callout", kind: "exam", text: "Psychotic features can occur in bipolar II, but **only during major depressive episodes**. Psychosis during an elevated episode makes it **manic**, and the diagnosis becomes **bipolar I**. (app guidance)" }
           ]
         },
         {
@@ -309,7 +309,7 @@ SP.add("ch03", "guide", {
               "At least one depressive and one hypomanic episode must **not** be due to a substance or medical condition. Hypomania that begins on an antidepressant and **persists ≥4 days at a full level** beyond the drug’s effect **does count**.",
               "Psychotic symptoms never occur in hypomania and appear **less frequent** in bipolar II depressions than bipolar I depressions.",
               "Major depressive episodes are often **more frequent and longer** than in bipolar I.",
-              "People present **during depression** and rarely complain of hypomania; impairment comes from the depressions or the **unpredictable pattern** of mood and functioning. **Collateral history** is often essential."
+              "People present **during depression** and rarely complain of hypomania; impairment comes from the depressions or the **unpredictable pattern** of mood and functioning. **Collateral history** is often useful."
             ] },
             { type: "callout", kind: "key", title: "Not a “milder” bipolar I", text: "Despite shorter, less severe highs, bipolar II has **greater chronicity** and more **time spent depressed**, and those depressions can be severe and disabling." },
             { type: "list", title: "Clinical hints in the depressive episodes (p. 154)", items: [
@@ -323,7 +323,7 @@ SP.add("ch03", "guide", {
               ["12-month prevalence", "**0.8%** in the United States; **0.3%** internationally."],
               ["Combined bipolar spectrum", "DSM-IV bipolar I, II and NOS together: **1.8%** in community samples, **2.7%** in youth aged 12 and older."]
             ] },
-            { type: "case", title: "Clinical vignette: the productive week", text: "A 31-year-old teacher seeks help for her third episode of depression: 5 weeks of low mood, oversleeping, overeating, heavy limbs and thoughts that her family would be better off without her. Her husband adds that last spring she had about 6 days of sleeping 4 hours a night, talking constantly, redecorating the whole house and signing up for three courses, which was “not her”; she remembers it as “finally feeling myself.” She kept working throughout and was never hospitalized or psychotic.", point: "A hypomanic episode (≥4 days, clear change noticed by others, no marked impairment) plus major depressive episodes, never mania: **F31.81 bipolar II disorder, current episode depressed, with atypical features**. The husband’s history is what made the diagnosis." }
+            { type: "case", title: "Clinical vignette: the productive week", text: "A 31-year-old teacher seeks help for her third episode of depression: 5 weeks of low mood, oversleeping, overeating, heavy limbs, poor concentration and thoughts that her family would be better off without her, although her mood still lifts for a while when her sister visits. Her husband adds that last spring she had about 6 days of sleeping 4 hours a night, talking constantly, redecorating the whole house and signing up for three courses, which was “not her”; she remembers it as “finally feeling myself.” She kept working throughout and was never hospitalized or psychotic.", point: "A hypomanic episode (≥4 days, clear change noticed by others, no marked impairment) plus major depressive episodes, never mania: **F31.81 bipolar II disorder, current episode depressed, with atypical features** (mood reactivity plus hypersomnia, increased appetite and leaden paralysis). The husband’s history is what made the diagnosis." }
           ]
         },
         {
@@ -380,7 +380,7 @@ SP.add("ch03", "guide", {
               ["Substances", "Similar to bipolar I: **alcohol use disorder (42%)** and **cannabis use disorder (20%)**. Anxiety tracks **depressive** symptoms; substance use tracks **hypomanic** symptoms."],
               ["PTSD", "**Lower** rates than in bipolar I."],
               ["Eating disorders", "About **14%** have at least one, **binge-eating disorder** most often."],
-              ["Premenstrual", "PMS and **PMDD** are common, especially in bipolar II, and worsen mood lability."],
+              ["Premenstrual", "PMS and **PMDD** are common, especially in bipolar II; with them, mood symptoms and lability may be more severe."],
               ["Medical", "Cardiovascular disease, migraine, autoimmune disorders."]
             ] }
           ]
@@ -398,7 +398,7 @@ SP.add("ch03", "guide", {
             { type: "criteria", title: "Cyclothymic disorder in brief", code: "F34.0", pages: "159–160", items: [
               ["A", "For **at least 2 years** (**1 year in children and adolescents**), numerous periods of **hypomanic symptoms** that do not meet hypomanic episode criteria and numerous periods of **depressive symptoms** that do not meet major depressive episode criteria."],
               ["B", "During that time, symptoms present **at least half the time**, never absent for **more than 2 months** at a stretch."],
-              ["C", "Criteria for a **major depressive, manic or hypomanic episode have never been met**."],
+              ["C", "**No full manic, hypomanic or major depressive episode** has ever occurred."],
               ["D", "Not better explained by schizoaffective disorder or another psychotic disorder."],
               ["E", "Not due to a substance or another medical condition (e.g., **hyperthyroidism**)."],
               ["F", "Clinically significant **distress or impairment**."]
@@ -449,7 +449,7 @@ SP.add("ch03", "guide", {
               ["Amphetamine-type substance (or other stimulant)", "F15.14", "F15.24", "F15.94"],
               ["Cocaine", "F14.14", "F14.24", "F14.94"],
               ["Other (or unknown) substance", "F19.14", "F19.24", "F19.94"]
-            ], note: "Same logic as the psychotic disorders: 4th character **1** mild, **2** moderate or severe, **9** none; no separate use disorder code. **Cannabis and inhalants are not listed** for this disorder. Medications that fit no class (e.g., **dexamethasone**) use “other (or unknown)”." },
+            ], note: "Same logic as the substance-induced psychotic disorders (Ch 2): 4th character **1** mild, **2** moderate or severe, **9** none; no separate use disorder code. **Cannabis and inhalants are not listed** for this disorder. Medications that fit no class (e.g., **dexamethasone**) use “other (or unknown)”." },
             { type: "p", text: "Recording examples from the manual: **F14.24 severe cocaine use disorder with cocaine-induced bipolar and related disorder, with onset during intoxication**; **F15.94 amphetamine-induced bipolar and related disorder, with onset during intoxication**; **F19.94 dexamethasone-induced bipolar and related disorder**." },
             { type: "table", caption: "Typical agents and time course (pp. 164–165)", head: ["Agent", "What to expect"], rows: [
               ["**Stimulants**", "Mania or hypomania within **minutes to 1 hour** of use; very brief, resolving over **1–2 days**."],
@@ -457,7 +457,7 @@ SP.add("ch03", "guide", {
               ["**Corticosteroids** and some immunosuppressants", "Mania, mixed or depressed states after **several days**; **higher doses** are much more likely to cause bipolar symptoms."],
               ["New compounds", "Synthetic cathinones (“**bath salts**”) and others keep emerging."]
             ] },
-            { type: "callout", kind: "exam", text: "The key exception: mania or hypomania after an **antidepressant or ECT** that **persists beyond the treatment’s effect** is **true bipolar disorder**, not substance-induced. And one or two side effects (edginess, agitation) are never enough." },
+            { type: "callout", kind: "exam", text: "The key exception: mania or hypomania after an **antidepressant or ECT** that **persists beyond the treatment’s effect** is **true bipolar disorder**, not substance-induced. And one or two side effects (edginess, agitation) are never enough. (app guidance)" },
             { type: "list", title: "Differential diagnosis (p. 165)", items: [
               "**Intoxication or withdrawal**: euphoria, irritability and energy occur in stimulant intoxication or **cannabis withdrawal**; use the induced diagnosis only if mood symptoms **predominate** and need clinical attention.",
               "Other bipolar disorders, substance-induced **delirium**, and medication side effects.",
@@ -471,7 +471,7 @@ SP.add("ch03", "guide", {
           pages: "166–168",
           blocks: [
             { type: "criteria", title: "Bipolar and related disorder due to another medical condition in brief", code: "F06.33 / F06.34", pages: "166", items: [
-              ["A", "A **prominent and persistent** period of abnormally elevated, expansive or irritable mood **and** increased activity or energy, predominating the picture."],
+              ["A", "A **prominent, persistent** spell of abnormally elevated, expansive or irritable mood **and** raised activity or energy that dominates the picture."],
               ["B", "Evidence that it is the **direct pathophysiological consequence** of a medical condition."],
               ["C", "Not better explained by another mental disorder."],
               ["D", "Not exclusively during **delirium**."],
@@ -516,7 +516,7 @@ SP.add("ch03", "guide", {
               { title: "Unspecified bipolar (F31.9)", color: "hy", points: ["Bipolar-type symptoms that meet no full criteria, when the reason is **not stated** or information is **insufficient** (e.g., the emergency room)."] },
               { title: "Unspecified mood disorder (F39)", color: "drug", points: ["Mood symptoms meeting no full criteria, when it is **hard to choose** between unspecified bipolar and unspecified depressive disorder (e.g., **acute agitation**)."] }
             ] },
-            { type: "callout", kind: "exam", text: "Why does a hypomanic episode **without** any depression not count as bipolar II? Because bipolar II requires **both** a hypomanic and a major depressive episode. Hypomania alone is **other specified bipolar disorder (F31.89)**. Note too that the hypomanias in examples 1 and 2 must **not overlap** the depressions; if they did, it would be a major depressive episode **with mixed features**." },
+            { type: "callout", kind: "exam", text: "Why does a hypomanic episode **without** any depression not count as bipolar II? Because bipolar II requires **both** a hypomanic and a major depressive episode. Hypomania alone is **other specified bipolar disorder (F31.89)**. Note too that the hypomanias in examples 1 and 2 must **not overlap** the depressions; if they did, the picture may instead meet a major depressive episode **with mixed features** (three or more symptoms on most days). (app guidance)" },
             { type: "p", text: "Section III includes proposed criteria for a disorder with **short-duration hypomania** to encourage research (p. 139)." }
           ]
         }
@@ -532,7 +532,7 @@ SP.add("ch03", "guide", {
           blocks: [
             { type: "criteria", title: "With anxious distress", pages: "169–170", items: [
               ["≥2", "At least **two** of these on the **majority of days** of the current (or most recent) episode, or of symptomatic days in cyclothymic disorder:", ["Feeling **keyed up or tense**", "Feeling unusually **restless**", "Difficulty concentrating because of **worry**", "Fear that something **awful** may happen", "Feeling one might **lose control** of oneself"]]
-            ], specifiers: [["Mild", "Two symptoms"], ["Moderate", "Three symptoms"], ["Moderate-severe", "Four or five symptoms"], ["Severe", "Four or five symptoms **with motor agitation**"]], note: "High anxiety predicts **higher suicide risk**, longer illness and more treatment nonresponse." },
+            ], specifiers: [["Mild", "Two symptoms"], ["Moderate", "Three symptoms"], ["Moderate-severe", "Four or five symptoms"], ["Severe", "Four or five symptoms **with motor agitation**"]], note: "High anxiety is associated with **higher suicide risk**, longer illness and more treatment nonresponse." },
             { type: "compare", title: "With mixed features (pp. 170–171)", items: [
               { title: "Manic or hypomanic episode, with mixed features", color: "case", points: ["Full mania or hypomania **plus ≥3** depressive symptoms on most days:", "Prominent dysphoria or depressed mood; diminished interest or pleasure; **psychomotor retardation**; fatigue; worthlessness or guilt; thoughts of death or suicide."] },
               { title: "Depressive episode, with mixed features", color: "drug", points: ["Full major depressive episode **plus ≥3** manic/hypomanic symptoms on most days:", "Elevated mood; grandiosity; talkativeness; flight of ideas; increased energy or goal-directed activity; risky activities; **decreased need for sleep** (not insomnia)."] }
@@ -543,7 +543,7 @@ SP.add("ch03", "guide", {
               "Not attributable to a substance or treatment.",
               "Mixed features during a **major depressive episode** are a significant **risk factor for developing bipolar I or II**."
             ] },
-            { type: "callout", kind: "exam", text: "Notice which symptoms are **left out** of the mixed lists because they overlap both poles: insomnia, agitation, distractibility, irritability and poor concentration are **not** counted. Decreased need for sleep counts toward mixed depression; insomnia does not." }
+            { type: "callout", kind: "exam", text: "Notice which symptoms are **left out** of the mixed lists because they overlap both poles: insomnia, agitation, distractibility, irritability and poor concentration are **not** counted. Decreased need for sleep counts toward mixed depression; insomnia does not. (app guidance)" }
           ]
         },
         {
@@ -560,7 +560,7 @@ SP.add("ch03", "guide", {
             { type: "criteria", title: "With melancholic features", pages: "171–172", items: [
               ["A", "At the **most severe** point of the episode, **one** of: loss of pleasure in all or almost all activities; **lack of reactivity** to usually pleasurable things."],
               ["B", "**Three or more** of:", ["A **distinct quality** of depressed mood (profound despondency, despair, moroseness or “empty” mood)", "Depression regularly **worse in the morning**", "**Early-morning awakening** (≥2 hours before usual)", "Marked **psychomotor agitation or retardation**", "Significant **anorexia or weight loss**", "Excessive or inappropriate **guilt**"]]
-            ], note: "A near-complete absence of pleasure; mood brightens at most **20%–40%** of normal for minutes. More frequent in **inpatients**, more severe episodes and those with **psychotic features**; only a modest tendency to recur across episodes." },
+            ], note: "A near-complete absence of pleasure; mood does not brighten, or only partly (e.g., up to **20%–40%** of normal for minutes). More frequent in **inpatients**, more severe episodes and those with **psychotic features**; only a modest tendency to recur across episodes." },
             { type: "criteria", title: "With atypical features", pages: "172–173", items: [
               ["A", "**Mood reactivity**: mood brightens with actual or potential positive events."],
               ["B", "**Two or more** of:", ["Significant **weight gain** or increased appetite", "**Hypersomnia** (≥10 hours a day, or ≥2 hours more than when not depressed)", "**Leaden paralysis** (heavy limbs, usually ≥1 hour a day)", "Long-standing **interpersonal rejection sensitivity** (a trait, present even when not depressed) causing significant impairment"]],
@@ -591,7 +591,7 @@ SP.add("ch03", "guide", {
               ["Depression prevalence", "About **9%** of women have an MDE between conception and birth; just under **7%** between birth and 12 months postpartum."],
               ["Postpartum psychotic episodes", "In **1 in 500 to 1 in 1,000** deliveries, possibly more in **first-time mothers**. Risk is highest after a **prior postpartum psychotic episode** and raised with a history of depressive or bipolar (especially **bipolar I**) disorder or a family history of bipolar disorder."],
               ["Recurrence", "After one postpartum psychotic episode, recurrence with each later delivery is **30%–50%**."],
-              ["Infanticide", "Rare; most often with postpartum psychosis featuring **command hallucinations** to kill the infant or delusions that the infant is **possessed**."],
+              ["Infanticide", "Rare; most often with postpartum psychosis featuring **command hallucinations** telling the mother to kill the infant, or a delusion that the infant is **possessed**."],
               ["Not to confuse", "**Postpartum delirium** (fluctuating awareness or attention); **maternity (“baby”) blues** (sudden tearfulness without impairment, self-limited, better **within a week**, not a mental disorder); **thyroid** and other medical causes (then diagnose a disorder due to another medical condition)."]
             ] }
           ]
@@ -652,8 +652,8 @@ SP.add("ch03", "guide", {
               { label: "Rapid cycling window", dx: "bipolar-i", from: 0, to: 76, color: "mech", span: "≥4 episodes within 12 months" },
               { label: "Short cyclothymia (F31.89)", dx: "other-specified-bipolar", from: 46, to: 92, color: "guide", span: "<24 months (<12 in youth)" },
               { label: "Cyclothymic disorder", dx: "cyclothymic", from: 92, to: 100, color: "guide", open: true, span: "≥2 years (1 in youth)", note: "Never symptom-free >2 months" }
-            ], note: "Peripartum onset = during pregnancy or within 4 weeks of delivery. Substance-induced: persistence ≈1 month after stopping suggests an independent disorder." },
-            { type: "callout", kind: "key", title: "Eight traps", text: "1) **Irritable** mood needs **four** B symptoms. 2) **Hospitalization** makes any elevated episode manic, whatever its length. 3) **Psychosis** makes any elevated episode manic. 4) Bipolar I needs **no** depression. 5) Hypomania **without** depression is **F31.89**, not bipolar II. 6) Persistent **antidepressant-emergent** mania = bipolar I; one or two symptoms = nothing. 7) Bipolar II has **one code** and psychosis only in depression. 8) Rapid cycling and cyclothymia differ by **full episodes**." },
+            ], note: "Peripartum onset = during pregnancy or within 4 weeks of delivery. Substance-induced: persistence ≈1 month after acute withdrawal or severe intoxication ends suggests an independent disorder." },
+            { type: "callout", kind: "key", title: "Eight traps", text: "1) **Irritable** mood needs **four** B symptoms. 2) **Hospitalization** makes any elevated episode manic, whatever its length. 3) **Psychosis** makes any elevated episode manic. 4) Bipolar I needs **no** depression. 5) Hypomania **without** depression is **F31.89**, not bipolar II. 6) Persistent **antidepressant-emergent** mania = bipolar I; one or two symptoms are not enough. 7) Bipolar II has **one code** and psychosis only in depression. 8) Rapid cycling and cyclothymia differ by **full episodes**." },
             { type: "p", text: "Practice with the [[helper:bipolar|bipolar disorders helper]] and the [[helper:episode|episode helper]], then compare [[dx:bipolar-i|bipolar I]] with [[dx:bipolar-ii|bipolar II]] side by side in the library." }
           ]
         }

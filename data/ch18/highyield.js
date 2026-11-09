@@ -14,7 +14,7 @@ SP.add("ch18", "highYield", [
     "Be cautious diagnosing a personality disorder during a **depressive or anxiety** episode.",
     "Personality changes after extreme stress suggest **PTSD**.",
     "If a personality disorder preceded schizophrenia, add “**(premorbid)**.”",
-    "When criteria for more than one personality disorder are met, diagnose **all** of them."
+    "When criteria for more than one personality disorder are met, **all** can be diagnosed."
   ] },
   { id: "hy18-clusters", topic: "Clusters and prevalence", items: [
     "Cluster A (paranoid, schizoid, schizotypal) appears **odd or eccentric**.",
@@ -32,7 +32,7 @@ SP.add("ch18", "highYield", [
     "Paranoid PD has a familial link with **delusional disorder**, persecutory type.",
     "In paranoid PD, antisocial acts are usually motivated by **revenge**.",
     "Schizoid PD code: **F60.1**; threshold 4 of 7.",
-    "Schizoid PD is hardest to separate from mild **autism spectrum disorder**.",
+    "Schizoid PD can be very hard to separate from mild **autism spectrum disorder**.",
     "Schizoid PD lacks the **desire** for close relationships.",
     "Schizotypal PD code: **F21**; threshold **5 of 9**.",
     "Schizotypal PD has ideas of reference, not **delusions** of reference.",
@@ -51,7 +51,7 @@ SP.add("ch18", "highYield", [
     "Antisocial PD often becomes less evident by age **40**.",
     "Childhood-onset conduct disorder with **ADHD** raises the risk of adult antisocial PD.",
     "Criminal behavior without the personality features is coded as **adult antisocial behavior**.",
-    "Lack of empathy, inflated self-appraisal and superficial charm predict **recidivism**."
+    "Lack of empathy, inflated self-appraisal and superficial charm may be more predictive of **recidivism** in prison or forensic settings."
   ] },
   { id: "hy18-borderline", topic: "Borderline personality disorder", items: [
     "Borderline PD code: **F60.3**; threshold **5 of 9**.",
@@ -63,7 +63,7 @@ SP.add("ch18", "highYield", [
     "Prevalence among psychiatric inpatients: about **20%**.",
     "Borderline PD is about **5 times** more common in first-degree relatives.",
     "In community samples, borderline PD is **equally** common in men and women.",
-    "**Impulsive** symptoms remit fastest; affective symptoms remit slowest.",
+    "**Impulsive** symptoms remit fastest; affective symptoms remit much more slowly.",
     "About **6%** of an inpatient cohort died by suicide over 24 years.",
     "Childhood sexual abuse is neither **necessary nor sufficient** for borderline PD.",
     "Do not diagnose borderline PD from a **cross-sectional** picture during a mood episode.",
@@ -78,7 +78,7 @@ SP.add("ch18", "highYield", [
     "Narcissistic self-esteem is very **fragile**.",
     "People with narcissistic PD have some cognitive but little **emotional** empathy.",
     "**50%–75%** of people diagnosed with narcissistic PD are men.",
-    "Suicide attempts in narcissistic PD are less impulsive and more **lethal**.",
+    "Suicide attempts in narcissistic PD tend to be **less impulsive** than in other PDs (p. 763).",
     "Narcissistic PD is linked with **cocaine** use and anorexia nervosa.",
     "Interactive styles: histrionic coquettish, antisocial **callous**, borderline needy."
   ] },
@@ -86,14 +86,14 @@ SP.add("ch18", "highYield", [
     "Avoidant PD code: **F60.6**; threshold 4 of 7.",
     "Avoidant PD is unwilling to get involved unless **certain of being liked**.",
     "Avoidant PD prevalence in adults over 65: **0.8%**.",
-    "Avoidant PD may be a more severe form of **social anxiety disorder**.",
+    "It has been suggested that avoidant PD may be a more severe form of **social anxiety disorder**.",
     "Dependent PD code: **F60.7**; threshold 5 of 8.",
     "Dependent PD urgently seeks **another relationship** when one ends.",
     "Realistic fear of **retribution** does not count toward dependent PD.",
     "Dependent PD median prevalence: **0.4%**.",
     "OCPD code: **F60.5**; threshold 4 of 8.",
     "OCPD shows a **miserly** spending style toward self and others.",
-    "OCPD median prevalence: **4.7%**, the highest of the ten.",
+    "OCPD median prevalence: **4.7%**, the highest of the ten (app comparison of the medians).",
     "**Most** people with OCD do not have OCPD.",
     "OCPD is **equally** common in men and women."
   ] },
@@ -103,7 +103,7 @@ SP.add("ch18", "highYield", [
     "Subtypes: labile, disinhibited, aggressive, **apathetic**, paranoid, other, combined, unspecified.",
     "The medical condition is coded **before** F07.0.",
     "Not diagnosed if the change occurs only during **delirium**.",
-    "Frontal lobe injury causes disinhibition, euphoria and **facetiousness**.",
+    "Frontal lobe injury may cause disinhibition, euphoria and **facetiousness**.",
     "Other specified personality disorder: **F60.89** (e.g., mixed personality features).",
     "Unspecified personality disorder: **F60.9**.",
     "In the alternative model, **moderate** impairment (Level 2) in personality functioning is required.",

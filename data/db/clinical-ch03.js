@@ -109,7 +109,7 @@
         { ch: "ch03", dx: "bipolar-due-to-amc", when: "Hyperthyroidism, Cushing’s syndrome, stroke, multiple sclerosis or brain injury, with a time link." },
         { ch: "ch03", dx: "other-specified-bipolar", when: "Highs of 2–3 days, or with too few symptoms, plus past depressions." },
         { ch: "ch03", dx: "unspecified-bipolar", when: "Clearly bipolar-type, but not enough information yet." },
-        { ch: "ch02", dx: "schizoaffective-disorder", when: "Mania plus ≥2 weeks of psychosis without mood symptoms." }
+        { ch: "ch02", dx: "schizoaffective-disorder", when: "Mania plus ≥2 weeks of psychosis without a major mood episode." }
       ]
     },
     {

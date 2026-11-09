@@ -5,7 +5,7 @@ SP.add("ch04", "vignettes", [
   {
     "id": "v4-01",
     "tag": "MDD vs bipolar II",
-    "stem": "A 34-year-old woman is referred for her third episode of depression: 4 weeks of low mood, anhedonia, hypersomnia, guilt and poor concentration. Her two earlier episodes responded to sertraline. She denies ever feeling “high.” Her husband, interviewed separately, describes a week 2 years ago when she slept 4 hours a night without seeming tired, talked much faster than usual, started planning a catering business and spent $2,000 on equipment. Friends commented on the change. She kept working and was never hospitalized; she calls that week “the only time I felt like myself.”",
+    "stem": "A 34-year-old woman is referred for her third episode of depression: 4 weeks of low mood, anhedonia, hypersomnia, guilt and poor concentration. Her two earlier episodes responded to sertraline. She denies ever feeling “high.” Her husband, interviewed separately, describes a week 2 years ago when she was unusually cheerful and upbeat, full of energy, slept 4 hours a night without seeming tired, talked much faster than usual, started planning a catering business and spent $2,000 on equipment. Friends commented on the change. She kept working and was never hospitalized; she calls that week “the only time I felt like myself.”",
     "q": "What is the most accurate diagnosis?",
     "choices": [
       "Major depressive disorder, recurrent episode",
@@ -15,12 +15,12 @@ SP.add("ch04", "vignettes", [
       "Major depressive disorder, recurrent episode, with mixed features"
     ],
     "answer": 1,
-    "why": "The husband describes a **hypomanic episode**: at least 4 days of elevated mood and increased energy with ≥3 B symptoms (decreased need for sleep, pressured speech, increased goal-directed activity, risky spending), observable by others, without marked impairment or hospitalization. Any lifetime hypomania plus a major depressive episode makes **bipolar II**, and excludes MDD.",
+    "why": "The husband describes a **hypomanic episode** (Ch 3): at least 4 days of elevated mood and increased energy with ≥3 B symptoms (decreased need for sleep, pressured speech, increased goal-directed activity, risky spending), observable by others, without marked impairment or hospitalization. Any lifetime hypomania plus a major depressive episode makes **bipolar II**, and excludes MDD.",
     "whyNot": [
-      "MDD requires that there has **never** been a manic or hypomanic episode. Collateral history is often the only way hypomania is found.",
+      "MDD requires that there has **never** been a manic or hypomanic episode. Collateral history can be especially helpful in finding past hypomania (p. 187).",
       "Correct. Hypomania plus at least one major depressive episode, never mania.",
-      "Bipolar I needs a **manic** episode: marked impairment, hospitalization or psychosis. She kept working and was never hospitalized.",
-      "Cyclothymia needs 2 years of numerous **subthreshold** highs and lows and never a full episode; she has had full depressive episodes and a full hypomanic episode.",
+      "Bipolar I needs a **manic** episode (Ch 3): marked impairment, hospitalization or psychosis. She kept working and was never hospitalized.",
+      "Cyclothymia (Ch 3) needs 2 years of numerous **subthreshold** highs and lows and never a full episode; she has had full depressive episodes and a full hypomanic episode.",
       "Mixed features are manic symptoms **during** a depressive episode. Her hypomania was a separate week, and full hypomania means bipolar disorder, not a specifier."
     ],
     "discuss": [
@@ -44,7 +44,7 @@ SP.add("ch04", "vignettes", [
     "why": "A major depressive episode can be diagnosed **in addition to** a normal response to loss. Pervasive anhedonia that does not lift with reminders or visits, **worthlessness unrelated to the deceased**, psychomotor retardation and thoughts of death focused on being a burden all point to an MDE, not grief.",
     "whyNot": [
       "In grief, dysphoria comes in waves tied to reminders, self-esteem is preserved and thoughts of death focus on joining the deceased. None of that fits.",
-      "Prolonged grief disorder needs at least **12 months** since the death in adults, with intense yearning or preoccupation as the core.",
+      "Prolonged grief disorder (Ch 7) needs at least **12 months** since the death in adults, with intense yearning or preoccupation as the core.",
       "Adjustment disorder is diagnosed only when criteria for another disorder, such as an MDE, are **not** met.",
       "Correct. Five or more MDE symptoms for 2 weeks, a change from before, with distress and impairment.",
       "PDD needs at least **2 years** of depressed mood."
@@ -141,11 +141,11 @@ SP.add("ch04", "vignettes", [
         "Unspecified depressive disorder"
       ],
       "answer": 1,
-      "why": "Persistence for a substantial period (about **1 month**) after acute withdrawal or intoxication ends is evidence of an **independent** depressive disorder (Criterion C). He now merits a diagnosis of MDD alongside the alcohol use disorder.",
+      "why": "Persistence for a substantial period (about **1 month**) after acute withdrawal or intoxication ends suggests an **independent** depressive disorder (Criterion C); an independent MDD alongside the alcohol use disorder now becomes the likeliest diagnosis.",
       "whyNot": [
         "The manual’s benchmark is about 1 month, not 6.",
         "Correct.",
-        "Withdrawal resolves within days to about a week, and perceptual disturbances are not depression.",
+        "Acute alcohol withdrawal usually lasts 4–5 days (Ch 16, p. 566), and perceptual disturbances are not depression.",
         "Adjustment disorder is excluded when full MDE criteria are met.",
         "There is enough information for a specific diagnosis."
       ]
@@ -170,7 +170,7 @@ SP.add("ch04", "vignettes", [
       "MDD requires that the episode is not attributable to another medical condition.",
       "“With depressive features” is used when full criteria for a major depressive episode are **not** met.",
       "The illness is not just a stressor here; it is the direct physiological cause.",
-      "Atypical features is a specifier of MDD or PDD, which do not apply when the cause is medical."
+      "Atypical features is a specifier for depressive and bipolar episodes, not for a depressive disorder due to another medical condition."
     ],
     "then": {
       "q": "How is the diagnosis recorded?",
@@ -223,11 +223,11 @@ SP.add("ch04", "vignettes", [
         "Improvement with an SSRI"
       ],
       "answer": 1,
-      "why": "Criterion F: confirmation by **prospective daily ratings during at least two symptomatic cycles**. Retrospective recall overestimates the pattern.",
+      "why": "Criterion F: confirmation by **prospective daily ratings during at least two symptomatic cycles**. Retrospective reports are often higher than prospective ratings, and charting often shows no premenstrual pattern (pp. 199–200).",
       "whyNot": [
         "Retrospective accounts are exactly what prospective ratings are meant to check.",
         "Correct.",
-        "No hormone level makes or excludes the diagnosis.",
+        "The manual's diagnostic markers are prospective rating scales, not laboratory tests (p. 199).",
         "One cycle is not enough; at least two symptomatic cycles are required.",
         "Treatment response is not a diagnostic criterion."
       ]
@@ -250,7 +250,7 @@ SP.add("ch04", "vignettes", [
     "whyNot": [
       "Correct.",
       "Mood-incongruent content does not involve themes of inadequacy, guilt, disease, death, nihilism or deserved punishment (for example, thought insertion).",
-      "Sitting still is psychomotor retardation; catatonia needs three of the 12 catatonic features.",
+      "Sitting still is psychomotor retardation; catatonia needs three of the 12 catatonic features (Ch 2, p. 135).",
       "He holds these beliefs with fixed, delusional conviction. Melancholic features may also apply, but they do not describe the psychosis.",
       "Mixed features means manic symptoms during depression. There are none."
     ],
@@ -305,7 +305,7 @@ SP.add("ch04", "vignettes", [
         "A specific learning disorder in reading"
       ],
       "answer": 0,
-      "why": "Any distinct period of **more than 1 day** meeting full symptom criteria (except duration) for mania or hypomania rules out DMDD (Criterion I). The bipolar diagnosis then takes precedence.",
+      "why": "Any distinct period of **more than 1 day** meeting full symptom criteria (except duration) for mania or hypomania rules out DMDD (Criterion I); the child then needs assessment for a bipolar and related disorder (Ch 3).",
       "whyNot": [
         "Correct.",
         "MDD can be diagnosed together with DMDD.",
@@ -330,15 +330,15 @@ SP.add("ch04", "vignettes", [
     "answer": 3,
     "why": "During most days of a major depressive episode he has **three** manic/hypomanic symptoms (talkativeness, racing thoughts, increased goal-directed activity), observable by others and a change from his usual self, without ever meeting full criteria for hypomania or mania: **with mixed features**. It raises the risk of a later bipolar diagnosis.",
     "whyNot": [
-      "Bipolar II needs a full hypomanic episode (≥4 days of elevated or irritable mood with increased energy). He has never had one.",
+      "Bipolar II needs a full hypomanic episode (Ch 3; ≥4 days of elevated or irritable mood with increased energy). He has never had one.",
       "There is no manic episode; the predominant picture is depressive.",
       "Anxious distress is tension, restlessness and worry, not racing thoughts and increased goal-directed activity.",
       "Correct.",
-      "Cyclothymia needs 2 years of fluctuating subthreshold highs and lows."
+      "Cyclothymia (Ch 3) needs 2 years of fluctuating subthreshold highs and lows."
     ],
     "discuss": [
       "Why does sleeping 5 hours and feeling exhausted not count as decreased need for sleep?",
-      "Which three symptoms are not counted toward mixed features in depression, and why?"
+      "Which three symptoms are not counted toward mixed features in depression, and why? (Compare the hypomania list, Ch 3; app guidance.)"
     ]
   },
   {
@@ -403,7 +403,7 @@ SP.add("ch04", "vignettes", [
       "A winter pattern alone is not enough when a seasonal stressor explains it.",
       "Two seasonal episodes in 2 years is necessary but not sufficient.",
       "Correct.",
-      "Seasonal pattern applies to recurrent major depressive disorder and to bipolar I and II disorder.",
+      "Seasonal pattern applies to recurrent major depressive disorder and to bipolar I and II disorder (Ch 3, pp. 174–175).",
       "Most seasonal patterns are fall or winter onset; summer patterns are the less common type."
     ]
   },
@@ -420,11 +420,11 @@ SP.add("ch04", "vignettes", [
       "Other specified depressive disorder"
     ],
     "answer": 3,
-    "why": "Brief experiences of hearing or seeing the deceased are common in grief and do not mean psychosis. Waves of dysphoria tied to reminders, preserved self-esteem and positive emotions all point to **normal grief**.",
+    "why": "Brief experiences of hearing or seeing the deceased are common in grief and do not mean psychosis (Ch 7, p. 326). Waves of dysphoria tied to reminders, preserved self-esteem and positive emotions all point to **normal grief**.",
     "whyNot": [
       "She does not meet MDE criteria, and these perceptual experiences are part of normal bereavement, held with insight.",
-      "She keeps full insight, and these are grief experiences, not delusions or hallucinations of psychosis.",
-      "Prolonged grief disorder needs at least 12 months since the death in adults.",
+      "Brief psychotic disorder (Ch 2) does not fit: she keeps full insight, and these are grief experiences, not delusions or hallucinations of psychosis.",
+      "Prolonged grief disorder (Ch 7) needs at least 12 months since the death in adults.",
       "Correct.",
       "Normal grief is not a mental disorder."
     ]
@@ -442,7 +442,7 @@ SP.add("ch04", "vignettes", [
       "F32.2 plus F06.1"
     ],
     "answer": 1,
-    "why": "Mutism, posturing, negativism and stupor give three or more catatonic features, so the specifier **with catatonia** applies. The coding note requires the additional code **F06.1** (catatonia associated with another mental disorder) after the MDD code: recurrent, severe = F33.2.",
+    "why": "Mutism, posturing, negativism and stupor give three or more catatonic features (Ch 2, p. 135), so the specifier **with catatonia** applies. The coding note requires the additional code **F06.1** (catatonia associated with another mental disorder) after the MDD code: recurrent, severe = F33.2.",
     "whyNot": [
       "The catatonia needs its own additional code.",
       "Correct.",
@@ -469,7 +469,7 @@ SP.add("ch04", "vignettes", [
       "An independent MDD is unlikely when the onset follows medication exposure and the drug can cause it.",
       "The illness has been stable for 10 years; the new exposure is the medication. When both might contribute, clinical judgment decides, and both can be diagnosed.",
       "The cause is identifiable, so a specific diagnosis is possible.",
-      "Adjustment disorder is excluded when a substance or medication explains the symptoms.",
+      "Adjustment disorder (Ch 7) is excluded when a substance or medication explains the symptoms.",
       "Correct."
     ]
   },
@@ -486,13 +486,13 @@ SP.add("ch04", "vignettes", [
       "Adjustment disorder with mixed disturbance of emotions and conduct"
     ],
     "answer": 0,
-    "why": "In children and adolescents, **irritable mood** can stand in for depressed mood, and **failure to make expected weight gain** counts as the weight criterion. With anhedonia, sleep change, poor concentration and worthlessness she has five symptoms for 2 weeks.",
+    "why": "In children and adolescents, **irritable mood** can stand in for depressed mood, and **failure to make expected weight gain** counts as the weight criterion. With anhedonia, sleep change, poor concentration and worthlessness she has at least five (here six) symptoms for 2 weeks.",
     "whyNot": [
       "Correct.",
       "DMDD needs ≥12 months of chronic irritability with frequent outbursts; this is a new 3-week episode.",
       "PDD in youth needs at least **1 year**.",
       "ODD is a long-standing pattern of defiance, not a new episode with anhedonia and worthlessness.",
-      "An adjustment disorder is excluded when MDE criteria are met, and no stressor is described."
+      "An adjustment disorder (Ch 7) is excluded when MDE criteria are met, and no stressor is described."
     ]
   },
   {
@@ -508,11 +508,11 @@ SP.add("ch04", "vignettes", [
       "Persistent depressive disorder"
     ],
     "answer": 3,
-    "why": "In older adults, memory complaints during a major depressive episode can be mistaken for dementia (**“pseudodementia”**). Clues: a subacute onset with depressive symptoms, prominent complaints about memory, “don’t know” answers, poor effort that improves with encouragement, and no prior decline. Depression in late life can also herald later neurocognitive disorder, so follow up.",
+    "why": "In older adults, memory complaints during a major depressive episode may be the chief complaint and mistaken for dementia (**“pseudodementia”**), and they often abate when the episode is treated (p. 186). Clues (app guidance): a subacute onset with depressive symptoms, prominent complaints about memory, “don’t know” answers, poor effort that improves with encouragement, and no prior decline. In some older adults an MDE may sometimes be the first presentation of an irreversible dementia, so follow up.",
     "whyNot": [
-      "Dementia usually has a gradual premorbid decline, and patients tend to minimize rather than emphasize deficits.",
-      "His deficits are better explained by the depressive episode, which also needs treatment first.",
-      "There is no fluctuating disturbance of attention and awareness.",
+      "Dementia usually has a gradual premorbid decline, and patients tend to minimize rather than emphasize deficits (app guidance).",
+      "His deficits are better explained by the depressive episode; treating it with repeated observation may be needed to settle the diagnosis (Ch 17, p. 689).",
+      "Delirium (Ch 17) needs a fluctuating disturbance of attention and awareness; there is none.",
       "Correct.",
       "PDD needs at least 2 years of depressed mood."
     ]
@@ -530,11 +530,11 @@ SP.add("ch04", "vignettes", [
       "No diagnosis: a normal reaction to job loss"
     ],
     "answer": 1,
-    "why": "Depressive symptoms in response to an identifiable stressor, within 3 months of it, causing distress or impairment, **without meeting criteria for a major depressive episode**: adjustment disorder with depressed mood.",
+    "why": "Depressive symptoms in response to an identifiable stressor, within 3 months of it, causing distress or impairment, **without meeting criteria for a major depressive episode**: adjustment disorder with depressed mood (Ch 7).",
     "whyNot": [
       "He has only two MDE symptoms (low mood and insomnia).",
       "Correct.",
-      "Adjustment disorder takes precedence when the symptoms are a response to a stressor.",
+      "Other specified depressive disorder is used only when criteria for adjustment disorder with depressed mood are not met (p. 209).",
       "Five weeks is far short of 2 years.",
       "Marked distress and impairment in his marriage go beyond an expected reaction."
     ]
@@ -557,7 +557,7 @@ SP.add("ch04", "vignettes", [
       "He has never met MDE criteria.",
       "He meets criteria for a specific disorder.",
       "DMDD needs severe temper outbursts ≥3 a week and cannot be diagnosed for the first time after 18; it also needs onset before 10.",
-      "Adjustment disorder symptoms should not persist more than 6 months after the stressor or its consequences end.",
+      "Adjustment disorder is not diagnosed when criteria for another mental disorder, here PDD, are met (Ch 7).",
       "Correct."
     ]
   },
@@ -574,7 +574,7 @@ SP.add("ch04", "vignettes", [
       "Other specified depressive disorder"
     ],
     "answer": 2,
-    "why": "At least 2 years of numerous periods of **subthreshold hypomanic** and **subthreshold depressive** symptoms, present at least half the time, never without symptoms for more than 2 months, and never a full episode: **cyclothymic disorder**. A diagnosis of cyclothymia precludes PDD.",
+    "why": "At least 2 years of numerous periods of **subthreshold hypomanic** and **subthreshold depressive** symptoms, present at least half the time, never without symptoms for more than 2 months, and never a full episode: **cyclothymic disorder** (Ch 3). A diagnosis of cyclothymia precludes PDD.",
     "whyNot": [
       "The hypomanic-symptom periods rule out PDD; cyclothymic disorder precludes it.",
       "Bipolar II needs a full hypomanic episode and a full major depressive episode.",
@@ -586,7 +586,7 @@ SP.add("ch04", "vignettes", [
   {
     "id": "v4-21",
     "tag": "Schizoaffective vs MDD",
-    "stem": "A 33-year-old man developed a severe depressive episode 4 months ago and soon afterward began believing that neighbors were transmitting his thoughts to the police. The depression fully remitted 3 weeks ago with treatment, but the delusions have continued unchanged throughout those 3 weeks. For most of the 4-month illness he met full criteria for a major depressive episode.",
+    "stem": "A 33-year-old man developed a severe depressive episode 4 months ago and soon afterward began believing that neighbors were transmitting his thoughts to the police and hearing voices commenting on him. The depression fully remitted 3 weeks ago with treatment, but the delusions and voices have continued unchanged throughout those 3 weeks. For most of the 4-month illness he met full criteria for a major depressive episode.",
     "q": "What is the best diagnosis?",
     "choices": [
       "Schizoaffective disorder, depressive type",
@@ -596,19 +596,19 @@ SP.add("ch04", "vignettes", [
       "Brief psychotic disorder"
     ],
     "answer": 0,
-    "why": "Delusions for **≥2 weeks without a major mood episode** (Criterion B), while mood episodes are present for the **majority** of the illness: schizoaffective disorder, depressive type.",
+    "why": "Criterion A of schizophrenia (delusions and hallucinations) was met during the depressive episode, delusions and hallucinations lasted **≥2 weeks without a major mood episode** (Criterion B), and mood episodes are present for the **majority** of the illness: schizoaffective disorder, depressive type (Ch 2, p. 121).",
     "whyNot": [
       "Correct.",
-      "In psychotic depression the psychosis occurs only during the mood episode. His delusions persisted 3 weeks after the depression remitted.",
-      "In schizophrenia, mood episodes are present for only a minority of the illness.",
-      "Delusional disorder excludes mood episodes that occupy most of the illness.",
-      "Brief psychotic disorder lasts less than 1 month."
+      "In psychotic depression the psychosis occurs only during the mood episode. His psychotic symptoms persisted 3 weeks after the depression remitted.",
+      "In schizophrenia (Ch 2), mood episodes are present for only a minority of the illness.",
+      "Delusional disorder (Ch 2) excludes mood episodes that occupy most of the illness.",
+      "Brief psychotic disorder (Ch 2) lasts less than 1 month."
     ]
   },
   {
     "id": "v4-22",
     "tag": "Other specified",
-    "stem": "A 23-year-old law student has had 8 days of depressed mood, anhedonia, insomnia, fatigue and poor concentration, with impaired studying. She has never had a depressive or bipolar episode before, and no stressor, substance or medical illness explains it. You see her on day 8.",
+    "stem": "A 23-year-old law student had 8 days of depressed mood, anhedonia, insomnia, fatigue and poor concentration, with impaired studying. She has never had a depressive or bipolar episode before, and no stressor, substance or medical illness explains it. The symptoms lifted on day 9; you see her on day 10.",
     "q": "What is the most appropriate diagnosis?",
     "choices": [
       "Major depressive disorder, single episode",
@@ -620,7 +620,7 @@ SP.add("ch04", "vignettes", [
     "answer": 1,
     "why": "Depressed affect plus four of the other eight MDE symptoms for **more than 4 but less than 14 days**, with distress or impairment, in someone who has never met criteria for another depressive or bipolar disorder: a **short-duration depressive episode**, recorded as other specified depressive disorder (F32.89).",
     "whyNot": [
-      "The 2-week minimum has not been met yet.",
+      "The episode ended before the 2-week minimum.",
       "Correct.",
       "Recurrent brief depression requires episodes of 2–13 days at least monthly for 12 consecutive months.",
       "There is no identifiable stressor.",
@@ -646,7 +646,7 @@ SP.add("ch04", "vignettes", [
       "Moderate is three symptoms.",
       "Moderate-severe is four or five symptoms **without** motor agitation; her pacing and hand-wringing raise it.",
       "Correct.",
-      "Anxious distress is a specifier for depressive and bipolar episodes; it is common and linked to suicide risk and poorer treatment response."
+      "Anxious distress is a specifier for depressive and bipolar episodes; it is a prominent feature in both, and high levels of anxiety have been associated with higher suicide risk and treatment nonresponse (pp. 210–211)."
     ]
   },
   {

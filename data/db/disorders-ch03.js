@@ -24,8 +24,8 @@ SP.disorders = (SP.disorders || []).concat([
       ["B", "At least one manic episode not better explained by schizoaffective disorder and not superimposed on a primary psychotic disorder."]
     ],
     specifiers: ["**Current or most recent episode**: manic, hypomanic, depressed, unspecified", "**Severity** (mild, moderate, severe), **with psychotic features**, or **partial/full remission**", "With anxious distress, mixed features, rapid cycling, melancholic, atypical, mood-congruent or incongruent psychotic features, catatonia (+F06.1), peripartum onset, seasonal pattern"],
-    epi: [["12-month prevalence (US)", "1.5%; equal in men and women"], ["Onset", "Peak 20–30; US mean 22"], ["Recurrence", ">90% after a single manic episode"], ["Heritability", "About 90% (twins); first-degree relative risk 5%–10%"], ["Suicide", "20–30× general population; 5%–6% die by suicide"]],
-    risk: ["Childhood adversity predisposes to early onset and a worse course.", "Goal-attainment events trigger manic relapse; negative events trigger depressive relapse.", "Cannabis and other substances worsen mania.", "Women: more rapid cycling and mixed states; strong postpartum risk.", "African Americans with bipolar I are at risk of misdiagnosis as schizophrenia."],
+    epi: [["12-month prevalence (US)", "1.5%; equal in men and women"], ["Onset", "Peak 20–30; US mean 22"], ["Recurrence", ">90% after a single manic episode"], ["Heritability", "About 90% in some twin studies; first-degree relative risk 5%–10%"], ["Suicide", "20–30× general population; 5%–6% die by suicide"]],
+    risk: ["Childhood adversity predisposes to early onset and a worse course.", "Goal-attainment events are linked to manic relapse; negative events raise depressive relapse risk.", "Cannabis and other substances are associated with worse manic symptoms.", "Women: possibly more rapid cycling and mixed states; strong postpartum risk.", "African Americans with bipolar I are at risk of misdiagnosis as schizophrenia."],
     differential: [
       { name: "Major depressive disorder", how: "Misdiagnosis is common because the first episode is often depressive: ask about past mania." },
       { id: "bipolar-ii", how: "Hypomania only, never mania." },
@@ -43,7 +43,7 @@ SP.disorders = (SP.disorders || []).concat([
   {
     id: "bipolar-ii", ch: "ch03", sec: "s3-bp2-criteria", pages: "150–159", critPages: "150–152",
     name: "Bipolar II disorder", code: "F31.81", aka: ["bipolar 2", "bipolar disorder type II"],
-    essence: "At least one **hypomanic** episode and at least one **major depressive** episode, and **never a manic episode**.",
+    essence: "One or more **hypomanic** episodes plus one or more **major depressive** episodes, and **never a manic episode**.",
     duration: "Hypomania **≥4 consecutive days**; major depression **≥2 weeks**",
     functioning: "Hypomania: change seen by others, **no** marked impairment; depression or unpredictability causes impairment",
     mood: "Major depressive episodes **required**; dominate the course",
@@ -57,7 +57,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["12-month prevalence", "0.8% (US); 0.3% internationally"], ["Onset", "Mid-20s; usually begins with depression"], ["Diagnostic delay", "Typically >10 years"], ["Conversion to bipolar I", "5%–15%"], ["Suicide attempts", "About one-third"]],
     risk: ["Risk highest in relatives of people with bipolar II.", "Rapid cycling predicts poorer prognosis.", "Childbirth can trigger hypomania (10%–20% of females in nonclinical samples).", "Anxiety disorders in 75%, most often social anxiety."],
     differential: [
-        { id: "short-duration-hypomania", how: "Hypomanic periods of 2–3 days with full symptoms never reaching 4 days match the Section III proposed set, not bipolar II; one 4-day hypomania makes it bipolar II (Section III, pp. 909–910)." },
+        { id: "short-duration-hypomania", how: "Hypomanic periods of 2–3 days with full symptoms never reaching 4 days match the Section III proposed set (a proposed set, not an official diagnosis; record F31.89), not bipolar II; one 4-day hypomania makes it bipolar II (Section III, pp. 909–910)." },
       { name: "Major depressive disorder", how: "Only a history of at least one full hypomanic episode distinguishes them." },
       { id: "bipolar-i", how: "Any lifetime manic episode." },
       { id: "cyclothymic", how: "Only subthreshold hypomanic and depressive symptoms." },
@@ -69,7 +69,7 @@ SP.disorders = (SP.disorders || []).concat([
     clues: [["Core picture", "Recurrent depressions, plus a 6-day stretch of energy and productivity that a spouse noticed"], ["Rule", "Never a manic episode"], ["Coding", "A single code, F31.81"], ["Myth", "It is not a milder form of the other bipolar disorder"]]
   },
   {
-    id: "cyclothymic", ch: "ch03", sec: "s3-cyclothymic", pages: "159–161", critPages: "159–160",
+    id: "cyclothymic", ch: "ch03", sec: "s3-cyclothymic", pages: "159–162", critPages: "159–160",
     name: "Cyclothymic disorder", code: "F34.0", aka: ["cyclothymia"],
     essence: "At least **2 years** (1 in youth) of numerous **subthreshold** hypomanic and depressive periods, present half the time, **never** reaching a full episode.",
     duration: "**≥2 years** (≥1 year in children and adolescents); never symptom-free >2 months",
@@ -109,7 +109,7 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     aka: ["drug-induced mania", "steroid-induced mania"],
     essence: "A prominent, persistent elevated, expansive or irritable mood with increased energy caused by a **substance, medication or toxin**.",
-    duration: "Onset during or soon after exposure; persistence **≈1 month** after stopping suggests an independent disorder",
+    duration: "Onset during or soon after exposure; persistence **≈1 month** after acute withdrawal or severe intoxication ends suggests an independent disorder",
     functioning: "Distress or impairment required",
     mood: "—",
     criteria: [
@@ -128,7 +128,7 @@ SP.disorders = (SP.disorders || []).concat([
       { name: "Delirium", how: "Mood symptoms only during delirium (e.g., PCP, steroids)." }
     ],
     pearls: ["Stimulant mania: minutes to an hour, gone in 1–2 days.", "Steroid mania: after several days, dose-related.", "Cannabis and inhalants are not on the code list."],
-    cmp: { symptoms: "Elevated/irritable mood + increased energy", exclusions: "Independent bipolar disorder; delirium", prevalence: "Limited data", course: "Usually brief once the agent is removed" },
+    cmp: { symptoms: "Elevated/irritable mood + increased energy", exclusions: "Independent bipolar disorder; delirium", prevalence: "Limited data", course: "Stimulant episodes very brief (1–2 days); otherwise follows exposure to the agent" },
     clues: [["Core picture", "Euphoria and grandiosity within an hour of a methamphetamine binge, gone in 2 days"], ["Classic agents", "Stimulants, PCP, steroids"], ["Coding", "Fourth character records any use disorder"]]
   },
   {

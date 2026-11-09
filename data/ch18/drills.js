@@ -9,47 +9,6 @@
 
   SP.add("ch18", "dxline", [
     {
-      id: "w18-01", tag: "Paranoid",
-      "case": "A 47-year-old man has distrusted everyone since his teens: he bears grudges, reads insults into jokes, refuses to confide, sues neighbors and suspects his wife’s fidelity. He has no delusions or hallucinations.",
-      parts: [
-        { label: "Diagnosis", options: DX, answer: 0 },
-        { label: "Code", options: CODES, answer: 0 }
-      ],
-      line: "**F60.0** Paranoid personality disorder",
-      why: "Five of seven paranoid criteria; no psychosis."
-    },
-    {
-      id: "w18-02", tag: "Premorbid",
-      "case": "A 22-year-old man newly diagnosed with schizophrenia has been detached, solitary, cold and uninterested in relationships since age 13, without odd beliefs; this persists in remission.",
-      parts: [
-        { label: "Personality diagnosis", options: DX, answer: 1 },
-        { label: "Notation", options: ["(premorbid)", "(in remission)", "None"], answer: 0 },
-        { label: "Code", options: CODES, answer: 1 }
-      ],
-      line: "**F60.1** Schizoid personality disorder (premorbid)",
-      why: "Met before schizophrenia began, so add “**(premorbid)**” (recorded alongside F20.9 schizophrenia)."
-    },
-    {
-      id: "w18-03", tag: "Schizotypal",
-      "case": "A 29-year-old woman with lifelong magical thinking, ideas of reference, odd speech and dress, suspiciousness and no friends; social anxiety rises the longer she stays at a party.",
-      parts: [
-        { label: "Diagnosis", options: DX, answer: 2 },
-        { label: "Code", options: CODES, answer: 2 }
-      ],
-      line: "**F21** Schizotypal personality disorder",
-      why: "Six of nine schizotypal criteria. Note the code is **F21**, not F60."
-    },
-    {
-      id: "w18-04", tag: "Antisocial",
-      "case": "A 27-year-old man with repeated assaults, theft, aliases and no remorse; conduct disorder from age 12.",
-      parts: [
-        { label: "Diagnosis", options: DX, answer: 3 },
-        { label: "Code", options: CODES, answer: 3 }
-      ],
-      line: "**F60.2** Antisocial personality disorder",
-      why: "Age ≥18, three or more A criteria since 15, conduct disorder before 15."
-    },
-    {
       id: "w18-05", tag: "Borderline",
       "case": "A 24-year-old woman with abandonment fears, idealization–devaluation, cutting, binge drinking and spending, hours-long mood shifts and chronic emptiness since 16.",
       parts: [
@@ -58,56 +17,6 @@
       ],
       line: "**F60.3** Borderline personality disorder",
       why: "Six of nine criteria. Borderline PD has no specifiers."
-    },
-    {
-      id: "w18-06", tag: "Histrionic",
-      "case": "A 31-year-old woman who must be the center of attention, dresses provocatively, speaks dramatically without detail, is easily swayed and calls new acquaintances her dearest friends.",
-      parts: [
-        { label: "Diagnosis", options: DX, answer: 5 },
-        { label: "Code", options: CODES, answer: 5 }
-      ],
-      line: "**F60.4** Histrionic personality disorder",
-      why: "Six of eight histrionic criteria."
-    },
-    {
-      id: "w18-07", tag: "Narcissistic",
-      "case": "A 40-year-old lawyer who is grandiose, entitled, exploitative, envious and unempathic and requires constant admiration.",
-      parts: [
-        { label: "Diagnosis", options: DX, answer: 6 },
-        { label: "Code", options: CODES, answer: 6 }
-      ],
-      line: "**F60.81** Narcissistic personality disorder",
-      why: "Six of nine narcissistic criteria. Note the five-character code F60.81."
-    },
-    {
-      id: "w18-08", tag: "Avoidant",
-      "case": "A 25-year-old man who longs for friends but avoids anyone not certain to like him, declines team roles, and sees himself as inferior and inept.",
-      parts: [
-        { label: "Diagnosis", options: DX, answer: 7 },
-        { label: "Code", options: CODES, answer: 7 }
-      ],
-      line: "**F60.6** Avoidant personality disorder",
-      why: "Four or more of seven; he wants relationships (not schizoid)."
-    },
-    {
-      id: "w18-09", tag: "Dependent",
-      "case": "A 33-year-old woman who cannot choose clothes without her mother’s advice, never disagrees, feels helpless alone and immediately finds a new partner after each breakup.",
-      parts: [
-        { label: "Diagnosis", options: DX, answer: 8 },
-        { label: "Code", options: CODES, answer: 8 }
-      ],
-      line: "**F60.7** Dependent personality disorder",
-      why: "Five or more of eight dependent criteria."
-    },
-    {
-      id: "w18-10", tag: "OCPD",
-      "case": "A 46-year-old man who misses deadlines perfecting work, never delegates, works weekends, can’t throw anything out and is stubborn and miserly; no obsessions or compulsions.",
-      parts: [
-        { label: "Diagnosis", options: DX, answer: 9 },
-        { label: "Code", options: CODES, answer: 9 }
-      ],
-      line: "**F60.5** Obsessive-compulsive personality disorder",
-      why: "Six of eight OCPD criteria; no OCD."
     },
     {
       id: "w18-11", tag: "Change due to AMC",
@@ -121,6 +30,67 @@
       why: "Poor impulse control predominates → **disinhibited**. The medical condition is listed **immediately before** F07.0."
     },
     {
+      id: "w18-02", tag: "Premorbid",
+      "case": "A 22-year-old man newly diagnosed with schizophrenia has been detached, solitary, cold, uninterested in relationships and taking pleasure in almost nothing since age 13, without odd beliefs; this persists in remission.",
+      parts: [
+        { label: "Personality diagnosis", options: DX, answer: 1 },
+        { label: "Notation", options: ["(premorbid)", "(in remission)", "None"], answer: 0 },
+        { label: "Code", options: CODES, answer: 1 }
+      ],
+      line: "**F60.1** Schizoid personality disorder (premorbid)",
+      why: "Four of seven schizoid criteria, met before schizophrenia began, so add “**(premorbid)**” (recorded alongside F20.9 schizophrenia, Ch 2)."
+    },
+    {
+      id: "w18-09", tag: "Dependent",
+      "case": "A 33-year-old woman who cannot choose clothes without her mother’s advice, lets her mother decide her job, never disagrees, feels helpless alone and immediately finds a new partner after each breakup.",
+      parts: [
+        { label: "Diagnosis", options: DX, answer: 8 },
+        { label: "Code", options: CODES, answer: 8 }
+      ],
+      line: "**F60.7** Dependent personality disorder",
+      why: "Five of eight dependent criteria."
+    },
+    {
+      id: "w18-01", tag: "Paranoid",
+      "case": "A 47-year-old man has distrusted everyone since his teens: he is sure coworkers are cheating him, bears grudges, reads insults into jokes, refuses to confide, sues neighbors and suspects his wife’s fidelity. He has no delusions or hallucinations.",
+      parts: [
+        { label: "Diagnosis", options: DX, answer: 0 },
+        { label: "Code", options: CODES, answer: 0 }
+      ],
+      line: "**F60.0** Paranoid personality disorder",
+      why: "Five of seven paranoid criteria; no psychosis."
+    },
+    {
+      id: "w18-13", tag: "Other specified",
+      "case": "A 38-year-old man meets the general criteria with features of paranoid, narcissistic and antisocial PD but full criteria for none; the clinician records why.",
+      parts: [
+        { label: "Diagnosis", options: DX, answer: 11 },
+        { label: "Code", options: CODES, answer: 11 }
+      ],
+      line: "**F60.89** Other specified personality disorder (mixed personality features)",
+      why: "The reason is stated, so other specified, not unspecified (F60.9)."
+    },
+    {
+      id: "w18-07", tag: "Narcissistic",
+      "case": "A 40-year-old lawyer who is grandiose, entitled, exploitative, envious and unempathic and requires constant admiration.",
+      parts: [
+        { label: "Diagnosis", options: DX, answer: 6 },
+        { label: "Code", options: CODES, answer: 6 }
+      ],
+      line: "**F60.81** Narcissistic personality disorder",
+      why: "Six of nine narcissistic criteria. Note the five-character code F60.81."
+    },
+    {
+      id: "w18-04", tag: "Antisocial",
+      "case": "A 27-year-old man with repeated assaults, theft, aliases and no remorse; conduct disorder from age 12.",
+      parts: [
+        { label: "Diagnosis", options: DX, answer: 3 },
+        { label: "Code", options: CODES, answer: 3 }
+      ],
+      line: "**F60.2** Antisocial personality disorder",
+      why: "Age ≥18, three or more A criteria since 15, conduct disorder before 15."
+    },
+    {
       id: "w18-12", tag: "Change due to AMC",
       "case": "A 45-year-old man with Huntington’s disease has become indifferent, unmotivated and emotionally flat over 2 years, with no depressed mood.",
       parts: [
@@ -132,14 +102,44 @@
       why: "Marked apathy and indifference predominate → **apathetic type**."
     },
     {
-      id: "w18-13", tag: "Other specified",
-      "case": "A 38-year-old man meets the general criteria with features of paranoid, narcissistic and antisocial PD but full criteria for none; the clinician records why.",
+      id: "w18-10", tag: "OCPD",
+      "case": "A 46-year-old man who misses deadlines perfecting work, never delegates, works weekends, can’t throw anything out and is stubborn and miserly; no obsessions or compulsions.",
       parts: [
-        { label: "Diagnosis", options: DX, answer: 11 },
-        { label: "Code", options: CODES, answer: 11 }
+        { label: "Diagnosis", options: DX, answer: 9 },
+        { label: "Code", options: CODES, answer: 9 }
       ],
-      line: "**F60.89** Other specified personality disorder (mixed personality features)",
-      why: "The reason is stated, so other specified, not unspecified (F60.9)."
+      line: "**F60.5** Obsessive-compulsive personality disorder",
+      why: "Six of eight OCPD criteria; no OCD."
+    },
+    {
+      id: "w18-03", tag: "Schizotypal",
+      "case": "A 29-year-old woman with lifelong magical thinking, ideas of reference, odd speech and dress, suspiciousness and no friends; social anxiety rises the longer she stays at a party.",
+      parts: [
+        { label: "Diagnosis", options: DX, answer: 2 },
+        { label: "Code", options: CODES, answer: 2 }
+      ],
+      line: "**F21** Schizotypal personality disorder",
+      why: "Seven of nine schizotypal criteria. Note the code is **F21**, not F60."
+    },
+    {
+      id: "w18-06", tag: "Histrionic",
+      "case": "A 31-year-old woman who must be the center of attention, dresses provocatively, speaks dramatically without detail, is easily swayed and calls new acquaintances her dearest friends.",
+      parts: [
+        { label: "Diagnosis", options: DX, answer: 5 },
+        { label: "Code", options: CODES, answer: 5 }
+      ],
+      line: "**F60.4** Histrionic personality disorder",
+      why: "Six of eight histrionic criteria."
+    },
+    {
+      id: "w18-08", tag: "Avoidant",
+      "case": "A 25-year-old man who longs for friends but avoids anyone not certain to like him, declines team roles, will not try new activities in case he embarrasses himself, and sees himself as inferior and inept.",
+      parts: [
+        { label: "Diagnosis", options: DX, answer: 7 },
+        { label: "Code", options: CODES, answer: 7 }
+      ],
+      line: "**F60.6** Avoidant personality disorder",
+      why: "Four of seven; he wants relationships (not schizoid)."
     }
   ]);
 
@@ -152,7 +152,7 @@
         ["Panic and fury when her partner is 10 minutes late", true, "Frantic efforts to avoid abandonment (1)."],
         ["Swings from idolizing to despising her friends", true, "Unstable, intense relationships (2)."],
         ["Cuts her arms after arguments", true, "Self-mutilation (5)."],
-        ["Overdoses when she fears her partner will leave", false, "Already counted under Criterion 5; not under 1."],
+        ["Makes a suicide attempt when she fears her partner will leave", false, "Already counted under Criterion 5; not under 1."],
         ["Binge drinking and impulsive spending", true, "Impulsivity in two areas (4)."],
         ["Feels empty most of the time", true, "Chronic emptiness (7)."]
       ],
