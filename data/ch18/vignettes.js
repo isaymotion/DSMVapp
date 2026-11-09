@@ -17,28 +17,28 @@ SP.add("ch18", "vignettes", [
     "answer": 1,
     "why": "Mood shifts lasting **hours**, triggered **interpersonally**, with chronic emptiness, self-harm since adolescence and unstable intense relationships, and **no hypomanic episodes**: **borderline PD (F60.3)**.",
     "whyNot": [
-      "Bipolar II requires hypomanic episodes of at least 4 days; hers are hours-long reactive shifts.",
+      "Bipolar II requires hypomanic episodes of at least 4 days (Ch 3); hers are hours-long reactive shifts.",
       "Correct.",
-      "Cyclothymia involves subthreshold hypomanic and depressive periods over 2 years, not reactive hours-long shifts with self-harm and emptiness.",
+      "Cyclothymia involves subthreshold hypomanic and depressive periods over 2 years (Ch 3), not reactive hours-long shifts with self-harm and emptiness.",
       "Histrionic PD lacks self-destructiveness, emptiness and angry ruptures.",
-      "There is no 2-week depressive episode."
+      "There is no 2-week depressive episode (Ch 4)."
     ],
     "then": {
       "q": "Which first-line treatment is best supported?",
       "choices": [
-        "A structured, evidence-based psychotherapy such as DBT or MBT",
-        "Long-term lithium as the main treatment",
+        "A structured psychotherapy such as DBT or MBT",
+        "Long-term lithium as the main treatment of her mood swings",
         "A benzodiazepine for mood swings",
         "Electroconvulsive therapy",
         "Antipsychotic monotherapy indefinitely"
       ],
       "answer": 0,
-      "why": "The APA guideline (December 2024) strongly recommends a **structured psychotherapy** targeting core features (DBT, MBT, TFP, schema therapy; none is a gold standard). Medication is time-limited, targeted and adjunctive. (Treatment knowledge, outside the DSM.)",
+      "why": "The APA guideline (December 2024) strongly recommends a **structured psychotherapy** with support in the literature that targets core features; no therapy is a gold standard. Examples include DBT, MBT, TFP and schema therapy. Medication is time-limited, targeted and adjunctive. (Treatment knowledge, outside the DSM.)",
       "whyNot": [
         "Correct.",
-        "No medication treats the core symptoms; lithium also carries overdose risk.",
-        "Benzodiazepines can worsen disinhibition and are risky.",
-        "ECT is not a treatment for borderline PD.",
+        "No medication has been shown to treat the core symptoms.",
+        "Benzodiazepines can worsen disinhibition and are risky (app guidance; not verified).",
+        "ECT is not a treatment for borderline PD (app guidance; not verified).",
         "Antipsychotics may be used briefly for specific targets, not as the main or indefinite treatment."
       ]
     }
@@ -49,16 +49,16 @@ SP.add("ch18", "vignettes", [
     "stem": "A 40-year-old engineer is admitted with a first severe major depressive episode after a divorce. On the ward she is tearful, clings to nurses, cannot make decisions, and asks the team to call her sister before choosing a meal. Her sister reports that until 3 months ago she ran a team, lived alone happily and was decisive.",
     "q": "What is the best formulation of her dependent behavior?",
     "choices": [
-      "Dependent personality disorder (premorbid)",
+      "Dependent personality disorder (premorbid), recorded with the depression",
       "Dependent personality disorder",
       "Borderline personality disorder",
-      "Part of the depressive episode; do not diagnose a personality disorder",
+      "Features of the depressive episode, not a personality disorder",
       "Other specified personality disorder"
     ],
     "answer": 3,
     "why": "A personality disorder needs features from early adulthood that are **typical of long-term functioning**, not only during an episode. Her history shows a different, independent baseline.",
     "whyNot": [
-      "“Premorbid” applies to Cluster A disorders preceding schizophrenia.",
+      "“Premorbid” marks a personality disorder that preceded a persistent disorder such as schizophrenia; she has no prior personality disorder.",
       "Dependency confined to a depressive episode does not meet the general criteria.",
       "There is no long-standing pattern of instability.",
       "Correct.",
@@ -116,8 +116,8 @@ SP.add("ch18", "vignettes", [
     "q": "How should the antisocial behavior be classified?",
     "choices": [
       "Adult antisocial behavior",
-      "Antisocial personality disorder",
-      "As part of the manic episodes; antisocial personality disorder is not diagnosed",
+      "Antisocial personality disorder, with the arrests as Criterion A1 evidence",
+      "Part of the manic episodes; not antisocial personality disorder",
       "Borderline personality disorder",
       "Kleptomania"
     ],
@@ -128,13 +128,13 @@ SP.add("ch18", "vignettes", [
       "Criteria C and D are not met.",
       "Correct.",
       "There is no pervasive instability between episodes.",
-      "Stealing during mania is excluded from kleptomania as well."
+      "Stealing during mania is excluded from kleptomania as well (Ch 15)."
     ]
   },
   {
     "id": "v18-06",
     "tag": "Schizoid vs avoidant",
-    "stem": "A 32-year-old man lives alone and has no friends. He says he would love a partner and feels painfully lonely, but he is sure people would find him boring and laugh at him. He turned down a promotion because it involved presentations and only talks to coworkers who have been reliably kind to him for months.",
+    "stem": "A 32-year-old man lives alone and has had no friends since his teens. He says he would love a partner and feels painfully lonely, but he is sure people would find him boring and laugh at him. He turned down a promotion because it involved presentations and only talks to coworkers who have been reliably kind to him for months.",
     "q": "What is the most likely diagnosis?",
     "choices": [
       "Schizoid personality disorder",
@@ -156,7 +156,7 @@ SP.add("ch18", "vignettes", [
   {
     "id": "v18-07",
     "tag": "Schizotypal",
-    "stem": "A 30-year-old man is brought by his mother. He believes he can influence traffic lights by concentrating and that song lyrics on the radio carry special messages for him, though he admits this may be coincidence. He dresses in layered mismatched clothes, speaks in vague, overelaborate sentences, and has no friends. At family gatherings he grows more tense and suspicious. He has never had hallucinations or fixed delusions.",
+    "stem": "A 30-year-old man is brought by his mother. He believes he can influence traffic lights by concentrating and that song lyrics on the radio carry special messages for him, though he admits this may be coincidence. He has dressed in layered mismatched clothes, spoken in vague, overelaborate sentences, and had no friends since his late teens. At family gatherings he grows more tense and suspicious. He has never had hallucinations or fixed delusions.",
     "q": "What is the most likely diagnosis?",
     "choices": [
       "Schizoid personality disorder",
@@ -204,10 +204,10 @@ SP.add("ch18", "vignettes", [
     "q": "What is the best interpretation?",
     "choices": [
       "PTSD with paranoid features",
-      "Paranoid personality disorder",
+      "Paranoid personality disorder shown by his guardedness with staff and police",
       "Delusional disorder, persecutory type",
       "Schizotypal personality disorder",
-      "Understandable, context-driven mistrust that is not a personality disorder"
+      "Context-driven mistrust, not a personality disorder"
     ],
     "answer": 4,
     "why": "Guardedness in response to **real persecution and discrimination**, with trusting relationships elsewhere, is not pervasive paranoid PD. Avoid a cycle of mutual mistrust; use informants familiar with his culture.",
@@ -222,7 +222,7 @@ SP.add("ch18", "vignettes", [
   {
     "id": "v18-10",
     "tag": "Paranoid",
-    "stem": "A 50-year-old man has had five lawsuits against neighbors and former employers over perceived slights. He reads insults into compliments, never forgives, will not tell his doctor about his medical history because “it’s nobody’s business,” and constantly checks his wife’s phone though she has never been unfaithful. He has no hallucinations and no fixed delusions.",
+    "stem": "Since his 20s, a 50-year-old man has filed five lawsuits against neighbors and former employers over perceived slights. He reads insults into compliments, never forgives, will not tell his doctor about his medical history because “it’s nobody’s business,” and constantly checks his wife’s phone though she has never been unfaithful. He has no hallucinations and no fixed delusions.",
     "q": "Which diagnosis fits best?",
     "choices": [
       "Narcissistic personality disorder",
@@ -244,7 +244,7 @@ SP.add("ch18", "vignettes", [
   {
     "id": "v18-11",
     "tag": "Histrionic",
-    "stem": "A 34-year-old woman arrives at her first clinic visit in a glamorous evening dress, hugs the receptionist, and refers to the psychiatrist by his first name as “my wonderful new doctor.” She describes her new boyfriend as “absolutely perfect” but cannot say why. She cries loudly when describing a minor argument, then laughs a moment later, and adopts opinions from whoever spoke last.",
+    "stem": "A 34-year-old woman arrives at her first clinic visit in a glamorous evening dress, hugs the receptionist, and refers to the psychiatrist by his first name as “my wonderful new doctor.” She describes her new boyfriend as “absolutely perfect” but cannot say why. She cries loudly when describing a minor argument, then laughs a moment later, and adopts opinions from whoever spoke last. Her sister says she has been like this since her late teens.",
     "q": "What is the most likely diagnosis?",
     "choices": [
       "Borderline personality disorder",
@@ -266,21 +266,21 @@ SP.add("ch18", "vignettes", [
   {
     "id": "v18-12",
     "tag": "Narcissistic",
-    "stem": "A 45-year-old executive is referred after a demotion. He says he was “too brilliant for small minds,” expects his assistants to work weekends without notice, and was unmoved when a colleague’s child was hospitalized. Since the demotion he has been withdrawn, ashamed and sleeping poorly, and he admits he has thought of ending his life because “failure is unbearable.”",
+    "stem": "A 45-year-old executive who meets criteria for narcissistic personality disorder is referred after a demotion. He says he was “too brilliant for small minds,” expects his assistants to work weekends without notice, and was unmoved when a colleague’s child was hospitalized. Since the demotion he has been withdrawn, ashamed and sleeping poorly, and he admits he has thought of ending his life because “failure is unbearable.”",
     "q": "Which statement best describes his risk?",
     "choices": [
-      "Suicidal statements are manipulative gestures in narcissistic PD",
+      "Suicidal statements in narcissistic PD are manipulative gestures to regain admiration and need no assessment",
       "People with narcissistic PD do not attempt suicide",
       "His risk is low because he is high-functioning",
-      "Suicide attempts in narcissistic PD tend to be less impulsive and more lethal, so his ideation needs careful assessment",
+      "Attempts in narcissistic PD tend to be less impulsive and more lethal than in other PDs",
       "His risk is only related to substance use"
     ],
     "answer": 3,
-    "why": "After failure or exposure of imperfection, people with narcissistic PD may become suicidal; attempts tend to be **less impulsive** and **more lethal**.",
+    "why": "After failure or exposure of imperfection, people with narcissistic PD may become suicidal; attempts tend to be **less impulsive** and **more lethal** than in other personality disorders, so his ideation needs careful assessment.",
     "whyNot": [
       "Dismissing his ideation is dangerous.",
       "Suicidal ideation and attempts occur.",
-      "Functioning does not protect against high-lethality attempts.",
+      "Functioning does not rule out risk.",
       "Correct.",
       "There is no information about substance use."
     ]
@@ -288,7 +288,7 @@ SP.add("ch18", "vignettes", [
   {
     "id": "v18-13",
     "tag": "Histrionic vs narcissistic",
-    "stem": "Two patients both crave attention. Patient A tells everyone about his friendship with a famous surgeon and becomes cold when not praised. Patient B faints dramatically at a party when conversation turns away from her, and tells the nurse she is “so fragile and needs looking after.”",
+    "stem": "Two patients have both craved attention since early adulthood. Patient A tells everyone about his friendship with a famous surgeon and becomes cold when not praised. Patient B faints dramatically at a party when conversation turns away from her, and tells the nurse she is “so fragile and needs looking after.”",
     "q": "Which pairing is most likely?",
     "choices": [
       "A narcissistic, B histrionic",
@@ -310,7 +310,7 @@ SP.add("ch18", "vignettes", [
   {
     "id": "v18-14",
     "tag": "Dependent vs borderline",
-    "stem": "When her husband of 20 years died, a 52-year-old woman moved in with a man she met online within 3 weeks, saying she “cannot manage alone.” She has always let her husband choose her clothes, friends and job, agrees with others to avoid conflict, and fears being left to take care of herself. She has never harmed herself and her relationships have been long and stable.",
+    "stem": "When her husband of 20 years died, a 52-year-old woman moved in with a man she met online within 3 weeks, saying she “cannot manage alone.” She has always let her husband choose her clothes, friends and job, agrees with others for fear of losing their support, and fears being left to take care of herself. She has never harmed herself and her relationships have been long and stable.",
     "q": "What is the most likely diagnosis?",
     "choices": [
       "Separation anxiety disorder",
@@ -324,7 +324,7 @@ SP.add("ch18", "vignettes", [
     "whyNot": [
       "Her fear is of being unable to care for herself, not of harm coming to an attachment figure.",
       "Borderline reacts with rage and emptiness and has unstable, intense relationships.",
-      "Her response is to replace the caregiver, not persistent longing or preoccupation with the deceased.",
+      "Her response is to replace the caregiver, not persistent longing or preoccupation with the deceased (Ch 7).",
       "She is not flamboyant or attention seeking.",
       "Correct."
     ]
@@ -336,8 +336,8 @@ SP.add("ch18", "vignettes", [
     "q": "Which statement is correct?",
     "choices": [
       "She has borderline personality disorder",
-      "She has dependent personality disorder",
-      "Her behavior reflects realistic fear and lack of options, not dependent personality disorder",
+      "She has dependent personality disorder, shown by never disagreeing with him and staying",
+      "Realistic fear and lack of options, not dependent personality disorder",
       "She has avoidant personality disorder",
       "She has other specified personality disorder"
     ],
@@ -376,7 +376,7 @@ SP.add("ch18", "vignettes", [
   {
     "id": "v18-17",
     "tag": "OCPD",
-    "stem": "A 55-year-old manager’s wife complains that he insists the dishwasher be loaded “the right way,” lectures their grandchildren for coloring outside the lines, refuses to throw away broken appliances, and has postponed their retirement trip for 6 years because work comes first. He is surprised by her complaints and thinks his way is simply correct.",
+    "stem": "A 55-year-old manager’s wife complains that he insists the dishwasher be loaded “the right way,” lectures their grandchildren for coloring outside the lines, refuses to throw away broken appliances, and has postponed their retirement trip for 6 years because work comes first. He is surprised by her complaints and thinks his way is simply correct. She says he has been this way since they met in their 20s.",
     "q": "What is the most likely diagnosis?",
     "choices": [
       "Narcissistic personality disorder",
@@ -392,7 +392,7 @@ SP.add("ch18", "vignettes", [
       "No intrusive obsessions or compulsions.",
       "No lifelong social-communication deficits.",
       "Correct.",
-      "Keeping a few broken appliances is not extreme hoarding."
+      "Nothing suggests extreme hoarding (e.g., clutter that blocks living spaces)."
     ]
   },
   {
@@ -401,8 +401,8 @@ SP.add("ch18", "vignettes", [
     "stem": "A 58-year-old previously gentle school principal develops irritability, rage outbursts out of proportion to minor frustrations, and crude sexual comments over 9 months. His wife says he is “not himself.” MRI shows a large frontal meningioma. He is alert and oriented.",
     "q": "What is the most appropriate diagnosis?",
     "choices": [
-      "Personality change due to another medical condition (combined type), coded after the meningioma",
-      "Antisocial personality disorder",
+      "Personality change due to meningioma, combined type",
+      "Antisocial personality disorder with late-emerging aggression and disinhibition",
       "Intermittent explosive disorder",
       "Bipolar I disorder",
       "Delirium"
@@ -427,10 +427,10 @@ SP.add("ch18", "vignettes", [
       "Personality change due to another medical condition, apathetic type",
       "Dependent personality disorder",
       "Personality change due to another medical condition, other type",
-      "This is a psychological adjustment to disability, not personality change due to another medical condition"
+      "A psychological adjustment to disability, not personality change"
     ],
     "answer": 4,
-    "why": "F07.0 needs a **direct pathophysiological** cause. Dependence arising from needing help after injury is a **behavioral or psychological adjustment**; consider adjustment disorder or depression.",
+    "why": "F07.0 needs a **direct pathophysiological** cause. Dependence arising from needing help after injury is a **behavioral or psychological adjustment**; consider adjustment disorder or depression (app guidance).",
     "whyNot": [
       "There is no lifelong detachment.",
       "There is no brain process directly causing the change.",
@@ -442,12 +442,12 @@ SP.add("ch18", "vignettes", [
   {
     "id": "v18-20",
     "tag": "Adolescent",
-    "stem": "A 16-year-old girl has had 18 months of pervasive self-harm, rages when friends do not reply quickly, chaotic intense friendships, chronic emptiness, impulsive drinking and binge eating, and an unstable sense of who she is, across home, school and peers.",
+    "stem": "A 16-year-old girl has had 18 months of recurrent self-harm, rages when friends do not reply quickly, chaotic intense friendships, chronic emptiness, impulsive drinking and binge eating, and an unstable sense of who she is, across home, school and peers.",
     "q": "Can borderline personality disorder be diagnosed?",
     "choices": [
       "No, only conduct disorder can be diagnosed before 18",
       "No, personality disorders cannot be diagnosed before 18",
-      "Yes, because features have been present at least 1 year and are pervasive",
+      "Yes, if pervasive and present at least 1 year",
       "Only after age 21",
       "Only if a parent has borderline personality disorder"
     ],
@@ -467,8 +467,8 @@ SP.add("ch18", "vignettes", [
     "stem": "A 19-year-old university student has changed majors three times this year, is unsure about her sexual orientation, drinks heavily at parties and feels anxious about her future. She has close, stable friendships, no self-harm, and was settled and happy through high school.",
     "q": "What is the best formulation?",
     "choices": [
-      "Borderline personality disorder",
-      "An identity problem of young adulthood, not a personality disorder",
+      "Borderline personality disorder with identity disturbance and impulsivity",
+      "A developmental identity problem, not a disorder",
       "Histrionic personality disorder",
       "Dependent personality disorder",
       "Other specified personality disorder"
@@ -511,8 +511,8 @@ SP.add("ch18", "vignettes", [
     "stem": "A clinician tends to diagnose borderline personality disorder in women and antisocial personality disorder in men who present with anger, impulsivity and unstable relationships.",
     "q": "What does DSM-5-TR say about this?",
     "choices": [
-      "Clinicians should avoid over- or underdiagnosis based on gender stereotypes; borderline PD shows no sex difference in community samples",
-      "This reflects true sex ratios and is appropriate",
+      "Avoid gender-stereotyped diagnosis; borderline PD shows no sex difference in community samples",
+      "This reflects true sex ratios in clinical and community samples alike, so the pattern is appropriate",
       "Borderline PD can only be diagnosed in women",
       "Antisocial PD cannot be diagnosed in women",
       "Sex differences in all personality disorders are fully explained by biology"
@@ -530,21 +530,21 @@ SP.add("ch18", "vignettes", [
   {
     "id": "v18-24",
     "tag": "Schizotypal vs borderline",
-    "stem": "A 25-year-old woman reports hearing her name whispered and feeling that people on the bus are watching her, but only during the days after her partner threatened to leave. These experiences fade within hours when he reassures her. She has a history of self-harm, intense relationships and chronic emptiness.",
+    "stem": "A 25-year-old woman reports hearing her name whispered and feeling that people on the bus are watching her, but only in the hours after her partner threatened to leave. These experiences fade within hours when he reassures her. She has a history of self-harm, intense relationships and chronic emptiness.",
     "q": "How are these perceptual experiences best understood?",
     "choices": [
       "Delusional disorder",
-      "Schizotypal personality disorder",
+      "Schizotypal personality disorder with ideas of reference and perceptual experiences",
       "Brief psychotic disorder",
       "Schizophrenia",
-      "Transient, stress-related psychotic-like symptoms of borderline personality disorder"
+      "Transient stress-related symptoms of borderline PD"
     ],
     "answer": 4,
-    "why": "Borderline Criterion 9: **transient**, stress-related paranoid ideation, often after perceived **abandonment**, remitting when nurturance returns.",
+    "why": "Feeling watched fits borderline Criterion 9 (**transient**, stress-related paranoid ideation); brief perceptual experiences under stress are an associated feature. Both follow perceived **abandonment** and remit when nurturance returns.",
     "whyNot": [
       "No fixed delusion.",
       "Schizotypal symptoms are enduring and less tied to affect.",
-      "Brief psychotic disorder needs at least 1 day of frank psychosis; hers last hours and are part of borderline PD.",
+      "Brief psychotic disorder needs at least 1 day of frank psychosis (Ch 2); hers last hours and are part of borderline PD.",
       "No persistent psychosis.",
       "Correct."
     ]
@@ -557,14 +557,14 @@ SP.add("ch18", "vignettes", [
     "choices": [
       "Only avoidant personality disorder can be diagnosed",
       "Only social anxiety disorder can be diagnosed",
-      "Both avoidant personality disorder and social anxiety disorder can be diagnosed",
+      "Both can be diagnosed",
       "They are the same disorder",
       "Schizoid personality disorder is more likely"
     ],
     "answer": 2,
-    "why": "The two overlap heavily but are kept as separate categories; avoidant PD adds an entrenched **negative self-concept**. When both are met, **both are diagnosed**.",
+    "why": "The two overlap heavily but are kept as separate categories; avoidant PD adds an entrenched **negative self-concept**. They are retained as **separate categories** and are commonly **diagnosed together**.",
     "whyNot": [
-      "His performance anxiety meets social anxiety disorder.",
+      "His performance anxiety meets social anxiety disorder (Ch 5).",
       "His pervasive inferiority and avoidance meet avoidant PD.",
       "Correct.",
       "DSM-5-TR retains two categories.",
