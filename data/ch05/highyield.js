@@ -24,7 +24,7 @@ SP.add("ch05", "highYield", [
   ] },
   { id: "hy5-sm", topic: "Selective mutism", items: [
     "Selective mutism code: **F94.0**.",
-    "Duration: at least **1 month**, not limited to the **first month of school**.",
+    "Duration: at least **1 month**, not confined to the **first month of school**.",
     "The child **speaks in other situations**, typically at home.",
     "It is excluded when the child lacks **knowledge of the language**.",
     "Onset is usually before age **5**; it is often noticed at **school entry**.",
@@ -37,12 +37,12 @@ SP.add("ch05", "highYield", [
     "When several stimulus types are feared, code **all** of them.",
     "About **75%** fear more than one object or situation; the average is **three**.",
     "The phobic stimulus provokes fear **almost always and immediately**.",
-    "Blood-injection-injury phobia causes a **vasovagal** fainting response.",
+    "Blood-injection-injury phobia often causes a **vasovagal** fainting response.",
     "Blood-injection-injury phobia affects the sexes **nearly equally**; other types are about 2:1 female.",
     "US 12-month prevalence: **8%–12%**; US adolescents about **16%**.",
     "Median age at onset is **7–11** years; most begin before **10**.",
     "**Situational** phobias begin later than the other types.",
-    "Fear of only **one** agoraphobic situation is situational phobia, not agoraphobia."
+    "Fear of only **one** agoraphobic situation may be situational phobia rather than agoraphobia."
   ] },
   { id: "hy5-social", topic: "Social anxiety disorder", items: [
     "Social anxiety disorder code: **F40.10**.",
@@ -53,9 +53,9 @@ SP.add("ch05", "highYield", [
     "US 12-month prevalence: about **7%**.",
     "US median age at onset: **13**; **75%** begin between 8 and 15.",
     "Only **12%** of self-identified shy people meet criteria.",
-    "People typically seek treatment only after **15–20 years** of symptoms.",
+    "Only about half seek treatment in high-income societies, usually after **15–20 years** of symptoms.",
     "If social fears come only from beliefs about appearance, the diagnosis is **body dysmorphic disorder**.",
-    "**Taijin kyofusho** centers on the fear of making others uncomfortable."
+    "Taijin kyofusho centers on the fear of **making others uncomfortable**."
   ] },
   { id: "hy5-attack", topic: "Panic attacks", items: [
     "A panic attack needs **4 of 13** symptoms.",
@@ -91,7 +91,7 @@ SP.add("ch05", "highYield", [
     "Agoraphobia is diagnosed **irrespective of panic disorder**.",
     "Prevalence: about **1%–1.7%** a year.",
     "Mean age at onset: **21**.",
-    "Heritability: **61%**, the highest of the phobias.",
+    "Heritability: **61%**; the strongest link of the phobias to the phobia-proneness genetic factor.",
     "Untreated complete remission occurs in only about **10%**.",
     "About **90%** have another mental disorder."
   ] },
@@ -103,7 +103,7 @@ SP.add("ch05", "highYield", [
     "The six: restlessness, fatigue, poor concentration, irritability, **muscle tension**, sleep disturbance.",
     "US 12-month prevalence: **2.9%** in adults and **0.9%** in adolescents.",
     "US lifetime morbid risk: **9%**.",
-    "Mean age at onset: **35**, the latest of the anxiety disorders.",
+    "Mean age at onset in North America: **35**, the latest of the anxiety disorders.",
     "Full remission is **very rare**.",
     "It is the anxiety disorder most often found in **psychological autopsies** of suicides.",
     "Autonomic hyperarousal is **less prominent** than in panic disorder."
@@ -113,7 +113,7 @@ SP.add("ch05", "highYield", [
     "Caffeine-induced anxiety disorder code: **F15.980**.",
     "Opioid-induced anxiety codes end in **.188, .288 and .988**.",
     "Salbutamol and other unclassified medications use the **other (or unknown) substance** code, F19.x80.",
-    "Persistence for about **1 month** after stopping suggests an independent anxiety disorder.",
+    "Persistence for about **1 month** after acute withdrawal or severe intoxication ends suggests an independent anxiety disorder.",
     "Diagnose it instead of intoxication or withdrawal only when the anxiety **predominates**.",
     "Onset specifiers: during intoxication, during withdrawal, after **medication use**."
   ] },

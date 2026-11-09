@@ -4,7 +4,7 @@ SP.add("ch07", "highYield", [
     "Every disorder in the chapter requires exposure to a **traumatic or stressful event**.",
     "Many trauma responses are dominated by anhedonia, anger or **dissociation** rather than fear.",
     "RAD and DSED share one cause: **social neglect**.",
-    "**Prolonged grief disorder** is new in DSM-5-TR.",
+    "Prolonged grief disorder is **new in DSM-5-TR**.",
     "Since October 2022, prolonged grief disorder is coded **F43.81**.",
     "Since October 2022, other specified trauma- and stressor-related disorder is coded **F43.89**."
   ] },
@@ -15,7 +15,7 @@ SP.add("ch07", "highYield", [
     "A life-threatening illness is **not necessarily** a traumatic event.",
     "Waking during surgery or emergency cardioversion **can** qualify.",
     "Bullying qualifies only with a credible threat of serious harm or **sexual violence**.",
-    "PTSD tends to be most severe after **interpersonal, intentional** trauma."
+    "PTSD may be especially severe or long-lasting after **interpersonal, intentional** trauma."
   ] },
   { id: "hy7-rad", topic: "Reactive attachment disorder", items: [
     "RAD code: **F94.1**.",
@@ -24,7 +24,7 @@ SP.add("ch07", "highYield", [
     "Onset must be before age **5**.",
     "Developmental age must be at least **9 months**.",
     "Criteria for **autism spectrum disorder** must not be met.",
-    "RAD occurs in under **10%** of severely neglected children.",
+    "RAD usually occurs in under **10%** of neglected children, even with severe neglect.",
     "The only known risk factor is **serious social neglect**.",
     "Persistent specifier: present for more than **12 months**."
   ] },
@@ -61,7 +61,7 @@ SP.add("ch07", "highYield", [
   { id: "hy7-ptsd-epi", topic: "PTSD epidemiology and course", items: [
     "US lifetime prevalence (DSM-5): **6.1%–8.3%**.",
     "US 12-month prevalence (DSM-5): **4.7%**.",
-    "Lifetime prevalence in women is about **twice** that in men.",
+    "Lifetime prevalence in women is about **twice** that in men (app arithmetic from 8.0%–11.0% vs 4.1%–5.4%).",
     "Highest rates (a third to over half) follow **rape**, combat, captivity and genocide.",
     "Symptoms usually begin within **3 months**.",
     "About **half** of adults recover completely within 3 months.",
@@ -99,7 +99,7 @@ SP.add("ch07", "highYield", [
     "It must clearly exceed **cultural, social or religious** norms.",
     "Unlike PTSD, prolonged grief involves **yearning** for the deceased.",
     "Risk is highest after the death of a **child** or partner, or a violent death.",
-    "A meta-analysis found a pooled prevalence of **9.8%** among bereaved people."
+    "A meta-analysis using a different (6-month) definition found a pooled **9.8%** among bereaved people."
   ] },
   { id: "hy7-other", topic: "Other specified", items: [
     "Subthreshold PTSD lasting over 6 months is **other specified** trauma- and stressor-related disorder.",

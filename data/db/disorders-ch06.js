@@ -3,7 +3,7 @@ SP.disorders = (SP.disorders || []).concat([
   {
     id: "ocd", ch: "ch06", sec: "s6-ocd-criteria", pages: "265–271", critPages: "265–266",
     name: "Obsessive-compulsive disorder", code: "F42.2", aka: ["OCD"],
-    essence: "**Obsessions** (intrusive, unwanted thoughts, urges or images the person tries to neutralize) and/or **compulsions** (repetitive acts driven by obsessions or rigid rules), **time-consuming (>1 hour a day)** or causing distress or impairment.",
+    essence: "**Obsessions** (intrusive, unwanted thoughts, urges or images the person tries to neutralize) and/or **compulsions** (repetitive acts driven by obsessions or rigid rules), **time-consuming (e.g., >1 hour a day)** or causing distress or impairment.",
     duration: "No minimum; time-consuming (e.g., **>1 hour a day**) or distressing",
     functioning: "Distress or impairment, or more than an hour a day",
     mood: "Anxiety, disgust, sense of incompleteness; depression common",
@@ -15,10 +15,10 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     specifiers: ["Insight: good or fair; poor; absent insight/delusional beliefs", "Tic-related"],
     epi: [["12-month prevalence (US)", "1.2%"], ["Sex", "Slightly more women in adults; more boys in childhood"], ["Onset", "Mean 19.5; 25% by 14; men earlier"], ["Heritability", "≈40%; relatives 2× (10× if childhood onset)"]],
-    risk: ["Behavioral inhibition, negative emotionality.", "Perinatal adversity, prematurity, maternal smoking, childhood abuse, trauma; postinfectious onset in children.", "Familial and genetic loading; orbitofrontal-striatal circuits."],
+    risk: ["Possible: behavioral inhibition, negative emotionality.", "Perinatal adversity, prematurity, maternal smoking, childhood abuse, trauma; postinfectious onset in children.", "Familial and genetic loading; orbitofrontal-striatal circuits."],
     differential: [
       { id: "gad", how: "Worries about real-life problems, without compulsions." },
-      { id: "mdd", how: "Mood-congruent rumination, not intrusive, no compulsions." },
+      { id: "mdd", how: "Mood-congruent rumination, not necessarily intrusive, no compulsions." },
       { id: "bdd", how: "Preoccupation limited to appearance." },
       { id: "hoarding", how: "Saving because items feel useful or precious, not because of obsessions." },
       { name: "Tic disorders", how: "Preceded by premonitory urges, not obsessions; both can be diagnosed." },
@@ -43,10 +43,10 @@ SP.disorders = (SP.disorders || []).concat([
       ["D", "Not better explained by fat or weight concerns in an eating disorder."]
     ],
     specifiers: ["With muscle dysmorphia", "Insight: good or fair; poor; absent insight/delusional beliefs"],
-    epi: [["Point prevalence (US)", "2.4% (women 2.5%, men 2.2%)"], ["Cosmetic settings", "Rhinoplasty 20%; cosmetic surgery 13%–15%; dermatology 11%–13%"], ["Onset", "Most common 12–13; two-thirds before 18"], ["Heritability", "37%–49%"]],
+    epi: [["Point prevalence (US)", "2.4% (women 2.5%, men 2.2%)"], ["Cosmetic settings", "Rhinoplasty 20%; cosmetic surgery 13%–15%; dermatology 11%–13%"], ["Onset", "Most common 12–13; two-thirds before 18"], ["Heritability", "37%–49% (adolescent and young adult twins)"]],
     risk: ["Childhood neglect, abuse, trauma and teasing.", "Family history of OCD; shared genetics with OCD."],
     differential: [
-        { id: "taijin-kyofusho", how: "The shubo-kyofu variant (perceived deformity, stiff or awkward expression or movement) overlaps with body dysmorphic disorder (Chapter 24, p. 879)." },
+        { id: "taijin-kyofusho", how: "The shubo-kyofu variant (fear of body deformity) overlaps with body dysmorphic disorder (Chapter 24, p. 879)." },
       { id: "ocd", how: "Obsessions not limited to appearance; better insight." },
       { id: "excoriation", how: "Picking without an appearance motive." },
       { id: "trichotillomania", how: "Pulling without an appearance motive." },
@@ -54,9 +54,9 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "delusional-disorder", how: "Delusional appearance beliefs are BDD with absent insight." },
       { id: "other-specified-ocrd", how: "Clearly visible flaws, no repetitive behaviors, or body odor (olfactory reference disorder)." },
       { id: "anorexia", how: "Weight and fat concerns belong to the eating disorder; both can coexist." },
-      { id: "gender-dysphoria-adults", name: "Gender dysphoria", how: "Distress about sex characteristics as the wrong gender, not as deformed; both can be diagnosed." }
+      { id: "gender-dysphoria-adults", name: "Gender dysphoria", how: "BDD is not diagnosed if the preoccupation is limited to sex characteristics in gender dysphoria." }
     ],
-    pearls: ["One-third or more have delusional conviction.", "Cosmetic procedures rarely help.", "Suicidal thoughts ≈4×, attempts ≈2.6×.", "Picking or plucking to look better = BDD."],
+    pearls: ["One-third or more have delusional conviction.", "Appears to respond poorly to cosmetic procedures.", "Suicidal thoughts ≈4×, attempts ≈2.6×.", "Picking or plucking to look better = BDD."],
     cmp: { symptoms: "Appearance preoccupation + repetitive acts", exclusions: "Eating disorder weight concerns; visible defects", prevalence: "2.4% (US)", course: "Adolescent onset; chronic without treatment" },
     clues: [["Core picture", "A young man who checks his “crooked” nose in every window and has seen three surgeons"], ["Specifier", "Muscle dysmorphia; insight"], ["Code", "F45.22"]]
   },
@@ -85,7 +85,7 @@ SP.disorders = (SP.disorders || []).concat([
       { name: "Normative collecting", how: "Organized and selective, no clutter of living areas." }
     ],
     pearls: ["Cleared by others still counts.", "80%–90% have excessive acquisition, mostly buying.", "Fire, falls and eviction are real risks.", "People rarely volunteer hoarding: ask."],
-    cmp: { symptoms: "Difficulty discarding, clutter of living areas", exclusions: "Medical causes; OCD, MDD, psychosis, dementia, autism", prevalence: "≈2.5%", course: "Chronic, worsens each decade" },
+    cmp: { symptoms: "Difficulty discarding, clutter of living areas", exclusions: "Medical causes; OCD, MDD, psychosis, dementia, autism", prevalence: "≈2.5%", course: "Often chronic, worsens each decade" },
     clues: [["Core picture", "A retired librarian who sleeps in a recliner because newspapers fill her bed"], ["Specifier", "Excessive acquisition"], ["Code", "F42.3"]]
   },
   {
@@ -103,7 +103,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["E", "Not better explained by another disorder (e.g., BDD)."]
     ],
     specifiers: [],
-    epi: [["12-month prevalence", "1%–2%"], ["Sex", "Clinics ≥10:1 female; community ≈2:1; children equal"], ["Onset", "Around puberty"]],
+    epi: [["12-month prevalence", "May be 1%–2% (nonrepresentative US samples)"], ["Sex", "Clinics ≥10:1 female; community ≈2:1; children more equal"], ["Onset", "Around puberty"]],
     risk: ["Genetic vulnerability; more common in people with OCD and their relatives."],
     differential: [
       { id: "bdd", how: "Removing hair to fix perceived ugliness." },
@@ -130,7 +130,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["E", "Not better explained by psychosis, BDD, stereotypies or nonsuicidal self-injury."]
     ],
     specifiers: [],
-    epi: [["Prevalence", "2.1% current; 3.1% lifetime"], ["Sex", "≥75% women"], ["Onset", "Adolescence, often with acne"]],
+    epi: [["Prevalence", "2.1% current; 3.1% lifetime"], ["Sex", "≥75% women (community samples)"], ["Onset", "Adolescence, often with acne"]],
     risk: ["Genetic vulnerability; more common in people with OCD and their relatives."],
     differential: [
       { id: "bdd", how: "Picking to improve appearance." },
@@ -153,7 +153,7 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     aka: ["drug-induced OCD", "stimulant-induced skin picking"],
     essence: "Obsessions, compulsions, skin picking, hair pulling or other OCRD symptoms that **predominate** and began during or soon after intoxication, withdrawal or medication exposure.",
-    duration: "Persistence **≈1 month** after stopping suggests a primary disorder",
+    duration: "Persistence **≈1 month** after acute withdrawal or severe intoxication ends suggests a primary disorder",
     functioning: "Distress or impairment",
     mood: "Repetitive behaviors during stimulant use",
     criteria: [

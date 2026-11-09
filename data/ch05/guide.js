@@ -25,16 +25,16 @@ SP.add("ch05", "guide", {
           title: "How the chapter is built",
           pages: "215–216",
           blocks: [
-            { type: "p", text: "Anxiety disorders share **excessive fear and anxiety** and related behavioral disturbances. The two states overlap but differ. **Fear** goes with surges of **autonomic arousal** for fight or flight, thoughts of **immediate danger** and **escape**. **Anxiety** goes with **muscle tension** and **vigilance** in preparation for future danger, and with **cautious or avoidant** behavior. Pervasive avoidance can make the fear or anxiety look lower than it is (p. 215)." },
+            { type: "p", text: "Anxiety disorders share **excessive fear and anxiety** and related behavioral disturbances. The two states overlap but differ. **Fear** goes with surges of **autonomic arousal** for fight or flight, thoughts of **immediate danger** and **escape**. **Anxiety** goes with **muscle tension** and **vigilance** in preparation for future danger, and with **cautious or avoidant** behavior. Sometimes pervasive avoidance lowers the level of fear or anxiety (p. 215)." },
             { type: "table", caption: "Diagnoses in this chapter (codes as listed in DSM-5-TR)", head: ["Diagnosis", "Code", "Core idea", "Page"], rows: [
-              ["[[dx:separation-anxiety|Separation anxiety disorder]]", "F93.0", "Fear of separation from attachment figures: 3 of 8, ≥4 weeks in youth, typically ≥6 months in adults", "217–222"],
+              ["[[dx:separation-anxiety|Separation anxiety disorder]]", "F93.0", "Fear of separation from attachment figures: 3 of 8, ≥4 weeks in youth, typically ≥6 months in adults", "217–221"],
               ["[[dx:selective-mutism|Selective mutism]]", "F94.0", "Consistent failure to speak where speech is expected, despite speaking elsewhere, ≥1 month", "222–224"],
               ["[[dx:specific-phobia|Specific phobia]]", "F40.2xx by stimulus", "Marked, immediate fear of a circumscribed object or situation, typically ≥6 months", "224–229"],
               ["[[dx:social-anxiety|Social anxiety disorder]]", "F40.10", "Fear of scrutiny and negative evaluation in social situations, typically ≥6 months", "229–235"],
               ["[[dx:panic-disorder|Panic disorder]]", "F41.0", "Recurrent unexpected panic attacks + ≥1 month of worry or behavior change", "235–242"],
-              ["[[dx:panic-attack|Panic attack specifier]]", "Not coded", "4 of 13 symptoms peaking within minutes; added to any disorder", "242–246"],
+              ["[[dx:panic-attack|Panic attack specifier]]", "Not coded", "4 of 13 symptoms peaking within minutes; added to any disorder", "242–245"],
               ["[[dx:agoraphobia|Agoraphobia]]", "F40.00", "Fear of 2 of 5 situations because escape or help may be unavailable", "246–250"],
-              ["[[dx:gad|Generalized anxiety disorder]]", "F41.1", "Hard-to-control worry about many things, ≥6 months, 3 of 6 symptoms", "250–255"],
+              ["[[dx:gad|Generalized anxiety disorder]]", "F41.1", "Hard-to-control worry about many things, ≥6 months, 3 of 6 symptoms", "250–254"],
               ["[[dx:substance-induced-anxiety|Substance/medication-induced anxiety disorder]]", "By substance (e.g., F10.280)", "Panic or anxiety caused by intoxication, withdrawal or a medication", "255–258"],
               ["[[dx:anxiety-due-to-amc|Anxiety disorder due to another medical condition]]", "F06.4", "Anxiety as the direct physiological effect of a medical condition", "258–261"],
               ["[[dx:other-specified-anxiety|Other specified anxiety disorder]]", "F41.8", "Subthreshold or culturally framed presentations, reason recorded", "261"],
@@ -58,7 +58,7 @@ SP.add("ch05", "guide", {
             { type: "list", title: "What makes anxiety a disorder (p. 215)", items: [
               "It is **excessive** or persists **beyond developmentally appropriate periods**; normal childhood fears (the dark, monsters, strangers around age 1) are not disorders.",
               "It is **persistent**, typically **6 months or more**, to separate it from transient, often stress-induced, fear. The duration is a **general guide** with some flexibility, and is **shorter in children** for separation anxiety disorder (4 weeks) and selective mutism (1 month).",
-              "People with anxiety disorders **overestimate danger**, so the **clinician**, not the patient, judges whether the fear is out of proportion, taking **cultural context** into account. Since DSM-5, adults no longer have to recognize that their fear is excessive.",
+              "People with anxiety disorders **overestimate danger**, so the **clinician**, not the patient, judges whether the fear is out of proportion, taking **cultural context** into account. Since DSM-5, adults no longer have to recognize that their fear is excessive (DSM-IV → DSM-5 change; app note).",
               "Many anxiety disorders **begin in childhood** and **persist if untreated**.",
               "Most are about **twice as common in girls and women** (roughly 2:1).",
               "Each is diagnosed only when the symptoms are **not due to a substance, a medication or another medical condition** and not better explained by another mental disorder."
@@ -71,8 +71,8 @@ SP.add("ch05", "guide", {
               ["Almost always provokes fear", "Phobias, social anxiety and agoraphobia need fear **nearly every time**: anxiety on one flight in five is not specific phobia."]
             ] },
             { type: "p", text: "**Severity scales.** DSM-5-TR offers disorder-specific severity measures in a common format across the anxiety disorders, rating behavioral, cognitive and physical symptoms, so that a person with several anxiety disorders can be followed with similar tools (p. 216)." },
-            { type: "update", kind: "tr", title: "Suicide risk is now addressed disorder by disorder", text: "DSM-5-TR added **“Association With Suicidal Thoughts or Behavior”** sections across the manual. The chapter overview notes that people with anxiety are more likely to have suicidal thoughts, attempt suicide and die by suicide, and that **panic disorder, generalized anxiety disorder and specific phobia** are the anxiety disorders most strongly linked with the **transition from suicidal thoughts to a suicide attempt** (p. 216)." },
-            { type: "callout", kind: "key", title: "How DSM-5 reshaped this chapter", text: "Compared with DSM-IV: **separation anxiety disorder** and **selective mutism** moved in from the childhood disorders; **OCD** and **PTSD/acute stress disorder** moved out to their own chapters; **agoraphobia** became a diagnosis of its own, no longer tied to panic disorder; the **panic attack** became a specifier usable with any disorder; social phobia became **social anxiety disorder**, with the “generalized” specifier replaced by **performance only**; and the 6-month guide now applies to adults as well as children." }
+            { type: "update", kind: "tr", title: "Suicide risk is now addressed disorder by disorder", text: "DSM-5-TR added **“Association With Suicidal Thoughts or Behavior”** sections across the manual. The chapter overview notes that people with anxiety may be at higher risk of suicidal thoughts, suicide attempts and suicide deaths, and that **panic disorder, generalized anxiety disorder and specific phobia** are the anxiety disorders most strongly linked with the **transition from suicidal thoughts to a suicide attempt** (p. 216)." },
+            { type: "callout", kind: "key", title: "How DSM-5 reshaped this chapter", text: "Compared with DSM-IV: **separation anxiety disorder** and **selective mutism** moved in from the childhood disorders; **OCD** and **PTSD/acute stress disorder** moved out to their own chapters; **agoraphobia** became a diagnosis of its own, no longer tied to panic disorder; the **panic attack** became a specifier usable with any disorder; social phobia became **social anxiety disorder**, with the “generalized” specifier replaced by **performance only**; and the 6-month guide now applies to adults as well as children (DSM-IV → DSM-5 change; app note)." }
           ]
         }
       ]
@@ -92,7 +92,7 @@ SP.add("ch05", "guide", {
                 "Persistent worry about an **untoward event** to oneself (getting lost, kidnapped, an accident, illness) that would cause separation.",
                 "Reluctance or refusal to **go out**, away from home, to school or work, because of fear of separation.",
                 "Fear of or reluctance about **being alone** or without attachment figures at home or elsewhere.",
-                "Reluctance or refusal to **sleep away from home** or to go to sleep without being near an attachment figure.",
+                "Reluctance or refusal to **sleep away from home**, or to fall asleep unless an attachment figure is near.",
                 "Repeated **nightmares** about separation.",
                 "Repeated **physical complaints** (headaches, stomachaches, nausea, vomiting) when separation occurs or is anticipated."
               ]],
@@ -148,14 +148,14 @@ SP.add("ch05", "guide", {
         {
           id: "s5-sad-ddx",
           title: "Separation anxiety disorder: differential diagnosis and comorbidity",
-          pages: "220–222",
+          pages: "220–221",
           blocks: [
             { type: "table", caption: "Same behavior, different fear", head: ["Disorder", "Why the person avoids or worries", "Clue"], rows: [
               ["**Separation anxiety disorder**", "Being away from attachment figures; harm befalling them", "Comfortable when the attachment figure is present"],
               ["[[dx:gad|GAD]]", "Many topics, not only separation", "Other worries are also excessive"],
               ["[[dx:panic-disorder|Panic disorder]]", "Unexpected attacks; fear of dying or going crazy", "Attacks in separation anxiety come with anticipated separation"],
               ["[[dx:agoraphobia|Agoraphobia]]", "Being trapped without help if panic-like symptoms strike", "Separation anxiety fears being away from **places of safety with attachment figures**"],
-              ["Conduct disorder", "Truancy, not anxiety", "The child stays **away from** home rather than returning to it"],
+              ["Conduct disorder", "Truancy not driven by separation anxiety", "The child stays **away from** home rather than returning to it"],
               ["[[dx:social-anxiety|Social anxiety disorder]]", "Fear of being judged", "School refusal driven by evaluation, not separation"],
               ["PTSD", "Intrusions and avoidance of trauma memories", "Separation fears are common after disasters; check what dominates"],
               ["Illness anxiety disorder", "One’s **own** illness", "Separation anxiety worries about the **health of attachment figures**"],
@@ -167,7 +167,7 @@ SP.add("ch05", "guide", {
               ["Borderline personality disorder", "Fear of abandonment **plus** identity, impulsivity and interpersonal problems", "Those extra features are not central to separation anxiety"]
             ] },
             { type: "p", text: "**Comorbidity** (p. 221): in **children**, highly comorbid with **GAD and specific phobia**. In **adults**: specific phobia, PTSD, panic disorder, GAD, social anxiety disorder, agoraphobia, OCD, prolonged grief disorder, and personality disorders, especially the **Cluster C** group (dependent, avoidant, obsessive-compulsive). Depressive and bipolar disorders are also comorbid in adults." },
-            { type: "callout", kind: "exam", text: "Two exam favorites: **adults can have separation anxiety disorder** (even without a childhood history), and the **4-week** rule applies only to people **under 18**. School refusal has at least three different engines: separation (separation anxiety), evaluation (social anxiety) and defiance or truancy (conduct disorder)." }
+            { type: "callout", kind: "exam", text: "Two exam favorites: **adults can have separation anxiety disorder** (even without a childhood history), and the **4-week** rule applies only to people **under 18**. School refusal has at least three different engines: separation (separation anxiety), evaluation (social anxiety) and defiance or truancy (conduct disorder). (app guidance)" }
           ]
         }
       ]
@@ -183,9 +183,9 @@ SP.add("ch05", "guide", {
             { type: "criteria", title: "Selective mutism in brief", code: "F94.0", pages: "222", items: [
               ["A", "**Consistent failure to speak** in specific social situations where speech is expected (e.g., school), **despite speaking in other situations**."],
               ["B", "Interferes with **educational or occupational achievement** or with **social communication**."],
-              ["C", "Lasts **at least 1 month**, **not limited to the first month of school**."],
+              ["C", "Lasts **at least 1 month**, and is **not confined to the first month of school**."],
               ["D", "Not due to **lack of knowledge of, or comfort with, the language** required."],
-              ["E", "Not better explained by a **communication disorder** (e.g., childhood-onset fluency disorder), and not only during **autism spectrum disorder, schizophrenia or another psychotic disorder**."]
+              ["E", "Not better explained by a **communication disorder** (such as childhood-onset fluency disorder), and not only during **autism spectrum disorder, schizophrenia or another psychotic disorder**."]
             ] },
             { type: "list", title: "What it looks like (pp. 222–223)", items: [
               "The child neither starts speech nor answers when spoken to, with children or adults.",
@@ -200,12 +200,12 @@ SP.add("ch05", "guide", {
               ["Sex", "Roughly equal, with some evidence of more girls"],
               ["Higher risk", "Children who must speak a **non-native language** (e.g., immigrant families)"],
               ["Onset", "Usually **before age 5**, often noticed only at **school entry**"],
-              ["Course", "Variable; many “outgrow” it, but **social anxiety symptoms often remain**"]
+              ["Course", "Variable; clinical reports suggest many “outgrow” it (long-term course largely unknown), but **social anxiety symptoms often remain**"]
             ] },
             { type: "defs", title: "Risk factors (p. 223)", items: [
-              ["Temperamental", "Negative affectivity or **behavioral inhibition**; parental shyness, isolation or social anxiety; subtle **receptive language** weaknesses that are still within the normal range."],
+              ["Temperamental", "Not well identified: negative affectivity or **behavioral inhibition** may play a role, as may parental shyness, isolation or social anxiety; subtle **receptive language** weaknesses that are still within the normal range."],
               ["Environmental", "Parental social inhibition as a **model**; parents described as **overprotective or controlling**."],
-              ["Genetic and physiological", "Shared genetic factors with social anxiety disorder; abnormal **auditory efferent activity** during vocalization may make one’s own voice sound strange."]
+              ["Genetic and physiological", "Possibly shared genetic factors with social anxiety disorder; abnormal **auditory efferent activity** during vocalization may make one’s own voice sound strange."]
             ] },
             { type: "p", text: "**Functional consequences** (p. 223): social isolation that grows with age, academic impairment (not asking for help, not asking to use the restroom), and teasing by peers. In some children the mutism works as a **compensatory strategy** that lowers arousal in social encounters." }
           ]
@@ -219,11 +219,11 @@ SP.add("ch05", "guide", {
               ["Silent period in second-language learners", "A **normal** phase in young children acquiring a new language. Consider selective mutism only if comprehension is adequate and refusal to speak persists **in both languages**, in several unfamiliar settings, for a prolonged period. Children who refuse to speak a language they do not know are **excluded** (Criterion D)."],
               ["Communication disorders", "Language disorder, speech sound disorder, childhood-onset fluency disorder (stuttering), social (pragmatic) communication disorder: the speech problem is **not restricted to particular social situations**."],
               ["Autism, psychosis, severe intellectual disability", "Social communication problems occur across settings. Selective mutism needs an **established capacity to speak** in some situations, typically at home."],
-              ["Social anxiety disorder", "Often present as well: **give both diagnoses**."]
+              ["Social anxiety disorder", "Often present as well: **both diagnoses may be given**."]
             ] },
             { type: "p", text: "**Comorbidity** (p. 224): most often other anxiety disorders, chiefly **social anxiety disorder**, then separation anxiety disorder and specific phobia. In clinics, **autism spectrum disorder** co-occurs frequently. A substantial minority show **oppositional behavior**, sometimes only where speech is demanded. Communication delays occur in some." },
             { type: "case", title: "Clinical vignette: silent at school, chatty at home", text: "A 6-year-old girl has not said a word at school since starting first grade 4 months ago, though she nods, points and draws. Videos from home show her chatting and singing with her parents and brother. Her family speaks English at home, and her receptive language tested normal. She freezes and looks away when the teacher asks her a question.", point: "Consistent failure to speak at school despite fluent speech at home, beyond the first month, impairing learning and not explained by language knowledge or a communication disorder: **F94.0 selective mutism**. Assess for **social anxiety disorder**, which is common and can be diagnosed alongside." },
-            { type: "callout", kind: "exam", text: "The **first month of school** does not count: many children are quiet when they start school. And a recently immigrated child who does not yet speak the new language does **not** have selective mutism." }
+            { type: "callout", kind: "exam", text: "Silence **limited to the first month of school** does not count: many children are quiet when they start school. And a recently immigrated child who does not yet speak the new language does **not** have selective mutism. (app guidance)" }
           ]
         }
       ]
@@ -271,10 +271,10 @@ SP.add("ch05", "guide", {
           pages: "226–228",
           blocks: [
             { type: "compare", title: "Two physiological responses (p. 226)", items: [
-              { title: "Animal, natural environment, situational", color: "drug", points: ["**Sympathetic** arousal: heart rate and blood pressure rise.", "Fight-or-flight response."] },
-              { title: "Blood-injection-injury", color: "case", points: ["**Vasovagal** fainting or near-fainting.", "Brief rise in heart rate and blood pressure, then a **fall** in both.", "Affects women and men **nearly equally**.", "People avoid medical care even when ill."] }
+              { title: "Animal, natural environment, situational", color: "drug", points: ["Likely **sympathetic** arousal: heart rate and blood pressure rise.", "Fight-or-flight response."] },
+              { title: "Blood-injection-injury", color: "case", points: ["Often **vasovagal** fainting or near-fainting.", "Brief rise in heart rate and blood pressure, then a **fall** in both.", "Affects women and men **nearly equally**.", "People are often reluctant to seek medical care even when ill."] }
             ] },
-            { type: "p", text: "Neuroimaging links specific phobia with abnormal activity in the **amygdala, anterior cingulate cortex, thalamus and insula** in response to the phobic stimulus (p. 226)." },
+            { type: "p", text: "Facing the phobic stimulus, people with specific phobia most consistently show abnormal activity in the **amygdala, anterior cingulate cortex, thalamus and insula** (p. 226)." },
             { type: "table", caption: "Prevalence (p. 226)", head: ["Group", "12-month prevalence"], rows: [
               ["United States", "About **8%–12%**"],
               ["Europe", "Similar (e.g., about 6%)"],
@@ -350,7 +350,7 @@ SP.add("ch05", "guide", {
               ["J", "If a medical condition is present (Parkinson’s disease, obesity, disfigurement from burns), the fear is **clearly unrelated or excessive**."]
             ], specifiers: [["Performance only", "Fear restricted to **speaking or performing in public**"]] },
             { type: "defs", title: "The specifier and the core fear (pp. 230–231)", items: [
-              ["Performance only", "Fears most impairing in professional life (musicians, dancers, athletes, people who must speak publicly). They **do not fear or avoid nonperformance** social situations. DSM-5 replaced DSM-IV’s “generalized” specifier with this one."],
+              ["Performance only", "Fears most impairing in professional life (musicians, dancers, athletes, people who must speak publicly). They **do not fear or avoid nonperformance** social situations. DSM-5 replaced DSM-IV’s “generalized” specifier with this one (DSM-IV → DSM-5 change; app note)."],
               ["Feared judgments", "Being seen as anxious, weak, crazy, stupid, boring, intimidating, dirty or unlikable."],
               ["Feared symptoms", "**Blushing** (a hallmark), trembling, sweating, stumbling over words, staring. A person who fears trembling may avoid eating, drinking, writing or pointing in public."],
               ["Offending others", "May be the predominant fear in cultures with strong **collectivistic** orientation (e.g., offending by one’s gaze)."],
@@ -359,7 +359,7 @@ SP.add("ch05", "guide", {
             { type: "list", title: "Reading the criteria (pp. 230–231)", items: [
               "**Anticipatory anxiety** can start far ahead: worrying for weeks before a party, rehearsing a speech for days.",
               "Avoidance may be **extensive** (no parties, school refusal) or **subtle** (overpreparing, diverting attention to others, limiting eye contact).",
-              "Fear is not excessive if it reflects **actual danger** (being bullied). Some behavior that looks socially anxious is a sign of **respect** in certain cultures.",
+              "Fear may not be judged excessive if it reflects **actual danger** (being bullied). Some behavior that looks socially anxious is a sign of **respect** in certain cultures.",
               "Impairment: fear of public speaking does not qualify if the person never has to speak and is not distressed, but **passing up the job or course one wants** does."
             ] },
             { type: "case", title: "Clinical vignette: the resident who will not present", text: "A 27-year-old resident has swapped every case-conference slot for a year. Days before a presentation he cannot sleep, rehearses constantly and imagines colleagues noticing his shaking hands and red face. He eats lunch alone in his car because he fears trembling while holding a fork. He is calm at home and with his partner. His thyroid tests are normal.", point: "Fear of **scrutiny** and **negative evaluation** across performance and observation situations, almost always provoked, avoided, out of proportion, for over 6 months, with impairment: **F40.10 social anxiety disorder**. Because he also fears **being observed eating**, the **performance only** specifier does not apply." }
@@ -377,7 +377,7 @@ SP.add("ch05", "guide", {
               "In older adults, social anxiety may worsen medical symptoms such as tremor or tachycardia."
             ] },
             { type: "table", caption: "Prevalence (p. 231)", head: ["Group", "Figure"], rows: [
-              ["United States (12-month)", "About **7%**; rising in the US and East Asia"],
+              ["United States (12-month)", "About **7%**; apparently rising in the US and East Asia"],
               ["Much of the world", "0.5%–2.0%; Europe median 2.3%"],
               ["Adolescents 13–17", "Roughly **half** the adult rate"],
               ["Older adults", "2%–5%; prevalence falls after 65"],
@@ -386,7 +386,7 @@ SP.add("ch05", "guide", {
             { type: "list", title: "Development and course (pp. 231–232)", items: [
               "US median onset **13 years**; **75%** begin between **8 and 15**.",
               "May grow out of childhood **social inhibition or shyness**, follow a **humiliating experience** (bullying, vomiting during a speech), or develop insidiously.",
-              "**First onset in adulthood is relatively rare**, usually after a humiliating event or a new social role (a promotion, marrying into a different social class). It can fade after someone who feared dating marries and return after divorce.",
+              "**First onset in adulthood is relatively rare**, more often after a humiliating event or a new social role (a promotion, marrying into a different social class). It can fade after someone who feared dating marries and return after divorce.",
               "**Adolescents** fear and avoid more situations, including dating. **Older adults** report lower levels across a broader range of situations, often tied to sensory decline, tremor, incontinence or forgetting names.",
               "Remission varies: short, fluctuating and chronic trajectories exist. Among people who reach clinical care it tends to be **persistent**."
             ] },
@@ -426,7 +426,7 @@ SP.add("ch05", "guide", {
               ["Medical conditions", "Embarrassing symptoms (tremor in Parkinson’s disease) warrant the diagnosis only if the fear is **excessive**."]
             ] },
             { type: "p", text: "**Comorbidity** (p. 235): other anxiety disorders, **major depressive disorder** and **substance use disorders**. Social anxiety disorder usually **precedes** them, except specific phobia and separation anxiety disorder. Chronic isolation can lead to depression. Substance intoxication or withdrawal (tremor) can feed further social fear. Frequent comorbidity with **body dysmorphic disorder** and **avoidant personality disorder**; in children, with high-functioning autism and selective mutism." },
-            { type: "callout", kind: "exam", text: "Ask **“What would happen if people saw you?”** The social anxiety answer is about **being judged** (“they’d think I’m stupid”). The agoraphobia answer is about **being trapped without help**; the panic disorder answer is about **the attack itself** (“I’d die”); the depression answer is about **being worthless**; the avoidant personality answer is a **global** sense of being inferior and unlikable." }
+            { type: "callout", kind: "exam", text: "Ask **“What would happen if people saw you?”** The social anxiety answer is about **being judged** (“they’d think I’m stupid”). The agoraphobia answer is about **being trapped without help**; the panic disorder answer is about **the attack itself** (“I’d die”); the depression answer is about **being worthless**; the avoidant personality answer is a **global** sense of being inferior and unlikable. (app guidance)" }
           ]
         }
       ]
@@ -437,7 +437,7 @@ SP.add("ch05", "guide", {
         {
           id: "s5-panic-attack",
           title: "The panic attack specifier",
-          pages: "242–246",
+          pages: "242–245",
           blocks: [
             { type: "criteria", title: "Panic attack (specifier, not a disorder)", code: "Not coded", pages: "242", items: [
               ["", "An **abrupt surge** of intense fear or discomfort that **peaks within minutes**, with **four or more** of:", [
@@ -456,14 +456,14 @@ SP.add("ch05", "guide", {
                 "Fear of dying"
               ], "The surge can start from a **calm or an anxious** state. **Culture-specific** symptoms (tinnitus, neck soreness, headache, uncontrollable screaming or crying) can occur but **do not count** toward the four."]
             ], note: "Record it as a specifier: “posttraumatic stress disorder **with panic attacks**.” It is **not** added to panic disorder, where panic attacks are part of the criteria." },
-            { type: "callout", kind: "mnemonic", title: "11 physical, 2 cognitive", text: "Of the 13 symptoms, **11 are physical** and only **2 are cognitive**: fear of losing control or going crazy, and fear of dying (p. 242). Derealization and depersonalization count among the physical group in the manual’s tally. Fewer than four symptoms = a **limited-symptom attack**. The [[page:mnemonics|Mnemonics]] page has a letter mnemonic for all 13." },
+            { type: "callout", kind: "mnemonic", title: "11 physical, 2 cognitive", text: "Of the 13 symptoms, **11 are physical** and only **2 are cognitive**: fear of losing control or going crazy, and fear of dying (p. 242). Derealization and depersonalization therefore fall in the physical group (app arithmetic). Fewer than four symptoms = a **limited-symptom attack**. The [[page:mnemonics|Mnemonics]] page has a letter mnemonic for all 13." },
             { type: "defs", title: "Key distinctions (pp. 242–243)", items: [
               ["Within minutes", "Time to peak is literally a **few minutes**, measured from the **abrupt increase** in discomfort, not from when anxiety first began. An attack can subside to calm or anxiety and peak again."],
               ["Panic attack vs ongoing anxiety", "Distinguished by **time to peak**, its **discrete** nature and its usually **greater severity**."],
               ["Expected", "An **obvious cue or trigger**, such as a situation where attacks usually happen."],
               ["Unexpected", "**No obvious cue** at the time: while relaxing, or waking from sleep (**nocturnal panic attack**)."],
               ["Who decides?", "The **clinician**, from careful questioning about what happened just before the attack, together with the person’s own sense of whether it came out of the blue. **Cultural interpretations** can shape this (see below)."],
-              ["Nocturnal panic", "Waking from sleep **in** a state of panic, not panicking **after** fully waking. Occurs at least once in a quarter to a third of people with panic disorder, most of whom also have daytime attacks; they tend to have more severe illness."]
+              ["Nocturnal panic", "Waking from sleep **in** a state of panic, not panicking **after** fully waking. In the US, occurs at least once in a quarter to a third of people with panic disorder (p. 237), most of whom also have daytime attacks; they tend to have more severe illness."]
             ] },
             { type: "table", caption: "Panic attacks: the numbers (pp. 243–244)", head: ["Topic", "Detail"], rows: [
               ["12-month prevalence (adults)", "**9.5%–11.2%** (Spain and US)"],
@@ -473,8 +473,8 @@ SP.add("ch05", "guide", {
               ["Older adults", "Less frequent; may say “discomfort” rather than “fear”; may retrospectively attribute attacks to a trigger"],
               ["Sex", "More common in women; women report more breathlessness and nausea, men more sweating"]
             ] },
-            { type: "callout", kind: "culture", title: "Cultural concepts of distress", text: "**Khyâl attacks** (Cambodian: “wind” attacks with dizziness, **tinnitus** and **neck soreness**), **trúng gió** (Vietnamese: “hit by the wind,” with headaches) and **ataque de nervios** (Latin American: trembling, uncontrollable screaming or crying, aggressive or suicidal behavior, depersonalization, sometimes lasting longer than a few minutes). Cultural explanations can make an attack seem **expected** (a panic attack after walking into wind is “caused” by the wind) and can make certain symptoms seem dangerous, fueling catastrophic thinking. Symptom frequency varies too: more paresthesias among African Americans, dizziness in several Asian groups, trembling among non-Latinx Whites (pp. 238, 244)." },
-            { type: "list", title: "Why the specifier matters (pp. 244–245)", items: [
+            { type: "callout", kind: "culture", title: "Cultural concepts of distress", text: "**Khyâl attacks** (Cambodian: “wind” attacks with dizziness, **tinnitus** and **neck soreness**), **trúng gió** (Vietnamese: “hit by the wind,” with headaches) and **ataque de nervios** (Latin American: trembling, uncontrollable screaming or crying, aggressive or suicidal behavior, depersonalization, sometimes lasting longer than a few minutes). Cultural explanations can make an attack seem **expected** (a panic attack after walking into wind is “caused” by the wind) and can make certain symptoms seem dangerous, fueling catastrophic thinking. Symptom frequency varies too: more paresthesias among African Americans, dizziness in several Asian groups, trembling among non-Latinx Whites (pp. 239, 244)." },
+            { type: "list", title: "Why the specifier matters (pp. 243–245)", items: [
               "Panic attacks occur across **anxiety, depressive, bipolar, eating, obsessive-compulsive, personality, psychotic and substance use** disorders, and in some medical conditions (cardiac, respiratory, vestibular, gastrointestinal). **Most never meet criteria for panic disorder.**",
               "They mark **greater severity, comorbidity and poorer treatment response**, and more severe attacks predict panic disorder and other conditions.",
               "They are linked with **suicide attempts and suicidal thoughts**, even after accounting for comorbidity.",
@@ -547,7 +547,7 @@ SP.add("ch05", "guide", {
             { type: "list", title: "Sex, markers, suicide and impairment (pp. 239–240)", items: [
               "Women relapse more often and lose more quality of life, possibly from greater anxiety sensitivity or comorbid agoraphobia and depression. A **MAOA-uVNTR** variant may be a female-specific risk factor.",
               "**Attentional bias** to threat. Attacks are provoked far more easily than in controls by **sodium lactate, caffeine, isoproterenol, yohimbine, CO₂ and cholecystokinin**. Chronic **hyperventilation and frequent sighing** may occur. **None of these is diagnostic.**",
-              "Panic attacks and panic disorder in the past year are tied to **suicidal thoughts and behavior**, even after accounting for comorbidity and abuse history. About **25%** of primary care patients with panic disorder report suicidal thoughts. Panic disorder may raise the risk of suicidal **behavior** but not of suicide **deaths**. Cognitive symptoms (derealization) go with suicidal thoughts; physical ones (dizziness, nausea) with suicidal behavior.",
+              "Panic attacks and panic disorder in the past year are tied to **suicidal thoughts and behavior**, even after accounting for comorbidity and abuse history. Roughly **25%** of panic disorder patients seen in primary care report suicidal thoughts. Panic disorder may raise the risk of suicidal **behavior** but not of suicide **deaths**. Cognitive symptoms (derealization) go with suicidal thoughts; physical ones (dizziness, nausea) with suicidal behavior.",
               "High social, occupational and physical disability and the **most medical visits of any anxiety disorder**, strongest when agoraphobia is present."
             ] }
           ]
@@ -567,11 +567,11 @@ SP.add("ch05", "guide", {
             ] },
             { type: "defs", title: "Differential diagnosis (pp. 240–241)", items: [
               ["Only limited-symptom attacks", "Never a full unexpected attack → **other specified** or **unspecified anxiety disorder**, not panic disorder."],
-              ["Substance/medication-induced anxiety disorder", "If attacks continue **long after** intoxication or withdrawal ends, or **preceded** heavy substance use, consider panic disorder, plus a substance use disorder if present. Self-medication is common."],
+              ["Substance/medication-induced anxiety disorder", "If attacks continue **long after** intoxication or withdrawal ends, or **preceded** heavy substance use, consider panic disorder, plus a substance use disorder if present. Substance use may increase, often as self-medication."],
               ["Other anxiety and psychotic disorders", "Attacks triggered only by social situations, phobic objects, agoraphobic situations, worry (GAD) or separation are **expected**: diagnose only the relevant disorder. An unexpected attack may mark the onset of another anxiety disorder before attacks become cued. Add panic disorder only if there are also **unexpected** attacks with Criterion B worry or behavior change."]
             ] },
             { type: "p", text: "**Comorbidity** (pp. 241–242): rarely alone in clinics; **80%** of people with panic disorder in the community have a lifetime comorbid diagnosis, especially **agoraphobia**, other anxiety disorders, **major depressive disorder**, bipolar I and II and possibly mild alcohol use disorder. Panic disorder often begins **after** the comorbid disorder and can mark its severity. Lifetime comorbidity with MDD ranges from **10% to 65%**; in about **one-third** depression comes first, in two-thirds it begins with or after panic disorder. Some develop substance-related disorders from self-medication. Medical associations include dizziness, arrhythmias, hyperthyroidism, asthma, COPD and **irritable bowel syndrome**; mitral valve prolapse and thyroid disease are more common, inconsistently." },
-            { type: "callout", kind: "exam", text: "“Panic attack” is **not** “panic disorder.” A depressed man who panics only when thinking about his debts has **major depressive disorder with panic attacks**. Panic disorder needs **recurrent unexpected** attacks **plus a month** of worry or behavior change." }
+            { type: "callout", kind: "exam", text: "“Panic attack” is **not** “panic disorder.” A depressed man who panics only when thinking about his debts has **major depressive disorder with panic attacks**. Panic disorder needs **recurrent unexpected** attacks **plus a month** of worry or behavior change. (app guidance)" }
           ]
         }
       ]
@@ -655,7 +655,7 @@ SP.add("ch05", "guide", {
               ["Medical conditions", "Realistic fears (fainting with transient ischemic attacks, diarrhea with Crohn’s disease): diagnose only if fear is **clearly in excess**"]
             ] },
             { type: "p", text: "**Comorbidity** (p. 250): about **90%** have another mental disorder, most often other anxiety disorders (specific phobia, panic disorder, social anxiety disorder), **major depressive disorder**, **PTSD** and **alcohol use disorder**. Other anxiety disorders usually come **before** agoraphobia; depression and substance use disorders usually come **after** (sometimes substance use comes first). Comorbid MDD makes agoraphobia more **treatment-resistant**." },
-            { type: "callout", kind: "exam", title: "Why agoraphobia was split from panic disorder", text: "In DSM-IV, agoraphobia was mostly a feature of “panic disorder with agoraphobia.” DSM-5 made it a separate diagnosis because a substantial number of people have agoraphobia **without** panic symptoms, and agoraphobia predicts disability on its own. Today a patient with both receives **two codes**: F41.0 and F40.00." }
+            { type: "callout", kind: "exam", title: "Why agoraphobia was split from panic disorder", text: "In DSM-IV, agoraphobia was mostly a feature of “panic disorder with agoraphobia.” DSM-5 made it a separate diagnosis; DSM-5-TR notes that agoraphobia severity drives disability irrespective of panic disorder (p. 249). Today a patient with both receives **two codes**: F41.0 and F40.00 (DSM-IV → DSM-5 change; app guidance)." }
           ]
         }
       ]
@@ -669,7 +669,7 @@ SP.add("ch05", "guide", {
           pages: "250–251",
           blocks: [
             { type: "criteria", title: "Generalized anxiety disorder in brief", code: "F41.1", pages: "250–251", items: [
-              ["A", "Excessive anxiety and worry (**apprehensive expectation**), **more days than not** for **at least 6 months**, about **a number of** events or activities (work or school performance)."],
+              ["A", "Excessive worry and anxiety (**apprehensive expectation**) about **a number of** events or activities (work or school performance), **more days than not** for **at least 6 months**."],
               ["B", "The worry is **difficult to control**."],
               ["C", "**Three or more** of six symptoms (some present more days than not for 6 months):", [
                 "Restlessness or feeling keyed up or on edge",
@@ -685,7 +685,7 @@ SP.add("ch05", "guide", {
             ] },
             { type: "compare", title: "Pathological worry or everyday worry? (p. 251)", items: [
               { title: "Generalized anxiety disorder", color: "case", points: ["**Excessive**, hard to control, interferes with functioning.", "**Pervasive**, pronounced, distressing, long-lasting; often **without a precipitant**.", "Covers **many** life areas: the wider the range, the likelier the diagnosis.", "Comes with **physical** symptoms (restlessness, tension)."] },
-              { title: "Everyday worry", color: "drug", points: ["Not excessive; feels manageable.", "Can be **put off** when more pressing matters arise.", "Usually tied to a real situation.", "Rarely accompanied by physical symptoms."] }
+              { title: "Everyday worry", color: "drug", points: ["Not excessive; feels manageable.", "Can be **put off** when more pressing matters arise.", "Much less often accompanied by physical symptoms."] }
             ] },
             { type: "list", title: "What the worry looks like (pp. 251–252)", items: [
               "Adults worry about **everyday** things: job duties, health and finances, family members’ health, misfortune to children, **minor matters** (chores, being late). The focus **shifts** from one concern to another.",
@@ -724,7 +724,7 @@ SP.add("ch05", "guide", {
             { type: "callout", kind: "culture", text: "In some cultural contexts **somatic** symptoms dominate the presentation; in others **cognitive** symptoms do, a difference clearest at first presentation. The topics of worry can be culturally specific, so judge excessiveness in context. In the US, higher prevalence is linked with exposure to **racism and discrimination** (p. 253)." },
             { type: "list", title: "Sex, suicide and consequences (p. 253)", items: [
               "Women’s comorbidity is mostly other anxiety disorders and unipolar depression; men’s extends to **substance use disorders**.",
-              "GAD is linked with more suicidal thoughts and behavior, even after adjustment for comorbidity and stress. **Psychological autopsy studies show it is the anxiety disorder most often diagnosed in people who die by suicide.** Subthreshold GAD in the past year is also linked with suicidal thoughts.",
+              "GAD is linked with more suicidal thoughts and behavior, even after adjustment for comorbidity and stress. **Psychological autopsy studies show it is the anxiety disorder most often diagnosed in people who die by suicide.** Subthreshold GAD in the past year may also be associated with suicidal thoughts.",
               "Worry slows people down and drains time and energy; it can undermine their ability to build **confidence in their children**.",
               "Most noninstitutionalized adults with GAD are **moderately to seriously disabled**; GAD accounts for **110 million disability days a year** in the US and raises medical resource use and **coronary** risk."
             ] }
@@ -744,10 +744,10 @@ SP.add("ch05", "guide", {
               ["Illness anxiety and somatic symptom disorders", "If the **only** fear is having an illness → illness anxiety disorder; worry centered on **somatic symptoms** → somatic symptom disorder. In GAD, health is one worry among many."],
               ["Obsessive-compulsive disorder", "GAD worry is about **forthcoming real-life problems** and is abnormal in its excess. Obsessions are **intrusive, unwanted** thoughts, urges or images, often inappropriate in content."],
               ["PTSD and adjustment disorders", "Not GAD if the anxiety is better explained by PTSD. Adjustment disorder is a residual category: within **3 months** of a stressor, gone within **6 months** after it ends, and only if no other disorder (including GAD) is met."],
-              ["Depressive, bipolar and psychotic disorders", "Anxiety and worry are common features; diagnose GAD as well **if the anxiety is severe enough** to warrant clinical attention."]
+              ["Depressive, bipolar and psychotic disorders", "Anxiety and worry are common features; GAD may be diagnosed as well **if the anxiety is severe enough** to warrant clinical attention."]
             ] },
-            { type: "p", text: "**Comorbidity** (p. 254): most people with GAD have had or have **other anxiety disorders** and **unipolar depression**, a pattern rooted in shared **negative affectivity** and shared genetic and environmental risk. Comorbidity with substance use, conduct, psychotic, neurodevelopmental and neurocognitive disorders is less common." },
-            { type: "callout", kind: "exam", text: "GAD is the worry disorder with the **most exclusions**: in Criterion F, almost every other anxious preoccupation (panic, evaluation, contamination, separation, trauma, weight, symptoms, appearance, illness, delusions) belongs to another diagnosis. The positive features are **many topics**, **hard to control**, **6 months**, and **3 of 6** (1 in children)." }
+            { type: "p", text: "**Comorbidity** (p. 254): most people with GAD have had or have **other anxiety disorders** and **unipolar depression**, a pattern rooted in shared **negative affectivity** and shared genetic and environmental risk. Substance use, conduct, psychotic, neurodevelopmental and neurocognitive disorders co-occur less often." },
+            { type: "callout", kind: "exam", text: "GAD is the worry disorder with the **most exclusions**: in Criterion F, almost every other anxious preoccupation (panic, evaluation, contamination, separation, trauma, weight, symptoms, appearance, illness, delusions) belongs to another diagnosis. The positive features are **many topics**, **hard to control**, **6 months**, and **3 of 6** (1 in children). (app guidance)" }
           ]
         }
       ]
@@ -762,7 +762,7 @@ SP.add("ch05", "guide", {
           blocks: [
             { type: "criteria", title: "Substance/medication-induced anxiety disorder in brief", code: "By substance", pages: "255–256", items: [
               ["A", "**Panic attacks or anxiety** predominate in the clinical picture."],
-              ["B", "Evidence of both: (1) symptoms began **during or soon after** intoxication or withdrawal, or after exposure to or withdrawal from a **medication**; and (2) the substance can **produce** them."],
+              ["B", "Evidence of both: (1) symptoms began **during or soon after** intoxication or withdrawal, or after a **medication** was started or withdrawn; and (2) the substance can **produce** them."],
               ["C", "Not better explained by an **independent** anxiety disorder: symptoms that **preceded** use, persist for a substantial time (**about 1 month**) after acute withdrawal or severe intoxication, or other evidence such as recurrent non-substance episodes."],
               ["D", "Not only during **delirium**."],
               ["E", "Clinically significant **distress or impairment**."]
@@ -786,11 +786,11 @@ SP.add("ch05", "guide", {
               ["Unclassified drugs", "Medications outside the classes, or an unknown substance, use **other (or unknown)**: “**F19.980** salbutamol-induced anxiety disorder, with onset after medication use.”"],
               ["Several substances", "List each one separately with its own code."]
             ] },
-            { type: "callout", kind: "exam", title: "Two coding oddities", text: "**Caffeine** has only a “without use disorder” code (**F15.980**), because DSM-5-TR has no caffeine use disorder (it is a condition for further study). **Opioid**-induced anxiety ends in **.188/.288/.988**, not .x80. Every other class ends in **.x80**." },
+            { type: "callout", kind: "exam", title: "Two coding oddities", text: "**Caffeine** has only a “without use disorder” code (**F15.980**), because DSM-5-TR has no caffeine use disorder (it is a condition for further study, Section III, pp. 910–913). **Opioid**-induced anxiety ends in **.188/.288/.988**, not .x80. Every other class ends in **.x80**. (app guidance)" },
             { type: "defs", title: "What causes it (p. 257)", items: [
               ["During intoxication", "Alcohol, **caffeine**, **cannabis**, phencyclidine, other hallucinogens, inhalants, **stimulants (including cocaine)**, other or unknown substances."],
               ["During withdrawal", "**Alcohol**; **opioids**; **sedatives, hypnotics and anxiolytics**; stimulants (including cocaine); other or unknown substances."],
-              ["Medications", "Anesthetics and analgesics, **sympathomimetics and bronchodilators**, anticholinergics, **insulin**, **thyroid preparations**, oral contraceptives, antihistamines, antiparkinsonian drugs, **corticosteroids**, antihypertensive and cardiovascular drugs, anticonvulsants, lithium, antipsychotics (akathisia can masquerade as anxiety) and antidepressants."],
+              ["Medications", "Anesthetics and analgesics, **sympathomimetics and bronchodilators**, anticholinergics, **insulin**, **thyroid preparations**, oral contraceptives, antihistamines, antiparkinsonian drugs, **corticosteroids**, antihypertensive and cardiovascular drugs, anticonvulsants, lithium, antipsychotics (akathisia can masquerade as anxiety; app note) and antidepressants."],
               ["Toxins", "Heavy metals, organophosphate insecticides, nerve gases, **carbon monoxide**, CO₂, gasoline and paint."]
             ] },
             { type: "list", title: "Course, prevalence and differential (pp. 257–258)", items: [
@@ -836,7 +836,7 @@ SP.add("ch05", "guide", {
               ["Illness anxiety disorder", "Worry about illness and bodily preoccupation; any medical condition is **not physiologically** causing the anxiety."],
               ["Adjustment disorder with anxiety", "A maladaptive response to the **meaning or consequences** of the diagnosis. Anxiety due to a medical condition has **prominent physical symptoms** (shortness of breath) and focuses less on the stress of being ill."]
             ] },
-            { type: "p", text: "**Course** (p. 259): follows the underlying illness. Prevalence is unclear; anxiety disorders are more common in people with asthma, hypertension, ulcers and arthritis, but not necessarily as a direct effect. The diagnosis does **not** cover primary anxiety disorders that arise in the context of chronic illness, which matters especially in **older adults**. **Laboratory tests and examination** are needed to confirm the medical condition." },
+            { type: "p", text: "**Course** (pp. 259–260): follows the underlying illness. Prevalence is unclear; anxiety disorders are more common in people with asthma, hypertension, ulcers and arthritis, but not necessarily as a direct effect. The diagnosis does **not** cover primary anxiety disorders that arise in the context of chronic illness, which matters especially in **older adults**. **Laboratory tests and examination** are needed to confirm the medical condition." },
             { type: "case", title: "Clinical vignette: the late-onset “panic”", text: "A 52-year-old man with no psychiatric history has had six episodes in a month of pounding headache, drenching sweat, palpitations and terror, with blood pressure readings of 210/120 during two of them. Between episodes he feels well and is not worried about having more. His 24-hour urine metanephrines are markedly raised, and an adrenal mass is found.", point: "First onset **after 45**, paroxysmal hypertension and a demonstrated mechanism: **D35.00 pheochromocytoma; F06.4 anxiety disorder due to pheochromocytoma**. He also lacks the Criterion B worry of panic disorder, which in any case is excluded by Criterion C." }
           ]
         },
@@ -866,7 +866,7 @@ SP.add("ch05", "guide", {
             { type: "table", caption: "The anxiety disorders side by side", head: ["Disorder", "What is feared or avoided", "The feared outcome", "Duration"], rows: [
               ["[[dx:separation-anxiety|Separation anxiety]]", "Separation from attachment figures", "Harm to them, or an event that separates us", "4 wk (youth); ~6 mo (adults)"],
               ["[[dx:selective-mutism|Selective mutism]]", "Speaking where speech is expected", "Usually social: being heard and judged", "1 mo (not the first month of school)"],
-              ["[[dx:specific-phobia|Specific phobia]]", "A circumscribed object or situation", "Direct harm (bite, crash, fall), disgust, fainting", "~6 mo"],
+              ["[[dx:specific-phobia|Specific phobia]]", "A circumscribed object or situation", "No specific cognition (p. 216); fear of direct harm (bite, crash) separates it from agoraphobia", "~6 mo"],
               ["[[dx:social-anxiety|Social anxiety]]", "Situations with possible scrutiny", "Negative evaluation: humiliation, rejection, offending", "~6 mo"],
               ["[[dx:panic-disorder|Panic disorder]]", "The attacks themselves", "Heart attack, dying, losing control, going crazy", "1 mo of worry or behavior change"],
               ["[[dx:agoraphobia|Agoraphobia]]", "2 of 5: transport, open, enclosed, lines or crowds, outside alone", "Trapped or helpless if panic-like or embarrassing symptoms strike", "~6 mo"],
@@ -877,7 +877,7 @@ SP.add("ch05", "guide", {
               { label: "Separation anxiety disorder (under 18)", dx: "separation-anxiety", from: 22, to: 100, color: "guide", open: true, span: "≥4 weeks" },
               { label: "Selective mutism", dx: "selective-mutism", from: 22, to: 100, color: "guide", open: true, span: "≥1 month, not the first month of school" },
               { label: "Panic disorder, Criterion B", dx: "panic-disorder", from: 22, to: 100, color: "drug", open: true, span: "≥1 month of worry or behavior change" },
-              { label: "Substance-induced: persistence that suggests independence", dx: "substance-induced-anxiety", from: 0, to: 22, color: "clin", span: "≈1 month after stopping" },
+              { label: "Substance-induced: persistence that suggests independence", dx: "substance-induced-anxiety", from: 0, to: 22, color: "clin", span: "≈1 month after acute withdrawal or severe intoxication" },
               { label: "Separation anxiety disorder (adults)", dx: "separation-anxiety", from: 55, to: 100, color: "hy", open: true, span: "Typically ≥6 months" },
               { label: "Specific phobia · social anxiety · agoraphobia", dx: "specific-phobia", from: 55, to: 100, color: "mech", open: true, span: "Typically ≥6 months" },
               { label: "Generalized anxiety disorder", dx: "gad", from: 55, to: 100, color: "drug", open: true, span: "≥6 months, more days than not" }
@@ -895,11 +895,11 @@ SP.add("ch05", "guide", {
               ["2. Panic attacks?", "If yes: expected or unexpected? Unexpected and recurrent with a month of worry → **panic disorder**. Otherwise add **“with panic attacks”** to whatever disorder explains them."],
               ["3. What is feared?", "Separation, an object, scrutiny, being trapped, or many things."],
               ["4. Why is it feared?", "Harm to loved ones, direct harm, judgment, incapacity without help, or a stream of worries. This settles phobia vs agoraphobia vs social anxiety."],
-              ["5. How many situations?", "One agoraphobic situation → situational phobia; two or more → agoraphobia."],
+              ["5. How many situations?", "One agoraphobic situation → situational phobia may be diagnosed; two or more → agoraphobia is likely, especially if feared because escape or help may be unavailable."],
               ["6. Duration and impairment", "Apply the time rule for that disorder and confirm distress or impairment and proportion, in cultural context."],
               ["7. Exclusions and comorbidity", "OCD, PTSD, body dysmorphic disorder, illness anxiety, depression, psychosis, autism. Then list every disorder that is met: comorbidity is the rule. Screen for **suicidal thoughts**."]
             ] },
-            { type: "callout", kind: "key", title: "Twelve traps", text: "1) **Adults** can have separation anxiety disorder; the 4-week rule is for under-18s. 2) The **first month of school** never counts for selective mutism. 3) A child learning a **new language** does not have selective mutism. 4) Code **every** phobia type present. 5) **Blood-injection-injury** phobia causes **fainting**, not just racing heart. 6) Social anxiety in children must occur with **peers**. 7) Performance only means **no** fear of other social situations. 8) The panic attack is a **specifier**, never coded, and never added to panic disorder. 9) **Culture-specific** symptoms do not count toward the four. 10) Agoraphobia does **not** need panic disorder, and both are coded when present. 11) GAD needs **3 of 6** in adults, **1** in children. 12) Caffeine-induced anxiety is **F15.980**; opioid-induced ends in **.x88**." },
+            { type: "callout", kind: "key", title: "Twelve traps", text: "1) **Adults** can have separation anxiety disorder; the 4-week rule is for under-18s. 2) Silence **limited to the first month of school** does not count for selective mutism. 3) A child learning a **new language** does not have selective mutism. 4) Code **every** phobia type present. 5) **Blood-injection-injury** phobia often causes **fainting**, not just racing heart. 6) Social anxiety in children must occur with **peers**. 7) Performance only means **no** fear of other social situations. 8) The panic attack is a **specifier**, never coded, and never added to panic disorder. 9) **Culture-specific** symptoms do not count toward the four. 10) Agoraphobia does **not** need panic disorder, and both are coded when present. 11) GAD needs **3 of 6** in adults, **1** in children. 12) Caffeine-induced anxiety is **F15.980**; opioid-induced ends in **.x88**." },
             { type: "p", text: "Practice with the [[helper:anxiety|anxiety disorders helper]] and the [[helper:panic|panic attack helper]], then compare [[dx:panic-disorder|panic disorder]] with [[dx:agoraphobia|agoraphobia]], and [[dx:social-anxiety|social anxiety disorder]] with [[dx:agoraphobia|agoraphobia]], side by side in the library." }
           ]
         }

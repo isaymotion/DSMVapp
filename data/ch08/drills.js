@@ -69,7 +69,7 @@
         { label: "Code", options: CODES, answer: 4 }
       ],
       line: "**F44.89** Other specified dissociative disorder, acute dissociative reaction to stressful events",
-      why: "Dissociative symptoms alone fall short of the 9 of 14 needed for acute stress disorder; the acute reaction example fits."
+      why: "Dissociative symptoms alone fall short of the 9 of 14 needed for acute stress disorder (Ch 7); the acute reaction example fits."
     },
     {
       id: "w8-07", tag: "Other specified",
@@ -111,7 +111,7 @@
         { label: "Dissociative amnesia code", options: CODES, answer: 1 }
       ],
       line: "**F43.10** Posttraumatic stress disorder; **F44.0** dissociative amnesia",
-      why: "Amnesia for the ambush belongs to PTSD; amnesia **extending beyond** the trauma warrants dissociative amnesia as well."
+      why: "Amnesia for the ambush belongs to PTSD; amnesia **extending beyond** the trauma may warrant dissociative amnesia as well."
     }
   ]);
 
@@ -213,7 +213,7 @@
     {
       id: "n8-08", tag: "Acute reaction vs acute stress disorder",
       "case": "Two weeks after an assault, a woman has:",
-      ask: "Acute stress disorder needs 9 of 14 symptoms. Mark the findings that count toward acute stress disorder.",
+      ask: "Acute stress disorder (Ch 7) needs 9 of 14 symptoms. Mark the findings that count toward acute stress disorder.",
       items: [
         ["Derealization and time slowing", true, "One symptom: altered sense of the reality of surroundings or self."],
         ["Inability to remember part of the assault", true, "Dissociative amnesia (counts)."],

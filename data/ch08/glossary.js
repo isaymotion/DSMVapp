@@ -2,7 +2,7 @@
    Terms already defined earlier (depersonalization, derealization, flashback, possession trance, nihilistic delusion,
    dissociative subtype, peritraumatic dissociation, identity disruption) are not repeated. */
 SP.glossary = (SP.glossary || []).concat([
-  ["dissociation", "A disruption or discontinuity in the normal integration of consciousness, memory, identity, emotion, perception, body representation, motor control and behavior.", "Ch 8"],
+  ["dissociation", "A break in the normal integration of consciousness, memory, identity, emotion, perception, body sense, motor control and behavior.", "Ch 8"],
   ["positive dissociative symptoms", "Unbidden intrusions into awareness and behavior, such as divided identity, depersonalization and derealization.", "Ch 8"],
   ["negative dissociative symptoms", "Inability to access information or control mental functions that are normally accessible, such as amnesia.", "Ch 8"],
   ["personality state", "A distinct pattern of sense of self, agency, affect, behavior and memory; two or more define dissociative identity disorder.", "Ch 8"],
@@ -16,7 +16,7 @@ SP.glossary = (SP.glossary || []).concat([
   ["imaginary playmate", "A normal childhood fantasy companion; DID is not diagnosed in a child when symptoms are better explained by one.", "Ch 8"],
   ["dissociative identity disorder", "Two or more distinct personality states (or possession) with discontinuity of self and agency, plus recurrent amnesia (F44.81).", "Ch 8"],
   ["dissociative amnesia", "Inability to recall important autobiographical information, usually traumatic or stressful, inconsistent with ordinary forgetting (F44.0).", "Ch 8"],
-  ["localized amnesia", "Failure to recall events during a circumscribed period of time; the most common form of dissociative amnesia.", "Ch 8"],
+  ["localized amnesia", "Failure to recall events during a circumscribed period of time; with selective amnesia, the most common form of dissociative amnesia.", "Ch 8"],
   ["selective amnesia", "Recall of some, but not all, events during a circumscribed period.", "Ch 8"],
   ["systematized amnesia", "Loss of memory for a specific category of information, such as a person or a place.", "Ch 8"],
   ["generalized amnesia", "Loss of memory for most or all of one’s life history, often identity; rare and acute in onset.", "Ch 8"],
@@ -24,7 +24,7 @@ SP.glossary = (SP.glossary || []).concat([
   ["dissociative fugue", "Apparently purposeful travel or bewildered wandering with amnesia for identity or other important information; a specifier of dissociative amnesia (F44.1).", "Ch 8"],
   ["retrograde amnesia", "Loss of memory for events before the onset of the amnesia.", "Ch 8"],
   ["anterograde amnesia", "Inability to form new memories after the onset of the amnesia.", "Ch 8"],
-  ["transient global amnesia", "A sudden, temporary neurological inability to form new memories, with identity preserved, usually in older adults; excluded from dissociative amnesia.", "Ch 8"],
+  ["transient global amnesia", "A sudden, temporary neurological inability to form new memories, with identity preserved, usually in older adults (description from neurology, outside the DSM); excluded from dissociative amnesia by Criterion C.", "Ch 8"],
   ["blackout", "Memory loss for a period of intoxication; a substance effect, not dissociative amnesia.", "Ch 8"],
   ["micro-amnesia", "A brief, circumscribed memory gap, typical of acute dissociative reactions.", "Ch 8"],
   ["depersonalization/derealization disorder", "Persistent or recurrent depersonalization and/or derealization with intact reality testing, causing distress or impairment (F48.1).", "Ch 8"],
@@ -36,7 +36,7 @@ SP.glossary = (SP.glossary || []).concat([
   ["coercive persuasion", "Prolonged, intense pressure to change beliefs or identity, as in brainwashing, cults, captivity or torture; can cause an other specified dissociative disorder.", "Ch 8"],
   ["acute dissociative reaction", "A transient mix of dissociative symptoms after a stressor, typically lasting less than 1 month; an other specified dissociative disorder.", "Ch 8"],
   ["dissociative trance", "Acute narrowing or loss of awareness of surroundings with profound unresponsiveness, outside accepted cultural or religious practice.", "Ch 8"],
-  ["nonepileptic seizures", "Seizure-like episodes without epileptic brain activity; a functional neurological symptom common in DID and dissociative amnesia.", "Ch 8"],
+  ["nonepileptic seizures", "Seizure-like episodes without epileptic brain activity; a functional neurological symptom prominent in some presentations of DID.", "Ch 8"],
   ["feigned dissociation", "Deliberately producing dissociative symptoms, for external gain (malingering) or to assume the sick role (factitious disorder).", "Ch 8"],
   ["revictimization", "Repeated trauma in adulthood after childhood abuse; common in DID and linked to poor outcome.", "Ch 8"]
 ]);

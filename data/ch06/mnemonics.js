@@ -10,7 +10,7 @@ SP.add("ch06", "mnemonics", [
       ["S", "Symmetry", "Need for exactness, “just right” → ordering, repeating, counting"],
       ["T", "Taboo thoughts", "Forbidden aggressive, sexual or religious obsessions → mental rituals, reassurance, avoidance"]
     ],
-    caveat: "These dimensions are common across cultures but are **not** criteria. OCD needs obsessions and/or compulsions that are **time-consuming (>1 hour a day) or cause distress or impairment**."
+    caveat: "These dimensions are common across cultures but are **not** criteria. OCD needs obsessions and/or compulsions that are **time-consuming (e.g., >1 hour a day) or cause distress or impairment**."
   },
   {
     id: "m6-02", short: "Plus distress or impairment; not weight concerns in an eating disorder", name: "CAMERA", original: true, dx: "bdd", sec: "s6-bdd-criteria",

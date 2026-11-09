@@ -15,7 +15,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 0 },
         { label: "Specifiers", options: PTSD_SPEC, answer: [0], multi: true },
-        { label: "Code", options: ["F43.10", "F43.0", "F43.8", "F44.81"], answer: 0 }
+        { label: "Code", options: ["F43.0", "F44.81", "F43.10", "F43.8"], answer: 2 }
       ],
       line: "**F43.10** Posttraumatic stress disorder, with dissociative symptoms",
       why: "Depersonalization and derealization add the **dissociative** specifier. Full criteria came within 6 months, so not delayed."
@@ -26,7 +26,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 0 },
         { label: "Specifiers", options: PTSD_SPEC, answer: [1], multi: true },
-        { label: "Code", options: ["F43.10", "F43.0", "F43.89", "F43.21"], answer: 0 }
+        { label: "Code", options: ["F43.89", "F43.10", "F43.0", "F43.21"], answer: 1 }
       ],
       line: "**F43.10** Posttraumatic stress disorder, with delayed expression",
       why: "Full criteria first met **at least 6 months** after the event = delayed expression."
@@ -36,7 +36,7 @@
       "case": "A 40-year-old woman first meets full PTSD criteria 8 months after a hostage situation, and has persistent derealization. No substance use.",
       parts: [
         { label: "Specifiers", options: PTSD_SPEC, answer: [0, 1], multi: true },
-        { label: "Code", options: ["F43.10", "F43.12", "F44.81", "F43.89"], answer: 0 }
+        { label: "Code", options: ["F43.12", "F44.81", "F43.89", "F43.10"], answer: 3 }
       ],
       line: "**F43.10** Posttraumatic stress disorder, with dissociative symptoms, with delayed expression",
       why: "Both specifiers can apply together."
@@ -46,7 +46,7 @@
       "case": "Two weeks after a bus crash, a 35-year-old woman has 11 of 14 acute stress symptoms and cannot work.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 1 },
-        { label: "Code", options: ["F43.0", "F43.10", "F43.22", "F43.8"], answer: 0 }
+        { label: "Code", options: ["F43.10", "F43.22", "F43.0", "F43.8"], answer: 2 }
       ],
       line: "**F43.0** Acute stress disorder",
       why: "Nine or more of 14, 3 days to 1 month. Acute stress disorder has no specifiers."
@@ -89,7 +89,7 @@
       "case": "Sixteen months after his wife’s death, a 66-year-old man yearns for her daily, feels part of him died, avoids reminders, feels life is meaningless and is intensely lonely, beyond his community’s norms. He does not meet MDD or PTSD criteria.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 3 },
-        { label: "Code to use today", options: ["F43.81", "F43.8", "F43.89", "F43.21"], answer: 0 }
+        { label: "Code to use today", options: ["F43.8", "F43.89", "F43.21", "F43.81"], answer: 3 }
       ],
       line: "**F43.81** Prolonged grief disorder",
       why: "DSM-5-TR printed F43.8, but since **October 2022** prolonged grief disorder is coded **F43.81**."
@@ -99,8 +99,8 @@
       "case": "Two years after an assault, a 33-year-old woman has intrusive memories and avoidance, but not enough cognition, mood or arousal symptoms for PTSD.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 4 },
-        { label: "Reason recorded", options: ["Persistent response to trauma with PTSD-like symptoms", "Adjustment-like disorder with delayed onset", "Adjustment-like disorder with prolonged duration", "Ataque de nervios"], answer: 0 },
-        { label: "Code to use today", options: ["F43.89", "F43.8", "F43.9", "F43.10"], answer: 0 }
+        { label: "Reason recorded", options: ["Adjustment-like disorder with delayed onset", "Persistent response to trauma with PTSD-like symptoms", "Adjustment-like disorder with prolonged duration", "Ataque de nervios"], answer: 1 },
+        { label: "Code to use today", options: ["F43.8", "F43.9", "F43.89", "F43.10"], answer: 2 }
       ],
       line: "**F43.89** Other specified trauma- and stressor-related disorder, persistent response to trauma with PTSD-like symptoms",
       why: "Subthreshold PTSD beyond 6 months. Printed F43.8; F43.89 since October 2022."
@@ -110,7 +110,7 @@
       "case": "A 41-year-old man develops low mood and anxiety 5 months after his business failed; he does not meet another disorder.",
       parts: [
         { label: "Diagnosis", options: ["Adjustment disorder", "Other specified trauma- and stressor-related disorder", "Major depressive disorder", "Unspecified trauma- and stressor-related disorder"], answer: 1 },
-        { label: "Reason recorded", options: ["Adjustment-like disorder with delayed onset", "Adjustment-like disorder with prolonged duration", "Persistent response to trauma with PTSD-like symptoms"], answer: 0 }
+        { label: "Reason recorded", options: ["Persistent response to trauma with PTSD-like symptoms", "Adjustment-like disorder with prolonged duration", "Adjustment-like disorder with delayed onset"], answer: 2 }
       ],
       line: "**F43.89** Other specified trauma- and stressor-related disorder, adjustment-like disorder with delayed onset",
       why: "Adjustment disorder needs onset within 3 months; later onset is an other specified example."
@@ -121,7 +121,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 5 },
         { label: "Specifiers", options: ["Persistent", "Severe", "None"], answer: [0], multi: true },
-        { label: "Code", options: ["F94.1", "F94.2", "F84.0", "F43.10"], answer: 0 }
+        { label: "Code", options: ["F94.2", "F94.1", "F84.0", "F43.10"], answer: 1 }
       ],
       line: "**F94.1** Reactive attachment disorder, persistent",
       why: "Present for more than **12 months** = persistent. Add “severe” only if all symptoms are present at relatively high levels."
@@ -132,7 +132,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 6 },
         { label: "Specifiers", options: ["Persistent", "Severe", "None"], answer: [0, 1], multi: true },
-        { label: "Code", options: ["F94.2", "F94.1", "F90.2", "F43.24"], answer: 0 }
+        { label: "Code", options: ["F90.2", "F43.24", "F94.1", "F94.2"], answer: 3 }
       ],
       line: "**F94.2** Disinhibited social engagement disorder, persistent, severe",
       why: "More than 12 months = persistent; all symptoms at high levels = severe."

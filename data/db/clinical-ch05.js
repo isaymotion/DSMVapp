@@ -5,7 +5,7 @@
    Complaint hub entries (SP.complaintData) are shared across chapters: entries with the same id merge. */
 (function () {
   var BZD = "Benzodiazepines ([[stahl:drugs/alprazolam|alprazolam]], clonazepam, [[stahl:drugs/diazepam|diazepam]]) act fast but carry an FDA **boxed warning** (since 2020) for misuse, addiction, dependence and withdrawal; keep them short-term or as a bridge, and avoid them with substance use, in older adults and with opioids.";
-  var CBT = "**CBT with exposure**, which is at least as effective as medication; combining the two helps in moderate to severe cases.";
+  var CBT = "**CBT with exposure**, about as effective as medication; combining the two may add benefit.";
   SP.dxExtra = (SP.dxExtra || []).concat([
     {
       id: "separation-anxiety",
@@ -25,7 +25,7 @@
         first: CBT + " For children, CBT with a strong **parent component** (graded separations, reducing accommodation) and a planned **return to school**.",
         points: [
           "Moderate to severe or CBT-resistant pediatric anxiety: an [[stahl:c/ch07/guide/s7-ssri|SSRI]] (sertraline is best studied; the CBT-plus-sertraline combination did best in the CAMS trial). Monitor for activation and suicidal thinking (boxed warning under 25).",
-          "Adults: treat as for other anxiety disorders, with an SSRI or SNRI plus CBT.",
+          "Adults: treat as for other anxiety disorders, with an SSRI or SNRI plus CBT (app guidance; not verified).",
           "Avoid benzodiazepines in children."
         ],
         stahl: [["SSRIs", "c/ch07/guide/s7-ssri"], ["Anxiety disorders as symptom sets", "c/ch08/guide/s8-subtypes"]]
@@ -76,7 +76,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: CBT + " For medication: an [[stahl:c/ch07/guide/s7-ssri|SSRI]] (FDA-approved: [[stahl:drugs/sertraline|sertraline]], [[stahl:drugs/paroxetine|paroxetine]]) or [[stahl:drugs/venlafaxine|venlafaxine]] XR.",
+        first: CBT + " For medication: an [[stahl:c/ch07/guide/s7-ssri|SSRI]] (FDA-approved: [[stahl:drugs/sertraline|sertraline]], [[stahl:drugs/paroxetine|paroxetine]], fluvoxamine CR) or [[stahl:drugs/venlafaxine|venlafaxine]] XR.",
         points: [
           "Performance only: a beta-blocker such as propranolol taken before the event (off-label) eases tremor and palpitations; beta-blockers do not help generalized social anxiety.",
           "Second-line: MAOIs ([[stahl:drugs/phenelzine|phenelzine]]), [[stahl:drugs/pregabalin|pregabalin]] or [[stahl:drugs/gabapentin|gabapentin]] (off-label in the US).",
@@ -151,11 +151,11 @@
         asOf: "October 2026",
         first: CBT + " For medication: an SSRI or SNRI. FDA-approved: [[stahl:drugs/escitalopram|escitalopram]] (also ages 7–17), [[stahl:drugs/paroxetine|paroxetine]], [[stahl:drugs/venlafaxine|venlafaxine]] XR and [[stahl:drugs/duloxetine|duloxetine]] (also ages 7–17).",
         points: [
-          "[[stahl:drugs/buspirone|Buspirone]] is FDA-approved for GAD: no dependence, slow onset, little effect on comorbid depression.",
+          "[[stahl:drugs/buspirone|Buspirone]] is FDA-approved for anxiety disorders (studied in GAD): no dependence, slow onset, little effect on comorbid depression.",
           "[[stahl:drugs/pregabalin|Pregabalin]] is approved for GAD in Europe and used off-label in the US; [[stahl:drugs/hydroxyzine|hydroxyzine]] is approved for anxiety; [[stahl:drugs/quetiapine|quetiapine]] XR has evidence but metabolic costs.",
           BZD,
           "GAD is chronic: continue treatment for at least 6–12 months after response.",
-          "Investigational: lysergide (MM120, now DT120) has phase 3 trials in GAD; no psychedelic is approved for anxiety as of October 2026."
+          "Investigational: lysergide (DT120, formerly MM120; Definium Therapeutics) reported two positive phase 3 GAD trials in 2026, with a new drug application planned for 2027; no psychedelic is approved for anxiety as of November 2026 (outside the DSM; Psychiatric Times, Sept 14, 2026)."
         ],
         stahl: [["Generalized anxiety disorder", "c/ch08/guide/s8-gad"], ["Serotonin and buspirone", "c/ch08/guide/s8-serotonin"], ["α2δ ligands", "c/ch08/guide/s8-a2d"], ["Benzodiazepines", "c/ch08/guide/s8-bzd"]]
       }
@@ -166,12 +166,12 @@
         ["Timeline", "“When did the anxiety start in relation to your drinking, drug use or a new medicine? Was it there before?”"],
         ["Substances", "“How many cups of coffee, energy drinks or pre-workout supplements a day? Cannabis, stimulants, alcohol, sleeping pills?”"],
         ["Medications", "“Any inhalers, steroids, thyroid pills, decongestants or recent dose changes?”"],
-        ["Persistence", "After stopping: “Has the anxiety settled?”", "Persisting about a month suggests an independent disorder."]
+        ["Persistence", "After stopping: “Has the anxiety settled?”", "Persisting about a month after acute withdrawal or severe intoxication ends suggests an independent disorder."]
       ],
       tx: {
         asOf: "October 2026",
         first: "Remove or reduce the cause (taper caffeine; switch the medication), and manage withdrawal safely (alcohol and sedative withdrawal can be dangerous).",
-        points: ["Treat the substance use disorder.", "If anxiety persists after about a month, treat it as an independent anxiety disorder."],
+        points: ["Treat the substance use disorder.", "If anxiety persists about a month after acute withdrawal or severe intoxication ends, treat it as an independent anxiety disorder."],
         stahl: [["Addiction", "c/ch13/guide"]]
       }
     },
@@ -204,7 +204,7 @@
       id: "anxious", title: "Anxiety, worry or nervousness",
       intro: "“Anxiety” covers very different disorders. The two questions that sort them are **what is feared or avoided** and **what the person thinks will happen**. Then exclude substances, medications and medical causes.",
       ask: ["What do you fear or avoid, and what do you think would happen?", "Do you have sudden attacks that peak within minutes? Any out of the blue?", "Is the worry about many things, or one focus?", "How long has it lasted, and what has it stopped you doing?", "Caffeine, alcohol, cannabis, stimulants, new medicines?"],
-      mustNotMiss: ["**Medical causes**: hyperthyroidism, arrhythmia, hypoglycemia, pheochromocytoma, pulmonary embolism.", "**Alcohol or sedative withdrawal.**", "**Suicidal thoughts**, which anxiety raises, especially with depression."],
+      mustNotMiss: ["**Medical causes**: hyperthyroidism, arrhythmia, hypoglycemia, pheochromocytoma, pulmonary embolism.", "**Alcohol or sedative withdrawal.**", "**Suicidal thoughts**, which may be more common with anxiety."],
       helpers: ["anxiety", "panic"],
       items: [
         { ch: "ch05", dx: "gad", when: "Hard-to-control worry about many things, more days than not for 6 months." },
@@ -267,7 +267,7 @@
         { ch: "ch05", dx: "gad", when: "Worries about performance, grades and many other things." },
         { ch: "ch05", dx: "specific-phobia", when: "A particular feared thing at school (a dog on the route, the toilets, vomiting)." },
         { ch: "ch04", dx: "mdd", when: "Low mood, irritability, loss of interest." },
-        { ch: "ch15", dx: "conduct-disorder", when: "Stays away from home and school without anxiety." },
+        { ch: "ch15", dx: "conduct-disorder", when: "Stays away from home and school; absences not driven by separation anxiety." },
         { ch: "ch01", name: "Specific learning disorder or language disorder", when: "Avoids tasks that expose difficulties." }
       ]
     },

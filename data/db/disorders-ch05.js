@@ -2,7 +2,7 @@
    The panic attack specifier has its own entry (code "Not coded") so it can be compared and searched. */
 SP.disorders = (SP.disorders || []).concat([
   {
-    id: "separation-anxiety", ch: "ch05", sec: "s5-sad-criteria", pages: "217–222", critPages: "217",
+    id: "separation-anxiety", ch: "ch05", sec: "s5-sad-criteria", pages: "217–221", critPages: "217",
     name: "Separation anxiety disorder", code: "F93.0", aka: ["separation anxiety", "SAD (separation anxiety disorder)"],
     essence: "Developmentally inappropriate, excessive fear of **separation from attachment figures**, with **3 of 8** symptoms, for **≥4 weeks** in youth and **typically ≥6 months** in adults.",
     duration: "**≥4 weeks** under 18; **typically ≥6 months** in adults",
@@ -22,7 +22,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "panic-disorder", how: "Panic disorder has unexpected attacks; here attacks come with anticipated separation." },
       { id: "agoraphobia", how: "Agoraphobia fears being trapped without help, not being away from attachment figures." },
       { id: "social-anxiety", how: "School refusal from fear of judgment, not separation." },
-      { id: "conduct-disorder", how: "Truancy without anxiety; the child stays away from home." },
+      { id: "conduct-disorder", how: "Truancy not driven by separation anxiety; the child stays away from home." },
       { name: "Illness anxiety disorder", how: "Worry about one’s own illness, not loved ones’ safety." },
       { name: "Dependent personality disorder", how: "Indiscriminate reliance on others rather than fear for specific attachment figures." },
       { name: "Prolonged grief disorder", how: "Yearning for someone who has died, not fear of possible separation." }
@@ -47,14 +47,14 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     specifiers: [],
     epi: [["Prevalence", "0.03%–1.9% (clinic and school samples)"], ["Sex", "Roughly equal; some evidence of more girls"], ["Onset", "Usually before 5; noticed at school entry"], ["Higher risk", "Children who must speak a non-native language"]],
-    risk: ["Behavioral inhibition and negative affectivity.", "Parental shyness, social anxiety; overprotective or controlling parenting.", "Subtle receptive language weaknesses (within normal range).", "Shared genetics with social anxiety disorder."],
+    risk: ["Temperamental risks are not well identified; behavioral inhibition or negative affectivity may play a role.", "Parental shyness, social anxiety; overprotective or controlling parenting.", "Subtle receptive language weaknesses (within normal range).", "Possibly shared genetics with social anxiety disorder."],
     differential: [
       { name: "Silent period (second-language learning)", how: "Normal; refusal to speak both languages despite comprehension would be needed." },
       { name: "Communication disorders", how: "Speech problems are not restricted to particular social situations." },
       { name: "Autism spectrum disorder or psychosis", how: "Selective mutism needs an established capacity to speak in some settings." },
       { id: "social-anxiety", how: "Commonly comorbid; both can be diagnosed." }
     ],
-    pearls: ["The first month of school never counts.", "Nearly always comes with another anxiety disorder, usually social anxiety.", "Mutism may fade, but social anxiety often remains."],
+    pearls: ["Silence limited to the first month of school does not count.", "In clinics, nearly always comes with another anxiety disorder, usually social anxiety.", "Mutism may fade, but social anxiety often remains."],
     cmp: { symptoms: "No speech where expected, speech elsewhere", exclusions: "Language unfamiliarity; communication disorders; autism or psychosis", prevalence: "0.03%–1.9%", course: "Onset <5; often fades, social anxiety persists" },
     clues: [["Core picture", "A 6-year-old silent at school for months who chats at home"], ["Exclusion", "Not the silent period of a new language"], ["Code", "F94.0"]]
   },
@@ -93,7 +93,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "panic-disorder", how: "Unexpected panic attacks as well." },
       { id: "ocd", how: "Fear driven by obsessions (contamination, harming)." },
       { name: "PTSD", how: "Follows trauma with full PTSD criteria." },
-      { id: "arfid", how: "Avoidance limited to food and food cues (or anorexia nervosa if driven by weight)." }
+      { id: "arfid", how: "Avoidance limited to food and food cues: consider anorexia or bulimia nervosa (Ch 10); ARFID is also in Ch 10." }
     ],
     pearls: ["Code every type present: 75% fear more than one stimulus.", "Blood-injection-injury phobia faints (vasovagal).", "Adult phobias rarely remit.", "Linked with the transition from suicidal thoughts to attempts."],
     cmp: { symptoms: "Immediate fear of a circumscribed stimulus", exclusions: "Agoraphobia, OCD, PTSD, separation and social anxiety", prevalence: "8%–12% (US)", course: "Childhood onset; persistent if it lasts into adulthood" },
@@ -127,7 +127,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "asd", how: "Social communication deficits are core." },
       { id: "mdd", how: "Fear of evaluation from feeling worthless." }
     ],
-    pearls: ["In children the anxiety must occur with peers.", "Performance only = no fear of nonperformance situations.", "People wait 15–20 years before seeking treatment.", "Taijin kyofusho: fear of offending or discomforting others."],
+    pearls: ["In children the anxiety must occur with peers.", "Performance only = no fear of nonperformance situations.", "Only about half seek treatment (high-income societies), usually after 15–20 years.", "Taijin kyofusho: fear of offending or discomforting others."],
     cmp: { symptoms: "Fear of scrutiny and negative evaluation", exclusions: "Panic disorder, BDD, autism; substance or medical cause", prevalence: "≈7% (US)", course: "Adolescent onset; often persistent in clinical samples" },
     clues: [["Core picture", "A resident who swaps every presentation slot and eats lunch alone so no one sees his hands shake"], ["Specifier", "Performance only"], ["Code", "F40.10"]]
   },
@@ -161,15 +161,15 @@ SP.disorders = (SP.disorders || []).concat([
     clues: [["Core picture", "A young woman with repeated out-of-the-blue attacks and normal ECGs who now avoids exercise and checks her pulse"], ["Key word", "Unexpected"], ["Code", "F41.0"]]
   },
   {
-    id: "panic-attack", ch: "ch05", sec: "s5-panic-attack", pages: "242–246", critPages: "242",
+    id: "panic-attack", ch: "ch05", sec: "s5-panic-attack", pages: "242–245", critPages: "242",
     name: "Panic attack (specifier)", code: "Not coded", aka: ["with panic attacks", "panic attack specifier"],
     essence: "An **abrupt surge** of intense fear or discomfort that **peaks within minutes**, with **4 of 13** symptoms. A specifier added to any disorder, not a diagnosis.",
     duration: "Peaks **within minutes**",
     functioning: "Marks greater severity, comorbidity and poorer treatment response",
     mood: "Intense fear or discomfort",
     criteria: [
-      ["A", "Abrupt surge, peak within minutes, from a calm or anxious state, with **≥4 of 13**:", ["Palpitations", "Sweating", "Trembling", "Shortness of breath", "Choking", "Chest pain", "Nausea", "Dizziness or faintness", "Chills or heat", "Paresthesias", "Derealization or depersonalization", "Fear of losing control or going crazy", "Fear of dying"]],
-      ["B", "Culture-specific symptoms (tinnitus, neck soreness, headache, screaming or crying) do not count."]
+      ["", "Abrupt surge, peak within minutes, from a calm or anxious state, with **≥4 of 13**:", ["Palpitations", "Sweating", "Trembling", "Shortness of breath", "Choking", "Chest pain", "Nausea", "Dizziness or faintness", "Chills or heat", "Paresthesias", "Derealization or depersonalization", "Fear of losing control or going crazy", "Fear of dying"]],
+      ["Note", "Culture-specific symptoms (tinnitus, neck soreness, headache, screaming or crying) do not count."]
     ],
     specifiers: ["Recorded as “[disorder] with panic attacks”; not used with panic disorder"],
     epi: [["12-month prevalence", "9.5%–11.2% (adults)"], ["Lifetime", "13.2% cross-nationally"], ["Onset", "Mean 22–23 (US)"], ["Children", "Rare before puberty"]],
@@ -181,7 +181,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "panic-disorder", how: "Recurrent unexpected attacks are necessary but not sufficient." }
     ],
     pearls: ["11 physical, 2 cognitive symptoms.", "Fewer than 4 = limited-symptom attack.", "Expected vs unexpected is judged by the clinician.", "Nocturnal attacks are unexpected."],
-    cmp: { symptoms: "4 of 13 symptoms, peak within minutes", exclusions: "Anger or grief paroxysms", prevalence: "9.5%–11.2% (12-month)", course: "Follows the co-occurring disorder" },
+    cmp: { symptoms: "4 of 13 symptoms, peak within minutes", exclusions: "Anger or grief paroxysms", prevalence: "9.5%–11.2% (12-month)", course: "Likely shaped by co-occurring disorders and life events" },
     clues: [["Core picture", "Sudden pounding heart, sweating and terror peaking in 5 minutes"], ["Use", "Add “with panic attacks” to PTSD, depression, other anxiety disorders"], ["Code", "None"]]
   },
   {
@@ -214,7 +214,7 @@ SP.disorders = (SP.disorders || []).concat([
     clues: [["Core picture", "A man who will not ride the train or shop alone in case he collapses with no way out"], ["Threshold", "2 of 5 situations"], ["Code", "F40.00"]]
   },
   {
-    id: "gad", ch: "ch05", sec: "s5-gad-criteria", pages: "250–255", critPages: "250–251",
+    id: "gad", ch: "ch05", sec: "s5-gad-criteria", pages: "250–254", critPages: "250–251",
     name: "Generalized anxiety disorder", code: "F41.1", aka: ["GAD", "chronic worry"],
     essence: "Excessive, **hard-to-control** worry about **a number of** things, **more days than not** for **≥6 months**, with **3 of 6** symptoms (1 in children).",
     duration: "**≥6 months**, more days than not",
@@ -228,7 +228,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["E", "**Criteria E–F.** Not due to a substance or medical condition; not better explained by another disorder’s focused worry."]
     ],
     specifiers: [],
-    epi: [["12-month prevalence (US)", "Adults 2.9%; adolescents 0.9%"], ["Lifetime morbid risk", "9% (US)"], ["Sex", "≥2:1 female"], ["Onset", "Mean 35, latest of the anxiety disorders"]],
+    epi: [["12-month prevalence (US)", "Adults 2.9%; adolescents 0.9%"], ["Lifetime morbid risk", "9% (US)"], ["Sex", "≥2:1 female"], ["Onset", "Mean 35 (North America), latest of the anxiety disorders"]],
     risk: ["Behavioral inhibition, neuroticism, harm avoidance, attentional bias to threat.", "Childhood adversity; overprotective, overcontrolling parenting.", "One-third genetic, shared with MDD."],
     differential: [
       { id: "anxiety-due-to-amc", how: "Pheochromocytoma, hyperthyroidism." },
@@ -260,7 +260,7 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     aka: ["drug-induced anxiety", "caffeine-induced anxiety", "medication-induced anxiety"],
     essence: "Panic or anxiety that **predominates** and began **during or soon after** intoxication, withdrawal or medication exposure, from a substance able to cause it, without evidence of an independent anxiety disorder.",
-    duration: "Persistence **≈1 month** after stopping suggests an independent disorder",
+    duration: "Persistence **≈1 month** after acute withdrawal or severe intoxication ends suggests an independent disorder",
     functioning: "Distress or impairment; severe enough for clinical attention on its own",
     mood: "Panic attacks or prominent anxiety",
     criteria: [
@@ -279,8 +279,8 @@ SP.disorders = (SP.disorders || []).concat([
       { name: "Delirium", how: "Anxiety only during delirium is not diagnosed separately." }
     ],
     pearls: ["The use disorder is folded into the code, not diagnosed separately.", "Caffeine: F15.980 only.", "Opioids end in .x88.", "Unclassified drugs (salbutamol) use F19.x80."],
-    cmp: { symptoms: "Panic or anxiety tied to a substance", exclusions: "Independent anxiety disorder; delirium", prevalence: "Rare in the community", course: "Improves within days to a month after stopping" },
-    clues: [["Core picture", "Panic during alcohol withdrawal, or anxiety only during heavy coffee drinking"], ["Coding", "F1x.x80 (opioids .x88)"], ["Time rule", "≈1 month persistence suggests independence"]]
+    cmp: { symptoms: "Panic or anxiety tied to a substance", exclusions: "Independent anxiety disorder; delirium", prevalence: "Rare in the community", course: "Usually improves within days to a month after stopping (depends on half-life)" },
+    clues: [["Core picture", "Panic during alcohol withdrawal, or anxiety only during heavy coffee drinking"], ["Coding", "F1x.x80 (opioids .x88)"], ["Time rule", "≈1 month persistence after acute withdrawal or severe intoxication ends suggests independence"]]
   },
   {
     id: "anxiety-due-to-amc", ch: "ch05", sec: "s5-medical", pages: "258–261", critPages: "258–259",
@@ -327,11 +327,11 @@ SP.disorders = (SP.disorders || []).concat([
     differential: [
         { id: "ataque-de-nervios", how: "The Latinx syndrome behind this chapter’s own example: a stress-bound paroxysm with shouting, crying, aggression and sometimes dissociation; recorded here when clinically significant and not a full panic or dissociative diagnosis (Chapter 24, p. 874)." },
         { id: "khyal-cap", how: "Cambodian wind attacks, which usually meet panic attack criteria; catastrophic cognitions about wind rising in the body (Chapter 24, pp. 875–876)." },
-        { id: "nervios", how: "A Latinx idiom and explanation that spans no disorder to anxiety, depressive, dissociative and somatic presentations (Chapter 24, p. 877)." },
+        { id: "nervios", how: "A Latinx idiom and explanation that spans no disorder to adjustment, anxiety, depressive, dissociative, somatic symptom and psychotic presentations (Chapter 24, p. 877)." },
       { id: "unspecified-anxiety", how: "Reason not recorded or information insufficient." },
       { name: "Adjustment disorder with anxiety", how: "Stressor-related anxiety; must be ruled out first." }
     ],
-    pearls: ["Record the reason after the name.", "Cultural syndromes that fit no other disorder go here."],
+    pearls: ["Record the reason after the name.", "Khyâl cap and ataque de nervios presentations that meet no other disorder can go here."],
     cmp: { symptoms: "Subthreshold anxiety, reason recorded", exclusions: "Any specific anxiety disorder; adjustment disorder", prevalence: "—", course: "Varies" },
     clues: [["Example", "Only limited-symptom attacks, or GAD-like worry one day in three"], ["Code", "F41.8"]]
   },
@@ -347,7 +347,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [],
     risk: [],
     differential: [{ id: "other-specified-anxiety", how: "Use when the reason can be stated." }],
-    pearls: ["Common in emergency settings.", "May suit mixed anxiety and depression in older adults."],
+    pearls: ["Used when information is insufficient (e.g., emergency settings).", "May suit mixed anxiety and depression in older adults."],
     cmp: { symptoms: "Anxiety, reason not given", exclusions: "Specific anxiety disorders; adjustment disorder", prevalence: "—", course: "Varies" },
     clues: [["Example", "An anxious patient in the emergency department with too little history"], ["Code", "F41.9"]]
   }
@@ -372,5 +372,5 @@ SP.timeLadders = (SP.timeLadders || []).concat([
     { label: "Separation anxiety disorder (adults)", dx: "separation-anxiety", from: 55, to: 100, color: "hy", open: true, span: "Typically ≥6 months" },
     { label: "Specific phobia · social anxiety · agoraphobia", dx: "specific-phobia", from: 55, to: 100, color: "mech", open: true, span: "Typically ≥6 months" },
     { label: "Generalized anxiety disorder", dx: "gad", from: 55, to: 100, color: "drug", open: true, span: "≥6 months" }
-  ], note: "Substance-induced: persistence ≈1 month after stopping suggests an independent disorder. Adjustment disorder: within 3 months of a stressor, resolving within 6 months after it ends." }
+  ], note: "Substance-induced: persistence ≈1 month after acute withdrawal or severe intoxication ends suggests an independent disorder. Adjustment disorder: within 3 months of a stressor, resolving within 6 months after it ends." }
 ]);

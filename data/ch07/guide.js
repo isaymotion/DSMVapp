@@ -2,9 +2,9 @@
    Written in the app’s own words from the manual, with page references. Criteria are paraphrased: confirm exact
    wording, specifiers and codes against the manual. */
 SP.add("ch07", "guide", {
-  intro: "Every disorder in this chapter names **exposure to a traumatic or stressful event** as a diagnostic criterion (p. 295). Responses to trauma are varied: some are fear-based, but many are dominated by **anhedonia and dysphoria**, **anger and aggression**, or **dissociation**, which is why these disorders were moved out of the anxiety chapter. Two disorders of early childhood, **reactive attachment disorder** and **disinhibited social engagement disorder**, share a single cause, **social neglect**, but look opposite: withdrawn versus indiscriminately friendly. **PTSD** needs a **Criterion A** trauma (actual or threatened death, serious injury or sexual violence) and four symptom clusters for **more than 1 month**; **acute stress disorder** covers **3 days to 1 month**. **Adjustment disorders** follow any stressor, start within **3 months** and end within **6 months** of the stressor’s end. **Prolonged grief disorder**, new in DSM-5-TR, needs **12 months** (6 in youth) of intense yearning or preoccupation plus three other grief symptoms. The [[helper:trauma|trauma and stressor helper]] and the [[helper:attachment|attachment helper]] walk you through the reasoning.",
+  intro: "Every disorder in this chapter names **exposure to a traumatic or stressful event** as a diagnostic criterion (p. 295). Responses to trauma are varied: some are fear-based, but many are dominated by **anhedonia and dysphoria**, **anger and aggression**, or **dissociation**, which is why they form a separate group. Two disorders of early childhood, **reactive attachment disorder** and **disinhibited social engagement disorder**, share a single cause, **social neglect**, but look opposite: withdrawn versus indiscriminately friendly. **PTSD** needs a **Criterion A** trauma (actual or threatened death, serious injury or sexual violence) and four symptom clusters for **more than 1 month**; **acute stress disorder** covers **3 days to 1 month**. **Adjustment disorders** follow any stressor, start within **3 months** and end within **6 months** of the stressor’s end. **Prolonged grief disorder**, new in DSM-5-TR, needs **12 months** (6 in youth) of intense yearning or preoccupation plus three other grief symptoms. The [[helper:trauma|trauma and stressor helper]] and the [[helper:attachment|attachment helper]] walk you through the reasoning.",
   objectives: [
-    "Define a **Criterion A** traumatic event and its four routes of exposure, and recognize what does **not** qualify (natural deaths, media exposure outside work, most medical illness).",
+    "Define a **Criterion A** traumatic event and its four routes of exposure, and recognize what does **not** qualify (natural deaths, media exposure outside work; a life-threatening illness is not necessarily Criterion A).",
     "State the PTSD criteria for people **older than 6** (1 intrusion, 1 avoidance, 2 cognition and mood, 2 arousal, **>1 month**) and for **children 6 and younger**.",
     "Apply the **dissociative symptoms** and **delayed expression** specifiers.",
     "Diagnose **acute stress disorder** (9 of 14 symptoms, **3 days to 1 month**) and explain how it relates to PTSD.",
@@ -59,10 +59,10 @@ SP.add("ch07", "guide", {
             ] },
             { type: "defs", title: "Medical events and multiple traumas (pp. 305–306)", items: [
               ["Medical illness", "A life-threatening illness is **not necessarily** a trauma. Qualifying medical events are **sudden and catastrophic**: myocardial infarction, anaphylaxis, waking during surgery, burn debridement, emergency cardioversion."],
-              ["Severity", "PTSD may be especially severe or long-lasting when the stressor is **interpersonal and intentional** (torture, sexual violence)."],
-              ["Multiple traumas", "Ask for the **worst** event, because intrusion and avoidance symptoms refer to a specific event. If the person cannot pick one, the whole exposure can count."]
+              ["Severity", "PTSD may be especially severe or long-lasting after **interpersonal, intentional** trauma (torture, sexual violence)."],
+              ["Multiple traumas", "It may help to ask for the **worst** event, because intrusion and avoidance symptoms refer to a specific event. If the person cannot pick one, the whole exposure can count."]
             ] },
-            { type: "callout", kind: "exam", text: "Learning that a parent **died of cancer** is not Criterion A (a natural death). Learning that a parent **was killed in a crash** is. Watching a massacre **on the news** is not, unless it is your job (a journalist editing the footage)." }
+            { type: "callout", kind: "exam", text: "Learning that a parent **died of cancer** is not Criterion A (a natural death). Learning that a parent **was killed in a crash** is. Watching a massacre **on the news** is not, unless it is your job (a journalist editing the footage). (app guidance)" }
           ]
         }
       ]
@@ -78,19 +78,19 @@ SP.add("ch07", "guide", {
             { type: "criteria", title: "Reactive attachment disorder in brief", code: "F94.1", pages: "295–296", items: [
               ["A", "Consistent **inhibited, emotionally withdrawn** behavior toward adult caregivers: **both**", ["The child **rarely or minimally seeks comfort** when distressed.", "The child **rarely or minimally responds to comfort** when distressed."]],
               ["B", "Persistent social and emotional disturbance with **≥2 of 3**:", ["Minimal social and emotional responsiveness to others.", "**Limited positive affect.**", "Episodes of unexplained **irritability, sadness or fearfulness**, even in nonthreatening interactions with caregivers."]],
-              ["C", "A pattern of **extremes of insufficient care**: ≥1 of", ["**Social neglect or deprivation** (unmet needs for comfort, stimulation, affection).", "**Repeated changes of primary caregivers** (e.g., frequent foster care changes).", "Rearing in **unusual settings** that limit selective attachments (e.g., institutions with high child-to-caregiver ratios)."]],
+              ["C", "A pattern of **extremes of insufficient care**: ≥1 of", ["**Social neglect or deprivation** (unmet needs for comfort, stimulation, affection).", "**Repeated changes of primary caregivers** (e.g., frequent foster care changes).", "Rearing in **unusual settings** that limit selective attachments (e.g., institutions where each caregiver looks after many children)."]],
               ["D", "The care in C is presumed responsible for A."],
               ["E", "Criteria for **autism spectrum disorder** are not met."],
               ["F", "Evident **before age 5**."],
               ["G", "**Developmental age of at least 9 months.**"]
             ], specifiers: [["Persistent", "Present for more than **12 months**"], ["Severe", "All symptoms present, each at relatively high levels"]] },
             { type: "list", title: "Features and course (pp. 296–297)", items: [
-              "The essential feature is **absent or grossly underdeveloped attachment**: the child has the **capacity** to attach but no opportunity was given.",
+              "The essential feature is **absent or grossly underdeveloped attachment**: the child is believed to have the **capacity** to attach but had no opportunity.",
               "Associated: **cognitive and language delays**, **stereotypies**, signs of severe neglect (malnutrition).",
-              "**Rare** even in severely neglected children: **under 10%**; prevalence is unknown.",
-              "Features look similar from **9 months to 5 years**. Improves with normative caregiving; without it, signs may persist for years. Diagnose with caution after age 5.",
+              "**Rare** even in severely neglected children: usually **under 10%**; prevalence is unknown.",
+              "Features look similar from **9 months to 5 years**. May improve with normative caregiving; without it, signs may persist for years. Diagnose with caution after age 5.",
               "**Serious social neglect** is both required and the **only known risk factor**; prognosis depends on the **quality of later caregiving**.",
-              "Be cautious across cultures where attachment has not been studied, and in war zones and among refugee children."
+              "Be cautious where attachment has not been studied across cultures; symptoms may be more common in war zones, and attachment styles may vary in migrant and refugee children."
             ] },
             { type: "case", title: "Clinical vignette: the quiet toddler", text: "A 3-year-old girl adopted 4 months ago from an orphanage, where she lived from birth with one caregiver for 20 infants, does not go to her adoptive parents when she falls and hurts herself, and stiffens rather than relaxing when they hug her. She rarely smiles and has unexplained crying spells during play. She has language delays but uses gestures and eye contact to communicate, and has no restricted interests.", point: "Neither seeks nor responds to comfort, with limited positive affect and unexplained sadness, after **institutional rearing**, before age 5, developmental age over 9 months, not autism: **F94.1 reactive attachment disorder**." }
           ]
@@ -101,22 +101,22 @@ SP.add("ch07", "guide", {
           pages: "298–301",
           blocks: [
             { type: "criteria", title: "Disinhibited social engagement disorder in brief", code: "F94.2", pages: "298–299", items: [
-              ["A", "The child actively **approaches and interacts with unfamiliar adults**, with **≥2 of 4**:", ["**Reduced or absent reticence** with unfamiliar adults.", "**Overly familiar** verbal or physical behavior beyond cultural and age norms.", "**Diminished or absent checking back** with the caregiver after venturing away, even in unfamiliar settings.", "**Willingness to go off with an unfamiliar adult** with minimal or no hesitation."]],
+              ["A", "The child actively **approaches and interacts with unfamiliar adults**, with **≥2 of 4**:", ["**Reduced or absent reticence** with unfamiliar adults.", "**Overly familiar** verbal or physical behavior beyond cultural and age norms.", "**Diminished or absent checking back** with the caregiver after venturing away, even in unfamiliar settings.", "**Willingness to go off with an unfamiliar adult**, hardly hesitating."]],
               ["B", "Not limited to **impulsivity** (as in ADHD): socially disinhibited behavior."],
               ["C", "**Extremes of insufficient care** (same three forms as RAD)."],
               ["D", "The care in C is presumed responsible for A."],
               ["E", "**Developmental age of at least 9 months.**"]
             ], specifiers: [["Persistent", "Present for more than **12 months**"], ["Severe", "All symptoms present, each at relatively high levels"]] },
             { type: "list", title: "Features and course (pp. 299–301)", items: [
-              "May coexist with delays and stereotypies, but signs **persist after neglect ends**, so children may show no current neglect.",
+              "May coexist with delays and stereotypies, but signs **often persist after neglect ends**, so children may show no current neglect.",
               "It can occur in children who **do** have attachments, from disturbed to **secure**: DSED is not a disorder of attachment itself.",
               "Rare; up to **2%** in low-income UK community samples.",
-              "Described from the **second year of life through adolescence and young adulthood**. Toddlers go off with strangers; preschoolers are verbally and socially intrusive and attention seeking; school-age children are overfamiliar with **inauthentic** emotion; adolescents have **superficial** peer relationships; adults show excessive self-disclosure and low stranger awareness.",
+              "Described from the **second year of life through adolescence and young adulthood**. Toddlers go off with strangers; preschoolers are verbally and socially intrusive and attention seeking; school-age children are overfamiliar, sometimes with **inauthentic** emotion; adolescents have **superficial** peer relationships; adults show excessive self-disclosure and low stranger awareness.",
               "**Not seen** when neglect occurs only **after age 2**.",
               "Prognosis is only **modestly** linked to later caregiving: it often **persists** even in markedly improved environments (unlike RAD).",
-              "Risk: neglect, multiple placement disruptions, maternal borderline personality disorder, low-quality care; blunted reward sensitivity and poor inhibitory control."
+              "Risk: neglect, multiple placement disruptions, maternal borderline personality disorder, low-quality care; some evidence for blunted reward sensitivity and poor inhibitory control."
             ] },
-            { type: "p", text: "**Differential and comorbidity** (p. 301): unlike **ADHD**, there are no attention or hyperactivity problems. It often co-occurs with **ADHD and externalizing disorders** (shared poor inhibitory control), cognitive and language delays, stereotypies and, sometimes, **autism**." }
+            { type: "p", text: "**Differential and comorbidity** (p. 301): unlike **ADHD**, there are no attention or hyperactivity problems. In younger and middle childhood it often co-occurs with **ADHD and externalizing disorders** (a proposed link: poor inhibitory control), cognitive and language delays, stereotypies and, sometimes, **autism**." }
           ]
         },
         {
@@ -125,7 +125,7 @@ SP.add("ch07", "guide", {
           pages: "297–301",
           blocks: [
             { type: "compare", title: "Same cause, opposite pictures", items: [
-              { title: "Reactive attachment disorder", color: "case", points: ["**Internalizing**: withdrawn, inhibited, sad.", "Does not seek or accept comfort from caregivers.", "Requires onset **before 5** and that autism is excluded.", "Improves with good caregiving."] },
+              { title: "Reactive attachment disorder", color: "case", points: ["**Internalizing**: withdrawn, inhibited, sad.", "Does not seek or accept comfort from caregivers.", "Requires onset **before 5** and that autism is excluded.", "May improve with good caregiving."] },
               { title: "Disinhibited social engagement disorder", color: "drug", points: ["**Externalizing**: overfriendly, goes off with strangers.", "May have attachments, even secure ones.", "No age-of-onset ceiling; not seen if neglect began after 2.", "Often persists despite good caregiving."] }
             ] },
             { type: "table", caption: "Differential diagnosis of RAD (pp. 297–298)", head: ["Condition", "How it differs"], rows: [
@@ -133,7 +133,7 @@ SP.add("ch07", "guide", {
               ["Intellectual developmental disorder", "Social and emotional skills match cognitive level; **selective attachments** appear by a cognitive age of 7–9 months"],
               ["Depressive disorders in young children", "Reduced positive affect but **still seek and respond to comfort**"]
             ] },
-            { type: "callout", kind: "exam", text: "Both disorders need **neglect** and a **developmental age of at least 9 months**. RAD has two extra rules: **onset before 5** and **not autism**. DSED has its own: **not just impulsivity**. Both use **persistent** (>12 months) and **severe** specifiers." }
+            { type: "callout", kind: "exam", text: "Both disorders need **neglect** and a **developmental age of at least 9 months**. RAD has two extra rules: **onset before 5** and **not autism**. DSED has its own: **not just impulsivity**. Both use **persistent** (>12 months) and **severe** specifiers. (app guidance)" }
           ]
         }
       ]
@@ -156,7 +156,7 @@ SP.add("ch07", "guide", {
               ["G", "Clinically significant **distress or impairment**."],
               ["H", "Not due to a **substance** or **medical condition**."]
             ], specifiers: [["With dissociative symptoms", "Persistent or recurrent **depersonalization** or **derealization**, not due to substances (blackouts) or a medical condition (complex partial seizures)"], ["With delayed expression", "Full criteria **not met until at least 6 months** after the event (some symptoms may start immediately)"]] },
-            { type: "callout", kind: "mnemonic", title: "1-1-2-2, more than a month", text: "**1** intrusion, **1** avoidance, **2** cognition and mood, **2** arousal, for **more than 1 month**. Twenty symptoms in all: 5 + 2 + 7 + 6. The [[page:mnemonics|Mnemonics]] page has more." },
+            { type: "callout", kind: "mnemonic", title: "1-1-2-2, more than a month", text: "**1** intrusion, **1** avoidance, **2** cognition and mood, **2** arousal, for **more than 1 month**. Twenty symptoms in all: 5 + 2 + 7 + 6 (app count). The [[page:mnemonics|Mnemonics]] page has more." },
             { type: "case", title: "Clinical vignette: the night shift", text: "A 32-year-old nurse was held at knifepoint by a patient’s relative 3 months ago. She has vivid, unwanted memories of the blade and nightmares several times a week, and her heart races when she smells the same aftershave. She has switched to day shifts and avoids the ward where it happened. She blames herself for not calling security sooner, feels cut off from her husband and no longer enjoys running. She startles at every alarm, checks exits constantly and sleeps 4 hours a night.", point: "Criterion A (directly threatened with death), **intrusion** (memories, nightmares, cue reactivity), **avoidance**, **cognition and mood** (self-blame, detachment, lost interest), **arousal** (startle, hypervigilance, sleep), for **more than 1 month**: **F43.10 PTSD**." }
           ]
         },
@@ -165,9 +165,9 @@ SP.add("ch07", "guide", {
           title: "PTSD: reading the symptom clusters",
           pages: "305–308",
           blocks: [
-            { type: "defs", title: "Points the manual emphasizes (pp. 306–307)", items: [
+            { type: "defs", title: "Points the manual emphasizes (pp. 306–308)", items: [
               ["Intrusive memories vs rumination", "Intrusions are **involuntary**, vivid, sensory and emotional, not voluntary brooding, which is the depressive pattern."],
-              ["Flashbacks", "Dissociative states, usually **seconds** long, on a continuum from brief sensory intrusion to complete loss of awareness, followed by distress and arousal."],
+              ["Flashbacks", "Dissociative states, usually **seconds** long, on a continuum from brief sensory intrusion to complete loss of awareness, sometimes followed by prolonged distress and arousal."],
               ["Cues", "External (windy days after a hurricane, someone who looks like the perpetrator) or **internal** (dizziness after head trauma, a racing heart)."],
               ["Avoidance", "Deliberate distraction or suppression, including **substance use** to avoid internal reminders."],
               ["Amnesia (D1)", "Typically **dissociative**, not due to head injury, alcohol or drugs."],
@@ -180,7 +180,7 @@ SP.add("ch07", "guide", {
               "The picture varies: **fear-based** reexperiencing, **anhedonic or dysphoric** mood and negative cognitions, **arousal and externalizing** anger, **dissociation**, or combinations.",
               "Developmental **regression** (loss of language) in young children.",
               "**Auditory pseudo-hallucinations** (hearing one’s thoughts in voices) and **paranoid ideation** can occur.",
-              "After **prolonged, repeated, severe** trauma (childhood abuse, torture): difficulties regulating emotion, unstable relationships and dissociation.",
+              "After **prolonged, repeated, severe** trauma (childhood abuse, torture): there may also be difficulties regulating emotion, unstable relationships and dissociation.",
               "When a close person died violently, symptoms of **both** PTSD and prolonged grief disorder may be present."
             ] }
           ]
@@ -198,11 +198,11 @@ SP.add("ch07", "guide", {
               ["Impairment", "Social, occupational or other", "Relationships with **parents, siblings, peers, caregivers** or **school behavior**"],
               ["Duration and specifiers", "More than 1 month; dissociative; delayed expression", "Same"]
             ] },
-            { type: "list", title: "Development (p. 309)", items: [
+            { type: "list", title: "Development (pp. 308–309)", items: [
               "PTSD can occur **after the first year of life**.",
-              "Young children reexperience through **play** (a fire survivor draws flames), may not look fearful, may focus on **imagined interventions**, and may become **preoccupied with reminders** while avoiding them.",
+              "Young children reexperience through **play** (e.g., a fire survivor draws flames; example from p. 317), may not look fearful, may focus on **imagined interventions**, and may become **preoccupied with reminders** while avoiding them.",
               "Severe **emotional abuse** (threats of abandonment) and intense medical treatment can be traumatic for young children.",
-              "School-age children avoid new activities; adolescents avoid dating or driving, may judge themselves cowardly and feel socially changed.",
+              "Avoidance may show as fewer new activities in school-age children and avoiding dating or driving in adolescents, who may judge themselves cowardly and feel socially changed.",
               "In older adults PTSD is linked with negative health perceptions, primary care use and suicidal thoughts; declining health and cognition can worsen it."
             ] }
           ]
@@ -212,7 +212,7 @@ SP.add("ch07", "guide", {
           title: "PTSD: prevalence, course and risk factors",
           pages: "308–311",
           blocks: [
-            { type: "table", caption: "Prevalence (p. 308)", head: ["Population", "Figure"], rows: [
+            { type: "table", caption: "Prevalence (pp. 308, 311)", head: ["Population", "Figure"], rows: [
               ["US adults, lifetime (DSM-5)", "**6.1%–8.3%**"],
               ["US adults, 12-month (DSM-5)", "**4.7%**"],
               ["US adults, lifetime (DSM-IV)", "6.8%"],
@@ -247,7 +247,7 @@ SP.add("ch07", "guide", {
               "It raises the chance of moving **from suicidal thoughts to a plan or attempt**, independent of mood disorders; the link holds in adolescents too."
             ] },
             { type: "p", text: "**Functional consequences** (pp. 311–312): high social, occupational and physical impairment, poor quality of life and physical health problems; poor relationships, absenteeism, lower income and education." },
-            { type: "p", text: "**Comorbidity** (p. 313): more likely to have depressive, bipolar, anxiety or **substance use** disorders; raised risk of **major neurocognitive disorder**. Women more often develop PTSD after mild TBI. In **young children**, comorbidity is mainly **ODD and separation anxiety disorder**." }
+            { type: "p", text: "**Comorbidity** (p. 313): more likely to have depressive, bipolar, anxiety or **substance use** disorders; raised risk of **major neurocognitive disorder**. In one US study, women were more likely to develop PTSD after mild TBI. In **young children**, comorbidity is mainly **ODD and separation anxiety disorder**." }
           ]
         },
         {
@@ -268,7 +268,7 @@ SP.add("ch07", "guide", {
               ["Psychotic disorders", "Flashbacks relate directly to the trauma, without other psychotic or substance features"],
               ["Traumatic brain injury", "Both can coexist. **Reexperiencing and avoidance** point to PTSD; **disorientation and confusion** to TBI. TBI memory loss reflects **failed encoding**; PTSD memory loss is **dissociative**"]
             ] },
-            { type: "callout", kind: "exam", text: "Same symptoms, wrong event: a full PTSD picture after a **divorce or firing** is an **adjustment disorder**, because the stressor does not meet Criterion A. A Criterion A event with too few symptoms is also an adjustment disorder (or other specified if it lasts beyond 6 months)." }
+            { type: "callout", kind: "exam", text: "Same symptoms, wrong event: a full PTSD picture after a **divorce or firing** is an **adjustment disorder**, because the stressor does not meet Criterion A. A Criterion A event with too few symptoms is also an adjustment disorder (or other specified if it lasts beyond 6 months). (app guidance)" }
           ]
         }
       ]
@@ -326,7 +326,7 @@ SP.add("ch07", "guide", {
               ["Physiological", "Elevated **acoustic startle** before the trauma."]
             ] },
             { type: "defs", title: "Differential diagnosis (pp. 318–319)", items: [
-              ["Adjustment disorders", "Any stressor; or a Criterion A event without enough symptoms; reactions to life-threatening **illness** often fit better; depressive or anger reactions involve **rumination**, not intrusive memories."],
+              ["Adjustment disorders", "Any stressor; or a Criterion A event without enough symptoms; reactions to life-threatening **illness** may fit better; depressive or anger reactions involve **rumination**, not intrusive memories."],
               ["Panic disorder", "Spontaneous panic attacks are common in acute stress disorder; diagnose panic disorder only with unexpected attacks plus worry or behavior change."],
               ["Dissociative disorders", "Severe dissociation **without** other ASD symptoms → depersonalization/derealization disorder; persistent trauma **amnesia** alone → dissociative amnesia."],
               ["PTSD", "If symptoms persist **beyond 1 month** and meet PTSD criteria, change the diagnosis to PTSD."],
@@ -349,8 +349,8 @@ SP.add("ch07", "guide", {
             { type: "criteria", title: "Adjustment disorders in brief", code: "F43.20–F43.25", pages: "319–320", items: [
               ["A", "Emotional or behavioral symptoms in response to an identifiable stressor, **within 3 months** of its onset."],
               ["B", "Clinically significant: **marked distress out of proportion** to the stressor (in cultural context) and/or **significant impairment**."],
-              ["C", "Does **not** meet criteria for another mental disorder and is not merely an **exacerbation** of a preexisting one."],
-              ["D", "Not **normal bereavement**, and not better explained by **prolonged grief disorder**."],
+              ["C", "Does **not** meet criteria for another mental disorder, and is more than an **exacerbation** of an existing one."],
+              ["D", "Not **normal bereavement**, and **prolonged grief disorder** does not explain it better."],
               ["E", "Once the stressor or its consequences end, symptoms do not persist **more than another 6 months**."]
             ], specifiers: [["Duration", "**Acute**: less than 6 months · **Persistent (chronic)**: 6 months or more, possible only with a **chronic stressor** or one with **enduring consequences**"]] },
             { type: "table", caption: "Subtypes and codes (p. 319)", head: ["Code", "Subtype", "Predominant symptoms"], rows: [
@@ -364,10 +364,10 @@ SP.add("ch07", "guide", {
             { type: "list", title: "Features, prevalence and course (pp. 320–321)", items: [
               "Stressors can be single (a breakup), multiple, recurrent (seasonal business crises), continuous (chronic illness, a crime-ridden neighborhood), community-wide (disaster) or **developmental** (starting school, marriage, parenthood, retirement).",
               "Can follow a **death** when grief exceeds cultural, religious or age-appropriate norms and does not meet prolonged grief disorder.",
-              "**Common**: 5%–20% of US outpatients have it as the principal diagnosis; up to **50%** in hospital psychiatric consultation services; perhaps more common in women.",
-              "Acute stressors bring onset within days and a brief course; persistent stressors can produce the persistent form.",
+              "**Common**: 5%–20% of US outpatients have it as the principal diagnosis; in hospital psychiatric consultation settings (Australia, Canada, Israel, US) it was often the commonest diagnosis in the 1990s, frequently reaching **50%**; perhaps more common in women (Danish research).",
+              "Acute stressors usually bring onset within days and a relatively brief course; persistent stressors can produce the persistent form.",
               "Risk: disadvantaged life circumstances.",
-              "Linked with **suicide attempts and suicide**; among some migrant groups it is one of the diagnoses most associated with suicidal behavior. **Self-immolation** is a risk in some cultural contexts.",
+              "Linked with **suicide attempts and suicide**; among some migrant groups it is one of the diagnoses most associated with suicidal behavior. A culturally specific form of **self-harm** is a risk in some cultural contexts.",
               "Reduces work or school performance, and can complicate medical illness (poor adherence, longer stays)."
             ] }
           ]
@@ -386,7 +386,7 @@ SP.add("ch07", "guide", {
               ["Normative stress reactions", "Most people are upset when bad things happen. Diagnose only when distress **exceeds** what is expected (in that culture) or impairs function."]
             ] },
             { type: "p", text: "**Comorbidity** (p. 322): can accompany most mental disorders and any medical condition, **if** the other disorder does not explain the reaction to the stressor (e.g., adjustment disorder with depressed mood after a job loss in someone with OCD)." },
-            { type: "callout", kind: "exam", text: "The two adjustment disorder numbers: onset within **3 months** of the stressor, resolution within **6 months** of the stressor **ending**. With an ongoing stressor (chronic illness) the disorder can last longer: the **persistent (chronic)** specifier. Never use adjustment disorder when another disorder’s full criteria are met." }
+            { type: "callout", kind: "exam", text: "The two adjustment disorder numbers: onset within **3 months** of the stressor, resolution within **6 months** of the stressor **ending**. With an ongoing stressor (chronic illness) the disorder can last longer: the **persistent (chronic)** specifier. Never use adjustment disorder when another disorder’s full criteria are met. (app guidance)" }
           ]
         }
       ]
@@ -419,15 +419,15 @@ SP.add("ch07", "guide", {
             { type: "list", title: "Associated features (p. 324)", items: [
               "Maladaptive beliefs about the self, **guilt** about the death, shortened sense of future.",
               "**Somatic** complaints, sometimes mirroring the deceased’s symptoms; more health care visits; poor self-care.",
-              "**Hallucinations of the deceased** (hearing their voice) occur in normal grief but are more common in prolonged grief.",
+              "**Hallucinations of the deceased** (hearing their voice) may occur in normal grief but may be more common in prolonged grief.",
               "Bitterness, anger, restlessness, blaming others, poor sleep."
             ] },
             { type: "table", caption: "Epidemiology and course (pp. 324–325)", head: ["Topic", "Detail"], rows: [
               ["Adults (DSM-5-TR definition)", "Unknown; a meta-analysis using a 6-month definition found **9.8%** of bereaved people"],
               ["Bereaved US youth", "**18%** (persistent complex bereavement disorder definition)"],
               ["Onset", "Usually within the first months; full syndrome may be delayed"],
-              ["Course", "Especially prolonged in **parents after the death of a child**; complicated by PTSD after **violent** deaths"],
-              ["Older adults", "Higher risk; may be linked with **cognitive decline**"]
+              ["Course", "Preliminary evidence: especially prolonged in **parents after the death of a child**; complicated by PTSD after **violent** deaths"],
+              ["Older adults", "Older age may carry higher risk; may be linked with **cognitive decline**"]
             ] },
             { type: "list", title: "Children and adolescents (p. 325)", items: [
               "Grief shows in **play, behavior, regression** and protest at separation and reunion.",
@@ -449,7 +449,7 @@ SP.add("ch07", "guide", {
           title: "Grief, depression, PTSD or prolonged grief?",
           pages: "326–327",
           blocks: [
-            { type: "table", caption: "Telling them apart (pp. 326–327)", head: ["Feature", "Prolonged grief disorder", "Major depressive disorder", "PTSD after a violent death"], rows: [
+            { type: "table", caption: "Telling them apart (pp. 326–327)", head: ["Feature", "Prolonged grief disorder", "Major depressive disorder (app summary; see Ch 4)", "PTSD after a violent death"], rows: [
               ["Focus", "**Loss and separation** from the deceased", "**Generalized** low mood, worthlessness", "The **traumatic event** itself"],
               ["Intrusions", "Thoughts of many aspects of the **relationship**, including positive ones", "Rumination about failings", "Perceptual, “**here and now**” memories of the event"],
               ["Avoidance", "Reminders that the person is **gone**", "Withdrawal from apathy", "Reminders of the **trauma** (the crash scene)"],
@@ -458,10 +458,10 @@ SP.add("ch07", "guide", {
             { type: "defs", title: "Other distinctions (pp. 326–327)", items: [
               ["Normal grief", "Severe grief for at least **12 months** (6 in youth) that impairs function and exceeds norms. **Anniversary** spikes alone are not the disorder."],
               ["Separation anxiety disorder", "Anxiety about separation from **living** attachment figures; prolonged grief concerns the **deceased**."],
-              ["Psychotic disorders", "Sensing or seeing the deceased (often **hypnagogic**, often comforting) is common in normal grief. Diagnose psychosis only with other symptoms such as delusions or disorganization."]
+              ["Psychotic disorders", "Sensing or seeing the deceased (often **hypnagogic**, sometimes comforting) is common in normal grief. Diagnose psychosis only with other symptoms such as delusions or disorganization."]
             ] },
             { type: "p", text: "**Comorbidity** (p. 327): most often **MDD**, **PTSD** (especially after violent or accidental deaths) and **substance use disorders**; separation anxiety about living attachment figures may co-occur. MDD can be diagnosed **alongside** prolonged grief disorder when its criteria are separately met." },
-            { type: "callout", kind: "exam", text: "The bereavement ladder: **normal grief** (no disorder) → impairing, out-of-proportion grief before 12 months → **adjustment disorder** → severe grief beyond **12 months** (6 in youth) meeting criteria → **prolonged grief disorder** → beyond 12 months but subthreshold → **other specified**. A **major depressive episode** can be diagnosed at any point after a death." }
+            { type: "callout", kind: "exam", text: "The bereavement ladder: **normal grief** (no disorder) → impairing, out-of-proportion grief before 12 months → **adjustment disorder** → severe grief beyond **12 months** (6 in youth) meeting criteria → **prolonged grief disorder** → beyond 12 months but subthreshold → **other specified**. A **major depressive episode** can be diagnosed at any point after a death (Ch 4). (app guidance)" }
           ]
         }
       ]
@@ -519,9 +519,9 @@ SP.add("ch07", "guide", {
               ["3. Which symptoms?", "Count PTSD clusters (1-1-2-2), ASD symptoms (9 of 14) or grief symptoms (1 + 3)."],
               ["4. Another disorder?", "MDD, panic disorder, dissociative disorders, psychosis, substance use, TBI. Diagnose them instead of an adjustment disorder, or alongside PTSD."],
               ["5. Specifiers", "PTSD: dissociative symptoms, delayed expression. Adjustment: subtype and acute or persistent. RAD and DSED: persistent, severe."],
-              ["6. Safety", "Suicide risk is raised in PTSD, adjustment disorders and prolonged grief. Ask about substances and reckless behavior."]
+              ["6. Safety", "Suicide risk is raised in PTSD and adjustment disorders; prolonged grief carries heightened suicidal ideation. Ask about substances and reckless behavior."]
             ] },
-            { type: "callout", kind: "key", title: "Twelve traps", text: "1) A **natural** death learned about is not Criterion A. 2) **Media** exposure counts only if work related. 3) Most **medical illness** is not Criterion A; sudden catastrophic events are. 4) PTSD needs **more than** 1 month; ASD **3 days to 1 month**. 5) ASD needs **9 of 14** from any category. 6) Children **6 and younger** have their own criteria (combined avoidance/cognition, no A4). 7) Delayed expression means full criteria **≥6 months** later. 8) Adjustment disorder: within **3 months**, gone within **6 months of the stressor ending**; not if another disorder is met. 9) PTSD symptoms after a **non**-Criterion A stressor = adjustment disorder. 10) Prolonged grief needs **12 months** (6 in youth). 11) RAD needs onset **before 5** and **no autism**; DSED can occur with **secure** attachments. 12) Prolonged grief is coded **F43.81** and other specified **F43.89** since October 2022." },
+            { type: "callout", kind: "key", title: "Twelve traps", text: "1) A **natural** death learned about is not Criterion A. 2) **Media** exposure counts only if work related. 3) A life-threatening **medical illness** is not necessarily Criterion A; sudden catastrophic events can be. 4) PTSD needs **more than** 1 month; ASD **3 days to 1 month**. 5) ASD needs **9 of 14** from any category. 6) Children **6 and younger** have their own criteria (combined avoidance/cognition, no A4). 7) Delayed expression means full criteria **≥6 months** later. 8) Adjustment disorder: within **3 months**, gone within **6 months of the stressor ending**; not if another disorder is met. 9) PTSD symptoms after a **non**-Criterion A stressor = adjustment disorder. 10) Prolonged grief needs **12 months** (6 in youth). 11) RAD needs onset **before 5** and **no autism**; DSED can occur with **secure** attachments. 12) Prolonged grief is coded **F43.81** and other specified **F43.89** since October 2022." },
             { type: "p", text: "Practice with the [[helper:trauma|trauma and stressor helper]] and the [[helper:attachment|attachment helper]], then compare [[dx:ptsd|PTSD]] with [[dx:acute-stress|acute stress disorder]] and [[dx:pgd|prolonged grief disorder]] with [[dx:mdd|major depressive disorder]] in the library." }
           ]
         }

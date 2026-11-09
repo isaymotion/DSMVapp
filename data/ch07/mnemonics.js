@@ -9,7 +9,7 @@ SP.add("ch07", "mnemonics", [
       ["R", "Reexperiencing", "Intrusive memories, dreams, flashbacks, cue reactivity (B, ≥1)"],
       ["A", "Avoidance", "Of memories and feelings, or of reminders (C, ≥1)"],
       ["U", "Unable to function", "Distress or impairment (G)"],
-      ["M", "Month or more", "Duration more than 1 month (F)"],
+      ["M", "More than a month", "Duration more than 1 month (F)"],
       ["A", "Arousal and negative mood", "Cognitions and mood (D, ≥2) and arousal (E, ≥2)"]
     ],
     caveat: "TRAUMA squeezes two clusters into one letter. Criterion D (negative cognitions and mood, **≥2 of 7**) and Criterion E (arousal, **≥2 of 6**) are separate. Children 6 and younger have their own criteria."
@@ -42,7 +42,7 @@ SP.add("ch07", "mnemonics", [
     caveat: "Criterion D needs **2 of 7**, beginning or worsening after the trauma."
   },
   {
-    id: "m7-04", short: "Yearning or preoccupation + 3 of 8; ≥12 months (6 in youth)", name: "I’D ALWAYS (miss him)", original: true, dx: "pgd", sec: "s7-pgd-criteria",
+    id: "m7-04", short: "12 · 6 · 1 · 1 · 3: ≥12 months (6 in youth); last month; yearning or preoccupation + 3 of 8", name: "I’D ALWAYS (miss him)", original: true, dx: "pgd", sec: "s7-pgd-criteria",
     "for": "Prolonged grief disorder: the eight Criterion C symptoms",
     letters: [
       ["I", "Identity disruption", "Part of oneself has died"],

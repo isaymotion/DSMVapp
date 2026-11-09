@@ -15,7 +15,7 @@
         { label: "Diagnosis", options: DX, answer: 0 },
         { label: "Insight", options: INSIGHT, answer: 1 },
         { label: "Tic-related?", options: ["Yes", "No"], answer: 0 },
-        { label: "Code", options: ["F42.2", "F42.3", "F42.4", "F63.3"], answer: 0 }
+        { label: "Code", options: ["F42.3", "F63.3", "F42.2", "F42.4"], answer: 2 }
       ],
       line: "**F42.2** Obsessive-compulsive disorder, with poor insight, tic-related",
       why: "“Probably true” is **poor insight**. A **past** tic disorder still qualifies for **tic-related**."
@@ -26,7 +26,7 @@
       parts: [
         { label: "Diagnosis", options: ["Obsessive-compulsive disorder", "Delusional disorder", "OCD and delusional disorder", "Illness anxiety disorder"], answer: 0 },
         { label: "Insight", options: INSIGHT, answer: 2 },
-        { label: "Code", options: ["F42.2", "F22", "F45.21", "F42.8"], answer: 0 }
+        { label: "Code", options: ["F22", "F42.2", "F45.21", "F42.8"], answer: 1 }
       ],
       line: "**F42.2** Obsessive-compulsive disorder, with absent insight/delusional beliefs",
       why: "Complete conviction about OCD beliefs is a **specifier**, not a separate psychotic disorder."
@@ -37,7 +37,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 1 },
         { label: "Specifiers", options: ["With muscle dysmorphia", "With good or fair insight", "With poor insight", "With absent insight/delusional beliefs", "Tic-related"], answer: [0, 2], multi: true },
-        { label: "Code", options: ["F45.22", "F42.2", "F45.21", "F42.8"], answer: 0 }
+        { label: "Code", options: ["F42.2", "F45.21", "F42.8", "F45.22"], answer: 3 }
       ],
       line: "**F45.22** Body dysmorphic disorder, with muscle dysmorphia, with poor insight",
       why: "Muscle dysmorphia applies **even if other areas** (hairline) are also a focus. “Probably” true = **poor insight**."
@@ -48,7 +48,7 @@
       parts: [
         { label: "Diagnosis", options: ["Body dysmorphic disorder", "Delusional disorder, somatic type", "Social anxiety disorder", "Schizophrenia"], answer: 0 },
         { label: "Insight", options: INSIGHT, answer: 2 },
-        { label: "Code", options: ["F45.22", "F22", "F40.10", "F42.2"], answer: 0 }
+        { label: "Code", options: ["F22", "F40.10", "F45.22", "F42.2"], answer: 2 }
       ],
       line: "**F45.22** Body dysmorphic disorder, with absent insight/delusional beliefs",
       why: "Appearance-related delusions and ideas of reference are part of BDD. Do not diagnose delusional disorder."
@@ -59,7 +59,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 2 },
         { label: "Specifiers", options: ["With excessive acquisition", "With good or fair insight", "With poor insight", "With absent insight/delusional beliefs"], answer: [0, 1], multi: true },
-        { label: "Code", options: ["F42.3", "F42.2", "F42.8", "F63.3"], answer: 0 }
+        { label: "Code", options: ["F42.2", "F42.3", "F42.8", "F63.3"], answer: 1 }
       ],
       line: "**F42.3** Hoarding disorder, with excessive acquisition, with good or fair insight",
       why: "Weekly buying of unneeded items = **excessive acquisition**. Recognizing the problem = **good or fair insight**."
@@ -69,17 +69,17 @@
       "case": "A 13-year-old girl pulls hair from her crown while reading, leaving bald patches. She has tried to stop many times and is ashamed. She does not think her hair looks wrong.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 3 },
-        { label: "Code", options: ["F63.3", "F42.4", "F42.2", "L63.9"], answer: 0 }
+        { label: "Code", options: ["F42.4", "F42.2", "L63.9", "F63.3"], answer: 3 }
       ],
       line: "**F63.3** Trichotillomania (hair-pulling disorder)",
-      why: "Trichotillomania keeps its impulse-control code **F63.3**; it has no specifiers."
+      why: "Trichotillomania keeps the code **F63.3** (an ICD-10-CM impulse-disorder code; outside the DSM); it has no specifiers."
     },
     {
       id: "w6-07", tag: "Excoriation",
       "case": "A 25-year-old woman picks at her face and arms for hours, causing scars and infections. She has repeatedly tried to stop, is not trying to fix her appearance, and uses no drugs.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 4 },
-        { label: "Code", options: ["F42.4", "L98.1", "F63.3", "F42.8"], answer: 0 }
+        { label: "Code", options: ["L98.1", "F63.3", "F42.4", "F42.8"], answer: 2 }
       ],
       line: "**F42.4** Excoriation (skin-picking) disorder",
       why: "DSM-5-TR uses **F42.4**; DSM-5’s original printing listed L98.1."
@@ -88,7 +88,7 @@
       id: "w6-08", tag: "Substance-induced",
       "case": "A 30-year-old man with severe cocaine use disorder picks his skin repetitively during binges. The picking needs clinical attention in its own right; it stops when he is abstinent.",
       parts: [
-        { label: "Code", options: ["F14.288", "F14.280", "F14.988", "F42.4"], answer: 0 },
+        { label: "Code", options: ["F14.280", "F14.988", "F42.4", "F14.288"], answer: 3 },
         { label: "Onset", options: ONSET, answer: 0 }
       ],
       line: "**F14.288** Severe cocaine use disorder with cocaine-induced obsessive-compulsive and related disorder, with onset during intoxication",
@@ -100,7 +100,7 @@
       parts: [
         { label: "Substance class used for coding", options: ["Amphetamine-type (or other stimulant)", "Cocaine", "Other (or unknown) substance", "Sedative, hypnotic or anxiolytic"], answer: 2 },
         { label: "Onset", options: ONSET, answer: 2 },
-        { label: "Code", options: ["F19.988", "F15.988", "F19.188", "F06.8"], answer: 0 }
+        { label: "Code", options: ["F15.988", "F19.988", "F19.188", "F06.8"], answer: 1 }
       ],
       line: "**F19.988** Ropinirole-induced obsessive-compulsive and related disorder, with onset after medication use",
       why: "Ropinirole is the manual’s example of a substance that fits **no class**: other (or unknown), no use disorder = 4th character **9**."
@@ -109,9 +109,9 @@
       id: "w6-10", tag: "Medical condition",
       "case": "A 64-year-old man develops counting and ordering compulsions 6 weeks after a caudate infarct. He is not delirious.",
       parts: [
-        { label: "Diagnosis", options: ["OCRD due to another medical condition", "Obsessive-compulsive disorder", "Major neurocognitive disorder", "Unspecified OCRD"], answer: 0 },
+        { label: "Diagnosis", options: ["Obsessive-compulsive disorder", "Major neurocognitive disorder", "OCRD due to another medical condition", "Unspecified OCRD"], answer: 2 },
         { label: "Specifier", options: ["With OCD-like symptoms", "With appearance preoccupations", "With hoarding symptoms", "With hair-pulling symptoms", "With skin-picking symptoms"], answer: 0 },
-        { label: "Order of codes", options: ["I69.398, then F06.8", "F06.8, then I69.398", "F42.2 only", "F06.8 only"], answer: 0 }
+        { label: "Order of codes", options: ["F06.8, then I69.398", "F42.2 only", "I69.398, then F06.8", "F06.8 only"], answer: 2 }
       ],
       line: "**I69.398** Cerebral infarction; **F06.8** obsessive-compulsive and related disorder due to cerebral infarction, with OCD-like symptoms",
       why: "The manual’s own example: the medical condition is listed **immediately before** F06.8. Choose the specifier for the **predominant** symptoms."
@@ -122,20 +122,20 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 5 },
         { label: "Reason recorded", options: ["Other body-focused repetitive behavior disorder", "Obsessional jealousy", "BDD-like disorder with actual flaws", "Olfactory reference disorder"], answer: 0 },
-        { label: "Code", options: ["F42.8", "F42.9", "F42.4", "F63.3"], answer: 0 }
+        { label: "Code", options: ["F42.9", "F42.4", "F42.8", "F63.3"], answer: 2 }
       ],
       line: "**F42.8** Other specified obsessive-compulsive and related disorder, other body-focused repetitive behavior disorder (cheek chewing)",
       why: "Cheek chewing, lip biting and nail biting with repeated attempts to stop are recorded as other BFRB disorder."
     },
     {
       id: "w6-12", tag: "OCD and OCPD",
-      "case": "A 38-year-old woman has intrusive fears of contamination and washes for 2 hours a day, which she hates. She also has, since adolescence, a rigid, perfectionistic style, cannot delegate and is preoccupied with lists and rules, which she sees as virtues. She believes the contamination is “probably not” dangerous.",
+      "case": "A 38-year-old woman has intrusive fears of contamination and washes for 2 hours a day, which she hates. Since early adulthood she has also been rigid and stubborn; her reports are often late because they are never good enough; she spends so long on lists and schedules that the point of a task gets lost; and she will not delegate unless others do things exactly her way. Her team has complained and she was passed over for promotion, but she sees these traits as virtues. She believes the contamination is “probably not” dangerous.",
       parts: [
         { label: "Diagnoses", options: ["Obsessive-compulsive disorder", "Obsessive-compulsive personality disorder", "Hoarding disorder", "Generalized anxiety disorder"], answer: [0, 1], multi: true },
         { label: "OCD insight", options: INSIGHT, answer: 0 }
       ],
-      line: "**F42.2** Obsessive-compulsive disorder, with good or fair insight; **F60.5** obsessive-compulsive personality disorder",
-      why: "OCD (ego-dystonic obsessions and compulsions) and OCPD (ego-syntonic perfectionism and control) are different disorders and **can both be diagnosed**."
+      line: "**F42.2** Obsessive-compulsive disorder, with good or fair insight; **F60.5** obsessive-compulsive personality disorder (Ch 18, p. 771)",
+      why: "OCD (unwanted obsessions and compulsions) and OCPD (four or more of eight criteria here: details and lists, perfectionism that delays work, reluctance to delegate, rigidity, with impairment at work; Ch 18, p. 771) are different disorders and **can both be diagnosed**."
     }
   ]);
 
@@ -241,10 +241,10 @@
         ["Has tried to stop several times with a fidget toy", true, "Repeated attempts to stop (B)."],
         ["Feels a sense of relief after pulling", false, "An associated feature, **not required**."],
         ["Is embarrassed and avoids swimming", true, "Distress and impairment (C)."],
-        ["Pulls because he thinks his eyebrows are uneven and ugly", false, "This would point to **BDD** (E); here he says it is not about appearance."]
+        ["Says he does not pull to change how his eyebrows look", true, "Not better explained by **BDD** (E)."]
       ],
       met: true,
-      why: "A–C are met; relief is not a criterion. Confirm that appearance is not the motive before diagnosing F63.3."
+      why: "A–C and E are met; relief is not a criterion."
     },
     {
       id: "n6-09", tag: "Excoriation exclusions",

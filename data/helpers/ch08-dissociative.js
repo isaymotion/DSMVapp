@@ -23,7 +23,7 @@ SP.helpers = (SP.helpers || []).concat([
       },
       context: {
         q: "Do the symptoms occur only within another disorder?",
-        help: "Amnesia only for a trauma (PTSD); depersonalization only during panic attacks or a depressive episode; dissociation 3 days to 1 month after a trauma with 9 of 14 symptoms (acute stress disorder); unresponsiveness with posturing (catatonia).",
+        help: "Amnesia only for a trauma (PTSD); depersonalization only during panic attacks or a depressive episode; dissociation 3 days to 1 month after a trauma with 9 of 14 symptoms (acute stress disorder, Ch 7); unresponsiveness with posturing (catatonia).",
         options: [
           { label: "No", to: "identity", note: "Not confined to another disorder." },
           { label: "Yes", to: "r:otherdisorder", note: "Explained by another disorder." }
@@ -76,7 +76,7 @@ SP.helpers = (SP.helpers || []).concat([
         help: "These are named examples of other specified dissociative disorder.",
         options: [
           { label: "Identity change or questioning after cult membership, brainwashing, captivity or torture", to: "r:coercive", note: "Coercive persuasion." },
-          { label: "A brief mix of dissociative symptoms after a stressor, lasting less than a month", to: "r:acute", note: "Acute dissociative reaction." },
+          { label: "A brief mix of dissociative symptoms after a stressor, typically lasting less than a month", to: "r:acute", note: "Acute dissociative reaction." },
           { label: "Profound unresponsiveness with loss of awareness of surroundings, outside accepted practice", to: "r:trance", note: "Dissociative trance." },
           { label: "Dissociative symptoms, but not enough information to say more", to: "r:unspecified", note: "Insufficient information." }
         ]
@@ -94,7 +94,7 @@ SP.helpers = (SP.helpers || []).concat([
       dpdr: { dx: "Depersonalization/derealization disorder (F48.1)", line: "Persistent or recurrent detachment from self or surroundings with intact reality testing.", points: ["Onset after 40 or atypical course: medical workup including EEG.", "Diagnose even if a drug started it, once symptoms persist without further use."], link: { ch: "ch08", sec: "s8-dpdr-criteria", label: "DPDR criteria" }, dxId: "dpdr" },
       psychosis: { label: "Not DPDR", dx: "A psychotic disorder", line: "Conviction that one is dead or the world has ended is a nihilistic delusion.", points: ["Consider psychotic depression or schizophrenia."], link: { ch: "ch08", sec: "s8-dpdr-features", label: "DPDR differential" } },
       coercive: { dx: "Other specified dissociative disorder (F44.89): identity disturbance due to coercive persuasion", line: "Prolonged identity change or questioning after intense coercive persuasion.", points: ["Assess for PTSD and depression."], link: { ch: "ch08", sec: "s8-other", label: "Other specified dissociative disorder" }, dxId: "other-specified-dissociative" },
-      acute: { dx: "Other specified dissociative disorder (F44.89): acute dissociative reaction to stressful events", line: "Transient constricted consciousness, depersonalization, derealization, micro-amnesias or sensory-motor changes, typically under 1 month.", points: ["If 9 of 14 acute stress disorder symptoms follow a Criterion A trauma, diagnose acute stress disorder instead."], link: { ch: "ch08", sec: "s8-other", label: "Other specified dissociative disorder" }, dxId: "other-specified-dissociative" },
+      acute: { dx: "Other specified dissociative disorder (F44.89): acute dissociative reaction to stressful events", line: "Transient constricted consciousness, depersonalization, derealization, micro-amnesias or sensory-motor changes, typically under 1 month.", points: ["If 9 of 14 acute stress disorder symptoms (Ch 7) follow a Criterion A trauma, diagnose acute stress disorder instead."], link: { ch: "ch08", sec: "s8-other", label: "Other specified dissociative disorder" }, dxId: "other-specified-dissociative" },
       trance: { dx: "Other specified dissociative disorder (F44.89): dissociative trance", line: "Acute loss of awareness with profound unresponsiveness, outside accepted cultural or religious practice.", points: ["Exclude seizures, catatonia and medical causes."], link: { ch: "ch08", sec: "s8-other", label: "Other specified dissociative disorder" }, dxId: "other-specified-dissociative" },
       unspecified: { dx: "Unspecified dissociative disorder (F44.9)", line: "When the reason is not given or information is insufficient.", points: ["Gather collateral history and reassess."], link: { ch: "ch08", sec: "s8-other", label: "Unspecified dissociative disorder" }, dxId: "unspecified-dissociative" }
     }
@@ -116,7 +116,7 @@ SP.helpers = (SP.helpers || []).concat([
           { label: "With seizure activity, or wandering that is aimless and brief", to: "r:seizure", note: "Seizure-related." },
           { label: "After a course of ECT", to: "r:ect", note: "ECT." },
           { label: "Gradual decline in learning new information in an older adult", to: "r:ncd", note: "Neurocognitive." },
-          { label: "Sudden inability to form new memories for hours, identity preserved, in an older adult", to: "r:tga", note: "Transient global amnesia." },
+          { label: "Sudden inability to form new memories for hours, identity preserved, in an older adult (TGA; features outside the DSM)", to: "r:tga", note: "Transient global amnesia." },
           { label: "None of these: workup normal, often after trauma or conflict", to: "what", note: "Possibly dissociative." }
         ]
       },
@@ -135,7 +135,7 @@ SP.helpers = (SP.helpers || []).concat([
           { label: "Only the traumatic event itself, with intrusions, avoidance and arousal", to: "r:ptsd", note: "Trauma-limited." },
           { label: "Autobiographical periods, categories or identity, with no identity states", to: "r:da", note: "Dissociative amnesia." },
           { label: "Everyday time loss, unexplained possessions and identity states", to: "r:did", note: "DID." },
-          { label: "Brief gaps within a short dissociative reaction to a stressor (under 1 month)", to: "r:acute", note: "Acute dissociative reaction." },
+          { label: "Brief gaps within a short dissociative reaction to a stressor (typically under 1 month)", to: "r:acute", note: "Acute dissociative reaction." },
           { label: "Only for events tied to an obvious gain (legal, financial), dramatic presentation", to: "r:feigned", note: "Possible feigning." }
         ]
       }
@@ -143,11 +143,11 @@ SP.helpers = (SP.helpers || []).concat([
     results: {
       blackout: { label: "Not dissociative", dx: "Substance-related blackout", line: "Amnesia only during intoxication. Recheck after detoxification; long-term use can cause a neurocognitive disorder.", points: ["People with dissociative amnesia sometimes blame their gaps on substances: take a careful history."], link: { ch: "ch08", sec: "s8-amnesia-ddx", label: "Memory loss differential" } },
       ncdtbi: { label: "Not dissociative", dx: "Neurocognitive disorder due to TBI or posttraumatic amnesia", line: "Immediate onset after injury, with attention, executive and memory deficits and neurological signs.", points: ["Covered in Chapter 17."], link: { ch: "ch08", sec: "s8-amnesia-ddx", label: "Memory loss differential" } },
-      seizure: { label: "Not dissociative", dx: "Seizure disorder", line: "Nonpurposive wandering limited to the seizure; EEG abnormalities; random loss of memories as epilepsy progresses.", points: ["Dissociative and epileptic amnesia can coexist."], link: { ch: "ch08", sec: "s8-amnesia-ddx", label: "Memory loss differential" } },
-      ect: { label: "Not dissociative", dx: "ECT-related memory loss", line: "Mostly for the day of treatment, unrelated to stressful periods, remitting after the series.", points: ["ECT does not worsen dissociation."], link: { ch: "ch08", sec: "s8-amnesia-ddx", label: "Memory loss differential" } },
+      seizure: { label: "Not dissociative", dx: "Seizure disorder", line: "Nonpurposive wandering limited to the seizure; serial EEGs usually abnormal; occasionally, memories seem randomly lost as epilepsy progresses.", points: ["Dissociative and epileptic amnesia can coexist."], link: { ch: "ch08", sec: "s8-amnesia-ddx", label: "Memory loss differential" } },
+      ect: { label: "Not dissociative", dx: "ECT-related memory loss", line: "Mostly for the day of treatment, unrelated to stressful periods, remitting after the series.", points: ["In severely depressed people with dissociative disorders, ECT does not worsen dissociation."], link: { ch: "ch08", sec: "s8-amnesia-ddx", label: "Memory loss differential" } },
       ncd: { label: "Not dissociative", dx: "Mild or major neurocognitive disorder, or normal aging", line: "Difficulty learning and retaining new information; identity preserved until late.", points: ["Retrograde amnesia in neurocognitive disorders is almost always accompanied by anterograde amnesia."], link: { ch: "ch08", sec: "s8-amnesia-ddx", label: "Memory loss differential" } },
       tga: { label: "Not dissociative", dx: "Transient global amnesia", line: "A neurological condition excluded by dissociative amnesia Criterion C.", points: ["Refer for neurological assessment."], link: { ch: "ch08", sec: "s8-amnesia-ddx", label: "Transient global amnesia" } },
-      ptsd: { dx: "PTSD (amnesia for an important aspect of the trauma)", line: "Amnesia limited to the traumatic event is a PTSD symptom.", points: ["Add dissociative amnesia if the loss extends beyond the trauma."], link: { ch: "ch07", sec: "s7-ptsd-criteria", label: "PTSD criteria" }, dxId: "ptsd" },
+      ptsd: { dx: "PTSD (amnesia for an important aspect of the trauma)", line: "Amnesia limited to the traumatic event is a PTSD symptom.", points: ["Comorbid dissociative amnesia may be warranted if the loss extends beyond the trauma."], link: { ch: "ch07", sec: "s7-ptsd-criteria", label: "PTSD criteria" }, dxId: "ptsd" },
       da: { dx: "Dissociative amnesia (F44.0, or F44.1 with fugue)", line: "Autobiographical memory loss inconsistent with ordinary forgetting.", points: ["Name the form and ask about fugue."], link: { ch: "ch08", sec: "s8-amnesia-criteria", label: "Dissociative amnesia" }, dxId: "dissociative-amnesia" },
       did: { dx: "Dissociative identity disorder (F44.81)", line: "Recurrent everyday amnesia with identity states.", points: ["Assess suicide risk and PTSD."], link: { ch: "ch08", sec: "s8-did-criteria", label: "DID" }, dxId: "did" },
       acute: { dx: "Other specified dissociative disorder: acute dissociative reaction", line: "Micro-amnesias within a transient dissociative reaction to stress, under a month.", points: ["Consider acute stress disorder if its criteria are met."], link: { ch: "ch08", sec: "s8-other", label: "Other specified dissociative disorder" }, dxId: "other-specified-dissociative" },

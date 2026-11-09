@@ -39,7 +39,7 @@ SP.add("ch07", "traps", [
     truth: "Adults need **12 months**; children and adolescents **6 months**." },
   { id: "t7-13", tag: "Prolonged grief", sec: "s7-pgd-ddx",
     trap: "Hearing the deceased’s voice indicates psychosis.",
-    truth: "Sensing or hearing the deceased, often hypnagogic and comforting, is **common in normal grief**. Psychosis needs other symptoms." },
+    truth: "Sensing or hearing the deceased, often hypnagogic and sometimes comforting, is **common in normal grief**. Psychosis needs other symptoms." },
   { id: "t7-14", tag: "Prolonged grief", sec: "s7-pgd-ddx",
     trap: "Prolonged grief disorder and MDD cannot be diagnosed together.",
     truth: "They can coexist when each set of criteria is met. Prolonged grief centers on **yearning and loss**; MDD on **generalized** low mood." },

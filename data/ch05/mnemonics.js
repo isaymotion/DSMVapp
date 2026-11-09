@@ -14,7 +14,7 @@ SP.add("ch05", "mnemonics", [
       ["T", "Terrible dreams", "Repeated nightmares about separation (A7)"],
       ["E", "Endangered loved ones", "Worry about losing attachment figures or harm befalling them (A2)"]
     ],
-    caveat: "**Three** of the eight are needed, for at least **4 weeks** in children and adolescents and **typically 6 months** in adults. Adults can have the disorder with no childhood history."
+    caveat: "**Three** of the eight are needed, for at least **4 weeks** in youth under 18 and **typically 6 months** in adults. Adults can have the disorder with no childhood history."
   },
   {
     id: "m5-02", short: "4 of 13, peaking within minutes", name: "STUDENTS FEAR the 3 C’s", dx: "panic-attack", sec: "s5-panic-attack",
@@ -45,7 +45,7 @@ SP.add("ch05", "mnemonics", [
       ["S", "Shut-in places", "Enclosed places: shops, theaters, cinemas"],
       ["T", "Transport", "Public transportation: cars, buses, trains, ships, planes"]
     ],
-    caveat: "Fear of **2 of 5**, because **escape might be difficult or help unavailable** if panic-like, incapacitating or embarrassing symptoms occur. Fear of only one situation is specific phobia, situational type. Diagnosed **irrespective of panic disorder**."
+    caveat: "Fear of **2 of 5**, because **escape might be difficult or help unavailable** if panic-like, incapacitating or embarrassing symptoms occur. With fear of only one situation, specific phobia, situational type, may be diagnosed. Diagnosed **irrespective of panic disorder**."
   },
   {
     id: "m5-04", short: "+ hard-to-control worry ≥6 months; 3 of 6 (1 in children)", name: "C-FIRST", original: true, dx: "gad", sec: "s5-gad-criteria",

@@ -3,7 +3,7 @@
    counting: decide which findings count toward a criterion, then whether it is met.
    Ids are stable keys for progress. */
 (function () {
-  var ANX = ["Separation anxiety disorder", "Selective mutism", "Specific phobia", "Social anxiety disorder", "Panic disorder", "Agoraphobia", "Generalized anxiety disorder"];
+  var ANX = ["Selective mutism", "Specific phobia", "Separation anxiety disorder", "Social anxiety disorder", "Panic disorder", "Agoraphobia", "Generalized anxiety disorder"];
   var ONSET = ["With onset during intoxication", "With onset during withdrawal", "With onset after medication use"];
   var FOURTH = ["1: mild use disorder", "2: moderate or severe use disorder", "9: no use disorder"];
 
@@ -12,7 +12,7 @@
       id: "w5-01", tag: "Specific phobia",
       "case": "A 27-year-old veterinary student has fainted twice when watching injections and avoids her own vaccinations. She has also been terrified of heights since childhood, avoiding balconies and glass elevators, and takes a longer route to avoid a neighbor’s German shepherd. Each fear is immediate, out of proportion and has lasted years.",
       parts: [
-        { label: "Diagnosis", options: ["Specific phobia", "Agoraphobia", "Panic disorder", "Illness anxiety disorder"], answer: 0 },
+        { label: "Diagnosis", options: ["Agoraphobia", "Panic disorder", "Specific phobia", "Illness anxiety disorder"], answer: 2 },
         { label: "Stimulus types present", options: ["Animal", "Natural environment", "Blood-injection-injury", "Situational", "Other"], answer: [0, 1, 2], multi: true },
         { label: "Codes", options: ["F40.218", "F40.228", "F40.231", "F40.248", "F40.298", "F40.10"], answer: [0, 1, 2], multi: true }
       ],
@@ -23,12 +23,12 @@
       id: "w5-02", tag: "Social anxiety",
       "case": "A 40-year-old lawyer has avoided arguing in court for 3 years, sending junior colleagues instead, because his voice shakes and he fears the judge will think him incompetent. He is at ease in meetings, at dinner parties and with new clients.",
       parts: [
-        { label: "Diagnosis", options: ["Social anxiety disorder", "Specific phobia, situational", "Avoidant personality disorder", "Generalized anxiety disorder"], answer: 0 },
+        { label: "Diagnosis", options: ["Specific phobia, situational", "Avoidant personality disorder", "Generalized anxiety disorder", "Social anxiety disorder"], answer: 3 },
         { label: "Specifier", options: ["None", "Performance only", "Generalized", "With panic attacks"], answer: 1 },
-        { label: "Code", options: ["F40.10", "F40.00", "F40.248", "F41.1"], answer: 0 }
+        { label: "Code", options: ["F40.00", "F40.248", "F41.1", "F40.10"], answer: 3 }
       ],
       line: "**F40.10** Social anxiety disorder, performance only",
-      why: "Fear restricted to speaking or performing in public, without fear of nonperformance social situations, is **performance only**. “Generalized” was DSM-IV’s specifier and no longer exists."
+      why: "Fear restricted to speaking or performing in public, without fear of nonperformance social situations, is **performance only**. “Generalized” was DSM-IV’s specifier and no longer exists (DSM-IV → DSM-5 change; app note)."
     },
     {
       id: "w5-03", tag: "Panic and agoraphobia",
@@ -45,7 +45,7 @@
       id: "w5-04", tag: "Panic attack specifier",
       "case": "A 52-year-old man has his second major depressive episode (the first was 5 years ago, with full recovery). He has six symptoms and is struggling at work but still functioning. Several times a week, when he thinks about his failed business, he has sudden surges of terror with pounding heart, sweating, shaking and chest tightness, peaking within minutes. He has never had an attack out of the blue. No psychosis, no anxious distress features between surges.",
       parts: [
-        { label: "Diagnosis", options: ["Major depressive disorder", "Panic disorder", "Major depressive disorder and panic disorder", "Generalized anxiety disorder"], answer: 0 },
+        { label: "Diagnosis", options: ["Panic disorder", "Major depressive disorder and panic disorder", "Major depressive disorder", "Generalized anxiety disorder"], answer: 2 },
         { label: "Code", options: ["F32.1", "F33.1", "F41.0", "F33.0"], answer: 1 },
         { label: "Specifiers", options: ["With panic attacks", "With mixed features", "With melancholic features", "With peripartum onset"], answer: [0], multi: true }
       ],
@@ -56,10 +56,10 @@
       id: "w5-05", tag: "Sedative withdrawal",
       "case": "A 45-year-old woman with severe lorazepam use disorder ran out of her supply 2 days ago. She has severe anxiety and repeated panic attacks that dominate the picture and need treatment in their own right. She had no anxiety disorder before her benzodiazepine use.",
       parts: [
-        { label: "Diagnosis", options: ["Sedative-, hypnotic- or anxiolytic-induced anxiety disorder", "Panic disorder", "Generalized anxiety disorder", "Sedative withdrawal only"], answer: 0 },
+        { label: "Diagnosis", options: ["Panic disorder", "Sedative-, hypnotic- or anxiolytic-induced anxiety disorder", "Generalized anxiety disorder", "Sedative withdrawal only"], answer: 1 },
         { label: "4th character", options: FOURTH, answer: 1 },
         { label: "Onset", options: ONSET, answer: 1 },
-        { label: "Code", options: ["F13.180", "F13.280", "F13.980", "F13.230"], answer: 1 }
+        { label: "Code", options: ["F13.180", "F13.980", "F13.230", "F13.280"], answer: 3 }
       ],
       line: "**F13.280** Severe lorazepam use disorder with lorazepam-induced anxiety disorder, with onset during withdrawal",
       why: "This is the manual’s own example. The **severe** use disorder makes the 4th character **2**, and it is named first but not coded separately. Anxiety predominating and needing attention justifies this diagnosis over withdrawal alone."
@@ -79,9 +79,9 @@
       id: "w5-07", tag: "Cannabis",
       "case": "A 20-year-old with mild cannabis use disorder has had three panic attacks while high on potent edibles over the past month, now dominating the clinical picture. He has none when not using.",
       parts: [
-        { label: "Diagnosis", options: ["Cannabis-induced anxiety disorder", "Panic disorder", "Cannabis intoxication only", "Unspecified anxiety disorder"], answer: 0 },
+        { label: "Diagnosis", options: ["Panic disorder", "Cannabis intoxication only", "Cannabis-induced anxiety disorder", "Unspecified anxiety disorder"], answer: 2 },
         { label: "Onset", options: ONSET, answer: 0 },
-        { label: "Code", options: ["F12.180", "F12.280", "F12.980", "F12.188"], answer: 0 }
+        { label: "Code", options: ["F12.280", "F12.980", "F12.188", "F12.180"], answer: 3 }
       ],
       line: "**F12.180** Mild cannabis use disorder with cannabis-induced anxiety disorder, with onset during intoxication",
       why: "Mild use disorder = 4th character **1**. Cannabis intoxication is a recognized cause of panic attacks; with attacks only during use, panic disorder is not diagnosed."
@@ -101,19 +101,19 @@
       id: "w5-09", tag: "Caffeine",
       "case": "A 22-year-old student drank about 1 g of caffeine a day during exams and developed restlessness, insomnia, tremor and two panic attacks that required a clinic visit. All resolved within a week of stopping.",
       parts: [
-        { label: "Diagnosis", options: ["Caffeine-induced anxiety disorder", "Panic disorder", "Generalized anxiety disorder", "Caffeine use disorder"], answer: 0 },
+        { label: "Diagnosis", options: ["Panic disorder", "Generalized anxiety disorder", "Caffeine use disorder", "Caffeine-induced anxiety disorder"], answer: 3 },
         { label: "Onset", options: ONSET, answer: 0 },
         { label: "Code", options: ["F15.180", "F15.280", "F15.980", "F19.980"], answer: 2 }
       ],
       line: "**F15.980** Caffeine-induced anxiety disorder, with onset during intoxication",
-      why: "Caffeine has only the “without use disorder” code, **F15.980**: caffeine use disorder is a condition for further study, not a main-manual diagnosis."
+      why: "Caffeine has only the “without use disorder” code, **F15.980**: caffeine use disorder is a condition for further study (Section III, pp. 910–913), not a main-manual diagnosis."
     },
     {
       id: "w5-10", tag: "Medical condition",
-      "case": "A 47-year-old woman develops anxiety, palpitations, tremor, weight loss and heat intolerance over 2 months. TSH is suppressed with high free T4, and she is diagnosed with hyperthyroidism (E05.90). The anxiety predominates and impairs her work; she is not delirious.",
+      "case": "A 47-year-old woman develops anxiety, palpitations, tremor, weight loss and heat intolerance over 2 months. TSH is suppressed with high free T4, and she is diagnosed with hyperthyroidism (E05.90, an ICD-10-CM code not listed in DSM-5-TR). The anxiety predominates and impairs her work; she is not delirious.",
       parts: [
-        { label: "Diagnosis", options: ["Anxiety disorder due to another medical condition", "Generalized anxiety disorder", "Panic disorder", "Adjustment disorder with anxiety"], answer: 0 },
-        { label: "Order of codes", options: ["E05.90, then F06.4", "F06.4, then E05.90", "F06.4 only", "E05.90 only"], answer: 0 }
+        { label: "Diagnosis", options: ["Generalized anxiety disorder", "Panic disorder", "Adjustment disorder with anxiety", "Anxiety disorder due to another medical condition"], answer: 3 },
+        { label: "Order of codes", options: ["F06.4, then E05.90", "E05.90, then F06.4", "F06.4 only", "E05.90 only"], answer: 1 }
       ],
       line: "**E05.90** Hyperthyroidism; **F06.4** anxiety disorder due to hyperthyroidism",
       why: "Name the condition in the diagnosis and list its code **immediately before** F06.4."
@@ -133,9 +133,9 @@
       id: "w5-12", tag: "Separation anxiety",
       "case": "A 33-year-old mother has, for 10 months, called her husband and nanny many times a day to check that her toddler is safe, refused a promotion requiring travel, and had nightmares of losing her child. When her husband takes the child out, she sometimes has sudden surges of terror with racing heart, sweating, shaking and breathlessness. She has never had an attack out of the blue.",
       parts: [
-        { label: "Diagnosis", options: ANX, answer: 0 },
+        { label: "Diagnosis", options: ANX, answer: 2 },
         { label: "Specifier", options: ["None", "With panic attacks", "Performance only"], answer: 1 },
-        { label: "Code", options: ["F93.0", "F41.0", "F41.1", "F40.00"], answer: 0 }
+        { label: "Code", options: ["F41.0", "F41.1", "F40.00", "F93.0"], answer: 3 }
       ],
       line: "**F93.0** Separation anxiety disorder, with panic attacks",
       why: "Adult separation anxiety disorder (typically 6 months; here 10). Her attacks are **expected**, cued by separation, so they are recorded with the specifier rather than as panic disorder."
@@ -249,10 +249,10 @@
         ["Has not spoken to his teacher since school began", true, "Consistent failure to speak where expected, beyond the first month (A, C)."],
         ["Teacher cannot assess his reading", true, "Interference with achievement (B)."],
         ["Speaks the school’s language at home", true, "Rules out lack of language knowledge (D)."],
-        ["Stutters at home and at school", false, "Fluency problems in all settings would point to a communication disorder (E)."]
+        ["Has no stutter or speech-sound problem at home or school", true, "Supports E: no communication disorder explains the silence."]
       ],
       met: true,
-      why: "Criteria A–D are supported. Confirm the stutter is absent or not the explanation (E) before diagnosing F94.0."
+      why: "Criteria A–E are supported: F94.0 selective mutism."
     },
     {
       id: "n5-09", tag: "Social anxiety (child)",

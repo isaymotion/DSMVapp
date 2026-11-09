@@ -22,10 +22,10 @@
         asOf: "October 2026",
         first: "**Trauma-focused psychotherapy** is first-line: prolonged exposure (PE), cognitive processing therapy (CPT), trauma-focused CBT, or EMDR. Medication: an SSRI or SNRI; FDA-approved: [[stahl:drugs/sertraline|sertraline]] and [[stahl:drugs/paroxetine|paroxetine]]; [[stahl:drugs/venlafaxine|venlafaxine]] is also recommended in guidelines.",
         points: [
-          "Avoid **benzodiazepines**: they do not help PTSD and may worsen outcomes and interfere with exposure therapy.",
+          "Avoid **benzodiazepines**: guidelines recommend against them for PTSD; they may worsen outcomes and interfere with exposure therapy (app guidance; not verified).",
           "Nightmares: [[stahl:drugs/prazosin|prazosin]] is widely used, with mixed trial evidence; imagery rehearsal therapy is an option.",
           "Treat comorbid substance use, depression and sleep problems; assess suicide risk.",
-          "Not approved: the FDA declined MDMA-assisted therapy in August 2024 and brexpiprazole plus sertraline in 2025, so no new PTSD drug is approved as of October 2026."
+          "Not approved: the FDA declined MDMA-assisted therapy in August 2024 and brexpiprazole plus sertraline in 2025; no newer PTSD drug approval was found as of October 2026 (app guidance; not verified)."
         ],
         stahl: [["PTSD", "c/ch08/guide/s8-ptsd"], ["Fear extinction", "c/ch08/guide/s8-extinction"], ["Reconsolidation and novel approaches", "c/ch08/guide/s8-novel"], ["SSRIs", "c/ch07/guide/s7-ssri"]]
       }
@@ -37,12 +37,12 @@
         ["Dissociation", "“Since then, have you felt dazed, as if things were unreal, or unable to remember parts of it?”"],
         ["Intrusion and avoidance", "“Do memories or dreams of it keep coming back? Are you avoiding reminders?”"],
         ["Arousal", "“How are your sleep, temper, concentration and jumpiness?”"],
-        ["Appraisals", "“What do you think this means for you and your future? Do you blame yourself?”", "Catastrophic appraisals predict persistence."]
+        ["Appraisals", "“What do you think this means for you and your future? Do you blame yourself?”", "Catastrophic appraisals strongly predict ASD; negative appraisals raise PTSD risk."]
       ],
       tx: {
         asOf: "October 2026",
-        first: "Practical support, safety and information (psychological first aid); **trauma-focused CBT** for acute stress disorder reduces later PTSD.",
-        points: ["Avoid routine single-session psychological debriefing, which is not recommended and may be harmful.", "Avoid benzodiazepines for prevention of PTSD.", "Follow up at 1 month for PTSD."],
+        first: "Practical support, safety and information (psychological first aid); brief **trauma-focused CBT** has evidence for acute traumatic stress symptoms.",
+        points: ["Avoid routine single-session psychological debriefing, which is not recommended and may be harmful.", "Avoid benzodiazepines for prevention of PTSD (app guidance; not verified).", "Follow up at 1 month for PTSD (app guidance; not verified)."],
         stahl: [["Fear extinction", "c/ch08/guide/s8-extinction"]]
       }
     },
@@ -57,7 +57,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "**Brief psychotherapy** focused on the stressor: problem solving, supportive therapy, CBT, stress management; mobilize social support.",
+        first: "**Brief psychotherapy** focused on the stressor: problem solving, supportive therapy, CBT, stress management; mobilize social support (app guidance; not verified).",
         points: ["Medication is not routinely needed; treat specific symptoms (e.g., short-term sleep help) if necessary.", "Reassess if symptoms persist: another disorder may emerge."],
         stahl: []
       }
@@ -90,8 +90,8 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "A **stable, sensitive, responsive caregiver** is the core treatment; caregiver-focused interventions (e.g., attachment-based programs such as Attachment and Biobehavioral Catch-up, child-parent psychotherapy).",
-        points: ["Address safety, nutrition, development and education.", "No medication treats attachment itself; coercive “holding therapies” are harmful and should be avoided."],
+        first: "A **stable, sensitive, responsive caregiver** is the core treatment; caregiver-focused interventions (e.g., attachment-based programs such as Attachment and Biobehavioral Catch-up, child-parent psychotherapy; app guidance; not verified).",
+        points: ["Address safety, nutrition, development and education.", "No medication treats attachment itself (app guidance; not verified); coercive “holding therapies” are harmful and should be avoided."],
         stahl: []
       }
     },
@@ -104,18 +104,18 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "Stable caregiving plus **caregiver-based interventions** that teach safe social boundaries and strengthen the attachment relationship.",
+        first: "Stable caregiving plus **caregiver-based interventions** that teach safe social boundaries and strengthen the attachment relationship (app guidance; not verified).",
         points: ["Safety planning, because of the risk of going off with strangers.", "Treat comorbid ADHD."],
         stahl: []
       }
     },
     {
       id: "other-specified-trauma",
-      tx: { asOf: "October 2026", first: "Treat according to the presentation: trauma-focused therapy for subthreshold PTSD; supportive and problem-focused therapy for adjustment-like presentations.", points: [], stahl: [] }
+      tx: { asOf: "October 2026", first: "Treat according to the presentation: trauma-focused therapy for subthreshold PTSD; supportive and problem-focused therapy for adjustment-like presentations (app guidance; not verified).", points: [], stahl: [] }
     },
     {
       id: "unspecified-trauma",
-      tx: { asOf: "October 2026", first: "Ensure safety, gather the history of the stressor, and reassess for a specific diagnosis.", points: [], stahl: [] }
+      tx: { asOf: "October 2026", first: "Ensure safety, gather the history of the stressor, and reassess for a specific diagnosis (app guidance; not verified).", points: [], stahl: [] }
     }
   ]);
 

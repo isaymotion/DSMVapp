@@ -1,7 +1,7 @@
 /* Chapter 8 high yield. Bold text becomes a blank in "Hide key facts" mode, so bold the answer, not the topic. */
 SP.add("ch08", "highYield", [
   { id: "hy8-overview", topic: "The chapter", items: [
-    "Dissociation is a disruption or discontinuity in the normal **integration** of consciousness, memory, identity, emotion, perception, body representation, motor control and behavior.",
+    "Dissociation is a break in the normal **integration** of consciousness, memory, identity, emotion, perception, body sense, motor control and behavior.",
     "The dissociative disorders sit **next to**, but not inside, the trauma- and stressor-related disorders.",
     "Division of identity, depersonalization and derealization are **positive** dissociative symptoms.",
     "Amnesia is a **negative** dissociative symptom.",
@@ -10,7 +10,7 @@ SP.add("ch08", "highYield", [
   ] },
   { id: "hy8-did", topic: "Dissociative identity disorder", items: [
     "DID code: **F44.81**.",
-    "Criterion A: two or more distinct **personality states**, or an experience of possession.",
+    "Criterion A: two or more distinct **personality states**, or possession.",
     "Criterion A involves marked discontinuity in sense of **self** and sense of **agency**.",
     "Criterion B: recurrent **gaps in recall** inconsistent with ordinary forgetting.",
     "Possession within a broadly accepted cultural or religious practice is **excluded**.",
@@ -56,17 +56,17 @@ SP.add("ch08", "highYield", [
     "One-month prevalence in the UK: about **1%–2%**.",
     "Mean age at onset: **16**.",
     "Only **5%** begin after age 25.",
-    "Onset after age **40** suggests a medical cause.",
+    "Onset after age **40** suggests a possible medical cause.",
     "About **15%** of cases are precipitated by drugs such as cannabis, ketamine or MDMA.",
     "The childhood trauma most linked to DPDR is **emotional** abuse and neglect.",
     "DPDR occurring only during **panic attacks** is not diagnosed.",
-    "Comorbidity with **PTSD** is low."
+    "In research samples, comorbidity with **PTSD** is low."
   ] },
   { id: "hy8-other", topic: "Other specified and unspecified", items: [
     "Other specified dissociative disorder code: **F44.89**; unspecified: **F44.9**.",
     "Identity alterations or possession **without amnesia** are other specified.",
     "Identity disturbance from cults, brainwashing or captivity is due to **coercive persuasion**.",
-    "Acute dissociative reactions to stress last less than **1 month**.",
+    "Acute dissociative reactions to stress typically last less than **1 month**.",
     "Dissociative trance is profound **unresponsiveness** outside accepted cultural practice."
   ] }
 ]);

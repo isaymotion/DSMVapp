@@ -16,7 +16,7 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     specifiers: [],
     epi: [["12-month prevalence", "1.5% (small US study)"], ["Sex", "Women predominate in adult clinics only"], ["Trauma", "≈90% report early abuse and neglect"], ["Suicide", ">70% of outpatients have attempted"]],
-    risk: ["Early, severe, repeated trauma (neglect, abuse) usually before age 5–6, in disturbed attachment.", "Painful early medical procedures, war, trafficking, severe bullying.", "Genetics ≈45%–50% of dissociative symptom variance."],
+    risk: ["Early, severe, repeated trauma (neglect, abuse) usually before age 5–6, in disturbed attachment.", "Painful early medical procedures, war, trafficking, severe bullying.", "Twin studies suggest genetics ≈45%–50% of dissociative symptom variance."],
     differential: [
       { id: "dissociative-amnesia", how: "Amnesia without identity states." },
       { id: "bipolar-ii", how: "Episodes of days, decreased need for sleep; DID shifts last minutes to hours." },
@@ -25,7 +25,7 @@ SP.disorders = (SP.disorders || []).concat([
       { name: "Borderline personality disorder", how: "Pervasive, persistent pattern rather than variability across identities." },
       { name: "Malingering or factitious disorder", how: "Dramatic, media-based, stereotyped presentations; enjoys the diagnosis." }
     ],
-    pearls: ["Most switching is subtle.", "Ask about time loss and unexplained possessions.", "Highest hypnotizability of any clinical group.", "Suicide attempts in >70%."],
+    pearls: ["Most switching is subtle.", "Ask about time loss and unexplained possessions (app guidance).", "Highest hypnotizability of any clinical group.", "Suicide attempts in >70% of outpatients."],
     cmp: { symptoms: "Identity states + recurrent amnesia", exclusions: "Cultural practice, imaginary playmates, substances, seizures", prevalence: "1.5% (12-month)", course: "Chronic; triggered by new trauma or reminders" },
     clues: [["Core picture", "A nurse with time loss, clothes she never bought and internal voices, misdiagnosed as rapid-cycling bipolar"], ["Code", "F44.81"]]
   },
@@ -45,13 +45,13 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     specifiers: ["With dissociative fugue (F44.1)"],
     epi: [["12-month prevalence", "1.8% (small US study)"], ["Forms", "Localized and selective most common; generalized rare"], ["Age", "Any age; hard to assess under 12"]],
-    risk: ["Severe acute or chronic trauma; childhood sexual abuse by a relative.", "Combat, trafficking, captivity, refugee status.", "Profound psychological conflict; genetics ≈50%."],
+    risk: ["Severe acute or chronic trauma; childhood sexual abuse by a relative.", "Combat, trafficking, captivity, refugee status.", "Profound psychological conflict; genetic studies suggest ≈50%."],
     differential: [
       { id: "did", how: "Identity states and ongoing everyday time loss." },
       { id: "ptsd", how: "Amnesia only for the trauma." },
-      { name: "Transient global amnesia", how: "Neurological, anterograde, identity preserved." },
+      { name: "Transient global amnesia", how: "Neurological, anterograde, identity preserved (features outside the DSM)." },
       { name: "Substance blackouts", how: "Only during intoxication." },
-      { name: "Seizures", how: "Nonpurposive wandering, EEG abnormalities." },
+      { name: "Seizures", how: "Nonpurposive wandering; serial EEGs usually abnormal." },
       { name: "Major neurocognitive disorder", how: "Global decline; identity spared until late; anterograde deficits." },
       { id: "malingering", name: "Malingering", how: "No reliable test; context of gain; can coexist." }
     ],
@@ -84,7 +84,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "did", how: "DPDR within DID is not diagnosed separately." },
       { name: "Seizures and other medical causes", how: "Onset after 40, atypical course: EEG, imaging." }
     ],
-    pearls: ["“It feels as if” — reality testing intact.", "Onset after 40 needs a medical workup.", "PTSD comorbidity is low."],
+    pearls: ["“It feels as if” — reality testing intact.", "Onset after 40 needs a medical workup.", "PTSD comorbidity is low in research samples."],
     cmp: { symptoms: "Depersonalization and/or derealization, reality testing intact", exclusions: "Panic, MDD, PTSD, psychosis, substances, seizures", prevalence: "1%–2%", course: "Often persistent" },
     clues: [["Core picture", "A student who feels she watches herself in a film and the world is behind glass, knowing it is real"], ["Code", "F48.1"]]
   },
@@ -95,14 +95,14 @@ SP.disorders = (SP.disorders || []).concat([
     duration: "Acute reactions typically less than 1 month; others chronic",
     functioning: "Clinically significant distress or impairment",
     mood: "Varies",
-    criteria: [["", "Examples: **mixed dissociative syndromes** (identity disturbance or possession without amnesia); **identity disturbance due to coercive persuasion**; **acute dissociative reactions to stressful events** (<1 month); **dissociative trance**."]],
+    criteria: [["", "Examples: **mixed dissociative syndromes** (identity disturbance or possession without amnesia); **identity disturbance due to coercive persuasion**; **acute dissociative reactions to stressful events** (typically <1 month); **dissociative trance**."]],
     specifiers: [],
     epi: [],
     risk: [],
     differential: [
         { id: "ataque-de-nervios", how: "Depersonalization, derealization and amnesia are prominent in some ataques; other specified dissociative disorder is on the manual’s related list (Chapter 24, p. 874)." },
       { id: "did", how: "Identity states with recurrent amnesia." },
-      { id: "acute-stress", how: "9 of 14 symptoms, 3 days to 1 month after Criterion A trauma." },
+      { id: "acute-stress", how: "(Ch 7) 9 of 14 symptoms, 3 days to 1 month after Criterion A trauma." },
       { id: "unspecified-dissociative", how: "Reason not given." }
     ],
     pearls: ["Four named examples: M-CAT.", "Trance within accepted practice is not a disorder."],
@@ -121,7 +121,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [],
     risk: [],
     differential: [{ id: "other-specified-dissociative", how: "Use when the reason can be stated." }],
-    pearls: ["Common in emergency settings."],
+    pearls: ["Used when information is insufficient, e.g., in the emergency room."],
     cmp: { symptoms: "Dissociative symptoms, reason not given", exclusions: "Specific dissociative disorders", prevalence: "—", course: "Varies" },
     clues: [["Example", "An unresponsive patient in the emergency department with too little history"], ["Code", "F44.9"]]
   }

@@ -35,28 +35,28 @@ SP.add("ch07", "vignettes", [
     "q": "Why is PTSD not diagnosed?",
     "choices": [
       "PTSD cannot follow the death of a parent",
+      "A natural death learned of is not Criterion A",
       "Symptoms have not lasted 6 months",
       "He did not witness the death",
-      "Learning of a death from natural causes does not meet Criterion A",
       "He lacks dissociative symptoms"
     ],
-    "answer": 3,
+    "answer": 1,
     "why": "Learning about a close person’s death meets Criterion A **only if it was violent or accidental**. A heart attack is a natural death. Consider normal grief, adjustment disorder or MDD.",
     "whyNot": [
       "A violent or accidental death of a parent can be Criterion A.",
+      "Correct.",
       "PTSD needs more than 1 month, not 6.",
       "Learning about a violent or accidental death would qualify without witnessing it.",
-      "Correct.",
       "Dissociative symptoms are a specifier, not a requirement."
     ]
   },
   {
     "id": "v7-03",
     "tag": "Criterion A4",
-    "stem": "A 34-year-old content moderator reviews violent and abusive videos for 8 hours a day. Over the past 3 months she has had intrusive images from the videos, nightmares, avoidance of news and social media, a belief that “the world is evil,” emotional numbness, irritability and hypervigilance.",
+    "stem": "A 34-year-old content moderator reviews violent and abusive videos for 8 hours a day. Over the past 3 months she has had intrusive images from the videos, nightmares, avoidance of news and social media, a belief that “the world is evil,” emotional numbness, irritability and hypervigilance, and she has started taking sick days.",
     "q": "Does her exposure meet Criterion A?",
     "choices": [
-      "Yes: repeated work-related exposure to aversive details, including through media, qualifies",
+      "Yes: work-related media exposure qualifies (A4)",
       "No: exposure through screens never qualifies",
       "No: she did not directly experience the events",
       "Only if she knew the victims",
@@ -75,7 +75,7 @@ SP.add("ch07", "vignettes", [
   {
     "id": "v7-04",
     "tag": "Acute stress disorder",
-    "stem": "Twelve days after surviving a building collapse, a 40-year-old engineer feels as if he is watching himself in a movie, cannot recall how he got out, has nightmares and flashbacks, avoids the site and any news of it, cannot feel happy, sleeps poorly and jumps at every noise. He has no head injury.",
+    "stem": "Twelve days after surviving a building collapse, a 40-year-old engineer feels as if he is watching himself in a movie, cannot recall how he got out, has nightmares and flashbacks, tries to push every thought of it out of his mind, avoids the site and any news of it, cannot feel happy, sleeps poorly and jumps at every noise. He has not been able to return to work. He has no head injury.",
     "q": "What is the diagnosis?",
     "choices": [
       "Adjustment disorder",
@@ -119,17 +119,17 @@ SP.add("ch07", "vignettes", [
     "stem": "A 25-year-old woman is seen in the emergency department 18 hours after being robbed at knifepoint. She is shaking, tearful, dazed and cannot stop replaying the event.",
     "q": "What is the most appropriate statement?",
     "choices": [
-      "PTSD",
-      "Acute stress disorder",
-      "No trauma-related disorder can be diagnosed yet; offer support and follow up",
-      "Brief psychotic disorder",
-      "Panic disorder"
+      "PTSD, with dissociative symptoms",
+      "Acute stress disorder, given her dazed state",
+      "An expected reaction: support her and follow up",
+      "Brief psychotic disorder, with marked stressor",
+      "Panic disorder, given her shaking"
     ],
     "answer": 2,
-    "why": "Acute stress disorder needs symptoms for **at least 3 days**. Early reactions are expected; offer safety, support and information (psychological first aid) and arrange follow-up.",
+    "why": "Acute stress disorder needs symptoms for **at least 3 days**, and PTSD more than 1 month. Her distress is not out of proportion to the event, so no disorder is warranted now. Offer safety, support and information (psychological first aid) and arrange follow-up (outside the DSM).",
     "whyNot": [
       "Not before 1 month.",
-      "Not before 3 days.",
+      "Not before 3 days; dissociation alone does not shorten the time rule.",
       "Correct.",
       "No psychotic symptoms.",
       "Her distress is tied to the robbery."
@@ -142,18 +142,18 @@ SP.add("ch07", "vignettes", [
     "q": "What is the most appropriate diagnosis?",
     "choices": [
       "PTSD",
-      "Adjustment disorder",
       "Acute stress disorder",
       "Major depressive disorder",
+      "Adjustment disorder",
       "Borderline personality disorder"
     ],
-    "answer": 1,
+    "answer": 3,
     "why": "A full PTSD-like picture after a stressor that does **not** meet Criterion A (no threat of death, serious injury or sexual violence) is an **adjustment disorder**.",
     "whyNot": [
       "PTSD requires a Criterion A event.",
-      "Correct.",
       "Acute stress disorder also requires a Criterion A event and lasts only up to a month.",
       "No full major depressive episode is described; if present, MDD would be diagnosed instead.",
+      "Correct.",
       "These symptoms began with the stressor."
     ]
   },
@@ -185,7 +185,7 @@ SP.add("ch07", "vignettes", [
     "stem": "A 4-year-old boy saw his mother being beaten by his father 3 months ago. Since then he repeatedly crashes toy figures together while shouting, wakes screaming from dreams he cannot describe, has stopped playing with other children, has extreme tantrums and startles easily. He seems cheerful when he plays the crashing game.",
     "q": "Which statement is correct?",
     "choices": [
-      "He meets PTSD criteria for children 6 and younger; intrusive memories may not appear distressing and may be expressed in play",
+      "He meets PTSD criteria for children 6 and younger",
       "PTSD cannot be diagnosed before age 6",
       "He must show fear while reenacting for it to count",
       "The adult criteria apply, so he needs 2 cognition and mood symptoms",
@@ -207,42 +207,42 @@ SP.add("ch07", "vignettes", [
     "stem": "A 36-year-old woman with PTSD after childhood sexual abuse reports frequent episodes in which she feels detached from her body and as if she were watching herself from the ceiling, and that her surroundings look flat and unreal. She does not use alcohol or drugs, and an EEG is normal.",
     "q": "How should this be diagnosed?",
     "choices": [
+      "PTSD, with dissociative symptoms",
       "Borderline personality disorder",
       "PTSD and depersonalization/derealization disorder",
       "Dissociative identity disorder",
-      "Schizophrenia",
-      "PTSD, with dissociative symptoms"
+      "Schizophrenia"
     ],
-    "answer": 4,
+    "answer": 0,
     "why": "Full PTSD plus persistent **depersonalization** and **derealization**, not due to substances or seizures: the **with dissociative symptoms** specifier.",
     "whyNot": [
+      "Correct.",
       "Not supported by the history given.",
-      "When full PTSD criteria are met, the dissociative subtype captures these symptoms.",
-      "No distinct identities or amnesia for everyday events are described.",
-      "Depersonalization is not psychosis; reality testing is intact.",
-      "Correct."
+      "With full PTSD, the dissociative subtype should be considered, and DPDR is not diagnosed when PTSD better explains the symptoms (Ch 8, p. 343).",
+      "No distinct identities or amnesia for everyday events are described (Ch 8).",
+      "Depersonalization is not psychosis; reality testing is intact."
     ]
   },
   {
     "id": "v7-10",
     "tag": "PTSD vs TBI",
-    "stem": "A 26-year-old soldier was knocked unconscious by a roadside bomb 4 months ago. He has headaches, poor concentration, light sensitivity and irritability. He also has nightmares of the blast, avoids driving, feels guilty about a comrade who died, and is hypervigilant.",
+    "stem": "A 26-year-old soldier was knocked unconscious by a roadside bomb 4 months ago. He has headaches, poor concentration, light sensitivity and irritability. He also has nightmares of the blast, avoids driving, feels guilty about a comrade who died, feels detached from his family, and is hypervigilant. He has been unable to return to duty.",
     "q": "What is the best interpretation?",
     "choices": [
       "Only PTSD: TBI cannot coexist",
       "Only TBI: the symptoms are postconcussive",
-      "PTSD, possibly with a co-occurring neurocognitive disorder due to TBI; reexperiencing and avoidance point to PTSD",
+      "PTSD, possibly with co-occurring TBI",
       "Malingering",
       "Functional neurological symptom disorder"
     ],
     "answer": 2,
     "why": "Blasts can cause both PTSD and TBI. **Reexperiencing and avoidance** are characteristic of PTSD; headaches, light sensitivity and concentration problems occur in both; persistent **disorientation** would point to TBI.",
     "whyNot": [
-      "They often coexist.",
-      "Nightmares, avoidance and guilt are not explained by TBI.",
+      "They can coexist after head-injuring events (p. 313).",
+      "Nightmares and avoidance are characteristic of PTSD, not TBI (p. 313).",
       "Correct.",
       "Nothing suggests feigning.",
-      "No neurological symptoms incompatible with disease are described."
+      "No neurological symptoms incompatible with disease are described (Ch 9)."
     ]
   },
   {
@@ -258,12 +258,12 @@ SP.add("ch07", "vignettes", [
       "This is malingering to support an asylum claim"
     ],
     "answer": 1,
-    "why": "**Auditory pseudo-hallucinations** and **paranoid ideation** can occur in PTSD, especially after severe interpersonal trauma. Flashbacks and these phenomena relate directly to the trauma, without other psychotic features.",
+    "why": "**Auditory pseudo-hallucinations** and **paranoid ideation** can be present in PTSD (p. 308). Flashbacks are distinguished from psychosis by being directly related to the trauma and occurring without other psychotic features (p. 313).",
     "whyNot": [
       "Organized thinking, no other delusions and trauma-linked content argue against schizophrenia.",
       "Correct.",
       "There is no psychotic-features specifier for PTSD.",
-      "No disturbance of attention or awareness is described.",
+      "No disturbance of attention or awareness is described (Ch 17).",
       "Nothing in the history suggests feigning."
     ]
   },
@@ -283,10 +283,10 @@ SP.add("ch07", "vignettes", [
     "why": "A reaction within 3 months to a new illness, with anxiety **and** low mood, impairing, not meeting another disorder: **F43.23**. The illness is the stressor.",
     "whyNot": [
       "A diabetes diagnosis is not a Criterion A trauma.",
-      "That diagnosis applies when psychological factors worsen an illness; here the illness is causing the reaction. (His poor self-care could warrant it as well if it is harming the diabetes.)",
+      "That diagnosis applies when psychological factors worsen an illness; here the illness is causing the reaction. Decreased adherence can be part of an adjustment disorder (p. 321).",
       "Depressed mood is also prominent.",
       "Correct.",
-      "GAD needs 6 months of worry about many things."
+      "GAD needs 6 months of worry about many things (Ch 5)."
     ]
   },
   {
@@ -295,26 +295,26 @@ SP.add("ch07", "vignettes", [
     "stem": "Seven weeks after losing his job, a 44-year-old man has depressed mood most of the day, loss of interest, weight loss, early waking, guilt, poor concentration and thoughts that his family would be better off without him, nearly every day for 3 weeks.",
     "q": "What is the correct diagnosis?",
     "choices": [
-      "Major depressive disorder",
       "Adjustment disorder with depressed mood",
       "Normal reaction to job loss",
+      "Major depressive disorder",
       "Persistent depressive disorder",
       "Prolonged grief disorder"
     ],
-    "answer": 0,
-    "why": "Full major depressive episode criteria are met. A stressor does not prevent the diagnosis; adjustment disorder applies only when **no other disorder** is met.",
+    "answer": 2,
+    "why": "Full major depressive episode criteria are met (Ch 4). A stressor does not prevent the diagnosis; adjustment disorder applies only when **no other disorder** is met.",
     "whyNot": [
-      "Correct.",
       "Excluded because MDD criteria are met (Criterion C).",
       "Seven symptoms with suicidal ideation are not a normal reaction.",
-      "Not 2 years.",
+      "Correct.",
+      "Not 2 years (Ch 4).",
       "There is no death."
     ]
   },
   {
     "id": "v7-14",
     "tag": "Persistent adjustment disorder",
-    "stem": "A 60-year-old woman has been caring for her husband with advancing dementia for 2 years. For the past 14 months she has felt tearful, hopeless and overwhelmed, with poor sleep, but does not meet criteria for a major depressive episode or GAD.",
+    "stem": "A 60-year-old woman has been caring for her husband with advancing dementia for 16 months. Within weeks of taking this on she began to feel tearful, hopeless and overwhelmed, with poor sleep, and this has continued. She does not meet criteria for a major depressive episode or GAD.",
     "q": "Which diagnosis fits best?",
     "choices": [
       "No diagnosis: caregiving stress is normal",
@@ -328,7 +328,7 @@ SP.add("ch07", "vignettes", [
     "whyNot": [
       "Impairing, out-of-proportion distress is diagnosable.",
       "The stressor is ongoing, so the disorder can continue.",
-      "PDD needs 2 years of depressed mood with 2 of 6 symptoms; check, but it is not described here.",
+      "PDD needs 2 years of depressed mood with 2 of 6 symptoms (Ch 4); check, but it is not described here.",
       "Her husband is alive.",
       "Correct."
     ]
@@ -346,38 +346,38 @@ SP.add("ch07", "vignettes", [
       "Persistent depressive disorder"
     ],
     "answer": 2,
-    "why": "More than **12 months**, intense **yearning**, plus **disbelief, meaninglessness, poor reintegration and loneliness**, beyond cultural norms: **prolonged grief disorder (F43.81)**. Her wish to join him needs a careful suicide assessment.",
+    "why": "More than **12 months**, intense **yearning**, plus **disbelief, meaninglessness, poor reintegration and loneliness**, beyond cultural norms: **prolonged grief disorder (F43.81; updated code, printed F43.8)**. Her wish to join him needs a careful suicide assessment.",
     "whyNot": [
       "Her grief clearly exceeds her community’s norms and impairs her.",
       "No generalized depressed mood, worthlessness or neurovegetative symptoms are described.",
       "Correct.",
-      "She did not witness the death and has no event-focused intrusions.",
+      "Learning of his suicide can meet Criterion A, but she has no event-focused intrusions, trauma avoidance or arousal.",
       "Not chronic generalized depression."
     ],
     "then": {
       "q": "Which feature of this case most raises her risk of suicidal ideation?",
       "choices": [
-        "Her age",
-        "The death of a child under 25 by violent means",
-        "Normal sleep",
-        "Religious affiliation",
-        "Absence of worthlessness"
+        "Her age of 58 years",
+        "Her son’s violent death at 24",
+        "Her normal sleep and appetite",
+        "Her religious affiliation",
+        "Absence of worthlessness or guilt"
       ],
       "answer": 1,
       "why": "Suicidal ideation in prolonged grief is greater after **violent loss** (including suicide) and after the death of a **child, especially under 25**.",
       "whyNot": [
-        "Older age raises risk of the disorder, but the specific loss matters most here.",
+        "Older age may be associated with risk of the disorder (p. 324), but the specific loss is the listed factor for suicidal ideation.",
         "Correct.",
         "Not a risk factor.",
         "Not a listed risk factor.",
-        "Suicidal ideation in prolonged grief occurs independent of depression."
+        "The suicidal ideation risk in prolonged grief holds after adjusting for major depression (p. 326)."
       ]
     }
   },
   {
     "id": "v7-16",
     "tag": "PGD timing",
-    "stem": "Seven months after her husband’s sudden death, a 50-year-old woman yearns for him every day, feels numb and lonely, and cannot return to work. She does not meet criteria for a major depressive episode.",
+    "stem": "Seven months after her husband’s sudden death from a heart attack, a 50-year-old woman yearns for him every day, feels numb and lonely, and cannot return to work. Her family and community find her grief far beyond what they expect. She does not meet criteria for a major depressive episode.",
     "q": "What is the most appropriate diagnosis now?",
     "choices": [
       "Prolonged grief disorder",
@@ -387,7 +387,7 @@ SP.add("ch07", "vignettes", [
       "Acute stress disorder"
     ],
     "answer": 1,
-    "why": "Adults need **12 months** for prolonged grief disorder. Before that, out-of-proportion or impairing grief can be diagnosed as **adjustment disorder**. Reassess at 12 months.",
+    "why": "Adults need **12 months** for prolonged grief disorder. Before that, out-of-proportion or impairing grief may sometimes be diagnosed as **adjustment disorder** (p. 322). Reassess at 12 months.",
     "whyNot": [
       "Not before 12 months in adults.",
       "Correct.",
@@ -399,22 +399,22 @@ SP.add("ch07", "vignettes", [
   {
     "id": "v7-17",
     "tag": "PGD vs PTSD",
-    "stem": "A 35-year-old man found his brother’s body after a fatal shooting 14 months ago. He has vivid, here-and-now flashbacks of the scene, avoids the street where it happened and is hypervigilant. He also longs intensely for his brother daily, feels part of himself died and cannot imagine a future, beyond what his culture expects.",
+    "stem": "A 35-year-old man found his brother’s body after a fatal shooting 14 months ago. He has vivid, here-and-now flashbacks of the scene, avoids the street where it happened, is hypervigilant, startles easily, sleeps poorly and blames himself for not being there. He also longs intensely for his brother daily, feels part of himself died, feels life has no meaning without him and feels intensely lonely. He has not returned to work. His grief goes well beyond what his culture expects.",
     "q": "Which diagnoses are appropriate?",
     "choices": [
+      "PTSD and prolonged grief disorder",
       "Major depressive disorder",
       "PTSD only",
       "Prolonged grief disorder only",
-      "PTSD and prolonged grief disorder",
       "Adjustment disorder"
     ],
-    "answer": 3,
-    "why": "Event-focused, perceptual intrusions and trauma avoidance meet **PTSD**; yearning, identity disruption and meaninglessness meet **prolonged grief disorder**. Both are common after **violent** deaths and can be diagnosed together.",
+    "answer": 0,
+    "why": "Event-focused, perceptual intrusions, trauma avoidance, self-blame and arousal meet **PTSD**; yearning, identity disruption, meaninglessness and loneliness meet **prolonged grief disorder**. PTSD is more often comorbid with prolonged grief disorder after **violent or accidental** deaths, and both can be diagnosed (pp. 326–327).",
     "whyNot": [
+      "Correct.",
       "Not described.",
       "His yearning and grief symptoms also meet prolonged grief criteria.",
       "His trauma symptoms also meet PTSD.",
-      "Correct.",
       "Full criteria for specific disorders are met."
     ]
   },
@@ -437,7 +437,7 @@ SP.add("ch07", "vignettes", [
       "No delusions, disorganization or negative symptoms.",
       "Under 12 months and she is functioning.",
       "No depressive episode is described.",
-      "She is alert and oriented."
+      "No disturbance of attention or awareness is described (Ch 17)."
     ]
   },
   {
@@ -464,20 +464,20 @@ SP.add("ch07", "vignettes", [
     "then": {
       "q": "What is the most important determinant of his prognosis?",
       "choices": [
-        "The quality of his caregiving from now on",
-        "Starting an SSRI",
-        "His IQ",
-        "Genetic testing",
-        "Holding therapy"
+        "Quality of his future caregiving",
+        "Early start of an SSRI",
+        "His IQ on formal testing",
+        "Results of genetic testing",
+        "Regular holding therapy sessions"
       ],
       "answer": 0,
-      "why": "Prognosis in RAD depends on the **quality of the caregiving environment** after neglect. Coercive holding therapies are harmful.",
+      "why": "Prognosis in RAD **appears to depend** on the **quality of the caregiving environment** after neglect (p. 297). Coercive holding therapies have no empirical support and have been associated with serious harm (outside the DSM; AACAP practice parameter).",
       "whyNot": [
         "Correct.",
-        "No medication treats attachment.",
+        "Medication is not indicated for the core features of RAD (outside the DSM).",
         "Not the main determinant.",
         "Not relevant here.",
-        "Coercive holding therapies are harmful and should be avoided."
+        "Coercive holding therapies are harmful and should be avoided (outside the DSM)."
       ]
     }
   },
@@ -489,62 +489,62 @@ SP.add("ch07", "vignettes", [
     "choices": [
       "ADHD",
       "Reactive attachment disorder",
-      "Disinhibited social engagement disorder",
       "Normal friendliness",
-      "Autism spectrum disorder"
+      "Autism spectrum disorder",
+      "Disinhibited social engagement disorder"
     ],
-    "answer": 2,
+    "answer": 4,
     "why": "Overfamiliarity and willingness to go off with strangers after **repeated caregiver changes**, not due to impulsivity: **F94.2 DSED**. It can coexist with a warm, even secure, attachment to current caregivers.",
     "whyNot": [
       "Attention and activity are normal.",
-      "She is not withdrawn and seeks comfort from her mother.",
-      "Correct.",
+      "She is not withdrawn and has a warm relationship with her mother.",
       "Going off with strangers exceeds age and cultural norms and is dangerous.",
-      "No restricted interests or social communication deficits."
+      "No restricted interests or social communication deficits are described.",
+      "Correct."
     ]
   },
   {
     "id": "v7-21",
     "tag": "Subthreshold PTSD",
-    "stem": "Twenty months after a serious car crash, a 47-year-old man still has intrusive memories and avoids driving on highways, but he denies negative changes in mood or beliefs and has only one arousal symptom (startle). His avoidance limits his job.",
+    "stem": "Twenty months after a serious car crash, a 47-year-old man still has intrusive memories, avoids talking or thinking about the crash and avoids the road where it happened, but he denies negative changes in mood or beliefs and has only one arousal symptom (startle). His symptoms are affecting his work.",
     "q": "What is the best diagnosis?",
     "choices": [
-      "PTSD",
-      "Other specified trauma- and stressor-related disorder (persistent response to trauma with PTSD-like symptoms)",
-      "Adjustment disorder with anxiety",
-      "Specific phobia, situational",
+      "PTSD, with delayed expression",
+      "Other specified trauma- and stressor-related disorder",
+      "Adjustment disorder with anxiety, persistent (chronic)",
+      "Specific phobia, situational type",
       "No diagnosis"
     ],
     "answer": 1,
-    "why": "Subthreshold PTSD persisting **more than 6 months** cannot be an adjustment disorder. It is **other specified**, recorded as persistent response to trauma with PTSD-like symptoms (F43.89).",
+    "why": "Subthreshold PTSD persisting **more than 6 months** cannot be an adjustment disorder. It is **other specified**, recorded as persistent response to trauma with PTSD-like symptoms (F43.89; updated code, printed F43.8).",
     "whyNot": [
       "Criteria D and E are not met.",
       "Correct.",
       "Adjustment disorder cannot extend this long after the stressor without enduring consequences.",
-      "Intrusive memories of the crash point to a trauma-related condition. (Specific phobia after a trauma is diagnosed only if PTSD-like criteria are not better fits.)",
+      "Specific phobia can follow a trauma when PTSD criteria are not met (Ch 5, p. 229), but no marked fear on exposure is described, and intrusive memories point to a trauma-related presentation.",
       "His impairment is significant."
     ]
   },
   {
     "id": "v7-22",
     "tag": "PTSD and suicide",
-    "stem": "A 30-year-old veteran with PTSD from combat, comorbid alcohol use disorder and recent divorce says he has been thinking about suicide and recently bought a gun.",
+    "stem": "A 30-year-old veteran with PTSD from combat, comorbid alcohol use disorder and recent divorce says he has been thinking about suicide and has recently gained access to lethal means.",
     "q": "Which statement about PTSD and suicide is most accurate?",
     "choices": [
       "Veterans with PTSD rarely attempt suicide",
       "PTSD is not linked to suicide deaths",
       "His risk is explained solely by alcohol",
-      "PTSD increases the transition from suicidal thoughts to plans and attempts, independent of mood disorders",
+      "PTSD is linked to moving from suicidal thoughts to attempts",
       "Suicide risk falls once symptoms last more than a year"
     ],
     "answer": 3,
-    "why": "PTSD is linked with suicidal thoughts, attempts and **deaths**, and with moving **from thoughts to plans or attempts**, independent of mood disorders. Access to a firearm, alcohol and a recent loss make this urgent.",
+    "why": "PTSD is linked with suicidal thoughts, attempts and **deaths**, and is associated with moving **from thoughts to plans or attempts**, independent of mood disorders. Access to lethal means, alcohol and a recent loss make this urgent (outside the DSM).",
     "whyNot": [
       "Not true.",
       "It is linked to suicide deaths.",
-      "PTSD raises risk independently.",
+      "PTSD’s effect on suicidal behavior is independent of mood disorders (p. 311); alcohol adds to, not explains, his risk.",
       "Correct.",
-      "Chronic PTSD does not lower risk."
+      "The manual gives no such decline."
     ],
     "discuss": [
       "How would you approach lethal means counseling with him?"
@@ -556,20 +556,20 @@ SP.add("ch07", "vignettes", [
     "stem": "A 55-year-old man woke during cardiac surgery, unable to move but aware of pain and the surgeons’ voices. Four months later he has nightmares, flashbacks, avoidance of hospitals, detachment, irritability and insomnia.",
     "q": "Does the event meet Criterion A?",
     "choices": [
-      "Yes: a catastrophic treatment event such as waking during surgery can qualify",
       "No: medical illness never qualifies",
       "No: he was not in danger of dying",
       "Only if surgery was an emergency",
+      "Yes: a catastrophic treatment event can qualify",
       "Only if he has a new diagnosis of cancer"
     ],
-    "answer": 0,
-    "why": "Most illnesses are not Criterion A, but **sudden catastrophic medical events** qualify: waking during surgery, anaphylaxis, myocardial infarction, emergency cardioversion, burn debridement.",
+    "answer": 3,
+    "why": "A life-threatening illness is not necessarily Criterion A, but life-threatening medical emergencies or **catastrophic treatment events** qualify (p. 305): waking during surgery, anaphylaxis, myocardial infarction, emergency cardioversion, burn debridement.",
     "whyNot": [
-      "Correct.",
       "Some medical events qualify.",
       "The experience evoked terror and helplessness of a qualifying kind.",
       "Not required.",
-      "A cancer diagnosis in itself is not a Criterion A event."
+      "Correct.",
+      "A cancer diagnosis is not necessarily a Criterion A event."
     ]
   },
   {
@@ -589,7 +589,7 @@ SP.add("ch07", "vignettes", [
     "whyNot": [
       "There is no prominent depressed mood.",
       "Emotional symptoms are not prominent.",
-      "Conduct disorder criteria are not met.",
+      "Conduct disorder criteria are not met (Ch 15).",
       "A specific subtype fits.",
       "Correct."
     ]

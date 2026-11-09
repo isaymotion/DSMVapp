@@ -2,7 +2,7 @@
    Written in the app’s own words from the manual, with page references. Criteria are paraphrased: confirm exact
    wording, specifiers and codes against the manual. */
 SP.add("ch06", "guide", {
-  intro: "The obsessive-compulsive and related disorders share **preoccupations** and **repetitive behaviors or mental acts**, or recurrent **body-focused repetitive behaviors** that the person repeatedly tries to stop (p. 263). **OCD** is defined by **obsessions** (intrusive, unwanted thoughts, urges or images) and **compulsions** (repetitive acts the person feels driven to perform), taking **more than an hour a day** or causing distress or impairment. **Body dysmorphic disorder** and **hoarding disorder** have a cognitive core: a perceived flaw in appearance, or a perceived need to save possessions. **Trichotillomania** and **excoriation disorder** are body-focused repetitive behaviors, not driven by obsessions. The three disorders with a cognitive core carry an **insight specifier** running from good or fair to **absent insight/delusional beliefs**, and delusional conviction **does not** turn them into a psychotic disorder. Substance-induced and medically caused presentations (including **Sydenham’s chorea** and **PANS**) and the other specified category (nail biting, **obsessional jealousy**, **olfactory reference disorder**, koro) complete the chapter. The [[helper:ocd|OCD and related disorders helper]] and the [[helper:repetitive|repetitive behavior helper]] walk you through the reasoning.",
+  intro: "The obsessive-compulsive and related disorders share **preoccupations** and **repetitive behaviors or mental acts**, or recurrent **body-focused repetitive behaviors** that the person repeatedly tries to stop (p. 263). **OCD** is defined by **obsessions** (intrusive, unwanted thoughts, urges or images) and/or **compulsions** (repetitive acts the person feels driven to perform) that are time-consuming (e.g., **more than an hour a day**) or cause distress or impairment. **Body dysmorphic disorder** and **hoarding disorder** have a cognitive core: a perceived flaw in appearance, or a perceived need to save possessions. **Trichotillomania** and **excoriation disorder** are body-focused repetitive behaviors, not driven by obsessions. The three disorders with a cognitive core carry an **insight specifier** running from good or fair to **absent insight/delusional beliefs**, and delusional conviction **does not** turn them into a psychotic disorder. Substance-induced and medically caused presentations (including **Sydenham’s chorea** and **PANS**) and the other specified category (nail biting, **obsessional jealousy**, **olfactory reference disorder**, koro) complete the chapter. The [[helper:ocd|OCD and related disorders helper]] and the [[helper:repetitive|repetitive behavior helper]] walk you through the reasoning.",
   objectives: [
     "Define **obsessions** and **compulsions** exactly, and apply OCD Criterion B (**more than 1 hour a day** or distress or impairment).",
     "Use the **insight** specifier (good or fair, poor, absent/delusional) and the **tic-related** specifier, and explain why delusional OCD is not diagnosed as a psychotic disorder.",
@@ -50,7 +50,7 @@ SP.add("ch06", "guide", {
           pages: "263–265",
           blocks: [
             { type: "list", title: "What makes it a disorder (p. 263)", items: [
-              "Preoccupations and rituals are **excessive** or persist **beyond developmentally appropriate periods**: young children’s bedtime rituals and “just so” routines are normal.",
+              "Preoccupations and rituals are **excessive** or persist **beyond developmentally appropriate periods** (app example: young children’s bedtime rituals and “just so” routines are normal).",
               "The line between subclinical symptoms and a disorder depends on **distress** and **impairment**.",
               "Clinicians are encouraged to **screen for the related disorders** when one is present, because they overlap."
             ] },
@@ -59,7 +59,7 @@ SP.add("ch06", "guide", {
               ["**Poor insight**", "Thinks the beliefs are **probably true**", "Mostly convinced they are **not** problematic despite evidence"],
               ["**Absent insight/delusional beliefs**", "**Completely convinced** the beliefs are true", "Completely convinced they are not problematic despite evidence"]
             ] },
-            { type: "callout", kind: "exam", title: "Delusional, but not psychotic", text: "A person whose OCD, BDD or hoarding beliefs are held with **complete conviction** receives the **absent insight/delusional beliefs** specifier, **not** a psychotic disorder diagnosis. A psychotic disorder is added only if delusions extend **beyond** the disorder’s typical content, such as a person with BDD who is convinced their food is poisoned (p. 265)." },
+            { type: "callout", kind: "exam", title: "Delusional, but not psychotic", text: "A person whose OCD, BDD or hoarding beliefs are held with **complete conviction** receives the **absent insight/delusional beliefs** specifier, **not** a psychotic disorder diagnosis. A psychotic disorder is added only if delusions extend **beyond** the disorder’s typical content, such as a person with BDD who is convinced their food is poisoned (p. 265) (app guidance)." },
             { type: "update", kind: "tr", title: "Codes and names updated in the text revision", text: "DSM-5-TR lists the ICD-10-CM codes adopted after the 2013 printing: **F42.2** for OCD (formerly F42), **F42.3** for hoarding disorder, **F42.4** for excoriation disorder (formerly L98.1), with **F42.8** and **F42.9** for the residual categories. The other specified example once called jikoshu-kyofu now appears as **olfactory reference disorder (olfactory reference syndrome)**, and DSM-5-TR added a suicide section for OCD and BDD." }
           ]
         }
@@ -85,7 +85,7 @@ SP.add("ch06", "guide", {
             { type: "defs", title: "Reading the criteria (pp. 266–267)", items: [
               ["Obsessions", "Thoughts (contamination), images (violent scenes) or urges (to stab someone). **Not pleasurable, not voluntary**: they are intrusive and unwanted."],
               ["Neutralizing", "Avoiding triggers, suppressing the thought, or performing a compulsion."],
-              ["Compulsions", "Done to reduce distress or prevent a feared event, **not for pleasure**, though they bring temporary relief. Either **unrealistic** (arranging items symmetrically to protect a loved one) or **excessive** (showering for hours)."],
+              ["Compulsions", "Done to reduce distress or prevent a feared event, **not for pleasure**, though they may bring temporary relief. Either **unrealistic** (arranging items symmetrically to protect a loved one) or **excessive** (showering for hours)."],
               ["Both together", "**Most** people have both, usually **thematically linked** (contamination → washing; harm → checking)."],
               ["Criterion B", "Separates OCD from the occasional intrusive thought or double-check that is common in everyone. Severity ranges from 1–3 hours a day to near-constant, incapacitating symptoms."]
             ] },
@@ -98,15 +98,15 @@ SP.add("ch06", "guide", {
           pages: "266",
           blocks: [
             { type: "table", caption: "Insight in OCD: “Will the house burn down if I don’t check the stove 30 times?” (p. 266)", head: ["Specifier", "The person believes…", "How common"], rows: [
-              ["Good or fair insight", "It definitely or probably **won’t**, or **may or may not**", "Most"],
+              ["Good or fair insight", "It definitely or probably **won’t**, or **may or may not**", "Many"],
               ["Poor insight", "It **probably will**", "Some"],
               ["Absent insight/delusional beliefs", "It **certainly will**", "**4% or less**"]
             ] },
             { type: "list", title: "Points to remember", items: [
               "Insight can **change** within a person over the course of the illness.",
-              "**Poorer insight** predicts a worse long-term outcome.",
+              "A worse long-term outcome has been linked to **poorer insight**.",
               "**Tic-related**: up to **30%** of people with OCD have a lifetime tic disorder, most often **men with childhood onset**. They differ in symptom themes, comorbidity, course and familial transmission.",
-              "A childhood triad of **OCD, tic disorder and ADHD** can occur."
+              "A childhood triad of **OCD, tic disorder and ADHD** can occur (p. 271)."
             ] }
           ]
         },
@@ -123,13 +123,13 @@ SP.add("ch06", "guide", {
             ] },
             { type: "p", text: "These dimensions occur **across cultures**, are fairly stable in adults, may involve different neural substrates, and **often co-occur** in one person. Some people accumulate objects because of typical obsessions (fear of harm, incompleteness); this is OCD, not hoarding disorder (pp. 266–267)." },
             { type: "defs", title: "Associated features (p. 267)", items: [
-              ["Sensory phenomena", "Physical sensations, **“just-right”** sensations and feelings of **incompleteness** that precede compulsions; reported by up to **60%**."],
+              ["Sensory phenomena", "Bodily sensations, **“just-right”** feelings or a sense of **incompleteness** felt before compulsions; reported by up to **60%**."],
               ["Affect", "Marked anxiety (sometimes **panic attacks**), strong **disgust**, or uneasiness until things look, feel or sound “just right.”"],
               ["Avoidance", "Avoiding restaurants and public restrooms (contamination) or people (harm thoughts)."],
               ["Dysfunctional beliefs", "Inflated **responsibility** and threat; **perfectionism** and **intolerance of uncertainty**; **overimportance of thoughts** (“thinking it is as bad as doing it”) and the need to control them. Not specific to OCD."],
-              ["Accommodation", "Family or friends joining in rituals or giving reassurance; it **maintains** symptoms and is a key **treatment target**, especially in children."]
+              ["Accommodation", "Family or friends joining in rituals or giving reassurance; it can **worsen or maintain** symptoms and is a key **treatment target**, especially in children."]
             ] },
-            { type: "callout", kind: "pearl", title: "Ego-dystonic thoughts", text: "A mother with intrusive images of drowning her baby, who is horrified by them and avoids bathing the infant, is **not** dangerous because of those thoughts: harm obsessions are unwanted and resisted. Distinguish them from psychotic or homicidal ideation, which the person does not experience as alien. Peripartum onset or worsening of OCD is described (p. 269)." }
+            { type: "callout", kind: "pearl", title: "Ego-dystonic thoughts", text: "A mother with intrusive images of drowning her baby, who is horrified by them and avoids bathing the infant, shows unwanted, resisted **harm obsessions**, a recognized OCD presentation; aggressive obsessions leading to avoidance of the infant are described in the peripartum period (p. 269). Distinguish them from psychotic or homicidal ideation and assess risk as usual (app guidance)." }
           ]
         },
         {
@@ -148,15 +148,15 @@ SP.add("ch06", "guide", {
               "Onset is usually **gradual**, but acute onset occurs.",
               "Untreated, usually **chronic, waxing and waning**; some episodic; a minority deteriorate.",
               "Without treatment, adult remission is **low**: about **20%** at 40-year follow-up.",
-              "Childhood or adolescent onset can mean lifelong OCD, but **40%** remit by early adulthood.",
-              "**Compulsions** are easier to diagnose in children because they are observable; most children have both. Children have more **harm** obsessions; adolescents more **sexual and religious** ones."
+              "Childhood or adolescent onset can mean lifelong OCD, but about **40%** with childhood or adolescent onset may remit by early adulthood.",
+              "**Compulsions** are easier to diagnose in children because they are observable; most children have both. Children and adolescents have more **harm** obsessions than adults; adolescents more **sexual and religious** ones than children."
             ] },
             { type: "defs", title: "Risk factors (p. 268)", items: [
-              ["Temperamental", "Internalizing symptoms, negative emotionality, behavioral inhibition in childhood."],
+              ["Temperamental", "Possible: internalizing symptoms, negative emotionality, behavioral inhibition in childhood."],
               ["Environmental", "Adverse perinatal events, **prematurity**, maternal **smoking** in pregnancy, childhood physical and sexual abuse, other trauma. **Sudden onset** in children has been linked with infections and a **postinfectious autoimmune** syndrome."],
-              ["Genetic and physiological", "First-degree relatives of adults with OCD have about **2×** the risk; relatives of those with **childhood or adolescent onset**, **10×**. MZ concordance **0.57** vs DZ **0.22**; additive genetic effects about **40%**. Circuits: **orbitofrontal cortex, anterior cingulate and striatum** (cortico-striato-thalamo-cortical loops)."]
+              ["Genetic and physiological", "First-degree relatives of adults with OCD have about **2×** the risk; relatives of those with **childhood or adolescent onset**, **10×**. MZ concordance **0.57** vs DZ **0.22**; additive genetic effects about **40%**. Circuits: **orbitofrontal cortex, anterior cingulate and striatum** most strongly; frontolimbic, frontoparietal and cerebellar networks also reported."]
             ] },
-            { type: "callout", kind: "culture", text: "OCD occurs worldwide with similar sex ratio, onset, comorbidity and symptom structure. Culture shapes **content**: fewer sexual obsessions in some religious groups, more aggressive ones where urban violence is common. Attributions (physical, social, spiritual, supernatural) can reinforce particular compulsions and help-seeking. **Women** more often have cleaning symptoms; **men** more often forbidden-thought and symmetry symptoms (pp. 268–269)." }
+            { type: "callout", kind: "culture", text: "OCD occurs worldwide with similar sex ratio, onset, comorbidity and symptom structure. Culture shapes **content**: sexual obsessions may be reported less often in some religious groups, and aggressive ones may be more common where urban violence is common. Attributions (physical, social, spiritual, supernatural) can reinforce particular compulsions and help-seeking. **Women** more often have cleaning symptoms; **men** more often forbidden-thought and symmetry symptoms (pp. 268–269)." }
           ]
         },
         {
@@ -189,7 +189,7 @@ SP.add("ch06", "guide", {
               ["[[dx:gad|Generalized anxiety disorder]]", "Worries are about **real-life concerns**; OCD obsessions are often odd, irrational or magical and are linked to compulsions"],
               ["[[dx:specific-phobia|Specific phobia]]", "A more **circumscribed** feared object, and **no rituals**"],
               ["[[dx:social-anxiety|Social anxiety disorder]]", "Fears limited to social situations; reassurance seeking aims to reduce embarrassment"],
-              ["[[dx:mdd|Major depressive disorder]]", "**Rumination** is mood-congruent, not experienced as intrusive, and not linked to compulsions"],
+              ["[[dx:mdd|Major depressive disorder]]", "**Rumination** is mood-congruent, not necessarily experienced as intrusive, and not linked to compulsions"],
               ["[[dx:bdd|BDD]], [[dx:trichotillomania|trichotillomania]], [[dx:hoarding|hoarding]]", "Limited to appearance; hair pulling without obsessions; difficulty discarding. Accumulating because of OCD obsessions (incompleteness, harm) is **OCD**"],
               ["Anorexia nervosa", "Obsessions and compulsions limited to **weight and food**"],
               ["Tics and stereotypies", "Simpler, not aimed at neutralizing obsessions; tics are preceded by **premonitory sensory urges**. Both OCD and a tic disorder can be diagnosed"],
@@ -197,8 +197,8 @@ SP.add("ch06", "guide", {
               ["“Compulsive” sex, gambling, substance use", "The activity is **pleasurable**; the person resists it only because of its consequences"],
               ["Obsessive-compulsive personality disorder", "No intrusive thoughts or rituals; a pervasive pattern of **perfectionism and rigid control**. Both can be diagnosed"]
             ] },
-            { type: "p", text: "**Comorbidity** (p. 271), lifetime in US adults with OCD: **anxiety disorders 76%**; depressive or bipolar disorders **63%** (MDD **41%**); **impulse-control disorders 56%**; **substance use disorders 39%**. OCD usually starts **after** most comorbid anxiety disorders (except separation anxiety) and PTSD but often **before** depression. **OCPD** in 23%–32%. Tic disorders in up to **30%**. BDD, trichotillomania and excoriation disorder are more common. Screen for OCD in **schizophrenia or schizoaffective disorder (about 12%)**, bipolar disorder, eating disorders, BDD and **Tourette’s disorder**." },
-            { type: "callout", kind: "exam", title: "OCD vs OCPD", text: "**OCD**: ego-dystonic intrusive thoughts and rituals the person wants to stop. **OCPD**: an ego-syntonic, lifelong style of perfectionism, orderliness and control, with no true obsessions or compulsions. Similar names, different disorders; **both can be diagnosed** (about a quarter to a third of people with OCD also have OCPD)." }
+            { type: "p", text: "**Comorbidity** (p. 271), lifetime in US adults with OCD: **anxiety disorders 76%**; depressive or bipolar disorders **63%** (MDD **41%**); **impulse-control disorders 56%**; **substance use disorders 39%**. OCD usually starts **after** most comorbid anxiety disorders (except separation anxiety) and PTSD but often **before** depression. **OCPD** in 23%–32% in one study of treatment-seeking adults. Tic disorders in up to **30%**. BDD, trichotillomania and excoriation disorder are more common. Screen for OCD in **schizophrenia or schizoaffective disorder (about 12%)**, bipolar disorder, eating disorders, BDD and **Tourette’s disorder**." },
+            { type: "callout", kind: "exam", title: "OCD vs OCPD", text: "**OCD**: ego-dystonic intrusive thoughts and rituals the person wants to stop. **OCPD**: an enduring style of perfectionism, orderliness and control, often ego-syntonic (Ch 18), with no true obsessions or compulsions. Similar names, different disorders; **both can be diagnosed** (23%–32% in one study of treatment-seeking adults with OCD) (app guidance)." }
           ]
         }
       ]
@@ -212,7 +212,7 @@ SP.add("ch06", "guide", {
           pages: "271–273",
           blocks: [
             { type: "criteria", title: "Body dysmorphic disorder in brief", code: "F45.22", pages: "271–272", items: [
-              ["A", "Preoccupation with one or more perceived **defects or flaws in appearance** that are **not observable or appear slight** to others."],
+              ["A", "Preoccupation with one or more perceived **flaws in appearance** that others **cannot see or see as only slight**."],
               ["B", "At some point, **repetitive behaviors** (mirror checking, excessive grooming, skin picking, reassurance seeking) or **mental acts** (comparing one’s appearance with others’) in response to the concerns."],
               ["C", "Clinically significant **distress or impairment**."],
               ["D", "Not better explained by concerns with **body fat or weight** in someone who meets criteria for an **eating disorder**."]
@@ -223,7 +223,7 @@ SP.add("ch06", "guide", {
               ["Repetitive acts", "**Comparing**, **mirror checking**, excessive “selfies,” grooming, **reassurance seeking**, touching, excessive exercise or weight lifting, tanning, changing clothes, compulsive shopping, **skin picking** to “fix” flaws, and **camouflaging** with makeup, hats, clothing or hair."],
               ["Insight", "On average **poor**; **one-third or more** currently have **absent insight/delusional** beliefs."],
               ["BDD by proxy", "Preoccupation with perceived flaws in **another person’s** appearance, most often a partner."],
-              ["Muscle dysmorphia", "Almost exclusively **men and boys**, with a normal or very muscular body; excessive dieting, exercise and weight lifting, and **anabolic-androgenic steroid** use."]
+              ["Muscle dysmorphia", "Almost exclusively **men and boys**, with a normal or very muscular body; most diet, exercise or lift weights excessively, and some use **anabolic-androgenic steroids**."]
             ] },
             { type: "case", title: "Clinical vignette: the nose", text: "A 22-year-old man has spent 5 hours a day for 3 years examining his nose in mirrors and car windows, comparing it with other men’s, and asking his sister whether it looks “crooked.” He photographs it from every angle and has consulted three surgeons, one of whom declined to operate because the nose looked normal. He has dropped out of university because he believes classmates stare at it. He is completely certain that his nose is deformed.", point: "Preoccupation with a flaw others cannot see, with **checking, comparing and reassurance seeking**, impairment, and **complete conviction**: **F45.22 body dysmorphic disorder, with absent insight/delusional beliefs**. Not delusional disorder, and cosmetic surgery is unlikely to help." }
           ]
@@ -236,7 +236,7 @@ SP.add("ch06", "guide", {
             { type: "list", title: "Associated features (p. 273)", items: [
               "**Ideas or delusions of reference**: others notice or mock them because of how they look.",
               "High anxiety, **social anxiety** and avoidance, depressed mood, neuroticism, **rejection sensitivity**, perfectionism, low self-esteem; elevated hostility and aggression; **shame** and reluctance to disclose.",
-              "Most seek **cosmetic treatment** (dermatology and surgery most often; some operate on themselves). BDD **responds poorly** and may worsen; some sue or become violent toward the surgeon.",
+              "Most seek **cosmetic treatment** (dermatology and surgery most often; some operate on themselves). BDD **appears to respond poorly** and sometimes worsens; some sue or become violent toward the surgeon.",
               "Bias toward **negative and threatening** interpretations of faces and ambiguous scenes; visual processing focused on **details** rather than the whole."
             ] },
             { type: "table", caption: "Prevalence (p. 273)", head: ["Setting", "Point prevalence"], rows: [
@@ -250,9 +250,9 @@ SP.add("ch06", "guide", {
             ] },
             { type: "list", title: "Development and course (p. 274)", items: [
               "Mean onset **16–17**, median **15**, most common **12–13**; **two-thirds** begin before 18. Subclinical symptoms start around 12–13.",
-              "Usually **gradual**, sometimes abrupt; usually **chronic**, but improves with evidence-based treatment.",
+              "Usually **gradual**, sometimes abrupt; appears usually **chronic**, though improvement is likely with evidence-based treatment.",
               "Onset before 18 brings more comorbidity and gradual onset.",
-              "Risk: childhood **neglect, abuse, trauma** and **teasing**; more common in relatives of people with OCD; heritability **37%–49%**, with genetic overlap with OCD."
+              "Risk: childhood **neglect, abuse, trauma** and **teasing**; more common in relatives of people with OCD; heritability **37%–49%** (adolescent and young adult twin studies), with genetic overlap with OCD."
             ] },
             { type: "callout", kind: "caution", title: "Suicide risk is high", text: "In a meta-analysis, people with BDD were about **four times** more likely to have suicidal thoughts (OR 3.87) and **2.6 times** more likely to attempt suicide (OR 2.57) than healthy people **and** people with eating disorders, OCD or anxiety disorders. German population studies found suicidal thoughts in 19%–31% (vs 3%–3.5%). The link is **independent of comorbidity**, rises with severity, and many attribute their suicidality to their appearance. About **20%** of affected youth drop out of school, and a high proportion have been hospitalized (pp. 274–275)." },
             { type: "callout", kind: "culture", text: "Core features are similar across cultures, but concerns can follow local standards: **eyelids** in Japan, **muscle dysmorphia** in Western countries. In collectivistic contexts the fear may be of **offending others** with the deformity. Japanese **taijin kyofusho** includes **shubo-kyofu**, “the phobia of a deformed body” (p. 274). **Men** more often focus on genitals, body build and thinning hair and have more substance use; **women** on weight, breasts, buttocks, legs, hips and body hair, with more eating disorders." }
@@ -275,10 +275,10 @@ SP.add("ch06", "guide", {
               ["Gender dysphoria", "Discomfort with or wish to be rid of **sex characteristics** is not BDD."],
               ["Olfactory reference disorder", "Belief that one emits a **foul body odor**: an other specified OCRD."],
               ["Body integrity dysphoria", "Desire to become an amputee because a limb **should not be there**, not because it is ugly (in ICD-11, not DSM-5)."],
-              ["Koro", "Fear that the genitals or nipples will **retract** into the body, often with fear of **death**; occurs in epidemics in Southeast Asia."]
+              ["Koro", "Fear that the genitals or nipples will **retract** into the body, often with fear of **death**; usually occurs in epidemics in Southeast Asia."]
             ] },
             { type: "p", text: "**Comorbidity** (p. 277): **major depressive disorder** is most common and usually starts after BDD. Social anxiety disorder, OCD and substance-related disorders (including **anabolic steroids** in muscle dysmorphia) are also common." },
-            { type: "callout", kind: "exam", text: "Three classic BDD answers: **(1)** Complete conviction = **BDD with absent insight/delusional beliefs**, not delusional disorder, somatic type. **(2)** Picking acne to make the skin look better = **BDD**, not excoriation disorder. **(3)** The best response to a BDD patient requesting rhinoplasty is to treat the BDD: cosmetic procedures rarely help and can make it worse." }
+            { type: "callout", kind: "exam", text: "Three classic BDD answers: **(1)** Complete conviction = **BDD with absent insight/delusional beliefs**, not delusional disorder, somatic type. **(2)** Picking acne to make the skin look better = **BDD**, not excoriation disorder. **(3)** For a BDD patient requesting rhinoplasty, address the BDD: it appears to respond poorly to cosmetic procedures and sometimes worsens (app guidance)." }
           ]
         }
       ]
@@ -292,8 +292,8 @@ SP.add("ch06", "guide", {
           pages: "277–279",
           blocks: [
             { type: "criteria", title: "Hoarding disorder in brief", code: "F42.3", pages: "277", items: [
-              ["A", "Persistent **difficulty discarding** or parting with possessions, **regardless of their actual value**."],
-              ["B", "Due to a **perceived need to save** the items and **distress** associated with discarding them."],
+              ["A", "Long-standing **difficulty discarding** or giving up possessions, **whatever they are actually worth**."],
+              ["B", "Because of a **perceived need to save** them and **distress** at the thought of discarding."],
               ["C", "Results in possessions that **congest and clutter active living areas** and substantially compromise their intended use. If areas are clear, it is only because of **third parties** (family, cleaners, authorities)."],
               ["D", "Clinically significant **distress or impairment**, including maintaining a **safe environment**."],
               ["E", "Not due to a **medical condition** (brain injury, cerebrovascular disease, **Prader-Willi syndrome**)."],
@@ -327,7 +327,7 @@ SP.add("ch06", "guide", {
               ["Sex", "**No difference** in the community; clinical samples mostly women; women show more excessive buying"],
               ["Age", "Almost **3×** more prevalent over 65 than at 30–40 (Netherlands)"],
               ["Onset", "Symptoms **15–19** years; interfere by the **mid-20s**; clinically significant by the **mid-30s**; research participants usually in their **50s**"],
-              ["Course", "**Chronic**, worsening each decade, especially after 30; rarely waxes and wanes"]
+              ["Course", "Often **chronic**, worsening each decade, especially after 30; rarely waxes and wanes"]
             ] },
             { type: "list", title: "Risk, culture and consequences (pp. 279–280)", items: [
               "Indecisiveness in patients and their relatives; stressful or traumatic events before onset or worsening.",
@@ -344,15 +344,15 @@ SP.add("ch06", "guide", {
           pages: "280–281",
           blocks: [
             { type: "defs", title: "Differential diagnosis (pp. 280–281)", items: [
-              ["Medical conditions", "Traumatic brain injury, tumor or epilepsy surgery, cerebrovascular disease, herpes simplex encephalitis, **Prader-Willi syndrome**. Damage to the **anterior ventromedial prefrontal and cingulate cortices** is linked to accumulation, which begins **after** the injury; some do not care if items are discarded."],
+              ["Medical conditions", "Traumatic brain injury, tumor or epilepsy surgery, cerebrovascular disease, herpes simplex encephalitis, **Prader-Willi syndrome**. Accumulation has been linked especially to lesions of the **anterior ventromedial prefrontal and cingulate cortices**; it begins **after** the injury, and some do not care if items are discarded."],
               ["Neurodevelopmental disorders", "Accumulation as a direct consequence of autism or intellectual disability."],
               ["Psychotic disorders", "Accumulation from **delusions** or **negative symptoms**."],
               ["Major depressive episode", "Accumulation from psychomotor retardation, fatigue or low energy."],
-              ["OCD", "Saving driven by **obsessions** (contamination, harm, incompleteness such as needing to document all life experiences) or by avoiding onerous rituals. In OCD hoarding is **unwanted**, with no pleasure, rarely with excessive acquisition, and often involves **bizarre items** (trash, feces, urine, nail clippings, hair, rotten food). Diagnose **both** if severe hoarding is independent of other OCD symptoms."],
-              ["Neurocognitive disorders", "Frontotemporal degeneration or Alzheimer’s disease: gradual accumulation **after** cognitive decline, with self-neglect and **squalor**, disinhibition and stereotypies."]
+              ["OCD", "Saving driven by **obsessions** (contamination, harm, incompleteness such as needing to document all life experiences) or by avoiding onerous rituals. In OCD hoarding is **unwanted**, with no pleasure, rarely with excessive acquisition, and is more likely to involve **bizarre items** (trash, feces, urine, nail clippings, hair, rotten food). Diagnose **both** if severe hoarding is independent of other OCD symptoms."],
+              ["Neurocognitive disorders", "Frontotemporal degeneration or Alzheimer’s disease: accumulation typically gradual and **after** cognitive decline; may come with self-neglect and **squalor**, disinhibition or stereotypies."]
             ] },
             { type: "p", text: "**Comorbidity** (p. 281): about **75%** have a mood or anxiety disorder, most commonly **MDD (30%–50%)**, social anxiety disorder and GAD; about **20%** also meet OCD criteria. Comorbid conditions are often the reason for consultation, because people rarely volunteer hoarding and clinicians rarely ask." },
-            { type: "callout", kind: "exam", text: "**Hoarding vs OCD**: hoarding disorder = saving because items feel **useful, valuable or precious**, with distress at discarding and often pleasure in acquiring. OCD = saving because of an **obsession** (fear of harm, contamination, incompleteness), unwanted, with no reward, and sometimes bizarre items." }
+            { type: "callout", kind: "exam", text: "**Hoarding vs OCD**: hoarding disorder = saving because items feel **useful, valuable or precious**, with distress at discarding and distress when prevented from acquiring. OCD = saving because of an **obsession** (fear of harm, contamination, incompleteness), unwanted, with no reward, and sometimes bizarre items (app guidance)." }
           ]
         }
       ]
@@ -366,7 +366,7 @@ SP.add("ch06", "guide", {
           pages: "281–283",
           blocks: [
             { type: "criteria", title: "Trichotillomania in brief", code: "F63.3", pages: "281", items: [
-              ["A", "Recurrent **pulling out of one’s hair**, resulting in **hair loss**."],
+              ["A", "Hair pulling that **recurs** and causes **hair loss**."],
               ["B", "**Repeated attempts** to decrease or stop."],
               ["C", "Clinically significant **distress or impairment**."],
               ["D", "Not due to a **medical (dermatological) condition**."],
@@ -381,14 +381,14 @@ SP.add("ch06", "guide", {
               ["Context", "Usually not in front of others except family. Some pull hair from others, pets, dolls or carpets. Most also have other BFRBs (skin picking, nail biting, lip chewing)."]
             ] },
             { type: "table", caption: "Epidemiology, course and markers (pp. 282–283)", head: ["Topic", "Detail"], rows: [
-              ["12-month prevalence", "**1%–2%** (adults and adolescents); 1.7% in a representative US online survey"],
-              ["Sex", "Clinical samples **≥10:1** female; community closer to **2:1**; children equal; the US survey found no difference"],
+              ["12-month prevalence", "May be **1%–2%** (adults and adolescents; nonrepresentative US samples); 1.7% in a representative US online survey"],
+              ["Sex", "Clinical samples **≥10:1** female; community closer to **2:1**; children more equal; the US survey found no difference"],
               ["Onset", "Usually at or after **puberty**; infant hair pulling usually resolves"],
               ["Course", "**Chronic**, waxing and waning; may worsen premenstrually; few remit without relapse"],
               ["Genetics", "More common in people with **OCD** and their relatives"],
               ["Markers", "Most admit pulling. **Dermoscopy (trichoscopy)** shows reduced density, short vellus hairs and broken hairs of different lengths; biopsy rarely needed"]
             ] },
-            { type: "callout", kind: "caution", title: "Medical complications", text: "Irreversible damage to hair growth; digit purpura; musculoskeletal injury (carpal tunnel syndrome; back, shoulder, neck pain); blepharitis; dental damage from biting hair. Swallowed hair can form a **trichobezoar**, causing anemia, abdominal pain, hematemesis, vomiting, **bowel obstruction** or perforation (p. 283)." }
+            { type: "callout", kind: "caution", title: "Medical complications", text: "Possible irreversible damage to hair growth. Infrequent: digit purpura; musculoskeletal injury (carpal tunnel syndrome; back, shoulder, neck pain); blepharitis; dental damage from biting hair. Swallowed hair can form a **trichobezoar**, causing anemia, abdominal pain, hematemesis, vomiting, **bowel obstruction** or perforation (p. 283)." }
           ]
         },
         {
@@ -414,13 +414,13 @@ SP.add("ch06", "guide", {
           pages: "284–286",
           blocks: [
             { type: "criteria", title: "Excoriation disorder in brief", code: "F42.4", pages: "284", items: [
-              ["A", "Recurrent **skin picking** resulting in **skin lesions**."],
+              ["A", "Skin picking that **recurs** and causes **skin lesions**."],
               ["B", "**Repeated attempts** to decrease or stop."],
               ["C", "Clinically significant **distress or impairment**."],
               ["D", "Not due to a **substance** (e.g., **cocaine**) or **medical condition** (e.g., **scabies**)."],
               ["E", "Not better explained by another disorder: delusions or **tactile hallucinations** (psychosis), improving appearance (**BDD**), **stereotypies**, or intent to harm oneself (**nonsuicidal self-injury**)."]
             ] },
-            { type: "defs", title: "What it looks like (p. 285)", items: [
+            { type: "defs", title: "What it looks like (pp. 285–286)", items: [
               ["Sites and methods", "Most often **face, arms and hands**, often several sites; healthy skin, minor irregularities, pimples, calluses or scabs; fingernails, tweezers or pins; also rubbing, squeezing, lancing and biting."],
               ["Time", "Often hours a day, for months or years; most spend **at least an hour a day** picking, thinking about it or resisting."],
               ["Rituals and emotions", "Searching for a particular scab, examining or **mouthing or swallowing** skin; anxiety, boredom, tension and relief, as in trichotillomania; **focused** and **automatic** styles."],
@@ -428,7 +428,7 @@ SP.add("ch06", "guide", {
             ] },
             { type: "table", caption: "Epidemiology and course (pp. 285–286)", head: ["Topic", "Detail"], rows: [
               ["Prevalence", "**2.1%** current, **3.1%** lifetime (representative US online survey)"],
-              ["Sex", "**Three-quarters or more** are women"],
+              ["Sex", "**Three-quarters or more** are women (community samples)"],
               ["Onset", "Usually **adolescence**, around **puberty**; often begins with a skin condition such as **acne**"],
               ["Course", "**Chronic**, waxing and waning"],
               ["Genetics", "More common in people with OCD and their relatives"],
@@ -443,7 +443,7 @@ SP.add("ch06", "guide", {
           pages: "286–287",
           blocks: [
             { type: "table", caption: "Why is the person picking? (pp. 286–287)", head: ["Reason", "Diagnosis"], rows: [
-              ["A delusion of **parasites** or tactile hallucinations (**formication**)", "Psychotic disorder (or delusional disorder, somatic type)"],
+              ["A delusion of **parasites** or tactile hallucinations (**formication**)", "Psychotic disorder (or delusional disorder, somatic type, Ch 2)"],
               ["To make perceived skin flaws **look better**", "**Body dysmorphic disorder**"],
               ["Skin damage from **washing** for contamination fears", "OCD"],
               ["To **hurt oneself** (relief from emotional pain)", "Nonsuicidal self-injury"],
@@ -486,7 +486,7 @@ SP.add("ch06", "guide", {
               "Medications outside the classes, such as the dopamine agonist **ropinirole**, use **F19.x88**.",
               "Heavy metals and toxins can also cause symptoms.",
               "With a prescribed drug, symptoms usually improve within **days to weeks** of stopping. Very rare in the general population.",
-              "Atypical age at onset suggests a substance cause; persistence about 1 month after intoxication, or a prior history, suggests a primary disorder. If both a medical condition and a substance contribute, give both diagnoses; if unclear, use other specified or unspecified OCRD."
+              "Atypical age at onset may suggest a substance cause; persistence about 1 month after intoxication, or a prior history, suggests a primary disorder. If both a medical condition and a substance contribute, give both diagnoses; if unclear, use other specified or unspecified OCRD."
             ] }
           ]
         },
@@ -533,11 +533,11 @@ SP.add("ch06", "guide", {
               ["**BDD-like disorder without repetitive behaviors**", "Meets BDD except there have **never** been repetitive behaviors or mental acts"],
               ["**Other body-focused repetitive behavior disorder**", "**Nail biting, lip biting, cheek chewing**, with repeated attempts to stop and distress or impairment"],
               ["**Obsessional jealousy**", "**Nondelusional** preoccupation with a partner’s perceived infidelity, with repetitive behaviors or mental acts; not delusional disorder, jealous type, or paranoid personality disorder"],
-              ["**Olfactory reference disorder** (olfactory reference syndrome)", "Preoccupation with emitting a **foul body odor** others cannot notice; repeated checking, showering, reassurance seeking, camouflage. Japanese **jikoshu-kyofu**, a variant of taijin kyofusho"],
+              ["**Olfactory reference disorder** (olfactory reference syndrome)", "Preoccupation with emitting a **foul body odor** others cannot notice or barely notice; repeated checking, showering, reassurance seeking, camouflage. Japanese **jikoshu-kyofu**, a variant of taijin kyofusho"],
               ["**Shubo-kyofu**", "A taijin kyofusho variant like BDD: excessive fear of having a **bodily deformity**"],
               ["**Koro**", "Sudden, intense anxiety that the **penis** (or vulva and nipples) will **recede into the body**, possibly causing death; related to dhat syndrome"]
             ] },
-            { type: "callout", kind: "mnemonic", title: "Remembering the seven", text: "Two **BDD-likes** (actual flaws; no rituals), one **BFRB** (nails, lips, cheeks), one **relationship** (obsessional jealousy), and three **culture-linked** body fears (olfactory reference, shubo-kyofu, koro)." }
+            { type: "callout", kind: "mnemonic", title: "Remembering the seven: BBB-OOKS", text: "**B**DD-like with actual flaws, **B**DD-like without repetitive behaviors, other **B**FRB disorder (nails, lips, cheeks); **O**bsessional jealousy, **O**lfactory reference disorder; **K**oro; **S**hubo-kyofu. App mnemonic; see the Mnemonics deck." }
           ]
         }
       ]
@@ -568,7 +568,7 @@ SP.add("ch06", "guide", {
               ["Checking the mirror", "To confirm the nose is deformed", "BDD"],
               ["Checking the stove", "To prevent a fire she pictures", "OCD"]
             ] },
-            { type: "callout", kind: "pearl", title: "Time rules in this chapter", text: "Only two numbers matter: OCD Criterion B gives **more than 1 hour a day** as an example of “time-consuming,” and substance-induced symptoms that persist **about 1 month** after stopping suggest a primary disorder. BDD preoccupations take on average **3–8 hours a day**." }
+            { type: "callout", kind: "pearl", title: "Time rules in this chapter", text: "Only two numbers matter: OCD Criterion B gives **more than 1 hour a day** as an example of “time-consuming,” and substance-induced symptoms that persist **about 1 month** after acute withdrawal or severe intoxication ends suggest a primary disorder. BDD preoccupations take on average **3–8 hours a day**." }
           ]
         },
         {

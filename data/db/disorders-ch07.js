@@ -15,7 +15,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["E", "**Criteria E–G.** Not autism; evident before 5; developmental age ≥9 months."]
     ],
     specifiers: ["Persistent (>12 months)", "Severe"],
-    epi: [["Prevalence", "Rare; <10% of severely neglected children"], ["Age", "9 months to 5 years"], ["Risk", "Serious social neglect (only known risk factor)"]],
+    epi: [["Prevalence", "Rare; usually <10% of neglected children, even with severe neglect"], ["Age", "9 months to 5 years"], ["Risk", "Serious social neglect (only known risk factor)"]],
     risk: ["Serious social neglect, institutional rearing, repeated caregiver changes."],
     differential: [
       { id: "asd", how: "Restricted interests and rituals; attachment present; rarely neglect." },
@@ -23,8 +23,8 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "mdd", how: "Depressed young children still seek and accept comfort." },
       { id: "dsed", how: "Indiscriminately sociable rather than withdrawn." }
     ],
-    pearls: ["Needs neglect, onset before 5 and not autism.", "Improves with good caregiving.", "Diagnose cautiously after age 5."],
-    cmp: { symptoms: "No comfort seeking or response; low positive affect", exclusions: "Autism; developmental age <9 months", prevalence: "<10% of neglected children", course: "Improves with normative care" },
+    pearls: ["Needs neglect, onset before 5 and not autism.", "May improve with good caregiving.", "Diagnose cautiously after age 5."],
+    cmp: { symptoms: "No comfort seeking or response; low positive affect", exclusions: "Autism; developmental age <9 months", prevalence: "Usually <10% of neglected children", course: "May improve with normative care" },
     clues: [["Core picture", "A toddler from an orphanage who stiffens when hugged and does not go to her parents when hurt"], ["Code", "F94.1"]]
   },
   {
@@ -70,7 +70,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Lifetime (US, DSM-5)", "6.1%–8.3%"], ["12-month (US)", "4.7%"], ["Sex", "Women 8%–11% vs men 4.1%–5.4% (lifetime)"], ["Course", "Half recover within 3 months; some >50 years"]],
     risk: ["Pretraumatic: childhood adversity, prior disorders, neuroticism, low SES, discrimination.", "Peritraumatic: severity, interpersonal violence, peritraumatic dissociation.", "Posttraumatic: negative appraisals, acute stress disorder, new adversity; social support protects."],
     differential: [
-        { id: "susto", how: "When a traumatic fright shapes the symptoms, the manual says PTSD is the better fit for susto (Chapter 24, p. 879)." },
+        { id: "susto", how: "When a traumatic fright shapes the symptoms, PTSD appears more appropriate for susto (Chapter 24, pp. 878–879)." },
         { id: "khyal-cap", how: "Wind attacks may shape the experience of trauma- and stressor-related disorders in Cambodian contexts (Chapter 24, p. 876)." },
       { id: "acute-stress", how: "3 days to 1 month." },
       { id: "adjustment", how: "Non-Criterion A stressor, or subthreshold symptoms." },
@@ -102,7 +102,7 @@ SP.disorders = (SP.disorders || []).concat([
     differential: [
       { id: "ptsd", how: "More than 1 month; change the diagnosis if symptoms persist." },
       { id: "adjustment", how: "Any stressor or too few symptoms." },
-      { id: "panic-disorder", how: "Unexpected attacks plus a month of worry." },
+      { id: "panic-disorder", how: "Unexpected attacks plus a month of worry (Ch 5)." },
       { id: "brief-psychotic-disorder", how: "Hallucinations, delusions, disorganization." }
     ],
     pearls: ["Not before 3 days.", "No category minimums.", "Dissociation is part of the criteria, not a specifier."],
@@ -133,7 +133,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["E", "Symptoms end within 6 months after the stressor or its consequences end."]
     ],
     specifiers: ["Subtype (six, with codes)", "Acute (<6 months) or persistent/chronic (≥6 months)"],
-    epi: [["Outpatients (US)", "5%–20% principal diagnosis"], ["Consultation psychiatry", "Up to 50%"], ["Sex", "Possibly more women"]],
+    epi: [["Outpatients (US)", "5%–20% principal diagnosis"], ["Consultation psychiatry", "Often the most common diagnosis in the 1990s, frequently 50% (Australia, Canada, Israel, US)"], ["Sex", "Possibly more women (Danish research)"]],
     risk: ["Disadvantaged life circumstances."],
     differential: [
       { id: "mdd", how: "Full MDE criteria met: diagnose MDD instead." },
@@ -169,7 +169,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "uncomplicated-bereavement", name: "Normal grief", how: "Less than 12 months, within norms, or anniversary spikes only." }
     ],
     pearls: ["New in DSM-5-TR.", "Yearning separates it from PTSD.", "Hearing the deceased is common in normal grief.", "Suicidal ideation independent of MDD and PTSD."],
-    cmp: { symptoms: "Yearning or preoccupation + 3 of 8", exclusions: "MDD, PTSD; within cultural norms", prevalence: "≈10% of bereaved", course: "Prolonged, especially after a child’s death" },
+    cmp: { symptoms: "Yearning or preoccupation + 3 of 8", exclusions: "MDD, PTSD; within cultural norms", prevalence: "Unknown (≈10% with a 6-month definition)", course: "May be especially prolonged after a child’s death (preliminary)" },
     clues: [["Core picture", "A widower 18 months on who aches for his wife daily, cannot believe she is gone and finds life meaningless"], ["Code", "F43.81 (printed F43.8)"]]
   },
   {

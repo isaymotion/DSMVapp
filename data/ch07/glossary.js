@@ -18,7 +18,7 @@ SP.glossary = (SP.glossary || []).concat([
   ["reckless or self-destructive behavior", "Dangerous driving, heavy substance use, risky sex or self-harm after trauma; not job-required risk.", "Ch 7"],
   ["delayed expression", "The PTSD specifier when full criteria are first met at least 6 months after the event; formerly “delayed onset.”", "Ch 7"],
   ["dissociative subtype", "PTSD with dissociative symptoms: persistent depersonalization or derealization in addition to full PTSD.", "Ch 7"],
-  ["peritraumatic dissociation", "Dissociation during or right after a trauma; a risk factor for PTSD and acute stress disorder.", "Ch 7"],
+  ["peritraumatic dissociation", "Dissociation during a trauma that persists afterward; a peritraumatic risk factor for PTSD.", "Ch 7"],
   ["catastrophic appraisal", "Exaggerated beliefs about future harm, guilt or hopelessness after a trauma; strongly predicts acute stress disorder.", "Ch 7"],
   ["acute stress disorder", "Nine of 14 trauma symptoms lasting 3 days to 1 month after a Criterion A event.", "Ch 7"],
   ["posttraumatic stress disorder", "A Criterion A trauma followed by intrusion, avoidance, negative cognitions and mood, and arousal symptoms for more than 1 month.", "Ch 7"],
@@ -41,7 +41,7 @@ SP.glossary = (SP.glossary || []).concat([
   ["checking back", "A young child’s glance or return to the caregiver when exploring; diminished in DSED.", "Ch 7"],
   ["subthreshold PTSD", "PTSD-like symptoms after a trauma that fall short of full criteria; beyond 6 months, an other specified trauma- and stressor-related disorder.", "Ch 7"],
   ["sleep paralysis", "Brief inability to move on falling asleep or waking, often with fear; common in PTSD across cultures.", "Ch 7"],
-  ["moral injury", "Distress after perpetrating, failing to prevent or witnessing acts that violate deeply held values; not a DSM diagnosis, but linked to military PTSD risk.", "Ch 7"]
+  ["moral injury", "Distress after perpetrating, failing to prevent or witnessing acts that violate deeply held values; not a DSM term (outside the DSM). Related to the manual’s military peritraumatic risk factors: being a perpetrator, witnessing atrocities, killing.", "Ch 7"]
 ]);
 
 SP.glossaryAliases = Object.assign(SP.glossaryAliases || {}, {

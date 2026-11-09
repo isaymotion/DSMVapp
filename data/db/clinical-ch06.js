@@ -24,10 +24,10 @@
         first: "**CBT with exposure and response prevention (ERP)**, and/or an [[stahl:c/ch07/guide/s7-ssri|SSRI]], usually at **higher doses** and for longer trials (8–12 weeks) than for depression. FDA-approved: [[stahl:drugs/fluoxetine|fluoxetine]], [[stahl:drugs/fluvoxamine|fluvoxamine]], [[stahl:drugs/paroxetine|paroxetine]], [[stahl:drugs/sertraline|sertraline]] and [[stahl:drugs/clomipramine|clomipramine]].",
         points: [
           "Clomipramine is effective but has more side effects (anticholinergic, seizures at high doses, cardiac); usually used after SSRIs.",
-          "Partial response: augment with a low-dose antipsychotic, best evidence for [[stahl:drugs/risperidone|risperidone]] and [[stahl:drugs/aripiprazole|aripiprazole]], especially with tics; or add ERP if not already used.",
+          "Partial response: augment with a low-dose antipsychotic, best evidence for [[stahl:drugs/risperidone|risperidone]] and [[stahl:drugs/aripiprazole|aripiprazole]], especially with tics (app guidance; not verified); or add ERP if not already used.",
           "Refractory OCD: **deep TMS** is FDA-cleared (2018); **deep brain stimulation** is available under a humanitarian device exemption; specialist programs.",
-          "Children: ERP with family involvement to reduce accommodation; sertraline, fluoxetine and fluvoxamine are approved for pediatric OCD.",
-          "As of October 2026 there is no newly approved OCD drug; the glutamate modulator troriluzole failed its phase 3 trials and was dropped."
+          "Children: ERP with family involvement to reduce accommodation; sertraline, fluoxetine, fluvoxamine and clomipramine (age 10 and up) are approved for pediatric OCD.",
+          "The glutamate modulator troriluzole missed its primary endpoint in a phase 3 OCD trial, after an earlier phase 2/3 miss, and its OCD development was ended in 2025. No newly approved OCD drug as of October 2026 (app guidance; not verified)."
         ],
         stahl: [["Obsessive-compulsive and related disorders", "c/ch13/guide/s13-ocd"], ["Ventral and dorsal loops", "c/ch13/guide/s13-circuits"], ["SSRIs", "c/ch07/guide/s7-ssri"], ["Tricyclics", "c/ch07/guide/s7-tca"]]
       }
@@ -45,7 +45,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "**CBT for BDD** (exposure, response prevention, perceptual retraining, cognitive work) and/or an [[stahl:c/ch07/guide/s7-ssri|SSRI]] at relatively **high doses**; SSRIs work even with delusional insight.",
+        first: "**CBT for BDD** (exposure, response prevention, cognitive work; perceptual retraining: app guidance, not verified) and/or an [[stahl:c/ch07/guide/s7-ssri|SSRI]] at relatively **high doses** (app guidance; not verified); in a fluoxetine trial, response was similar with delusional and nondelusional beliefs.",
         points: [
           "Antipsychotic augmentation has weak evidence; consider [[stahl:drugs/clomipramine|clomipramine]] if SSRIs fail.",
           "Avoid cosmetic and surgical procedures for BDD concerns: they rarely help and can worsen symptoms.",
@@ -69,7 +69,7 @@
         first: "**CBT for hoarding** (motivational work, skills for organizing and decision-making, graded discarding and non-acquiring exposure), often delivered at home or in groups.",
         points: [
           "Medication evidence is limited; SSRIs are used mainly for comorbid depression or anxiety.",
-          "Forced clean-outs without treatment lead to quick re-accumulation and great distress; coordinate with family, fire and housing services when safety demands.",
+          "Forced clean-outs cause great distress, and re-accumulation without treatment is a concern (app guidance; not verified); coordinate with family, fire and housing services when safety demands.",
           "Screen for a neurocognitive disorder in older adults."
         ],
         stahl: [["Obsessive-compulsive and related disorders", "c/ch13/guide/s13-ocd"]]
@@ -88,7 +88,7 @@
         asOf: "October 2026",
         first: HRT,
         points: [
-          "No FDA-approved medication. **N-acetylcysteine** has mixed trial evidence; SSRIs help mainly comorbid depression or anxiety.",
+          "No FDA-approved medication (app guidance; not verified). **N-acetylcysteine**, SSRIs and clomipramine have mixed trial evidence.",
           "Treat complications: refer if abdominal symptoms suggest a trichobezoar."
         ],
         stahl: [["Obsessive-compulsive and related disorders", "c/ch13/guide/s13-ocd"]]
@@ -106,7 +106,7 @@
       tx: {
         asOf: "October 2026",
         first: HRT,
-        points: ["No FDA-approved medication; N-acetylcysteine and SSRIs have limited or mixed evidence.", "Treat infections and the underlying skin condition."],
+        points: ["No FDA-approved medication (app guidance; not verified); N-acetylcysteine and SSRIs have limited or mixed evidence.", "Treat infections and the underlying skin condition."],
         stahl: [["Obsessive-compulsive and related disorders", "c/ch13/guide/s13-ocd"]]
       }
     },
@@ -115,7 +115,7 @@
       ask: [
         ["Timeline", "“Did this start after you began using stimulants, cocaine or a new medicine?”"],
         ["Medications", "“Are you taking medicines for Parkinson’s disease or restless legs, such as ropinirole or pramipexole?”", "Dopamine agonists also cause impulse-control problems."],
-        ["Persistence", "After stopping: “Have the behaviors settled?”", "Persistence about 1 month suggests a primary disorder."]
+        ["Persistence", "After stopping: “Have the behaviors settled?”", "Persistence about 1 month after acute withdrawal or severe intoxication ends suggests a primary disorder."]
       ],
       tx: {
         asOf: "October 2026",
@@ -140,7 +140,7 @@
     },
     {
       id: "other-specified-ocrd",
-      tx: { asOf: "October 2026", first: "Treat by analogy with the nearest disorder: habit reversal for nail biting and other BFRBs; CBT and SSRIs for obsessional jealousy and olfactory reference disorder.", points: [], stahl: [] }
+      tx: { asOf: "October 2026", first: "Treat by analogy with the nearest disorder: habit reversal for nail biting and other BFRBs; CBT and SSRIs for obsessional jealousy and olfactory reference disorder (app guidance; not verified).", points: [], stahl: [] }
     },
     {
       id: "unspecified-ocrd",
@@ -177,7 +177,7 @@
         { ch: "ch05", dx: "social-anxiety", when: "Fear of judgment for behaving awkwardly, not for looking ugly." },
         { ch: "ch10", dx: "anorexia", when: "Concern about weight and shape at a significantly low weight." },
         { ch: "ch10", dx: "bulimia", when: "Shape and weight drive self-worth, with binges and purging." },
-        { ch: "ch14", dx: "gender-dysphoria-adults", when: "Distress about sex characteristics as the wrong gender, not as deformed; both can be diagnosed." }
+        { ch: "ch14", dx: "gender-dysphoria-adults", when: "BDD is not diagnosed if the preoccupation is limited to sex characteristics in gender dysphoria." }
       ]
     },
     {

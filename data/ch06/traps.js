@@ -21,7 +21,7 @@ SP.add("ch06", "traps", [
     truth: "OCPD is pervasive perfectionism and control **without** obsessions or compulsions. **Both can be diagnosed**." },
   { id: "t6-07", tag: "Taboo thoughts", sec: "s6-ocd-features",
     trap: "Intrusive thoughts of harming one’s baby mean the mother is a danger to the child.",
-    truth: "Ego-dystonic **harm obsessions** are unwanted and resisted; they are a recognized OCD presentation, including peripartum onset, not intent." },
+    truth: "Unwanted, resisted **harm obsessions** are a recognized OCD presentation, including in the peripartum period (p. 269); assess risk as usual (app guidance)." },
   { id: "t6-08", tag: "Tic-related", sec: "s6-ocd-specifiers",
     trap: "The tic-related specifier needs current tics.",
     truth: "A **current or past** history of a tic disorder qualifies." },
@@ -54,5 +54,5 @@ SP.add("ch06", "traps", [
     truth: "OCRD codes end in **.x88** (e.g., F14.288), and only stimulants, cocaine and other or unknown substances are listed." },
   { id: "t6-18", tag: "Medical causes", sec: "s6-medical",
     trap: "Sudden OCD symptoms with chorea after strep throat are PANDAS.",
-    truth: "With **chorea** (and often carditis), this is **Sydenham’s chorea**: OCRD due to another medical condition. PANDAS by definition lacks chorea, carditis and arthritis." }
+    truth: "With **chorea** (sometimes with carditis or arthritis), this is **Sydenham’s chorea**: OCRD due to another medical condition. PANDAS by definition lacks chorea, carditis and arthritis." }
 ]);

@@ -15,7 +15,7 @@
         ["A Voices", "“Do you hear voices or thoughts inside your head that feel like they belong to someone else, such as a child or an angry person?”", "Ego-alien, often frightening; ask what they say."],
         ["A States", "“Do you sometimes feel like a different person, a different age, or as if parts of you want different things?”"],
         ["D Culture", "“Do you think these experiences could be spirits or possession? Does your community see them that way?”", "Distinguish accepted practice from involuntary, distressing possession."],
-        ["Safety", "“Have you ever tried to hurt or kill yourself? Are you safe at home now?”", "Over 70% have attempted suicide; revictimization is common."]
+        ["Safety", "“Have you ever tried to hurt or kill yourself? Are you safe at home now?”", "Over 70% of outpatients with DID have attempted suicide; revictimization is common."]
       ],
       tx: {
         asOf: "October 2026",
@@ -40,7 +40,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "Ensure **safety** and remove the person from ongoing danger or stress; memory often returns when this happens. Supportive, trauma-informed psychotherapy follows.",
+        first: "Ensure **safety** and remove the person from ongoing danger or stress; memory may return quickly, especially in acute generalized amnesia (p. 339). Supportive, trauma-informed psychotherapy follows.",
         points: [
           "Avoid pressuring recall or using suggestive techniques; retrieval should be paced to what the person can tolerate.",
           "Monitor closely for suicidal thoughts as memories return.",
@@ -61,11 +61,11 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "**Psychoeducation** (it is common, not psychosis or brain damage) and **CBT for depersonalization**: reducing avoidance, checking and self-monitoring, and reattributing catastrophic interpretations.",
+        first: "**Psychoeducation** (transient symptoms are common; it is not psychosis or brain damage) and **CBT for depersonalization**: reducing avoidance, checking and self-monitoring, and reattributing catastrophic interpretations.",
         points: [
           "No FDA-approved medication. Evidence for drugs is limited: [[stahl:drugs/lamotrigine|lamotrigine]] added to an SSRI and opioid antagonists such as [[stahl:drugs/naltrexone|naltrexone]] have small or mixed studies.",
           "Treat comorbid depression and anxiety (often with an SSRI) and stop triggering drugs such as cannabis.",
-          "Grounding techniques and attention to sleep and overstimulation help reduce exacerbations."
+          "Grounding techniques and attention to sleep and overstimulation may help reduce exacerbations (app guidance; not verified)."
         ],
         stahl: [["SSRIs", "c/ch07/guide/s7-ssri"]]
       }
@@ -100,7 +100,7 @@
       id: "unreal", title: "Feeling unreal, detached or outside one’s body",
       intro: "Depersonalization and derealization are common and usually transient. Check reality testing, the context (panic, depression, trauma, drugs) and age at onset.",
       ask: ["Does it feel as if, or are you sure it is true?", "Only during panic attacks or low mood?", "Did it start with cannabis, ketamine or other drugs?", "When did it start, and is it constant?", "Any seizures or head injury?"],
-      mustNotMiss: ["**Psychosis**: nihilistic delusions without insight.", "**Seizures** (temporal lobe) or brain lesions, especially with onset after 40.", "**Suicide risk** in severe chronic cases."],
+      mustNotMiss: ["**Psychosis**: nihilistic delusions without insight.", "**Seizures** (temporal lobe) or brain lesions, especially with onset after 40.", "**Suicide risk** in severe chronic cases (app guidance)."],
       helpers: ["dissociative"],
       items: [
         { ch: "ch08", dx: "dpdr", when: "Persistent or recurrent, reality testing intact, not only in another disorder." },

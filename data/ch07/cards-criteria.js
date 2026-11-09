@@ -1,6 +1,6 @@
 /* Chapter 7 criteria flashcards. Card ids are the key for each card's review schedule: keep them stable. */
 SP.add("ch07", "criteria", [
-  { id: "c7-01", tag: "RAD", q: "State RAD Criterion A.", a: "A consistent pattern of **inhibited, emotionally withdrawn** behavior toward adult caregivers: the child **rarely or minimally seeks comfort** and **rarely or minimally responds to comfort** when distressed (both)." },
+  { id: "c7-01", tag: "RAD", q: "State RAD Criterion A.", a: "Consistently **inhibited, emotionally withdrawn** behavior toward adult caregivers: the child **rarely or minimally seeks comfort** and **rarely or minimally responds to comfort** when distressed (both)." },
   { id: "c7-02", tag: "RAD", q: "State RAD Criterion B.", a: "**At least 2 of 3**: minimal social and emotional responsiveness; **limited positive affect**; episodes of unexplained **irritability, sadness or fearfulness** even in nonthreatening interactions." },
   { id: "c7-03", tag: "RAD/DSED", q: "What are the three forms of insufficient care in RAD and DSED Criterion C?", a: "**Social neglect or deprivation**; **repeated changes of primary caregivers**; rearing in **unusual settings** (institutions with high child-to-caregiver ratios)." },
   { id: "c7-04", tag: "RAD", q: "List RAD Criteria E–G.", a: "**E** not autism spectrum disorder; **F** evident **before age 5**; **G** developmental age of **at least 9 months**." },
@@ -14,7 +14,7 @@ SP.add("ch07", "criteria", [
   { id: "c7-12", tag: "PTSD", q: "List the six PTSD Criterion E symptoms.", a: "**Irritability/angry outbursts**; **reckless or self-destructive** behavior; **hypervigilance**; exaggerated **startle**; poor **concentration**; **sleep** disturbance. At least **2**." },
   { id: "c7-13", tag: "PTSD", q: "PTSD Criteria F–H?", a: "**F** duration of B–E **more than 1 month**; **G** distress or impairment; **H** not due to a substance or medical condition." },
   { id: "c7-14", tag: "PTSD", q: "Define the PTSD dissociative symptoms specifier.", a: "Full PTSD plus persistent or recurrent **depersonalization** or **derealization**, not due to substances (blackouts) or a medical condition (complex partial seizures)." },
-  { id: "c7-15", tag: "PTSD", q: "Define the delayed expression specifier.", a: "Full criteria are **not met until at least 6 months** after the event, though some symptoms may begin immediately." },
+  { id: "c7-15", tag: "PTSD", q: "Define the delayed expression specifier.", a: "Full criteria are first met **6 months or more** after the event, though some symptoms may begin immediately." },
   { id: "c7-16", tag: "PTSD", q: "What is the PTSD code?", a: "**F43.10**." },
   { id: "c7-17", tag: "PTSD ≤6", q: "How does Criterion A differ for children 6 and younger?", a: "Directly experiencing, **witnessing** (especially caregivers), or **learning it happened to a parent or caregiver**. No work-related (A4) route." },
   { id: "c7-18", tag: "PTSD ≤6", q: "How are avoidance and cognitions handled in PTSD for children 6 and younger?", a: "Combined into one Criterion C: **at least 1 of 6** (avoiding activities or places; avoiding people or conversations; more negative emotions; less interest including **constricted play**; social withdrawal; less positive emotion)." },
