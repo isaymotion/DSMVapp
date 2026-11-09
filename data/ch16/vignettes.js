@@ -5,39 +5,39 @@ SP.add("ch16", "vignettes", [
   {
     "id": "v16-01",
     "tag": "Alcohol withdrawal",
-    "stem": "A 54-year-old man is admitted for elective knee surgery. On postoperative day 2 he is tremulous, diaphoretic, pulse 122, BP 172/98, anxious and sleepless, and says he sees small animals running across the floor, which he knows cannot be real. He is oriented to time, place and person and can attend to the interview. His wife reports he drinks about 12 beers daily, has tried and failed to cut down, drinks in the morning to steady his hands, and was arrested for drunk driving last year.",
+    "stem": "A 54-year-old man is admitted for elective knee surgery. On postoperative day 2 he is tremulous, diaphoretic, pulse 122, BP 172/98, anxious and sleepless, and says he sees small animals running across the floor, which he knows cannot be real. He is oriented to time, place and person and can attend to the interview. His wife reports he drinks about 12 beers daily, has tried and failed to cut down, needs far more beer than he used to for the same effect, has given up his weekend basketball league because of drinking, keeps drinking although his doctor told him it is damaging his liver, and drinks in the morning to steady his hands.",
     "q": "What is the most accurate diagnosis and code?",
     "choices": [
-      "Alcohol withdrawal delirium",
-      "Alcohol withdrawal, with perceptual disturbances, with moderate or severe alcohol use disorder (F10.232)",
-      "Alcohol-induced psychotic disorder",
+      "Alcohol withdrawal delirium, with moderate or severe alcohol use disorder (F10.231)",
+      "Alcohol-induced psychotic disorder, with onset during withdrawal, with moderate or severe alcohol use disorder (F10.259)",
       "Alcohol use disorder, severe (F10.20) and alcohol withdrawal (F10.930)",
+      "Alcohol withdrawal, with perceptual disturbances, with moderate or severe alcohol use disorder (F10.232)",
       "Alcohol intoxication (F10.220)"
     ],
-    "answer": 1,
+    "answer": 3,
     "why": "Withdrawal signs with hallucinations, **intact reality testing** and **no delirium** = **with perceptual disturbances**. One combined code: **F10.232**.",
     "whyNot": [
       "He is oriented and attentive; no disturbance of consciousness.",
-      "Correct.",
       "He knows the animals are not real; psychosis requires impaired reality testing.",
       "Do not code the use disorder separately, and F10.930 means no use disorder.",
+      "Correct.",
       "He stopped drinking 2 days ago."
     ],
     "then": {
       "q": "Which laboratory finding most strongly predicts a severe withdrawal course?",
       "choices": [
-        "Low potassium and low platelets",
         "High HDL cholesterol",
-        "Low MCV",
+        "Low mean corpuscular volume (MCV)",
+        "Low potassium and low platelets",
         "High albumin",
-        "Normal GGT"
+        "Normal gamma-glutamyltransferase (GGT)"
       ],
-      "answer": 0,
+      "answer": 2,
       "why": "Predictors of severe withdrawal include **low potassium**, **low platelets**, **systolic hypertension**, and prior severe withdrawal or delirium.",
       "whyNot": [
-        "Correct.",
         "Not a predictor.",
         "Heavy drinkers tend to have high-normal MCV.",
+        "Correct.",
         "Not a predictor.",
         "A normal GGT is not predictive."
       ]
@@ -49,19 +49,19 @@ SP.add("ch16", "vignettes", [
     "stem": "A 42-year-old woman with severe alcohol use disorder is admitted with low mood, anhedonia, insomnia, guilt and passive suicidal thoughts for 3 weeks during a period of daily heavy drinking. She has no depressive episodes during her two prior years of sobriety. After 3 weeks of abstinence her mood is nearly normal.",
     "q": "What is the most likely diagnosis?",
     "choices": [
-      "Adjustment disorder with depressed mood",
-      "Major depressive disorder, single episode",
-      "Persistent depressive disorder",
       "Alcohol-induced depressive disorder, with onset during intoxication, with severe alcohol use disorder",
+      "Adjustment disorder with depressed mood, in response to her drinking-related problems",
+      "Major depressive disorder, single episode, independent of her alcohol use, with comorbid severe alcohol use disorder",
+      "Persistent depressive disorder",
       "Alcohol intoxication only"
     ],
-    "answer": 3,
+    "answer": 0,
     "why": "Onset during heavy use, no episodes during long sobriety and **remission within about a month** of abstinence point to an **induced** disorder.",
     "whyNot": [
+      "Correct.",
       "There is no identifiable non-substance stressor driving it, and criteria for an induced disorder are met.",
       "Independent MDD would precede use, occur during abstinence or persist beyond about a month.",
       "Requires 2 years of depressed mood.",
-      "Correct.",
       "The depressive syndrome is in excess of intoxication and needs attention in its own right."
     ]
   },
@@ -71,18 +71,18 @@ SP.add("ch16", "vignettes", [
     "stem": "A 26-year-old man is found unresponsive in a public restroom. Respirations 6/min, pupils pinpoint. Two doses of intranasal naloxone produce brief arousal before he becomes drowsy again. His friend says he snorted a powder sold as heroin and had taken alprazolam earlier. Urine opiate screen is negative; benzodiazepine screen is positive.",
     "q": "What best explains the negative opiate screen and the poor naloxone response?",
     "choices": [
-      "Fentanyl in the supply, which standard screens miss, plus benzodiazepine co-ingestion",
-      "He did not take any opioid",
+      "He took no opioid at all; the alprazolam alone explains his miosis and slow breathing",
       "Naloxone does not work on heroin",
+      "Fentanyl (missed by standard screens) plus a co-ingested benzodiazepine",
       "The benzodiazepine alone causes pinpoint pupils",
       "A false-negative screen from dilute urine is the only explanation"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": "Standard opiate screens detect morphine and miss **fentanyl**; a potent opioid and **co-ingested sedatives** blunt the naloxone response.",
     "whyNot": [
-      "Correct.",
       "Miosis, respiratory depression and a partial naloxone response indicate an opioid.",
       "Naloxone reverses heroin.",
+      "Correct.",
       "Benzodiazepines do not cause miosis.",
       "Possible, but fentanyl is far more likely given the clinical picture."
     ]
@@ -94,19 +94,19 @@ SP.add("ch16", "vignettes", [
     "q": "Which statement is correct?",
     "choices": [
       "She has somatic symptom disorder",
+      "She has opioid use disorder",
       "She cannot have opioid use disorder because her opioids were prescribed",
       "Only tolerance and withdrawal are present, so no diagnosis applies",
-      "She has opioid withdrawal only (F11.93)",
-      "She has opioid use disorder; the non-pharmacological criteria are met regardless of tolerance and withdrawal"
+      "She has opioid withdrawal only (F11.93)"
     ],
-    "answer": 4,
-    "why": "Tolerance and withdrawal from supervised use do not count, but she meets other criteria (larger amounts, multiple prescribers, much time, activities given up, use despite problems): **opioid use disorder**.",
+    "answer": 1,
+    "why": "Tolerance and withdrawal from supervised use do not count, but she meets other criteria (larger amounts, much time spent obtaining it from several prescribers, activities given up, use despite physical problems): **opioid use disorder**.",
     "whyNot": [
       "Her drug-seeking pattern is an opioid use disorder.",
+      "Correct.",
       "Prescription opioids can lead to opioid use disorder when used nonmedically.",
       "Several other criteria are met.",
-      "F11.93 is withdrawal without a use disorder.",
-      "Correct."
+      "F11.93 is withdrawal without a use disorder."
     ]
   },
   {
@@ -115,42 +115,42 @@ SP.add("ch16", "vignettes", [
     "stem": "A man who injects fentanyl daily comes to start buprenorphine. He last used 4 hours ago and has no withdrawal symptoms. Within an hour of his first buprenorphine dose he develops severe yawning, rhinorrhea, piloerection, vomiting, diarrhea and cramps.",
     "q": "What happened?",
     "choices": [
-      "An allergic reaction",
-      "Buprenorphine overdose",
-      "Precipitated opioid withdrawal from a partial agonist given while a full agonist was still active",
+      "An allergic reaction to buprenorphine",
+      "Buprenorphine overdose with opioid toxicity",
       "Serotonin syndrome",
-      "Opioid intoxication"
+      "Opioid intoxication",
+      "Precipitated opioid withdrawal"
     ],
-    "answer": 2,
-    "why": "A **partial agonist** displaces a full agonist and can **precipitate withdrawal**; induction is usually started once withdrawal is present. (Clinical knowledge, consistent with the DSM description.)",
+    "answer": 4,
+    "why": "A **partial agonist** displaces a full agonist and can **precipitate withdrawal**; induction is usually started once withdrawal is present. (p. 618; induction timing is treatment knowledge, outside the DSM.)",
     "whyNot": [
       "The signs match opioid withdrawal.",
       "Overdose causes sedation and miosis, not withdrawal.",
-      "Correct.",
       "No clonus, hyperthermia or serotonergic drugs.",
-      "These are withdrawal, not intoxication, signs."
+      "These are withdrawal, not intoxication, signs.",
+      "Correct."
     ]
   },
   {
     "id": "v16-06",
     "tag": "Benzodiazepine withdrawal",
-    "stem": "A 68-year-old woman has taken lorazepam 2 mg three times daily for 15 years exactly as prescribed for panic disorder, with no dose escalation. She was admitted for pneumonia and the drug was not continued. On day 2 she becomes tremulous, sweaty, agitated and has a generalized seizure.",
+    "stem": "A 68-year-old woman has taken lorazepam 2 mg three times daily for 15 years exactly as prescribed for panic disorder, with no dose escalation. She does not drink alcohol. She was admitted for pneumonia and the drug was not continued. On day 2 she becomes tremulous, sweaty, agitated and has a generalized seizure. Between symptoms she is alert, oriented and attentive.",
     "q": "What is the correct diagnosis?",
     "choices": [
-      "Sedative, hypnotic or anxiolytic use disorder, severe",
       "Sedative, hypnotic or anxiolytic withdrawal without a use disorder (F13.930)",
+      "Sedative, hypnotic or anxiolytic use disorder, severe, with withdrawal (F13.230)",
       "Panic disorder relapse",
       "Alcohol withdrawal",
       "Delirium due to pneumonia"
     ],
-    "answer": 1,
-    "why": "Withdrawal from a benzodiazepine **taken as prescribed** does not establish a use disorder: **F13.930**. Seizures occur in up to 20%–30% of untreated sedative withdrawal.",
+    "answer": 0,
+    "why": "Withdrawal from a benzodiazepine **taken as prescribed** does not establish a use disorder: **F13.930**. The manual estimates that perhaps as many as 20%–30% of people in untreated withdrawal may have a grand mal seizure.",
     "whyNot": [
-      "Tolerance and withdrawal from prescribed use do not count; no other criteria.",
       "Correct.",
-      "Seizures never occur in panic disorder.",
-      "No alcohol history.",
-      "No disturbance of attention and awareness is described."
+      "Tolerance and withdrawal from prescribed use do not count; no other criteria.",
+      "Seizures are not a feature of panic disorder.",
+      "She does not drink alcohol; benzodiazepine cessation explains the picture.",
+      "She is alert, oriented and attentive; no disturbance of attention or awareness."
     ]
   },
   {
@@ -160,18 +160,18 @@ SP.add("ch16", "vignettes", [
     "q": "Which diagnosis best fits?",
     "choices": [
       "Delusional disorder, somatic type",
+      "Amphetamine-type substance–induced psychotic disorder, with onset during intoxication",
       "Amphetamine-type substance intoxication, with perceptual disturbances",
       "Schizophrenia",
-      "Amphetamine-type substance–induced psychotic disorder, with onset during intoxication",
-      "Bipolar I disorder, manic with psychotic features"
+      "Bipolar I disorder, current episode manic, severe, with mood-incongruent psychotic features"
     ],
-    "answer": 3,
+    "answer": 1,
     "why": "Delusions and hallucinations **without insight**, predominating and needing attention, during intoxication: **stimulant-induced psychotic disorder**. The perceptual-disturbance specifier requires intact reality testing.",
     "whyNot": [
       "Onset during intoxication with persecutory delusions too.",
+      "Correct.",
       "The specifier applies only when reality testing is intact.",
       "No prior history; onset during a binge; expect resolution with abstinence.",
-      "Correct.",
       "No mood episode is described."
     ]
   },
@@ -181,19 +181,19 @@ SP.add("ch16", "vignettes", [
     "stem": "Two days after a weekend cocaine binge, a 35-year-old woman sleeps most of the day, eats heavily, has vivid nightmares, feels worthless and says she wants to die. Pulse is 52. She has moderate cocaine use disorder.",
     "q": "What is the diagnosis and the most urgent step?",
     "choices": [
-      "Cocaine withdrawal (F14.23); assess suicide risk now",
       "Major depressive disorder; start an antidepressant",
       "Cocaine intoxication; give a benzodiazepine",
       "Bipolar II disorder; start a mood stabilizer",
+      "Cocaine withdrawal (F14.23); assess suicide risk now",
       "Opioid withdrawal; start buprenorphine"
     ],
-    "answer": 0,
-    "why": "Dysphoria with hypersomnia, hunger and vivid dreams after stopping = **stimulant withdrawal**. Suicidal depression is the **most serious** withdrawal problem; **bradycardia** supports it.",
+    "answer": 3,
+    "why": "Dysphoria with hypersomnia, hunger and vivid dreams after stopping = **stimulant withdrawal**. Depression with suicidal thoughts or behavior can occur and is generally the **most serious** withdrawal problem; **bradycardia** supports it.",
     "whyNot": [
-      "Correct.",
-      "Withdrawal depression usually resolves within a week; safety comes first.",
+      "Withdrawal mood symptoms usually resolve within hours to days but can persist for a month; safety comes first.",
       "These are withdrawal, not intoxication, signs.",
       "No hypomania.",
+      "Correct.",
       "No opioid use."
     ]
   },
@@ -205,18 +205,18 @@ SP.add("ch16", "vignettes", [
     "choices": [
       "Alcohol",
       "Cocaine",
+      "Phencyclidine",
       "LSD",
-      "Cannabis",
-      "Phencyclidine"
+      "Cannabis"
     ],
-    "answer": 4,
+    "answer": 2,
     "why": "**Nystagmus, analgesia, rigidity, hypertension, hyperacusis** and violence: **PCP intoxication**.",
     "whyNot": [
       "Alcohol causes ataxia and nystagmus but not rigidity and hyperacusis.",
       "Cocaine does not typically cause vertical nystagmus or analgesia.",
+      "Correct.",
       "LSD produces perceptual changes with mydriasis, not rigidity and analgesia.",
-      "Cannabis causes red eyes and appetite, not violence and nystagmus.",
-      "Correct."
+      "Cannabis causes red eyes and appetite, not violence and nystagmus."
     ]
   },
   {
@@ -227,18 +227,18 @@ SP.add("ch16", "vignettes", [
     "choices": [
       "Schizophrenia",
       "Other hallucinogen intoxication",
-      "Hallucinogen persisting perception disorder (F16.983)",
       "Migraine with aura",
-      "Hallucinogen-induced psychotic disorder"
+      "Hallucinogen-induced psychotic disorder, with onset during intoxication",
+      "Hallucinogen persisting perception disorder (F16.983)"
     ],
-    "answer": 2,
+    "answer": 4,
     "why": "Reexperiencing intoxication perceptions while sober, with **intact reality testing**, causing distress: **HPPD**. It can follow minimal exposure and last years.",
     "whyNot": [
       "Reality testing is intact; no delusions.",
       "She has not used for 18 months.",
-      "Correct.",
-      "Normal workup; no headaches; the perceptions mirror LSD effects.",
-      "She has insight."
+      "Normal workup, and the perceptions mirror LSD effects; migraine aura without headache must still be ruled out (Criterion C).",
+      "She has insight.",
+      "Correct."
     ]
   },
   {
@@ -247,17 +247,17 @@ SP.add("ch16", "vignettes", [
     "stem": "A 29-year-old line cook has inhaled nitrous oxide from whipped-cream chargers daily for a year, has failed to stop, missed work, and continues despite numbness and unsteady gait. MRI shows dorsal column changes and B12 levels are low-normal.",
     "q": "How should the substance disorder be recorded?",
     "choices": [
-      "Inhalant use disorder",
       "Other (or unknown) substance use disorder (nitrous oxide use disorder)",
+      "Inhalant use disorder",
       "Sedative use disorder",
-      "No use disorder because nitrous oxide is legal",
+      "No use disorder, because nitrous oxide is a legal product sold for whipped cream",
       "Unspecified inhalant-related disorder"
     ],
-    "answer": 1,
-    "why": "Nitrous oxide and nitrites are **other (or unknown)** substances; only **hydrocarbons** are inhalants. Heavy use causes **subacute combined degeneration**.",
+    "answer": 0,
+    "why": "Nitrous oxide and nitrites are **other (or unknown)** substances; only **hydrocarbons** are inhalants. Very frequent use may cause **subacute combined degeneration**.",
     "whyNot": [
-      "Inhalants are volatile hydrocarbons only.",
       "Correct.",
+      "Inhalants are volatile hydrocarbons only.",
       "Not a sedative-hypnotic.",
       "Legal status is irrelevant.",
       "Not an inhalant category."
@@ -270,39 +270,39 @@ SP.add("ch16", "vignettes", [
     "q": "What is the most likely diagnosis?",
     "choices": [
       "Absence epilepsy",
+      "Inhalant intoxication",
       "Cannabis intoxication",
       "Caffeine intoxication",
-      "Inhalant intoxication",
       "Opioid intoxication"
     ],
-    "answer": 3,
+    "answer": 1,
     "why": "Recurrent intoxication with **negative screens**, paraphernalia and **glue-sniffer’s rash** in a young adolescent: **inhalants**.",
     "whyNot": [
       "Absence seizures do not cause euphoria or rash.",
+      "Correct.",
       "Cannabis would show on screens and causes red eyes and appetite.",
       "Caffeine causes restlessness, not slurred speech.",
-      "Correct.",
       "Opioids show miosis and usually positive screens."
     ]
   },
   {
     "id": "v16-13",
     "tag": "Cannabis",
-    "stem": "A 20-year-old college student vapes high-potency cannabis several times daily. He is failing classes, has tried to cut down three times, spends most of his money on cannabis, needs much more than before, and becomes irritable, anxious and sleepless with strange dreams and no appetite when he stops. He has dropped soccer.",
+    "stem": "A 20-year-old college student vapes high-potency cannabis several times daily. He is failing classes, has tried to cut down three times, spends most of each day getting, using or recovering from cannabis, needs much more than before, and becomes irritable, anxious and sleepless with strange dreams and no appetite when he stops. He has dropped soccer.",
     "q": "What is the severity of his cannabis use disorder?",
     "choices": [
-      "Severe",
       "Mild",
       "Moderate",
+      "Severe",
       "Cannot be rated because cannabis is legal in his state",
       "No use disorder, since cannabis has no withdrawal"
     ],
-    "answer": 0,
-    "why": "Role failure, failed efforts, much time and money, tolerance, withdrawal, activities given up: **six or more** criteria = **severe**.",
+    "answer": 2,
+    "why": "Role failure, failed efforts, much time, tolerance, withdrawal, activities given up: **six or more** criteria = **severe**.",
     "whyNot": [
-      "Correct.",
       "Mild is 2–3.",
       "Moderate is 4–5.",
+      "Correct.",
       "Legal status does not matter.",
       "Cannabis withdrawal is a recognized syndrome."
     ]
@@ -313,20 +313,20 @@ SP.add("ch16", "vignettes", [
     "stem": "A 60-year-old woman with chemotherapy-induced nausea uses prescribed dronabinol exactly as directed. She has developed tolerance and feels irritable and sleeps poorly if she misses doses. She has no craving, no failed attempts to cut down and no impairment from use.",
     "q": "What is the correct interpretation?",
     "choices": [
+      "No cannabis use disorder",
       "Other specified cannabis-related disorder",
       "Mild cannabis use disorder",
       "Moderate cannabis use disorder",
-      "Cannabis intoxication",
-      "No cannabis use disorder; tolerance and withdrawal from medically supervised use are not the basis for diagnosis"
+      "Cannabis intoxication"
     ],
-    "answer": 4,
+    "answer": 0,
     "why": "When cannabinoids are taken as medically indicated, tolerance and withdrawal **should not be the primary basis** for a use disorder.",
     "whyNot": [
+      "Correct.",
       "No disorder is present.",
       "No other criteria are met.",
       "No other criteria are met.",
-      "No problematic intoxication is described.",
-      "Correct."
+      "No problematic intoxication is described."
     ]
   },
   {
@@ -337,17 +337,17 @@ SP.add("ch16", "vignettes", [
     "choices": [
       "Caffeine use disorder",
       "Panic disorder",
-      "Caffeine intoxication (F15.920)",
       "Stimulant intoxication, amphetamine-type (F15.920)",
+      "Caffeine intoxication (F15.920)",
       "Generalized anxiety disorder"
     ],
-    "answer": 2,
+    "answer": 3,
     "why": "**Five or more** of 12 signs after heavy caffeine with impairment. Caffeine intoxication shares the F15 class code.",
     "whyNot": [
       "Not a Section II diagnosis.",
       "Symptoms are tied to caffeine and do not include recurrent unexpected attacks.",
-      "Correct.",
       "No amphetamine was taken; record the substance as caffeine.",
+      "Correct.",
       "Acute and drug-related."
     ]
   },
@@ -358,40 +358,40 @@ SP.add("ch16", "vignettes", [
     "q": "What is the diagnosis?",
     "choices": [
       "Migraine without aura",
-      "Caffeine withdrawal (F15.93)",
       "Caffeine intoxication",
       "Hypoglycemia",
-      "Viral illness"
+      "Viral illness",
+      "Caffeine withdrawal (F15.93)"
     ],
-    "answer": 1,
+    "answer": 4,
     "why": "Three or more of five symptoms **within 24 hours** of stopping daily caffeine, relieved by caffeine within 30–60 minutes.",
     "whyNot": [
       "The timing and relief with caffeine point to withdrawal.",
-      "Correct.",
       "She stopped caffeine.",
       "Fasting is brief; relief by caffeine argues against it.",
-      "No fever; prompt relief with caffeine."
+      "No fever; prompt relief with caffeine.",
+      "Correct."
     ]
   },
   {
     "id": "v16-17",
     "tag": "Tobacco",
-    "stem": "A 40-year-old man with schizophrenia, stable on clozapine and smoking 30 cigarettes daily, is admitted to a smoke-free unit. Over 3 days he becomes irritable, restless, anxious, hungry and sleepless. On day 6 he is unusually sedated and drooling, and his clozapine level has doubled.",
+    "stem": "A 40-year-old man with schizophrenia, stable on clozapine and smoking 30 cigarettes daily, is admitted to a smoke-free unit. Within a day he becomes irritable, restless, anxious, hungry and sleepless. On day 6 he is unusually sedated and drooling, and his clozapine level has doubled.",
     "q": "What explains the two phases?",
     "choices": [
       "Clozapine withdrawal, then neuroleptic malignant syndrome",
+      "Tobacco withdrawal, then a rise in clozapine levels",
       "Psychotic relapse, then catatonia",
       "Alcohol withdrawal, then hepatic failure",
-      "Tobacco withdrawal, then a rise in clozapine levels because smoking had induced its metabolism",
       "Caffeine withdrawal, then hypothyroidism"
     ],
-    "answer": 3,
-    "why": "**Tobacco withdrawal** (4 of 7 within 24 hours), then **higher clozapine levels**: tobacco smoke (not nicotine) induces metabolism of many psychotropics.",
+    "answer": 1,
+    "why": "**Tobacco withdrawal** (4 of 7 within 24 hours), then **higher clozapine levels**: smoking increases the metabolism of many psychotropics, an effect that appears to be due to compounds in tobacco smoke rather than nicotine.",
     "whyNot": [
       "He is still taking clozapine; no fever or rigidity.",
+      "Correct.",
       "Symptoms match withdrawal; sedation follows rising drug levels.",
       "No alcohol history.",
-      "Correct.",
       "Not explained by caffeine or thyroid."
     ]
   },
@@ -401,18 +401,18 @@ SP.add("ch16", "vignettes", [
     "stem": "A 33-year-old woman smokes 10 cigarettes daily. She has tried to cut down twice without success and smokes despite her asthma getting worse. She has no other criteria.",
     "q": "How is her tobacco use disorder coded?",
     "choices": [
-      "Z72.0 (mild)",
       "F17.200",
       "F17.203",
+      "Z72.0 (mild)",
       "F17.210",
       "No diagnosis"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": "Two criteria = **mild**; DSM-5-TR codes mild tobacco use disorder as **Z72.0**.",
     "whyNot": [
-      "Correct.",
       "F17.200 is moderate or severe.",
       "F17.203 is tobacco withdrawal.",
+      "Correct.",
       "Not the DSM-5-TR code.",
       "Two criteria meet the threshold."
     ]
@@ -420,23 +420,23 @@ SP.add("ch16", "vignettes", [
   {
     "id": "v16-19",
     "tag": "Gambling",
-    "stem": "A 34-year-old accountant bets on sports online nightly. He needs larger bets to feel excited, returns the next day to win back losses, lies to his wife about the amount, borrowed $20,000 from his parents to cover debts, thinks about the next bet throughout the workday, and is restless when he tries to cut back. He has never had a manic episode.",
+    "stem": "A 34-year-old accountant bets on sports online nightly. He needs larger bets to feel excited, returns the next day to win back losses, lies to his wife about the amount, borrowed $20,000 from his parents to cover debts, thinks about the next bet throughout the workday, and is restless when he tries to cut back. He has never had a manic or hypomanic episode.",
     "q": "What is the diagnosis and severity?",
     "choices": [
       "No disorder; sports betting is legal",
       "Gambling disorder, mild",
       "Gambling disorder, severe",
-      "Bipolar II disorder",
-      "Gambling disorder, moderate (F63.0)"
+      "Gambling disorder, moderate (F63.0)",
+      "Bipolar II disorder"
     ],
-    "answer": 4,
+    "answer": 3,
     "why": "Escalating bets, chasing, lying, bailout, preoccupation and restlessness = **six** criteria: **moderate (6–7)**. Mild 4–5, severe 8–9.",
     "whyNot": [
       "Legality is irrelevant.",
       "He has six criteria.",
       "Severe needs 8–9.",
-      "No hypomanic episodes.",
-      "Correct."
+      "Correct.",
+      "No hypomanic episodes."
     ]
   },
   {
@@ -445,18 +445,18 @@ SP.add("ch16", "vignettes", [
     "stem": "A 66-year-old man with Parkinson’s disease starts pramipexole. Within months he gambles away his savings on slot machines, lies to his family, and is preoccupied with gambling. He had never gambled before.",
     "q": "What does DSM-5-TR say about the diagnosis?",
     "choices": [
+      "Gambling disorder is still diagnosed",
       "This must be coded as a medication-induced bipolar disorder",
       "Gambling disorder is excluded because a medication caused it",
-      "Gambling disorder can be diagnosed even though a dopaminergic medication caused it",
       "This is a personality change due to Parkinson’s disease",
       "No diagnosis applies"
     ],
-    "answer": 2,
+    "answer": 0,
     "why": "Gambling symptoms that meet criteria as a consequence of **dopaminergic medication** are still diagnosed as **gambling disorder**.",
     "whyNot": [
+      "Correct.",
       "There is no mood episode.",
       "The manual explicitly includes these cases.",
-      "Correct.",
       "The cause is a medication, not the disease directly.",
       "Criteria are met."
     ]
@@ -468,19 +468,19 @@ SP.add("ch16", "vignettes", [
     "q": "Does he have antisocial personality disorder?",
     "choices": [
       "Yes; three antisocial criteria are met",
-      "No; antisocial PD requires conduct disorder before 15, and these acts sustain his use",
       "Yes; drug dealing is enough",
       "No; antisocial PD cannot coexist with opioid use disorder",
-      "Yes, if he lacks remorse"
+      "Yes, if he lacks remorse",
+      "No; conduct disorder before 15 is absent"
     ],
-    "answer": 1,
-    "why": "Antisocial behavior in the service of sustaining use, beginning in adulthood without **conduct disorder before 15**, does not establish antisocial PD.",
+    "answer": 4,
+    "why": "Antisocial behavior in the service of sustaining use, beginning in adulthood without **conduct disorder before 15**, does not establish antisocial PD (Ch 18, p. 751).",
     "whyNot": [
       "Criterion C (conduct disorder before 15) is missing.",
-      "Correct.",
       "Not sufficient.",
       "They can coexist when both are met.",
-      "Remorse does not replace the childhood requirement."
+      "Remorse does not replace the childhood requirement.",
+      "Correct."
     ]
   },
   {
@@ -490,18 +490,18 @@ SP.add("ch16", "vignettes", [
     "q": "How is his status recorded?",
     "choices": [
       "In early remission",
+      "Severe, in sustained remission, on maintenance therapy (F11.21)",
       "Opioid use disorder, severe, current (F11.20)",
-      "No diagnosis, because buprenorphine is prescribed",
-      "Opioid use disorder, severe, in sustained remission, on maintenance therapy (F11.21)",
+      "No diagnosis now, because his buprenorphine is prescribed by his doctor",
       "Opioid withdrawal"
     ],
-    "answer": 3,
+    "answer": 1,
     "why": "No criteria except craving for **≥12 months** = sustained remission; agonist treatment adds **on maintenance therapy**.",
     "whyNot": [
       "Over 12 months is sustained.",
+      "Correct.",
       "He meets no current criteria.",
       "The diagnosis remains, in remission.",
-      "Correct.",
       "No withdrawal symptoms."
     ]
   },
@@ -511,20 +511,20 @@ SP.add("ch16", "vignettes", [
     "stem": "On day 3 of a hospital admission for GI bleeding, a 61-year-old man with severe alcohol use disorder becomes acutely confused, disoriented, fluctuating, tremulous, febrile and tachycardic, and picks at imaginary insects.",
     "q": "What is the correct diagnosis?",
     "choices": [
-      "Alcohol withdrawal delirium (delirium tremens)",
       "Alcohol withdrawal, with perceptual disturbances",
       "Alcohol-induced psychotic disorder",
+      "Alcohol withdrawal delirium (delirium tremens)",
       "Alcohol intoxication delirium",
       "Wernicke encephalopathy only"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": "Disturbed attention and awareness during withdrawal = **alcohol withdrawal delirium**; hallucinations during delirium are part of it. A medical condition (here GI bleeding) often coexists.",
     "whyNot": [
-      "Correct.",
       "The specifier requires no delirium.",
       "Symptoms only during delirium belong to the delirium.",
+      "Correct.",
       "He stopped drinking 3 days ago.",
-      "Consider and treat thiamine deficiency, but the picture is withdrawal delirium."
+      "Consider and treat thiamine deficiency (treatment, outside the DSM), but the picture is withdrawal delirium."
     ]
   },
   {
@@ -536,17 +536,17 @@ SP.add("ch16", "vignettes", [
       "Inhalant",
       "Other (or unknown) substance",
       "Hallucinogen",
-      "Stimulant",
-      "Cannabis"
+      "Cannabis",
+      "Stimulant"
     ],
-    "answer": 4,
-    "why": "**Synthetic cannabinoids** (K2, Spice) are explicitly included in the **cannabis** class, even though standard THC screens miss them and their effects are more severe.",
+    "answer": 3,
+    "why": "**Synthetic cannabinoids** (K2, Spice) are explicitly included in the **cannabis** class (p. 654); they may cause more severe adverse effects than plant cannabis, including seizures (p. 577). (That standard THC screens miss them is clinical knowledge, outside the DSM.)",
     "whyNot": [
       "Not a hydrocarbon inhalant.",
       "They are assigned to cannabis, not other.",
       "Not a hallucinogen class.",
-      "Not a stimulant.",
-      "Correct."
+      "Correct.",
+      "Not a stimulant."
     ]
   },
   {
@@ -555,18 +555,18 @@ SP.add("ch16", "vignettes", [
     "stem": "A 47-year-old man with severe alcohol use disorder completes detoxification and wants medication to help stay abstinent. He has chronic hepatitis with mildly raised transaminases and no kidney disease. He does not use opioids.",
     "q": "Which medication is a reasonable first choice given his liver disease?",
     "choices": [
+      "Acamprosate",
       "Chlordiazepoxide long term",
       "Disulfiram",
-      "Acamprosate",
       "Methadone",
       "Gabapentin as the only FDA-approved option"
     ],
-    "answer": 2,
+    "answer": 0,
     "why": "**Acamprosate** is renally cleared and suits liver disease; naltrexone is also first line but needs liver monitoring; disulfiram is hepatotoxic and needs supervision. (Treatment knowledge, outside the DSM.)",
     "whyNot": [
+      "Correct.",
       "Benzodiazepines are for withdrawal, not maintenance.",
       "Disulfiram carries hepatotoxicity and relies on adherence.",
-      "Correct.",
       "Methadone treats opioid, not alcohol, use disorder.",
       "Gabapentin is used off-label; FDA-approved drugs are naltrexone, acamprosate and disulfiram."
     ]

@@ -26,14 +26,14 @@ SP.add("ch17", "vignettes", [
     "then": {
       "q": "Which statement about this presentation is supported by DSM-5-TR?",
       "choices": [
-        "Hypoactive delirium is more frequent in older adults and is often unrecognized",
-        "Hypoactive delirium is usually caused by drug withdrawal",
-        "She cannot have delirium because she is not agitated",
-        "Delirium in hospital typically lasts about 3 months",
-        "Falls are an established risk factor for her delirium"
+        "Older adults may more often have this form, and it is often missed",
+        "Hypoactive delirium is usually caused by alcohol or sedative withdrawal",
+        "She cannot have delirium because she is not agitated or hallucinating",
+        "Delirium in hospital typically lasts about 3 months before resolving",
+        "Falls are an established risk factor for developing her delirium"
       ],
       "answer": 0,
-      "why": "The **hypoactive** form is more frequent in **older adults** and often **missed** in EDs and hospitals; withdrawal is linked with the **hyperactive** form; hospital delirium usually lasts **about 1 week**; falls are an outcome, not a risk factor."
+      "why": "The **hypoactive** form **may be** more frequent in **older adults** and often **missed** in EDs and hospitals; withdrawal is linked with the **hyperactive** form; hospital delirium usually lasts **about 1 week**; falls are an outcome, not a risk factor."
     },
     "discuss": [
       "Which bedside attention tests would you teach the night nurse?",
@@ -43,14 +43,14 @@ SP.add("ch17", "vignettes", [
   {
     "id": "v17-02",
     "tag": "Withdrawal delirium",
-    "stem": "A 52-year-old man has drunk about a liter of rum daily for 10 years, with failed attempts to cut down, morning tremor and lost jobs. Three days after emergency surgery for a fractured femur he is sweating, tremulous, pulse 124, shouting that insects are crawling on the walls, and pulling at his lines. He does not know where he is and cannot keep attention on a single question. Glucose and sodium are normal.",
+    "stem": "A 52-year-old man has drunk about a liter of rum daily for 10 years, with failed attempts to cut down, strong cravings, needing more to feel an effect, morning tremor relieved by a drink, lost jobs, and continued drinking despite a diagnosis of fatty liver; he meets criteria for severe alcohol use disorder. Three days after emergency surgery for a fractured femur he is sweating, tremulous, pulse 124, shouting that insects are crawling on the walls, and pulling at his lines. He does not know where he is and cannot keep attention on a single question. Glucose and sodium are normal.",
     "q": "What is the correct diagnosis and code?",
     "choices": [
       "F05 delirium due to another medical condition",
-      "F10.232 alcohol withdrawal with perceptual disturbances",
+      "F10.232 severe alcohol use disorder with alcohol withdrawal, with perceptual disturbances",
       "F10.921 alcohol intoxication delirium",
       "F10.231 severe alcohol use disorder with alcohol withdrawal delirium, acute, hyperactive",
-      "F10.20 severe alcohol use disorder and F05 delirium"
+      "F10.20 severe alcohol use disorder and F05 delirium due to the fracture surgery"
     ],
     "answer": 3,
     "why": "Inattention, disorientation and hallucinations during **withdrawal**, severe enough for clinical attention: **alcohol withdrawal delirium**. With a **moderate or severe** use disorder the code is **F10.231**, recorded with course and activity level; **no separate** use disorder code.",
@@ -64,14 +64,14 @@ SP.add("ch17", "vignettes", [
     "then": {
       "q": "Outside the DSM, which management is most appropriate?",
       "choices": [
-        "Haloperidol alone to control agitation",
-        "A benzodiazepine by symptom-triggered or loading protocol, with parenteral thiamine before glucose",
-        "Physical restraints until withdrawal ends",
-        "Donepezil",
-        "Observation only, since withdrawal delirium resolves without treatment"
+        "Haloperidol alone, titrated to control the agitation",
+        "Benzodiazepine (symptom-triggered or loading) plus parenteral thiamine",
+        "Physical restraints until the withdrawal has run its course",
+        "Donepezil to improve attention and orientation",
+        "Observation only, since withdrawal delirium resolves without any treatment"
       ],
       "answer": 1,
-      "why": "**Benzodiazepines** treat alcohol withdrawal delirium; give **thiamine** to prevent Wernicke’s encephalopathy and look for medical complications. Antipsychotics alone lower the seizure threshold and do not treat withdrawal."
+      "why": "**Benzodiazepines** treat alcohol withdrawal delirium; look for medical complications. Give parenteral **thiamine**; it is traditionally given before glucose, though the ASAM 2020 guideline found no evidence that glucose first causes harm, so glucose should not be delayed (treatment knowledge, outside the DSM; ASAM 2020 guideline summary: https://blogs.the-hospitalist.org/content/clinical-guideline-highlights-hospitalist-2020-american-society-addiction-medicine-clinical). Antipsychotics are adjuncts only, not monotherapy (ASAM 2020)."
     }
   },
   {
@@ -80,18 +80,18 @@ SP.add("ch17", "vignettes", [
     "stem": "A 79-year-old man with a 4-year history of gradually worsening memory has been needing help with his bills and medications for a year, but he dresses and bathes himself. Over the past 2 days, since starting oxybutynin for urgency, he has become restless at night, sees strangers in the room, and drifts in and out of conversations. His wife says this is “completely different” from his usual forgetfulness.",
     "q": "What is the best formulation?",
     "choices": [
-      "Medication-induced delirium superimposed on major NCD",
-      "Progression of his major NCD; no new diagnosis",
       "NCD with Lewy bodies, because of visual hallucinations",
+      "Progression of his major NCD; no new diagnosis",
+      "Medication-induced delirium superimposed on major NCD",
       "Brief psychotic disorder",
       "Major NCD with behavioral disturbance only"
     ],
-    "answer": 0,
-    "why": "An **acute**, fluctuating change in **attention** after starting an **anticholinergic** is **delirium** (medication-induced, F19.921) **superimposed** on his established major NCD. The NCD increases vulnerability; **manage the delirium first**.",
+    "answer": 2,
+    "why": "An **acute**, fluctuating change in **attention** after starting an **anticholinergic** is **delirium** (medication-induced, F19.921) **superimposed** on his established major NCD. The NCD increases vulnerability; the delirium should **generally be managed first**.",
     "whyNot": [
-      "Correct.",
-      "A change over 2 days with inattention is not the slow course of his NCD.",
       "Hallucinations began abruptly with a new drug; the picture is delirium, not a new neurodegenerative syndrome.",
+      "A change over 2 days with inattention is not the slow course of his NCD.",
+      "Correct.",
       "Psychosis here comes with disturbed attention and a clear drug cause.",
       "The acute attention disturbance needs its own diagnosis."
     ],
@@ -106,20 +106,20 @@ SP.add("ch17", "vignettes", [
     "stem": "A 61-year-old woman in intensive care after cardiac arrest has been deeply sedated for 4 days. Sedation was lightened this morning. She opens her eyes only to a sternal rub, does not follow commands and makes no verbal response. An EEG shows diffuse slowing.",
     "q": "What is the correct conclusion about delirium at this point?",
     "choices": [
-      "Hypoactive delirium",
-      "Other specified delirium",
-      "Mixed-level delirium",
-      "Persistent delirium",
-      "Delirium cannot be assessed: her arousal is too low (stupor or coma)"
+      "Not assessable: arousal too low (coma or stupor)",
+      "Other specified delirium (subsyndromal)",
+      "Mixed-level delirium after sedation",
+      "Persistent delirium, since it has lasted for 4 days",
+      "Hypoactive delirium, given the EEG slowing"
     ],
-    "answer": 4,
+    "answer": 0,
     "why": "Criterion D: delirium is not diagnosed when arousal is so reduced that the person cannot respond to **verbal** stimulation. This is a **disorder of arousal**. Delirium often appears on **emergence**, so reassess as she wakes.",
     "whyNot": [
-      "Hypoactive delirium still requires enough arousal to engage with assessment.",
+      "Correct.",
       "This is not a subthreshold delirium; it is reduced arousal.",
       "Activity level cannot be judged without assessable consciousness.",
       "Duration is irrelevant until delirium can be assessed.",
-      "Correct."
+      "Hypoactive delirium still requires enough arousal to engage with assessment."
     ]
   },
   {
@@ -131,14 +131,14 @@ SP.add("ch17", "vignettes", [
       "Delusional disorder, persecutory type",
       "Brief psychotic disorder",
       "Delirium due to another medical condition (pyelonephritis)",
-      "Psychotic disorder due to another medical condition",
+      "Psychotic disorder due to another medical condition (pyelonephritis)",
       "Major NCD with psychotic disturbance"
     ],
     "answer": 2,
-    "why": "Psychotic symptoms with **impaired attention and orientation**, **acute** onset and an obvious **medical cause**: delirium (F05 after the infection code). **Visual** hallucinations also point to a medical cause.",
+    "why": "Psychotic symptoms with **impaired attention and orientation**, **acute** onset and an obvious **medical cause**: delirium (F05 after the infection code). **Visual** hallucinations are more common with brain disease than in primary psychotic disorders (app guidance).",
     "whyNot": [
       "Attention and orientation are disturbed; delusional disorder has a clear sensorium.",
-      "Brief psychotic disorder is excluded when a medical condition explains the symptoms.",
+      "Brief psychotic disorder is excluded when a medical condition explains the symptoms (Ch 2).",
       "Correct.",
       "Diagnose psychotic disorder due to another medical condition only when psychosis occurs **without** delirium.",
       "She was well a week ago; there is no prior decline."
@@ -147,23 +147,23 @@ SP.add("ch17", "vignettes", [
   {
     "id": "v17-06",
     "tag": "Major vs mild",
-    "stem": "A 73-year-old retired bank manager notices over 2 years that he forgets recent conversations and must re-read chapters of novels. He now keeps a detailed calendar, sets phone reminders for his pills, and takes twice as long to do his tax return, but still does it himself. His wife confirms the change. Neuropsychological testing shows delayed recall 1.5 SD below norms for age and education; other domains are normal. MRI shows mild hippocampal atrophy. No genetic testing has been done and there is no family history.",
+    "stem": "A 73-year-old retired bank manager notices over 2 years, with steady progression and no plateaus, that he forgets recent conversations and must re-read chapters of novels. He now keeps a detailed calendar, sets phone reminders for his pills, and takes twice as long to do his tax return, but still does it himself. His wife confirms the change. Neuropsychological testing shows delayed recall 1.5 SD below norms for age and education; other domains are normal. MRI shows mild hippocampal atrophy. No genetic testing has been done and there is no family history.",
     "q": "What is the most accurate diagnosis?",
     "choices": [
       "Major NCD due to probable Alzheimer’s disease, mild",
-      "Mild NCD due to possible Alzheimer’s disease",
+      "Major NCD due to possible Alzheimer’s disease",
       "Mild NCD due to probable Alzheimer’s disease",
       "Normal aging",
-      "Major NCD due to possible Alzheimer’s disease"
+      "Mild NCD due to possible Alzheimer’s disease"
     ],
-    "answer": 1,
+    "answer": 4,
     "why": "Independence is **preserved** with compensation (mild NCD), with a **memory-led**, steadily progressive decline. At the **mild** level, **probable** requires a **causative mutation**; without one it is **possible**. Code **G31.84**.",
     "whyNot": [
       "He still manages his own finances and medications.",
-      "Correct.",
+      "He is not dependent in IADLs.",
       "Probable at the mild level needs genetic evidence.",
       "There is a confirmed concern and objective decline beyond norms.",
-      "He is not dependent in IADLs."
+      "Correct."
     ],
     "then": {
       "q": "How is this diagnosis coded?",
@@ -206,17 +206,17 @@ SP.add("ch17", "vignettes", [
     "stem": "A 55-year-old engineer is referred to psychiatry for “late-onset bipolar disorder.” Over 2 years he has made crude remarks to colleagues, bought three cars on impulse, eaten whole cakes at a sitting, and walks the same route around the block several times daily. He seems unmoved by his wife’s tears. He remembers recent events in detail and finds his way easily. He has never had a period of decreased need for sleep or racing thoughts. MRI shows bilateral medial frontal and anterior temporal atrophy. His wife now manages their money.",
     "q": "What is the most likely diagnosis?",
     "choices": [
-      "Major frontotemporal NCD, behavioral variant, probable",
       "Bipolar I disorder, current episode manic",
+      "Major frontotemporal NCD, behavioral variant, probable",
       "Major NCD due to Alzheimer’s disease",
       "Major frontotemporal NCD, behavioral variant, possible",
       "Obsessive-compulsive personality disorder"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": "Disinhibition, loss of empathy, **hyperorality** and stereotyped behavior (four of five), with **spared memory and navigation**, insidious progression and loss of IADL independence. **Imaging** showing frontal and anterior temporal involvement makes it **probable**: G31.09 + F02.A18.",
     "whyNot": [
-      "Correct.",
       "No mood episode, and the decline is progressive.",
+      "Correct.",
       "Memory and perceptual-motor function are spared.",
       "Neuroimaging was done and is supportive, so it is probable.",
       "Personality disorders begin early and are not acquired declines."
@@ -243,12 +243,12 @@ SP.add("ch17", "vignettes", [
     "whyNot": [
       "Parkinsonism came after the cognitive decline, not at least a year before.",
       "Two or more core features make it probable.",
-      "Early attention, executive and visuoperceptual deficits with these features fit Lewy body disease.",
+      "Early attention and executive deficits with these features fit Lewy body disease.",
       "The course is 18 months of gradual decline; fluctuation is a core Lewy body feature.",
       "Correct."
     ],
     "then": {
-      "q": "He becomes very agitated one evening. Which drug choice carries the greatest risk in this disorder?",
+      "q": "He becomes very agitated one evening. Outside the DSM, which drug choice carries the greatest risk in this disorder?",
       "choices": [
         "Haloperidol",
         "Rivastigmine",
@@ -257,7 +257,7 @@ SP.add("ch17", "vignettes", [
         "Reorientation and family presence"
       ],
       "answer": 0,
-      "why": "Up to **50%** have **severe neuroleptic sensitivity**; typical antipsychotics such as **haloperidol** can cause rigidity, sedation, falls and death. Cholinesterase inhibitors are used in Lewy body disease."
+      "why": "Up to **50%** have **severe neuroleptic sensitivity**, and these drugs should be used with extreme caution (DSM). Reported reactions to typical antipsychotics such as **haloperidol** include sedation, worsened parkinsonism and NMS-like states; cholinesterase inhibitors are used for cognition and hallucinations (outside the DSM; https://www.psychdb.com/_export/xhtml/geri/dementia/lewy-body)."
     }
   },
   {
@@ -266,18 +266,18 @@ SP.add("ch17", "vignettes", [
     "stem": "A 70-year-old woman was diagnosed with Parkinson’s disease 7 years ago, with a good levodopa response. Over the past 2 years she has become slow in thinking, struggles to plan meals, and now needs her son to manage her medications and bills. She has occasional visual hallucinations of a cat. There is no history of stroke and MRI shows no vascular lesions.",
     "q": "What is the most appropriate diagnosis and code?",
     "choices": [
-      "Major NCD with probable Lewy bodies: G31.83, F02.A2",
-      "Major NCD possibly due to Parkinson’s disease: F03.A2",
       "Major NCD probably due to Parkinson’s disease: G20.C, F02.A2",
+      "Major NCD possibly due to Parkinson’s disease: F03.A2",
+      "Major NCD with probable Lewy bodies: G31.83, F02.A2",
       "Major NCD probably due to Parkinson’s disease: G20, F02.81",
-      "Psychotic disorder due to Parkinson’s disease only"
+      "Psychotic disorder due to Parkinson’s disease only, no NCD diagnosis"
     ],
-    "answer": 2,
+    "answer": 0,
     "why": "Parkinson’s disease preceded the NCD by **more than 1 year**, and there is **no mixed etiology**: **probably due to Parkinson’s disease**. Parkinson’s disease is **G20.C** since 2023; mild severity (IADLs) with psychotic disturbance = **F02.A2**.",
     "whyNot": [
-      "Both expert systems agree on NCD due to PD when PD came at least 1 year first.",
-      "Both conditions for probable are met.",
       "Correct.",
+      "Both conditions for probable are met.",
+      "Both expert systems agree NCD due to PD would typically be diagnosed when PD came at least 1 year first.",
       "G20 and F02.81 are outdated codes.",
       "There is a major NCD; hallucinations can be added as F06.0 if a separate focus."
     ]
@@ -288,7 +288,7 @@ SP.add("ch17", "vignettes", [
     "stem": "A 74-year-old man with hypertension and atrial fibrillation had a left thalamic stroke 8 months ago. Since the stroke, his family notes he is slow, apathetic and unable to organize his day; there was no decline before it. He now needs help with medications and appointments but manages self-care. Cognition has been stable since the first month. MRI confirms the thalamic infarct.",
     "q": "What is the diagnosis and code?",
     "choices": [
-      "Major vascular NCD, possible: F03.A3",
+      "Major vascular NCD, possible, mild, with apathy: F03.A3",
       "Major vascular NCD, probable, mild, with apathy: F01.A3",
       "Major NCD due to Alzheimer’s disease: G30.9, F02.A3",
       "Major vascular NCD, probable: I67.9, F01.A3",
@@ -313,17 +313,17 @@ SP.add("ch17", "vignettes", [
       "Diagnose major vascular NCD because of the lacunes",
       "Diagnose major NCD due to unknown etiology",
       "Diagnose depressive disorder due to cerebrovascular disease",
-      "Diagnose major depressive disorder; treat it and reassess cognition",
+      "Diagnose MDD; treat it and reassess cognition",
       "Diagnose prolonged grief disorder only"
     ],
     "answer": 3,
-    "why": "When MDD is present and the cognitive problems began **with** the depression, **do not** diagnose vascular NCD. Treat the depression and re-test; variable, effort-dependent performance favors depression.",
+    "why": "When MDD is present and the cognitive problems began **with** the depression, **do not** diagnose vascular NCD. Treat the depression and re-test; variable performance favors depression.",
     "whyNot": [
       "Old lacunes do not establish that vascular disease caused this decline.",
       "An MDD explains the picture better for now.",
       "That is chosen when the NCD **preceded** the depression or cognition is out of proportion to it.",
       "Correct.",
-      "Prolonged grief needs at least 12 months after the death, and she meets MDD criteria."
+      "Prolonged grief needs at least 12 months after the death (Ch 7), and she meets MDD criteria."
     ]
   },
   {
@@ -332,18 +332,18 @@ SP.add("ch17", "vignettes", [
     "stem": "A 34-year-old construction worker fell 4 meters and was unconscious for about 3 hours. He remembers nothing of the following 5 days. CT showed bifrontal contusions, and his Glasgow Coma Scale at 30 minutes was 10. Ten months later he is slow, distractible and cannot plan a sequence of tasks; he has explosive temper outbursts. His wife manages their finances and his appointments; he cares for himself.",
     "q": "What is the diagnosis and code?",
     "choices": [
-      "Major NCD due to TBI, mild, with agitation: S06.2XAS, F02.A11",
-      "Mild NCD due to TBI: S06.2XAS, F06.71",
       "Major NCD due to TBI: S06.2X9S, F02.81",
+      "Mild NCD due to TBI, with agitation: S06.2XAS, F06.71",
+      "Major NCD due to TBI, mild, with agitation: S06.2XAS, F02.A11",
       "Personality change due to TBI only",
-      "Major NCD due to TBI, severe: S06.2XAS, F02.C11"
+      "Major NCD due to TBI, severe, with agitation: S06.2XAS, F02.C11"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": "A **moderate** TBI (LOC >30 min to <24 h, PTA >1 to <7 days, GCS 9–12) with deficits from the time of injury that **persist**. He needs help with **IADLs** (major, **mild** severity); temper outbursts = **agitation (11)**. Rate the severity of the **NCD**, not the injury.",
     "whyNot": [
-      "Correct.",
-      "He has lost independence for IADLs, so it is major.",
       "Both codes are outdated.",
+      "He has lost independence for IADLs, so it is major.",
+      "Correct.",
       "The cognitive decline is the main problem; personality change may be added (F07.0) if it is a focus.",
       "He manages self-care; severity is mild."
     ],
@@ -363,49 +363,49 @@ SP.add("ch17", "vignettes", [
   {
     "id": "v17-14",
     "tag": "Mild TBI",
-    "stem": "A 26-year-old woman was briefly unconscious (under a minute) after a car crash 7 months ago; CT was normal and she was confused for a few hours. She still reports poor concentration and forgetfulness at work. Since the crash she has had nightmares about it, avoids driving, startles easily and sleeps about 4 hours a night. Testing shows mild attention deficits with valid effort.",
+    "stem": "A 26-year-old woman was briefly unconscious (under a minute) after a car crash 7 months ago; CT was normal and she was confused for a few hours. She still reports poor concentration and forgetfulness at work. Since the crash she has had nightmares about it, avoids driving, blames herself for the crash, feels cut off from her friends, startles easily and sleeps about 4 hours a night. Testing shows mild attention deficits with valid effort.",
     "q": "What is the most appropriate approach?",
     "choices": [
-      "Diagnose mild NCD due to TBI now",
-      "Diagnose major NCD due to TBI",
+      "Treat PTSD and sleep loss, then reassess cognition",
+      "Diagnose major NCD due to TBI because of work problems",
       "Diagnose complicated mild TBI and NCD",
-      "Diagnose malingering",
-      "Diagnose and treat PTSD and the sleep disturbance, then reassess cognition"
+      "Diagnose malingering, as the complaints exceed the injury",
+      "Diagnose mild NCD due to TBI now, given 7 months of symptoms"
     ],
-    "answer": 4,
+    "answer": 0,
     "why": "Cognitive problems after **mild** TBI usually resolve by **3–12 months**. Persistent symptoms should prompt treatment of other causes such as **PTSD** and **sleep disturbance**; diagnose NCD due to TBI only if deficits persist after.",
     "whyNot": [
-      "Premature while untreated PTSD and severe sleep loss can explain the deficits.",
+      "Correct.",
       "She is independent.",
       "CT was normal, so this is uncomplicated mild TBI.",
       "Effort is valid and there is no evidence of feigning.",
-      "Correct."
+      "Premature while untreated PTSD and severe sleep loss can explain the deficits."
     ]
   },
   {
     "id": "v17-15",
     "tag": "Korsakoff",
-    "stem": "A 58-year-old man with 25 years of heavy daily drinking and poor nutrition was treated for Wernicke’s encephalopathy 3 months ago and has been abstinent since. He still cannot learn new information: he forgets the ward staff within minutes and gives detailed, false accounts of having been at work that morning. Attention, language and visuospatial skills are relatively intact. He met criteria for severe alcohol use disorder before admission.",
+    "stem": "A 58-year-old man with 25 years of heavy daily drinking and poor nutrition was treated for Wernicke’s encephalopathy 3 months ago and has been abstinent since. He still cannot learn new information: he forgets the ward staff within minutes and gives detailed, false accounts of having been at work that morning. He needs staff to manage his medications and appointments. Attention, language and visuospatial skills are relatively intact. He met criteria for severe alcohol use disorder before admission.",
     "q": "What is the diagnosis and code?",
     "choices": [
       "F10.27 severe alcohol use disorder with alcohol-induced major NCD, nonamnestic-confabulatory type",
       "F10.231 alcohol withdrawal delirium",
-      "F10.26 severe alcohol use disorder with alcohol-induced major NCD, amnestic-confabulatory type, persistent",
+      "F10.288 alcohol-induced mild NCD",
       "Dissociative amnesia",
-      "F10.288 alcohol-induced mild NCD"
+      "F10.26 severe AUD with alcohol-induced major NCD, amnestic-confabulatory type, persistent"
     ],
-    "answer": 2,
+    "answer": 4,
     "why": "Recent memory loss **out of proportion** to other deficits, rapid forgetting and **confabulation** after Wernicke’s encephalopathy: the **amnestic-confabulatory (Korsakoff)** type. Severe use disorder → **F10.26**; still significant after months of abstinence → **persistent**.",
     "whyNot": [
       "That type has broader deficits without the disproportionate amnesia.",
       "He has been abstinent 3 months with clear attention.",
-      "Correct.",
+      "He cannot function independently with this amnesia; it is major.",
       "There is a clear substance and nutritional cause; he cannot learn new information.",
-      "He cannot function independently with this amnesia; it is major."
+      "Correct."
     ],
     "discuss": [
       "Why does confabulation not count as lying?",
-      "What should every heavy drinker receive on admission, and why before glucose?"
+      "What should every heavy drinker receive on admission, and why?"
     ]
   },
   {
@@ -433,7 +433,7 @@ SP.add("ch17", "vignettes", [
   {
     "id": "v17-17",
     "tag": "HIV",
-    "stem": "A 51-year-old man has had HIV for 20 years, with an undetectable viral load on antiretroviral therapy. Over 18 months he has become slow, misses doses, struggles to follow conversations at work and was moved to a simpler role. Naming and recognition memory are intact; free recall and processing speed are impaired on testing. MRI shows patchy white matter hyperintensities; CSF is negative for cryptococcus and JC virus.",
+    "stem": "A 51-year-old man has had HIV for 20 years, with an undetectable viral load on antiretroviral therapy. Over 18 months he has become slow, now needs a pill organizer and alarms so he does not miss doses, struggles to follow conversations at work and was moved to a simpler role. Naming and recognition memory are intact; free recall and processing speed are impaired on testing. MRI shows patchy white matter hyperintensities; CSF is negative for cryptococcus and JC virus.",
     "q": "What is the most likely diagnosis and code?",
     "choices": [
       "Major NCD due to HIV infection: B20, F02.A0",
@@ -455,8 +455,8 @@ SP.add("ch17", "vignettes", [
       "q": "Two years later he develops headache, fever and new confusion over 3 days. What is the best next step?",
       "choices": [
         "Record progression of HIV NCD",
-        "Start donepezil",
-        "Urgently investigate for opportunistic infection, lymphoma or delirium",
+        "Start donepezil for the new confusion",
+        "Urgent work-up for non-HIV causes",
         "Change the diagnosis to major NCD",
         "Arrange neuropsychological testing next month"
       ],
@@ -494,18 +494,18 @@ SP.add("ch17", "vignettes", [
     "choices": [
       "Major depressive disorder only",
       "Unspecified NCD",
-      "Major NCD due to Huntington’s disease",
+      "Mild NCD due to Huntington’s disease",
       "Major vascular NCD",
-      "Mild NCD due to Huntington’s disease"
+      "Major NCD due to Huntington’s disease"
     ],
-    "answer": 4,
+    "answer": 2,
     "why": "Criterion C accepts **risk** of Huntington’s disease from **family history** or genetic testing; motor signs are not required for the NCD. Executive-led decline with preserved independence = **mild NCD**: **G10 + F06.71** (with behavioral disturbance).",
     "whyNot": [
       "Depression may coexist, but the progressive executive decline with family risk points to Huntington’s disease.",
       "Criteria for a specific etiology are met.",
-      "She remains independent.",
+      "Correct.",
       "No vascular history; family history points elsewhere.",
-      "Correct."
+      "She remains independent."
     ],
     "discuss": [
       "What must be discussed before predictive genetic testing?",
@@ -519,19 +519,19 @@ SP.add("ch17", "vignettes", [
     "q": "What is the best diagnosis?",
     "choices": [
       "Major NCD due to Alzheimer’s disease",
-      "Major vascular NCD",
-      "Major NCD due to another medical condition (normal-pressure hydrocephalus)",
+      "Major vascular NCD (small vessel disease)",
+      "Major NCD due to unknown etiology, pending more tests",
       "Major NCD due to Parkinson’s disease",
-      "Major NCD due to unknown etiology"
+      "Major NCD due to normal-pressure hydrocephalus"
     ],
-    "answer": 2,
+    "answer": 4,
     "why": "Gait disturbance, incontinence and cognitive slowing with ventriculomegaly and a response to CSF drainage: **normal-pressure hydrocephalus**, named among the structural causes of **NCD due to another medical condition**. Code the hydrocephalus first, then F02.A0.",
     "whyNot": [
       "Gait and continence problems early, with ventriculomegaly, point elsewhere.",
       "No strokes or vascular lesions are described.",
-      "Correct.",
+      "The cause has been identified.",
       "There is no established Parkinson’s disease.",
-      "The cause has been identified."
+      "Correct."
     ]
   },
   {
@@ -540,17 +540,17 @@ SP.add("ch17", "vignettes", [
     "stem": "An 83-year-old woman with 6 years of steadily progressive memory loss (probable Alzheimer’s disease) had a right parietal stroke a year ago, after which she declined further, with left neglect and new difficulty dressing. She now needs help bathing and dressing and shouts at carers during personal care. She feeds herself.",
     "q": "Which codes are correct?",
     "choices": [
-      "G30.9, F02.B11",
       "G30.9, F02.B11, F01.B11",
+      "G30.9, F02.B11",
       "G30.9, I67.9, F02.B11",
       "F01.B11 only",
       "F03.B11"
     ],
-    "answer": 1,
-    "why": "Two contributing processes: **NCD due to multiple etiologies**. Code the medical etiologies **except vascular** (G30.9), **F02.xx once**, then **F01.xx** for the vascular contribution. Moderate (basic ADLs) with agitation = **B11**. The 2024 revision makes explicit that Alzheimer’s disease can be one of the etiologies.",
+    "answer": 0,
+    "why": "Two contributing processes: **NCD due to multiple etiologies**. Code the medical etiologies **except vascular** (G30.9), **F02.xx once**, then **F01.xx** for the vascular contribution. Moderate (basic ADLs) with agitation = **B11**. The manual’s own example (p. 731) is Alzheimer’s disease followed by vascular NCD.",
     "whyNot": [
-      "Leaves out the vascular contribution.",
       "Correct.",
+      "Leaves out the vascular contribution.",
       "Vascular disease is not coded with a medical code in major NCD.",
       "Leaves out Alzheimer’s disease.",
       "The etiologies are known, not possible or unknown."
@@ -563,40 +563,40 @@ SP.add("ch17", "vignettes", [
     "q": "How should the etiology and code be recorded?",
     "choices": [
       "Probable Alzheimer’s disease: G30.9, F02.A0",
-      "Vascular NCD: F01.A0",
-      "Possible Alzheimer’s disease: G30.9, F03.A0",
       "Possible Alzheimer’s disease: F03.A0",
+      "Possible Alzheimer’s disease: G30.9, F03.A0",
+      "Vascular NCD: F01.A0",
       "Unspecified NCD: R41.9"
     ],
-    "answer": 3,
+    "answer": 1,
     "why": "Without a mutation, probable Alzheimer’s disease in major NCD needs **steady** progression **without extended plateaus**. A 2-year plateau makes it **possible**: **F03.A0**, with **no** G30.9.",
     "whyNot": [
       "The extended plateau rules out probable.",
-      "No cerebrovascular evidence.",
-      "G30.9 is used only with probable etiology.",
       "Correct.",
+      "G30.9 is used only with probable etiology.",
+      "No cerebrovascular evidence.",
       "Full major NCD criteria are met with a likely etiology."
     ]
   },
   {
     "id": "v17-23",
     "tag": "Depression vs NCD",
-    "stem": "A 71-year-old woman says her memory has “gone completely” over 2 months. She dates the start to her retirement, has lost interest in her garden, wakes at 4 a.m. and feels worthless. On testing she often says “I can’t” and gives up quickly; recall improves markedly with cues. She still manages her finances. Thyroid function, B12 and CT are normal.",
+    "stem": "A 71-year-old woman says her memory has “gone completely” over 2 months. She dates the start to her retirement, feels low most of the day, has lost interest in her garden, wakes at 4 a.m. and feels worthless. On testing she often says “I can’t” and gives up quickly; recall improves markedly with cues. She still manages her finances. Thyroid function, B12 and CT are normal.",
     "q": "What is the most likely diagnosis?",
     "choices": [
-      "Major depressive disorder",
+      "Delirium",
       "Mild NCD due to possible Alzheimer’s disease",
       "Major NCD due to unknown etiology",
-      "Delirium",
+      "Major depressive disorder",
       "Unspecified NCD"
     ],
-    "answer": 0,
-    "why": "Subacute, dated onset with **depressive symptoms first**, effort-dependent and **variable** performance, and recall that **improves with cues** favor **MDD**. Treat and re-test; persistent deficits would raise an NCD.",
+    "answer": 3,
+    "why": "Subacute, dated onset with **depressive symptoms first**, effort-dependent and **variable** performance, favor **MDD**; recall that improves with cues also fits depression (app guidance). Treat and re-test; persistent deficits would raise an NCD.",
     "whyNot": [
-      "Correct.",
-      "Alzheimer’s disease gives consistent deficits that do not improve with cues.",
-      "Criterion D: another mental disorder better explains the deficits.",
       "Attention and awareness are not acutely disturbed.",
+      "Alzheimer’s disease gives consistent memory and executive deficits.",
+      "Criterion D: another mental disorder better explains the deficits.",
+      "Correct.",
       "Depression explains the picture."
     ]
   },
@@ -613,10 +613,10 @@ SP.add("ch17", "vignettes", [
       "Major NCD due to unknown etiology (F03.A0)"
     ],
     "answer": 4,
-    "why": "Full **major NCD** criteria are met and a medical cause is **presumed** but **cannot be established**: the 2022 diagnosis **NCD due to unknown etiology**, **F03.A0** (needs help with IADLs; no disturbance).",
+    "why": "Full **major NCD** criteria are met and a medical cause is **presumed** but **cannot be established**: **NCD due to unknown etiology**, **F03.A0** (needs help with IADLs; no disturbance). This diagnosis was added in the **September 2022** code update; the printed manual would use unspecified NCD **R41.9** here.",
     "whyNot": [
       "Negative amyloid PET and an irregular course argue against probable Alzheimer’s disease.",
-      "Unspecified NCD is for presentations that do not meet full criteria or are too uncertain.",
+      "Under current codes, unspecified NCD is for presentations that do not meet full criteria; the March 2022 printing used R41.9 for this case.",
       "He needs help with IADLs: major NCD.",
       "Imaging changes alone are not judged sufficient here, and there are no events.",
       "Correct."

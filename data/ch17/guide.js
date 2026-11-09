@@ -2,10 +2,10 @@
    Written in the app’s own words from the manual, with page references. Criteria are paraphrased: confirm exact
    wording, specifiers and codes against the manual. Codes follow the ICD-10-CM changes adopted by the APA in
    September 2022 (effective October 1, 2022) and later updates (G20.C in 2023, the Alzheimer’s criteria revision
-   in 2024, G35.D in 2025), checked through FY2027 (October 1, 2026): no further changes for this chapter.
+   in 2024, G35.D in 2025), checked through FY2027 (October 1, 2026): no change was found for the codes checked; confirm against the official tabular list.
    Treatment notes are outside the DSM and labeled as such. */
 SP.add("ch17", "guide", {
-  intro: "The neurocognitive disorders (NCDs) are the only DSM chapter in which the **primary deficit is cognitive** and **acquired**: the person has **declined from a level once reached**, so a lifelong limitation is not an NCD (p. 667). The chapter opens with **delirium**, an acute disturbance of **attention and awareness** that fluctuates over hours to days. It then defines two syndromes on one continuum: **major NCD** (roughly what used to be called dementia), where cognitive loss **takes away independence**, and **mild NCD** (roughly mild cognitive impairment), where independence is kept with **extra effort**. Each syndrome is then tied to its **cause**: Alzheimer’s disease, frontotemporal degeneration, Lewy body disease, vascular disease, traumatic brain injury, a substance or medication, HIV infection, prion disease, Parkinson’s disease, Huntington’s disease, another medical condition, multiple etiologies, or an unknown etiology. Unlike most of the manual, the **underlying pathology can often be identified**, and the criteria were harmonized with each disease’s expert consensus criteria. Coding changed substantially in **October 2022**, so the codes in this guide are the **current** ones, with the 2022 printing noted where it differs. Two helpers walk you through the reasoning: [[helper:delirium|the delirium helper]] and [[helper:neurocognitive|the neurocognitive helper]].",
+  intro: "The neurocognitive disorders (NCDs) are the only DSM chapter in which the **primary deficit is cognitive** and **acquired**: the person has **declined from a level once reached**, so a lifelong limitation is not an NCD (p. 667). The chapter opens with **delirium**, an acute disturbance of **attention and awareness** that fluctuates over hours to days. It then defines two syndromes on one continuum: **major NCD** (roughly what used to be called dementia), where cognitive loss **takes away independence**, and **mild NCD** (roughly mild cognitive impairment), where independence is kept with **extra effort**. Each syndrome is then tied to its **cause**: Alzheimer’s disease, frontotemporal degeneration, Lewy body disease, vascular disease, traumatic brain injury, a substance or medication, HIV infection, prion disease, Parkinson’s disease, Huntington’s disease, another medical condition, multiple etiologies, or an unknown etiology. Unlike most of the manual, the **underlying pathology can potentially be identified**, and the criteria were harmonized with each disease’s expert consensus criteria. Coding changed substantially in **October 2022**, so the codes in this guide are the **current** ones, with the 2022 printing noted where it differs. Two helpers walk you through the reasoning: [[helper:delirium|the delirium helper]] and [[helper:neurocognitive|the neurocognitive helper]].",
   objectives: [
     "Name the **six cognitive domains** and give an everyday example of a mild and a major deficit in each.",
     "State the five criteria for **delirium**, its **acute/persistent** and **hyperactive/hypoactive/mixed** specifiers, and its **etiological subtypes** with their codes.",
@@ -70,7 +70,7 @@ SP.add("ch17", "guide", {
               ["**Social cognition** (recognizing emotions, theory of mind)", "Subtle **personality change**: misses social cues, less empathy, mild disinhibition or apathy", "Behavior clearly outside social norms; ignores safety and others; **little insight**", "Name the emotion in faces; story cards about what a character believes or feels"]
             ] },
             { type: "callout", kind: "pearl", title: "What stays intact", text: "Except in **severe** major NCD, **semantic**, **autobiographical** and **implicit (procedural)** memory are relatively preserved compared with **recent memory** (p. 670). A person who cannot recall breakfast can often still tell the story of their wedding and ride a bicycle." },
-            { type: "callout", kind: "exam", title: "Free recall versus recognition", text: "Poor **free recall** that improves with **cues or recognition** points to a **retrieval** problem (subcortical pattern: vascular, Parkinson’s, HIV, depression). Poor recall that **does not** improve with cues points to an **encoding/storage** problem, the typical **amnestic** pattern of Alzheimer’s disease. The manual lists the three recall formats under learning and memory (p. 670); the interpretation is standard neuropsychology." }
+            { type: "callout", kind: "exam", title: "Free recall versus recognition", text: "Poor **free recall** that improves with **cues or recognition** points to a **retrieval** problem (subcortical pattern: vascular, Parkinson’s, HIV, depression). Poor recall that **does not** improve with cues points to an **encoding/storage** problem, the typical **amnestic** pattern of Alzheimer’s disease. The manual lists the three recall formats under learning and memory (p. 670); the interpretation is standard neuropsychology. (app guidance)" }
           ]
         },
         {
@@ -99,7 +99,7 @@ SP.add("ch17", "guide", {
               ["Another medical condition", "The condition (e.g., **G35.D** multiple sclerosis)", "F02.xx"],
               ["Multiple etiologies", "All causes except vascular", "F02.xx **once**, plus F01.xx if vascular, plus any substance-induced code"],
               ["Unknown etiology", "None", "F03.xx"],
-              ["Substance/medication-induced", "None", "Substance code (e.g., **F10.27**), unchanged"],
+              ["Substance/medication-induced", "None", "Substance code (e.g., **F10.27**); no change found for the codes checked"],
               ["Unspecified NCD", "None", "**R41.9**"]
             ] },
             { type: "table", caption: "Worked examples of the 4th–6th characters", head: ["Presentation", "Codes"], rows: [
@@ -126,10 +126,10 @@ SP.add("ch17", "guide", {
               ["Substance/medication-induced", "F1x.188 / .288 / .988 by substance and use disorder"],
               ["Unspecified NCD", "**R41.9**"]
             ] },
-            { type: "callout", kind: "exam", title: "The coding traps", text: "1) **Probable** gets the disease code plus F02; **possible** gets **F03** and no disease code. 2) **Vascular** disease never gets a medical code for major NCD (**F01** carries it); for mild NCD it gets **I67.9**. 3) Severity **is coded** for major NCD now (4th character); it could not be coded in the 2022 printing. 4) For mild NCD only **with or without** behavioral disturbance is coded (F06.71 vs F06.70), and nothing at all for **G31.84**. 5) **F02.81** no longer exists: at unspecified severity, agitation is **F02.811**, other disturbance **F02.818**, psychotic **F02.82**, mood **F02.83**, anxiety **F02.84**." },
+            { type: "callout", kind: "exam", title: "The coding traps", text: "1) **Probable** gets the disease code plus F02; **possible** gets **F03** and no disease code. 2) **Vascular** disease never gets a medical code for major NCD (**F01** carries it); for mild NCD it gets **I67.9**. 3) Severity **is coded** for major NCD now (4th character); it could not be coded in the 2022 printing. 4) For mild NCD only **with or without** behavioral disturbance is coded (F06.71 vs F06.70), and nothing at all for **G31.84**. 5) **F02.81** no longer exists: at unspecified severity, agitation is **F02.811**, other disturbance **F02.818**, psychotic **F02.82**, mood **F02.83**, anxiety **F02.84**. (app guidance)" },
             { type: "update", kind: "post", year: "2022", title: "ICD-10-CM restructuring of the NCD codes", source: "APA, DSM-5-TR Neurocognitive Disorders Supplement and DSM-5-TR Update, September 2022; ICD-10-CM FY2023", text: "Effective **October 1, 2022**: severity and disturbance codes for **F01, F02 and F03**; **F06.70 / F06.71** for mild NCD due to a known physiological condition; **G31.84** kept for possible or unknown etiology; **possible** etiologies moved to **F03**; a new **major or mild NCD due to unknown etiology**; the TBI sequela code changed from **S06.2X9S** to **S06.2XAS**; hepatic encephalopathy in the delirium examples changed from **K72.90** to **K76.82**; and other specified and unspecified delirium changed from **R41.0** to **F05**." },
             { type: "update", kind: "post", year: "2023–2025", title: "Later code changes", source: "APA DSM-5-TR Updates, September 2023 and September 2025", text: "**Parkinson’s disease**: **G20** became **G20.C** (parkinsonism, unspecified) on October 1, 2023. **Multiple sclerosis**: **G35** became **G35.D** (multiple sclerosis, unspecified) on October 1, 2025; the three-character G35 is no longer valid." },
-            { type: "update", kind: "post", year: "2026", title: "No further changes in FY2027", source: "ICD-10-CM FY2027 code tables (effective October 1, 2026)", text: "The October 2026 update added no codes in F01–F09, G10, G20, G30, G31, G35, A81, B20, I67, R41 or S06 that affect this chapter. Check the code set in force on the date of service." }
+            { type: "update", kind: "post", year: "2026", title: "FY2027: no change found", source: "APA DSM-5-TR code updates; ICD-10-CM FY2027 Tabular List (partial)", text: "No change was found for the codes checked (APA update lists through September 2025, with no 2026 APA update; partial read of the FY2027 Tabular List). Confirm against the official tabular list in force on the date of service." }
           ]
         }
       ]
@@ -147,12 +147,12 @@ SP.add("ch17", "guide", {
               ["B", "It develops over a **short period** (usually **hours to a few days**), is a **change from baseline**, and tends to **fluctuate** during the day."],
               ["C", "An **additional cognitive disturbance**: memory, **disorientation**, language, visuospatial ability or **perception**."],
               ["D", "A and C are **not better explained** by a preexisting, established or evolving NCD, and do **not** occur in a severely reduced level of arousal such as **coma**."],
-              ["E", "History, examination or laboratory findings show it is a **direct physiological consequence** of another medical condition, substance intoxication or withdrawal, a medication, a **toxin**, or **multiple etiologies**."]
+              ["E", "History, examination or laboratory findings show it is **directly caused** by another medical condition, by intoxication with or withdrawal from a substance, by a medication or a **toxin**, or by **multiple etiologies**."]
             ], specifiers: [
-              ["Acute", "Lasting **a few hours or days**."],
-              ["Persistent", "Lasting **weeks or months**."],
-              ["Hyperactive", "Increased psychomotor activity, often with mood lability, agitation or refusal of care."],
-              ["Hypoactive", "Decreased psychomotor activity, with sluggishness and lethargy approaching stupor."],
+              ["Acute", "**Hours to days**."],
+              ["Persistent", "**Weeks to months**."],
+              ["Hyperactive", "Increased psychomotor activity, which may come with mood lability, agitation or refusal of care."],
+              ["Hypoactive", "Decreased psychomotor activity, which may come with sluggishness and lethargy approaching stupor."],
               ["Mixed level of activity", "Normal activity despite disturbed attention and awareness, **or** rapidly fluctuating activity."]
             ], note: "Specify the etiological subtype: substance intoxication, substance withdrawal, medication-induced, due to another medical condition, or due to multiple etiologies (next section)." },
             { type: "callout", kind: "key", title: "Attention and awareness are the core", text: "Delirium is an **acute impairment of consciousness**: attention wanders, questions must be repeated, the person perseverates on an earlier answer, and is easily distracted (p. 675). Disorientation and memory loss are **Criterion C** add-ons; without the **attention and awareness** disturbance of Criterion A it is not delirium." },
@@ -162,8 +162,8 @@ SP.add("ch17", "guide", {
               ["Delirium", "Aroused cortex, **impaired** attention and awareness", "case"],
               ["Stupor", "Reduced arousal; minimal response; **not testable**", "dx"],
               ["Coma", "No cognition, no sleep-wake cycle, no meaningful response", "dx"]
-            ], note: "Delirium needs enough arousal to respond to **verbal stimulation**. A person who barely responds has a **disorder of arousal**, not delirium, though delirium often appears on **emergence** from coma or stupor." },
-            { type: "case", title: "Clinical vignette: the quiet patient", text: "An 82-year-old woman is admitted with pneumonia. On day 2 the nurse notes she is “no trouble”: she sleeps much of the day, answers slowly and drifts off mid-sentence. She cannot keep track of the months backward, thinks she is at home, and is drowsier still in the evening. Her daughter says she was managing her own finances last week.", point: "**Hypoactive delirium** due to another medical condition (pneumonia), acute: inattention and reduced awareness that developed over a day, fluctuate, and represent a clear change from baseline. Hypoactive delirium is **more common in older adults** and is often **missed** (p. 675)." }
+            ], note: "Delirium needs enough arousal to respond to **verbal stimulation**. A person who barely responds has a **disorder of arousal**, not delirium, though delirium can follow **emergence** from coma or stupor." },
+            { type: "case", title: "Clinical vignette: the quiet patient", text: "An 82-year-old woman is admitted with pneumonia. On day 2 the nurse notes she is “no trouble”: she sleeps much of the day, answers slowly and drifts off mid-sentence. She cannot keep track of the months backward, thinks she is at home, and is drowsier still in the evening. Her daughter says she was managing her own finances last week.", point: "**Hypoactive delirium** due to another medical condition (pneumonia), acute: inattention and reduced awareness that developed over a day, fluctuate, and represent a clear change from baseline. Hypoactive delirium **may be more frequent in older adults** and is often **missed** (p. 675)." }
           ]
         },
         {
@@ -200,8 +200,8 @@ SP.add("ch17", "guide", {
               ["4. Activity", "Hyperactive, hypoactive or mixed."],
               ["Example", "**F10.231** severe alcohol use disorder with alcohol withdrawal delirium, acute, hyperactive. **F19.921** dexamethasone-induced delirium, acute, hyperactive."]
             ] },
-            { type: "callout", kind: "pearl", title: "Activity level and course", text: "In hospital, delirium usually lasts **about 1 week**, but some symptoms persist after discharge. People can **switch rapidly** between hyperactive and hypoactive states. The **hyperactive** form is more often recognized and is linked to **medication side effects and drug withdrawal**; the **hypoactive** form is more frequent in **older adults** and is **often unrecognized** (p. 675)." },
-            { type: "update", kind: "post", year: "2022", title: "Hepatic encephalopathy code", source: "APA DSM-5-TR Update, September 2022", text: "The manual’s coding examples use **K72.90**; since October 1, 2022, hepatic encephalopathy is **K76.82**. The F05 code itself is unchanged." }
+            { type: "callout", kind: "pearl", title: "Activity level and course", text: "In hospital, delirium usually lasts **about 1 week**, but some symptoms persist after discharge. People can **switch rapidly** between hyperactive and hypoactive states. The **hyperactive** form may be more common or more often recognized and is often linked to **medication side effects and drug withdrawal**; the **hypoactive** form may be more frequent in **older adults** and is **often unrecognized** (p. 675)." },
+            { type: "update", kind: "post", year: "2022", title: "Hepatic encephalopathy code", source: "APA DSM-5-TR Update, September 2022", text: "The manual’s coding examples use **K72.90**; since October 1, 2022, hepatic encephalopathy is **K76.82**. No change was found for the F05 code itself; confirm against the official tabular list." }
           ]
         },
         {
@@ -230,7 +230,7 @@ SP.add("ch17", "guide", {
               ["EEG", "Often **generalized irregular theta slowing**; **fast activity** occasionally (e.g., some alcohol withdrawal delirium). Slowing within the alpha range is hard to see without a premorbid baseline."],
               ["Function", "More functional decline and **institutional placement**; hospitalized people **65 and older** with delirium have higher rates of death, institutionalization and dementia after discharge."]
             ] },
-            { type: "callout", kind: "exam", title: "Delirium and the EEG", text: "The manual names generalized **theta slowing**, with **fast** activity in some **alcohol withdrawal** delirium (p. 677). Clinical teaching beyond the text: fast activity also suggests sedative withdrawal or benzodiazepine effect, and a normal EEG makes delirium less likely when the picture is unclear." }
+            { type: "callout", kind: "exam", title: "Delirium and the EEG", text: "The manual names generalized **theta slowing**, with **fast** activity in some **alcohol withdrawal** delirium (p. 677). Clinical teaching beyond the text: fast activity also suggests sedative withdrawal or benzodiazepine effect, and a normal EEG makes delirium less likely when the picture is unclear. (app guidance)" }
           ]
         },
         {
@@ -241,8 +241,8 @@ SP.add("ch17", "guide", {
             { type: "list", title: "Course (p. 677)", items: [
               "Most people **recover fully**, with or without treatment, especially those who are **not elderly**.",
               "Untreated or undetected, it can progress to **stupor, coma, seizures or death**.",
-              "In older adults it is increasingly linked with **later cognitive decline or major NCD**, especially when cognition was already impaired.",
-              "**38%–41%** of people with delirium **die within 1 year** of diagnosis; risk is highest with malignancy and serious medical illness."
+              "In older adults, evidence increasingly suggests it may be linked with **later cognitive decline or major NCD**, especially when cognition was already impaired.",
+              "As many as **38%–41%** of hospitalized people with delirium **die within 1 year** of diagnosis; risk is highest with malignancy and serious medical illness."
             ] },
             { type: "list", title: "Risk factors named in the text", cols: true, items: [
               "Functional impairment",
@@ -257,7 +257,7 @@ SP.add("ch17", "guide", {
               "**Male** sex"
             ] },
             { type: "callout", kind: "caution", title: "Two surprises in the risk text", text: "**Falls** may be an **outcome** of delirium but were **not** found to be a **risk factor**. And in a meta-analysis of studies from 1990 to 2016, **anticholinergic use** was **not a validated predictor** of delirium (p. 677). Anticholinergic burden still matters clinically, but do not state it as an established DSM risk factor." },
-            { type: "callout", kind: "pearl", title: "Age and susceptibility", text: "Older adults are **especially** susceptible. Susceptibility is also high in **infancy and childhood**, with significant morbidity and mortality, and **lower** in early to mid-adulthood (p. 677). In a large US ICU case series, younger **African American** patients had **lower** delirium rates than White patients of similar age despite more risk factors." }
+            { type: "callout", kind: "pearl", title: "Age and susceptibility", text: "Older adults are **especially** susceptible. Susceptibility in **infancy and childhood** may be associated with significant morbidity and mortality, while early to mid-adulthood may bring **less** susceptibility (p. 677). In a large US ICU case series, younger **African American** patients had **lower** delirium rates than White patients of similar age despite more risk factors." }
           ]
         },
         {
@@ -266,12 +266,12 @@ SP.add("ch17", "guide", {
           pages: "677–678",
           blocks: [
             { type: "table", caption: "Differential diagnosis (pp. 677–678)", head: ["Condition", "How to tell"], rows: [
-              ["**Major NCD**", "The most common dilemma in confused older adults. Decide whether this is delirium, **delirium on top of an NCD**, or NCD alone; acute onset and fluctuating attention favor delirium. When both are present, **manage the delirium first**."],
+              ["**Major NCD**", "The most common dilemma in confused older adults. Decide whether this is delirium, **delirium on top of an NCD**, or NCD alone; acute onset and fluctuating attention favor delirium. When both are present, **generally manage the delirium first**."],
               ["Psychotic, bipolar or depressive disorders with psychotic features", "Vivid hallucinations, delusions and agitation can mimic them, but delirium has **disturbed attention and awareness**, a **medical or substance cause**, and usually **visual** rather than auditory hallucinations."],
               ["Acute stress disorder", "Fear, anxiety and dissociation follow a **traumatic event**; attention and arousal are not globally impaired."],
               ["Malingering and factitious disorder", "Atypical symptoms and **no medical condition or substance** that explains the apparent cognitive change."]
             ] },
-            { type: "compare", title: "Delirium versus major NCD", items: [
+            { type: "compare", title: "Delirium versus major NCD (classic clinical contrasts; app guidance)", items: [
               { title: "Delirium", color: "case", points: ["Onset over **hours to days**.", "**Fluctuates** within a day; worse at night.", "**Attention and awareness** impaired early.", "Usually a **reversible** cause.", "Sleep-wake cycle disrupted."] },
               { title: "Major NCD (e.g., Alzheimer’s)", color: "guide", points: ["Onset over **months to years**.", "Relatively **stable** day to day (except Lewy body disease).", "Attention **preserved** until late; memory first.", "Usually **progressive**.", "Delirium does **not exclude** NCD: it can sit on top of it."] }
             ] },
@@ -280,7 +280,7 @@ SP.add("ch17", "guide", {
               ["Unspecified delirium (F05)", "The reason is not given, or there is **not enough information**, e.g., in the **emergency room**."]
             ] },
             { type: "update", kind: "post", year: "2022, 2025", title: "Residual delirium codes and the subsyndromal example", source: "APA DSM-5-TR Updates, September 2022 and September 2025", text: "Since October 1, 2022, other specified and unspecified delirium are coded **F05** (the 2022 printing gives **R41.0**). In September 2025 the APA reworded the other specified example as **subsyndromal delirium-like disorder**, in line with the manual’s use of “-like” for a presentation that resembles a disorder but misses one requirement." },
-            { type: "callout", kind: "exam", title: "Residual delirium is still a delirium code", text: "Both residual delirium categories use **F05**, the same code as delirium due to another medical condition. The diagnosis name (with the recorded reason) is what tells them apart." }
+            { type: "callout", kind: "exam", title: "Residual delirium is still a delirium code", text: "Both residual delirium categories use **F05**, the same code as delirium due to another medical condition. The diagnosis name (with the recorded reason) is what tells them apart. (app guidance)" }
           ]
         }
       ]
@@ -348,10 +348,10 @@ SP.add("ch17", "guide", {
             { type: "defs", title: "Neuropsychiatric symptoms in Alzheimer’s disease (pp. 691–692)", items: [
               ["How common", "Nearly **universal**: in one US sample, **98%** developed them within 5 years."],
               ["Why they matter", "More disability, worse quality of life, faster decline, more caregiver burden, **earlier institutionalization**, higher mortality; often more distressing than the memory loss and the usual **reason families seek help**."],
-              ["Often first", "**More than half** of people who develop dementia begin with neuropsychiatric symptoms."],
+              ["Often first", "Evidence suggests **more than half** of people who develop dementia begin with neuropsychiatric symptoms."],
               ["By stage", "Mild NCD or mildest major NCD: **depression, irritability, apathy**. Moderately severe: **delusions, agitation, combativeness, wandering**. Late: **gait disturbance, dysphagia, incontinence, myoclonus, seizures**."]
             ] },
-            { type: "callout", kind: "pearl", title: "Psychosis of NCD looks different", text: "Psychosis in NCD has **persecutory** delusions and **visual** hallucinations, but **not** the disorganized speech and behavior of earlier-onset psychosis (p. 684). In practice the delusions are often simple (theft, infidelity, intruders) or misidentifications; that detail is clinical teaching, not DSM text. New psychosis after 60 with these features should prompt a cognitive and medical work-up rather than a schizophrenia diagnosis." }
+            { type: "callout", kind: "pearl", title: "Psychosis of NCD looks different", text: "Psychosis in NCD has **persecutory** delusions and **visual** hallucinations, but **not** the disorganized speech and behavior of earlier-onset psychosis (p. 684). Clinical teaching, not DSM text: in practice the delusions are often simple (theft, infidelity, intruders) or misidentifications, and new psychosis after 60 with these features should prompt a cognitive and medical work-up rather than a schizophrenia diagnosis." }
           ]
         },
         {
@@ -371,7 +371,7 @@ SP.add("ch17", "guide", {
               ["Age of onset", "Easiest to identify in **youth and midlife**, when families seek care (malingering or factitious disorder may be a concern); in very late life symptoms may go unnoticed, and mild NCD must be told from **normal aging**."],
               ["Childhood onset", "May also warrant **intellectual developmental disorder** or another neurodevelopmental diagnosis to capture the whole picture."]
             ] },
-            { type: "callout", kind: "caution", title: "Suicide risk is raised", text: "Large studies show **elevated suicidal behavior** across NCD etiologies (p. 689). In Denmark, people with a hospital diagnosis of dementia had a **3- to 8-fold** suicide risk; a Taiwanese study linked late-life **suicide attempts** with later dementia. The subtype sections also describe raised risk in **Huntington’s disease** and after **TBI**. Keep asking about mood and suicidal thoughts at every stage." }
+            { type: "callout", kind: "caution", title: "Suicide risk is raised", text: "Large studies show **elevated suicidal behavior** across NCD etiologies (p. 689). In Denmark, people with a hospital diagnosis of dementia had a **3- to 8-fold** suicide risk (p. 694); a Taiwanese study linked late-life **suicide attempts** with later dementia. The subtype sections also describe raised risk in **Huntington’s disease** and after **TBI**. Keep asking about mood and suicidal thoughts at every stage." }
           ]
         },
         {
@@ -389,8 +389,8 @@ SP.add("ch17", "guide", {
               { title: "Depression (“pseudodementia”)", color: "clin", points: ["Onset often dated, with mood symptoms **first**.", "Complains **a lot** of memory loss; highlights failures.", "“I don’t know” answers; **poor effort**; variable testing.", "Recall **improves with cues**.", "Improves with **treatment of depression**."] },
               { title: "Early Alzheimer’s NCD", color: "guide", points: ["Insidious onset; **memory first**.", "Often **minimizes** deficits; family is more worried.", "Tries hard; near-miss answers; **consistent** deficits.", "Recall **does not** improve with cues.", "Progresses; depression may coexist."] }
             ] },
-            { type: "callout", kind: "exam", title: "Depression and NCD often go together", text: "Late-life depression is both a **risk factor** for and a **prodrome** of NCD. If cognitive deficits **persist** after the mood recovers, keep following the person. When depressive symptoms are judged due to the NCD’s disease, diagnose **depressive disorder due to [the disease]** rather than MDD (p. 695). See [[gl:pseudodementia]]." },
-            { type: "callout", kind: "pearl", title: "Delirium often unmasks an NCD", text: "In older adults, a **hospital delirium** is often the first time an NCD is noticed, though a careful history usually reveals earlier decline (p. 689). After the delirium clears, **reassess cognition** before discharge and again weeks later." }
+            { type: "callout", kind: "exam", title: "Depression and NCD often go together", text: "Late-life depression is a **risk factor** for Alzheimer’s disease (p. 693); clinical teaching adds that it can be a **prodrome**, so if cognitive deficits **persist** after the mood recovers, keep following the person. When depressive symptoms are judged due to the NCD’s disease, diagnose **depressive disorder due to [the disease]** rather than MDD (p. 695). See [[gl:pseudodementia]]. (app guidance)" },
+            { type: "callout", kind: "pearl", title: "Delirium often unmasks an NCD", text: "In older adults, a **hospital delirium** is often the first time an NCD is noticed, though a careful history usually reveals earlier decline (p. 689). After the delirium clears, **reassess cognition** before discharge and again weeks later (app guidance)." }
           ]
         }
       ]
@@ -442,7 +442,7 @@ SP.add("ch17", "guide", {
             ] },
             { type: "defs", title: "Genetics and risk (p. 693)", items: [
               ["Autosomal dominant", "Rare mutations on chromosomes **1, 14 and 21**: **PSEN2**, **PSEN1**, **APP**."],
-              ["Down syndrome", "**Trisomy 21** (extra APP copy): Alzheimer’s disease if they survive to midlife."],
+              ["Down syndrome", "**Trisomy 21** (extra APP copy): may develop Alzheimer’s disease if they survive to midlife."],
               ["APOE ε4", "The strongest common susceptibility gene: raises risk and **lowers age at onset**, especially in **homozygotes**; it is a **risk factor**, not a diagnostic test, and its effect varies across ethnic groups."],
               ["Other genes", "e.g., a **PSEN1 Gly206Ala** mutation in some people of Puerto Rican descent; a stronger **ABCA7** association in African Americans."],
               ["Modifiable risks", "Low education; midlife **hypertension, obesity, hearing loss**; late-life **smoking, depression, physical inactivity, social isolation, diabetes**; multiple vascular risk factors; TBI (controversial)."]
@@ -454,7 +454,7 @@ SP.add("ch17", "guide", {
               ["Neuronal injury (less specific)", "**Hippocampal and temporoparietal** atrophy on MRI; **temporoparietal hypometabolism** on FDG-PET."],
               ["Blood tests", "Described as **being developed** in 2022 (see the update box)."]
             ] },
-            { type: "update", kind: "post", year: "2025", title: "Blood biomarkers reach the clinic", source: "US FDA clearances: Fujirebio Lumipulse plasma pTau217/β-amyloid 1-42 ratio (May 2025); Roche Elecsys pTau181 (October 2025)", text: "The FDA has cleared blood tests that detect Alzheimer’s pathology in adults **with cognitive symptoms**: a **pTau217 / amyloid-β42 ratio** for specialty care, and a **pTau181** test for **ruling out** Alzheimer’s pathology in primary care. They support, but do not replace, the clinical diagnosis; a positive result is usually confirmed with PET or CSF." },
+            { type: "update", kind: "post", year: "2025", title: "Blood biomarkers reach the clinic", source: "US FDA clearances: Fujirebio Lumipulse plasma pTau217/β-amyloid 1-42 ratio (May 2025); Roche Elecsys pTau181 (October 2025)", text: "The FDA has cleared blood tests that detect Alzheimer’s pathology in adults **with cognitive symptoms**: a **pTau217 / amyloid-β42 ratio** for specialty care, and a **pTau181** test for **ruling out** Alzheimer’s pathology in primary care. They support, but do not replace, the clinical diagnosis; a positive result needs further evaluation (e.g., amyloid PET or CSF)." },
             { type: "update", kind: "post", year: "2023–2026", title: "Anti-amyloid antibodies", source: "US FDA approvals of lecanemab (traditional approval July 2023; subcutaneous autoinjector 2025–2026) and donanemab (July 2024); prescribing information", text: "**Lecanemab** and **donanemab** are approved for **early symptomatic** Alzheimer’s disease (the **mild NCD** or **mild dementia** stage) with **confirmed amyloid** pathology. They modestly slow decline. The main risk is **ARIA** (amyloid-related imaging abnormalities: edema or microhemorrhage), monitored with **MRI**; risk is highest in **APOE ε4 homozygotes**, so APOE testing is advised before treatment. Availability outside the US varies." },
             { type: "update", kind: "post", year: "2024", title: "Modifiable risk: the 2024 Lancet Commission", source: "Livingston G, et al. Dementia prevention, intervention, and care: 2024 report of the Lancet standing Commission. Lancet 2024", text: "The Commission lists **14 modifiable risk factors** across life (adding **untreated vision loss** and **high LDL cholesterol** to the earlier 12) and estimates that about **45%** of dementia could in principle be prevented or delayed. It overlaps with the manual’s list and concerns dementia generally, not only Alzheimer’s disease." },
             { type: "callout", kind: "caution", title: "Suicide and safety", text: "Alzheimer’s disease carries a **moderate** suicide risk even years after diagnosis, so keep assessing mood and suicidality (p. 694). Early on, memory loss, disorientation and mood symptoms raise **safety** issues such as **driving**. **Caregivers** often lose their social network and develop health problems of their own." },
@@ -479,14 +479,14 @@ SP.add("ch17", "guide", {
                 "**Behavioral variant**: **three or more** of (i) behavioral **disinhibition**; (ii) **apathy or inertia**; (iii) loss of **sympathy or empathy**; (iv) **perseverative, stereotyped or compulsive/ritualistic** behavior; (v) **hyperorality** and dietary changes; **plus** prominent decline in **social cognition and/or executive** abilities.",
                 "**Language variant**: prominent decline in **language** (speech production, word finding, naming, grammar or comprehension)."
               ]],
-              ["D", "**Relative sparing** of **learning and memory** and **perceptual-motor** function."],
+              ["D", "**Learning, memory** and **perceptual-motor** skills are **relatively spared**."],
               ["E", "Not better explained by cerebrovascular disease, another neurodegenerative disease, a substance, or another disorder."]
             ], specifiers: [
               ["Probable", "A **causative mutation** (family history or testing) **or** **disproportionate frontal and/or temporal** involvement on **neuroimaging**."],
               ["Possible", "No mutation evidence, and **neuroimaging not performed**."]
             ], note: "Major, probable: **G31.09** then **F02.xx**; possible: **F03.xx**. Mild: G31.09 + F06.7x (probable) or G31.84 (possible). Psychiatric codes, e.g., **F06.33** bipolar and related disorder due to frontotemporal degeneration, with manic features; **F07.0** personality change, disinhibited type." },
             { type: "callout", kind: "mnemonic", title: "The behavioral-variant five", text: "**DASH-P**: **D**isinhibition, **A**pathy, loss of **S**ympathy, **H**yperorality, **P**erseveration. Need **three**, plus social-cognitive or executive decline. Original to this app: check the list on p. 696." },
-            { type: "table", caption: "The three frontotemporal syndromes (pp. 696–698)", head: ["Variant", "Picture", "Atrophy"], rows: [
+            { type: "table", caption: "The three frontotemporal syndromes (pp. 696–698; the Picture entries for the language variants and logopenic aphasia are clinical descriptions outside the DSM)", head: ["Variant", "Picture", "Atrophy"], rows: [
               ["**Behavioral** (about **60%**)", "Apathy or disinhibition, loss of interest in self-care, socially inappropriate acts, changes in social style and in religious or political beliefs, repetitive movements, hoarding, **hyperorality**; poor insight; often referred to **psychiatry first**", "**Medial frontal** and anterior temporal lobes"],
               ["**Semantic** language", "Loss of **word meaning** and object knowledge; fluent but empty speech", "Middle, inferior and anterior **temporal** lobes, bilateral but **left > right**"],
               ["**Nonfluent/agrammatic** language", "Effortful, halting speech with **grammatical** errors", "**Left posterior frontal-insular**"],
@@ -498,7 +498,7 @@ SP.add("ch17", "guide", {
               ["Survival", "Median **6–11 years** from symptoms and **3–4 years** from diagnosis; **faster** decline than typical Alzheimer’s; **motor neuron disease** shortens it further."],
               ["Genetics", "About **40%** have a family history of early-onset NCD and about **10%** autosomal dominant inheritance: **MAPT** (tau), **GRN** (progranulin), **C9orf72**; also TARDBP (TDP-43), VCP, CHMP2B, FUS."],
               ["Associated", "Extrapyramidal signs overlapping **PSP** and **corticobasal degeneration**; **motor neuron disease** features; a subset have **visual hallucinations**; late **loss of sphincter control**."],
-              ["Testing", "Few deficits early on formal tests; executive problems (flexibility, abstraction, response inhibition) with **memory and perceptual-motor skills spared**."]
+              ["Testing", "Few deficits early on formal tests; executive problems (flexibility, abstraction, response inhibition) with **memory relatively spared and perceptual-motor skills** usually preserved early."]
             ] },
             { type: "table", caption: "Differential diagnosis (pp. 698–699)", head: ["Condition", "How to tell"], rows: [
               ["Alzheimer’s disease", "Early **memory** loss; but **10%–30%** of frontotemporal-looking syndromes have Alzheimer’s pathology at autopsy (especially dysexecutive or logopenic)."],
@@ -524,10 +524,10 @@ SP.add("ch17", "guide", {
               ]],
               ["D", "Not better explained by cerebrovascular disease, another neurodegenerative disease, a substance, or another disorder."]
             ], specifiers: [
-              ["Probable", "**Two core** features, **or** one suggestive feature **with one or more** core features."],
+              ["Probable", "**Two core** features, **or** at least **one core** plus **one suggestive** feature."],
               ["Possible", "**One core** feature only, **or** one or more **suggestive** features only."]
             ], note: "Major, probable: **G31.83** then **F02.xx**; possible: **F03.xx**. Mild: G31.83 + F06.7x (probable) or G31.84 (possible). Psychiatric codes, e.g., **F06.0** psychotic disorder due to Lewy body disease, with hallucinations." },
-            { type: "callout", kind: "mnemonic", title: "Counting to probable", text: "Think **2 core = probable**; **1 core + 1 suggestive = probable**; **1 core alone or suggestive alone = possible**. A suggestive feature can **upgrade** a core feature but cannot make it probable by itself. Original to this app: check p. 699." },
+            { type: "callout", kind: "pearl", title: "Counting to probable", text: "Think **2 core = probable**; **1 core + 1 suggestive = probable**; **1 core alone or suggestive alone = possible**. A suggestive feature can **upgrade** a core feature but cannot make it probable by itself. Original to this app: check p. 699." },
             { type: "defs", title: "Features (pp. 700–701)", items: [
               ["Cognition", "Early **attention, executive and visuoperceptual** deficits, rather than memory."],
               ["Fluctuation", "Can look like **delirium**, with or without a trigger; may need caregiver reports or **fluctuation scales**."],
@@ -549,7 +549,7 @@ SP.add("ch17", "guide", {
               ["Onset", "Ages **50–89**, mostly **mid-70s**"],
               ["Survival", "**5.5–7.7 years** from cognitive onset"]
             ] },
-            { type: "callout", kind: "caution", title: "Before you prescribe the antipsychotic", text: "A confused older adult with **visual hallucinations**, **fluctuating** alertness and **falls** may have Lewy body disease. Up to half react badly to antipsychotics (rigidity, sedation, falls, confusion, even death). Ask about **acting out dreams** and look for subtle parkinsonism first." }
+            { type: "callout", kind: "caution", title: "Before you prescribe the antipsychotic", text: "A confused older adult with **visual hallucinations**, **fluctuating** alertness and **falls** may have Lewy body disease. Up to half have severe sensitivity to antipsychotics (p. 700). App guidance: ask about **acting out dreams** and look for subtle parkinsonism first." }
           ]
         },
         {
@@ -604,7 +604,7 @@ SP.add("ch17", "guide", {
               ["D", "Not attributable to another medical condition or better explained by another mental disorder."]
             ], note: "Major: **G10** then **F02.xx**. Mild: G10 then F06.70 / F06.71. Psychiatric codes, e.g., **F06.31** depressive disorder due to Huntington’s disease, with depressive features; **F06.4** anxiety disorder due to Huntington’s disease." },
             { type: "defs", title: "Features and figures (pp. 727–728)", items: [
-              ["Cognition", "**Executive** changes (processing speed, organization, planning) come before memory decline."],
+              ["Cognition", "**Executive** changes (processing speed, organization, planning) are typically more prominent early than memory decline."],
               ["Sequence", "Cognitive and behavioral changes often **precede** the motor signs, sometimes by **a decade or more**."],
               ["Definite disease", "Unequivocal extrapyramidal motor signs **plus** a family history or a **CAG expansion** in **HTT** on chromosome **4**; the gene alone is not the diagnosis."],
               ["Psychiatric", "**Irritability**, apathy, anxiety, **obsessive-compulsive** symptoms, **depression**, rarely psychosis; disinhibition, impulsivity, poor insight; apathy grows over time."],
@@ -615,7 +615,7 @@ SP.add("ch17", "guide", {
               ["CAG repeats", "**40 or more**: always Huntington’s disease; **36–39**: **partially penetrant**, usually late onset (after 70); longer repeats mean **earlier** onset."],
               ["Imaging", "Progressive volume loss in the **caudate and putamen**."]
             ] },
-            { type: "callout", kind: "caution", title: "High suicide risk", text: "Suicide is among the **leading causes of death** in Huntington’s disease: in a large European cohort, pneumonia **19.5%**, other infections **6.9%**, **suicide 6.6%**. Risk is raised **before and after** motor onset; depression, anxiety, irritability, psychosis and apathy add to it (p. 728)." },
+            { type: "callout", kind: "caution", title: "High suicide risk", text: "Suicide ranks among the **main causes of death** in Huntington’s disease: in a large European cohort, pneumonia **19.5%**, other infections **6.9%**, **suicide 6.6%**. Risk is raised **before and after** motor onset; depression, anxiety, irritability, psychosis and apathy add to it (p. 728)." },
             { type: "table", caption: "Differential diagnosis (pp. 728–729)", head: ["Condition", "How to tell"], rows: [
               ["Another mental disorder", "Early mood instability, irritability or compulsions; **genetic testing** or motor signs settle it. If mood symptoms are a focus, add **depressive disorder due to Huntington’s disease**."],
               ["Other NCDs", "Early executive and speed deficits can resemble **vascular** NCD."],
@@ -647,9 +647,9 @@ SP.add("ch17", "guide", {
               ["Confirmation", "Only by **brain biopsy or autopsy**"],
               ["CSF", "**14-3-3** and **tau**: sensitive, variable specificity; **RT-QuIC**: extremely **high specificity**"],
               ["MRI (DWI)", "The **most sensitive** test: **multifocal gray matter hyperintensities** (cortical ribboning, basal ganglia)"],
-              ["EEG", "**Periodic sharp, often triphasic** synchronous discharges at **0.5–2 Hz** at some point in the course"]
+              ["EEG", "In some people, **periodic sharp, often triphasic** synchronous discharges at **0.5–2 Hz** at some point in the course"]
             ] },
-            { type: "callout", kind: "exam", title: "Rapid, jerky, fatal", text: "A rapidly progressive dementia over **months**, with **startle myoclonus** and **ataxia**, points to prion disease. The DSM differential is short: other NCDs progress more slowly and lack the **rapid course and prominent cerebellar and motor signs** (p. 723)." }
+            { type: "callout", kind: "exam", title: "Rapid, jerky, fatal", text: "A rapidly progressive dementia over **months**, with **startle myoclonus** and **ataxia**, points to prion disease. The DSM differential is short: other NCDs progress more slowly and lack the **rapid course and prominent cerebellar and motor signs** (p. 723). (app guidance)" }
           ]
         }
       ]
@@ -697,10 +697,10 @@ SP.add("ch17", "guide", {
               ["NCD with Lewy bodies", "**Fluctuations, visual hallucinations, spontaneous parkinsonism**."],
               ["Frontotemporal NCD", "**Insidious, gradual** behavioral or language change, not typical of vascular disease."],
               ["Other medical conditions", "Brain tumor, **multiple sclerosis**, encephalitis, toxic or metabolic disorders severe enough to explain it."],
-              ["Delirium", "Not diagnosed if symptoms are **entirely** due to delirium; delirium may sit on top of vascular NCD (diagnose both)."],
+              ["Delirium", "Not diagnosed if symptoms are **entirely** due to delirium; delirium may sit on top of vascular NCD (both can be diagnosed)."],
               ["Major depressive disorder", "If MDD is present and cognitive impairment began **with** the depression, do not diagnose vascular NCD. If the NCD came **first** or cognition is **out of proportion** to the depression, diagnose **depressive disorder due to cerebrovascular disease**."]
             ] },
-            { type: "callout", kind: "exam", title: "Vascular coding in one line", text: "**Major**: probable **F01**, possible **F03**, and **never** a cerebrovascular code. **Mild**: probable **I67.9 + F06.7x**, possible **G31.84**. In **multiple etiologies**, vascular disease is **not** listed with the other medical codes; instead **F01.xx** is added after F02.xx." }
+            { type: "callout", kind: "exam", title: "Vascular coding in one line", text: "**Major**: probable **F01**, possible **F03**, and **never** a cerebrovascular code. **Mild**: probable **I67.9 + F06.7x**, possible **G31.84**. In **multiple etiologies**, vascular disease is **not** listed with the other medical codes; instead **F01.xx** is added after F02.xx. (app guidance)" }
           ]
         },
         {
@@ -711,7 +711,7 @@ SP.add("ch17", "guide", {
             { type: "criteria", title: "Major or mild NCD due to traumatic brain injury in brief", code: "S06.2XAS + F02.xx · S06.2XAS + F06.7x", pages: "706–707", items: [
               ["A", "Criteria for **major or mild NCD** are met."],
               ["B", "Evidence of a **TBI** (an impact to the head or rapid movement or displacement of the brain in the skull) with **one or more** of:", ["**loss of consciousness**;", "**posttraumatic amnesia**;", "**disorientation and confusion**;", "**neurological signs** (imaging showing injury, visual field cuts, anosmia, hemiparesis, hemisensory loss, cortical blindness, aphasia, apraxia, weakness, loss of balance, other unexplained sensory loss)."]],
-              ["C", "The NCD appears **immediately** after the injury or **immediately after recovery of consciousness**, and **persists past the acute post-injury period**."]
+              ["C", "The NCD appears **immediately** after the injury or **as soon as consciousness returns**, and **lasts beyond the acute post-injury phase**."]
             ], note: "Major: **S06.2XAS** (diffuse TBI with loss of consciousness status unknown, sequela) then **F02.xx**. Mild: S06.2XAS then F06.70 / F06.71. Rate the severity of the **NCD**, not of the injury. Psychiatric codes, e.g., **F06.34** bipolar and related disorder due to TBI, with mixed features; **F07.0** personality change due to TBI, apathetic type." },
             { type: "update", kind: "post", year: "2022", title: "TBI sequela code", source: "APA DSM-5-TR Update, September 2022", text: "The manual prints **S06.2X9S**; since October 1, 2022 the code is **S06.2XAS** (diffuse TBI with loss of consciousness status unknown, sequela)." },
             { type: "table", wide: true, caption: "Classifying TBI severity (Table 2, p. 708)", head: ["Feature", "Mild", "Complicated mild", "Moderate", "Severe"], rows: [
@@ -723,7 +723,7 @@ SP.add("ch17", "guide", {
             ], note: "**Complicated mild** TBI meets mild criteria but has traumatic intracranial findings (epidural or subdural hematoma, subarachnoid or intracerebral hemorrhage, contusion, laceration); its outcomes resemble **moderate** TBI." },
             { type: "defs", title: "Course and features (pp. 708–710)", items: [
               ["Typical deficits", "**Complex attention, processing speed, learning and memory, executive function**, and **social cognition**; focal deficits (aphasia, apraxia, perceptual-motor) with contusion, hemorrhage or penetrating injury."],
-              ["Mild TBI", "Cognitive problems usually resolve within **days to weeks**, with **complete** resolution within **3–12 months**. Persistent symptoms should prompt a search for **MDD, PTSD, anxiety, substance use, sleep problems, negative expectations**; diagnose NCD due to TBI only if deficits persist **after** these are treated."],
+              ["Mild TBI", "Cognitive problems usually resolve within **days to weeks**, with **complete** resolution within **3–12 months**. Persistent symptoms should prompt a search for **MDD, PTSD, anxiety, substance use, sleep problems, negative expectations**; NCD due to TBI may be diagnosed if deficits persist **after** these are treated."],
               ["Moderate and severe TBI", "Improve over weeks to months; recovery often **incomplete**, but improvement can continue for **years**, and more people improve than decline in the first 5 years. Complications: **seizures** (especially year 1), photosensitivity, hyperacusis, irritability, **aggression**, depression, apathy; possibly later **neurodegeneration**."],
               ["Supportive signs", "**Primitive reflexes** (glabellar, snout, palmomental), saccade and pursuit deficits, focal **posttraumatic epilepsy** matching the impaired domain."],
               ["Older adults", "Even **mild** TBI can produce outcomes like moderate or severe TBI in younger adults."],
@@ -805,7 +805,7 @@ SP.add("ch17", "guide", {
             { type: "criteria", title: "Major or mild NCD due to HIV infection in brief", code: "B20 + F02.xx · B20 + F06.7x", pages: "717", items: [
               ["A", "Criteria for **major or mild NCD** are met."],
               ["B", "**Documented** HIV infection."],
-              ["C", "Not better explained by non-HIV conditions, including **secondary brain diseases** such as **progressive multifocal leukoencephalopathy** or **cryptococcal meningitis**."],
+              ["C", "Not better accounted for by causes other than HIV, such as **secondary brain disease** (e.g., **progressive multifocal leukoencephalopathy**, **cryptococcal meningitis**)."],
               ["D", "Not attributable to another medical condition or better explained by a mental disorder."]
             ], note: "Major: **B20** then **F02.xx**. Mild: B20 then F06.70 / F06.71. Psychiatric codes, e.g., F06.34 bipolar and related disorder due to HIV infection, with mixed features." },
             { type: "defs", title: "Features (pp. 718–719)", items: [
@@ -837,7 +837,7 @@ SP.add("ch17", "guide", {
           blocks: [
             { type: "criteria", title: "Major or mild NCD due to another medical condition in brief", code: "Condition code + F02.xx · condition code + F06.7x", pages: "729", items: [
               ["A", "Criteria for **major or mild NCD** are met."],
-              ["B", "History, examination or laboratory findings show the NCD is the **pathophysiological consequence** of another medical condition (e.g., **multiple sclerosis**)."],
+              ["B", "History, examination or laboratory findings show the NCD is **caused, pathophysiologically,** by another medical condition, such as **multiple sclerosis**."],
               ["C", "Not better explained by another mental disorder (e.g., MDD) or **another specific NCD** (e.g., Alzheimer’s disease)."]
             ], note: "Major: code the condition first, e.g., **G35.D** multiple sclerosis, then **F02.xx** (e.g., **F02.B2** for moderate, with psychotic disturbance). Mild: the condition, then F06.70 / F06.71." },
             { type: "table", caption: "Causes named in the text (p. 730)", head: ["Group", "Examples"], rows: [
@@ -878,7 +878,7 @@ SP.add("ch17", "guide", {
               ["Unspecified NCD (R41.9)", "NCD symptoms that cause distress or impairment **predominate** but **full criteria** for no NCD are met, and the etiology cannot be determined with enough certainty. No etiology codes; behavior recorded, not coded."]
             ] },
             { type: "update", kind: "post", year: "2022", title: "New diagnosis: NCD due to unknown etiology", source: "APA DSM-5-TR Update and Neurocognitive Disorders Supplement, September 2022", text: "The APA added **major or mild NCD due to unknown etiology** and revised **unspecified NCD**. Use unknown etiology when the **syndrome** is clear but the **cause** is not; use unspecified NCD when the presentation does **not meet** full NCD criteria or the picture is too uncertain." },
-            { type: "callout", kind: "exam", title: "Mixed pathology is the rule in old age", text: "Many etiologies become more common with age, so **mixed** NCDs are frequent (p. 689). Alzheimer’s plus vascular is the classic pair; Lewy body pathology often coexists with Alzheimer’s, **TDP-43** and vascular pathology in the oldest people, with **faster decline** (p. 702). The 2024 revision makes explicit that Alzheimer’s disease can be one of the **multiple etiologies**." }
+            { type: "callout", kind: "exam", title: "Mixed pathology is the rule in old age", text: "Many etiologies become more common with age, so **mixed** NCDs are frequent (p. 689). Alzheimer’s plus vascular is the classic pair; Lewy body pathology often coexists with Alzheimer’s, **TDP-43** and vascular pathology in the oldest people, which may mean **faster decline** (p. 702). The 2024 revision makes explicit that Alzheimer’s disease can be one of the **multiple etiologies**. (app guidance)" }
           ]
         }
       ]
@@ -903,7 +903,7 @@ SP.add("ch17", "guide", {
               ["Prion disease", "**Rapid** (months)", "Global", "**Myoclonus, startle, ataxia**", "MRI DWI, RT-QuIC, periodic EEG complexes"],
               ["Huntington’s disease", "Insidious; **35–45**; psychiatric and cognitive signs may come first", "**Executive**, speed", "**Chorea**, irritability, depression, suicide risk", "CAG repeat ≥40 in HTT"]
             ] },
-            { type: "callout", kind: "mnemonic", title: "Cortical versus subcortical", text: "**Cortical** NCDs (Alzheimer’s, frontotemporal) hit the **“A’s”**: amnesia, aphasia, apraxia, agnosia, with speed relatively kept. **Subcortical** NCDs (vascular small vessel, Parkinson’s, Huntington’s, HIV) hit **speed**: slowed thinking, poor retrieval helped by cues, apathy, depression and **motor** signs. This is a classic teaching frame, not DSM text; many people have features of both." },
+            { type: "callout", kind: "pearl", title: "Cortical versus subcortical", text: "**Cortical** NCDs (Alzheimer’s, frontotemporal) hit the **“A’s”**: amnesia, aphasia, apraxia, agnosia, with speed relatively kept. **Subcortical** NCDs (vascular small vessel, Parkinson’s, Huntington’s, HIV) hit **speed**: slowed thinking, poor retrieval helped by cues, apathy, depression and **motor** signs. This is a classic teaching frame, not DSM text; many people have features of both." },
             { type: "flow", vertical: true, title: "A first-pass approach to new cognitive symptoms", steps: [
               ["Is attention or arousal disturbed, with acute onset and fluctuation?", "Yes: **delirium** first. Find and treat the cause; reassess cognition afterward.", "case"],
               ["Is there an acquired decline in one or more domains, with concern and objective evidence?", "No: normal cognition, a lifelong (neurodevelopmental) pattern, or another mental disorder.", "guide"],
@@ -923,7 +923,7 @@ SP.add("ch17", "guide", {
               ["Find the cause", "Vital signs, oxygen, glucose; electrolytes, calcium, renal and liver function; complete blood count; urinalysis and cultures; review **every medication** (anticholinergics, benzodiazepines, opioids, steroids); look for withdrawal, retention, constipation, pain; ECG; imaging or lumbar puncture when indicated."],
               ["Screen", "Bedside tools such as the **CAM** or **4AT**; test **attention** directly (months of the year backward)."],
               ["Non-drug care first", "Reorientation, glasses and hearing aids, family presence, sleep hygiene, mobilization, hydration, avoiding restraints and catheters; multicomponent programs such as **HELP** prevent delirium."],
-              ["Drugs", "No drug is approved to treat delirium. A **low-dose antipsychotic** (e.g., [[stahl:drugs/haloperidol|haloperidol]], [[stahl:drugs/quetiapine|quetiapine]]) is reserved for **dangerous agitation** or distressing psychosis; trials show it does not shorten delirium. Avoid benzodiazepines **except** for alcohol or sedative withdrawal. Give **thiamine** when alcohol use or malnutrition is possible."]
+              ["Drugs", "No drug is approved to treat delirium. A **low-dose antipsychotic** (e.g., [[stahl:drugs/haloperidol|haloperidol]], [[stahl:drugs/quetiapine|quetiapine]]) is reserved for **dangerous agitation** or distressing psychosis; trials have not shown that it shortens delirium or reduces its severity. Avoid benzodiazepines **except** for alcohol or sedative withdrawal. Give **thiamine** when alcohol use or malnutrition is possible."]
             ] },
             { type: "defs", title: "Major and mild NCD", items: [
               ["Reversible contributors", "Thyroid function, **vitamin B12**, folate, glucose, calcium, renal and liver function, complete blood count; syphilis and HIV serology when risk is present; **neuroimaging** (CT or MRI); depression screen; medication review; hearing and vision."],

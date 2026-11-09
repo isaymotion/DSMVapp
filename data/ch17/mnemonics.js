@@ -64,11 +64,11 @@ SP.add("ch17", "mnemonics", [
     id: "m17-06", short: "Alzheimer’s genes", name: "21-14-1", original: true, dx: "ncd-alzheimers", sec: "s17-alzheimers-clinical",
     "for": "Chromosomes of autosomal dominant Alzheimer’s disease",
     letters: [
-      ["21", "APP", "Amyloid precursor protein; extra copy in Down syndrome"],
-      ["14", "PSEN1", "Presenilin 1; the most common causative gene"],
+      ["21", "APP", "Amyloid precursor protein; extra copy in Down syndrome (outside the DSM)"],
+      ["14", "PSEN1", "Presenilin 1; the most common causative gene (outside the DSM)"],
       ["1", "PSEN2", "Presenilin 2"]
     ],
-    caveat: "DSM check: a causative mutation makes Alzheimer’s disease **probable** at both major and mild levels. **APOE ε4** (chromosome 19) is a risk factor, not a cause."
+    caveat: "DSM check: a causative mutation makes Alzheimer’s disease **probable** at both major and mild levels. **APOE ε4** (chromosome 19) is a risk factor, not a cause. The DSM lists the genes and chromosomes 1, 14 and 21 separately; the pairing and chromosome 19 are outside the DSM."
   },
   {
     id: "m17-07", short: "TBI severity cut-offs", name: "30 minutes, 1 day, 13", original: true, dx: "ncd-tbi", sec: "s17-tbi",
@@ -94,7 +94,7 @@ SP.add("ch17", "mnemonics", [
     id: "m17-09", short: "Huntington’s repeat lengths", name: "36 maybe, 40 always", original: true, dx: "ncd-huntingtons", sec: "s17-huntingtons",
     "for": "CAG repeat length in HTT",
     letters: [
-      ["36–39", "Maybe", "Partially penetrant; if disease occurs, usually after 70"],
+      ["36–39", "Maybe", "Partially penetrant; if disease occurs, more often late (after 70)"],
       ["40+", "Always", "Fully penetrant; longer repeats, earlier onset"]
     ],
     caveat: "DSM check: the **gene alone** is not Huntington’s disease, which needs motor signs; but the NCD can be diagnosed with **risk** from family history or testing."
@@ -108,5 +108,14 @@ SP.add("ch17", "mnemonics", [
       ["Possible", "F03 alone", "No disease code; F03.xx"]
     ],
     caveat: "DSM check: for **mild** NCD, probable = disease code + **F06.70/71** (vascular: **I67.9** + F06.7x); possible or unknown = **G31.84**."
+  },
+  {
+    id: "m17-11", short: "Cortical vs subcortical", name: "The A’s versus speed", original: true, dx: "major-ncd", sec: "s17-compare",
+    "for": "Cortical versus subcortical NCD patterns (teaching frame, not DSM text)",
+    letters: [
+      ["A", "Cortical: the A’s", "Alzheimer’s, frontotemporal: amnesia, aphasia, apraxia, agnosia, with speed relatively kept"],
+      ["S", "Subcortical: speed", "Small vessel vascular, Parkinson’s, Huntington’s, HIV: slowed thinking, poor retrieval helped by cues, apathy, depression, motor signs"]
+    ],
+    caveat: "DSM check: a classic teaching frame, not DSM text; many people have features of both."
   }
 ]);

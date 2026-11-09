@@ -1,8 +1,8 @@
 /* Disorder library: Chapter 17, Neurocognitive Disorders (DSM-5-TR pp. 667–732).
    Codes are the current ones: the APA coding update of September 2022 (effective October 1, 2022), G20.C (2023),
-   the Alzheimer’s criteria revision (2024) and G35.D (2025); checked through FY2027 (October 1, 2026). */
+   the Alzheimer’s criteria revision (2024) and G35.D (2025); no change was found for the codes checked through FY2027 (October 1, 2026); confirm against the official tabular list. */
 (function () {
-  var SRC = "APA DSM-5-TR Neurocognitive Disorders Supplement and Updates (September 2022, 2023, 2024, 2025); ICD-10-CM through FY2027";
+  var SRC = "APA DSM-5-TR Neurocognitive Disorders Supplement and Updates (September 2022, 2023, 2024, 2025); ICD-10-CM through FY2027 (no change found for the codes checked; confirm against the official tabular list)";
   function upd(text, year) { return [{ kind: "post", year: year || "2022", title: "Current coding", source: SRC, text: text }]; }
   var MAJ = "Probable or known etiology: disease code + F02.[A/B/C][0/11/18/2/3/4]; possible: F03.xx";
   var MILD = "Probable or known etiology: disease code + F06.70 (without) / F06.71 (with behavioral disturbance); possible: G31.84";
@@ -12,7 +12,7 @@
       id: "delirium", ch: "ch17", sec: "s17-delirium-criteria", pages: "672–678", critPages: "672",
       name: "Delirium", code: "F05 · F1x.x21 / .x31",
       codes: [
-        ["F05", "Delirium due to another medical condition; due to multiple etiologies (code the condition first)", "Unchanged"],
+        ["F05", "Delirium due to another medical condition; due to multiple etiologies (code the condition first)", "No change found; confirm against the official tabular list"],
         ["F10.121 / F10.221 / F10.921", "Alcohol intoxication delirium (mild / moderate-severe / no use disorder)", "Same pattern for F11–F19 .x21"],
         ["F10.131 / F10.231 / F10.931", "Alcohol withdrawal delirium", "Also F13.x31, F19.x31; opioid F11.x88"],
         ["F19.921", "Medication-induced delirium outside the classes (e.g., dexamethasone)", "Prescribed opioid F11.921, sedative F13.921, stimulant F15.921, ketamine F16.921"]
@@ -20,7 +20,7 @@
       aka: ["acute confusional state", "acute brain failure", "encephalopathy", "ICU psychosis", "delirium tremens"],
       essence: "An acute disturbance of **attention and awareness**, developing over **hours to days** and **fluctuating**, with another **cognitive** change, caused by a **medical condition, substance, medication, toxin** or several, and not in **coma**.",
       duration: "Hours to days to develop; acute (hours–days) or persistent (weeks–months); about 1 week in hospital",
-      functioning: "Functional decline, institutional placement, higher mortality (38%–41% at 1 year)",
+      functioning: "Functional decline, institutional placement, higher mortality (up to 38%–41% at 1 year in hospitalized people)",
       mood: "Fear, anxiety, irritability, euphoria or apathy, with rapid shifts; worse at night",
       criteria: [
         ["A", "Disturbed attention (direct, focus, sustain, shift) with reduced awareness of the environment."],
@@ -38,10 +38,10 @@
         { id: "acute-stress", how: "Follows trauma; attention intact." },
         { id: "factitious", how: "Atypical picture and no medical or substance cause." }
       ],
-      pearls: ["Test attention directly (months backward).", "Hypoactive delirium is common and missed.", "Treat the cause; manage delirium before NCD.", "Clinical teaching: visual hallucinations suggest a medical cause."],
-      cmp: { symptoms: "Inattention, reduced awareness, fluctuation", exclusions: "Coma; explained by an NCD", prevalence: "1%–2% community; up to 81% ICU", course: "Usually recovers; 38%–41% die within 1 year" },
-      clues: [["Core picture", "An 84-year-old, confused and drowsy on day 2 of pneumonia, worse at night"], ["Code", "J18.9 then F05 (pneumonia, then delirium due to it)"]],
-      updates: upd("Hepatic encephalopathy in the examples is now **K76.82** (was K72.90). F05 and the substance codes are unchanged through October 2026.")
+      pearls: ["Test attention directly (months backward).", "Hypoactive delirium is common and missed.", "Treat the cause; generally manage delirium first when an NCD coexists.", "Clinical teaching: visual hallucinations suggest a medical cause."],
+      cmp: { symptoms: "Inattention, reduced awareness, fluctuation", exclusions: "Coma; explained by an NCD", prevalence: "1%–2% community; up to 81% ICU", course: "Usually recovers; up to 38%–41% of hospitalized people die within 1 year" },
+      clues: [["Core picture", "An 84-year-old, confused and drowsy on day 2 of pneumonia, worse at night"], ["Code", "J18.9 then F05 (pneumonia, then delirium due to it; J18.9 is an ICD-10-CM example outside the DSM)"]],
+      updates: upd("Hepatic encephalopathy in the examples is now **K76.82** (was K72.90). No change was found through October 2026 for F05 and the substance codes checked; confirm against the official tabular list.")
     },
     {
       id: "other-specified-delirium", ch: "ch17", sec: "s17-delirium-ddx", pages: "678", critPages: "678",
@@ -55,7 +55,7 @@
       epi: [["Prevalence", "Not given in DSM-5-TR"]],
       risk: ["As for delirium."],
       differential: [{ id: "delirium", how: "Full criteria met." }, { id: "unspecified-delirium", how: "No reason recorded." }],
-      pearls: ["Same code (F05) as delirium due to another medical condition.", "Subsyndromal delirium still predicts poor outcomes; look for a cause."],
+      pearls: ["Same code (F05) as delirium due to another medical condition.", "Outside the DSM: subsyndromal delirium still predicts poor outcomes; look for a cause."],
       cmp: { symptoms: "Delirium-like, short of criteria", exclusions: "Full delirium", prevalence: "Not given", course: "Varies" },
       clues: [["Code", "F05"]],
       updates: upd("Coded **F05** since October 2022 (was R41.0). In September 2025 the APA reworded the example as **subsyndromal delirium-like disorder**.", "2022, 2025")
@@ -169,7 +169,7 @@
         { id: "mdd", how: "Variable deficits; improves with treatment." },
         { id: "ncd-amc", how: "Thyroid disease, B12 deficiency." }
       ],
-      pearls: ["Recall does not improve with cues.", "Social cognition preserved until late.", "Over half start with behavioral symptoms.", "Mild NCD: probable only with a mutation."],
+      pearls: ["Clinical teaching: recall does not improve with cues.", "Social cognition preserved until late.", "Likely over half start with behavioral symptoms.", "Mild NCD: probable only with a mutation."],
       cmp: { symptoms: "Amnestic; then language and visuospatial", exclusions: "Other primary etiology", prevalence: "60% to over 90% of dementias", course: "Steady progression; ~10 years" },
       clues: [["Core picture", "A 76-year-old who repeats questions and gets lost driving, needing help with bills"], ["Code", "G30.9, F02.A0"]],
       updates: [
@@ -182,15 +182,15 @@
       name: "Major or mild frontotemporal NCD", code: "G31.09 + F02.xx",
       codes: [["G31.09 + F02.xx", "Major, probable", MAJ], ["F03.xx", "Major, possible", "No G31.09"], ["G31.09 + F06.70 / F06.71", "Mild, probable", MILD], ["G31.84", "Mild, possible", ""]],
       aka: ["frontotemporal dementia", "FTD", "Pick’s disease", "behavioral-variant FTD", "primary progressive aphasia"],
-      essence: "**Insidious, progressive** decline in **behavior** (three of disinhibition, apathy, lost empathy, perseveration, hyperorality, plus social-cognitive or executive decline) or **language**, with **memory and perceptual-motor function relatively spared**.",
+      essence: "**Insidious, progressive** decline in **behavior** (three or more of disinhibition, apathy, lost empathy, perseveration, hyperorality, plus social-cognitive or executive decline) or **language**, with **memory and perceptual-motor function relatively spared**.",
       duration: "Gradual; median survival 6–11 years from onset",
       functioning: "Early severe impairment at work and home; legal and family problems before diagnosis",
       mood: "Apathy, elation, poor insight",
       criteria: [
         ["A", "Criteria for major or mild NCD are met."],
         ["B", "Insidious onset and gradual progression."],
-        ["C", "Behavioral variant (three of five symptoms plus social-cognitive or executive decline) or language variant."],
-        ["D", "Relative sparing of learning and memory and perceptual-motor function."],
+        ["C", "Behavioral variant (three or more of five symptoms plus social-cognitive or executive decline) or language variant."],
+        ["D", "Learning, memory and perceptual-motor skills relatively spared."],
         ["E", "Not better explained by another disease or disorder."]
       ],
       specifiers: ["Behavioral variant / language variant", "Probable (mutation or imaging) / possible", "Without / with behavioral disturbance", "Severity (major)"],
@@ -327,7 +327,7 @@
       pearls: ["Outside the DSM: give thiamine.", "Many improve with abstinence before 50.", "Korsakoff: amnesia with confabulation.", "Methamphetamine can cause vascular NCD."],
       cmp: { symptoms: "Executive and memory deficits", exclusions: "Only during intoxication or withdrawal", prevalence: "30%–40% mild NCD early in alcohol abstinence", course: "Often improves with abstinence" },
       clues: [["Core picture", "A malnourished man who cannot learn new facts and fills gaps with stories"], ["Code", "F10.26"]],
-      updates: upd("Codes unchanged. In September 2024 the APA aligned the coding note: severity (major) and behavioral specifiers (major and mild) are recorded but not coded.", "2024")
+      updates: upd("No code change was found for the codes checked; confirm against the official tabular list. In September 2024 the APA aligned the coding note: severity (major) and behavioral specifiers (major and mild) are recorded but not coded.", "2024")
     },
     {
       id: "ncd-hiv", ch: "ch17", sec: "s17-hiv", pages: "717–721", critPages: "717",
@@ -377,8 +377,8 @@
       epi: [["Sporadic CJD", "1–2 per million a year"], ["Peak age", "About 67"]],
       risk: ["PRNP mutations (up to 15%); codon 129 polymorphism.", "Iatrogenic: dura grafts, corneas, instruments, growth hormone.", "Bovine spongiform encephalopathy (variant CJD)."],
       differential: [{ id: "ncd-alzheimers", how: "Much slower, without early myoclonus and ataxia." }, { id: "ncd-lewy", how: "Slower; fluctuations and hallucinations." }],
-      pearls: ["MRI DWI: most sensitive.", "RT-QuIC: most specific.", "EEG: periodic sharp complexes.", "Confirm only by biopsy or autopsy."],
-      cmp: { symptoms: "Rapid dementia, myoclonus, ataxia", exclusions: "Slower course", prevalence: "1–2/million/year", course: "Death within months" },
+      pearls: ["MRI DWI: most sensitive.", "RT-QuIC: extremely high specificity.", "EEG: periodic sharp complexes in some.", "Confirm only by biopsy or autopsy."],
+      cmp: { symptoms: "Rapid dementia, myoclonus, ataxia", exclusions: "Slower course", prevalence: "1–2/million/year", course: "Major NCD within months; rarely over 2 years" },
       clues: [["Core picture", "A 66-year-old bedbound within 5 months, with startle jerks"], ["Code", "A81.9, F02.C0"]],
       updates: upd("Mild NCD due to prion disease: **A81.9 + F06.70 / F06.71** since October 2022.")
     },
@@ -444,7 +444,7 @@
       name: "Major or mild NCD due to another medical condition", code: "Condition + F02.xx",
       codes: [["Condition code + F02.xx", "Major NCD (e.g., G35.D multiple sclerosis, F02.B2)", "MS is G35.D since October 2025"], ["Condition code + F06.70 / F06.71", "Mild NCD", "Since October 2022"]],
       aka: ["reversible dementia", "secondary dementia", "dementia due to hypothyroidism", "MS-related cognitive impairment"],
-      essence: "NCD that is the **pathophysiological consequence** of another medical condition (tumor, subdural hematoma, NPH, hypothyroidism, B12 or thiamine deficiency, neurosyphilis, lupus, organ failure, MS, epilepsy).",
+      essence: "NCD that is the **pathophysiological consequence** of another medical condition (tumor, subdural hematoma, NPH, hypothyroidism, thiamine or niacin deficiency, neurosyphilis, lupus, organ failure, MS, epilepsy).",
       duration: "Follows the medical condition",
       functioning: "Varies with the condition",
       mood: "Varies",
@@ -461,9 +461,9 @@
         { id: "delirium", how: "Acute, fluctuating attention." },
         { id: "ncd-multiple", how: "More than one cause." }
       ],
-      pearls: ["Timing and treatment response are the best evidence.", "Screen thyroid, B12, syphilis, imaging.", "Normal-pressure hydrocephalus: gait, continence, cognition."],
+      pearls: ["Timing and treatment response are the best evidence.", "Outside the DSM: screen thyroid, B12, syphilis, imaging.", "Outside the DSM: normal-pressure hydrocephalus causes gait, continence and cognitive change."],
       cmp: { symptoms: "Depends on the cause", exclusions: "Another specific NCD", prevalence: "Varies", course: "Tracks the medical condition" },
-      clues: [["Core picture", "Slowed thinking that improves after hypothyroidism is treated"], ["Code", "E03.9, F02.A0 (example)"]],
+      clues: [["Core picture", "Slowed thinking that improves after hypothyroidism is treated"], ["Code", "E03.9, F02.A0 (example; E03.9 is an ICD-10-CM code outside the DSM)"]],
       updates: upd("Multiple sclerosis in the coding example is **G35.D** since October 1, 2025 (the manual prints G35).", "2025")
     },
     {
@@ -472,7 +472,7 @@
       codes: [["Etiology codes + F02.xx once", "Major NCD due to multiple etiologies", "Do not list vascular disease with them"], ["+ F01.xx", "If vascular disease contributes", ""], ["+ substance code", "If a substance contributes", "e.g., F10.27"], ["Etiology codes + F06.70 / F06.71", "Mild NCD (I67.9 for vascular)", "Since October 2022"]],
       aka: ["mixed dementia", "mixed Alzheimer’s and vascular dementia"],
       essence: "NCD with evidence of **more than one** etiological process (substances excluded from the count), each established by its own criteria.",
-      duration: "Varies", functioning: "Mixed pathology often means faster decline", mood: "Varies",
+      duration: "Varies", functioning: "Mixed pathology may mean faster decline", mood: "Varies",
       criteria: [
         ["A", "Criteria for major or mild NCD are met."],
         ["B", "Evidence of more than one etiological process, excluding substances."],
@@ -483,7 +483,7 @@
       risk: ["Age: many etiologies increase together."],
       differential: [{ id: "ncd-alzheimers", how: "Single etiology." }, { id: "ncd-unknown", how: "Cause presumed but not identifiable." }],
       pearls: ["Code F02 once.", "Vascular goes in F01, not as a medical code.", "The 2024 revision makes explicit that Alzheimer’s can be one of the etiologies."],
-      cmp: { symptoms: "Mixed features", exclusions: "Single etiology", prevalence: "Common in the oldest old", course: "Often faster" },
+      cmp: { symptoms: "Mixed features", exclusions: "Single etiology", prevalence: "Common in the oldest old", course: "May be faster" },
       clues: [["Core picture", "Probable Alzheimer’s disease with a later stroke and further decline"], ["Code", "G30.9, F02.B0, F01.B0"]],
       updates: upd("The manual’s example (G30.9, B20, F02.81, F01.51, F10.27) becomes **G30.9, B20, F02.B__, F01.B__, F10.27** under current codes, with the disturbance suffix chosen by type (e.g., **F02.B11, F01.B11** for agitation).")
     },
@@ -523,7 +523,7 @@
       pearls: ["Use while the order of motor and cognitive symptoms in PD or Lewy body disease is unclear.", "Revise as information accrues."],
       cmp: { symptoms: "NCD symptoms short of criteria", exclusions: "Specific NCDs", prevalence: "Unknown", course: "Unknown" },
       clues: [["Code", "R41.9"]],
-      updates: upd("R41.9 unchanged; the definition was revised in September 2022.")
+      updates: upd("No change found for R41.9; confirm against the official tabular list. The definition was revised in September 2022.")
     }
   ]);
 

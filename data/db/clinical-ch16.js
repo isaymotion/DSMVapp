@@ -63,7 +63,7 @@
         asOf: "October 2026",
         first: "Offer **medication for OUD** promptly: **buprenorphine** or **methadone** (both cut overdose death), or **extended-release naltrexone** after detoxification.",
         points: [
-          "Since 2023 any clinician with a DEA registration can prescribe buprenorphine (no X-waiver); methadone for OUD is dispensed through opioid treatment programs.",
+          "Since 2023 any clinician with a DEA registration that includes Schedule III can prescribe buprenorphine (no X-waiver); methadone for OUD is dispensed through opioid treatment programs.",
           "With fentanyl, buprenorphine can **precipitate withdrawal**; start when withdrawal is clear or use a low-dose or high-dose induction strategy.",
           "Prescribe **naloxone** to every patient (available over the counter since 2023); test for HIV, hepatitis B and C.",
           "Continue treatment long term; stopping raises overdose risk because tolerance falls."
@@ -177,7 +177,7 @@
         asOf: "October 2026",
         first: "**Varenicline** or **combination nicotine replacement** (patch plus a short-acting form) with counseling; **bupropion** is an alternative.",
         points: [
-          "Varenicline is safe in psychiatric patients (EAGLES trial).",
+          "In the EAGLES trial varenicline did not significantly raise neuropsychiatric events, including in psychiatric patients; the FDA removed its boxed warning in 2016.",
           "Cytisinicline received an FDA complete response letter in June 2026; it is not yet approved in the United States.",
           "Stopping smoking raises levels of clozapine and olanzapine (CYP1A2 induction ends): monitor and adjust."
         ],
@@ -232,7 +232,7 @@
         { ch: "ch16", dx: "stimulant-use", when: "Cocaine or methamphetamine binges." },
         { ch: "ch16", dx: "sedative-use", when: "Benzodiazepines or sleeping pills beyond prescription." },
         { ch: "ch16", dx: "tobacco-use", when: "Cigarettes or vaping." },
-        { ch: "ch16", dx: "other-substance-use", when: "Steroids, kratom, poppers or an unknown drug." }
+        { ch: "ch16", dx: "other-substance-use", when: "Steroids, nitrous oxide, poppers, kava or an unknown drug." }
       ]
     },
     {
@@ -255,7 +255,7 @@
     },
     {
       id: "withdrawal", title: "Shaking, sweating or sick after stopping alcohol or drugs",
-      intro: "Timing and signs point to the drug. Alcohol and sedative withdrawal can kill; opioid withdrawal is miserable but rarely dangerous.",
+      intro: "Timing and signs point to the drug. Alcohol and sedative withdrawal can kill; opioid withdrawal is miserable but rarely dangerous (app guidance).",
       ask: ["What did you stop, and when?", "How much were you using daily?", "Have you had seizures or DTs before?", "Do you know what you are seeing isn’t real?"],
       mustNotMiss: ["**Seizures** and **delirium tremens**.", "**Wernicke encephalopathy**: give thiamine.", "Loss of tolerance and **overdose** after detox."],
       helpers: ["substance"],

@@ -2,7 +2,7 @@
 SP.add("ch16", "highYield", [
   { id: "hy16-general", topic: "General rules", items: [
     "The chapter covers **10** substance classes plus gambling disorder.",
-    "“Addiction” is **not** a DSM diagnostic term.",
+    "“Addiction” is not a DSM term; the neutral term is **substance use disorder**.",
     "A substance use disorder needs at least **2** of 11 criteria within 12 months.",
     "Severity: mild 2–3, moderate 4–5, severe **6 or more** criteria.",
     "Early remission: no criteria for at least 3 but less than **12** months.",
@@ -10,8 +10,8 @@ SP.add("ch16", "highYield", [
     "“On maintenance therapy” applies only to **opioid** and tobacco use disorders.",
     "Tolerance and withdrawal from medicines taken **as prescribed** do not count.",
     "Phencyclidine, other hallucinogen and inhalant use disorders have no **withdrawal** criterion.",
-    "Use of almost every substance peaks at ages **18–24**.",
-    "Short-acting drugs cause **earlier and more intense** withdrawal."
+    "Use of almost every substance is relatively high at ages **18–24**.",
+    "Short-acting drugs tend to cause **earlier and more intense** withdrawal."
   ] },
   { id: "hy16-induced", topic: "Induced disorders and coding", items: [
     "Induced disorders are diagnosed instead of intoxication or withdrawal when symptoms are **in excess** and need independent attention.",
@@ -19,8 +19,8 @@ SP.add("ch16", "highYield", [
     "Symptoms that **preceded** substance use suggest an independent disorder.",
     "Persisting by nature: neurocognitive disorders and **hallucinogen persisting perception disorder**.",
     "Symptoms occurring only during a **delirium** are part of the delirium.",
-    "Sedating drugs cause depression during intoxication and **anxiety** during withdrawal.",
-    "Stimulants cause psychosis during intoxication and **depression** during withdrawal.",
+    "Sedating drugs can cause depression during intoxication and **anxiety** during withdrawal.",
+    "Stimulants are likely to cause psychosis during intoxication and **depression** during withdrawal.",
     "ICD-10-CM combines the use disorder and the induced disorder into **one** code.",
     "The **4th character** shows the comorbid use disorder (1 mild, 2 moderate or severe, 9 none).",
     "Moderate and severe use disorders share **one** code.",
@@ -41,13 +41,13 @@ SP.add("ch16", "highYield", [
     "Alcohol withdrawal begins **4–12** hours after reduction.",
     "Alcohol withdrawal peaks on day **2**.",
     "Alcohol withdrawal seizures occur in fewer than **3%**.",
-    "Alcohol withdrawal is rare under age **30**.",
+    "Alcohol withdrawal is relatively rare under age **30**.",
     "Independent major depression accounts for only one-third to **one-half** of depressive episodes in AUD.",
-    "Each drink raises suicide-attempt risk by about **30%**."
+    "In emergency-department data, each drink of acute use raises suicide-attempt risk by about **30%**."
   ] },
   { id: "hy16-caffcann", topic: "Caffeine and cannabis", items: [
     "Caffeine intoxication needs **five** or more of 12 signs.",
-    "Caffeine intoxication usually follows more than **250** mg.",
+    "Caffeine intoxication typically follows well over **250** mg.",
     "Caffeine doses of **5–10 g** can be lethal.",
     "Caffeine withdrawal needs **three** of five symptoms within 24 hours.",
     "The hallmark of caffeine withdrawal is **headache**.",
@@ -58,7 +58,7 @@ SP.add("ch16", "highYield", [
     "Cannabis intoxication needs two of: red eyes, increased appetite, dry mouth, **tachycardia**.",
     "Cannabis withdrawal begins within **24–48** hours and resolves in 1–2 weeks.",
     "The cannabis withdrawal symptom most linked to relapse is **sleep difficulty**.",
-    "Cannabis use in critical periods triples the risk of **psychosis**.",
+    "Cannabis use in critical periods is linked to a threefold increase in **psychosis** risk.",
     "Cyclic vomiting with regular use is **cannabinoid hyperemesis syndrome**."
   ] },
   { id: "hy16-hallinh", topic: "Hallucinogens and inhalants", items: [
@@ -91,7 +91,7 @@ SP.add("ch16", "highYield", [
   { id: "hy16-sedative", topic: "Sedatives, hypnotics and anxiolytics", items: [
     "**Buspirone** is not in the sedative class.",
     "Sedative intoxication has the same signs as **alcohol** intoxication.",
-    "Untreated sedative withdrawal causes grand mal seizures in up to **20%–30%**.",
+    "Untreated sedative withdrawal may cause grand mal seizures in perhaps up to **20%–30%**.",
     "Short-acting benzodiazepine withdrawal peaks on day **2**.",
     "Diazepam withdrawal may not begin for more than **1 week**.",
     "Withdrawal can follow as little as **15 mg** of diazepam daily for months.",
@@ -106,7 +106,7 @@ SP.add("ch16", "highYield", [
     "The most serious stimulant withdrawal problem is **suicidal** depression.",
     "Cocaine metabolite **benzoylecgonine** is detectable 1–3 days after one dose.",
     "Methamphetamine is detectable in hair for up to **90** days.",
-    "Cocaine cut with **levamisole** causes agranulocytosis."
+    "Cocaine cut with **levamisole** can cause agranulocytosis."
   ] },
   { id: "hy16-tobgamb", topic: "Tobacco and gambling", items: [
     "Mild tobacco use disorder is coded **Z72.0**.",
@@ -120,6 +120,6 @@ SP.add("ch16", "highYield", [
     "Gambling severity: mild 4–5, moderate 6–7, severe **8–9**.",
     "“**Chasing**” losses means returning to get even.",
     "Gambling caused by **dopaminergic** medications is still diagnosed as gambling disorder.",
-    "Gambling disorder raises suicide mortality about **15-fold**."
+    "In a Swedish register study, gambling disorder raised suicide mortality about **15-fold**."
   ] }
 ]);

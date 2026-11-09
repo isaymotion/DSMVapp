@@ -1,12 +1,12 @@
 /* Chapter 17 high yield. Bold text becomes a blank in "Hide key facts" mode, so bold the answer, not the topic.
-   Codes are the current ones (APA coding update of September 2022 and later), checked through October 2026. */
+   Codes are the current ones (APA coding update of September 2022 and later), no change was found for the codes checked through October 2026; confirm against the official tabular list. */
 SP.add("ch17", "highYield", [
   { id: "hy17-overview", topic: "The chapter", items: [
     "NCDs are disorders whose primary deficit is cognitive and **acquired**: a decline from a previously attained level.",
     "Major NCD is broader than dementia: decline in **one** domain is enough.",
     "The old amnestic disorder (memory loss alone) is now **major NCD**.",
     "The term **dementia** may still be used, especially for the degenerative dementias of older age.",
-    "NCDs are unusual in the DSM because the underlying **pathology** can often be determined.",
+    "NCDs are unusual in the DSM because the underlying **pathology** can potentially be determined.",
     "The six cognitive domains: complex attention, executive function, learning and memory, language, perceptual-motor, and **social cognition**.",
     "Except in severe major NCD, semantic, autobiographical and **implicit (procedural)** memory are relatively preserved."
   ] },
@@ -18,7 +18,7 @@ SP.add("ch17", "highYield", [
     "Delirium Criterion E requires evidence of a **physiological** cause: medical condition, substance, medication, toxin, or several.",
     "Acute delirium lasts **hours or days**; persistent delirium lasts **weeks or months**.",
     "Mixed level of activity: normal psychomotor activity despite disturbed attention, or **rapidly fluctuating** activity.",
-    "The delirium subtype more common and more often missed in older adults: **hypoactive**.",
+    "The delirium subtype that may be more frequent, and is often missed, in older adults: **hypoactive**.",
     "The delirium subtype linked to medication side effects and drug withdrawal: **hyperactive**."
   ] },
   { id: "hy17-delirium-codes", topic: "Delirium codes", items: [
@@ -43,12 +43,12 @@ SP.add("ch17", "highYield", [
     "Delirium in intensive care: up to **81%**.",
     "Delirium at the end of life: up to **88%**.",
     "Delirium arising during general hospitalization: **29%–64%**.",
-    "Up to **38%–41%** of people with delirium die within 1 year.",
-    "Falls are an **outcome** of delirium, not an established risk factor.",
+    "Up to **38%–41%** of hospitalized people with delirium die within 1 year.",
+    "Falls may be an **outcome** of delirium but were not found to be a risk factor.",
     "In a 1990–2016 meta-analysis, **anticholinergic** use was not a validated predictor of delirium.",
     "Sex pattern: men more often show motor agitation; women more often **hypoactive** delirium.",
-    "When delirium and major NCD coexist, **delirium** management takes priority.",
-    "Other specified delirium example: **subsyndromal** delirium."
+    "When delirium and major NCD coexist, **delirium** management should generally take priority.",
+    "Other specified delirium example: **subsyndromal** delirium (“subsyndromal delirium-like disorder” since the APA September 2025 update)."
   ] },
   { id: "hy17-ncd-criteria", topic: "Major and mild NCD criteria", items: [
     "NCD Criterion A needs both a **concern** and objective impairment on testing.",
@@ -99,7 +99,7 @@ SP.add("ch17", "highYield", [
     "Hallucinations more common in NCD than in mood or psychotic disorders: **visual**.",
     "Elation is more typical of **frontotemporal** degeneration.",
     "In one US sample, **98%** of people with Alzheimer’s NCD developed neuropsychiatric symptoms within 5 years.",
-    "More than half of people who develop dementia begin with **neuropsychiatric** symptoms.",
+    "Evidence suggests more than half of people who develop dementia begin with **neuropsychiatric** symptoms.",
     "Psychotic disorder due to Alzheimer’s disease, with delusions: **F06.2**.",
     "Personality change due to frontotemporal degeneration, disinhibited type: **F07.0**."
   ] },
@@ -119,7 +119,7 @@ SP.add("ch17", "highYield", [
     "Share of dementias due to Alzheimer’s disease: about **60% to over 90%**.",
     "Genetic share of Alzheimer’s attributable risk: **60%–80%**.",
     "Autosomal dominant Alzheimer’s mutations lie on chromosomes **1, 14 and 21**.",
-    "People with Down syndrome (trisomy **21**) may develop Alzheimer’s disease if they survive to midlife.",
+    "Down syndrome (trisomy **21**): Alzheimer’s disease may appear if they reach midlife.",
     "The strongest common genetic risk factor: **APOE ε4**.",
     "CSF finding of Alzheimer’s disease: **low** amyloid-β42 with raised tau or phospho-tau.",
     "FDG-PET finding in Alzheimer’s disease: **temporoparietal** hypometabolism."
@@ -169,7 +169,7 @@ SP.add("ch17", "highYield", [
   { id: "hy17-huntingtons", topic: "Huntington’s disease", items: [
     "Huntington’s disease code used before F02: **G10**.",
     "Huntington’s NCD Criterion C accepts established disease or **risk** from family history or testing.",
-    "Early Huntington’s cognitive change: **executive** function before memory.",
+    "Early Huntington’s cognitive change: **executive** change, typically more prominent than memory change.",
     "Huntington’s psychiatric and cognitive changes can precede motor signs by **a decade or more**.",
     "Huntington’s symptoms most often begin at ages **35–45**.",
     "CAG repeat length that always causes Huntington’s disease: **40 or more**.",
@@ -186,7 +186,7 @@ SP.add("ch17", "highYield", [
     "CJD can progress to major NCD in as little as **6 months**.",
     "Most sensitive test for CJD: MRI with **diffusion-weighted** imaging.",
     "CSF test with extremely high specificity for prion disease: **RT-QuIC**.",
-    "EEG in CJD: periodic sharp, often triphasic discharges at **0.5–2 Hz**.",
+    "EEG in some people with CJD: periodic sharp, often triphasic discharges at **0.5–2 Hz**.",
     "Variant CJD is linked to **bovine spongiform encephalopathy**.",
     "Definitive diagnosis of prion disease: **brain biopsy or autopsy**."
   ] },

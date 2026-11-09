@@ -17,7 +17,7 @@
         { label: "Diagnosis", options: UD, answer: 0 },
         { label: "Severity", options: SEV, answer: 1 },
         { label: "Status", options: REM, answer: 0 },
-        { label: "Code", options: ["F10.10", "F10.20", "F10.21", "F10.11"], answer: 1 }
+        { label: "Code", options: ["F10.10", "F10.21", "F10.20", "F10.11"], answer: 2 }
       ],
       line: "**F10.20** Alcohol use disorder, moderate",
       why: "Four or five criteria = moderate. Moderate and severe share F10.20."
@@ -28,7 +28,7 @@
       parts: [
         { label: "Syndrome", options: SYN, answer: 3 },
         { label: "Use disorder", options: COM, answer: 1 },
-        { label: "Code", options: ["F10.230", "F10.232", "F10.932", "F10.20 + F10.230", "F10.121"], answer: 1 }
+        { label: "Code", options: ["F10.230", "F10.932", "F10.20 + F10.230", "F10.232", "F10.121"], answer: 3 }
       ],
       line: "**F10.232** Alcohol withdrawal, with perceptual disturbances, with severe alcohol use disorder",
       why: "Insight and no delirium → with perceptual disturbances. One code includes the use disorder."
@@ -39,7 +39,7 @@
       parts: [
         { label: "Syndrome", options: SYN, answer: 2 },
         { label: "Use disorder", options: COM, answer: 1 },
-        { label: "Code", options: ["F11.13", "F11.23", "F11.93", "F11.20 + F11.23", "F11.220"], answer: 1 }
+        { label: "Code", options: ["F11.13", "F11.93", "F11.20 + F11.23", "F11.220", "F11.23"], answer: 4 }
       ],
       line: "**F11.23** Opioid withdrawal, with moderate opioid use disorder",
       why: "Do not add F11.20; the use disorder is in the 4th character."
@@ -73,7 +73,7 @@
       parts: [
         { label: "Syndrome", options: SYN, answer: 0 },
         { label: "Use disorder", options: COM, answer: 1 },
-        { label: "Code", options: ["F15.220", "F14.220", "F14.120", "F14.920", "F14.20"], answer: 1 }
+        { label: "Code", options: ["F15.220", "F14.120", "F14.920", "F14.220", "F14.20"], answer: 3 }
       ],
       line: "**F14.220** Cocaine intoxication, with severe cocaine use disorder",
       why: "Cocaine is **F14** (amphetamine-type is F15)."
@@ -104,8 +104,8 @@
       id: "w16-09", tag: "Tobacco",
       "case": "A man with moderate tobacco use disorder stopped smoking yesterday and now has irritability, anxiety, poor concentration, restlessness and hunger.",
       parts: [
-        { label: "Diagnosis", options: ["Tobacco withdrawal", "Tobacco intoxication", "Tobacco use disorder only", "Caffeine withdrawal"], answer: 0 },
-        { label: "Code", options: ["F17.203", "F17.200", "Z72.0", "F17.209"], answer: 0 }
+        { label: "Diagnosis", options: ["Tobacco intoxication", "Tobacco use disorder only", "Tobacco withdrawal", "Caffeine withdrawal"], answer: 2 },
+        { label: "Code", options: ["F17.200", "Z72.0", "F17.209", "F17.203"], answer: 3 }
       ],
       line: "**F17.203** Tobacco withdrawal (with moderate tobacco use disorder)",
       why: "Four or more of seven within 24 hours; tobacco withdrawal has a single code."
@@ -115,7 +115,7 @@
       "case": "A woman smoking 8 cigarettes daily meets two tobacco use disorder criteria.",
       parts: [
         { label: "Severity", options: SEV, answer: 0 },
-        { label: "Code", options: ["Z72.0", "F17.200", "F17.210", "F17.203"], answer: 0 }
+        { label: "Code", options: ["F17.200", "Z72.0", "F17.210", "F17.203"], answer: 1 }
       ],
       line: "**Z72.0** Tobacco use disorder, mild",
       why: "Mild tobacco use disorder is coded Z72.0, not an F code."
@@ -124,8 +124,8 @@
       id: "w16-11", tag: "Caffeine",
       "case": "After 1.2 g of caffeine, a student has five intoxication symptoms and misses an exam.",
       parts: [
-        { label: "Diagnosis", options: ["Caffeine intoxication", "Caffeine use disorder", "Stimulant intoxication, amphetamine-type", "Caffeine withdrawal"], answer: 0 },
-        { label: "Code", options: ["F15.920", "F15.93", "F15.120", "F15.99"], answer: 0 }
+        { label: "Diagnosis", options: ["Caffeine use disorder", "Caffeine intoxication", "Stimulant intoxication, amphetamine-type", "Caffeine withdrawal"], answer: 1 },
+        { label: "Code", options: ["F15.93", "F15.120", "F15.920", "F15.99"], answer: 2 }
       ],
       line: "**F15.920** Caffeine intoxication",
       why: "Caffeine shares the F15 class with amphetamine-type stimulants; there is no caffeine use disorder."
@@ -134,8 +134,8 @@
       id: "w16-12", tag: "Hallucinogens",
       "case": "Months after stopping LSD, a man has trails, halos and intensified colors with insight and distress.",
       parts: [
-        { label: "Diagnosis", options: ["Hallucinogen persisting perception disorder", "Other hallucinogen intoxication", "Hallucinogen withdrawal", "Hallucinogen-induced psychotic disorder"], answer: 0 },
-        { label: "Code", options: ["F16.983", "F16.920", "F16.99", "F16.159"], answer: 0 }
+        { label: "Diagnosis", options: ["Other hallucinogen intoxication", "Hallucinogen withdrawal", "Hallucinogen-induced psychotic disorder", "Hallucinogen persisting perception disorder"], answer: 3 },
+        { label: "Code", options: ["F16.920", "F16.983", "F16.99", "F16.159"], answer: 1 }
       ],
       line: "**F16.983** Hallucinogen persisting perception disorder",
       why: "There is no hallucinogen withdrawal diagnosis."
@@ -146,7 +146,7 @@
       parts: [
         { label: "Severity", options: SEV, answer: 1 },
         { label: "Course", options: ["Episodic", "Persistent"], answer: 1 },
-        { label: "Code", options: ["F63.0", "F63.81", "Z72.6", "F19.20"], answer: 0 }
+        { label: "Code", options: ["F63.81", "Z72.6", "F63.0", "F19.20"], answer: 2 }
       ],
       line: "**F63.0** Gambling disorder, persistent, moderate",
       why: "Mild 4–5, **moderate 6–7**, severe 8–9; continuous for years = persistent."
@@ -155,9 +155,9 @@
       id: "w16-14", tag: "Induced",
       "case": "A man with severe cocaine use disorder develops persecutory delusions without insight during a binge, persisting several days.",
       parts: [
-        { label: "Diagnosis", options: ["Cocaine-induced psychotic disorder", "Cocaine intoxication, with perceptual disturbances", "Schizophrenia", "Brief psychotic disorder"], answer: 0 },
+        { label: "Diagnosis", options: ["Cocaine intoxication, with perceptual disturbances", "Schizophrenia", "Cocaine-induced psychotic disorder", "Brief psychotic disorder"], answer: 2 },
         { label: "Onset", options: ["With onset during intoxication", "With onset during withdrawal"], answer: 0 },
-        { label: "Code", options: ["F14.259", "F14.159", "F14.959", "F14.20 + F14.959"], answer: 0 }
+        { label: "Code", options: ["F14.159", "F14.959", "F14.20 + F14.959", "F14.259"], answer: 3 }
       ],
       line: "**F14.259** Cocaine-induced psychotic disorder, with onset during intoxication, with severe cocaine use disorder",
       why: "No insight → induced psychotic disorder; one code including the use disorder."
@@ -195,16 +195,16 @@
     },
     {
       id: "n16-03", tag: "Remission",
-      "case": "A man with past severe cocaine use disorder, abstinent 5 months:",
+      "case": "A man with past severe cocaine use disorder whose last problems were 5 months ago:",
       ask: "Which findings are compatible with early remission? Is he in early remission?",
       items: [
         ["Strong craving when he passes his old neighborhood", true, "Craving is allowed in remission."],
-        ["No use or problems for 5 months", true, "No criteria for ≥3 but <12 months."],
+        ["No criteria met for the first 4 months after stopping", true, "No criteria for ≥3 months so far."],
         ["Lives in a supervised sober house", true, "Add “in a controlled environment” only if access is restricted."],
-        ["Used cocaine once last month and missed work", false, "That meets criteria again."]
+        ["Last month he used again on several weekends, missed work repeatedly and could not cut down", false, "Role failure and failed control: criteria are met again."]
       ],
       met: false,
-      why: "The relapse last month with role failure breaks remission. Without it, he would be in early remission."
+      why: "Meeting criteria again last month (other than craving) breaks remission. Without it, he would be in early remission."
     },
     {
       id: "n16-04", tag: "Alcohol withdrawal",

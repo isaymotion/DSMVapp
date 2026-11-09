@@ -10,7 +10,7 @@ SP.add("ch16", "mnemonics", [
       ["R", "Risky use (8–9)", "Physically hazardous use; use despite physical or psychological problems"],
       ["P", "Pharmacology (10–11)", "Tolerance; withdrawal (not counted for medicines taken as prescribed)"]
     ],
-    caveat: "Severity: **mild 2–3, moderate 4–5, severe 6+**. Hallucinogen and inhalant use disorders lack the withdrawal criterion (10 items). In remission only **craving** may be present."
+    caveat: "Severity: **mild 2–3, moderate 4–5, severe 6+**. Phencyclidine, other hallucinogen and inhalant use disorders lack the withdrawal criterion (10 items). In remission only **craving** may be present."
   },
   {
     id: "m16-02", short: "2 of 8", name: "HANGOVERS", original: true, dx: "alcohol-withdrawal", sec: "s16-alcohol-iw",
@@ -61,7 +61,7 @@ SP.add("ch16", "mnemonics", [
     letters: [
       ["R", "Rigidity", "Muscle rigidity"],
       ["A", "Ataxia", ""],
-      ["G", "Grand mal seizures or coma", ""],
+      ["G", "Gets seizures or coma", "Seizures or coma"],
       ["E", "Elevated blood pressure or pulse", ""],
       ["N", "Nystagmus", "Vertical or horizontal"],
       ["A", "Analgesia", "Numbness, diminished pain response"],

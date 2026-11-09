@@ -43,7 +43,7 @@ SP.add("ch16", "guide", {
               ["Other (or unknown)", "I/W", "I/W", "I/W", "I/W", "I/W", "I/W", "I/W", "I/W", "Major/mild"]
             ] },
             { type: "p", text: "*Other hallucinogens also cause **hallucinogen persisting perception disorder** (flashbacks). Delirium and neurocognitive columns summarize the full Table 1; confirm cells against the manual. Note that **tobacco** causes only withdrawal-onset sleep disorder, **caffeine** only anxiety and sleep disorders, and **opioids** never cause psychosis in Table 1." },
-            { type: "callout", kind: "exam", title: "Pattern to remember", text: "**Sedating** drugs (alcohol, sedatives) → **depression during intoxication**, **anxiety during withdrawal**. **Stimulating** drugs (cocaine, amphetamines) → **psychosis and anxiety during intoxication**, **depression during withdrawal**. Both groups cause temporary **sleep and sexual** problems (p. 551)." }
+            { type: "callout", kind: "exam", title: "Pattern to remember", text: "**Sedating** drugs (alcohol, sedatives) → **depression during intoxication**, **anxiety during withdrawal**. **Stimulating** drugs (cocaine, amphetamines) → **psychosis and anxiety during intoxication**, **depression during withdrawal**. Both groups cause temporary **sleep and sexual** problems (p. 551) (app guidance)." }
           ]
         },
         {
@@ -58,7 +58,7 @@ SP.add("ch16", "guide", {
                 "**Risky use (8–9)**: use in **physically hazardous** situations; continued use despite knowing of a physical or psychological problem it causes or worsens.",
                 "**Pharmacological (10–11)**: **tolerance**; **withdrawal** (characteristic syndrome, or the substance taken to relieve or avoid it)."
               ]]
-            ], specifiers: [["Severity", "**Mild** 2–3 · **Moderate** 4–5 · **Severe** 6 or more"], ["In early remission", "No criteria (except **craving**) for **≥3 but <12 months**"], ["In sustained remission", "No criteria (except craving) for **≥12 months**"], ["In a controlled environment", "Access restricted (substance-free jail, therapeutic community, locked unit)"], ["On maintenance therapy", "Opioid and tobacco use disorders only (agonist or partial agonist therapy, e.g., methadone, buprenorphine, nicotine replacement)"]] },
+            ], specifiers: [["Severity", "**Mild** 2–3 · **Moderate** 4–5 · **Severe** 6 or more"], ["In early remission", "No criteria (except **craving**) for **≥3 but <12 months**"], ["In sustained remission", "No criteria (except craving) for **≥12 months**"], ["In a controlled environment", "Access restricted (substance-free jail, therapeutic community, locked unit)"], ["On maintenance therapy", "Opioid and tobacco use disorders only (agonist, partial agonist or antagonist therapy, e.g., methadone, buprenorphine, naltrexone; nicotine replacement)"]] },
             { type: "callout", kind: "mnemonic", title: "Four groups, 11 items", text: "**Control, Social, Risky, Pharmacology**: 4 + 3 + 2 + 2 = 11. Two items in 12 months make the diagnosis. The 11 items are identical across classes, except that **withdrawal does not apply** to phencyclidine, other hallucinogens and inhalants, and **caffeine has no use disorder** in Section II." },
             { type: "defs", title: "Rules that trip people up (pp. 546–547)", items: [
               ["Prescribed medicines", "**Tolerance and withdrawal from appropriately taken prescribed medicines** (opioid analgesics, sedatives, stimulants) are **not counted**. A use disorder needs other signs of compulsive, drug-seeking behavior."],
@@ -83,7 +83,7 @@ SP.add("ch16", "guide", {
               ["Half-life", "**Short-acting** drugs: more likely withdrawal, earlier and more intense. **Long-acting**: later onset, longer but milder withdrawal."],
               ["Multiple substances", "Record **each** intoxication or withdrawal separately."],
               ["Lab tests", "A positive test does not make a diagnosis, and a negative test does not rule one out; normal function with high levels suggests **tolerance**."],
-              ["Age", "Use of almost every substance peaks at **18–24**; intoxication is usually the first disorder, often in the teens."]
+              ["Age", "Use of almost every substance is relatively high at **18–24**; intoxication is usually the first disorder, often in the teens."]
             ] },
             { type: "criteria", title: "Substance/medication-induced mental disorder: shared features", code: "See each chapter", pages: "550–551", items: [
               ["A", "Symptoms typical of the relevant disorder (psychotic, depressive, anxiety and so on) **predominate**."],
@@ -121,7 +121,7 @@ SP.add("ch16", "guide", {
               ["Withdrawal (mild / mod–severe / none)", "F1x.13- · F1x.23- · F1x.93-", "F10.130 · F10.230 · F10.930"],
               ["Unspecified [class]-related disorder", "F1x.99", "F10.99"]
             ] },
-            { type: "callout", kind: "caution", title: "Watch for the exceptions", text: "Intoxication **with perceptual disturbances** ends in **2** (e.g., F10.920 → F12.922 for cannabis); alcohol withdrawal with perceptual disturbances is F10.**132/232/932**. **Moderate and severe** share one code (the 4th character is 2 for both). Some withdrawal codes have only four or five characters (F11.13, F12.13, F15.93 caffeine withdrawal). The full code grid for each class is in its section and on the codes page." },
+            { type: "callout", kind: "caution", title: "Watch for the exceptions", text: "Intoxication **with perceptual disturbances** ends in **2** (e.g., F12.920 → F12.922 for cannabis); alcohol withdrawal with perceptual disturbances is F10.**132/232/932**. **Moderate and severe** share one code (the 4th character is 2 for both). Some withdrawal codes have only four or five characters (F11.13, F12.13, F15.93 caffeine withdrawal). The full code grid for each class is in its section and on the codes page." },
             { type: "case", title: "Coding vignette: heroin withdrawal", text: "A man with moderate heroin use disorder presents in withdrawal.", point: "One code covers both: **F11.23 heroin withdrawal** (with moderate heroin use disorder). Do not add F11.20." }
           ]
         }
@@ -149,14 +149,14 @@ SP.add("ch16", "guide", {
             { type: "table", caption: "Epidemiology and course (pp. 556–558)", head: ["Topic", "Detail"], rows: [
               ["US lifetime prevalence (DSM-5)", "**29.1%** (8.6% mild, 6.6% moderate, 13.9% severe); men 36.0%, women 22.7%"],
               ["12-month (DSM-IV)", "4.6% at 12–17; **16.2% at 18–29**; 1.5% at 65+"],
-              ["Onset", "First intoxication mid-teens; use disorder peaks late teens to mid-20s; most by late 30s; about **10%** begin later"],
+              ["Onset", "First intoxication mid-teens; use disorder peaks late teens to mid-20s; most by late 30s; perhaps **10%** begin after 40"],
               ["Course", "Remission and relapse; once drinking resumes, it **escalates rapidly**. Most people with the disorder have a **better prognosis** than treatment samples suggest"],
               ["Genetics", "**40%–60%** of risk; 3–4 times higher in relatives and in adopted-away children of affected parents"],
               ["Protective", "**Flushing** from ALDH/ADH variants (up to 40% of Japanese, Chinese and Korean people)"],
               ["High risk", "**Low level of response** (low sensitivity) to alcohol; impulsivity; schizophrenia or bipolar disorder; conduct disorder"],
               ["Older adults", "More sensitive brain, slower metabolism, less body water: problems at **lower intake**"],
               ["Women", "Higher blood levels per drink; more vulnerable to **blackouts and liver disease**; gender gap narrowing"],
-              ["Global", "2.8 million deaths a year; 237 million men and 46 million women affected"]
+              ["Global", "2.8 million deaths attributed to alcohol; 237 million men and 46 million women affected"]
             ] },
             { type: "table", caption: "Diagnostic markers (pp. 558–559)", head: ["Marker", "What it shows"], rows: [
               ["Blood alcohol 150 mg/dL without signs of intoxication", "**Tolerance** (at 200 mg/dL most nontolerant people are severely intoxicated)"],
@@ -165,7 +165,7 @@ SP.add("ch16", "guide", {
               ["**MCV** high-normal", "Helps identify heavy drinking but **poor for monitoring** (long red-cell life)"],
               ["Other", "ALT, alkaline phosphatase, triglycerides, HDL, uric acid"]
             ] },
-            { type: "callout", kind: "pearl", title: "Suicide and alcohol", text: "Acute alcohol use is linked to a nearly **sevenfold** increase in suicide attempts, and each drink raises the risk by about **30%** in emergency department data. Alcohol plus sedatives is worse still, and drinkers are **4–6 times** more likely to die by suicide with a gun (pp. 559–560, 563)." },
+            { type: "callout", kind: "pearl", title: "Suicide and alcohol", text: "Acute alcohol use is linked to a nearly **sevenfold** increase in suicide attempts, and each drink raises the risk by about **30%** in emergency department data. Alcohol plus sedatives is worse still, and alcohol use is associated with firearm possession and firearm suicide (pp. 559–560, 563)." },
             { type: "defs", title: "Differential and comorbidity (pp. 560–561)", items: [
               ["Nonpathological drinking", "Fewer than **20%** of drinkers ever develop the disorder; daily low-dose drinking or occasional intoxication is not enough."],
               ["Sedative use disorder", "Similar picture, but the course and medical problems differ."],
@@ -181,8 +181,8 @@ SP.add("ch16", "guide", {
           pages: "561–569",
           blocks: [
             { type: "criteria", title: "Alcohol intoxication in brief", code: "F10.120 / F10.220 / F10.920", pages: "561", items: [
-              ["A", "Recent ingestion of alcohol."],
-              ["B", "Clinically significant **problematic behavioral or psychological changes** (inappropriate sexual or aggressive behavior, lability, impaired judgment)."],
+              ["A", "Recent drinking."],
+              ["B", "Significant **problematic changes in behavior or mood** (inappropriate sexual or aggressive behavior, lability, impaired judgment)."],
               ["C", "**One or more** of: **slurred speech, incoordination, unsteady gait, nystagmus, impaired attention or memory, stupor or coma**."],
               ["D", "Not due to a medical condition or better explained by another mental disorder or substance."]
             ] },
@@ -210,7 +210,7 @@ SP.add("ch16", "guide", {
               ["Severe forms", "Fewer than **10%** develop dramatic symptoms or **delirium tremens**; **seizures in fewer than 3%**."],
               ["Delirium tremens", "Coded as **alcohol withdrawal delirium** (Neurocognitive Disorders); usually means a **medical condition** too (liver failure, pneumonia, GI bleeding, head trauma, hypoglycemia, electrolytes, surgery)."],
               ["Prevalence", "About **50%** of functional, middle-class people with AUD have had full withdrawal; **>80%** of hospitalized or homeless people."],
-              ["Age", "Rare **under 30**; risk and severity increase with age."],
+              ["Age", "Relatively rare **under 30**; risk and severity increase with age."],
               ["Severity predictors", "Prior withdrawal delirium or severe withdrawal, **low potassium**, **low platelets**, **systolic hypertension**, other sedative dependence; drinking more than about 8 drinks a day."],
               ["Treatment hint", "Relieved by alcohol or **benzodiazepines** (e.g., diazepam)."],
               ["Differential", "Hypoglycemia, diabetic ketoacidosis, **essential tremor**, sedative withdrawal (very similar)."]
@@ -219,7 +219,7 @@ SP.add("ch16", "guide", {
               ["Which ones", "Psychotic, bipolar, depressive, anxiety, sleep, sexual, delirium and major or mild neurocognitive disorder."],
               ["Depression", "Lifetime major depressive episodes in about **40%** with AUD, but only **one-third to one-half** are independent."],
               ["Psychosis", "Alcohol-induced psychotic episodes in **fewer than 5%**."],
-              ["Course", "All except the **amnestic-confabulatory neurocognitive disorder** improve within days to **1 month** of abstinence, even without medication."],
+              ["Course", "All except the **amnestic-confabulatory neurocognitive disorder** are likely to improve within days to **1 month** of abstinence, even without medication."],
               ["Unspecified", "Unspecified alcohol-related disorder: **F10.99**."]
             ] },
             { type: "case", title: "Clinical vignette: day 2 after surgery", text: "A 56-year-old man is 2 days after a hip replacement. He is sweating, tremulous, pulse 118, sleepless and anxious, and sees insects on the wall but knows they are not real. He is oriented. His wife says he drinks a bottle of wine and several beers daily and has failed to cut down, drinks every morning, and has had two DUIs.", point: "Withdrawal with perceptual disturbances and intact reality testing, no delirium, plus a moderate to severe use disorder → **F10.232 alcohol withdrawal, with perceptual disturbances, with moderate (or severe) alcohol use disorder**. Monitor for seizures and delirium." }
@@ -259,7 +259,7 @@ SP.add("ch16", "guide", {
             ] },
             { type: "defs", title: "Differential (pp. 571, 574)", items: [
               ["Intoxication", "Mania, panic disorder, GAD, amphetamine intoxication, sedative or tobacco withdrawal, sleep disorders, **akathisia**."],
-              ["Withdrawal", "Migraine and other headaches, viral illness, sinus disease, other drug withdrawal. A **caffeine challenge** that relieves symptoms confirms it."],
+              ["Withdrawal", "Migraine and other headaches, viral illness, sinus disease, other drug withdrawal. A **caffeine challenge** that relieves symptoms can help confirm it."],
               ["Induced disorders", "**Caffeine-induced anxiety** and **sleep** disorders only, when symptoms exceed intoxication or withdrawal. Unspecified: **F15.99**."]
             ] }
           ]
@@ -295,7 +295,7 @@ SP.add("ch16", "guide", {
             { type: "defs", title: "Markers, suicide and comorbidity (pp. 580–582)", items: [
               ["Urine test", "**THCCOOH** stays positive for **weeks** in frequent users, so it is poor for judging remission."],
               ["Suicide", "**Chronic** (not acute) use is linked to suicidal thoughts and behavior."],
-              ["Functional", "Dose-dependent executive deficits even when not intoxicated; impaired driving; “**amotivational syndrome**.”"],
+              ["Functional", "Executive function may decline with cumulative dose, even when not intoxicated; impaired driving; “**amotivational syndrome**.”"],
               ["Other SUDs", "Multiplies the risk of any other substance use disorder about **ninefold**; 63% of treated adults misuse other drugs; **64%** have tobacco use disorder; cannabis is the primary drug for **76%** of adolescents in treatment."],
               ["Psychosis", "Use in critical periods is linked to a **threefold** increase in psychosis risk; high-potency daily use may explain regional variation."],
               ["Medical", "**Cannabinoid hyperemesis syndrome** (cyclic vomiting with regular use); respiratory and cardiovascular disease."]
@@ -328,7 +328,7 @@ SP.add("ch16", "guide", {
               ["Relapse driver", "**Sleep difficulty** is the withdrawal symptom most linked to relapse"],
               ["Coding without use disorder", "F12.93, e.g., in a patient taking cannabis **only under medical supervision**"]
             ] },
-            { type: "defs", title: "Cannabis-induced disorders (p. 587)", items: [
+            { type: "defs", title: "Cannabis-induced disorders (pp. 586–587)", items: [
               ["Which ones", "**Psychotic, anxiety and sleep** disorders, plus cannabis intoxication delirium and delirium from **pharmaceutical cannabinoid agonists** taken as prescribed."],
               ["Unspecified", "**F12.99**."]
             ] }
@@ -342,7 +342,7 @@ SP.add("ch16", "guide", {
         {
           id: "s16-hallucinogen",
           title: "Phencyclidine and other hallucinogen use disorders",
-          pages: "587–595",
+          pages: "587–594",
           blocks: [
             { type: "p", text: "Hallucinogens have **two use disorders**: **phencyclidine use disorder** (PCP, ketamine and similar dissociative anesthetics) and **other hallucinogen use disorder** (specify the drug). Both use **F16** codes (mild **F16.10**, moderate or severe **F16.20**, remission F16.11/F16.21), and both have only **10 criteria**: **withdrawal is not established** in humans and does not apply. There is **no hallucinogen withdrawal diagnosis**." },
             { type: "table", caption: "The two groups (pp. 588–592)", head: ["", "Phencyclidine-like", "Other hallucinogens"], rows: [
@@ -350,14 +350,14 @@ SP.add("ch16", "guide", {
               ["Action", "Dissociative anesthetics: separation of mind and body; stupor and coma at high doses", "Altered perception, mood and cognition"],
               ["Duration", "Effects for hours; elimination **8 days or more**; urine positive up to **8 days**; psychosis may last weeks", "Salvia and DMT short; **LSD and MDMA** hours to days"],
               ["Prevalence", "Hallucinogen use disorder overall about **0.1%** (age 12+); PCP the primary drug in 0.3% of treatment admissions (62% men)", "About **0.1%** (0.4% at 18–25); **90%** of adults with it are 18–29; 60% men"],
-              ["Notes", "Violence (feels attacked), analgesia, nystagmus, hypertension; ketamine is also an antidepressant", "**MDMA** carries the highest risk of use disorder and possible withdrawal; persisting neurotoxicity (memory, serotonin)"]
+              ["Notes", "Violence (feels attacked), analgesia, nystagmus, hypertension; ketamine is also an antidepressant", "**Ecstasy** users have a higher risk of the disorder than users of other hallucinogens, and MDMA withdrawal symptoms may occur; persisting neurotoxicity (memory, serotonin)"]
             ] },
             { type: "defs", title: "Other points (pp. 589–595)", items: [
               ["Common criteria", "Tolerance, hazardous use, use despite problems, giving up activities, much time spent."],
               ["Risk", "Sensation seeking (ecstasy, salvia); higher income, lower education, never married, urban; genetics 26%–79% in male twins."],
               ["Culture", "Religious use: **peyote** (Native American Church), psilocybin, **ayahuasca** (Santo Daime, União do Vegetal)."],
               ["Testing", "LSD is potent at **75 micrograms**, so routine toxicology may miss it."],
-              ["Complications", "Hyperthermia, arrhythmias, hyponatremia, seizures, rhabdomyolysis, renal and hepatic failure, stroke."],
+              ["Complications", "Hyperthermia, arrhythmias, hypernatremia (as printed, p. 594), seizures, rhabdomyolysis, renal and hepatic failure, stroke."],
               ["Differential", "PCP can be added to cannabis or cocaine; rule out schizophrenia (people with paranoia may wrongly blame drugs)."]
             ] }
           ]
@@ -365,13 +365,13 @@ SP.add("ch16", "guide", {
         {
           id: "s16-hallucinogen-intox",
           title: "Hallucinogen intoxication and HPPD",
-          pages: "595–601",
+          pages: "594–601",
           blocks: [
             { type: "compare", title: "Two intoxications", items: [
               { title: "Phencyclidine intoxication (F16.120/220/920)", color: "clin", points: ["B: **belligerence, assaultiveness**, impulsiveness, unpredictability, agitation.", "C: **two or more within 1 hour**: **vertical or horizontal nystagmus**, hypertension or tachycardia, **numbness or reduced pain response**, ataxia, dysarthria, **muscle rigidity**, seizures or coma, **hyperacusis**.", "Confusion **without** hallucinations is common; CK and AST may rise.", "Clues: **nystagmus with bizarre violence**."] },
-              { title: "Other hallucinogen intoxication (F16.120/220/920)", color: "case", points: ["B: marked anxiety or depression, ideas of reference, fear of “losing one’s mind,” paranoia.", "C: **perceptual changes in full wakefulness**: intensified perception, depersonalization, derealization, illusions, hallucinations, **synesthesias**.", "D: **two or more**: **pupillary dilation**, tachycardia, sweating, palpitations, blurred vision, tremors, incoordination.", "Minutes (salvia) to hours (LSD, MDMA)."] }
+              { title: "Other hallucinogen intoxication (F16.120/220/920)", color: "case", points: ["B: marked anxiety or depression, fear of “losing one’s mind,” ideas of reference, paranoia.", "C: **perceptual changes in full wakefulness**: intensified perception, depersonalization, derealization, illusions, hallucinations, **synesthesias**.", "D: **two or more**: **pupillary dilation**, tachycardia, sweating, palpitations, blurred vision, tremors, incoordination.", "Minutes (salvia) to hours (LSD, MDMA)."] }
             ] },
-            { type: "callout", kind: "mnemonic", title: "PCP signs: RAGE NASH", text: "**R**igidity · **A**taxia · **G**rand mal seizures or coma · **E**levated BP or pulse · **N**ystagmus · **A**nalgesia (numbness) · **S**lurred speech (dysarthria) · **H**yperacusis. Two or more within 1 hour, with belligerence." },
+            { type: "callout", kind: "mnemonic", title: "PCP signs: RAGE NASH", text: "**R**igidity · **A**taxia · **G**ets seizures or coma · **E**levated BP or pulse · **N**ystagmus · **A**nalgesia (numbness) · **S**lurred speech (dysarthria) · **H**yperacusis. Two or more within 1 hour, with belligerence." },
             { type: "criteria", title: "Hallucinogen persisting perception disorder in brief", code: "F16.983", pages: "598", items: [
               ["A", "After stopping a hallucinogen, **reexperiencing perceptual symptoms** felt while intoxicated: geometric hallucinations, false movement in peripheral fields, flashes or intensified colors, **trails**, positive afterimages, **halos**, macropsia, micropsia."],
               ["B", "Distress or impairment."],
@@ -410,7 +410,7 @@ SP.add("ch16", "guide", {
               ["Age 12–17", "**2.3%**", "0.1%"],
               ["Adults", "0.21%", "0.04%"],
               ["Peak", "Poison-control calls peak at **age 14**", "Usually **remits** in early adulthood"],
-              ["Sex", "Adolescent girls equal to or slightly above boys", "Very rare in **adult women**"],
+              ["Sex", "About equal in adolescent boys and girls", "Very rare in **adult women**"],
               ["Risk", "Sensation seeking, impulsivity, maltreatment, **behavioral disinhibition**, isolated Indigenous communities, street children", ""]
             ] },
             { type: "criteria", title: "Inhalant intoxication in brief", code: "F18.120 / F18.220 / F18.920", pages: "605–606", items: [
@@ -490,10 +490,10 @@ SP.add("ch16", "guide", {
             ], specifiers: [["With perceptual disturbances", "Rare; F11.122 / F11.222 / F11.922"]] },
             { type: "criteria", title: "Opioid withdrawal in brief", code: "F11.13 / F11.23 / F11.93", pages: "617", items: [
               ["A", "Either **(1)** cessation or reduction after **heavy, prolonged** use (several weeks or longer), or **(2)** an **opioid antagonist** given after a period of opioid use."],
-              ["B", "**Three or more** within minutes to several days: **dysphoric mood**; **nausea or vomiting**; **muscle aches**; **lacrimation or rhinorrhea**; **pupillary dilation, piloerection or sweating**; **diarrhea**; **yawning**; **fever**; **insomnia**."],
+              ["B", "**Three or more** within minutes to several days: **dysphoric mood**; **nausea or vomiting**; **muscle aches**; **runny eyes or nose**; **dilated pupils, gooseflesh or sweating**; **diarrhea**; **yawning**; **fever**; **insomnia**."],
               ["C–D", "Distress or impairment; not better explained otherwise."]
             ] },
-            { type: "callout", kind: "mnemonic", title: "Opioid withdrawal is the opposite of intoxication", text: "Intoxication: **pinpoint pupils, drowsy, constipated, dry**. Withdrawal: **dilated pupils, insomnia, diarrhea, running nose and eyes, yawning, gooseflesh, aches**. Clinically, it is miserable but rarely life-threatening in healthy adults, unlike alcohol and sedative withdrawal, which can cause **seizures**." },
+            { type: "callout", kind: "mnemonic", title: "Opioid withdrawal is the opposite of intoxication", text: "Intoxication: **pinpoint pupils, drowsy, constipated, dry**. Withdrawal: **dilated pupils, insomnia, diarrhea, running nose and eyes, yawning, gooseflesh, aches**. Clinically, it is miserable but rarely life-threatening in healthy adults, unlike alcohol and sedative withdrawal, which can cause **seizures** (app guidance)." },
             { type: "table", caption: "Withdrawal facts (pp. 617–619)", head: ["Topic", "Detail"], rows: [
               ["Precipitated withdrawal", "From antagonists (**naloxone, naltrexone, nalmefene**) or a partial agonist (**buprenorphine**) given to someone on a full agonist"],
               ["Short-acting (heroin)", "Begins **6–12 hours**, peaks **1–3 days**, subsides over **5–7 days**"],
@@ -509,7 +509,7 @@ SP.add("ch16", "guide", {
               ["Dilated pupils", "Also in hallucinogen and stimulant intoxication, but without nausea, diarrhea, cramps, rhinorrhea and lacrimation."],
               ["Induced disorders", "**Depressive, anxiety (withdrawal), sleep and sexual** disorders and intoxication or withdrawal delirium (also delirium from opioids taken as prescribed). No opioid-induced psychotic disorder in Table 1. Unspecified: **F11.99**."]
             ] },
-            { type: "case", title: "Clinical vignette: the emergency department", text: "A 27-year-old man is found unresponsive in a restaurant bathroom with a respiratory rate of 6 and pinpoint pupils. Two doses of naloxone produce only partial arousal. His friend says he snorted “heroin” and had taken alprazolam earlier. He has used heroin daily for 2 years, cannot stop despite losing his job, and needs more to get high.", point: "Opioid intoxication with a moderate or severe use disorder (**F11.220**). The poor naloxone response suggests **fentanyl** in the supply and/or **benzodiazepine co-ingestion**. Code the sedative intoxication separately; after recovery, offer **buprenorphine or methadone** and take-home naloxone." }
+            { type: "case", title: "Clinical vignette: the emergency department", text: "A 27-year-old man is found unresponsive in a restaurant bathroom with a respiratory rate of 6 and pinpoint pupils. Two doses of naloxone produce only partial arousal. His friend says he snorted “heroin” and had taken alprazolam earlier. He has used heroin daily for 2 years, cannot stop despite losing his job, and needs more to get high.", point: "Opioid intoxication with a moderate or severe use disorder (**F11.220**). The poor naloxone response suggests **fentanyl** in the supply and/or **benzodiazepine co-ingestion**. Code the sedative intoxication separately; after recovery, offer **buprenorphine or methadone** and take-home naloxone (app guidance; see treatment bridge)." }
           ]
         }
       ]
@@ -520,7 +520,7 @@ SP.add("ch16", "guide", {
         {
           id: "s16-sedative",
           title: "Sedative, hypnotic or anxiolytic use disorder",
-          pages: "620–627",
+          pages: "620–626",
           blocks: [
             { type: "defs", title: "The class (pp. 620–623)", items: [
               ["Included", "**Benzodiazepines**, “Z-drugs” (**zolpidem, zaleplon**), carbamates (meprobamate), **barbiturates**, barbiturate-like hypnotics (methaqualone, propofol): most prescription sleeping and antianxiety drugs."],
@@ -553,22 +553,22 @@ SP.add("ch16", "guide", {
         {
           id: "s16-sedative-iw",
           title: "Sedative intoxication and withdrawal",
-          pages: "627–632",
+          pages: "626–632",
           blocks: [
-            { type: "criteria", title: "Sedative, hypnotic or anxiolytic intoxication in brief", code: "F13.120 / F13.220 / F13.920", pages: "627", items: [
+            { type: "criteria", title: "Sedative, hypnotic or anxiolytic intoxication in brief", code: "F13.120 / F13.220 / F13.920", pages: "626–627", items: [
               ["A", "Recent use."],
               ["B", "Maladaptive changes (inappropriate sexual or aggressive behavior, lability, impaired judgment)."],
               ["C", "**One or more**: **slurred speech, incoordination, unsteady gait, nystagmus, impaired cognition, stupor or coma**."],
               ["D", "Not due to a medical condition or another disorder or substance."]
             ] },
-            { type: "callout", kind: "exam", text: "Sedative and alcohol intoxication share the **same C list** (slurred speech, incoordination, unsteady gait, nystagmus, cognitive impairment, stupor or coma). Only the **smell of alcohol** or toxicology separates them. Sedative intoxication often brings **anterograde amnesia** like alcoholic blackouts, and people with neurocognitive disorder or TBI become intoxicated at **low doses** (pp. 627–628)." },
+            { type: "callout", kind: "exam", text: "Sedative and alcohol intoxication share the **same C list** (slurred speech, incoordination, unsteady gait, nystagmus, cognitive impairment, stupor or coma). Only the **smell of alcohol** or toxicology separates them. Sedative intoxication often brings **anterograde amnesia** like alcoholic blackouts, and people with neurocognitive disorder or TBI become intoxicated at **low doses** (pp. 627–628) (app guidance)." },
             { type: "criteria", title: "Sedative, hypnotic or anxiolytic withdrawal in brief", code: "F13.130 / F13.230 / F13.930", pages: "628–629", items: [
               ["A", "Cessation or reduction after **prolonged** use."],
               ["B", "**Two or more** within hours to a few days: autonomic hyperactivity; hand tremor; insomnia; nausea or vomiting; transient hallucinations or illusions; psychomotor agitation; anxiety; **grand mal seizures**."],
               ["C–D", "Distress or impairment; not better explained otherwise."]
             ], specifiers: [["With perceptual disturbances", "F13.132 / F13.232 / F13.932"]] },
             { type: "table", caption: "Withdrawal facts (pp. 629–631)", head: ["Topic", "Detail"], rows: [
-              ["Seizures", "**Grand mal seizures in up to 20%–30%** of untreated withdrawal"],
+              ["Seizures", "**Grand mal seizures in perhaps up to 20%–30%** of untreated withdrawal"],
               ["Short-acting (≤10 h: lorazepam, oxazepam, temazepam)", "Begins **6–8 hours**, peaks **day 2**, improves by days 4–5 (triazolam within hours)"],
               ["Long-acting (diazepam)", "May not begin for **more than 1 week**, peaks in **week 2**, eases in weeks 3–4"],
               ["Dose", "Can follow **15 mg diazepam** daily for months; likely at **40 mg**; seizures or delirium more likely at **100 mg**"],
@@ -580,7 +580,7 @@ SP.add("ch16", "guide", {
               ["Which ones", "**Psychotic, bipolar, depressive, anxiety (withdrawal), sleep, sexual**, delirium (intoxication, withdrawal, or as prescribed) and **major or mild neurocognitive** disorder."],
               ["Unspecified", "**F13.99**."]
             ] },
-            { type: "case", title: "Clinical vignette: the abrupt stop", text: "A 62-year-old woman has taken alprazolam 4 mg daily for 10 years, as prescribed for panic disorder, without dose escalation. She ran out 2 days ago because her psychiatrist retired. She is tremulous, sweating, sleepless and anxious, and had a generalized seizure this morning.", point: "**F13.930 sedative, hypnotic or anxiolytic withdrawal** without a use disorder: tolerance and withdrawal from a drug taken as prescribed do not count toward a use disorder. Restart a benzodiazepine and taper slowly." }
+            { type: "case", title: "Clinical vignette: the abrupt stop", text: "A 62-year-old woman has taken alprazolam 4 mg daily for 10 years, as prescribed for panic disorder, without dose escalation. She ran out 2 days ago because her psychiatrist retired. She is tremulous, sweating, sleepless and anxious, and had a generalized seizure this morning.", point: "**F13.930 sedative, hypnotic or anxiolytic withdrawal** without a use disorder: tolerance and withdrawal from a drug taken as prescribed do not count toward a use disorder. Restart a benzodiazepine and taper slowly (app guidance; see treatment bridge)." }
           ]
         }
       ]
@@ -643,12 +643,12 @@ SP.add("ch16", "guide", {
           pages: "640–645",
           blocks: [
             { type: "criteria", title: "Stimulant intoxication in brief", code: "F15.120/220/920 · F14.120/220/920", pages: "640–641", items: [
-              ["A", "Recent use of an amphetamine-type substance, cocaine or other stimulant."],
-              ["B", "Problematic changes: euphoria or **affective blunting**; changes in sociability; **hypervigilance**; interpersonal sensitivity; anxiety, tension or anger; **stereotyped behaviors**; impaired judgment."],
-              ["C", "**Two or more**: tachycardia **or bradycardia**; **pupillary dilation**; elevated **or lowered** blood pressure; perspiration or chills; nausea or vomiting; weight loss; psychomotor agitation or retardation; muscle weakness, respiratory depression, **chest pain** or arrhythmia; confusion, **seizures**, dyskinesias, dystonias or coma."],
+              ["A", "Recent use of cocaine, an amphetamine-type substance or another stimulant."],
+              ["B", "Problematic changes: euphoria or **affective blunting**; **hypervigilance**; altered sociability; interpersonal sensitivity; tension, anxiety or anger; **stereotyped behaviors**; impaired judgment."],
+              ["C", "**Two or more**: fast **or slow** pulse; **dilated pupils**; high **or low** blood pressure; sweating or chills; nausea or vomiting; weight loss; psychomotor agitation or retardation; muscle weakness, respiratory depression, **chest pain** or arrhythmia; confusion, **seizures**, dyskinesias, dystonias or coma."],
               ["D", "Not due to a medical condition or another disorder or substance."]
             ], specifiers: [["Specify the drug", "Amphetamine-type, cocaine or other stimulant"], ["With perceptual disturbances", "F15.122/222/922 · F14.122/222/922"]] },
-            { type: "callout", kind: "exam", title: "Why some signs go both ways", text: "Stimulant effects (euphoria, tachycardia, hypertension, agitation) are usual. **Depressant effects** (sadness, **bradycardia**, low blood pressure, retardation) appear mainly with **chronic high-dose** use. Severe intoxication can cause convulsions, arrhythmias, **hyperpyrexia** and death (pp. 641–642)." },
+            { type: "callout", kind: "exam", title: "Why some signs go both ways", text: "Stimulant effects (euphoria, tachycardia, hypertension, agitation) are usual. **Depressant effects** (sadness, **bradycardia**, low blood pressure, retardation) appear mainly with **chronic high-dose** use. Severe intoxication can cause convulsions, arrhythmias, **hyperpyrexia** and death (pp. 641–642) (app guidance)." },
             { type: "criteria", title: "Stimulant withdrawal in brief", code: "F15.13/23/93 · F14.13/23/93", pages: "643", items: [
               ["A", "Cessation or reduction of **prolonged** stimulant use."],
               ["B", "**Dysphoric mood** plus **two or more** within hours to several days: **fatigue**; **vivid, unpleasant dreams**; **insomnia or hypersomnia**; **increased appetite**; psychomotor retardation or agitation."],
@@ -690,7 +690,7 @@ SP.add("ch16", "guide", {
               ["Unspecified tobacco-related disorder", "**F17.209**"],
               ["Specifiers", "In remission; **on maintenance therapy** (e.g., nicotine replacement); in a controlled environment"]
             ] },
-            { type: "callout", kind: "exam", title: "What tobacco does not have", text: "**No tobacco intoxication** diagnosis (intoxication is very rare). The only tobacco-induced disorder is **sleep disorder with onset during withdrawal**. DSM-5 renamed the class from “nicotine” to **“tobacco”** because harms come mostly from tobacco, not nicotine (pp. 545, 646)." },
+            { type: "callout", kind: "exam", title: "What tobacco does not have", text: "**No tobacco intoxication** diagnosis (intoxication is very rare). The only tobacco-induced disorder is **sleep disorder with onset during withdrawal**. DSM-5 renamed the class from “nicotine” to **“tobacco”** because harms come mostly from tobacco, not nicotine (pp. 545, 646) (app guidance)." },
             { type: "defs", title: "Features (pp. 646–647)", items: [
               ["Products", "Cigarettes, smokeless tobacco, pipes, cigars, **e-cigarettes**, nicotine gum and patch; addictiveness follows speed of delivery (smoked > oral > transdermal) and nicotine content."],
               ["Common criteria", "Withdrawal relief, craving, use despite disease, chain-smoking. Role failure is **rare**; hazardous use (smoking in bed) and social problems are intermediate but signal severity."],
@@ -786,7 +786,7 @@ SP.add("ch16", "guide", {
               ["Treatment seeking", "**Under 10%**"],
               ["Risk", "Childhood gambling, antisocial PD, mood disorders, **alcohol use disorder** (also in relatives), ADHD and anxiety (persistence); some Indigenous communities"],
               ["Suicide", "Up to **half** in treatment have suicidal thoughts and **17%** attempts; **15-fold** suicide mortality in Sweden"],
-              ["Comorbidity", "About **three-quarters** have another disorder that **preceded** the gambling; poor health, tachycardia and angina"]
+              ["Comorbidity", "In about **three-quarters** of those with gambling disorder plus another disorder, the other disorder **came first**; poor health, tachycardia and angina"]
             ] },
             { type: "defs", title: "Differential (p. 665)", items: [
               ["Professional gambling", "Risks limited, **discipline** central."],
@@ -809,7 +809,7 @@ SP.add("ch16", "guide", {
               ["Other hallucinogens", "≥2 of 7 + perceptual changes", "None", "Mydriasis; **HPPD**"],
               ["Inhalants", "≥2 of 13", "None", "Negative screens, glue-sniffer’s rash"],
               ["Opioids", "Miosis + ≥1 of 3", "≥3 of 9", "**Pinpoint pupils**; withdrawal **yawning, rhinorrhea**"],
-              ["Sedatives", "≥1 of 6 (as alcohol)", "≥2 of 8 (as alcohol)", "Seizures in up to **20%–30%** untreated"],
+              ["Sedatives", "≥1 of 6 (as alcohol)", "≥2 of 8 (as alcohol)", "Seizures in perhaps up to **20%–30%** untreated"],
               ["Stimulants", "≥2 of 9", "Dysphoria + ≥2 of 5", "Paranoia; withdrawal **crash** with bradycardia"],
               ["Tobacco", "**None**", "≥4 of 7, within 24 h", "Withdrawal only F17.203"]
             ] },
@@ -833,7 +833,7 @@ SP.add("ch16", "guide", {
           blocks: [
             { type: "steps", title: "Six steps for a patient who uses substances", items: [
               ["1. Which substances?", "History from the patient and others, toxicology (know what tests miss: fentanyl, synthetic drugs, inhalants, LSD), and the substance named in the diagnosis."],
-              ["2. Is there a use disorder?", "Count the 11 criteria (10 for hallucinogens and inhalants) in the past 12 months; exclude tolerance and withdrawal from medicines taken as prescribed; rate severity and remission."],
+              ["2. Is there a use disorder?", "Count the 11 criteria (10 for phencyclidine, other hallucinogens and inhalants) in the past 12 months; exclude tolerance and withdrawal from medicines taken as prescribed; rate severity and remission."],
               ["3. Intoxication or withdrawal now?", "Apply the class-specific criteria; note perceptual disturbances; record each substance separately."],
               ["4. Is there an induced mental disorder?", "Symptoms in excess of usual intoxication or withdrawal; timing; the 1-month rule; not only during delirium."],
               ["5. Code once", "One combined code: the induced disorder or intoxication or withdrawal with the use disorder in the 4th character; do not add a separate use-disorder code."],

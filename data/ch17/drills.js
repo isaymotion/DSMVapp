@@ -16,7 +16,7 @@
       parts: [
         { label: "Syndrome", options: SYN, answer: 0 },
         { label: "Activity level", options: ACT, answer: 1 },
-        { label: "Code", options: ["J18.9, F05", "F05, J18.9", "R41.0", "F03.90", "R41.9"], answer: 0 }
+        { label: "Code", options: ["F05, J18.9", "J18.9, F05", "R41.0", "F03.90", "R41.9"], answer: 1 }
       ],
       line: "**J18.9** pneumonia; **F05** delirium due to pneumonia, acute, hypoactive",
       why: "Code the medical condition first, then F05; record course and activity level."
@@ -27,7 +27,7 @@
       parts: [
         { label: "Syndrome", options: SYN, answer: 0 },
         { label: "Activity level", options: ACT, answer: 0 },
-        { label: "Code", options: ["F10.231", "F10.131", "F10.931", "F10.221", "F05"], answer: 0 }
+        { label: "Code", options: ["F10.131", "F10.931", "F10.231", "F10.221", "F05"], answer: 2 }
       ],
       line: "**F10.231** severe alcohol use disorder with alcohol withdrawal delirium, acute, hyperactive",
       why: "Withdrawal delirium with a moderate or severe use disorder; the use disorder is not coded separately."
@@ -38,7 +38,7 @@
       parts: [
         { label: "Syndrome", options: SYN, answer: 0 },
         { label: "Activity level", options: ACT, answer: 0 },
-        { label: "Code", options: ["F19.921", "F19.121", "F05", "F13.921", "F06.8"], answer: 0 }
+        { label: "Code", options: ["F19.121", "F05", "F13.921", "F19.921", "F06.8"], answer: 3 }
       ],
       line: "**F19.921** dexamethasone-induced delirium, acute, hyperactive",
       why: "Medications outside the named classes use the “other substance” code with no use disorder."
@@ -50,7 +50,7 @@
         { label: "Syndrome", options: SYN, answer: 1 },
         { label: "Certainty", options: CERT, answer: 0 },
         { label: "Severity", options: SEV, answer: 1 },
-        { label: "Code", options: ["G30.9, F02.B0", "F03.B0", "G30.9, F02.80", "G30.9, F02.A0", "G31.84"], answer: 0 }
+        { label: "Code", options: ["F03.B0", "G30.9, F02.80", "G30.9, F02.A0", "G31.84", "G30.9, F02.B0"], answer: 4 }
       ],
       line: "**G30.9** Alzheimer’s disease; **F02.B0** major NCD due to probable Alzheimer’s disease, moderate, without behavioral disturbance",
       why: "Memory plus another domain, steady progression: probable. Basic ADLs: moderate (B)."
@@ -62,19 +62,19 @@
         { label: "Syndrome", options: SYN, answer: 1 },
         { label: "Certainty", options: CERT, answer: 1 },
         { label: "Severity", options: SEV, answer: 0 },
-        { label: "Code", options: ["F03.A3", "G30.9, F02.A3", "G30.9, F03.A3", "F02.A3", "G31.84"], answer: 0 }
+        { label: "Code", options: ["G30.9, F02.A3", "G30.9, F03.A3", "F03.A3", "F02.A3", "G31.84"], answer: 2 }
       ],
       line: "**F03.A3** major NCD due to possible Alzheimer’s disease, mild, with mood disturbance",
       why: "An extended plateau makes it possible: F03 with no G30.9."
     },
     {
       id: "w17-06", tag: "Frontotemporal",
-      "case": "A 57-year-old with disinhibition, apathy, hyperorality and lost empathy, spared memory, and frontal atrophy on MRI; his wife handles his money and medications.",
+      "case": "A 57-year-old with disinhibition, hyperorality and lost empathy, spared memory, and frontal atrophy on MRI; his wife handles his money and medications.",
       parts: [
         { label: "Syndrome", options: SYN, answer: 1 },
         { label: "Certainty", options: CERT, answer: 0 },
         { label: "Severity", options: SEV, answer: 0 },
-        { label: "Code", options: ["G31.09, F02.A18", "F03.A18", "G31.09, F02.A0", "G31.83, F02.A18", "G31.09, F06.71"], answer: 0 }
+        { label: "Code", options: ["F03.A18", "G31.09, F02.A0", "G31.83, F02.A18", "G31.09, F02.A18", "G31.09, F06.71"], answer: 3 }
       ],
       line: "**G31.09** frontotemporal degeneration; **F02.A18** major frontotemporal NCD, probable, mild, with other behavioral disturbance (disinhibition)",
       why: "Imaging makes it probable; disinhibition is coded as other behavioral disturbance (18)."
@@ -86,22 +86,22 @@
         { label: "Syndrome", options: SYN, answer: 1 },
         { label: "Certainty", options: CERT, answer: 0 },
         { label: "Severity", options: SEV, answer: 0 },
-        { label: "Code", options: ["G31.83, F02.A2", "F03.A2", "G31.83, F02.A0", "G20.C, F02.A2", "G31.84"], answer: 0 }
+        { label: "Code", options: ["F03.A2", "G31.83, F02.A2", "G31.83, F02.A0", "G20.C, F02.A2", "G31.84"], answer: 1 }
       ],
       line: "**G31.83** Lewy body disease; **F02.A2** major NCD with probable Lewy bodies, mild, with psychotic disturbance",
       why: "Two core features make it probable; visual hallucinations are coded as psychotic disturbance."
     },
     {
       id: "w17-08", tag: "Vascular",
-      "case": "A 70-year-old has one lacunar stroke on MRI and slowed processing, but manages his life independently with extra effort; no behavioral symptoms.",
+      "case": "A 70-year-old had a documented lacunar stroke 6 months ago, after which his processing slowed; he manages his life independently with extra effort; no behavioral symptoms.",
       parts: [
         { label: "Syndrome", options: SYN, answer: 2 },
         { label: "Certainty", options: CERT, answer: 0 },
         { label: "Severity", options: SEV, answer: 3 },
-        { label: "Code", options: ["I67.9, F06.70", "F01.A0", "G31.84", "I67.9, F06.71", "F06.70"], answer: 0 }
+        { label: "Code", options: ["F01.A0", "G31.84", "I67.9, F06.71", "F06.70", "I67.9, F06.70"], answer: 4 }
       ],
       line: "**I67.9** cerebrovascular disease; **F06.70** mild vascular NCD, probable, without behavioral disturbance",
-      why: "For mild vascular NCD, a single stroke is generally enough; probable mild vascular NCD takes I67.9 first."
+      why: "For mild vascular NCD, a history of a single stroke is generally enough; decline temporally related to a documented stroke makes it probable, and probable mild vascular NCD takes I67.9 first."
     },
     {
       id: "w17-09", tag: "TBI",
@@ -109,7 +109,7 @@
       parts: [
         { label: "Syndrome", options: SYN, answer: 1 },
         { label: "Severity", options: SEV, answer: 0 },
-        { label: "Code", options: ["S06.2XAS, F02.A0", "S06.2X9S, F02.80", "S06.2XAS, F06.70", "F03.A0", "G31.84"], answer: 0 }
+        { label: "Code", options: ["S06.2X9S, F02.80", "S06.2XAS, F06.70", "S06.2XAS, F02.A0", "F03.A0", "G31.84"], answer: 2 }
       ],
       line: "**S06.2XAS** diffuse TBI, sequela; **F02.A0** major NCD due to TBI, mild, without behavioral disturbance",
       why: "S06.2XAS replaced S06.2X9S in 2022; severity is the NCD’s, not the injury’s."
@@ -119,7 +119,7 @@
       "case": "A man with severe alcohol use disorder has persistent amnesia with confabulation after Wernicke’s encephalopathy, 4 months abstinent.",
       parts: [
         { label: "Syndrome", options: SYN, answer: 1 },
-        { label: "Code", options: ["F10.26", "F10.27", "F10.96", "F10.288", "F10.231"], answer: 0 }
+        { label: "Code", options: ["F10.27", "F10.96", "F10.288", "F10.26", "F10.231"], answer: 3 }
       ],
       line: "**F10.26** severe alcohol use disorder with alcohol-induced major NCD, amnestic-confabulatory type, persistent",
       why: "Amnestic-confabulatory type with a moderate or severe use disorder: F10.26."
@@ -129,7 +129,7 @@
       "case": "A woman with treated HIV has slowed processing and poor free recall that affect her job, but she lives independently; she is irritable.",
       parts: [
         { label: "Syndrome", options: SYN, answer: 2 },
-        { label: "Code", options: ["B20, F06.71", "B20, F06.70", "G31.84", "B20, F02.A18", "F06.71"], answer: 0 }
+        { label: "Code", options: ["B20, F06.70", "B20, F06.71", "G31.84", "B20, F02.A18", "F06.71"], answer: 1 }
       ],
       line: "**B20** HIV disease; **F06.71** mild NCD due to HIV infection, with behavioral disturbance",
       why: "Known etiology: disease code then F06.7x; irritability is a behavioral disturbance."
@@ -141,7 +141,7 @@
         { label: "Syndrome", options: SYN, answer: 1 },
         { label: "Certainty", options: CERT, answer: 0 },
         { label: "Severity", options: SEV, answer: 2 },
-        { label: "Code", options: ["G20.C, F02.C2", "G20, F02.C2", "F03.C2", "G31.83, F02.C2", "G20.C, F02.C0"], answer: 0 }
+        { label: "Code", options: ["G20, F02.C2", "F03.C2", "G31.83, F02.C2", "G20.C, F02.C0", "G20.C, F02.C2"], answer: 4 }
       ],
       line: "**G20.C** Parkinson’s disease; **F02.C2** major NCD probably due to Parkinson’s disease, severe, with psychotic disturbance",
       why: "G20.C since October 2023; fully dependent = severe (C)."
@@ -152,7 +152,7 @@
       parts: [
         { label: "Syndrome", options: SYN, answer: 1 },
         { label: "Severity", options: SEV, answer: 1 },
-        { label: "Code", options: ["G35.D, F02.B2", "G35, F02.B2", "F03.B2", "G35.D, F06.71", "G35.D, F02.81"], answer: 0 }
+        { label: "Code", options: ["G35, F02.B2", "F03.B2", "G35.D, F02.B2", "G35.D, F06.71", "G35.D, F02.81"], answer: 2 }
       ],
       line: "**G35.D** multiple sclerosis; **F02.B2** major NCD due to multiple sclerosis, moderate, with psychotic disturbance",
       why: "MS is G35.D since October 2025."
@@ -163,7 +163,7 @@
       parts: [
         { label: "Syndrome", options: SYN, answer: 1 },
         { label: "Severity", options: SEV, answer: 0 },
-        { label: "Code", options: ["F03.A0", "R41.9", "G31.84", "F02.A0", "F03.90"], answer: 0 }
+        { label: "Code", options: ["R41.9", "G31.84", "F02.A0", "F03.A0", "F03.90"], answer: 3 }
       ],
       line: "**F03.A0** major NCD due to unknown etiology, mild, without behavioral disturbance",
       why: "Unknown etiology takes F03; unspecified NCD (R41.9) is for presentations short of full criteria."
@@ -180,7 +180,7 @@
         ["Questions must be repeated because her attention wanders", true, "Impaired focusing and shifting."],
         ["Does not know the date", false, "Disorientation is Criterion C."],
         ["Sees insects on the wall", false, "A perceptual disturbance: Criterion C."],
-        ["Unaware she is in a hospital ward", true, "Reduced awareness of the environment."]
+        ["Takes no notice of the nurses and alarms around her bed", true, "Reduced awareness of the environment."]
       ],
       need: 1,
       met: true,

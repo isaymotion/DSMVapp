@@ -9,6 +9,38 @@
    and "Latest version <Month YYYY>" in the footer (index.html), data/app-meta.js and README.md. */
 window.APP_CHANGELOG = [
   {
+    "version": "57.0.0",
+    "date": "2026-11-09",
+    "title": "Fact-check: Chapters 2–11 and 16–18",
+    "items": [
+      {
+        "type": "correction",
+        "text": "Fact-check of Chapters 2–11 and 16–18 against the DSM-5-TR text: practice cases, drills and vignettes now meet the criteria their answers depend on; wrong pages, dropped hedges and several wrong facts are fixed."
+      },
+      {
+        "type": "update",
+        "text": "Hepatic encephalopathy is now coded K76.82 (changed from K72.90 in October 2022), with a labeled update note in Chapter 2.",
+        "ch": "ch02"
+      },
+      {
+        "type": "update",
+        "text": "Labeled notes for the APA's September 2025 “-like” wording of other specified examples in Chapters 3, 4, 9 and 10."
+      },
+      {
+        "type": "correction",
+        "text": "Treatment notes that could not be verified are labeled “app guidance; not verified” or removed (including the Chapter 18 therapy names)."
+      },
+      {
+        "type": "correction",
+        "text": "Answer positions and lengths in practice questions are mixed so the right answer is no longer predictable."
+      },
+      {
+        "type": "correction",
+        "text": "Chapters 22 and 25 now give the verified NCMH crisis-line numbers."
+      }
+    ]
+  },
+  {
     "version": "56.0.0",
     "date": "2026-11-06",
     "title": "App icon update",

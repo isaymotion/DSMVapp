@@ -25,8 +25,8 @@
         first: "Find and treat the **cause**; prevent harm with **non-drug** measures. No drug is approved to treat delirium.",
         points: [
           "Work-up: vital signs, oxygen saturation, glucose, electrolytes and calcium, renal and liver function, blood count, urinalysis and cultures, medication review, ECG; imaging or lumbar puncture when indicated.",
-          "**Multicomponent** care (reorientation, glasses and hearing aids, sleep, mobility, hydration, family presence, avoiding restraints and catheters) prevents delirium in about a third of at-risk inpatients.",
-          "Low-dose [[stahl:drugs/haloperidol|haloperidol]] or [[stahl:drugs/quetiapine|quetiapine]] only for **dangerous agitation** or distressing psychosis, for the shortest time; trials show no shortening of delirium. Avoid in Lewy body and Parkinson’s disease where possible.",
+          "**Multicomponent** care (reorientation, glasses and hearing aids, sleep, mobility, hydration, family presence, avoiding restraints and catheters) reduces new delirium by roughly 40% in at-risk inpatients (Cochrane 2021).",
+          "Low-dose [[stahl:drugs/haloperidol|haloperidol]] or [[stahl:drugs/quetiapine|quetiapine]] only for **dangerous agitation** or distressing psychosis, for the shortest time; trials have not shown that it shortens delirium or reduces its severity. Avoid in Lewy body and Parkinson’s disease where possible.",
           "Avoid benzodiazepines, **except** for alcohol or sedative withdrawal delirium, where they are the treatment (e.g., [[stahl:drugs/diazepam|diazepam]]), with **thiamine** first.",
           "Reassess cognition after recovery: delirium often unmasks or accelerates an NCD."
         ],
@@ -73,7 +73,7 @@
         points: [
           "No cholinesterase inhibitor is approved for mild cognitive impairment, and trials show little benefit.",
           "For mild NCD due to Alzheimer’s disease with confirmed amyloid, [[stahl:drugs/lecanemab|lecanemab]] or [[stahl:drugs/donanemab|donanemab]] may be considered in specialist care, with MRI monitoring for ARIA.",
-          "Reassess every 6–12 months; many remain stable or improve when contributors are treated."
+          "Reassess serially over time (AAN 2018 guideline)."
         ],
         stahl: [["Mild cognitive impairment", "c/ch12/guide/s12-mci"], ["Amyloid treatments", "c/ch12/guide/s12-amyloid"]]
       }
@@ -143,7 +143,7 @@
         points: [
           "[[stahl:drugs/rivastigmine|Rivastigmine]] or [[stahl:drugs/donepezil|donepezil]] are first line for cognition and psychosis.",
           "If an antipsychotic is unavoidable, very low-dose [[stahl:drugs/quetiapine|quetiapine]] or [[stahl:drugs/clozapine|clozapine]]; [[stahl:drugs/pimavanserin|pimavanserin]] is used off-label; never [[stahl:drugs/haloperidol|haloperidol]].",
-          "Levodopa at the lowest effective dose (may worsen hallucinations); manage orthostatic hypotension and falls; clonazepam or melatonin for REM sleep behavior disorder.",
+          "Levodopa at the lowest effective dose (may worsen hallucinations); manage orthostatic hypotension and falls; clonazepam or melatonin for REM sleep behavior disorder (app guidance; not verified).",
           CARER
         ],
         stahl: [["Lewy body dementia", "c/ch12/guide/s12-lbd"], ["Psychosis in dementia", "c/ch12/guide/s12-psychosis"], ["Rivastigmine", "drugs/rivastigmine"]]
@@ -182,7 +182,7 @@
         first: "**Cognitive rehabilitation**, graded return to activity, and treatment of comorbid depression, PTSD, sleep and substance problems.",
         points: [
           "Avoid sedating and anticholinergic drugs where possible; people with TBI are more sensitive to psychotropic side effects.",
-          "Amantadine and methylphenidate are used for arousal and attention after TBI; evidence is modest.",
+          "Amantadine and methylphenidate are used for arousal and attention after TBI; evidence is modest (app guidance; not verified).",
           "Aggression: behavioral approaches first; propranolol has some evidence.",
           "Screen for seizures, headache and endocrine problems after moderate to severe TBI."
         ],
@@ -240,7 +240,7 @@
         first: "No disease-modifying treatment: **palliative** care, family support and genetic counseling for familial forms.",
         points: [
           "Notify public health as required locally; use infection-control precautions for neurosurgical instruments.",
-          "Clonazepam or valproate for myoclonus; treat distress and sleep."
+          "Clonazepam or valproate for myoclonus (app guidance; not verified); treat distress and sleep."
         ],
         stahl: []
       }
