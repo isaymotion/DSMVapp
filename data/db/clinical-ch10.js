@@ -21,7 +21,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "**Nutritional rehabilitation with weight restoration** plus **eating-disorder-focused psychotherapy**: **family-based treatment** for adolescents; for adults, **CBT-ED**, MANTRA or specialist supportive clinical management (APA guideline, 2023).",
+        first: "**Nutritional rehabilitation with weight restoration** plus **eating-disorder-focused psychotherapy**: **family-based treatment** for adolescents (APA guideline, 2023). For adults, NICE NG69 (2017) names **CBT-ED**, MANTRA or specialist supportive clinical management.",
         points: [
           SAFETY,
           "Refeed carefully and watch for **refeeding syndrome** (falling phosphate, potassium and magnesium, fluid overload) in the first 1–2 weeks; admit for medical instability.",

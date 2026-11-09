@@ -9,17 +9,17 @@ SP.add("ch10", "vignettes", [
     "q": "What is the most accurate diagnosis?",
     "choices": [
       "Anorexia nervosa, binge-eating/purging type",
-      "Anorexia nervosa, restricting type",
       "Avoidant/restrictive food intake disorder",
+      "Anorexia nervosa, restricting type",
       "Other specified feeding or eating disorder, atypical anorexia nervosa",
       "Major depressive disorder with weight loss"
     ],
-    "answer": 1,
+    "answer": 2,
     "why": "Restriction to a **significantly low** weight for age, disturbed body experience and weight-preventing behavior, **no binge or purge** in 3 months: **restricting type**.",
     "whyNot": [
       "No bingeing or purging in the last 3 months.",
-      "Correct.",
       "She has weight and shape concerns, which exclude ARFID.",
+      "Correct.",
       "Her weight is significantly low, so full anorexia applies.",
       "Mood is not the driver; weight loss serves thinness."
     ],
@@ -28,12 +28,12 @@ SP.add("ch10", "vignettes", [
       "choices": [
         "Persistent amenorrhea",
         "Lanugo on the back",
-        "Heart rate of 42 with orthostatic symptoms",
         "Hypercholesterolemia",
-        "Low-normal T4"
+        "Low-normal T4",
+        "Heart rate of 42 with orthostatic symptoms"
       ],
-      "answer": 2,
-      "why": "Marked **bradycardia** with **orthostatic instability** and hypothermia signals medical instability needing inpatient care. The other findings are common and expected in starvation."
+      "answer": 4,
+      "why": "Marked **bradycardia** with **orthostatic instability** and hypothermia signals medical instability needing inpatient care. The other findings are common and expected in starvation. (App guidance: admission thresholds come from adolescent medicine guidelines, not the DSM; the manual says hospitalization may be required.)"
     }
   },
   {
@@ -42,19 +42,19 @@ SP.add("ch10", "vignettes", [
     "stem": "A 23-year-old woman (BMI 16.3) eats one meal a day. Three times a week she eats a box of cereal and a loaf of bread in an hour, feeling unable to stop, then vomits. She weighs herself 20 times a day and says weight decides her mood. Potassium 2.9 mmol/L, bicarbonate 34 mmol/L.",
     "q": "What is the correct diagnosis?",
     "choices": [
-      "Anorexia nervosa, restricting type, moderate",
+      "Anorexia nervosa, binge-eating/purging type, moderate",
+      "Anorexia nervosa, restricting type, of moderate severity",
       "Bulimia nervosa, moderate",
       "Anorexia nervosa and bulimia nervosa",
-      "Anorexia nervosa, binge-eating/purging type, moderate",
       "Anorexia nervosa, binge-eating/purging type, severe"
     ],
-    "answer": 3,
+    "answer": 0,
     "why": "Binges and purges at a **significantly low weight** are anorexia, **binge-eating/purging** type; BMI 16–16.99 = **moderate** (from October 2024, **F50.021**).",
     "whyNot": [
+      "Correct.",
       "She binges and purges.",
       "Bulimia is excluded during anorexia (Criterion E).",
       "The disorders are mutually exclusive in one episode.",
-      "Correct.",
       "Severe is BMI 15–15.99."
     ]
   },
@@ -64,19 +64,19 @@ SP.add("ch10", "vignettes", [
     "stem": "A 17-year-old boy with a BMI previously at the 97th percentile lost 22 kg in 8 months by fasting and running. His BMI is now at the 60th percentile. He fears regaining, checks his abdomen in the mirror many times a day and was found to have a pulse of 44 and a phosphate level at the low limit of normal.",
     "q": "Which diagnosis is most accurate?",
     "choices": [
-      "Other specified feeding or eating disorder, atypical anorexia nervosa",
       "Anorexia nervosa, restricting type, mild",
-      "No eating disorder, since his weight is normal",
+      "No eating disorder, since his weight is now within the normal range for his age",
       "ARFID",
+      "Other specified feeding or eating disorder, atypical anorexia nervosa",
       "Body dysmorphic disorder"
     ],
-    "answer": 0,
+    "answer": 3,
     "why": "All anorexia features except weight, which is **above the median** for age: **atypical anorexia nervosa** (F50.89). His bradycardia shows it can be medically dangerous.",
     "whyNot": [
-      "Correct.",
       "Youth above the median BMI for age should not receive anorexia nervosa.",
       "Normal weight after major loss with these features is still a disorder, and medically risky.",
       "He fears weight gain.",
+      "Correct.",
       "The concern is about weight and shape, which belongs to the eating disorder."
     ]
   },
@@ -87,19 +87,19 @@ SP.add("ch10", "vignettes", [
     "q": "What is the diagnosis and severity?",
     "choices": [
       "Other specified feeding or eating disorder, purging disorder",
+      "Bulimia nervosa, mild",
       "Bulimia nervosa, moderate",
       "Binge-eating disorder, mild",
-      "Anorexia nervosa, binge-eating/purging type",
-      "Bulimia nervosa, mild"
+      "Anorexia nervosa, binge-eating/purging type"
     ],
-    "answer": 4,
+    "answer": 1,
     "why": "Binges and compensation **≥1/week for 3 months** at normal weight with shape-driven self-worth; **2–3** compensatory episodes per week = **mild** (from October 2024, **F50.21**).",
     "whyNot": [
       "She binges.",
+      "Correct.",
       "Moderate needs 4–7 compensatory episodes per week.",
       "She compensates regularly.",
-      "Her weight is normal.",
-      "Correct."
+      "Her weight is normal."
     ]
   },
   {
@@ -110,29 +110,29 @@ SP.add("ch10", "vignettes", [
     "choices": [
       "Hypernatremia and respiratory alkalosis",
       "Hyperkalemia and metabolic acidosis",
-      "Hypokalemia, hypochloremia and metabolic alkalosis",
       "Hypoglycemia and ketoacidosis",
-      "Normal electrolytes with high cholesterol only"
+      "Normal electrolytes with high cholesterol only",
+      "Hypokalemia, hypochloremia and metabolic alkalosis"
     ],
-    "answer": 2,
+    "answer": 4,
     "why": "Vomiting removes gastric acid and chloride: **hypochloremic, hypokalemic metabolic alkalosis**; hypokalemia can cause **arrhythmias**. Amylase may be raised (salivary).",
     "whyNot": [
       "Not typical of purging.",
       "Potassium falls, and vomiting causes alkalosis.",
-      "Correct.",
       "Not the pattern of vomiting.",
-      "Purging at this frequency usually changes electrolytes."
+      "Purging this often can change electrolytes.",
+      "Correct."
     ],
     "then": {
       "q": "What is her bulimia severity?",
       "choices": [
         "Mild",
-        "Moderate",
         "Severe",
+        "Moderate",
         "Extreme",
         "Cannot be rated without the binge count"
       ],
-      "answer": 2,
+      "answer": 1,
       "why": "Severity counts **compensatory behaviors**: 8–13 per week = **severe** (from October 2024, F50.23)."
     }
   },
@@ -142,17 +142,17 @@ SP.add("ch10", "vignettes", [
     "stem": "A 38-year-old man with a BMI of 33 eats a family-size bag of chips, a pizza and a pint of ice cream in under an hour about five evenings a week, feeling he cannot stop. He eats quickly, alone in his car, until in pain, and feels disgusted afterward. This has lasted 2 years. He has tried several diets but never vomits, uses laxatives or exercises to compensate. He is very distressed.",
     "q": "What is the diagnosis?",
     "choices": [
-      "Binge-eating disorder, mild",
       "Binge-eating disorder, moderate",
+      "Binge-eating disorder, mild",
       "Bulimia nervosa, moderate",
       "Obesity, not a mental disorder",
       "Night eating syndrome"
     ],
-    "answer": 1,
+    "answer": 0,
     "why": "Recurrent binges with ≥3 features and **marked distress**, ≥1/week for 3 months, no compensation; **4–7** binges per week = **moderate** (from October 2024, **F50.811**).",
     "whyNot": [
-      "Mild is 1–3 binges per week.",
       "Correct.",
+      "Mild is 1–3 binges per week.",
       "There is no recurrent compensatory behavior.",
       "Obesity is not a mental disorder, but his binges meet BED.",
       "He eats in the evening without waking, in clear binges."
@@ -161,22 +161,22 @@ SP.add("ch10", "vignettes", [
   {
     "id": "v10-07",
     "tag": "BED vs mood",
-    "stem": "A 45-year-old woman has binged several times a week for a year, with loss of control, eating alone and feeling guilty. For the past month she has also had low mood, anhedonia, hypersomnia, guilt and poor concentration most of the day. She does not compensate.",
+    "stem": "A 45-year-old woman has binged several times a week for a year: she eats large amounts rapidly with loss of control until uncomfortably full, eats alone because she is embarrassed by how much she eats and feels guilty afterward. She is markedly distressed by the binges. For the past month she has also had low mood, anhedonia, hypersomnia, guilt and poor concentration most of the day, and she has stopped going to work. She does not compensate.",
     "q": "How should this be diagnosed?",
     "choices": [
       "Bulimia nervosa",
       "Major depressive disorder with atypical features only",
-      "Binge-eating disorder only",
       "Binge-eating disorder and major depressive disorder",
+      "Binge-eating disorder only",
       "Other specified depressive disorder"
     ],
-    "answer": 3,
-    "why": "If full criteria for **both** are met, **both** are diagnosed. BED preceded the episode and has its own features.",
+    "answer": 2,
+    "why": "If full criteria for **both** are met, **both** diagnoses can be given. BED preceded the episode and has its own features.",
     "whyNot": [
       "No compensation.",
       "Her binges have loss of control and predate the episode.",
-      "She meets MDD criteria as well.",
       "Correct.",
+      "She meets MDD criteria as well.",
       "MDD criteria are fully met."
     ]
   },
@@ -186,20 +186,20 @@ SP.add("ch10", "vignettes", [
     "stem": "An 8-year-old boy eats only white bread, plain rice, crackers and milk. Since infancy he gags at mixed textures and the smell of vegetables. He has dropped from the 40th to the 5th weight percentile, has low ferritin and needs supplement drinks. He wants to grow tall like his father. Autism screening is negative.",
     "q": "What is the diagnosis?",
     "choices": [
-      "Avoidant/restrictive food intake disorder",
       "Anorexia nervosa, restricting type",
       "Developmentally normal picky eating",
       "Pica",
-      "Specific phobia, other type"
+      "Specific phobia, other type",
+      "Avoidant/restrictive food intake disorder"
     ],
-    "answer": 0,
+    "answer": 4,
     "why": "**Sensory** avoidance with faltering weight, deficiency and supplement dependence, and **no** weight or shape concern: **ARFID (F50.82)**.",
     "whyNot": [
-      "Correct.",
       "He has no fear of fatness or body image disturbance.",
-      "Picky eating does not cause faltering growth or deficiency.",
+      "Normal picky eating is not diagnosed unless it causes nutritional failure or impairment, as here.",
       "He eats foods, not nonfood substances.",
-      "There is no fear-based avoidance; the problem is sensory."
+      "There is no fear-based avoidance; the problem is sensory.",
+      "Correct."
     ]
   },
   {
@@ -209,40 +209,40 @@ SP.add("ch10", "vignettes", [
     "q": "What is the best diagnosis?",
     "choices": [
       "Illness anxiety disorder",
+      "Avoidant/restrictive food intake disorder",
       "Anorexia nervosa",
       "Functional neurological symptom disorder",
-      "Social anxiety disorder",
-      "Avoidant/restrictive food intake disorder"
+      "Social anxiety disorder"
     ],
-    "answer": 4,
+    "answer": 1,
     "why": "Fear of an **aversive consequence** (choking) leading to weight loss and social interference: when the eating problem is the focus of care, diagnose **ARFID** rather than specific phobia.",
     "whyNot": [
       "She fears choking, not having a disease.",
+      "Correct.",
       "No fear of fatness or shape disturbance.",
       "No altered motor or sensory function.",
-      "She avoids restaurants because of choking, not evaluation.",
-      "Correct."
+      "She avoids restaurants because of choking, not evaluation."
     ]
   },
   {
     "id": "v10-10",
     "tag": "Pica",
-    "stem": "A 31-year-old woman, 24 weeks pregnant, eats several handfuls of laundry starch and a cup of ice daily. She lives in a food desert, and her hemoglobin is 8.9 g/dL with low ferritin. No one in her family or community eats starch. She has abdominal pain and constipation.",
+    "stem": "A 31-year-old woman, 24 weeks pregnant, has eaten several handfuls of laundry starch and a cup of ice daily for the past 2 months. She lives in a food desert, and her hemoglobin is 8.9 g/dL with low ferritin. No one in her family or community eats starch. She has abdominal pain and constipation.",
     "q": "Which statement is most accurate?",
     "choices": [
       "This is ARFID",
       "Pica cannot be diagnosed during pregnancy",
-      "Pica can be diagnosed because the ingestion poses medical risk",
-      "This is a normal pregnancy craving that needs no diagnosis",
+      "This is a normal pregnancy craving that needs no diagnosis or further attention",
+      "Pica can be diagnosed because the ingestion poses potential medical risk",
       "The correct code is F98.3"
     ],
-    "answer": 2,
-    "why": "In pregnancy, diagnose pica only when eating nonfood substances **poses medical risk**, as here (anemia, GI symptoms). Adults are coded **F50.89** as printed, **F50.83** from October 2024.",
+    "answer": 3,
+    "why": "In pregnancy, diagnose pica only when eating nonfood substances **poses potential medical risk**, as here (anemia, GI symptoms). Adults are coded **F50.89** as printed, **F50.83** from October 2024.",
     "whyNot": [
       "She eats nonfood substances.",
       "Pregnancy does not exclude pica if Criterion D is met.",
-      "Correct.",
       "The amount and harm go beyond a craving.",
+      "Correct.",
       "F98.3 is pica in children."
     ]
   },
@@ -252,18 +252,18 @@ SP.add("ch10", "vignettes", [
     "stem": "A 19-year-old woman with a BMI of 15.8 eats tissues and paper napkins to feel full, says she must lose more weight and avoids all fats.",
     "q": "What is the primary diagnosis?",
     "choices": [
-      "Pica",
       "Anorexia nervosa",
+      "Pica",
       "Pica and anorexia nervosa",
       "Rumination disorder",
       "Factitious disorder"
     ],
-    "answer": 1,
+    "answer": 0,
     "why": "When nonfood substances are eaten **to control appetite or weight**, anorexia nervosa is the primary diagnosis.",
     "whyNot": [
-      "The eating serves weight control.",
       "Correct.",
-      "Pica is not added when the behavior is a means of weight control.",
+      "The eating serves weight control.",
+      "When the eating mainly serves weight control, anorexia nervosa is the primary diagnosis.",
       "She does not regurgitate food.",
       "There is no deception."
     ]
@@ -271,22 +271,22 @@ SP.add("ch10", "vignettes", [
   {
     "id": "v10-12",
     "tag": "Rumination",
-    "stem": "A 22-year-old man with mild intellectual developmental disorder brings food back into his mouth after nearly every meal, chews it and swallows it again, appearing calm and content. It has happened for 2 years, several times daily. Upper endoscopy and gastric emptying studies are normal. Staff note he does it more when bored.",
+    "stem": "A 22-year-old man with mild intellectual developmental disorder brings food back into his mouth after nearly every meal, chews it and swallows it again, without nausea or retching, appearing calm and content. It has happened for 2 years, several times daily. Upper endoscopy and gastric emptying studies are normal. Staff note he does it more when bored.",
     "q": "What is the diagnosis and the current code?",
     "choices": [
       "Bulimia nervosa",
       "Rumination disorder (F98.3)",
-      "Gastroesophageal reflux disease",
       "Rumination disorder (F50.84 from October 2024)",
-      "Stereotypic movement disorder only"
+      "Gastroesophageal reflux disease",
+      "Stereotypic movement disorder only, without an eating diagnosis"
     ],
-    "answer": 3,
+    "answer": 2,
     "why": "Effortless regurgitation for ≥1 month, not medically explained, severe enough for attention in the context of intellectual disability: **rumination disorder**; adults are coded **F50.84** from October 2024 (F98.21 as printed).",
     "whyNot": [
       "There is no binge or weight concern.",
       "F98.3 is pica in children.",
-      "Workup excludes it, and there is no nausea or retching.",
       "Correct.",
+      "Workup excludes it, and there is no nausea or retching.",
       "The regurgitation is itself a primary focus needing intervention."
     ]
   },
@@ -296,17 +296,17 @@ SP.add("ch10", "vignettes", [
     "stem": "A 24-year-old woman of normal weight vomits after every ordinary meal and uses laxatives twice a week to “stay flat.” She has never binged. Her self-esteem depends on her weight. This has continued for a year.",
     "q": "What is the diagnosis?",
     "choices": [
-      "Other specified feeding or eating disorder, purging disorder",
       "Bulimia nervosa",
+      "Other specified feeding or eating disorder, purging disorder",
       "Anorexia nervosa, binge-eating/purging type",
       "Rumination disorder",
-      "Unspecified feeding or eating disorder"
+      "Unspecified feeding or eating disorder, since the presentation is atypical"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": "Recurrent purging to influence weight or shape **without binge eating** at normal weight: **purging disorder** (F50.89).",
     "whyNot": [
-      "Correct.",
       "Bulimia requires binges.",
+      "Correct.",
       "Her weight is normal.",
       "The vomiting is deliberate and weight-driven.",
       "The reason can be specified."
@@ -342,17 +342,17 @@ SP.add("ch10", "vignettes", [
     "choices": [
       "Binge-eating disorder",
       "Bulimia nervosa",
-      "Kleine-Levin syndrome",
       "Bipolar I disorder",
+      "Kleine-Levin syndrome",
       "Major depressive disorder with atypical features"
     ],
-    "answer": 2,
-    "why": "Recurrent **hypersomnia** with **hyperphagia** and disinhibition, normal between episodes, without shape concern: **Kleine-Levin syndrome**.",
+    "answer": 3,
+    "why": "Recurrent **hypersomnia** with **hyperphagia** and disinhibition, normal between episodes, without shape concern: **Kleine-Levin syndrome** (its features here are from outside the DSM; the manual notes recurrent hypersomnia, Ch 12, p. 421, and lacks shape and weight overconcern, p. 392).",
     "whyNot": [
       "Overeating is confined to hypersomnolent episodes.",
       "No compensation or shape and weight concern.",
-      "Correct.",
       "No mania; he sleeps more, not less.",
+      "Correct.",
       "Episodes are brief and dominated by hypersomnia."
     ]
   },
@@ -362,20 +362,20 @@ SP.add("ch10", "vignettes", [
     "stem": "A 46-year-old woman has lost 14 kg over 5 months with early satiety and fatigue. She says she would love to regain weight, eats what she can and is frightened by how thin she looks. She has no history of eating problems.",
     "q": "What is the most appropriate next step?",
     "choices": [
-      "Diagnose anorexia nervosa, late onset",
       "Full medical evaluation for an occult illness",
+      "Diagnose anorexia nervosa with late onset and begin weight restoration",
       "Diagnose ARFID",
       "Start an antidepressant",
       "Refer for family-based treatment"
     ],
-    "answer": 1,
+    "answer": 0,
     "why": "Onset after 40, **no fear of gain** and a wish to regain weight point to a **medical** cause (GI disease, cancer, hyperthyroidism).",
     "whyNot": [
-      "She lacks fear of gain and body image disturbance.",
       "Correct.",
+      "She lacks fear of gain and body image disturbance.",
       "Medical causes must be excluded first.",
       "No depressive syndrome is described.",
-      "Family-based treatment is for adolescents with eating disorders."
+      "Treatment is not the next step before a medical workup."
     ]
   },
   {
@@ -387,17 +387,17 @@ SP.add("ch10", "vignettes", [
       "Obsessive-compulsive personality disorder",
       "Anorexia nervosa only; all rituals are due to starvation",
       "OCD only",
-      "Anorexia nervosa and obsessive-compulsive disorder",
-      "ARFID and OCD"
+      "ARFID and OCD",
+      "Anorexia nervosa and obsessive-compulsive disorder"
     ],
-    "answer": 3,
-    "why": "Food rituals belong to anorexia, but obsessions and compulsions **unrelated to food, shape or weight** warrant an additional diagnosis of **OCD**.",
+    "answer": 4,
+    "why": "Food rituals belong to anorexia, but obsessions and compulsions **unrelated to food, shape or weight** may warrant an additional diagnosis of **OCD**.",
     "whyNot": [
       "These are ego-dystonic obsessions and compulsions.",
       "The checking is unrelated to food and is time-consuming.",
       "Her weight and shape concerns meet anorexia.",
-      "Correct.",
-      "She has fear of fatness, so not ARFID."
+      "She has fear of fatness, so not ARFID.",
+      "Correct."
     ]
   },
   {
@@ -406,20 +406,20 @@ SP.add("ch10", "vignettes", [
     "stem": "A 27-year-old woman treated for anorexia nervosa, restricting type, has kept a BMI of 20.5 for 14 months. She eats regular meals but still feels her worth depends on her shape and weighs herself daily.",
     "q": "Which specifier applies?",
     "choices": [
-      "In partial remission",
       "In full remission",
       "Atypical anorexia nervosa",
+      "In partial remission",
       "Restricting type, mild",
       "No specifier"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": "Criterion A has not been met for a sustained period, but **Criterion C** persists → **partial remission** (from October 2024, **F50.014**).",
     "whyNot": [
-      "Correct.",
       "Full remission requires none of the criteria.",
       "Atypical anorexia is a current presentation with weight loss at normal weight, not recovery.",
+      "Correct.",
       "She no longer has a significantly low weight.",
-      "Remission must be specified."
+      "Her history fits the partial remission specifier."
     ]
   },
   {
@@ -452,17 +452,17 @@ SP.add("ch10", "vignettes", [
     "choices": [
       "Stimulant-induced eating disorder",
       "Stimulant use disorder only",
-      "Anorexia nervosa and stimulant use disorder",
       "ARFID and stimulant use disorder",
+      "Anorexia nervosa and stimulant use disorder",
       "Bulimia nervosa"
     ],
-    "answer": 2,
+    "answer": 3,
     "why": "Stimulant use can be the **persistent behavior that interferes with weight gain** (Criterion B). With low weight and fear of fatness, diagnose **comorbid anorexia nervosa**.",
     "whyNot": [
       "There is no such DSM diagnosis.",
       "Weight concern and body image disturbance point to anorexia.",
-      "Correct.",
       "She fears fatness.",
+      "Correct.",
       "Her weight is significantly low and she does not binge."
     ]
   },
@@ -470,19 +470,19 @@ SP.add("ch10", "vignettes", [
     "id": "v10-21",
     "tag": "Culture",
     "stem": "A 20-year-old woman recently arrived from Hong Kong has lost weight to a BMI of 15.9. She says eating makes her stomach bloated and uncomfortable, and denies any fear of fatness. She refuses to gain weight in the clinic, cannot accept that her weight is dangerous, and exercises daily. GI workup is normal.",
-    "q": "What diagnosis should be considered?",
+    "q": "Which diagnosis best fits?",
     "choices": [
-      "ARFID",
       "Anorexia nervosa (non–fat phobic presentation)",
+      "ARFID",
       "Somatic symptom disorder",
       "Irritable bowel syndrome only",
       "Major depressive disorder"
     ],
-    "answer": 1,
+    "answer": 0,
     "why": "Fear of fatness may be absent, especially in some Asian presentations, with restriction explained by **GI discomfort**; persistent behavior blocking gain and denial of seriousness can meet **Criteria B and C**.",
     "whyNot": [
-      "Persistent behavior preventing gain and denial of seriousness point to anorexia; follow over time.",
       "Correct.",
+      "Persistent behavior preventing gain and denial of seriousness point to anorexia; follow over time.",
       "The main problem is restriction to a dangerous weight.",
       "Workup is normal and weight is dangerously low.",
       "No depressive syndrome is described."
@@ -497,37 +497,37 @@ SP.add("ch10", "vignettes", [
       "Most people with anorexia nervosa remain ill after 10 years",
       "Bulimia nervosa has a higher crude mortality than anorexia nervosa",
       "Binge-eating disorder has the lowest remission rate of the three",
-      "The crude mortality of anorexia nervosa is about 5% per decade, and suicide is its second leading cause of death",
-      "Suicidal ideation is rare in binge-eating disorder"
+      "Suicidal ideation is rare in binge-eating disorder",
+      "Anorexia nervosa has a crude mortality of about 5% per decade, and a systematic review found suicide to be its second leading cause of death"
     ],
-    "answer": 3,
+    "answer": 4,
     "why": "Anorexia: about **5% per decade**, deaths from **medical complications or suicide**; most remit within **5 years**. Bulimia nearly 2% per decade; BED has the **highest** remission; suicidal ideation about 25% in BED.",
     "whyNot": [
       "Most remit within 5 years of presentation.",
       "Bulimia is nearly 2% per decade.",
       "BED has higher remission than bulimia or anorexia.",
-      "Correct.",
-      "About 25% have suicidal ideation."
+      "About 25% have suicidal ideation.",
+      "Correct."
     ]
   },
   {
     "id": "v10-23",
     "tag": "Factitious",
-    "stem": "A 4-year-old is admitted for the third time with “failure to thrive.” The mother reports he vomits every food and needs nasogastric feeding. On the ward, when the mother is away, he eats normally and gains weight. A syringe of ipecac is found in her bag.",
+    "stem": "A 4-year-old is admitted for the third time with “failure to thrive.” The mother reports he vomits every food and needs nasogastric feeding. On the ward, when the mother is away, he eats normally and gains weight. Staff find evidence that she has been inducing his vomiting.",
     "q": "Who receives which diagnosis?",
     "choices": [
-      "The mother: factitious disorder imposed on another (F68.A)",
       "The child: ARFID",
       "The child: rumination disorder",
+      "The mother: factitious disorder imposed on another (F68.A)",
       "The mother: munchausen by proxy is not a DSM diagnosis, so no diagnosis",
       "The child: factitious disorder imposed on self"
     ],
-    "answer": 0,
-    "why": "In factitious disorder imposed on another, the **caregiver** is diagnosed (F68.A); the child is the victim. Report as abuse.",
+    "answer": 2,
+    "why": "In factitious disorder imposed on another, the **caregiver** receives the diagnosis (F68.A; Ch 9, p. 368); the child is the victim and may be given an abuse diagnosis (p. 368). Reporting duties follow local law (app guidance).",
     "whyNot": [
-      "Correct.",
       "He eats normally away from the mother.",
       "The vomiting is induced.",
+      "Correct.",
       "It is a DSM diagnosis, given to the perpetrator.",
       "The child is not falsifying anything."
     ]
@@ -539,19 +539,19 @@ SP.add("ch10", "vignettes", [
     "q": "What is the diagnosis?",
     "choices": [
       "No diagnosis",
+      "Other specified feeding or eating disorder, binge-eating-like disorder of low frequency",
       "Binge-eating disorder, mild",
-      "Bulimia nervosa of low frequency",
-      "Unspecified feeding or eating disorder",
-      "Other specified feeding or eating disorder, binge-eating disorder of low frequency"
+      "Other specified feeding or eating disorder, bulimia nervosa-like disorder of low frequency",
+      "Unspecified feeding or eating disorder"
     ],
-    "answer": 4,
-    "why": "All BED criteria except frequency (**less than once a week**): record under **other specified** (F50.89) with the reason.",
+    "answer": 1,
+    "why": "All BED criteria except frequency (**less than once a week**): record under **other specified** (F50.89) with the reason. (Update: the September 2025 APA update renamed this example \"binge-eating-like disorder\"; the printed p. 396 says \"binge-eating disorder (of low frequency…)\".)",
     "whyNot": [
-      "Distress and impairment justify a diagnosis.",
+      "Marked distress justifies a diagnosis.",
+      "Correct.",
       "Mild BED needs at least 1 binge per week.",
       "She does not compensate.",
-      "The reason can be specified.",
-      "Correct."
+      "The reason can be specified."
     ]
   },
   {
@@ -562,29 +562,29 @@ SP.add("ch10", "vignettes", [
     "choices": [
       "F50.21",
       "F50.2",
-      "F50.22",
       "F50.023",
+      "F50.22",
       "F50.811"
     ],
-    "answer": 2,
+    "answer": 3,
     "why": "Since **October 1, 2024**, bulimia carries severity: 4–7 compensatory behaviors a week = **moderate** = **F50.22**.",
     "whyNot": [
       "F50.21 is mild (1–3 per week).",
       "F50.2 was the 2022 code and is no longer billable.",
-      "Correct.",
       "F50.023 is anorexia, binge-eating/purging type, extreme.",
+      "Correct.",
       "F50.811 is binge-eating disorder, moderate."
     ],
     "then": {
       "q": "Two years later she has had no binges or compensation for 8 months but still judges herself by her weight. Which code applies?",
       "choices": [
+        "F50.25",
         "F50.20",
         "F50.24",
         "F50.810",
-        "F50.25",
         "F50.014"
       ],
-      "answer": 3,
+      "answer": 0,
       "why": "Some but not all criteria met for a sustained period = **partial remission**; bulimia in partial or full remission is **F50.25**."
     }
   }

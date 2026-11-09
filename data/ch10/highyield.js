@@ -6,7 +6,7 @@ SP.add("ch10", "highYield", [
     "Obesity is **not** a mental disorder in DSM-5-TR.",
     "Some patients describe craving and compulsive eating, resembling **substance use** disorders.",
     "ARFID replaces DSM-IV feeding disorder of **infancy or early childhood**.",
-    "DSM-5 removed **amenorrhea** from the anorexia criteria."
+    "Amenorrhea is **not** an anorexia criterion (dropped in DSM-5; app note)."
   ] },
   { id: "hy10-codes", topic: "Codes after October 2024", items: [
     "New eating disorder codes took effect on **October 1, 2024**.",
@@ -28,7 +28,7 @@ SP.add("ch10", "highYield", [
     "Pica comorbidity: **autism** and intellectual developmental disorder.",
     "Rumination: repeated **regurgitation** for at least 1 month, without nausea or disgust.",
     "Rumination onset in infants: **3–12 months**.",
-    "Rumination in grade-school children: about **1%–2%**.",
+    "Rumination in grade-school children (limited European data): may be about **1%–2%**.",
     "Infant rumination posture: straining and **arching** the back, head back, tongue sucking."
   ] },
   { id: "hy10-arfid", topic: "ARFID", items: [
@@ -50,7 +50,7 @@ SP.add("ch10", "highYield", [
     "Adult BMI of **19** or more: do not diagnose anorexia (consider atypical).",
     "Youth: BMI above the **median** for age excludes anorexia.",
     "Partial remission: Criterion **A** no longer met, but B or C still met.",
-    "Lifetime prevalence: about **0.6%–0.8%**.",
+    "Lifetime prevalence (U.S. community studies): about **0.6%–0.8%**.",
     "Crude mortality: about **5%** per decade.",
     "Suicide rate about **18** times that of peers; the **second** leading cause of death.",
     "Most remit within **5** years of presentation.",
@@ -65,7 +65,7 @@ SP.add("ch10", "highYield", [
     "Common ECG finding: sinus **bradycardia**; some have QTc prolongation.",
     "Fine downy body hair: **lanugo**.",
     "Yellow skin in anorexia: **hypercarotenemia**.",
-    "Changes that often do **not** reverse: loss of bone mineral density.",
+    "Change that often does not fully reverse: loss of **bone mineral density**.",
     "Purging signs: parotid enlargement, **enamel erosion**, calluses on the back of the hand."
   ] },
   { id: "hy10-bn", topic: "Bulimia nervosa", items: [
@@ -76,7 +76,7 @@ SP.add("ch10", "highYield", [
     "Mild 1–3, moderate 4–7, severe **8–13**, extreme ≥14 per week.",
     "Most common compensatory behavior: self-induced **vomiting**.",
     "Bulimia weight: usually BMI **18.5 to under 30**.",
-    "Lifetime prevalence: about **0.28%–1.0%**.",
+    "Lifetime prevalence (U.S. community studies): about **0.28%–1.0%**.",
     "Crude mortality: nearly **2%** per decade.",
     "Crossover from bulimia to anorexia: **10%–15%**.",
     "Lifetime substance use disorder in bulimia: at least **30%**.",
@@ -87,7 +87,7 @@ SP.add("ch10", "highYield", [
     "BED Criterion C: **marked distress** about binge eating.",
     "BED has no recurrent **compensatory** behavior.",
     "BED severity counts **binges** per week.",
-    "BED lifetime prevalence: about **0.85%–2.8%**.",
+    "BED lifetime prevalence (U.S. community studies): about **0.85%–2.8%**.",
     "BED is **2–3 times** more common in women.",
     "In BED, dieting usually **follows** bingeing; in bulimia it precedes it.",
     "BED has **higher** remission rates than bulimia or anorexia.",
@@ -98,7 +98,7 @@ SP.add("ch10", "highYield", [
     "Weight loss with all anorexia features at a normal weight: **atypical anorexia nervosa**.",
     "Purging without binges: **purging disorder**.",
     "Eating after waking or after the evening meal, with recall: **night eating syndrome**.",
-    "Bulimia under once a week or under 3 months: bulimia of **low frequency and/or limited duration**.",
+    "Bulimia under once a week or under 3 months: bulimia of **low frequency and/or limited duration** (printed name; “bulimia nervosa-like disorder” since the September 2025 APA update).",
     "Other specified feeding or eating disorder code: **F50.89**."
   ] }
 ]);

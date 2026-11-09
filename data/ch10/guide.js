@@ -1,4 +1,4 @@
-/* Chapter 10 study guide. Source: DSM-5-TR, Feeding and Eating Disorders (pp. 371–398).
+/* Chapter 10 study guide. Source: DSM-5-TR, Feeding and Eating Disorders (pp. 371–397).
    Written in the app’s own words from the manual, with page references. Criteria are paraphrased: confirm exact
    wording, specifiers and codes against the manual. ICD-10-CM codes changed on October 1, 2024; the changes are kept
    in labeled post-publication boxes. */
@@ -72,8 +72,8 @@ SP.add("ch10", "guide", {
               ["Other specified", "F50.89", "F50.89"],
               ["Unspecified", "F50.9", "F50.9"]
             ] },
-            { type: "callout", kind: "exam", title: "Patterns that make the codes easy", text: "For all three severity-coded disorders the last digit runs **mild → moderate → severe → extreme → remission**, and **9** (or **0** for bulimia, F50.20) means **unspecified**. Partial and full remission **share** one code. Severity for anorexia comes from **BMI**; for bulimia from **compensatory behaviors** per week; for binge-eating disorder from **binges** per week." },
-            { type: "update", kind: "post", year: "2024", title: "Why the codes changed", source: "ICD-10-CM FY2025 addenda", text: "The 2024 ICD-10-CM update expanded the eating disorder codes so that **severity and remission** can be tracked in claims and registries, and gave adults with pica and rumination disorder codes in the **F50** block rather than the childhood F98 block. Check the code set in force on the date of service." }
+            { type: "callout", kind: "exam", title: "Patterns that make the codes easy", text: "For all three severity-coded disorders the last digit runs **mild → moderate → severe → extreme → remission**, and **9** (or **0** for bulimia, F50.20) means **unspecified**. Partial and full remission **share** one code. Severity for anorexia comes from **BMI**; for bulimia from **compensatory behaviors** per week; for binge-eating disorder from **binges** per week (app guidance)." },
+            { type: "update", kind: "post", year: "2024", title: "Why the codes changed", source: "ICD-10-CM FY2025 addenda", text: "The 2024 ICD-10-CM update added a final character for **severity and remission** to the anorexia, bulimia and binge-eating disorder codes, and gave adults with pica and rumination disorder codes in the **F50** block rather than the childhood F98 block. Check the code set in force on the date of service." }
           ]
         }
       ]
@@ -89,7 +89,7 @@ SP.add("ch10", "guide", {
             { type: "criteria", title: "Pica in brief", code: "F98.3 children · F50.89 adults (F50.83 from Oct 2024)", pages: "371–372", items: [
               ["A", "**Persistent** eating of **nonnutritive, nonfood** substances for at least **1 month**."],
               ["B", "The eating is **inappropriate to the developmental level**."],
-              ["C", "It is **not part of a culturally supported** or socially normative practice."],
+              ["C", "It is **not a culturally supported** or socially normative practice."],
               ["D", "If it occurs with another mental disorder (intellectual developmental disorder, autism, schizophrenia) or medical condition (**including pregnancy**), it is severe enough to warrant **additional clinical attention**."]
             ], specifiers: [["In remission", "Criteria not met for a sustained period after previously being met"]] },
             { type: "defs", title: "Reading the criteria (p. 372)", items: [
@@ -100,10 +100,10 @@ SP.add("ch10", "guide", {
               ["With another disorder", "Diagnose pica separately only if the behavior needs **additional** clinical attention."]
             ] },
             { type: "table", caption: "Pica facts", head: ["Topic", "What the manual says (pp. 372–373)"], rows: [
-              ["Associated", "Zinc or iron deficiency is reported, but often **no biological abnormality**. Comes to attention through **bowel obstruction (bezoar)**, perforation, **toxoplasmosis or toxocariasis** (eating feces or dirt), or **lead poisoning** from paint."],
+              ["Associated", "Zinc or iron deficiency is reported, but often **no biological abnormality**. In some cases it comes to attention only after **bowel obstruction (bezoar)**, perforation, **toxoplasmosis or toxocariasis** (eating feces or dirt), or **lead poisoning** from paint."],
               ["Prevalence", "About **5%** of school-age children; about **one-third** of pregnant women, especially with **food insecurity**; a meta-analysis found **28%** in pregnancy or postpartum."],
               ["Course", "Onset most often in **childhood**; in adults, more often with intellectual developmental disorder or another mental disorder. Can be protracted and **fatal**, depending on what is eaten."],
-              ["Risk", "**Neglect**, lack of supervision, developmental delay; lack of food and vitamin deficiency."],
+              ["Risk", "**Neglect**, lack of supervision, developmental delay. Lack of food and vitamin deficiency are associated conditions, not listed risk factors (p. 372)."],
               ["Pregnancy", "Cravings for chalk or ice are common; diagnose pica only if eating nonfood substances poses **medical risk**."],
               ["Markers", "Abdominal flat plate, ultrasound and other imaging for obstruction; blood tests for poisoning or infection."],
               ["Comorbidity", "**Autism** and **intellectual developmental disorder**; less often schizophrenia and OCD. With **trichotillomania** and **excoriation**, the hair or skin is eaten. Also with ARFID with strong sensory features."]
@@ -230,7 +230,7 @@ SP.add("ch10", "guide", {
               ["[[dx:factitious|Factitious disorder]] (self or another)", "Exaggerated, inconsistent diets and complications; in the **imposed on another** form the caregiver is diagnosed.", "No"],
               ["Picky eating", "Developmentally **normal**, transient narrowing in toddlers; resolves without treatment.", "No"]
             ] },
-            { type: "callout", kind: "exam", title: "The single question that separates ARFID from anorexia", text: "**Why** is the person not eating? Weight or shape → **anorexia nervosa**. Texture, fear of choking or vomiting, or no interest → **ARFID**. The two are **never** diagnosed together (Criterion C). When fear of fatness is denied but weight-losing behavior persists and seriousness is not recognized, think **non–fat phobic anorexia nervosa** and follow the person over time." }
+            { type: "callout", kind: "exam", title: "The single question that separates ARFID from anorexia", text: "**Why** is the person not eating? Weight or shape → **anorexia nervosa**. Texture, fear of choking or vomiting, or no interest → **ARFID**. The two are **never** diagnosed together (Criterion C). When fear of fatness is denied but weight-losing behavior persists and seriousness is not recognized, think **non–fat phobic anorexia nervosa** and follow the person over time (app guidance)." }
           ]
         }
       ]
@@ -244,9 +244,9 @@ SP.add("ch10", "guide", {
           pages: "381–382",
           blocks: [
             { type: "criteria", title: "Anorexia nervosa in brief", code: "F50.01 / F50.02 (F50.01x / F50.02x from Oct 2024)", pages: "381", items: [
-              ["A", "**Restriction of energy intake** relative to requirements, leading to a **significantly low body weight** for age, sex, developmental trajectory and physical health (less than minimally normal, or in youth less than minimally expected)."],
-              ["B", "**Intense fear** of gaining weight or becoming fat, **or persistent behavior that interferes with weight gain**, even though at a significantly low weight."],
-              ["C", "Disturbance in how body weight or shape is **experienced**, **undue influence** of weight or shape on self-evaluation, or persistent **lack of recognition of the seriousness** of the low weight."]
+              ["A", "**Restricted energy intake** (relative to requirements) that leads to a **significantly low body weight** for age, sex, developmental trajectory and physical health (below minimally normal, or in youth below minimally expected)."],
+              ["B", "**Intense fear** of gaining weight or becoming fat, **or persistent behavior that blocks weight gain**, despite a significantly low weight."],
+              ["C", "Disturbance in how body weight or shape is **experienced**, **undue influence** of weight or shape on self-evaluation, or a persistent **failure to recognize how serious** the low weight is."]
             ], specifiers: [
               ["Restricting type (F50.01)", "No recurrent binge eating or purging in the **last 3 months**; weight loss by **dieting, fasting or excessive exercise**"],
               ["Binge-eating/purging type (F50.02)", "Recurrent binge eating **or** purging (vomiting, laxatives, diuretics, enemas) in the **last 3 months**"],
@@ -256,8 +256,8 @@ SP.add("ch10", "guide", {
             ] },
             { type: "defs", title: "Subtypes (p. 382)", items: [
               ["Binge-eating/purging", "Most who binge also purge; some **do not binge** but purge after **small amounts** of food."],
-              ["Crossover", "Common over the illness, so the subtype describes **current** symptoms, not the long-term course."],
-              ["No amenorrhea criterion", "DSM-5 **removed amenorrhea** from the criteria; it remains a common associated feature."]
+              ["Crossover", "Not uncommon over the illness, so the subtype describes **current** symptoms, not the long-term course."],
+              ["No amenorrhea criterion", "Amenorrhea is **not** a criterion (dropped in DSM-5; DSM-IV comparison, app note); it remains a common associated feature (p. 385)."]
             ] },
             { type: "callout", kind: "mnemonic", title: "Remember the severity bands: 17, 16, 15", text: "Count down from **17**: mild **≥17**, moderate **16–16.99**, severe **15–15.99**, extreme **<15**. The bands come from the **WHO thinness** categories (p. 381)." }
           ]
@@ -274,7 +274,7 @@ SP.add("ch10", "guide", {
               ["≥18.5", "Lower limit of normal (CDC, WHO): **most** are not significantly low"],
               ["**≥19.0**", "Not underweight: do **not** diagnose anorexia nervosa; consider **atypical anorexia nervosa** (other specified)"]
             ] },
-            { type: "table", caption: "Children and adolescents: BMI-for-age percentile (pp. 382–383)", head: ["BMI-for-age", "Interpretation"], rows: [
+            { type: "table", caption: "Children and adolescents: BMI-for-age percentile (p. 382)", head: ["BMI-for-age", "Interpretation"], rows: [
               ["**<5th percentile**", "CDC suggests underweight"],
               ["Above the 5th, below the median", "Can be significantly low if the child has **failed to keep** their growth trajectory"],
               ["**Above the median**", "Do **not** diagnose anorexia nervosa; consider **atypical anorexia nervosa**"]
@@ -286,7 +286,7 @@ SP.add("ch10", "guide", {
               ["Self-esteem", "Weight loss is an **achievement** of self-discipline; gain is a failure of self-control."],
               ["Insight", "Often lacking; patients are usually **brought by family** and seldom complain of weight loss. Get **collateral** history."]
             ] },
-            { type: "case", title: "Clinical vignette: the runner", text: "A 16-year-old cross-country runner has lost 9 kg over 8 months by eating only salad and running twice a day. Her BMI is 15.4, at the 1st percentile. She says her thighs are still fat and panics when she can’t run. She has not binged or purged. Her parents brought her in after she fainted.", point: "**Anorexia nervosa, restricting type, severe** (BMI 15–15.99). Printed code **F50.01**; from October 2024 **F50.012**." }
+            { type: "case", title: "Clinical vignette: the runner", text: "A 19-year-old cross-country runner has lost 9 kg over 8 months by restricting her intake and exercising excessively. Her BMI is 15.4. She says her thighs are still fat and panics when she can’t run. She has not binged or purged. Her parents brought her in after she fainted.", point: "**Anorexia nervosa, restricting type, severe** (BMI 15–15.99). Printed code **F50.01**; from October 2024 **F50.012**." }
           ]
         },
         {
@@ -306,7 +306,7 @@ SP.add("ch10", "guide", {
             { type: "table", caption: "Anorexia nervosa facts", head: ["Topic", "What the manual says"], rows: [
               ["12-month prevalence", "**0.0%–0.05%** in U.S. community studies (women 0%–0.08%, men 0%–0.01%) (p. 384)"],
               ["Lifetime prevalence", "**0.60%–0.80%** (women 0.9%–1.42%, men 0.12%–0.3%); one adolescent study found **similar** rates in both sexes"],
-              ["Where", "Most prevalent in high-income countries; rising in the Global South; lower among Latinx and Black Americans than non-Latinx White Americans"],
+              ["Where", "Most prevalent in high-income countries; rising in the Global South; seems lower among Latinx and Black Americans than non-Latinx White Americans"],
               ["Onset", "**Adolescence or young adulthood**; rarely before puberty or **after 40**; often after a stressful event such as **leaving home for college** (p. 384)"],
               ["Course", "Variable: one episode with full recovery, relapse and recovery, or chronic; **most remit within 5 years**; lower remission among hospitalized patients"],
               ["Mortality", "Crude mortality about **5% per decade**, from **medical complications or suicide**"],
@@ -332,8 +332,8 @@ SP.add("ch10", "guide", {
               ["Endocrine", "T4 low-normal, **T3 low**, **reverse T3 high**; low estrogen in females, low testosterone in males"],
               ["ECG", "**Sinus bradycardia**; rarely arrhythmias; **QTc prolongation** in some"],
               ["Bone", "Low bone mineral density, osteopenia or osteoporosis; **fracture risk** raised"],
-              ["EEG", "Diffuse slowing of **metabolic encephalopathy** with severe fluid and electrolyte disturbance"],
-              ["Energy", "Markedly **reduced resting energy expenditure**"]
+              ["EEG", "Diffuse abnormalities reflecting a **metabolic encephalopathy** may occur with significant fluid and electrolyte disturbance"],
+              ["Energy", "Often a significant **reduction in resting energy expenditure**"]
             ] },
             { type: "defs", title: "Physical signs (pp. 385–386)", items: [
               ["General", "**Emaciation**; hypotension, **hypothermia**, **bradycardia**."],
@@ -341,9 +341,9 @@ SP.add("ch10", "guide", {
               ["Edema", "Peripheral edema, especially during **weight restoration** or after stopping laxatives or diuretics."],
               ["Menses", "**Amenorrhea** is common and usually follows weight loss, but precedes it in a minority; menarche may be delayed."],
               ["Symptoms", "Constipation, abdominal pain, **cold intolerance**, lethargy, or excess energy."],
-              ["Vomiting signs", "**Parotid** enlargement, **dental enamel erosion**, calluses or scars on the back of the hand (**Russell’s sign**)."]
+              ["Vomiting signs", "**Parotid** enlargement, **dental enamel erosion**, calluses or scars on the back of the hand (**Russell’s sign**, an eponym not used in DSM-5-TR)."]
             ] },
-            { type: "callout", kind: "exam", title: "Lab patterns worth memorizing", text: "**Vomiting** → hypokalemic, **hypochloremic metabolic alkalosis**. **Laxatives** → metabolic **acidosis**. **Starvation** → leukopenia, high cholesterol, low T3 with high reverse T3 (euthyroid sick pattern), bradycardia, low bone density. Normal labs do **not** exclude anorexia nervosa." }
+            { type: "callout", kind: "exam", title: "Lab patterns worth memorizing", text: "**Vomiting** → hypokalemic, **hypochloremic metabolic alkalosis**. **Laxatives** → metabolic **acidosis**. **Starvation** → leukopenia, high cholesterol, low T3 with high reverse T3 (the “euthyroid sick” pattern, a term outside the DSM), bradycardia, low bone density. Normal labs do **not** exclude anorexia nervosa (app guidance)." }
           ]
         },
         {
@@ -382,10 +382,10 @@ SP.add("ch10", "guide", {
               { title: "2. Loss of control", color: "case", points: ["Feeling unable to **stop** or control what or how much.", "Need not be absolute: may keep eating while the phone rings but stop if someone walks in.", "May become a generalized pattern of uncontrolled eating; **giving up** trying to control eating counts.", "Some describe a **dissociative** quality; binges can be **planned**."] }
             ] },
             { type: "defs", title: "Around the binge (pp. 388–389, 394)", items: [
-              ["Secrecy and shame", "Binges happen in **secret**, often until **painfully full**."],
+              ["Secrecy and shame", "Binges **usually** happen in **secret**, often until **painfully full**."],
               ["Triggers", "**Negative affect** most often; also interpersonal stress, **dietary restraint**, feelings about weight and shape, boredom."],
               ["Aftermath", "Short-term relief, then **negative self-evaluation and dysphoria**."],
-              ["Subjective binge", "Loss of control over a **normal** amount is not a DSM binge (loss-of-control eating), though it is clinically important, especially in youth."]
+              ["Loss-of-control eating", "Loss of control over a **normal** amount is not a DSM binge. In children, binge eating and loss-of-control eating without an objectively large amount are associated with more body fat, weight gain and psychological symptoms (p. 394)."]
             ] }
           ]
         },
@@ -396,9 +396,9 @@ SP.add("ch10", "guide", {
           blocks: [
             { type: "criteria", title: "Bulimia nervosa in brief", code: "F50.2 (F50.20–F50.25 from Oct 2024)", pages: "387", items: [
               ["A", "Recurrent **binge eating** (large amount in a discrete period **and** loss of control)."],
-              ["B", "Recurrent **inappropriate compensatory behaviors**: self-induced **vomiting**; misuse of **laxatives, diuretics** or other medications; **fasting**; or **excessive exercise**."],
-              ["C", "Binges **and** compensatory behaviors both occur, on average, at least **once a week for 3 months**."],
-              ["D", "Self-evaluation is **unduly influenced by body shape and weight**."],
+              ["B", "Recurrent **inappropriate compensatory behaviors** to prevent weight gain: self-induced **vomiting**, **laxative, diuretic** or other drug misuse, **fasting** or **excessive exercise**."],
+              ["C", "Binges **and** compensation each happen at least **once a week**, on average, for **3 months**."],
+              ["D", "**Shape and weight** unduly influence self-evaluation."],
               ["E", "Not **exclusively during** episodes of anorexia nervosa."]
             ], specifiers: [
               ["In partial remission", "**Some**, but not all, criteria met for a sustained period"],
@@ -412,7 +412,7 @@ SP.add("ch10", "guide", {
               ["Excessive exercise", "Interferes with important activities, happens at inappropriate times or places, or continues **despite injury**."],
               ["Self-evaluation", "Shape and weight dominate **self-esteem**, much as in anorexia nervosa."]
             ] },
-            { type: "callout", kind: "exam", title: "Severity counts the compensations, not the binges", text: "Bulimia severity is graded by **compensatory behaviors** per week; binge-eating disorder severity by **binges** per week. Anorexia severity is graded by **BMI**. The thresholds 1–3, 4–7, 8–13 and ≥14 are the **same** for bulimia and binge-eating disorder." }
+            { type: "callout", kind: "exam", title: "Severity counts the compensations, not the binges", text: "Bulimia severity is graded by **compensatory behaviors** per week; binge-eating disorder severity by **binges** per week. Anorexia severity is graded by **BMI**. The thresholds 1–3, 4–7, 8–13 and ≥14 are the **same** for bulimia and binge-eating disorder (app guidance)." }
           ]
         },
         {
@@ -456,7 +456,7 @@ SP.add("ch10", "guide", {
             { type: "table", caption: "Bulimia nervosa versus its look-alikes", head: ["Condition", "How to tell (pp. 391–392)", "Both?"], rows: [
               ["[[dx:anorexia|Anorexia nervosa, binge-eating/purging type]]", "Binges only during anorexia → anorexia. After anorexia, diagnose bulimia only when **all** bulimia criteria have been met for **3 months**.", "No"],
               ["[[dx:bed|Binge-eating disorder]]", "Binges **without** regular compensation.", "No"],
-              ["Kleine-Levin syndrome", "Disturbed eating with **hypersomnia**, without shape and weight concern.", "No"],
+              ["Kleine-Levin syndrome", "Disturbed eating **without** overconcern about shape and weight (p. 392); its recurrent hypersomnia is described in Ch 12.", "No"],
               ["[[dx:mdd|MDD with atypical features]]", "Overeating without compensation or shape concern.", "**Yes**, if both met"],
               ["[[dx:borderline-pd|Borderline personality disorder]]", "Binge eating counts toward the **impulsivity** criterion.", "**Yes**, if both met"]
             ] },
@@ -490,7 +490,7 @@ SP.add("ch10", "guide", {
               ["In full remission", "**None** of the criteria met for a sustained period"],
               ["Severity (binges per week)", "**Mild** 1–3 · **Moderate** 4–7 · **Severe** 8–13 · **Extreme** ≥14"]
             ] },
-            { type: "callout", kind: "mnemonic", title: "Criterion B: RUN-AD", text: "**R**apid eating · **U**ncomfortably full · **N**ot hungry · **A**lone from embarrassment · **D**isgusted, depressed or guilty after. Three of five are needed (p. 392)." },
+            { type: "callout", kind: "mnemonic", title: "Criterion B: RUN-AD", text: "**R**apid eating · **U**ncomfortably full · **N**ot hungry · **A**lone from embarrassment · **D**isgusted, depressed or guilty after. Three of five are needed (pp. 392–393)." },
             { type: "callout", kind: "key", title: "What binge-eating disorder does not require", text: "No **weight** criterion (normal weight, overweight or obese), and **no shape and weight self-evaluation** criterion, unlike bulimia. **Marked distress** about bingeing (C) is required. Occasional compensation does not exclude it; **recurrent** compensation does." }
           ]
         },
@@ -503,7 +503,7 @@ SP.add("ch10", "guide", {
               ["Weight", "Occurs at **normal weight, overweight and obesity**; linked to obesity in treatment seekers but **distinct** from it: most obese people do not binge (p. 394)"],
               ["Versus weight-matched obesity", "Eat **more calories** in the lab, with more impairment, distress and psychiatric comorbidity and lower quality of life"],
               ["12-month prevalence", "**0.44%–1.2%**; **2–3 times** higher in women (0.6%–1.6% vs 0.26%–0.8%)"],
-              ["Lifetime prevalence", "**0.85%–2.8%** (women 1.25%–3.5%, men 0.42%–2.0%); the **highest** of the three"],
+              ["Lifetime prevalence", "**0.85%–2.8%** (women 1.25%–3.5%, men 0.42%–2.0%); the **highest** of the three (app comparison of the U.S. figures)"],
               ["Ethnicity and place", "Comparable across U.S. groups; similar in high-income countries; high in parts of Latin America; **Mexican Americans** higher than people in Mexico"],
               ["Onset", "Adolescence or young adulthood, sometimes later; treatment seekers are **older** than those with anorexia or bulimia (p. 394)"],
               ["Dieting order", "Dieting usually **follows** bingeing in BED; in bulimia, dieting usually **precedes** it"],
@@ -511,7 +511,7 @@ SP.add("ch10", "guide", {
               ["Risk", "Runs in **families** (additive genetic influence)"],
               ["Culture", "Black Americans may report **less distress** and present with **more frequent** bingeing"],
               ["Suicide", "Suicidal ideation in about **25%**"],
-              ["Consequences", "Social role problems, lower quality of life, more **medical morbidity and mortality** and health care use; weight gain and obesity"],
+              ["Consequences", "Social role problems, lower quality of life, more **medical morbidity and mortality** and health care use; **may** raise the risk of weight gain and obesity"],
               ["Comorbidity", "Comparable to bulimia and anorexia; most often **MDD** and **alcohol use disorder**; linked to binge **severity**, not degree of obesity (p. 396)"]
             ] },
             { type: "table", caption: "Binge-eating disorder versus its look-alikes", head: ["Condition", "How to tell (pp. 395–396)", "Both?"], rows: [
@@ -534,6 +534,7 @@ SP.add("ch10", "guide", {
           pages: "396–397",
           blocks: [
             { type: "p", text: "**Other specified (F50.89)**: record the reason, such as “other specified feeding or eating disorder, **bulimia nervosa of low frequency**.” **Unspecified (F50.9)**: no reason given, or not enough information (e.g., the **emergency room**)." },
+            { type: "update", kind: "post", year: "2025", title: "“-like” wording for two other specified examples (September 2025)", source: "APA DSM-5-TR Update, September 2025", text: "The APA’s September 2025 update renamed examples 2 and 3 **bulimia nervosa-like disorder** and **binge-eating-like disorder** (each still “of low frequency and/or limited duration”). The recording example now reads “bulimia nervosa-like disorder of low frequency.” In DSM usage, “-like” marks a presentation that resembles a disorder but lacks one of its requirements. The examples’ content and the F50.89 code did not change. This app keeps the printed names and notes the new ones." },
             { type: "table", caption: "The five other specified examples (p. 396)", head: ["Example", "What is missing or different"], rows: [
               ["**Atypical anorexia nervosa**", "All anorexia criteria met, but despite significant weight loss, weight is **within or above normal**; medical complications can match anorexia"],
               ["Bulimia nervosa of low frequency and/or limited duration", "Binges and compensation **<1/week** and/or **<3 months**"],
@@ -541,7 +542,7 @@ SP.add("ch10", "guide", {
               ["**Purging disorder**", "Recurrent purging to influence weight or shape **without binge eating**"],
               ["**Night eating syndrome**", "Eating after **waking from sleep** or excessive eating after the evening meal, **with awareness and recall**; not explained by sleep-schedule changes, social norms, BED, another disorder, substances or medication"]
             ] },
-            { type: "callout", kind: "exam", title: "Atypical anorexia and medical danger", text: "A person who loses 20 kg from obesity to a BMI of 24 with intense fear of gain and body image disturbance has **atypical anorexia nervosa** (other specified). Being at a normal weight does **not** mean being medically safe: bradycardia, electrolyte problems and amenorrhea can occur (p. 396)." },
+            { type: "callout", kind: "exam", title: "Atypical anorexia and medical danger", text: "A person who loses 20 kg from obesity to a BMI of 24 with intense fear of gain and body image disturbance has **atypical anorexia nervosa** (other specified). Being at a normal weight does **not** mean being medically safe: people with atypical anorexia nervosa **may experience many of the physiological complications** of anorexia nervosa (p. 396), so check vital signs and labs (app guidance)." },
             { type: "callout", kind: "caution", title: "Night eating versus sleep-related eating", text: "In night eating syndrome the person is **aware** and **remembers** eating. Eating during partial arousal **without recall** points to **sleepwalking with sleep-related eating** (NREM sleep arousal disorder, Chapter 12) or a **medication** effect such as a sedative-hypnotic." }
           ]
         },
@@ -557,7 +558,7 @@ SP.add("ch10", "guide", {
               ["Shape and weight concern", "Yes (or behavior or denial)", "**Self-evaluation** criterion", "Not required", "**Absent**"],
               ["Duration", "None stated", "**3 months**", "**3 months**", "None stated"],
               ["Severity", "**BMI**", "Compensations/week", "Binges/week", "None"],
-              ["Typical onset", "Adolescence, young adulthood", "Adolescence, young adulthood", "Adolescence to later adulthood", "Infancy, childhood"],
+              ["Typical onset", "Adolescence, young adulthood", "Adolescence, young adulthood", "Adolescence to later adulthood", "Usually infancy or childhood; fear-based at any age"],
               ["Sex", "Mostly female", "Mostly female", "Female 2–3:1", "About equal"],
               ["Mortality", "About **5%/decade**", "Nearly **2%/decade**", "Raised", "Infants at risk"],
               ["2022 code", "F50.01 / F50.02", "F50.2", "F50.81", "F50.82"],
@@ -584,7 +585,7 @@ SP.add("ch10", "guide", {
           title: "A practical approach and the classic traps",
           pages: "371–397",
           blocks: [
-            { type: "steps", title: "Six steps for an eating problem", items: [
+            { type: "steps", title: "Six steps for an eating problem (app guidance)", items: [
               ["1. Medical safety first", "Vital signs, orthostatics, temperature, ECG, electrolytes (potassium, phosphate, magnesium), glucose; ask about suicidal thoughts."],
               ["2. Is the weight significantly low?", "Adult BMI (<17 likely; ≥19 not) or youth BMI percentile and growth curve. Low → think anorexia nervosa or ARFID."],
               ["3. Why the restriction?", "Weight or shape → anorexia nervosa. Sensory, fear of choking or vomiting, no interest → ARFID. Medical or psychiatric cause → treat that, diagnose ARFID only if beyond it."],
@@ -592,7 +593,7 @@ SP.add("ch10", "guide", {
               ["5. Something else eaten or brought up?", "Nonfood ≥1 month → pica. Effortless regurgitation ≥1 month → rumination disorder."],
               ["6. Specify and code", "Type, severity (BMI or weekly frequency), remission, then the code current on the date of service (October 2024 codes)."]
             ] },
-            { type: "callout", kind: "key", title: "Twelve traps", text: "1) Binges and purges at **low weight** = anorexia B/P type, **not** bulimia. 2) Anorexia, bulimia and BED are **mutually exclusive** per episode. 3) **Amenorrhea** is no longer a criterion. 4) Anorexia severity = **BMI**; bulimia = **compensations**/week; BED = **binges**/week. 5) Adult BMI **≥19**, or youth above the **median**, rules out anorexia: think **atypical anorexia**. 6) Fear of fatness can be **inferred** from behavior. 7) ARFID has **no** body image disturbance and is never diagnosed with anorexia. 8) BED needs **3 of 5** binge features and **marked distress**, not a weight. 9) Snacking all day is **not** a binge. 10) Purging **without** binges = **purging disorder** (other specified). 11) Pica needs age about **2 or older** and is not cultural practice. 12) Codes changed on **October 1, 2024**." },
+            { type: "callout", kind: "key", title: "Twelve traps", text: "1) Binges and purges at **low weight** = anorexia B/P type, **not** bulimia. 2) Anorexia, bulimia and BED are **mutually exclusive** per episode. 3) **Amenorrhea** is not a criterion (dropped in DSM-5). 4) Anorexia severity = **BMI**; bulimia = **compensations**/week; BED = **binges**/week. 5) Adult BMI **≥19**, or youth above the **median**, rules out anorexia: think **atypical anorexia**. 6) Fear of fatness can be **inferred** from behavior. 7) ARFID has **no** body image disturbance and is never diagnosed with anorexia. 8) BED needs **3 of 5** binge features and **marked distress**, not a weight. 9) Snacking all day is **not** a binge. 10) Purging **without** binges = **purging disorder** (other specified). 11) Pica has a suggested minimum age of about **2** and is not cultural practice. 12) Codes changed on **October 1, 2024**." },
             { type: "p", text: "Practice with the [[helper:eating|eating disorder helper]], then compare [[dx:anorexia|anorexia nervosa]] with [[dx:arfid|ARFID]] and [[dx:bulimia|bulimia nervosa]] with [[dx:bed|binge-eating disorder]] side by side in the library." }
           ]
         }

@@ -9,7 +9,7 @@ SP.add("ch10", "mnemonics", [
       ["F", "Fear of fat, or fighting gain", "Intense fear of weight gain or persistent behavior that interferes with gain (B)"],
       ["I", "Image disturbed or insight lacking", "Disturbed experience of weight or shape, self-worth tied to it, or not recognizing the seriousness of low weight (C)"]
     ],
-    caveat: "Specify **restricting** or **binge-eating/purging** type from the **last 3 months**, and severity by **BMI**. Amenorrhea is **not** a criterion."
+    caveat: "Specify **restricting** or **binge-eating/purging** type from the **last 3 months**, and severity by **BMI**. Amenorrhea is **not** a criterion (dropped in DSM-5; app note)."
   },
   {
     id: "m10-02", short: "Count down from 17", name: "17 · 16 · 15", original: true, dx: "anorexia", sec: "s10-an-criteria",
@@ -20,7 +20,7 @@ SP.add("ch10", "mnemonics", [
       ["15", "Severe", "BMI 15–15.99"],
       ["<15", "Extreme", "BMI below 15"]
     ],
-    caveat: "Youth use **BMI-for-age percentiles**. Severity can be **raised** for symptoms, disability and the need for supervision. A BMI of **19 or more** rules out anorexia nervosa: think **atypical anorexia** (other specified)."
+    caveat: "Youth use **BMI-for-age percentiles**. Severity can be **raised** for symptoms, disability and the need for supervision. In adults, a BMI of **19 or more** rules out anorexia nervosa: think **atypical anorexia** (other specified)."
   },
   {
     id: "m10-03", short: "Both parts needed", name: "BIG + LOST", original: true, dx: "bulimia", sec: "s10-binge",
@@ -69,13 +69,13 @@ SP.add("ch10", "mnemonics", [
     id: "m10-07", short: "Five other specified examples", name: "ABB-PN", original: true, dx: "other-specified-eating", sec: "s10-other",
     "for": "Other specified feeding or eating disorder (F50.89)",
     letters: [
-      ["A", "Atypical anorexia nervosa", "All criteria but weight, which stays normal or high"],
+      ["A", "Atypical anorexia nervosa", "All criteria met, but despite significant weight loss, weight is within or above normal"],
       ["B", "Bulimia of low frequency or limited duration", "Under once a week and/or under 3 months"],
       ["B", "Binge-eating disorder of low frequency or limited duration", "Under once a week and/or under 3 months"],
       ["P", "Purging disorder", "Purging without binges"],
       ["N", "Night eating syndrome", "Eating after waking or after the evening meal, with recall"]
     ],
-    caveat: "Record the reason after the diagnosis, e.g., “other specified feeding or eating disorder, **purging disorder**.”"
+    caveat: "Record the reason after the diagnosis, e.g., “other specified feeding or eating disorder, **purging disorder**.” Since the September 2025 APA update, the two B examples are worded “bulimia nervosa-like disorder” and “binge-eating-like disorder.”"
   },
   {
     id: "m10-08", short: "Two or more yes answers: assess", name: "SCOFF", dx: "anorexia", sec: "s10-approach",
@@ -87,6 +87,6 @@ SP.add("ch10", "mnemonics", [
       ["F", "Fat", "Do you believe yourself to be fat when others say you are too thin?"],
       ["F", "Food", "Would you say food dominates your life?"]
     ],
-    caveat: "A **screening** tool, not DSM criteria: two or more “yes” answers call for a full assessment. It misses many with **ARFID** and binge-eating disorder."
+    caveat: "A **screening** tool, not DSM criteria: two or more “yes” answers call for a full assessment."
   }
 ]);

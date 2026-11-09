@@ -10,12 +10,12 @@
   SP.add("ch10", "dxline", [
     {
       id: "w10-01", tag: "Anorexia",
-      "case": "A 19-year-old woman restricts to 600 kcal a day and runs 15 km daily. BMI 15.2. Intense fear of fatness. No binges or purging.",
+      "case": "A 19-year-old woman severely restricts her intake and exercises for hours daily. BMI 15.2. Intense fear of fatness. No binges or purging.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 0 },
         { label: "Type", options: TYPE, answer: 0 },
         { label: "Severity", options: SEV, answer: 2 },
-        { label: "Code (from Oct 2024)", options: ["F50.012", "F50.01", "F50.022", "F50.011", "F50.013"], answer: 0 }
+        { label: "Code (from Oct 2024)", options: ["F50.01", "F50.022", "F50.012", "F50.011", "F50.013"], answer: 2 }
       ],
       line: "**F50.012** Anorexia nervosa, restricting type, severe",
       why: "BMI 15–15.99 = severe; restricting type ends .01x; severe is the third severity digit (0 mild, 1 moderate, 2 severe, 3 extreme)."
@@ -27,7 +27,7 @@
         { label: "Diagnosis", options: DX, answer: 0 },
         { label: "Type", options: TYPE, answer: 1 },
         { label: "Severity", options: SEV, answer: 3 },
-        { label: "Code (from Oct 2024)", options: ["F50.023", "F50.013", "F50.24", "F50.02", "F50.022"], answer: 0 }
+        { label: "Code (from Oct 2024)", options: ["F50.013", "F50.24", "F50.02", "F50.022", "F50.023"], answer: 4 }
       ],
       line: "**F50.023** Anorexia nervosa, binge-eating/purging type, extreme",
       why: "BMI <15 = extreme. Binges and purges at low weight are anorexia, not bulimia."
@@ -38,7 +38,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 0 },
         { label: "Type", options: TYPE, answer: 0 },
-        { label: "Code (from Oct 2024)", options: ["F50.010", "F50.019", "F50.020", "F50.01", "F50.82"], answer: 0 }
+        { label: "Code (from Oct 2024)", options: ["F50.019", "F50.010", "F50.020", "F50.01", "F50.82"], answer: 1 }
       ],
       line: "**F50.010** Anorexia nervosa, restricting type, mild",
       why: "Youth severity uses BMI percentiles; restricting + mild = F50.010."
@@ -49,7 +49,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 0 },
         { label: "Remission", options: ["In partial remission", "In full remission"], answer: 0 },
-        { label: "Code (from Oct 2024)", options: ["F50.024", "F50.014", "F50.029", "F50.25", "F50.020"], answer: 0 }
+        { label: "Code (from Oct 2024)", options: ["F50.014", "F50.029", "F50.25", "F50.024", "F50.020"], answer: 3 }
       ],
       line: "**F50.024** Anorexia nervosa, binge-eating/purging type, in partial remission",
       why: "A not met, C still met = partial remission. The type follows the most recent presentation; partial and full share .x24."
@@ -71,7 +71,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 1 },
         { label: "Severity", options: SEV, answer: 3 },
-        { label: "Code (from Oct 2024)", options: ["F50.24", "F50.23", "F50.813", "F50.023", "F50.25"], answer: 0 }
+        { label: "Code (from Oct 2024)", options: ["F50.23", "F50.813", "F50.24", "F50.023", "F50.25"], answer: 2 }
       ],
       line: "**F50.24** Bulimia nervosa, extreme",
       why: "Count compensations: 21 vomits + 7 laxative episodes = 28 a week, ≥14 = extreme."
@@ -81,7 +81,7 @@
       "case": "A man treated for bulimia nervosa has had no binges or purges and no shape overvaluation for 14 months.",
       parts: [
         { label: "Remission", options: ["In partial remission", "In full remission"], answer: 1 },
-        { label: "Code (from Oct 2024)", options: ["F50.25", "F50.20", "F50.814", "F50.014", "F50.2"], answer: 0 }
+        { label: "Code (from Oct 2024)", options: ["F50.20", "F50.814", "F50.014", "F50.2", "F50.25"], answer: 4 }
       ],
       line: "**F50.25** Bulimia nervosa, in full remission",
       why: "Partial and full remission share F50.25."
@@ -92,7 +92,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 2 },
         { label: "Severity", options: SEV, answer: 2 },
-        { label: "Code (from Oct 2024)", options: ["F50.812", "F50.81", "F50.23", "F50.811", "F50.813"], answer: 0 }
+        { label: "Code (from Oct 2024)", options: ["F50.81", "F50.812", "F50.23", "F50.811", "F50.813"], answer: 1 }
       ],
       line: "**F50.812** Binge-eating disorder, severe",
       why: "8–13 binges a week = severe; BED codes run F50.810–F50.814, F50.819."
@@ -102,7 +102,7 @@
       "case": "A woman with past binge-eating disorder now binges about twice a month and has done so for 8 months.",
       parts: [
         { label: "Remission", options: ["In partial remission", "In full remission"], answer: 0 },
-        { label: "Code (from Oct 2024)", options: ["F50.814", "F50.810", "F50.25", "F50.89", "F50.819"], answer: 0 }
+        { label: "Code (from Oct 2024)", options: ["F50.810", "F50.25", "F50.89", "F50.814", "F50.819"], answer: 3 }
       ],
       line: "**F50.814** Binge-eating disorder, in partial remission",
       why: "Partial remission in BED = binges average less than once a week for a sustained period."
@@ -122,7 +122,7 @@
       "case": "A 34-year-old woman eats clay and paint chips daily for 4 months, with lead toxicity. Not culturally sanctioned.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 4 },
-        { label: "Code (from Oct 2024)", options: ["F50.83", "F98.3", "F50.89", "F50.84", "F98.21"], answer: 0 }
+        { label: "Code (from Oct 2024)", options: ["F98.3", "F50.89", "F50.83", "F50.84", "F98.21"], answer: 2 }
       ],
       line: "**F50.83** Pica, in adults",
       why: "Adults F50.83 from October 2024 (was F50.89); children F98.3."
@@ -132,7 +132,7 @@
       "case": "A 7-year-old girl regurgitates and re-chews food daily for 3 months; GI workup is normal.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 5 },
-        { label: "Code", options: ["F98.21", "F50.84", "F98.3", "F50.83", "F50.82"], answer: 0 }
+        { label: "Code", options: ["F50.84", "F98.3", "F50.83", "F50.82", "F98.21"], answer: 4 }
       ],
       line: "**F98.21** Rumination disorder",
       why: "Children keep F98.21; adults use F50.84 from October 2024."
@@ -143,7 +143,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 6 },
         { label: "Reason", options: ["Purging disorder", "Atypical anorexia nervosa", "Night eating syndrome", "Bulimia nervosa of low frequency"], answer: 0 },
-        { label: "Code", options: ["F50.89", "F50.9", "F50.2", "F50.83", "F50.82"], answer: 0 }
+        { label: "Code", options: ["F50.9", "F50.89", "F50.2", "F50.83", "F50.82"], answer: 1 }
       ],
       line: "**F50.89** Other specified feeding or eating disorder, purging disorder",
       why: "Purging without binges; record the reason."
@@ -154,7 +154,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 6 },
         { label: "Reason", options: ["Purging disorder", "Atypical anorexia nervosa", "Night eating syndrome", "Binge-eating disorder of low frequency"], answer: 1 },
-        { label: "Code", options: ["F50.89", "F50.010", "F50.9", "F50.82", "F50.019"], answer: 0 }
+        { label: "Code", options: ["F50.010", "F50.9", "F50.82", "F50.89", "F50.019"], answer: 3 }
       ],
       line: "**F50.89** Other specified feeding or eating disorder, atypical anorexia nervosa",
       why: "An adult BMI of 19 or more is not significantly low."
@@ -197,7 +197,7 @@
       items: [
         ["Runs 2 hours daily even with a stress fracture", true, "Excessive exercise despite injury."],
         ["Fasts the day after each binge", true, "Fasting."],
-        ["Takes 20 laxative tablets after binges", true, "Laxative misuse."],
+        ["Misuses laxatives after binges", true, "Laxative misuse."],
         ["Eats a normal breakfast the next morning", false, "Not compensation."],
         ["Joins a gym class twice a week", false, "Ordinary exercise."]
       ],

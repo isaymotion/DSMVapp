@@ -1,4 +1,4 @@
-/* Disorder library: Chapter 10, Feeding and Eating Disorders (DSM-5-TR pp. 371–398).
+/* Disorder library: Chapter 10, Feeding and Eating Disorders (DSM-5-TR pp. 371–397).
    `code` follows the 2022 manual; `codes` adds the ICD-10-CM codes in force from October 1, 2024, and `updates`
    holds the labeled post-publication note. */
 (function () {
@@ -23,14 +23,14 @@
       ],
       specifiers: ["In remission"],
       epi: [["School-age children", "About 5%"], ["Pregnancy", "About one-third; 28% in a meta-analysis (pregnancy or postpartum)"], ["Sex", "Both sexes"]],
-      risk: ["Neglect, lack of supervision, developmental delay.", "Food insecurity and vitamin or mineral deficiency (iron, zinc).", "Autism and intellectual developmental disorder."],
+      risk: ["Neglect, lack of supervision, developmental delay.", "Associated conditions, not listed risk factors: lack of food and vitamin or mineral deficiency (p. 372).", "Comorbidity rather than risk: autism and intellectual developmental disorder (p. 373)."],
       differential: [
         { id: "anorexia", how: "Nonfood eaten to control appetite or weight." },
         { id: "factitious", how: "Objects swallowed deceptively to feign illness." },
         { id: "nssi", name: "Nonsuicidal self-injury", how: "Swallowing pins, needles or knives in crises." },
         { id: "arfid", how: "Restriction of food; can coexist with sensory-driven pica." },
         { id: "trichotillomania", how: "Pulled hair may be eaten; diagnose both if pica needs attention." },
-        { id: "other-specified-hypersomnolence", name: "Kleine-Levin syndrome (other specified hypersomnolence)", how: "Episodic hypersomnia with abnormal eating." }
+        { id: "other-specified-hypersomnolence", name: "Kleine-Levin syndrome (other specified hypersomnolence, Ch 12)", how: "Episodic hypersomnia with abnormal eating." }
       ],
       pearls: ["Suggested minimum age about 2 years.", "Diet products with little nutrition are not “nonfood.”", "Look for lead poisoning, bezoars and parasitic infection.", "Do not assume cultural practice without evaluation."],
       cmp: { symptoms: "Eating nonfood substances", exclusions: "Developmentally normal mouthing; cultural practice", prevalence: "About 5% of school-age children", course: "Often childhood; can be protracted or fatal" },
@@ -54,7 +54,7 @@
       ],
       specifiers: ["In remission"],
       epi: [["Grade-school children", "About 1%–2% (limited European data)"], ["Infant onset", "Usually 3–12 months"]],
-      risk: ["Lack of stimulation, neglect, stressful life situations.", "Parent-child relationship problems.", "Intellectual developmental disorder."],
+      risk: ["Lack of stimulation, neglect, stressful life situations.", "Parent-child relationship problems.", "Not a risk factor but the usual setting: historically described in intellectual developmental disorder."],
       differential: [
         { name: "Gastrointestinal conditions", how: "Reflux, gastroparesis, pyloric stenosis, hiatal hernia, Sandifer syndrome." },
         { id: "anorexia", how: "Regurgitation and spitting to dispose of calories." },
@@ -120,7 +120,7 @@
         ["C", "Disturbed experience of weight or shape, undue influence on self-evaluation, or lack of recognition of the seriousness of low weight."]
       ],
       specifiers: ["Restricting type or binge-eating/purging type (last 3 months)", "In partial remission (A not met; B or C met) or in full remission", "Severity by BMI: mild ≥17, moderate 16–16.99, severe 15–15.99, extreme <15"],
-      epi: [["12-month", "0.0%–0.05%"], ["Lifetime", "0.60%–0.80% (women 0.9%–1.42%, men 0.12%–0.3%)"], ["Mortality", "About 5% per decade"], ["Suicide", "About 18 times expected; second leading cause of death"]],
+      epi: [["12-month (U.S. community)", "0.0%–0.05%"], ["Lifetime (U.S. community)", "0.60%–0.80% (women 0.9%–1.42%, men 0.12%–0.3%)"], ["Mortality", "About 5% per decade"], ["Suicide", "About 18 times expected; second leading cause of death"]],
       risk: ["Childhood anxiety disorders or obsessional traits.", "Cultures valuing thinness; modeling and elite athletics.", "Family history; genetic loci shared with metabolic traits."],
       differential: [
         { id: "bulimia", how: "Binges and compensation at normal or high weight." },
@@ -133,9 +133,9 @@
         { id: "bdd", how: "Add only for concerns unrelated to shape and size." },
         { id: "social-anxiety", how: "Add only for social fears beyond eating." }
       ],
-      pearls: ["Adult BMI ≥19 or youth above the median: think atypical anorexia.", "Fear of fat can be inferred from behavior.", "Amenorrhea is no longer a criterion.", "Binges and purges at low weight are anorexia, not bulimia.", "Bone loss often does not reverse."],
+      pearls: ["Adult BMI ≥19 or youth above the median: think atypical anorexia.", "Fear of fat can be inferred from behavior.", "Amenorrhea is not a criterion (dropped in DSM-5; app note).", "Binges and purges at low weight are anorexia, not bulimia.", "Bone loss often does not reverse."],
       cmp: { symptoms: "Restriction, low weight, fear of fatness, body image disturbance", exclusions: "None stated; excludes bulimia during the episode", prevalence: "Lifetime 0.6%–0.8%", course: "Most remit within 5 years; mortality about 5% per decade" },
-      clues: [["Core picture", "A 16-year-old runner with BMI 15.4 who thinks her thighs are fat and panics when she can’t run"], ["Code", "F50.01 (restricting) / F50.02 (binge-eating/purging); from Oct 2024 F50.01x / F50.02x"]],
+      clues: [["Core picture", "A 19-year-old runner with BMI 15.4 who thinks her thighs are fat and panics when she can’t run"], ["Code", "F50.01 (restricting) / F50.02 (binge-eating/purging); from Oct 2024 F50.01x / F50.02x"]],
       updates: upd("Anorexia nervosa codes now include severity and remission: restricting type **F50.010** mild, **F50.011** moderate, **F50.012** severe, **F50.013** extreme, **F50.014** in remission, **F50.019** unspecified; binge-eating/purging type **F50.020–F50.024** and **F50.029** in the same order.")
     },
     {
@@ -160,12 +160,12 @@
         ["E", "Not exclusively during anorexia nervosa."]
       ],
       specifiers: ["In partial remission or in full remission", "Severity by compensatory behaviors per week: mild 1–3, moderate 4–7, severe 8–13, extreme ≥14"],
-      epi: [["12-month", "0.14%–0.3%"], ["Lifetime", "0.28%–1.0%; adolescents 1.3% girls, 0.5% boys"], ["Mortality", "Nearly 2% per decade"], ["Substance use", "At least 30% lifetime"]],
+      epi: [["12-month (U.S. community)", "0.14%–0.3%"], ["Lifetime (U.S. community)", "0.28%–1.0%; adolescents 1.3% girls, 0.5% boys"], ["Mortality", "Nearly 2% per decade"], ["Substance use", "At least 30% lifetime"]],
       risk: ["Weight concern, low self-esteem, depression, social anxiety, childhood GAD.", "Thin-ideal internalization; childhood sexual or physical abuse.", "Childhood obesity, early puberty, family history."],
       differential: [
         { id: "anorexia", how: "Binges and purges at significantly low weight." },
         { id: "bed", how: "Binges without regular compensation." },
-        { id: "other-specified-hypersomnolence", name: "Kleine-Levin syndrome (other specified hypersomnolence)", how: "Overeating with hypersomnia, no shape concern." },
+        { id: "other-specified-hypersomnolence", name: "Kleine-Levin syndrome (other specified hypersomnolence, Ch 12)", how: "Overeating with hypersomnia, no shape concern." },
         { id: "mdd", how: "Atypical overeating without compensation; both if met." },
         { id: "borderline-pd", how: "Bingeing within impulsivity; both if met." }
       ],
@@ -175,7 +175,7 @@
       updates: upd("Bulimia nervosa codes now include severity and remission: **F50.21** mild, **F50.22** moderate, **F50.23** severe, **F50.24** extreme, **F50.25** in partial or full remission, **F50.20** unspecified.")
     },
     {
-      id: "bed", ch: "ch10", sec: "s10-bed-criteria", pages: "392–396", critPages: "392",
+      id: "bed", ch: "ch10", sec: "s10-bed-criteria", pages: "392–396", critPages: "392–393",
       name: "Binge-eating disorder", code: "F50.81",
       codes: [
         ["F50.81", "Binge-eating disorder", "As printed (2022); replaced by F50.810–F50.819"],
@@ -196,8 +196,8 @@
         ["E", "No recurrent compensation; not only during bulimia or anorexia."]
       ],
       specifiers: ["In partial remission (<1 binge/week) or in full remission", "Severity by binges per week: mild 1–3, moderate 4–7, severe 8–13, extreme ≥14"],
-      epi: [["12-month", "0.44%–1.2%"], ["Lifetime", "0.85%–2.8%"], ["Sex", "2–3 times more common in women"], ["Suicidal ideation", "About 25%"]],
-      risk: ["Runs in families (additive genetic influence).", "Loss-of-control eating in childhood.", "Comorbid MDD and alcohol use disorder."],
+      epi: [["12-month (U.S. community)", "0.44%–1.2%"], ["Lifetime (U.S. community)", "0.85%–2.8%"], ["Sex", "2–3 times more common in women"], ["Suicidal ideation", "About 25%"]],
+      risk: ["Runs in families (additive genetic influence)."],
       differential: [
         { id: "bulimia", how: "Recurrent compensation and restriction between binges." },
         { name: "Obesity", how: "Not a mental disorder; most obese people do not binge." },
@@ -206,7 +206,7 @@
         { id: "borderline-pd", how: "Bingeing within impulsivity; both if met." },
         { id: "other-specified-eating", how: "Night eating syndrome; low-frequency BED." }
       ],
-      pearls: ["No weight criterion.", "Dieting follows bingeing.", "Best remission of the three.", "Comorbidity tracks binge severity, not obesity."],
+      pearls: ["No weight criterion.", "Dieting often follows bingeing.", "Loss-of-control eating may be a prodrome for some (p. 394).", "Best remission of the three.", "Comorbidity tracks binge severity, not obesity."],
       cmp: { symptoms: "Binges with distress, no compensation", exclusions: "Recurrent compensation; only during BN or AN", prevalence: "Lifetime 0.85%–2.8%", course: "Higher remission; crossover uncommon" },
       clues: [["Core picture", "A nurse bingeing alone in her car three times a week, fast and until in pain, then disgusted, never compensating"], ["Code", "F50.81; from Oct 2024 F50.810–F50.819"]],
       updates: upd("Binge-eating disorder codes now include severity and remission: **F50.810** mild, **F50.811** moderate, **F50.812** severe, **F50.813** extreme, **F50.814** in partial or full remission, **F50.819** unspecified.")
@@ -220,7 +220,7 @@
       mood: "Varies",
       criteria: [["", "Atypical anorexia nervosa; bulimia nervosa or binge-eating disorder of low frequency and/or limited duration; purging disorder; night eating syndrome; or another stated reason."]],
       specifiers: ["Record the reason after the name"],
-      epi: [["Prevalence", "Common in clinical samples; not given in DSM-5-TR"]],
+      epi: [["Prevalence", "Not given in DSM-5-TR"]],
       risk: ["As for the related full disorder."],
       differential: [
         { id: "anorexia", how: "Full criteria including significantly low weight." },
@@ -228,9 +228,10 @@
         { id: "bed", how: "Weekly for 3 months." },
         { id: "unspecified-eating", how: "When no reason is given." }
       ],
-      pearls: ["Atypical anorexia can be as medically dangerous as anorexia.", "Night eating has recall; sleep-related eating does not.", "Purging disorder has no binges."],
+      pearls: ["Atypical anorexia may bring many of the physiological complications of anorexia.", "Night eating has recall; sleep-related eating does not.", "Purging disorder has no binges."],
       cmp: { symptoms: "Subthreshold or atypical eating disorder", exclusions: "Full criteria for a specific disorder", prevalence: "Not given", course: "Varies" },
-      clues: [["Core picture", "A teenager who lost 18 kg from obesity, fears fat, BMI 23"], ["Code", "F50.89"]]
+      clues: [["Core picture", "A teenager who lost 18 kg from obesity, fears fat, BMI 23"], ["Code", "F50.89"]],
+      updates: [{ kind: "post", year: "2025", title: "“-like” wording for two examples (September 2025)", source: "APA DSM-5-TR Update, September 2025", text: "Examples 2 and 3 are now worded **bulimia nervosa-like disorder** and **binge-eating-like disorder** (of low frequency and/or limited duration). The recording example is now “bulimia nervosa-like disorder of low frequency.” The code (F50.89) did not change. The app keeps the printed names." }]
     },
     {
       id: "unspecified-eating", ch: "ch10", sec: "s10-other", pages: "397", critPages: "397",
