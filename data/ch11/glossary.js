@@ -8,7 +8,7 @@ SP.glossary = (SP.glossary || []).concat([
   ["primary enuresis", "Enuresis in a child who has never established urinary continence.", "Ch 11"],
   ["secondary enuresis", "Enuresis that begins after a period of established urinary continence, most often at ages 5 to 8.", "Ch 11"],
   ["urge incontinence", "Daytime wetting with sudden urges to void, linked with detrusor instability.", "Ch 11"],
-  ["voiding postponement", "Consciously putting off the urge to urinate until wetting occurs, often during play or because of reluctance to use the toilet.", "Ch 11"],
+  ["voiding postponement", "Consciously putting off the urge to urinate until wetting occurs, sometimes from preoccupation with play or reluctance to use the toilet.", "Ch 11"],
   ["detrusor instability", "Involuntary contractions of the bladder muscle (detrusor) during filling, causing urgency; an overactive bladder.", "Ch 11"],
   ["neurogenic bladder", "Bladder dysfunction caused by a nervous system lesion, such as spina bifida or tethered cord; excludes enuresis.", "Ch 11"],
   ["posterior urethral valves", "A congenital obstruction of the male urethra that can cause wetting and a weak stream; excludes enuresis.", "Ch 11"],

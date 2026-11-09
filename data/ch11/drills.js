@@ -1,5 +1,5 @@
 /* Chapter 11 practice drills.
-   dxline:   build the full diagnosis line (diagnosis, subtype, code). Codes unchanged through October 2026.
+   dxline:   build the full diagnosis line (diagnosis, subtype, code). F98.0/F98.1 unchanged through October 2026; for N39.498, R15.9 and R32 no change was found for the codes checked; confirm against the official tabular list.
    counting: decide which findings count toward a criterion, then whether it is met.
    Ids are stable keys for progress. */
 (function () {
@@ -15,7 +15,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 0 },
         { label: "Subtype", options: ENU, answer: 0 },
-        { label: "Code", options: ["F98.0", "F98.1", "N39.498", "R32", "R15.9"], answer: 0 }
+        { label: "Code", options: ["F98.1", "N39.498", "F98.0", "R32", "R15.9"], answer: 2 }
       ],
       line: "**F98.0** Enuresis, nocturnal only",
       why: "Bedwetting more than twice weekly for over 3 months at age 8, no medical cause; wetting only in sleep."
@@ -26,7 +26,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 0 },
         { label: "Subtype", options: ENU, answer: 2 },
-        { label: "Code", options: ["F98.0", "N39.498", "R32", "F98.1", "R15.9"], answer: 0 }
+        { label: "Code", options: ["N39.498", "R32", "F98.1", "F98.0", "R15.9"], answer: 3 }
       ],
       line: "**F98.0** Enuresis, nocturnal and diurnal",
       why: "Day and night wetting: the nonmonosymptomatic subtype. The code is the same for every subtype."
@@ -37,7 +37,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 0 },
         { label: "Subtype", options: ENU, answer: 1 },
-        { label: "Code", options: ["F98.0", "F98.1", "R32", "N39.498", "F91.3"], answer: 0 }
+        { label: "Code", options: ["F98.1", "F98.0", "R32", "N39.498", "F91.3"], answer: 1 }
       ],
       line: "**F98.0** Enuresis, diurnal only",
       why: "Waking-hours wetting only, from voiding postponement."
@@ -48,7 +48,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 1 },
         { label: "Subtype", options: ENC, answer: 0 },
-        { label: "Code", options: ["F98.1", "F98.0", "R15.9", "K59.00", "N39.498"], answer: 0 }
+        { label: "Code", options: ["F98.0", "R15.9", "K59.00", "N39.498", "F98.1"], answer: 4 }
       ],
       line: "**F98.1** Encopresis, with constipation and overflow incontinence",
       why: "Monthly or more for over 3 months at age 6, with constipation on history and examination."
@@ -70,7 +70,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 2 },
         { label: "Symptoms", options: SYM, answer: 1 },
-        { label: "Code", options: ["R15.9", "N39.498", "R32", "F98.1", "F98.8"], answer: 0 }
+        { label: "Code", options: ["N39.498", "R32", "R15.9", "F98.1", "F98.8"], answer: 2 }
       ],
       line: "**R15.9** Other specified elimination disorder, with fecal symptoms (duration under 3 months)",
       why: "Encopresis needs 3 months and has no impairment alternative. Fecal symptoms take R15.9."
@@ -81,7 +81,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 2 },
         { label: "Symptoms", options: SYM, answer: 0 },
-        { label: "Code", options: ["N39.498", "R32", "F98.0", "R15.9", "N39.44"], answer: 0 }
+        { label: "Code", options: ["R32", "F98.0", "R15.9", "N39.44", "N39.498"], answer: 4 }
       ],
       line: "**N39.498** Other specified elimination disorder, low-frequency enuresis",
       why: "The manual’s own example. Urinary symptoms in the other specified category take N39.498."
@@ -92,7 +92,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 3 },
         { label: "Symptoms", options: SYM, answer: 0 },
-        { label: "Code", options: ["R32", "N39.498", "R15.9", "F98.0", "F98.9"], answer: 0 }
+        { label: "Code", options: ["N39.498", "R32", "R15.9", "F98.0", "F98.9"], answer: 1 }
       ],
       line: "**R32** Unspecified elimination disorder, with urinary symptoms",
       why: "Insufficient information: unspecified. Urinary symptoms in the unspecified category take R32."
@@ -103,7 +103,7 @@
       parts: [
         { label: "Diagnosis", options: DX, answer: 3 },
         { label: "Symptoms", options: SYM, answer: 1 },
-        { label: "Code", options: ["R15.9", "R32", "F98.1", "N39.498", "K59.00"], answer: 0 }
+        { label: "Code", options: ["R32", "F98.1", "N39.498", "R15.9", "K59.00"], answer: 3 }
       ],
       line: "**R15.9** Unspecified elimination disorder, with fecal symptoms",
       why: "Fecal symptoms take R15.9 in both residual categories."
@@ -113,10 +113,10 @@
       "case": "A 20-year-old started clozapine 3 months ago and now wets the bed most nights; he had been continent since childhood.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 4 },
-        { label: "Record as", options: ["Medication side effect", "Enuresis, nocturnal only", "Other specified elimination disorder", "Unspecified elimination disorder"], answer: 0 }
+        { label: "Record as", options: ["Enuresis, nocturnal only", "Other specified elimination disorder", "Medication side effect", "Unspecified elimination disorder"], answer: 2 }
       ],
-      line: "No elimination disorder: **clozapine-associated enuresis**, recorded as a medication side effect",
-      why: "Wetting during antipsychotic treatment is not diagnosed as enuresis unless it was regularly present before the drug."
+      line: "No elimination disorder: wetting during clozapine treatment, **noted as a medication side effect**",
+      why: "Wetting during antipsychotic treatment is not diagnosed as enuresis in isolation; it may be noted as a medication side effect unless it was regularly present before the drug (p. 402)."
     }
   ]);
 
@@ -165,18 +165,18 @@
     },
     {
       id: "n11-04", tag: "Encopresis Criterion D",
-      "case": "Children who soil, each with another condition:",
-      ask: "Mark the conditions that still allow a diagnosis of encopresis. Is at least one compatible?",
+      "case": "Children who soil, with these findings:",
+      ask: "Mark the findings that still allow a diagnosis of encopresis. Is at least one compatible?",
       items: [
-        ["Hypothyroidism causing constipation", true, "Acts through constipation."],
-        ["Celiac disease causing constipation", true, "Acts through constipation."],
+        ["Constipation from withholding after painful stools, in a child with asthma", true, "Functional constipation that the asthma does not explain (p. 405)."],
+        ["Constipation from stool withholding at school", true, "Acts through constipation (p. 402)."],
         ["Chronic diarrhea", false, "Fecal incontinence from diarrhea is not encopresis."],
         ["Spina bifida", false, "A neurological cause."],
         ["Daily stimulant laxatives", false, "A substance effect."]
       ],
       need: 1,
       met: true,
-      why: "Criterion D allows a medical condition only **through a mechanism involving constipation**."
+      why: "Criterion D allows a medical condition only **through a mechanism involving constipation** (p. 402); the differential limits this to constipation that other medical conditions cannot explain (p. 405)."
     },
     {
       id: "n11-05", tag: "Constipation subtype",
@@ -217,7 +217,7 @@
         ["Restless legs syndrome", true, "Linked."],
         ["Sleepwalking or sleep terrors", true, "NREM sleep arousal disorders are linked."],
         ["Narcolepsy", false, "Not named in the chapter."],
-        ["REM sleep behavior disorder", false, "Not named; it is mainly an adult disorder."]
+        ["REM sleep behavior disorder", false, "Not named; it is mainly an adult disorder (Ch 12)."]
       ],
       need: 3,
       met: true,
@@ -254,13 +254,13 @@
     },
     {
       id: "n11-10", tag: "Encopresis A–D",
-      "case": "A 5-year-old boy with hypothyroidism has hard stools and has soiled weekly for 4 months, involuntarily.",
+      "case": "A 5-year-old boy who holds in his stools after a painful bowel movement has hard stools and has soiled weekly for 4 months, involuntarily. He has no medical illness.",
       ask: "Mark each encopresis criterion that is met. Are all four met?",
       items: [
         ["A: repeated passage of feces into clothing", true, "Involuntary passage counts."],
         ["B: at least monthly for 3 months", true, "Weekly for 4 months."],
         ["C: age at least 4", true, "Age 5."],
-        ["D: not due to a substance or medical condition except through constipation", true, "Hypothyroidism acts through constipation."]
+        ["D: not due to a substance or medical condition except through constipation", true, "No substance or medical cause; functional constipation is allowed."]
       ],
       need: 4,
       met: true,

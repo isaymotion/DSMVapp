@@ -5,7 +5,7 @@ SP.add("ch11", "highYield", [
     "Both elimination disorders may be **involuntary or intentional**.",
     "The minimum ages are based on **developmental** age, not only chronological age.",
     "Enuresis and encopresis usually occur separately, but **co-occurrence** is also seen.",
-    "The criteria are **unchanged** from DSM-5; the text revision updated the descriptive text."
+    "The criteria are **unchanged** from DSM-5; the text revision updated the descriptive text (DSM-5 vs DSM-5-TR comparison; app note)."
   ] },
   { id: "hy11-codes", topic: "Codes", items: [
     "Enuresis: **F98.0**.",
@@ -14,7 +14,7 @@ SP.add("ch11", "highYield", [
     "Unspecified elimination disorder with urinary symptoms: **R32**.",
     "Other specified **and** unspecified elimination disorder with fecal symptoms: **R15.9**.",
     "Subtypes of enuresis and encopresis **do not change** the code.",
-    "ICD-10-CM changes for this chapter through October 2026: **none**."
+    "ICD-10-CM through October 2026: F98.0 and F98.1 **unchanged**; for N39.498, R15.9 and R32 no change was found for the codes checked; confirm against the official tabular list."
   ] },
   { id: "hy11-enuresis-criteria", topic: "Enuresis criteria", items: [
     "Enuresis: repeated voiding of urine into **bed or clothes**.",
@@ -48,7 +48,7 @@ SP.add("ch11", "highYield", [
     "Daytime incontinence at age 7: **3.2%–9.0%**.",
     "Nocturnal enuresis sex ratio: males almost **2:1**.",
     "Daytime incontinence is more common in **females**, and the ratio rises with age.",
-    "Enuresis is more common with learning disabilities and **ADHD**."
+    "Enuresis may be more common with learning disabilities and **ADHD**."
   ] },
   { id: "hy11-enuresis-risk", topic: "Enuresis risk and culture", items: [
     "Nocturnal enuresis model: a mismatch of nighttime urine production, bladder capacity and **arousal from sleep**.",
@@ -63,7 +63,7 @@ SP.add("ch11", "highYield", [
   { id: "hy11-enuresis-ddx", topic: "Enuresis differential and comorbidity", items: [
     "Enuresis is not diagnosed during an acute **urinary tract infection**.",
     "Polyuric causes to exclude: untreated diabetes mellitus or **diabetes insipidus**.",
-    "Wetting caused by an antipsychotic is recorded as a **medication side effect**.",
+    "Wetting during antipsychotic treatment may be noted as a **medication side effect** rather than diagnosed as enuresis in isolation.",
     "Enuresis can still be diagnosed if wetting was regularly present **before** the medical condition or drug.",
     "Enuresis can still be diagnosed if wetting **persists after** the medical condition is treated.",
     "Most children with enuresis have **no** comorbid mental disorder.",

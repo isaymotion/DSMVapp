@@ -1,7 +1,7 @@
-/* Chapter 11 study guide. Source: DSM-5-TR, Elimination Disorders (pp. 399–406).
+/* Chapter 11 study guide. Source: DSM-5-TR, Elimination Disorders (pp. 399–405).
    Written in the app’s own words from the manual, with page references. Criteria are paraphrased: confirm exact
-   wording, specifiers and codes against the manual. Codes checked against ICD-10-CM through FY2027 (October 1, 2026):
-   no changes for this chapter. Treatment notes are outside the DSM and labeled as such. */
+   wording, specifiers and codes against the manual. Codes: F98.0 and F98.1 confirmed in ICD-10-CM through FY2027 (October 1, 2026);
+   for N39.498, R15.9 and R32 no change was found for the codes checked; confirm against the official tabular list. Treatment notes are outside the DSM and labeled as such. */
 SP.add("ch11", "guide", {
   intro: "The elimination disorders are about **urine or feces passed in the wrong place**, and they are usually first diagnosed in **childhood or adolescence** (p. 399). **Enuresis** is repeated voiding of urine into bed or clothes, from a **developmental age of 5**, at least **twice a week for 3 months** or with clinically significant distress or impairment. **Encopresis** is repeated passage of feces into inappropriate places, from a **developmental age of 4**, at least **once a month for 3 months**. Both may be **involuntary or intentional**, both exclude **substances and medical conditions** (encopresis allows a medical cause only **through constipation**), and both are subtyped: enuresis as **nocturnal only, diurnal only, or both**, encopresis as **with or without constipation and overflow incontinence**. They usually occur separately but can **co-occur**. The [[helper:elimination|elimination disorder helper]] walks you through the reasoning.",
   objectives: [
@@ -22,41 +22,41 @@ SP.add("ch11", "guide", {
           title: "How the chapter is built",
           pages: "399",
           blocks: [
-            { type: "table", caption: "Diagnoses in this chapter (codes as printed in DSM-5-TR, 2022; unchanged through October 2026)", head: ["Diagnosis", "Code", "Core idea", "Page"], rows: [
+            { type: "table", caption: "Diagnoses in this chapter (codes as printed in DSM-5-TR, 2022; F98.0 and F98.1 unchanged through October 2026; for N39.498, R15.9 and R32 no change was found for the codes checked; confirm against the official tabular list)", head: ["Diagnosis", "Code", "Core idea", "Page"], rows: [
               ["[[dx:enuresis|Enuresis]]", "F98.0", "Urine into bed or clothes; age **≥5**; **2×/week for 3 months** or distress or impairment", "399–402"],
               ["[[dx:encopresis|Encopresis]]", "F98.1", "Feces in inappropriate places; age **≥4**; **1×/month for 3 months**", "402–405"],
               ["[[dx:other-specified-elimination|Other specified elimination disorder]]", "N39.498 urinary · R15.9 fecal", "Subthreshold presentation with the **reason recorded** (e.g., low-frequency enuresis)", "405"],
-              ["[[dx:unspecified-elimination|Unspecified elimination disorder]]", "R32 urinary · R15.9 fecal", "Reason not given or not enough information", "405–406"]
+              ["[[dx:unspecified-elimination|Unspecified elimination disorder]]", "R32 urinary · R15.9 fecal", "Reason not given or not enough information", "405"]
             ] },
             { type: "compare", title: "The two disorders side by side (pp. 399, 402)", items: [
               { title: "Enuresis (F98.0)", color: "guide", points: ["Urine into **bed or clothes**.", "Age **5** (chronological or developmental).", "At least **twice a week** for **3 consecutive months**, **or** clinically significant distress or impairment.", "Excludes substances (diuretics, antipsychotics) and medical conditions (diabetes, spina bifida, seizures).", "Specify **nocturnal only**, **diurnal only**, or **nocturnal and diurnal**."] },
               { title: "Encopresis (F98.1)", color: "case", points: ["Feces into **inappropriate places** (clothing, floor).", "Age **4** (chronological or developmental).", "At least **once a month** for **3 months**; **no** distress-or-impairment alternative.", "Excludes substances (laxatives) and medical conditions, **except** through a mechanism involving **constipation**.", "Specify **with** or **without constipation and overflow incontinence**."] }
             ] },
-            { type: "callout", kind: "key", title: "Four ideas that run through the chapter", text: "1) The age thresholds are **developmental**, not only chronological: a child with intellectual disability needs a **mental age** of 5 (enuresis) or 4 (encopresis). 2) The behavior can be **involuntary or intentional**; most often it is involuntary. 3) Each disorder has a **primary** course (continence never achieved) and a **secondary** course (onset after a period of continence). 4) The two disorders usually occur **separately**, but **co-occurrence** is common, especially with constipation (p. 399)." },
-            { type: "update", kind: "tr", title: "What the text revision changed", text: "The criteria and codes are the same as in DSM-5 (2013). The text revision rewrote the descriptive sections: updated **prevalence** figures from several countries, new **culture-related** and **sex- and gender-related** sections, the sleep and arousal model of nocturnal enuresis, and more detail on **diagnostic markers** for encopresis such as **colonic transit studies** and **anorectal manometry**. Confirm details against pp. 399–406." }
+            { type: "callout", kind: "key", title: "Four ideas that run through the chapter", text: "1) The age thresholds are **developmental**, not only chronological: a child with intellectual disability needs a **mental age** of 5 (enuresis) or 4 (encopresis). 2) The behavior can be **involuntary or intentional**; most often it is involuntary. 3) Each disorder has a **primary** course (continence never achieved) and a **secondary** course (onset after a period of continence). 4) The two disorders usually occur **separately**, but **co-occurrence** may also be seen (p. 399)." },
+            { type: "update", kind: "tr", title: "What the text revision changed", text: "The criteria and codes are the same as in DSM-5 (2013). The text revision rewrote the descriptive sections: updated **prevalence** figures from several countries, new **culture-related** and **sex- and gender-related** sections, the sleep and arousal model of nocturnal enuresis, and more detail on **diagnostic markers** for encopresis such as **colonic transit studies** and **anorectal manometry**. Confirm details against pp. 399–405." }
           ]
         },
         {
           id: "s11-coding",
           title: "Codes and how to record them",
-          pages: "399–406",
+          pages: "399–405",
           blocks: [
-            { type: "table", caption: "ICD-10-CM codes for the chapter", head: ["Diagnosis", "Code", "Note"], rows: [
+            { type: "table", caption: "ICD-10-CM codes for the chapter", head: ["Diagnosis", "Code", "ICD-10-CM title (outside the DSM)"], rows: [
               ["Enuresis", "**F98.0**", "Enuresis not due to a substance or known physiological condition; one code for all three subtypes"],
               ["Encopresis", "**F98.1**", "Encopresis not due to a substance or known physiological condition; one code for both subtypes"],
               ["Other specified, with urinary symptoms", "**N39.498**", "Other specified urinary incontinence"],
               ["Other specified, with fecal symptoms", "**R15.9**", "Full incontinence of feces"],
               ["Unspecified, with urinary symptoms", "**R32**", "Unspecified urinary incontinence"],
-              ["Unspecified, with fecal symptoms", "**R15.9**", "The **same** fecal code as other specified"]
+              ["Unspecified, with fecal symptoms", "**R15.9**", "Full incontinence of feces (the **same** fecal code as other specified)"]
             ] },
-            { type: "callout", kind: "exam", title: "The coding pattern", text: "The two named disorders sit in the childhood **F98** block. The residual categories borrow **non-F codes**: urinary symptoms go to the genitourinary (**N39.498**, other specified) or symptom chapter (**R32**, unspecified), and **fecal** symptoms always go to **R15.9**, whether other specified or unspecified. The subtype is written out in words; it does not change the code." },
+            { type: "callout", kind: "exam", title: "The coding pattern", text: "The two named disorders sit in the childhood **F98** block. The residual categories borrow **non-F codes**: urinary symptoms go to the genitourinary (**N39.498**, other specified) or symptom chapter (**R32**, unspecified), and **fecal** symptoms always go to **R15.9**, whether other specified or unspecified. The subtype is written out in words; it does not change the code (app guidance)." },
             { type: "steps", title: "Recording the diagnosis", items: [
               ["1. Name", "Enuresis or encopresis."],
               ["2. Subtype", "Enuresis: nocturnal only, diurnal only, or nocturnal and diurnal. Encopresis: with or without constipation and overflow incontinence."],
               ["3. Code", "F98.0 or F98.1. For the residual categories, choose the urinary or fecal code."],
               ["4. Residual reason", "Other specified: write the reason after the name, e.g., “other specified elimination disorder, low-frequency enuresis.”"]
             ] },
-            { type: "update", kind: "post", year: "2026", title: "No code changes through FY2027", source: "ICD-10-CM FY2025, FY2026 and FY2027 code tables (effective October 1 of 2024, 2025 and 2026); APA DSM-5-TR coding updates (September 2022, 2023, 2024 and 2025)", text: "F98.0, F98.1, N39.498, R15.9 and R32 were **not changed** in the October 2024, October 2025 or October 2026 ICD-10-CM updates, and the APA’s DSM-5-TR coding updates have not touched this chapter. The codes printed in the manual are still current. Check the code set in force on the date of service." }
+            { type: "update", kind: "post", year: "2026", title: "Codes checked through FY2027", source: "ICD-10-CM FY2025, FY2026 and FY2027 code tables (effective October 1 of 2024, 2025 and 2026); APA DSM-5-TR coding updates (September 2022, 2023, 2024 and 2025)", text: "**F98.0** and **F98.1** were **not changed** in the October 2024, October 2025 or October 2026 ICD-10-CM updates, and the APA’s DSM-5-TR coding updates have not touched this chapter. For **N39.498**, **R15.9** and **R32**, no change was found for the codes checked; confirm against the official tabular list. Check the code set in force on the date of service." }
           ]
         }
       ]
@@ -70,10 +70,10 @@ SP.add("ch11", "guide", {
           pages: "399–400",
           blocks: [
             { type: "criteria", title: "Enuresis in brief", code: "F98.0", pages: "399", items: [
-              ["A", "**Repeated voiding of urine** into bed or clothes, whether **involuntary or intentional**."],
-              ["B", "Clinically significant, shown by **either**:", ["a frequency of at least **twice a week** for at least **3 consecutive months**, **or**", "clinically significant **distress or impairment** in social, academic (occupational) or other important areas."]],
+              ["A", "**Repeated voiding of urine** into bed or clothes; **involuntary or intentional** both count."],
+              ["B", "Clinically significant, shown by **either**:", ["at least **twice a week** for **3 consecutive months** or more, **or**", "clinically significant **distress or impairment** (social, academic or occupational, or other important areas)."]],
               ["C", "Chronological age at least **5 years** (or the equivalent **developmental level**)."],
-              ["D", "Not attributable to a **substance** (e.g., a diuretic, an antipsychotic) or **another medical condition** (e.g., diabetes, spina bifida, a seizure disorder)."]
+              ["D", "Not due to the effects of a **substance** (e.g., a diuretic or an antipsychotic) or of **another medical condition** (e.g., diabetes, spina bifida, seizures)."]
             ], specifiers: [["Nocturnal only", "Urine passed only during **nighttime sleep**"], ["Diurnal only", "Urine passed during **waking hours**"], ["Nocturnal and diurnal", "A **combination** of the two"]] },
             { type: "defs", title: "Reading the criteria (p. 400)", items: [
               ["Voluntary or not", "Most voiding is **involuntary**; occasionally it is **intentional**. Both count."],
@@ -85,7 +85,7 @@ SP.add("ch11", "guide", {
               { label: "Enuresis", dx: "enuresis", from: 0, to: 100, color: "guide", span: "≥2×/week for 3 consecutive months", note: "Or distress or impairment at any frequency" },
               { label: "Encopresis", dx: "encopresis", from: 0, to: 100, color: "case", span: "≥1×/month for 3 months", note: "No impairment alternative" }
             ], note: "Both need 3 months; enuresis counts **weekly**, encopresis **monthly**." },
-            { type: "callout", kind: "exam", title: "The commonest exam twist", text: "A 6-year-old wets **once a week** but is ashamed and refuses sleepovers. Frequency is below twice weekly, but **distress or impairment** satisfies Criterion B: **enuresis**. Now a 6-year-old soils **twice a month** for **2 months**: not yet encopresis, because the **3-month** duration is not met." },
+            { type: "callout", kind: "exam", title: "The commonest exam twist", text: "A 6-year-old wets **once a week** but is ashamed and refuses sleepovers. Frequency is below twice weekly, but **distress or impairment** satisfies Criterion B: **enuresis**. Now a 6-year-old soils **twice a month** for **2 months**: not yet encopresis, because the **3-month** duration is not met (app guidance)." },
             { type: "case", title: "Clinical vignette: the boy who will not go to camp", text: "A 7-year-old boy has wet the bed about four nights a week for as long as his parents remember. He is dry during the day. Urinalysis and examination are normal, and he takes no medication. He refuses a school camping trip because he is afraid his classmates will find out.", point: "Repeated voiding into bed, more than twice a week for over 3 months, age over 5, with no medical or drug cause: **enuresis, nocturnal only (F98.0)**. It is **primary**, because he has never been dry." }
           ]
         },
@@ -101,13 +101,13 @@ SP.add("ch11", "guide", {
             ] },
             { type: "compare", title: "The two kinds of daytime wetting (p. 399)", items: [
               { title: "Urge incontinence", color: "drug", points: ["**Sudden urges** to void.", "**Detrusor instability** (an overactive bladder muscle).", "The child cannot hold on."] },
-              { title: "Voiding postponement", color: "hy", points: ["The child **consciously defers** the urge until wetting results.", "Often busy with **play or school**, or **reluctant to use the toilet** because of social anxiety (p. 400)."] }
+              { title: "Voiding postponement", color: "hy", points: ["The child **consciously defers** the urge until wetting results.", "Sometimes from a preoccupation with **play or school**, or **reluctance to use the toilet** because of social anxiety (p. 400)."] }
             ] },
             { type: "compare", title: "Primary and secondary enuresis (p. 400)", items: [
               { title: "Primary", color: "guide", points: ["The child has **never established** urinary continence.", "By definition it begins at **age 5**."] },
-              { title: "Secondary", color: "case", points: ["Begins **after a period of continence**.", "Most common onset between **ages 5 and 8**, but it can start at any age.", "Look for a **stressor**, a **UTI**, **diabetes**, constipation or a new medication."] }
+              { title: "Secondary", color: "case", points: ["Begins **after a period of continence**.", "Most common onset between **ages 5 and 8**, but it can start at any age.", "Look for a **stressor**, a **UTI**, **diabetes**, constipation or a new medication (app guidance)."] }
             ] },
-            { type: "callout", kind: "pearl", title: "Primary versus secondary does not predict comorbidity", text: "The manual states that the prevalence of **comorbid mental disorders does not differ** between primary and secondary enuresis (p. 400). Secondary onset should still prompt a search for a **new medical cause or stressor**." },
+            { type: "callout", kind: "pearl", title: "Primary versus secondary does not predict comorbidity", text: "The manual states that the prevalence of **comorbid mental disorders does not differ** between primary and secondary enuresis (p. 400). Secondary onset should still prompt a search for a **new medical cause or stressor** (app guidance)." },
             { type: "table", caption: "Course (p. 400)", head: ["Feature", "What the manual says"], rows: [
               ["Spontaneous remission", "**5%–10% per year** after age 5"],
               ["Adolescence", "**Most** children become continent by adolescence"],
@@ -124,10 +124,10 @@ SP.add("ch11", "guide", {
           blocks: [
             { type: "list", title: "Associated features (p. 400)", items: [
               "Nocturnal wetting occasionally occurs in **REM sleep**, and the child may recall a **dream of urinating**.",
-              "Daytime wetting is often **deferred voiding**: social anxiety about school toilets, or absorption in **play or school** activity.",
-              "Daytime events cluster in the **early afternoon on school days** or **after returning from school**.",
+              "Daytime wetting is **deferred voiding**, sometimes from **reluctance to use the toilet** because of social anxiety, or preoccupation with **play or school** activity.",
+              "Daytime events cluster in the **early afternoon on school days**, or once the child is **home from school**.",
               "Children with **executive function** or other neurological problems, including those with disruptive behavior, may wet **without sensory awareness**.",
-              "With daytime or combined wetting, incontinence often **persists after an associated infection is treated**."
+              "With daytime or combined wetting, it is not uncommon for incontinence to **persist after an associated infection is treated**."
             ] },
             { type: "table", caption: "Prevalence (p. 400)", head: ["Group", "Nocturnal enuresis", "Daytime incontinence"], rows: [
               ["Age 5", "About **5%–10%**", "—"],
@@ -137,7 +137,7 @@ SP.add("ch11", "guide", {
               ["Ages 15–17", "—", "1.2%–3.0%"],
               ["Age 15 and older", "About **1%**", "—"]
             ] },
-            { type: "list", title: "Who is affected more often (p. 400)", items: [
+            { type: "list", title: "Who may be affected more often (p. 400)", items: [
               "**Boys**, and members of **socially oppressed groups** (e.g., African American children in the United States; Turkish or Moroccan children in the Netherlands).",
               "Youth with **learning disabilities** or **ADHD**.",
               "Figures come from the **United States, the Netherlands and Hong Kong**, among other settings."
@@ -151,7 +151,7 @@ SP.add("ch11", "guide", {
           pages: "401",
           blocks: [
             { type: "table", caption: "Risk and prognostic factors (p. 401)", head: ["Domain", "What the manual says"], rows: [
-              ["Predisposing", "**Developmental delays** and **neuropsychiatric** problems"],
+              ["Predisposing", "Suggested predisposing factors for bladder dysfunction: **developmental delays** and **neuropsychiatric** problems"],
               ["Environmental", "**Delayed toileting** and **psychosocial stress**"],
               ["Physiological", "A **mismatch** between **nighttime urine production**, **nighttime bladder capacity** and the **ability to wake** from sleep; possibly abnormal CNS signal processing and the **default mode network**"],
               ["Sleep", "Arousal thresholds are **high**, yet sleep quality is often **poor**: these children do not simply sleep well"],
@@ -167,7 +167,7 @@ SP.add("ch11", "guide", {
               ["UTIs", "Often linked with **daytime wetting**, especially in girls"],
               ["Transmission", "Relative risk of an enuretic child is greater with a previously enuretic **father** than **mother**"]
             ] },
-            { type: "p", text: "**Impairment** depends on limits on social activities (for example, **not going to sleep-away camp**), the effect on **self-esteem**, **ostracism by peers**, and **anger, punishment and rejection by caregivers** (p. 401). Asking about punishment is part of the assessment." }
+            { type: "p", text: "**Impairment** depends on limits on social activities (for example, **not going to sleep-away camp**), the effect on **self-esteem**, **ostracism by peers**, and **anger, punishment and rejection by caregivers** (p. 401). Asking about punishment is part of the assessment (app guidance)." }
           ]
         },
         {
@@ -179,19 +179,19 @@ SP.add("ch11", "guide", {
               ["**Neurogenic bladder** or structural causes", "Posterior urethral valves, ectopic ureter, spina bifida, tethered cord: **no enuresis diagnosis** while these explain the wetting"],
               ["Conditions causing **polyuria or urgency**", "Untreated **diabetes mellitus** or **diabetes insipidus**"],
               ["**Acute UTI**", "Do not diagnose enuresis **during** the infection"],
-              ["**Medication side effect**", "**Antipsychotics**, **diuretics**, or drugs that cause constipation, polyuria or changes in executive functioning: **note as a side effect**, not as enuresis"]
+              ["**Medication side effect**", "Wetting **may occur** on **antipsychotics**, **diuretics**, or drugs that cause constipation, polyuria or changes in executive functioning: do not diagnose enuresis in isolation; it **may be noted as a side effect**"]
             ] },
             { type: "callout", kind: "key", title: "Two exceptions that allow the diagnosis", text: "Enuresis **can** be diagnosed alongside a medical condition or medication if the wetting was **regularly present before** the condition or drug began, **or** if it **persists after appropriate treatment** of the medical condition (pp. 401–402)." },
             { type: "list", title: "Comorbidity (p. 402)", items: [
               "**Most** children with enuresis have **no** comorbid mental disorder.",
-              "Behavioral and developmental symptoms are **more common** when wetting is **both day and night**.",
+              "Behavioral and developmental symptoms are **more common** in children wetting **both day and night** than in children without incontinence.",
               "**Developmental delays**: speech, language, learning and motor skills.",
               "**Encopresis and constipation** occur with both day and night wetting.",
               "Nocturnal enuresis is linked with **restless legs syndrome**, **NREM sleep arousal disorders** (sleepwalking, sleep terrors), **heavy snoring** and **sleep apnea**.",
               "About **50%** of enuretic children with proven **sleep-disordered breathing** become dry after **adenotonsillectomy**.",
               "**UTIs** are more common with daytime and nonmonosymptomatic wetting, especially the diurnal subtype."
             ] },
-            { type: "callout", kind: "caution", title: "Antipsychotics and clozapine", text: "In psychiatric practice, new nighttime wetting in a patient on an **antipsychotic** (clozapine is the classic example) is a **medication side effect**. Record it as such rather than as enuresis, unless the wetting was regularly present before the drug was started (p. 402)." },
+            { type: "callout", kind: "caution", title: "Antipsychotics and clozapine", text: "Enuresis may occur during treatment with an **antipsychotic** (p. 402); clozapine is a commonly cited example (app guidance; the manual names antipsychotics generally). Do not diagnose enuresis in isolation: the wetting **may be noted as a medication side effect**, unless it was regularly present before the drug was started (p. 402)." },
             { type: "case", title: "Clinical vignette: the girl who started wetting again", text: "An 8-year-old girl who had been dry for 3 years begins wetting the bed and having daytime accidents. Over 2 weeks she has been drinking much more and has lost weight. Her urine dipstick shows glucose.", point: "Secondary wetting with **polyuria** and glycosuria points to **new-onset diabetes mellitus**. Enuresis is **not** diagnosed while untreated diabetes explains the wetting; it could be considered only if wetting **persists after** the diabetes is treated." }
           ]
         }
@@ -206,18 +206,18 @@ SP.add("ch11", "guide", {
           pages: "402–403",
           blocks: [
             { type: "criteria", title: "Encopresis in brief", code: "F98.1", pages: "402", items: [
-              ["A", "**Repeated passage of feces** into inappropriate places (e.g., clothing, floor), whether **involuntary or intentional**."],
+              ["A", "**Repeated passage of feces** into places where it does not belong (e.g., clothing, floor); **involuntary or intentional** both count."],
               ["B", "At least **one such event each month** for at least **3 months**."],
               ["C", "Chronological age at least **4 years** (or the equivalent **developmental level**)."],
-              ["D", "Not attributable to a **substance** (e.g., **laxatives**) or **another medical condition**, **except through a mechanism involving constipation**."]
-            ], specifiers: [["With constipation and overflow incontinence", "Evidence of constipation on **physical examination or by history**"], ["Without constipation and overflow incontinence", "**No** evidence of constipation on examination or by history"]] },
+              ["D", "Not due to the effects of a **substance** (e.g., **laxatives**) or of **another medical condition**, **unless the mechanism involves constipation**."]
+            ], specifiers: [["With constipation and overflow incontinence", "Constipation shown on **physical examination or in the history**"], ["Without constipation and overflow incontinence", "**No** evidence of constipation on examination or by history"]] },
             { type: "defs", title: "Reading the criteria (p. 403)", items: [
               ["Voluntary or not", "Most often **involuntary**; occasionally **intentional**."],
               ["Criterion B", "Frequency only: **no** distress-or-impairment alternative, unlike enuresis."],
               ["Age", "**4 years** chronologically, or a **mental age of 4** with developmental delay."],
-              ["Criterion D", "The incontinence must not be **exclusively** due to a substance or medical condition. A medical condition that works **through constipation** (e.g., **hypothyroidism**, **celiac disease**) does **not** exclude encopresis."]
+              ["Criterion D", "The incontinence must not be **exclusively** due to a substance or medical condition, apart from a mechanism involving **constipation** (p. 402). Two passages read differently: p. 403 names **celiac disease** and **hypothyroidism** among causes of constipation, but the differential says encopresis with another medical condition is appropriate **only if** the constipation **cannot be explained** by other medical conditions (p. 405)."]
             ] },
-            { type: "callout", kind: "exam", title: "Why the constipation exception matters", text: "Constipation is the usual engine of encopresis, and it can have medical causes. If a child with **hypothyroidism** becomes constipated and leaks stool, encopresis **with constipation and overflow incontinence** can still be diagnosed. But fecal incontinence from **chronic diarrhea**, **spina bifida** or **anal stenosis** does **not** qualify (p. 405)." },
+            { type: "callout", kind: "exam", title: "Why the constipation exception matters", text: "Criterion D allows a medical cause acting **through constipation** (p. 402), but the differential allows encopresis with another medical condition **only if** the constipation cannot be explained by other medical conditions (p. 405); the two read differently. Safe exam reading: constipation from a **functional or withholding** cause qualifies, and fecal incontinence from **chronic diarrhea**, **spina bifida** or **anal stenosis** does **not** (p. 405). Constipation fully explained by a medical condition such as **hypothyroidism** makes the diagnosis doubtful until that condition is treated and the soiling persists (app guidance)." },
             { type: "case", title: "Clinical vignette: the stained underwear", text: "A 6-year-old boy has had soiled underwear several times a week for 5 months. He passes large, hard stools every 5 to 7 days that sometimes block the toilet, and he hides behind the sofa crossing his legs when he feels the urge. A firm stool mass is felt in his left lower abdomen. He takes no medication and has no other illness.", point: "Repeated passage of feces into clothing, more than monthly for over 3 months, age over 4, with evidence of constipation: **encopresis, with constipation and overflow incontinence (F98.1)**. The leg-crossing is **withholding** behavior." }
           ]
         },
@@ -228,7 +228,7 @@ SP.add("ch11", "guide", {
           blocks: [
             { type: "compare", title: "The two subtypes (pp. 402–403)", items: [
               { title: "With constipation and overflow incontinence", color: "drug", points: ["The **majority** of children older than 4 with encopresis.", "Stool **usually poorly formed**; leakage ranges from **infrequent to continuous**, through the day and sometimes in sleep.", "Only **part** of the stool is passed at toileting.", "Incontinence **resolves when the constipation is treated**.", "Supported by a **rectal impaction** on examination, an abdominal radiograph, or **retained markers** on transit study."] },
-              { title: "Without constipation and overflow incontinence", color: "case", points: ["**Less common**.", "Stool of **normal form and consistency**; soiling is **intermittent**.", "Feces may be deposited in a **prominent location**.", "Usually associated with **oppositional defiant disorder** or **conduct disorder**, or the result of **anal masturbation**.", "**Prompt evacuation** of transit markers; **enuresis** often co-occurs."] }
+              { title: "Without constipation and overflow incontinence", color: "case", points: ["**Less common**.", "Stool of **normal form and consistency**; soiling is **intermittent**.", "Feces may be deposited in a **prominent location**.", "Usually associated with **oppositional defiant disorder** or **conduct disorder**, or may result from **anal masturbation**.", "**Prompt evacuation** of transit markers; **enuresis** often co-occurs."] }
             ] },
             { type: "flow", title: "The withholding cycle (pp. 403–404)", steps: [
               ["Trigger", "Anxiety about a particular toilet, oppositional behavior, a painful stool, poor fluid intake, a medication", "guide"],
@@ -242,7 +242,7 @@ SP.add("ch11", "guide", {
               ["Diet and medical", "**Insufficient fluid**, **celiac disease**, **hypothyroidism**, a **medication side effect**"],
               ["Complications", "**Anal fissure**, painful defecation, further retention"]
             ] },
-            { type: "callout", kind: "pearl", title: "Stool consistency can mislead", text: "Stool may be **normal or near normal**, or it may be **liquid** in children with overflow from retention (p. 403). A parent who reports “diarrhea” in a constipated child may be describing **overflow**. Examine the abdomen and ask about **large, infrequent, painful** stools." }
+            { type: "callout", kind: "pearl", title: "Stool consistency can mislead", text: "Stool may be **normal or near normal**, or it may be **liquid** in children with overflow from retention (p. 403). A parent who reports “diarrhea” in a constipated child may be describing **overflow**. Examine the abdomen and ask about **large, infrequent, painful** stools (app guidance)." }
           ]
         },
         {
@@ -255,7 +255,7 @@ SP.add("ch11", "guide", {
               "Impairment depends on **self-esteem**, **peer ostracism**, and caregiver **anger, punishment and rejection**.",
               "**Smearing** may be **deliberate** or **accidental**, when a child tries to clean up or hide feces passed involuntarily.",
               "When incontinence is **clearly deliberate**, features of **ODD** or **conduct disorder** may be present.",
-              "Many children with encopresis and chronic constipation also have **enuresis**, and urinary **reflux** may cause chronic **UTIs**, which may remit when the constipation is treated."
+              "**Enuresis** symptoms are common in children with encopresis and chronic constipation, and urinary **reflux** may cause chronic **UTIs**, which may remit when the constipation is treated."
             ] },
             { type: "table", caption: "Prevalence (p. 403)", head: ["Group", "Figure"], rows: [
               ["High-income countries", "**1%–4%** of children"],
@@ -266,14 +266,14 @@ SP.add("ch11", "guide", {
               ["Subtype", "**Most** children over 4 have the **with constipation** subtype"]
             ] },
             { type: "table", caption: "Development, course and risk (p. 404)", head: ["Topic", "What the manual says"], rows: [
-              ["Predisposing", "**Inadequate or inconsistent toilet training**; psychosocial stress such as **entering school** or the **birth of a sibling**"],
+              ["Predisposing", "May be predisposing: **inadequate or inconsistent toilet training**; psychosocial stress such as **entering school** or the **birth of a sibling**"],
               ["Course types", "**Primary** (fecal continence never established) and **secondary** (after a period of continence)"],
               ["Duration", "Can persist **for years** with intermittent exacerbations"],
-              ["Risk factors", "Painful defecation; **male** sex; age **before adolescence**; anxiety, depression, behavioral disorders; stressors such as **bullying** or poor school performance; **lower socioeconomic status**"],
+              ["Risk factors", "Painful defecation and withholding; **male** sex; age **before adolescence**. Thought to contribute: anxiety, depression, behavioral disorders; stressors such as **bullying** or poor school performance; **lower socioeconomic status**"],
               ["Sex ratio", "**Equal** under age 5; in older children **more common in boys**, from **2:1** (United States) to **6:1**"],
               ["Quality of life", "Significantly lower **health-related quality of life** and **family functioning**, especially in **older children** (p. 404)"]
             ] },
-            { type: "callout", kind: "culture", title: "Culture and encopresis (p. 404)", text: "Differences in **food and drink**, **hot tropical climates** and psychosocial adversity may influence constipation, unexplained abdominal pain and fecal retention. Some parents do not seek care for sociocultural reasons: for example, **Turkish and Moroccan** parents in the Netherlands may not report encopresis because of **religious concerns about the impurity** of urine and feces. In hot climates, ask about **fluid intake**." }
+            { type: "callout", kind: "culture", title: "Culture and encopresis (p. 404)", text: "Differences in **food and drink**, **hot tropical climates** and psychosocial adversity may influence constipation, unexplained abdominal pain and fecal retention. Some parents may not seek care for social or cultural reasons; in the Netherlands, **Turkish and Moroccan** parents may leave it unreported because religious beliefs treat urine and feces as **impure**. In hot climates, ask about **fluid intake** (app guidance)." }
           ]
         },
         {
@@ -298,14 +298,14 @@ SP.add("ch11", "guide", {
           pages: "405",
           blocks: [
             { type: "table", caption: "Differential diagnosis (p. 405)", head: ["Look-alike", "How to tell"], rows: [
-              ["Another medical condition **with constipation**", "Encopresis **is** appropriate if the mechanism is constipation that the other condition **cannot** fully explain"],
+              ["Another medical condition **with constipation**", "Encopresis is appropriate **only if** the mechanism is constipation that **cannot be explained** by other medical conditions (p. 405). Criterion D (p. 402) and p. 403 (hypothyroidism and celiac disease as causes of constipation) read differently. Safe reading: functional or withholding constipation qualifies; constipation fully explained by a medical condition makes the diagnosis doubtful until that condition is treated and soiling persists (app guidance)"],
               ["**Chronic diarrhea**", "Fecal incontinence from diarrhea is **not** encopresis"],
               ["**Spina bifida**, **anal stenosis**", "Structural or neurological incontinence is **not** encopresis"],
               ["**Laxative** effect", "Incontinence exclusively from laxatives is excluded by Criterion D"],
-              ["**ODD or conduct disorder**", "Can **coexist**, especially with deliberate soiling **without** constipation; diagnose both when criteria are met"]
+              ["**ODD or conduct disorder** (Ch 15)", "Usually associated with soiling **without** constipation (p. 403; not part of the p. 405 differential); diagnose both when criteria are met (app guidance)"]
             ] },
             { type: "callout", kind: "key", title: "Comorbidity in one line", text: "**Enuresis** is often present with encopresis, **particularly** in the subtype **without constipation and overflow incontinence** (p. 405)." },
-            { type: "callout", kind: "caution", title: "Soiling, smearing and safety", text: "Encopresis is **more common after early abuse or neglect** (p. 403). Deliberate soiling, smearing, **anal masturbation**, or a **new secondary** onset after a stressor should prompt a careful, nonjudgmental **psychosocial and safeguarding** history, without assuming abuse." }
+            { type: "callout", kind: "caution", title: "Soiling, smearing and safety", text: "Encopresis is **more common after early abuse or neglect** (p. 403). Deliberate soiling, smearing, **anal masturbation**, or a **new secondary** onset after a stressor should prompt a careful, nonjudgmental **psychosocial and safeguarding** history, without assuming abuse (app guidance)." }
           ]
         }
       ]
@@ -316,7 +316,7 @@ SP.add("ch11", "guide", {
         {
           id: "s11-other",
           title: "Other specified and unspecified elimination disorder",
-          pages: "405–406",
+          pages: "405",
           blocks: [
             { type: "p", text: "Both categories cover elimination symptoms that cause **clinically significant distress or impairment** but do not meet full criteria for enuresis or encopresis (p. 405)." },
             { type: "compare", title: "Which residual category?", items: [
@@ -329,7 +329,7 @@ SP.add("ch11", "guide", {
               ["Occasional nighttime wetting judged subthreshold by the clinician", "**Other specified**, urinary symptoms (**N39.498**): “low-frequency enuresis”"],
               ["A 9-year-old seen once in the emergency room for wetting, history unavailable", "**Unspecified**, urinary symptoms (**R32**)"]
             ] },
-            { type: "callout", kind: "exam", title: "Check full criteria first", text: "For **enuresis**, distress or impairment can **replace** the twice-weekly frequency in Criterion B, so a child who wets less often but is clearly distressed may already meet **full enuresis**. For **encopresis** there is **no** impairment alternative: a **shorter** or **less frequent** course that still causes distress goes to **other specified**." }
+            { type: "callout", kind: "exam", title: "Check full criteria first", text: "For **enuresis**, distress or impairment can **replace** the twice-weekly frequency in Criterion B, so a child who wets less often but is clearly distressed may already meet **full enuresis**. For **encopresis** there is **no** impairment alternative: a **shorter** or **less frequent** course that still causes distress goes to **other specified** (app guidance)." }
           ]
         },
         {
@@ -360,23 +360,23 @@ SP.add("ch11", "guide", {
               ["Toilet routine", "Scheduled sitting after meals, a footstool, praise or reward for sitting"],
               ["Behavioral therapy", "An **adjunct** to laxatives, not a replacement"]
             ] },
-            { type: "update", kind: "post", year: "2026", title: "New pediatric constipation guideline", source: "Gordon M, de Geus A, Boruta M, et al. ESPGHAN/NASPGHAN guidelines for treatment of functional constipation in children aged 0–18 years. J Pediatr Gastroenterol Nutr 2026", text: "The 2026 ESPGHAN/NASPGHAN guideline, replacing the 2014 version, makes a **strong** recommendation for **polyethylene glycol** (with or without electrolytes). Disimpaction may use **high-dose PEG or enemas** for **3–6 days**. Behavioral interventions are advised as **adjuncts** to medication, and demystification and toilet-training advice are recommended for all." },
+            { type: "update", kind: "post", year: "2026", title: "New pediatric constipation guideline", source: "Gordon M, de Geus A, Boruta M, et al. ESPGHAN/NASPGHAN guidelines for treatment of functional constipation in children aged 0–18 years. J Pediatr Gastroenterol Nutr 2026", text: "The 2026 ESPGHAN/NASPGHAN guideline, replacing the 2014 version, makes a **strong** recommendation for **polyethylene glycol** (with or without electrolytes). Disimpaction may use **high-dose PEG or enemas** for **3–6 days**. Behavioral interventions should not be used alone; they are **adjuncts** to medication in selected children. Demystification and explanation are recommended, with toilet-training guidance where developmentally appropriate." },
             { type: "callout", kind: "pearl", title: "Terms that differ outside the DSM", text: "The **International Children’s Continence Society (ICCS)** uses **enuresis** only for wetting **during sleep**; daytime wetting is **daytime urinary incontinence**, not “diurnal enuresis.” Pediatric gastroenterology uses **Rome IV**: **functional constipation** and **functional nonretentive fecal incontinence**, which roughly match the two encopresis subtypes." }
           ]
         },
         {
           id: "s11-approach",
           title: "Putting it together: the approach and the classic traps",
-          pages: "399–406",
+          pages: "399–405",
           blocks: [
-            { type: "steps", title: "Five steps for wetting or soiling", items: [
+            { type: "steps", title: "Five steps for wetting or soiling (app guidance)", items: [
               ["1. Urine or feces (or both)?", "Urine → enuresis pathway; feces → encopresis pathway; both → assess each, constipation first."],
               ["2. Old enough?", "Developmental age **5** for urine, **4** for feces; use **mental age** in developmental delay."],
               ["3. Often and long enough?", "Enuresis: **≥2×/week for 3 consecutive months** or distress or impairment. Encopresis: **≥1×/month for 3 months**."],
-              ["4. Medical or medication cause?", "Urine: diabetes, diabetes insipidus, UTI, neurogenic bladder, structural anomaly, antipsychotics, diuretics. Feces: diarrhea, spina bifida, anal stenosis, laxatives (constipation-mediated causes are allowed)."],
+              ["4. Medical or medication cause?", "Urine: diabetes, diabetes insipidus, UTI, neurogenic bladder, structural anomaly, antipsychotics, diuretics. Feces: diarrhea, spina bifida, anal stenosis, laxatives (functional constipation is allowed; see pp. 402 and 405 on medical causes of constipation)."],
               ["5. Subtype and code", "Enuresis: nocturnal only, diurnal only, both (**F98.0**). Encopresis: with or without constipation and overflow incontinence (**F98.1**). Residual: N39.498 or R32 for urine; R15.9 for feces."]
             ] },
-            { type: "callout", kind: "key", title: "Ten traps", text: "1) Enuresis age **5**, encopresis age **4**. 2) Enuresis counts **weekly** (2×), encopresis **monthly** (1×); both need **3 months**. 3) Enuresis has a **distress-or-impairment** alternative; encopresis does **not**. 4) **Intentional** wetting or soiling still counts. 5) Developmental age, not just birthdays. 6) Encopresis allows a medical cause **only through constipation**. 7) Wetting on **antipsychotics or diuretics** is a side effect, unless it was present before. 8) Nocturnal only = **monosymptomatic**; nocturnal and diurnal = **nonmonosymptomatic**. 9) Soiling **without** constipation goes with **ODD or conduct disorder** and with **enuresis**. 10) Fecal residual codes are **R15.9** for both other specified and unspecified." },
+            { type: "callout", kind: "key", title: "Ten traps (app guidance)", text: "1) Enuresis age **5**, encopresis age **4**. 2) Enuresis counts **weekly** (2×), encopresis **monthly** (1×); both need **3 months**. 3) Enuresis has a **distress-or-impairment** alternative; encopresis does **not**. 4) **Intentional** wetting or soiling still counts. 5) Developmental age, not just birthdays. 6) Encopresis allows a medical cause **only through constipation**. 7) Wetting on **antipsychotics or diuretics** is a side effect, unless it was present before. 8) Nocturnal only = **monosymptomatic**; nocturnal and diurnal = **nonmonosymptomatic**. 9) Soiling **without** constipation goes with **ODD or conduct disorder** and with **enuresis**. 10) Fecal residual codes are **R15.9** for both other specified and unspecified." },
             { type: "p", text: "Practice with the [[helper:elimination|elimination disorder helper]], then compare [[dx:enuresis|enuresis]] with [[dx:encopresis|encopresis]] side by side in the library." }
           ]
         }

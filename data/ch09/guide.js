@@ -33,9 +33,9 @@ SP.add("ch09", "guide", {
             ] },
             { type: "compare", title: "From DSM-IV to DSM-5 (pp. 349–351)", items: [
               { title: "DSM-IV somatoform disorders", color: "clin", points: ["Centered on symptoms **unexplained** by a medical condition.", "Overlapping, unclear categories: somatization disorder, hypochondriasis, pain disorder, undifferentiated somatoform disorder.", "Seen as **pejorative**, implying symptoms were not “real.”"] },
-              { title: "DSM-5 somatic symptom and related disorders", color: "drug", points: ["Based on **positive** features: distress plus excessive thoughts, feelings and behaviors.", "Can coexist with a **recognized medical condition**.", "About **two-thirds to three-quarters** of former hypochondriasis now fit somatic symptom disorder; the rest, with no symptoms, fit **illness anxiety disorder**.", "Factitious disorder moved here because it, too, centers on illness perception and identity."] }
+              { title: "DSM-5 somatic symptom and related disorders", color: "drug", points: ["Based on **positive** features: distress plus excessive thoughts, feelings and behaviors.", "Can coexist with a **recognized medical condition**.", "About **two-thirds to three-quarters** of former hypochondriasis now fit somatic symptom disorder; the rest, with no symptoms, fit **illness anxiety disorder**.", "Factitious disorder is included here: it involves problems of illness perception and identity, and most reported cases present with somatic symptoms and conviction of medical disease."] }
             ] },
-            { type: "callout", kind: "key", title: "Never diagnose by exclusion", text: "It is **not** appropriate to give a mental disorder diagnosis **solely because** a medical cause cannot be found, and a recognized medical condition does **not** exclude a somatic symptom and related disorder. Only functional neurological symptom disorder and pseudocyesis require positive evidence of **incompatibility** with recognized pathophysiology (pp. 349–350)." }
+            { type: "callout", kind: "key", title: "Never diagnose by exclusion", text: "It is **not** appropriate to give a mental disorder diagnosis **solely because** a medical cause cannot be found, and a recognized medical condition does **not** exclude a somatic symptom and related disorder. In functional neurological symptom disorder and pseudocyesis, the emphasis is on demonstrating **incompatibility** with recognized pathophysiology (pp. 349–350)." }
           ]
         },
         {
@@ -51,7 +51,7 @@ SP.add("ch09", "guide", {
               "**Sociocultural** norms that stigmatize psychological suffering more than physical suffering."
             ] },
             { type: "list", title: "Overlaps to keep in mind (p. 350)", items: [
-              "Major depression and panic disorder often **present with somatic symptoms**; they may explain the symptoms or coexist.",
+              "Major depression and panic disorder may **first present with mainly somatic symptoms**; they may explain the symptoms or coexist.",
               "Somatic symptoms make depression and anxiety **more severe, more impairing and more treatment-refractory**.",
               "Medical comorbidity is common.",
               "Rarely, preoccupation reaches **delusional** intensity: consider delusional disorder, somatic type."
@@ -84,14 +84,14 @@ SP.add("ch09", "guide", {
                 "**Persistently high anxiety** about health or symptoms.",
                 "**Excessive time and energy** devoted to the symptoms or health concerns."
               ]],
-              ["C", "Any one symptom may come and go, but the **state of being symptomatic is persistent** (typically **more than 6 months**)."]
+              ["C", "Any one symptom may come and go, but **being symptomatic persists** (usually **more than 6 months**)."]
             ], specifiers: [["With predominant pain", "Somatic symptoms mainly involve pain (previously **pain disorder**)"], ["Persistent", "Severe symptoms, marked impairment and long duration (>6 months)"], ["Severity", "**Mild**: one B symptom · **Moderate**: two or more · **Severe**: two or more plus multiple somatic complaints (or one very severe symptom)"]] },
             { type: "defs", title: "Reading the criteria (pp. 351–352)", items: [
               ["Symptoms", "Usually several, sometimes one severe symptom, most often **pain**; specific (localized pain) or nonspecific (fatigue); sometimes normal bodily sensations."],
               ["Not “unexplained”", "Symptoms without a medical explanation are **not enough**, and the suffering is **authentic** whether or not medically explained."],
               ["With medical illness", "It can coexist with a medical condition: someone disabled by somatic symptom disorder after an **uncomplicated myocardial infarction**. If a medical condition or high risk is present, the reaction must be **excessive**."],
               ["The core", "Appraising symptoms as threatening and thinking the worst; health concerns may become central to **identity** and relationships."],
-              ["Health care use", "High use that rarely reassures; many doctors for the same symptoms; poor response to treatment; sensitivity to side effects; feeling inadequately assessed."]
+              ["Health care use", "High use that rarely reassures; many doctors for the same symptoms; poor response to treatment; in some, unusual sensitivity to side effects or a feeling of being inadequately assessed."]
             ] },
             { type: "case", title: "Clinical vignette: the chest that hurts", text: "A 48-year-old woman had an uncomplicated myocardial infarction 18 months ago, with a normal ejection fraction and normal stress tests since. She has daily chest tightness and fatigue, checks her pulse and blood pressure many times a day, has visited the emergency department nine times, has stopped walking and working, and is convinced she will have another heart attack despite her cardiologist’s reassurance.", point: "Distressing symptoms with **persistent disproportionate thoughts**, **high health anxiety** and **excessive time and energy** (three B symptoms) for more than 6 months: **F45.1 somatic symptom disorder, persistent, severe**. A real medical illness does not exclude it." }
           ]
@@ -122,12 +122,12 @@ SP.add("ch09", "guide", {
             ] },
             { type: "defs", title: "Risk and course modifiers (pp. 353–354)", items: [
               ["Temperamental", "**Negative affectivity (neuroticism)**; comorbid anxiety or depression."],
-              ["Environmental", "Fewer years of education, low socioeconomic status, recent stressful or health-related events, **childhood sexual abuse** and other adversity."],
+              ["Environmental", "Fewer years of education, low socioeconomic status, recent stressful or health-related events; early adversity such as **childhood sexual abuse** is likely a risk factor."],
               ["Persistence", "Women, older age, low education and income, unemployment, abuse history, chronic illness, depression, anxiety, panic, social stress, and **reinforcing factors such as illness benefits**."],
               ["Cognitive", "Pain sensitization, heightened attention to bodily sensations, attributing symptoms to illness rather than normal sensations or stress."]
             ] },
-            { type: "callout", kind: "culture", title: "Idioms of distress", text: "Heaviness, “gas,” heat in the body or burning in the head are common in some cultures and rare in others. Explanations vary: work stress (“burnout”), suppressed anger, or specific beliefs such as **semen loss**. **Shenjing shuairuo** in China links “weakness of nerves” and hot–cold imbalance with fatigue and low energy. Depression often presents somatically in many cultural contexts (pp. 354–355)." },
-            { type: "p", text: "**Sex** (pp. 354–355): childhood adverse experiences especially raise symptom expression in women, and women are more likely to develop persistent symptoms. **Suicide** (p. 355): linked with suicidal thoughts and attempts, partly through depression, but **illness perceptions and symptom severity** are independent risks. **Function**: health status often more than **2 standard deviations** below population norms." }
+            { type: "callout", kind: "culture", title: "Idioms of distress", text: "Some complaints, such as heaviness, “gas,” bodily heat or a burning head, are frequent in certain cultural groups and uncommon in others. Explanations vary: work stress (“burnout”), suppressed anger, or specific beliefs such as **semen loss**. **Shenjing shuairuo** in China links “weakness of nerves” and hot–cold imbalance with fatigue and low energy. Depression often presents somatically in many cultural contexts (p. 354)." },
+            { type: "p", text: "**Sex** (pp. 354–355): childhood adverse experiences especially raise symptom expression in women, and women are more likely to develop persistent symptoms. **Suicide** (p. 355): linked with suicidal thoughts and attempts, partly through depression, but dysfunctional **illness perceptions and symptom severity** appear to be independently associated with suicidal ideation. **Function**: many with severe SSD likely have health status more than **2 standard deviations** below population norms." }
           ]
         },
         {
@@ -149,7 +149,7 @@ SP.add("ch09", "guide", {
               ["[[dx:factitious|Factitious disorder and malingering]]", "Symptoms are **falsified**; in SSD suffering is authentic"]
             ] },
             { type: "p", text: "If criteria for both SSD and another mental disorder (such as panic disorder) are met, **diagnose both**. **Comorbidity** (p. 356): anxiety and depressive disorders, each in up to **50%**; also PTSD, OCD, and sexual dysfunction in men. With a medical illness, impairment exceeds what the illness explains, and somatization worsens outcomes, adherence and health care use." },
-            { type: "callout", kind: "exam", text: "Three classic SSD points: **(1)** the diagnosis rests on **Criterion B** (excessive thoughts, feelings or behaviors), not on missing explanations; **(2)** it can be made **alongside** a real medical illness; **(3)** severity is set by the **number of B symptoms** plus how many or how severe the somatic complaints are." }
+            { type: "callout", kind: "exam", text: "Three classic SSD points: **(1)** the diagnosis rests on **Criterion B** (excessive thoughts, feelings or behaviors), not on missing explanations; **(2)** it can be made **alongside** a real medical illness; **(3)** severity is set by the **number of B symptoms** plus how many or how severe the somatic complaints are (app guidance)." }
           ]
         }
       ]
@@ -163,7 +163,7 @@ SP.add("ch09", "guide", {
           pages: "357–359",
           blocks: [
             { type: "criteria", title: "Illness anxiety disorder in brief", code: "F45.21", pages: "357", items: [
-              ["A", "**Preoccupation with having or acquiring a serious illness**."],
+              ["A", "**Preoccupied with having, or getting, a serious illness**."],
               ["B", "Somatic symptoms are **absent or only mild**. With a medical condition or high risk (strong family history), the preoccupation is **clearly excessive**."],
               ["C", "**High anxiety** about health; easily alarmed about personal health."],
               ["D", "**Excessive health-related behaviors** (repeated body checking) or **maladaptive avoidance** (avoiding doctors and hospitals)."],
@@ -176,14 +176,14 @@ SP.add("ch09", "guide", {
               ["Reassurance fails", "Negative tests, reassurance and benign course **do not** relieve the concern and may heighten it; easily alarmed by news stories or others’ illness."],
               ["Behaviors", "Repeated self-examination (looking at the throat in a mirror), **internet research**, seeking reassurance; or avoiding sick relatives and exercise."],
               ["Identity", "Illness becomes central to self-image and social conversation; it can lead to invalidism and family strain."],
-              ["Care", "Mostly seen in medical settings; extensive but unsatisfying care, iatrogenic complications; a minority avoid care entirely. Dismissive doctors can **miss real illness**."]
+              ["Care", "Mostly seen in medical settings; extensive but unsatisfying care, iatrogenic complications; a minority avoid care entirely. Dismissive responses can occasionally lead to **a missed medical diagnosis**."]
             ] },
             { type: "table", caption: "Epidemiology and course (pp. 358–359)", head: ["Topic", "Detail"], rows: [
-              ["Community (1–2 year)", "Health anxiety or disease conviction **1.3%–10%**"],
+              ["Community, high-income countries (1–2 year)", "Health anxiety or disease conviction **1.3%–10%**"],
               ["Ambulatory medical (6–12 month)", "2.2%–8%; weighted mean about **3%**"],
               ["Specialty clinics", "About **one-fifth** report illness anxiety"],
               ["Sex", "**Similar** in men and women"],
-              ["Course", "Chronic, episodic, relapsing; onset in **early and middle adulthood**; rare in children"],
+              ["Course", "Unclear; generally thought to be chronic, episodic and relapsing, with onset in **early and middle adulthood**; thought to be rare in children"],
               ["Older adults", "Worry often about **memory loss** and sensory loss"],
               ["Transient form", "One-third to one-half; less psychiatric and more medical comorbidity, milder"]
             ] },
@@ -225,7 +225,7 @@ SP.add("ch09", "guide", {
           pages: "360–361",
           blocks: [
             { type: "criteria", title: "Functional neurological symptom disorder (conversion disorder) in brief", code: "F44.4–F44.7", pages: "360", items: [
-              ["A", "One or more symptoms of altered **voluntary motor or sensory** function."],
+              ["A", "At least one symptom of altered **voluntary motor or sensory** function."],
               ["B", "Clinical findings show **incompatibility** between the symptom and recognized neurological or medical conditions."],
               ["C", "Not better explained by another medical or mental disorder."],
               ["D", "Clinically significant distress or impairment, **or warrants medical evaluation**."]
@@ -240,9 +240,9 @@ SP.add("ch09", "guide", {
               ["**F44.6**", "With special sensory symptom (visual, olfactory, hearing)"],
               ["**F44.7**", "With mixed symptoms"]
             ] },
-            { type: "callout", kind: "mnemonic", title: "4–5–6–7", text: "**F44.4** = motor (weakness, movement, swallowing, speech). **F44.5** = seizures. **F44.6** = sensory (anesthesia, special senses). **F44.7** = mixed. Think “4 moves, 5 shakes, 6 feels, 7 does it all.”" },
+            { type: "callout", kind: "mnemonic", title: "Move, Shake, Sense, Mix", text: "**F44.4** = Move (weakness or paralysis, abnormal movement, swallowing, speech). **F44.5** = Shake (attacks or seizures). **F44.6** = Sense (anesthesia or sensory loss, special senses). **F44.7** = Mix (mixed symptoms)." },
             { type: "defs", title: "Key principles (pp. 361–362)", items: [
-              ["Rule-in diagnosis", "Based on **positive clinical findings** of incompatibility, made by a clinician with neurological expertise; **not** a diagnosis of exclusion, and not made because tests are normal or a symptom looks “bizarre.”"],
+              ["Rule-in diagnosis", "Based on **positive clinical findings** of incompatibility, usually elicited and interpreted by a clinician with neurological expertise; **not** a diagnosis of exclusion, and not made because tests are normal or a symptom looks “bizarre.”"],
               ["Coexists with disease", "Can be diagnosed in people who **also** have epilepsy, multiple sclerosis or other neurological disease."],
               ["No stressor required", "DSM-5 dropped the requirement for a preceding psychological stressor: one is **absent in up to 50%**."],
               ["The old name", "“Conversion” comes from psychoanalytic theory (unconscious conflict converted into physical symptoms)."]
@@ -258,11 +258,11 @@ SP.add("ch09", "guide", {
               ["Limb weakness", "**Hoover’s sign**: weak hip extension returns to normal with contralateral hip flexion against resistance. **Hip abductor sign**: weak abduction returns to normal with contralateral abduction. Discrepancy between bed testing (weak plantar flexion) and tasks (walking on tiptoes)"],
               ["Tremor", "**Entrainment test**: the tremor changes, adopts the rhythm, or stops when copying a rhythm with the other limb (or the person cannot copy it). Variable frequency or direction"],
               ["Dystonia", "Fixed **inverted ankle**, **clenched fist**, unilateral platysma contraction, often with sudden onset"],
-              ["Seizures or syncope", "**Persistent eye closure** (sometimes resisting opening), **bilateral movements with preserved awareness**, duration **>5 minutes**; supported by a normal ictal EEG (which alone does not exclude all epilepsy or syncope)"],
+              ["Seizures or syncope", "**Persistent eye closure** (sometimes resisting opening), **bilateral movements with preserved awareness**, duration **>5 minutes**; features usually need to be combined and may be supported by a normal simultaneous ictal EEG (which alone does not exclude all epilepsy or syncope)"],
               ["Speech", "Internal inconsistencies in articulation and phonation"],
               ["Vision", "**Tubular (tunnel) visual field**; inconsistent acuity, e.g., the **fogging test**"]
             ] },
-            { type: "callout", kind: "caution", title: "Base it on the whole picture", text: "The diagnosis should rest on the **overall clinical picture**, not a single sign. **La belle indifférence** (lack of concern) and **secondary gain** are **not specific** and should not be used to make the diagnosis (pp. 362)." },
+            { type: "callout", kind: "caution", title: "Base it on the whole picture", text: "The diagnosis should rest on the **overall clinical picture**, not a single sign. **La belle indifférence** (lack of concern) and **secondary gain** are **not specific** and should not be used to make the diagnosis (p. 362)." },
             { type: "case", title: "Clinical vignette: the weak leg", text: "A 32-year-old warehouse worker has had a weak right leg for 3 months after a minor fall. Lying down, he cannot push his right heel into the bed, but when asked to lift his left leg against resistance, the examiner feels strong right hip extension. He can stand on his right tiptoes when distracted. MRI of brain and spine is normal. He is distressed and has been unable to work.", point: "Weakness with a **positive Hoover’s sign** and task inconsistency, causing impairment, not explained by another disorder: **F44.4 functional neurological symptom disorder, with weakness or paralysis, acute episode** (under 6 months). The normal MRI supports but does not make the diagnosis; the positive signs do." }
           ]
         },
@@ -281,10 +281,10 @@ SP.add("ch09", "guide", {
               ["Neurology clinics", "About **5%–15%** of patients (Scotland, Australia)"],
               ["Onset", "Nonepileptic attacks peak at **20–29**; motor symptoms at **30–39**"],
               ["Sex", "**2–3 times** more common in women"],
-              ["Prognosis", "Better in younger children. **Good**: short duration, agreeing with the diagnosis. **Poor**: maladaptive personality traits, comorbid physical disease, disability benefits"],
+              ["Prognosis", "May be better in younger children. **Good**: short duration, agreeing with the diagnosis. **Poor**: maladaptive personality traits, comorbid physical disease, disability benefits"],
               ["Neurological disease", "A risk factor: about **1 in 5** people with functional seizures also have **epilepsy**"]
             ] },
-            { type: "p", text: "**Risk**: emotional instability and other maladaptive traits; childhood abuse and neglect; stressful events including physical injury. **Culture**: unresponsiveness and motor symptoms are commonest everywhere; similar changes in sanctioned rituals are not a disorder if fully explained by context. **Suicide**: higher rates of suicidal thoughts and attempts than in recognized neurological disease, linked to risky alcohol use, childhood maltreatment and dissociation. **Disability** can equal that of comparable neurological diseases (p. 363)." },
+            { type: "p", text: "**Risk**: emotional instability and other maladaptive traits; childhood abuse and neglect; stressful events including physical injury. **Culture**: unresponsiveness and motor symptoms are commonest everywhere; similar changes in sanctioned rituals are not a disorder if fully explained by context. **Suicide**: cohort studies mostly show higher rates of suicidal thoughts and attempts; in a neurology clinic, suicidal thoughts were more common than in recognized neurological disease; in one study, a past attempt was associated with risky alcohol use, childhood maltreatment and more severe dissociation. **Disability** can equal that of comparable neurological diseases (p. 363)." },
             { type: "table", caption: "Differential diagnosis (pp. 363–364)", head: ["Condition", "How it differs"], rows: [
               ["Recognized neurological disease", "The main differential; an unexpected neurological cause is **rarely found** at follow-up, but reassess if symptoms progress. FND can coexist with disease or be a **prodrome**"],
               ["[[dx:ssd|Somatic symptom disorder]]", "Symptoms usually cannot be shown to be incompatible with disease; both can be diagnosed"],
@@ -308,7 +308,7 @@ SP.add("ch09", "guide", {
           pages: "364–367",
           blocks: [
             { type: "criteria", title: "Psychological factors affecting other medical conditions in brief", code: "F54", pages: "364–365", items: [
-              ["A", "A **medical symptom or condition** (other than a mental disorder) is present."],
+              ["A", "A **medical symptom or condition** is present (not a mental disorder)."],
               ["B", "Psychological or behavioral factors **adversely affect** it in one of these ways:", [
                 "Influencing its **course** (close temporal link with development, worsening or delayed recovery).",
                 "Interfering with **treatment** (e.g., poor adherence).",
@@ -341,7 +341,7 @@ SP.add("ch09", "guide", {
           pages: "367–370",
           blocks: [
             { type: "criteria", title: "Factitious disorder imposed on self", code: "F68.10", pages: "367", items: [
-              ["A", "**Falsification** of physical or psychological signs or symptoms, or **induction** of injury or disease, associated with **identified deception**."],
+              ["A", "**Falsifying** physical or psychological signs or symptoms, or **inducing** injury or disease, associated with **identified deception**."],
               ["B", "Presents **himself or herself** as ill, impaired or injured."],
               ["C", "The deception is evident **even without obvious external rewards**."],
               ["D", "Not better explained by another disorder (delusional or other psychotic disorder)."]
@@ -352,7 +352,7 @@ SP.add("ch09", "guide", {
               ["C", "Deception evident even without obvious external rewards."],
               ["D", "Not better explained by another disorder."]
             ], specifiers: [["Course", "Single episode or recurrent episodes"]], note: "The **perpetrator**, not the victim, receives the diagnosis. The victim may receive an **abuse** code (e.g., T74.12X). If the perpetrator also falsifies their own illness, **both** factitious diagnoses can be given." },
-            { type: "defs", title: "Reading the criteria (pp. 368–369)", items: [
+            { type: "defs", title: "Reading the criteria (pp. 368–370)", items: [
               ["Objective evidence", "The diagnosis rests on **demonstrating falsification**, not on inferring motives."],
               ["Methods", "**Exaggeration, fabrication, simulation, induction**: false reports of bereavement and suicidality, feigned seizures, blood added to urine, falsified records, ingesting **insulin or warfarin**, injecting **feces** to cause abscesses or sepsis."],
               ["Real illness too", "A true medical condition may coexist (someone with diabetes manipulating glucose)."],
@@ -367,13 +367,13 @@ SP.add("ch09", "guide", {
               ["Sex", "About **two-thirds women**"]
             ] },
             { type: "table", caption: "Differential diagnosis (pp. 369–370)", head: ["Condition", "How it differs"], rows: [
-              ["**Malingering**", "Deception for **external rewards** (money, time off work, avoiding legal duties). Factitious disorder is not fully explained by external rewards; the two can coexist and motives can shift"],
+              ["**Malingering**", "Deception for **external rewards** (money, time off work; also avoiding legal duties, Other Conditions, p. 835). Factitious disorder is not fully explained by external rewards; the two can coexist and motives can shift"],
               ["Lying to avoid legal liability", "A caregiver who lies about a child’s injuries **only to protect themselves** has an external reward; lying beyond what self-protection needs suggests factitious disorder imposed on another"],
               ["[[dx:ssd|Somatic symptom disorder]] and illness anxiety (care-seeking)", "Excessive care seeking **without deception**"],
               ["[[dx:fnd|Functional neurological symptom disorder]]", "Genuine symptoms; factitious neurological symptoms show evidence of **deceptive falsification**"],
               ["Borderline personality disorder", "Self-harm without suicidal intent can occur, but factitious disorder requires **deception**"]
             ] },
-            { type: "callout", kind: "exam", title: "Factitious vs malingering vs somatic", text: "Ask two questions. **Is there deception?** No → somatic symptom, illness anxiety or functional neurological disorder. Yes → **why**? An **obvious external reward** (money, drugs, avoiding prison or work) → **malingering** (a V-code, Z76.5, not a mental disorder). **No obvious external reward** → **factitious disorder**." }
+            { type: "callout", kind: "exam", title: "Factitious vs malingering vs somatic", text: "Ask two questions. **Is there deception?** No → somatic symptom, illness anxiety or functional neurological disorder. Yes → **why**? An **obvious external reward** (money, time off work; drugs or evading prosecution per Other Conditions, p. 835) → **malingering** (Z76.5, an “other condition,” not a mental disorder). **No obvious external reward** → **factitious disorder** (app guidance)." }
           ]
         }
       ]
@@ -392,7 +392,8 @@ SP.add("ch09", "guide", {
               ["**Illness anxiety disorder without excessive health-related behaviors**", "Criterion D not met: no checking and no maladaptive avoidance"],
               ["**Pseudocyesis**", "A **false belief of being pregnant** with objective signs and reported symptoms of pregnancy"]
             ] },
-            { type: "p", text: "**Unspecified (F45.9)** should **not** be used except in **decidedly unusual situations** with insufficient information for a more specific diagnosis (p. 370). This wording is stricter than in most other chapters." }
+            { type: "p", text: "**Unspecified (F45.9)** should **not** be used except in **decidedly unusual situations** with insufficient information for a more specific diagnosis (p. 370). This wording is stricter than in most other chapters (app comparison)." },
+            { type: "update", kind: "post", year: "2025", title: "“-like” names for the other specified examples", source: "APA DSM-5-TR Update, September 2025 (psychiatry.org)", text: "The printed manual (p. 370) calls the first three examples **brief somatic symptom disorder**, **brief illness anxiety disorder** and **illness anxiety disorder without excessive health-related behaviors or maladaptive avoidance**. APA’s September 2025 update renamed them with “-like”: **brief somatic symptom-like disorder**, **brief illness anxiety-like disorder** and **illness anxiety-like disorder without excessive health-related behaviors…**. The reason given is consistency with DSM usage, where “-like” marks a presentation that resembles a disorder but lacks one requirement. The update lists no change to pseudocyesis or to code F45.8. Confirm the exact wording against the APA update." }
           ]
         },
         {
@@ -400,7 +401,7 @@ SP.add("ch09", "guide", {
           title: "A practical approach and the classic traps",
           pages: "349–370",
           blocks: [
-            { type: "steps", title: "Six steps for a patient with bodily complaints", items: [
+            { type: "steps", title: "Six steps for a patient with bodily complaints (app guidance)", items: [
               ["1. Medical assessment", "Take the symptoms seriously and assess them; a medical illness does not rule out these disorders, and they do not rule out illness."],
               ["2. Deception?", "Evidence of falsification → factitious disorder (no external reward) or malingering (external reward)."],
               ["3. Incompatible neurological signs?", "Positive signs (Hoover’s, entrainment, functional seizure features) → functional neurological symptom disorder (code by type)."],
@@ -408,7 +409,7 @@ SP.add("ch09", "guide", {
               ["5. Mind worsening body?", "Psychological factors worsening a medical condition, below a mental disorder threshold → F54, with severity."],
               ["6. Other disorders and safety", "Depression, panic, GAD, OCD, BDD, psychosis; ask about suicidal thoughts; consider duration (<6 months → other specified)."]
             ] },
-            { type: "callout", kind: "key", title: "Twelve traps", text: "1) “Medically unexplained” is **not** a criterion for SSD. 2) SSD can coexist with **real disease**. 3) SSD severity = number of **B symptoms** (+ complaints). 4) IAD = **no or mild** symptoms; SSD = distressing symptoms. 5) IAD needs **6 months**, and the feared disease may change. 6) Former hypochondriasis is mostly **SSD** now. 7) FND is **rule-in** by positive signs, not exclusion. 8) FND needs **no stressor**. 9) **La belle indifférence** and **secondary gain** are nonspecific. 10) FND codes: **F44.4** motor, **F44.5** seizures, **F44.6** sensory, **F44.7** mixed. 11) Factitious imposed on another: the **perpetrator** is diagnosed (F68.A). 12) External reward = **malingering**, not factitious disorder." },
+            { type: "callout", kind: "key", title: "Twelve traps (app guidance)", text: "1) “Medically unexplained” is **not** a criterion for SSD. 2) SSD can coexist with **real disease**. 3) SSD severity = number of **B symptoms** (+ complaints). 4) IAD = **no or mild** symptoms; SSD = distressing symptoms. 5) IAD needs **6 months**, and the feared disease may change. 6) Former hypochondriasis is mostly **SSD** now. 7) FND is **rule-in** by positive signs, not exclusion. 8) FND needs **no stressor**. 9) **La belle indifférence** and **secondary gain** are nonspecific. 10) FND codes: **F44.4** motor, **F44.5** seizures, **F44.6** sensory, **F44.7** mixed. 11) Factitious imposed on another: the **perpetrator** is diagnosed (F68.A). 12) External reward = **malingering**, not factitious disorder." },
             { type: "p", text: "Practice with the [[helper:somatic|somatic symptom helper]] and the [[helper:deception|feigned or genuine helper]], then compare [[dx:ssd|somatic symptom disorder]] with [[dx:iad|illness anxiety disorder]] side by side in the library." }
           ]
         }

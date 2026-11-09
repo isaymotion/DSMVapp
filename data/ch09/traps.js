@@ -51,7 +51,7 @@ SP.add("ch09", "traps", [
     truth: "The **perpetrator** receives **F68.A**; the victim may receive an **abuse** code." },
   { id: "t9-17", tag: "Factitious", sec: "s9-factitious",
     trap: "Feigning illness for disability money is factitious disorder.",
-    truth: "Deception for **external rewards** is **malingering** (Z76.5). Factitious disorder occurs **even without obvious external rewards**; the two can coexist." },
+    truth: "Deception for **external rewards** is **malingering** (Z76.5; Other Conditions, p. 835). Factitious disorder occurs **even without obvious external rewards**; the two can coexist." },
   { id: "t9-18", tag: "Factitious", sec: "s9-factitious",
     trap: "Factitious disorder is diagnosed by inferring the patient’s need to play the sick role.",
     truth: "The diagnosis rests on **objective identification of falsification**, not on inferred motives." },

@@ -39,5 +39,15 @@ SP.add("ch11", "mnemonics", [
       ["Soft", "Without constipation and overflow", "Normal stool, intermittent soiling, sometimes in a prominent place; ODD, conduct disorder, enuresis"]
     ],
     caveat: "Stool in the constipation subtype is **characteristically, not invariably** poorly formed, and overflow can be **liquid**. Transit studies: **retained** markers versus **prompt** evacuation."
+  },
+  {
+    id: "m11-05", short: "5–10, 3–5, 1", name: "Count down by halves", original: true, dx: "enuresis", sec: "s11-enuresis-features",
+    "for": "Prevalence of nocturnal enuresis by age",
+    letters: [
+      ["5–10", "Age 5", "About 5%–10%"],
+      ["3–5", "Age 10", "About 3%–5%"],
+      ["1", "Age 15 or older", "About 1%"]
+    ],
+    caveat: "Spontaneous remission is **5%–10% per year** after age 5 (p. 400)."
   }
 ]);

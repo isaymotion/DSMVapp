@@ -85,14 +85,14 @@
     },
     {
       id: "w9-07", tag: "FND",
-      "case": "A 45-year-old woman has had a tubular visual field and inconsistent acuity in both eyes for 3 months, plus functional numbness of the left arm.",
+      "case": "A 45-year-old woman has had a tubular visual field and inconsistent acuity in both eyes for 3 months.",
       parts: [
         { label: "Diagnosis", options: DX, answer: 2 },
         { label: "Code", options: CODES, answer: 4 },
         { label: "Duration", options: FNDDUR, answer: 0 }
       ],
-      line: "**F44.6** Functional neurological symptom disorder, with special sensory symptom and anesthesia or sensory loss, acute episode",
-      why: "Visual (special sensory) and numbness (sensory loss) are **both F44.6**, so this is not “mixed”: mixed (F44.7) combines different code types, such as weakness with sensory loss."
+      line: "**F44.6** Functional neurological symptom disorder, with special sensory symptom, acute episode",
+      why: "A visual (special sensory) symptom = **F44.6**; under 6 months = **acute episode**."
     },
     {
       id: "w9-08", tag: "FND",
@@ -200,7 +200,7 @@
       items: [
         ["Checking her throat in the mirror several times a day", true, "Repeated body checking."],
         ["Researching symptoms online for hours", true, "Excessive health-related behavior."],
-        ["Avoiding visiting a sick relative for fear of what she might learn about illness", true, "Maladaptive avoidance."],
+        ["Avoiding visiting a sick relative for fear it might harm her health", true, "Maladaptive avoidance."],
         ["Attending a routine annual checkup", false, "Normal health behavior."],
         ["Taking prescribed antihypertensive medication", false, "Appropriate care."]
       ],

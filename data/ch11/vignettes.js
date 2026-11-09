@@ -26,9 +26,9 @@ SP.add("ch11", "vignettes", [
     "then": {
       "q": "Outside the DSM, which plan is most appropriate first?",
       "choices": [
-        "Imipramine at bedtime",
+        "Imipramine at bedtime as the first medicine",
         "Fluid restriction all afternoon and punishment for wet nights",
-        "Education with an enuresis alarm or oral desmopressin, after checking for constipation",
+        "Alarm or oral desmopressin, after checking for constipation",
         "Referral for cystoscopy",
         "Intranasal desmopressin with unrestricted evening fluids"
       ],
@@ -68,19 +68,19 @@ SP.add("ch11", "vignettes", [
     "stem": "Parents bring their 4-year-6-month-old son because he wets the bed most nights. He has been dry during the day since age 3 and is developing normally. Urinalysis is normal. They ask whether he has a disorder.",
     "q": "What is the best response?",
     "choices": [
-      "He is below the age for enuresis; reassure and review after age 5",
       "Enuresis, nocturnal only",
       "Other specified elimination disorder",
+      "Not a disorder yet; reassure and review after 5",
       "Start desmopressin",
-      "Unspecified elimination disorder"
+      "Unspecified elimination disorder, pending more history"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": "Enuresis requires a chronological (or developmental) age of at least **5 years**. Nighttime wetting at 4½ is common and usually not a disorder.",
     "whyNot": [
-      "Correct.",
       "Criterion C (age 5) is not met.",
-      "Residual categories still assume an age at which continence is expected.",
-      "Medication is not indicated before age 5 here.",
+      "No clinically significant distress or impairment is described, and wetting at this age is developmentally expected.",
+      "Correct.",
+      "Medication is not indicated before age 5 here (treatment guidance, outside the DSM).",
       "There is enough information; he is simply below the threshold."
     ]
   },
@@ -90,20 +90,20 @@ SP.add("ch11", "vignettes", [
     "stem": "An 8-year-old girl, dry since age 3, has wet the bed nightly and had two daytime accidents over the past 3 weeks. She is drinking large amounts, has lost 2 kg and seems tired. Her urine dipstick shows glucose 3+ and ketones.",
     "q": "What is the most appropriate next step?",
     "choices": [
+      "Urgent evaluation for diabetes mellitus",
       "Diagnose secondary enuresis, nocturnal and diurnal",
       "Start an enuresis alarm",
       "Prescribe desmopressin",
-      "Diagnose adjustment disorder",
-      "Urgent evaluation for diabetes mellitus; do not diagnose enuresis"
+      "Diagnose adjustment disorder"
     ],
-    "answer": 4,
-    "why": "Polyuria, weight loss and glycosuria point to **new-onset diabetes mellitus**. Enuresis is **not** diagnosed when another medical condition causes the wetting (Criterion D); the duration is also only 3 weeks.",
+    "answer": 0,
+    "why": "Polyuria, weight loss and glycosuria point to **new-onset diabetes mellitus**. Enuresis is **not** diagnosed when another medical condition causes the wetting (Criterion D).",
     "whyNot": [
-      "Diabetes explains the wetting, and 3 weeks is too short.",
+      "Correct.",
+      "Diabetes explains the wetting (Criterion D).",
       "An alarm does not treat polyuria and delays urgent care.",
-      "Desmopressin is wrong and dangerous in untreated diabetes.",
-      "No stressor explains this; the cause is medical.",
-      "Correct."
+      "Desmopressin is wrong and dangerous in untreated diabetes (treatment guidance, outside the DSM).",
+      "No stressor explains this; the cause is medical."
     ]
   },
   {
@@ -112,18 +112,18 @@ SP.add("ch11", "vignettes", [
     "stem": "A 24-year-old man with treatment-resistant schizophrenia began clozapine 4 months ago. For the past 3 months he has wet the bed three or four nights a week and is embarrassed. He had been continent since early childhood. Urinalysis and glucose are normal.",
     "q": "How should the wetting be recorded?",
     "choices": [
+      "As a clozapine side effect",
       "Enuresis, nocturnal only",
       "Other specified elimination disorder",
-      "As a medication side effect of clozapine, not as enuresis",
       "Unspecified elimination disorder",
       "Encopresis"
     ],
-    "answer": 2,
-    "why": "Wetting that begins during treatment with an **antipsychotic** is noted as a **medication side effect**; enuresis would be diagnosed only if wetting was regularly present **before** the drug.",
+    "answer": 0,
+    "why": "Wetting that begins during treatment with an **antipsychotic** may be noted as a **medication side effect**; enuresis would be diagnosed only if wetting was regularly present **before** the drug.",
     "whyNot": [
+      "Correct.",
       "Criterion D excludes a substance effect.",
       "The cause is known: the medication.",
-      "Correct.",
       "The cause is known.",
       "This is urinary, not fecal."
     ],
@@ -197,7 +197,7 @@ SP.add("ch11", "vignettes", [
         "Celiac disease"
       ],
       "answer": 0,
-      "why": "**Constipation** and encopresis occur with both day and night wetting and promote UTIs; treating constipation often improves wetting."
+      "why": "**Constipation** and encopresis occur with both day and night wetting. With chronic constipation, urinary reflux may lead to recurrent UTIs, which may remit when the constipation is treated."
     }
   },
   {
@@ -206,18 +206,18 @@ SP.add("ch11", "vignettes", [
     "stem": "A 6-year-old girl has always been damp: her underwear is wet all day and her bed is wet every morning, although she also passes normal volumes of urine in the toilet several times a day. She has never had a dry day. Examination shows constant dribbling from near the urethral opening.",
     "q": "What is the most likely explanation?",
     "choices": [
-      "An ectopic ureter; enuresis is not diagnosed",
       "Voiding postponement",
       "Enuresis, nocturnal and diurnal",
+      "An ectopic ureter",
       "Encopresis",
       "Urge incontinence"
     ],
-    "answer": 0,
-    "why": "**Constant dribbling** with otherwise normal voiding in a girl suggests an **ectopic ureter**, a structural cause that excludes enuresis.",
+    "answer": 2,
+    "why": "**Constant dribbling** with otherwise normal voiding in a girl suggests an **ectopic ureter**, a structural cause that excludes enuresis (clinical knowledge, outside the DSM; the manual lists ectopic ureter in a female as an excluding condition).",
     "whyNot": [
-      "Correct.",
       "Postponement causes episodic wetting, not constant dribbling.",
       "A structural condition explains the wetting.",
+      "Correct.",
       "This is urinary.",
       "Urge incontinence is episodic with sudden urges."
     ]
@@ -229,19 +229,19 @@ SP.add("ch11", "vignettes", [
     "q": "What is the best next step besides diagnosing enuresis?",
     "choices": [
       "Start imipramine",
+      "Assess for sleep apnea",
       "Order a spinal MRI",
       "Diagnose ADHD and start a stimulant",
-      "Restrict all fluids after noon",
-      "Refer for evaluation of sleep-disordered breathing (adenotonsillar hypertrophy)"
+      "Restrict all fluids after noon"
     ],
-    "answer": 4,
+    "answer": 1,
     "why": "Nocturnal enuresis is linked with **snoring and sleep apnea**; evaluate for obstructive sleep apnea.",
     "whyNot": [
-      "Imipramine is third line and does not address apnea.",
+      "Imipramine is third line and does not address apnea (treatment guidance, outside the DSM).",
+      "Correct.",
       "There are no spinal or neurological signs.",
       "Inattention may come from disturbed sleep; evaluate sleep first.",
-      "Severe restriction is not recommended.",
-      "Correct."
+      "Severe restriction is not recommended (treatment guidance, outside the DSM)."
     ],
     "then": {
       "q": "If he has proven sleep-disordered breathing, about what proportion of such children become dry after adenotonsillectomy?",
@@ -264,18 +264,18 @@ SP.add("ch11", "vignettes", [
     "choices": [
       "Enuresis cannot be diagnosed in intellectual disability",
       "Wait until his mental age reaches 10",
-      "Enuresis, nocturnal only",
       "Other specified elimination disorder",
-      "Encopresis"
+      "Encopresis",
+      "Enuresis, nocturnal only"
     ],
-    "answer": 2,
+    "answer": 4,
     "why": "The age criterion is **developmental**: a mental age of **7** is above 5. With frequency and duration met and no medical cause: **enuresis, nocturnal only**.",
     "whyNot": [
       "The criterion uses the equivalent developmental level, not exclusion.",
       "A developmental level of 5 is enough.",
-      "Correct.",
       "Full criteria are met.",
-      "This is urinary."
+      "This is urinary.",
+      "Correct."
     ]
   },
   {
@@ -306,19 +306,19 @@ SP.add("ch11", "vignettes", [
     "stem": "A 7-year-old girl developed daytime wetting with a febrile urinary tract infection 5 months ago. The infection was treated and repeat cultures are negative, but she has kept wetting her clothes about three afternoons a week since then. She is dry at night. Examination is normal.",
     "q": "Can enuresis be diagnosed?",
     "choices": [
+      "Yes: enuresis, diurnal only",
       "No, because a UTI is a medical cause",
       "No, because she is dry at night",
       "Only after 12 months",
-      "Yes: enuresis, diurnal only, because wetting persists after treatment",
       "Only if a renal ultrasound is normal"
     ],
-    "answer": 3,
+    "answer": 0,
     "why": "Enuresis is compatible with a medical condition if wetting **persists after appropriate treatment** of it. Daytime-only wetting three times a week for over 3 months: **enuresis, diurnal only**.",
     "whyNot": [
+      "Correct.",
       "The infection has been treated and the wetting persists.",
       "Diurnal-only is a valid subtype.",
       "The duration rule is 3 consecutive months.",
-      "Correct.",
       "No imaging is required for the DSM diagnosis."
     ]
   },
@@ -341,19 +341,19 @@ SP.add("ch11", "vignettes", [
       "There is clear constipation by history.",
       "Withholding is driven by pain, not defiance.",
       "Full criteria are met.",
-      "Onset after toilet training with withholding behavior points to functional constipation."
+      "Withholding with large, painful stools points to functional constipation (clinical knowledge, outside the DSM)."
     ],
     "then": {
       "q": "Which examination finding would best support the subtype?",
       "choices": [
         "Normal anal tone",
-        "A rectal fecal impaction on digital examination",
+        "Rectal fecal impaction",
         "Hyperactive bowel sounds",
         "A sacral dimple",
         "An anal skin tag"
       ],
       "answer": 1,
-      "why": "A **rectal fecal impaction** supports encopresis **with constipation and overflow incontinence**; an abdominal radiograph showing impaction would also support it."
+      "why": "A **rectal fecal impaction** supports encopresis **with constipation and overflow incontinence**; an abdominal radiograph showing impaction would also support it, though it is not indicated for the diagnosis."
     },
     "discuss": [
       "How would you explain the withholding cycle to parents who punish soiling?",
@@ -368,18 +368,18 @@ SP.add("ch11", "vignettes", [
     "choices": [
       "Encopresis, with constipation and overflow incontinence",
       "Unspecified elimination disorder",
-      "Not encopresis, because the soiling is intentional",
-      "Other specified elimination disorder",
-      "Encopresis, without constipation and overflow incontinence"
+      "Not encopresis, because the soiling is intentional and oppositional",
+      "Encopresis, without constipation and overflow incontinence",
+      "Other specified elimination disorder"
     ],
-    "answer": 4,
+    "answer": 3,
     "why": "Intentional soiling still counts. Normal stools, intermittent soiling in a **prominent place**, prompt evacuation of markers: **without constipation and overflow incontinence**.",
     "whyNot": [
       "There is no constipation.",
       "There is enough information for a specific diagnosis.",
       "Criterion A includes intentional passage of feces.",
-      "Frequency and duration are met (at least monthly for 3 months).",
-      "Correct."
+      "Correct.",
+      "Frequency and duration are met (at least monthly for 3 months)."
     ],
     "then": {
       "q": "Which co-occurring diagnosis should you assess for most?",
@@ -388,10 +388,10 @@ SP.add("ch11", "vignettes", [
         "Generalized anxiety disorder",
         "Hypothyroidism",
         "Celiac disease",
-        "Autism spectrum disorder"
+        "Autism spectrum disorder without intellectual impairment"
       ],
       "answer": 0,
-      "why": "Soiling **without** constipation, especially when deliberate, is usually associated with **oppositional defiant disorder** or **conduct disorder**."
+      "why": "Depositing feces in a **prominent place** is usually associated with **oppositional defiant disorder** or **conduct disorder**; when soiling is clearly deliberate, their features may be present."
     }
   },
   {
@@ -402,18 +402,18 @@ SP.add("ch11", "vignettes", [
     "choices": [
       "Encopresis, without constipation",
       "Encopresis, with constipation",
-      "Below the age for encopresis; support toilet training",
       "Other specified elimination disorder",
-      "Refer for anorectal manometry"
+      "Refer for anorectal manometry and a barium enema",
+      "Not encopresis; support toilet training"
     ],
-    "answer": 2,
+    "answer": 4,
     "why": "Encopresis requires a chronological or developmental age of at least **4 years**. Soiling during toilet training at 3½ is expected.",
     "whyNot": [
       "She is below age 4.",
       "She has no constipation and is below age 4.",
-      "Correct.",
-      "Residual categories still assume an age when continence is expected.",
-      "Testing is not indicated."
+      "No clinically significant distress or impairment is described, and soiling at this age is developmentally expected.",
+      "Testing is not indicated.",
+      "Correct."
     ]
   },
   {
@@ -446,37 +446,37 @@ SP.add("ch11", "vignettes", [
     "choices": [
       "She has encopresis, with constipation and overflow incontinence",
       "She has encopresis, without constipation and overflow incontinence",
+      "Spina bifida explains it; not encopresis",
       "She has enuresis and encopresis",
-      "Her fecal incontinence is due to spina bifida and does not warrant encopresis",
       "She has other specified elimination disorder"
     ],
-    "answer": 3,
+    "answer": 2,
     "why": "Fecal incontinence from **spina bifida** is a medical cause not acting through constipation: **not encopresis** (p. 405). Her bladder problem is likewise neurogenic, not enuresis.",
     "whyNot": [
       "The mechanism is neurological.",
       "The mechanism is neurological.",
-      "Neurogenic bladder and bowel exclude both.",
       "Correct.",
+      "Neurogenic bladder and bowel exclude both.",
       "The cause is fully explained by the medical condition."
     ]
   },
   {
     "id": "v11-18",
     "tag": "Constipation exception",
-    "stem": "A 7-year-old girl has had fatigue, cold intolerance and weight gain, and is found to have hypothyroidism. For 4 months she has had hard stools every 5 days and has soiled her underwear about three times a week. Her soiling started after the constipation began.",
+    "stem": "A 7-year-old girl has withheld stool since a painful bowel movement at age 5. She passes hard stools about every 5 days and has soiled her underwear about three times a week since then. Six months ago she was found to have hypothyroidism; she has been euthyroid on treatment for the past 4 months, but the withholding, hard stools and soiling continue unchanged.",
     "q": "What is the best diagnostic statement?",
     "choices": [
-      "Encopresis, with constipation and overflow incontinence, can be diagnosed",
+      "Encopresis, with constipation and overflow incontinence",
       "Encopresis is excluded by the medical condition",
       "Encopresis, without constipation and overflow incontinence",
       "Unspecified elimination disorder",
       "Other specified elimination disorder"
     ],
     "answer": 0,
-    "why": "Criterion D excludes a medical condition **except through a mechanism involving constipation**. Hypothyroidism causing constipation and overflow is compatible with **encopresis, with constipation**; treat both.",
+    "why": "Criterion D allows a medical condition only **through a mechanism involving constipation** (p. 402), and hypothyroidism can cause constipation (p. 403); the differential adds that the constipation must not be explained by another medical condition (p. 405). Her withholding constipation and soiling **began before** the hypothyroidism and **persist once she is euthyroid**: **encopresis, with constipation and overflow incontinence**.",
     "whyNot": [
       "Correct.",
-      "The exception allows a constipation-mediated cause.",
+      "Her constipation predates the hypothyroidism and persists after treatment, so it is not explained by it (p. 405).",
       "She is clearly constipated.",
       "There is enough information.",
       "Full criteria are met."
@@ -488,42 +488,42 @@ SP.add("ch11", "vignettes", [
     "stem": "A mother says her 5-year-old son has had “diarrhea” for 4 months: his underwear is stained with loose stool several times a day, and he sometimes has a huge stool that hurts. He has no fever or weight loss. On examination there is a firm mass in the left lower abdomen, and the rectum is full of hard stool.",
     "q": "What is the most appropriate interpretation?",
     "choices": [
-      "Infectious diarrhea; start loperamide",
+      "Infectious diarrhea; start loperamide and oral rehydration",
       "Irritable bowel syndrome",
       "Encopresis, without constipation",
-      "Inflammatory bowel disease; encopresis excluded",
-      "Encopresis, with constipation and overflow incontinence"
+      "Encopresis, with constipation and overflow incontinence",
+      "Inflammatory bowel disease; encopresis excluded"
     ],
-    "answer": 4,
-    "why": "Loose stool leaking around a **fecal impaction** is **overflow**. Soiling several times a week for over 3 months at age 5: **encopresis, with constipation and overflow incontinence**.",
+    "answer": 3,
+    "why": "Loose stool leaking around a **fecal impaction** is **overflow**. Soiling several times a day for over 3 months at age 5: **encopresis, with constipation and overflow incontinence**.",
     "whyNot": [
-      "An antidiarrheal would worsen the impaction.",
+      "An antidiarrheal would worsen the impaction (treatment guidance, outside the DSM).",
       "The findings show retention and overflow.",
       "He has an impaction.",
-      "No features suggest IBD, and the leaking is overflow.",
-      "Correct."
+      "Correct.",
+      "No features suggest IBD, and the leaking is overflow."
     ]
   },
   {
     "id": "v11-20",
     "tag": "Laxatives",
-    "stem": "A 16-year-old girl at normal weight binges and then takes 20 laxative tablets three times a week, and has had fecal accidents at school for 4 months. She says her weight decides how she feels about herself.",
+    "stem": "A 16-year-old girl at normal weight has, for the past 4 months, had episodes of eating a very large amount of food with a sense of loss of control, followed by taking laxatives, about three times a week. Over the same period she has had fecal accidents at school. She says her weight decides how she feels about herself.",
     "q": "What is the best diagnosis?",
     "choices": [
-      "Encopresis, without constipation",
+      "Encopresis, without constipation and overflow incontinence",
       "Other specified elimination disorder",
-      "Bulimia nervosa; the fecal accidents are a laxative effect",
       "Encopresis and bulimia nervosa",
-      "Unspecified elimination disorder"
+      "Unspecified elimination disorder",
+      "Bulimia nervosa (Ch 10), not encopresis"
     ],
-    "answer": 2,
-    "why": "Incontinence exclusively from **laxatives** is excluded from encopresis (Criterion D). Binges with compensatory laxative misuse weekly for 3 months and shape-driven self-worth: **bulimia nervosa**.",
+    "answer": 4,
+    "why": "Incontinence exclusively from **laxatives** is excluded from encopresis (Criterion D). Binges with compensatory laxative misuse weekly for 3 months and shape-driven self-worth: **bulimia nervosa** (Ch 10).",
     "whyNot": [
       "Laxative-induced incontinence is not encopresis.",
       "A residual elimination category does not fit laxative effects.",
-      "Correct.",
       "Encopresis is excluded.",
-      "The cause is known."
+      "The cause is known.",
+      "Correct."
     ]
   },
   {
@@ -541,7 +541,7 @@ SP.add("ch11", "vignettes", [
     "answer": 1,
     "why": "With **insufficient information** (e.g., the emergency room) and urinary symptoms: **unspecified elimination disorder, R32**.",
     "whyNot": [
-      "Duration and frequency are unknown.",
+      "With no history, medical and substance causes (Criterion D) cannot be excluded.",
       "Correct.",
       "Other specified requires a stated reason.",
       "R15.9 is for fecal symptoms.",
@@ -551,26 +551,26 @@ SP.add("ch11", "vignettes", [
   {
     "id": "v11-22",
     "tag": "Both",
-    "stem": "A 7-year-old girl has soiled her underwear several times a week for 6 months and passes large hard stools every week. She also wets her clothes most afternoons and wets the bed four nights a week, with no medical cause found on urinalysis or examination apart from a palpable stool mass.",
+    "stem": "A 7-year-old girl has soiled her underwear several times a week for 6 months and passes large hard stools every week. She also wets her clothes most afternoons and wets the bed four nights a week, both for the same 6 months, with no medical cause found on urinalysis or examination apart from a palpable stool mass.",
     "q": "What is the best diagnostic formulation?",
     "choices": [
-      "Encopresis only; wetting is part of it",
+      "Encopresis, with constipation and overflow incontinence, only; the wetting is part of it",
       "Enuresis only; soiling is part of it",
+      "Encopresis with constipation, plus enuresis, nocturnal and diurnal",
       "Other specified elimination disorder",
-      "Encopresis, with constipation and overflow incontinence, and enuresis, nocturnal and diurnal",
       "Unspecified elimination disorder"
     ],
-    "answer": 3,
+    "answer": 2,
     "why": "Each disorder meets its own criteria, and **co-occurrence** is recognized: **encopresis, with constipation and overflow incontinence** plus **enuresis, nocturnal and diurnal**.",
     "whyNot": [
       "Wetting meets its own criteria.",
       "Soiling meets its own criteria.",
-      "Both full disorders are present.",
       "Correct.",
+      "Both full disorders are present.",
       "There is enough information."
     ],
     "then": {
-      "q": "Which step is most important first in management?",
+      "q": "Outside the DSM, which step is most important first in management?",
       "choices": [
         "Start desmopressin",
         "Treat the constipation",
@@ -588,19 +588,19 @@ SP.add("ch11", "vignettes", [
     "stem": "A 9-year-old boy has soiled about twice a month for a year. His stools are of normal form, daily and painless. His parents ask for tests. A colonic transit study shows that the radiopaque markers were promptly evacuated.",
     "q": "What does this result support?",
     "choices": [
-      "Encopresis, without constipation and overflow incontinence",
       "Encopresis, with constipation and overflow incontinence",
       "Hirschsprung disease",
-      "Slow-transit constipation",
+      "Slow-transit constipation with colonic inertia, needing manometry",
+      "Encopresis, without constipation and overflow incontinence",
       "Fecal impaction"
     ],
-    "answer": 0,
+    "answer": 3,
     "why": "**Prompt evacuation** of markers supports encopresis **without** constipation and overflow incontinence; **retained** markers would support the constipation subtype.",
     "whyNot": [
-      "Correct.",
       "Retained markers would support this subtype.",
       "Hirschsprung disease causes retention.",
       "Slow transit retains markers.",
+      "Correct.",
       "Impaction would retain markers."
     ]
   },
@@ -610,20 +610,20 @@ SP.add("ch11", "vignettes", [
     "stem": "A 7-year-old boy who spent his first 5 years in a residential institution was adopted 2 years ago. He wets the bed four nights a week and has never been dry at night. Examination and urinalysis are normal. His adoptive parents think the institution “toilet-trained him too early and too harshly.”",
     "q": "Which statement about enuresis is most accurate?",
     "choices": [
-      "Very high rates in institutions are explained by early, harsh toilet training",
+      "Toilet training does not explain the high institutional rates",
+      "Early, harsh toilet training explains the high institutional rates",
       "Enuresis is rare in children from institutions",
       "Enuresis in adopted children is coded as unspecified",
-      "He cannot be diagnosed until he has lived with his family for 3 years",
-      "Very high rates in institutions are not explained by the mode or timing of toilet training"
+      "He cannot be diagnosed until he has lived with his family for 3 years"
     ],
-    "answer": 4,
-    "why": "The manual notes **very high rates in orphanages and residential institutions** that are **not explained** by the mode or early timing of toilet training. He meets criteria for **enuresis, nocturnal only**.",
+    "answer": 0,
+    "why": "The manual notes **very high rates in orphanages and residential institutions**; toilet-training method or early timing does **not** account for them. He meets criteria for **enuresis, nocturnal only**.",
     "whyNot": [
+      "Correct.",
       "The manual says this does not explain the high rates.",
       "Rates are very high in institutions.",
       "Full criteria are met; use F98.0.",
-      "There is no such rule.",
-      "Correct."
+      "There is no such rule."
     ],
     "discuss": [
       "What else would you assess in a child adopted from institutional care?"
@@ -637,18 +637,18 @@ SP.add("ch11", "vignettes", [
     "choices": [
       "Most children stay wet until adulthood",
       "Spontaneous remission does not occur after age 5",
-      "About 5%–10% become dry each year; most are continent by adolescence, and paternal history raises his risk",
       "His father’s history lowers his risk",
-      "About half continue into adulthood"
+      "About half continue to wet the bed into adulthood despite treatment",
+      "About 5%–10% become dry each year, most by adolescence"
     ],
-    "answer": 2,
+    "answer": 4,
     "why": "After 5, **5%–10%** remit spontaneously each year, most are dry by **adolescence**, and only about **1%** continue into adulthood. Paternal incontinence raises a child’s risk about **10-fold**.",
     "whyNot": [
       "Only about 1% persist into adulthood.",
       "Remission continues at 5%–10% a year.",
-      "Correct.",
       "Paternal history raises risk.",
-      "Only about 1% persist."
+      "Only about 1% persist.",
+      "Correct."
     ]
   }
 ]);

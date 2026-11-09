@@ -22,9 +22,9 @@
         first: "**CBT** (targeting catastrophic interpretation, checking, reassurance seeking and avoidance) has the best evidence, alongside a **collaborative primary-care plan**: one physician, **regular scheduled visits** not driven by new symptoms, a brief exam each time, and limited, justified testing.",
         points: [
           "Validate that symptoms are real; explain them in terms of bodily processes (sensitization, attention) rather than “it’s all in your head.”",
-          "Antidepressants have modest benefit, especially with pain or comorbid depression: [[stahl:drugs/duloxetine|duloxetine]] or another [[stahl:c/ch07/guide/s7-snri|SNRI]], low-dose [[stahl:drugs/amitriptyline|amitriptyline]], or an [[stahl:c/ch07/guide/s7-ssri|SSRI]]. Avoid opioids and benzodiazepines.",
+          "Antidepressants may help, on low-quality evidence, especially with pain or comorbid depression: [[stahl:drugs/duloxetine|duloxetine]] or another [[stahl:c/ch07/guide/s7-snri|SNRI]], or an [[stahl:c/ch07/guide/s7-ssri|SSRI]]; evidence for tricyclics such as low-dose [[stahl:drugs/amitriptyline|amitriptyline]] is insufficient (Cochrane review CD010628). Avoid opioids and benzodiazepines (app guidance; not verified).",
           "Encourage graded return to activity; treat comorbid depression and anxiety.",
-          "No new drug for somatic symptom disorder has been approved as of October 2026."
+          "No new drug for somatic symptom disorder has been approved as of October 2026 (app guidance; not verified)."
         ],
         stahl: [["Chronic pain", "c/ch09/guide/s9-pain"], ["Fibromyalgia", "c/ch09/guide/s9-fibromyalgia"], ["SNRIs", "c/ch07/guide/s7-snri"]]
       }
@@ -48,7 +48,7 @@
           "SSRIs have trial support for health anxiety: [[stahl:drugs/fluoxetine|fluoxetine]], [[stahl:drugs/paroxetine|paroxetine]]; see [[stahl:c/ch07/guide/s7-ssri|SSRIs]].",
           "Limit repeat testing, but do not dismiss new symptoms: real illness can be missed.",
           "Treat comorbid GAD, panic disorder, OCD and depression (two-thirds have another disorder).",
-          "No drug is specifically approved for illness anxiety disorder as of October 2026."
+          "No drug is specifically approved for illness anxiety disorder as of October 2026 (app guidance; not verified)."
         ],
         stahl: [["SSRIs", "c/ch07/guide/s7-ssri"], ["GAD", "c/ch08/guide/s8-gad"]]
       }
@@ -62,7 +62,7 @@
         ["Stressor", "“Was anything stressful or physically painful happening around that time?”", "Record with or without stressor; it may be absent."],
         ["Other symptoms", "“Do you also have pain, fatigue, poor sleep or memory problems?”"],
         ["Understanding", "“What do you think is causing it? Does the explanation I gave make sense?”", "Agreement with the diagnosis predicts a better outcome."],
-        ["Safety", "“Have you had thoughts of ending your life?”", "Suicidality is higher than in comparable neurological disease."]
+        ["Safety", "“Have you had thoughts of ending your life?”", "Suicidal thoughts are more common than in recognized neurological disease."]
       ],
       tx: {
         asOf: "October 2026",
@@ -70,7 +70,7 @@
         points: [
           "Evidence is mixed: the CODES trial (CBT for dissociative seizures) and the Physio4FMD trial (specialist physiotherapy) did not beat usual care on their primary outcomes, though secondary outcomes improved; multidisciplinary care is still recommended.",
           "No medication treats FND itself; treat comorbid depression, anxiety, PTSD and pain (e.g., an [[stahl:c/ch07/guide/s7-ssri|SSRI]]).",
-          "With functional seizures, avoid escalating antiseizure drugs and emergency intubation; taper antiseizure medicine if epilepsy is excluded.",
+          "With functional seizures, avoid escalating antiseizure drugs and emergency intubation; taper antiseizure medicine if epilepsy is excluded (app guidance; not verified).",
           "Reassess if symptoms progress; FND can coexist with neurological disease."
         ],
         stahl: [["SSRIs", "c/ch07/guide/s7-ssri"], ["PTSD", "c/ch08/guide/s8-ptsd"]]
@@ -88,7 +88,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "Target the specific factor: **stress management** and CBT for stress-triggered symptoms, **motivational interviewing** and adherence support for nonadherence, and collaborative care with the medical team.",
+        first: "Target the specific factor: **stress management** and CBT for stress-triggered symptoms, **motivational interviewing** and adherence support for nonadherence, and collaborative care with the medical team (app guidance; not verified).",
         points: [
           "Treat subthreshold anxiety or depression when they drive the medical illness.",
           "In diabetes with insulin omission, screen carefully for an eating disorder.",
@@ -108,7 +108,7 @@
       ],
       tx: {
         asOf: "October 2026",
-        first: "**Safety first**: stop harmful investigations and procedures, and in **imposed on another**, protect the victim through **child or adult protection services**. Then a **nonpunitive, supportive confrontation** by the team, offering ongoing psychiatric care.",
+        first: "**Safety first**: stop harmful investigations and procedures, and in **imposed on another**, protect the victim through **child or adult protection services**. Then a **nonpunitive, supportive confrontation** by the team, offering ongoing psychiatric care (app guidance; not verified).",
         points: [
           "Coordinate one primary clinician; share information across settings within legal limits.",
           "Treat comorbid depression, personality disorder and substance use; no medication treats factitious disorder itself.",

@@ -16,7 +16,7 @@
         ["D Medical", "“Is your child very thirsty, losing weight, in pain when passing urine, or dribbling all the time?”", "Diabetes, UTI, structural causes."],
         ["D Medication", "“Did the wetting start after any new medicine?”", "Antipsychotics, diuretics."],
         ["Subtype", "“Does it happen at night, in the day, or both? Do they rush to the toilet or hold on too long?”"],
-        ["Course", "“Has your child ever been dry for 6 months or more?”", "Primary versus secondary."],
+        ["Course", "“Has your child ever been dry for 6 months or more?”", "Primary versus secondary (6 months: ICCS convention; the DSM gives no length)."],
         ["Bowels and sleep", "“How often do they open their bowels? Do they snore or stop breathing at night?”", "Constipation and sleep apnea."]
       ],
       tx: {
@@ -54,7 +54,7 @@
           "**Disimpaction**: high-dose oral PEG or enemas for **3–6 days**; then maintenance PEG, often for months, weaned only after regular soft stools.",
           "Scheduled toilet sitting after meals with a footstool; praise or a reward chart for sitting, not for clean pants alone.",
           "Behavioral therapy is an **adjunct** to laxatives, not a replacement. Fluids, fiber and activity as for any child.",
-          "Without constipation: behavioral treatment and parent management training; assess and treat **ODD or conduct disorder**; take a careful psychosocial history.",
+          "Without constipation (app guidance; not verified): behavioral treatment and parent management training; assess for **ODD or conduct disorder** (Ch 15); take a careful psychosocial history.",
           "Refer for red flags: onset in the first month of life, delayed meconium, failure to thrive, abnormal spinal or neurological findings, bloody stools."
         ],
         stahl: []
@@ -79,8 +79,8 @@
     {
       id: "bedwetting", title: "Bedwetting or daytime wetting",
       intro: "Check **age** (developmental 5), **frequency and duration** (twice weekly for 3 months, or distress), and **medical or medication causes** first. Then decide night, day or both, and look for **constipation** and **sleep apnea**.",
-      ask: ["How many wet nights or days a week, for how long?", "Ever dry for 6 months?", "Thirst, weight loss, pain on passing urine, constant dribbling?", "Bowel habits?", "Snoring or pauses in breathing?", "Any new medicine?", "How do the family respond to wet nights?"],
-      mustNotMiss: ["**Diabetes mellitus or insipidus** (polyuria, thirst, weight loss).", "**UTI**, structural or **neurogenic** causes (dribbling, abnormal spine or gait).", "**Medication** effects: antipsychotics such as clozapine, diuretics.", "**Punishment** or maltreatment at home."],
+      ask: ["How many wet nights or days a week, for how long?", "Ever dry for 6 months (ICCS convention; the DSM gives no length)?", "Thirst, weight loss, pain on passing urine, constant dribbling?", "Bowel habits?", "Snoring or pauses in breathing?", "Any new medicine?", "How do the family respond to wet nights?"],
+      mustNotMiss: ["**Diabetes mellitus or insipidus** (polyuria, thirst, weight loss).", "**UTI**, structural or **neurogenic** causes (dribbling, abnormal spine or gait).", "**Medication** effects: antipsychotics (clozapine is a common example: app guidance), diuretics.", "**Punishment** or maltreatment at home."],
       helpers: ["elimination"],
       items: [
         { ch: "ch11", dx: "enuresis", when: "Age 5+, twice weekly for 3 months or distress, no medical or drug cause." },

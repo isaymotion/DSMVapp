@@ -1,5 +1,5 @@
 /*
- * Diagnostic helper for Chapter 11 (Elimination Disorders), DSM-5-TR pp. 399–406.
+ * Diagnostic helper for Chapter 11 (Elimination Disorders), DSM-5-TR pp. 399–405.
  * "elimination": from wetting or soiling to enuresis (with subtype), encopresis (with subtype),
  * a medical or medication cause, or a residual category, with the code.
  */
@@ -9,7 +9,7 @@ SP.helpers = (SP.helpers || []).concat([
     chapter: "ch11",
     title: "Which elimination disorder?",
     summary: "Start from wetting or soiling, then check developmental age, frequency and duration, and medical or medication causes to reach enuresis or encopresis with its subtype, or a residual category, with the code.",
-    caution: "A teaching aid built from DSM-5-TR pp. 399–406. Examine the abdomen, lower spine and neurology, and test the urine before diagnosing. Codes are unchanged through October 2026; use the code set in force on the date of service.",
+    caution: "A teaching aid built from DSM-5-TR pp. 399–405. Examine the abdomen, lower spine and neurology, and test the urine before diagnosing. F98.0 and F98.1 are unchanged through October 2026; for N39.498, R15.9 and R32 no change was found for the codes checked; confirm against the official tabular list. Use the code set in force on the date of service.",
     start: "what",
     nodes: {
       what: {
@@ -81,7 +81,7 @@ SP.helpers = (SP.helpers || []).concat([
       },
       fmed: {
         q: "Is the soiling explained by a substance or medical condition?",
-        help: "Laxatives, chronic diarrhea, spina bifida, anal stenosis or another neurological or structural cause. A condition that acts only through constipation (e.g., hypothyroidism, celiac disease) does not count here.",
+        help: "Laxatives, chronic diarrhea, spina bifida, anal stenosis or another neurological or structural cause. Constipation from functional withholding does not count here. Criterion D allows a medical cause acting through constipation (p. 402), but the differential requires constipation that other medical conditions cannot explain (p. 405); if a medical condition fully explains the constipation, treat it and reassess (app guidance).",
         options: [
           { label: "No, or only through constipation", to: "ffreq", note: "Criterion D met." },
           { label: "Yes: laxatives", to: "r:laxative", note: "Substance." },
@@ -109,14 +109,14 @@ SP.helpers = (SP.helpers || []).concat([
     results: {
       "tooyoung-u": { label: "Not enuresis", dx: "Below the age for enuresis", line: "Wetting before a developmental age of 5 is usually expected and is not enuresis.", points: ["Reassure; look for constipation and medical clues if wetting is secondary or daytime.", "Reassess after the fifth (developmental) birthday."], link: { ch: "ch11", sec: "s11-enuresis-criteria", label: "Enuresis criteria" } },
       "medical-u": { label: "Not enuresis", dx: "Wetting due to a medical condition", line: "Diabetes, an acute UTI, neurogenic bladder or a structural anomaly explains the wetting; treat the cause.", points: ["Reconsider enuresis if wetting persists after appropriate treatment."], link: { ch: "ch11", sec: "s11-enuresis-ddx", label: "Enuresis differential" } },
-      "drug-u": { label: "Not enuresis", dx: "Medication side effect", line: "Wetting that began with an antipsychotic, a diuretic or another drug is noted as a side effect.", points: ["Clozapine-associated enuresis is a classic example.", "Diagnose enuresis only if wetting was regularly present before the drug."], link: { ch: "ch11", sec: "s11-enuresis-ddx", label: "Medication side effects" } },
+      "drug-u": { label: "Not enuresis", dx: "Medication side effect", line: "Wetting that began with an antipsychotic, a diuretic or another drug is not diagnosed as enuresis in isolation; it may be noted as a side effect.", points: ["Clozapine is a commonly cited example (app guidance; the manual names antipsychotics generally).", "Diagnose enuresis only if wetting was regularly present before the drug."], link: { ch: "ch11", sec: "s11-enuresis-ddx", label: "Medication side effects" } },
       "subthreshold-u": { label: "Usually no diagnosis", dx: "Below the threshold for enuresis", line: "Wetting less than twice a week without distress or impairment does not meet Criterion B, and the residual categories also require distress or impairment.", points: ["Monitor and reassess; check bowels and urine.", "If the clinician still judges it clinically significant, the manual’s example is other specified elimination disorder, low-frequency enuresis (N39.498)."], link: { ch: "ch11", sec: "s11-other", label: "Residual categories" } },
       "unspec-u": { dx: "Unspecified elimination disorder, urinary symptoms", line: "Wetting with distress or impairment when information is insufficient for a specific diagnosis.", points: ["Code: R32.", "Revise when the history is available."], link: { ch: "ch11", sec: "s11-other", label: "Residual categories" }, dxId: "unspecified-elimination" },
       "enu-noct": { dx: "Enuresis, nocturnal only", line: "The most common subtype (monosymptomatic), usually in the first third of the night.", points: ["Code: F98.0.", "Primary if never dry; secondary if after a period of continence.", "Ask about snoring and sleep apnea."], link: { ch: "ch11", sec: "s11-enuresis-subtypes", label: "Enuresis subtypes" }, dxId: "enuresis" },
       "enu-diur": { dx: "Enuresis, diurnal only", line: "Daytime wetting: urge incontinence (detrusor instability) or voiding postponement.", points: ["Code: F98.0.", "Uncommon after age 9; check for UTI, especially in girls."], link: { ch: "ch11", sec: "s11-enuresis-subtypes", label: "Enuresis subtypes" }, dxId: "enuresis" },
-      "enu-both": { dx: "Enuresis, nocturnal and diurnal", line: "Nonmonosymptomatic enuresis; behavioral and developmental symptoms are more common.", points: ["Code: F98.0.", "Look for constipation and UTI; screen for ADHD and developmental delay."], link: { ch: "ch11", sec: "s11-enuresis-subtypes", label: "Enuresis subtypes" }, dxId: "enuresis" },
+      "enu-both": { dx: "Enuresis, nocturnal and diurnal", line: "Nonmonosymptomatic enuresis; behavioral and developmental symptoms are more common than in children without incontinence.", points: ["Code: F98.0.", "Look for constipation and UTI; screen for ADHD and developmental delay."], link: { ch: "ch11", sec: "s11-enuresis-subtypes", label: "Enuresis subtypes" }, dxId: "enuresis" },
       "tooyoung-f": { label: "Not encopresis", dx: "Below the age for encopresis", line: "Soiling before a developmental age of 4 is not encopresis.", points: ["Treat any constipation; support toilet training."], link: { ch: "ch11", sec: "s11-encopresis-criteria", label: "Encopresis criteria" } },
-      "laxative": { label: "Not encopresis", dx: "Incontinence due to laxatives", line: "Fecal incontinence exclusively from laxatives is excluded by Criterion D.", points: ["In an adolescent, ask whether laxatives are used for weight control (anorexia or bulimia nervosa)."], link: { ch: "ch11", sec: "s11-encopresis-ddx", label: "Encopresis differential" }, dxId: "anorexia" },
+      "laxative": { label: "Not encopresis", dx: "Incontinence due to laxatives", line: "Fecal incontinence exclusively from laxatives is excluded by Criterion D.", points: ["In an adolescent, ask whether laxatives are used for weight control (anorexia or bulimia nervosa, Ch 10)."], link: { ch: "ch11", sec: "s11-encopresis-ddx", label: "Encopresis differential" }, dxId: "anorexia" },
       "medical-f": { label: "Not encopresis", dx: "Fecal incontinence due to a medical condition", line: "Chronic diarrhea, spina bifida or anal stenosis does not warrant encopresis.", points: ["Refer for medical evaluation."], link: { ch: "ch11", sec: "s11-encopresis-ddx", label: "Encopresis differential" } },
       "otherspec-f": { dx: "Other specified elimination disorder, fecal symptoms", line: "Soiling with distress or impairment that falls short of monthly for 3 months; record the reason.", points: ["Code: R15.9.", "Reassess for full encopresis at 3 months."], link: { ch: "ch11", sec: "s11-other", label: "Residual categories" }, dxId: "other-specified-elimination" },
       "unspec-f": { dx: "Unspecified elimination disorder, fecal symptoms", line: "Soiling with distress or impairment when information is insufficient.", points: ["Code: R15.9 (same as other specified)."], link: { ch: "ch11", sec: "s11-other", label: "Residual categories" }, dxId: "unspecified-elimination" },

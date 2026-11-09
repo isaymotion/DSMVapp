@@ -5,20 +5,20 @@ SP.disorders = (SP.disorders || []).concat([
     name: "Somatic symptom disorder", code: "F45.1", aka: ["SSD", "somatization disorder", "pain disorder", "hypochondriasis (with symptoms)"],
     essence: "One or more **distressing somatic symptoms** with **excessive thoughts, feelings or behaviors** about them (disproportionate thoughts, high health anxiety, or excessive time and energy), persisting typically **more than 6 months**.",
     duration: "Typically more than 6 months (the symptomatic state persists)",
-    functioning: "Often marked; health status more than 2 SD below norms",
+    functioning: "Often marked; in many with severe SSD, health status likely more than 2 SD below norms",
     mood: "Health anxiety, demoralization; anxiety and depression each up to 50%",
     criteria: [
       ["A", "One or more somatic symptoms that are distressing or disrupt daily life."],
       ["B", "Excessive thoughts, feelings or behaviors: disproportionate thoughts about seriousness, persistently high health anxiety, or excessive time and energy (one or more)."],
-      ["C", "The state of being symptomatic is persistent, typically more than 6 months."]
+      ["C", "Being symptomatic persists, usually more than 6 months."]
     ],
     specifiers: ["With predominant pain", "Persistent", "Severity: mild (one B), moderate (two or more B), severe (two or more B plus multiple complaints or one very severe symptom)"],
-    epi: [["General population", "About 4%–6%"], ["Primary care", "10%–20%"], ["Specialty clinics", "40%–60%"], ["Sex", "Likely more common in women"]],
-    risk: ["Negative affectivity (neuroticism); comorbid anxiety or depression.", "Low education and socioeconomic status; recent stressful events; childhood sexual abuse.", "Persistence: illness benefits, chronic illness, unemployment, older age, female sex."],
+    epi: [["General population", "About 4%–6%"], ["Primary care", "10%–20% (12-month, plausible; older-criteria studies)"], ["Specialty clinics", "40%–60%"], ["Sex", "Likely more common in women"]],
+    risk: ["Negative affectivity (neuroticism); comorbid anxiety or depression.", "Low education and socioeconomic status; recent stressful events; childhood sexual abuse (likely).", "Persistence: illness benefits, chronic illness, unemployment, older age, female sex."],
     differential: [
         { id: "shenjing-shuairuo", how: "The Chinese neurasthenia syndrome; somatic symptom disorder is on its related list, and up to 45% of clinic patients with it meet no DSM-IV disorder (Chapter 24, pp. 877–879)." },
         { id: "dhat-syndrome", how: "A South Asian explanation attributing fatigue, weakness and sexual symptoms to semen loss; somatic symptom and illness anxiety disorders are on its related list (Chapter 24, pp. 874–875)." },
-        { id: "susto", how: "The somatic type of susto, with recurrent bodily symptoms and consultations with several practitioners, resembles somatic symptom disorder (Chapter 24, p. 879)." },
+        { id: "susto", how: "The somatic type of susto, with recurrent bodily symptoms and consultations with several practitioners, is thought to resemble somatic symptom disorder (Chapter 24, p. 879)." },
       { id: "iad", how: "No or mild somatic symptoms; fear of having a disease." },
       { id: "fnd", how: "Loss of function with positive incompatible signs; both can be diagnosed." },
       { id: "pfamc", how: "A medical condition worsened by psychological factors; thoughts need not be excessive." },
@@ -41,7 +41,7 @@ SP.disorders = (SP.disorders || []).concat([
     functioning: "Role impairment, strained relationships; may become an invalid",
     mood: "High health anxiety; easily alarmed; two-thirds have another major mental disorder",
     criteria: [
-      ["A", "Preoccupation with having or acquiring a serious illness."],
+      ["A", "Preoccupied with having or getting a serious illness."],
       ["B", "Somatic symptoms absent or mild; if a condition or high risk is present, preoccupation is clearly excessive."],
       ["C", "High anxiety about health; easily alarmed."],
       ["D", "Excessive health-related behaviors or maladaptive avoidance."],
@@ -49,7 +49,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["F", "Not better explained by SSD, panic disorder, GAD, BDD, OCD or delusional disorder, somatic type."]
     ],
     specifiers: ["Care-seeking type", "Care-avoidant type"],
-    epi: [["Community", "1.3%–10% (health anxiety or disease conviction)"], ["Ambulatory medical", "2.2%–8%, mean about 3%"], ["Specialty clinics", "About one-fifth"], ["Sex", "Similar in men and women"]],
+    epi: [["Community", "1.3%–10% (health anxiety or disease conviction; high-income countries)"], ["Ambulatory medical", "2.2%–8%, mean about 3%"], ["Specialty clinics", "About one-fifth"], ["Sex", "Similar in men and women"]],
     risk: ["Major life stress or a serious but benign health threat.", "Childhood abuse, serious childhood illness, parental illness or death.", "Onset in early to middle adulthood; transient in one-third to one-half."],
     differential: [
       { id: "ssd", how: "Distressing somatic symptoms are present." },
@@ -60,8 +60,8 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "mdd", how: "Health rumination only during episodes." },
       { id: "delusional-disorder", how: "Bizarre or fixed somatic conviction." }
     ],
-    pearls: ["About one-third of former hypochondriasis.", "Reassurance does not help and may worsen it.", "Dismissive care can miss real illness.", "In older adults, often fear of memory loss."],
-    cmp: { symptoms: "Fear of serious illness; no or mild symptoms", exclusions: "SSD, panic, GAD, BDD, OCD, delusional disorder", prevalence: "About 3% in ambulatory care", course: "Chronic, relapsing; ≥6 months" },
+    pearls: ["About one-third of former hypochondriasis.", "Reassurance does not help and may worsen it.", "Dismissive care can occasionally miss real illness.", "In older adults, often fear of memory loss."],
+    cmp: { symptoms: "Fear of serious illness; no or mild symptoms", exclusions: "SSD, panic, GAD, BDD, OCD, delusional disorder", prevalence: "About 3% in ambulatory care", course: "Thought to be chronic, relapsing; ≥6 months" },
     clues: [["Core picture", "A teacher sure she has lymphoma after feeling a normal lymph node, checking her neck all day after normal ultrasounds"], ["Code", "F45.21"]]
   },
   {
@@ -74,13 +74,13 @@ SP.disorders = (SP.disorders || []).concat([
     functioning: "Disability can equal comparable neurological disease",
     mood: "Anxiety and depression common; dissociative symptoms frequent",
     criteria: [
-      ["A", "One or more symptoms of altered voluntary motor or sensory function."],
+      ["A", "At least one symptom of altered voluntary motor or sensory function."],
       ["B", "Clinical findings show incompatibility with recognized neurological or medical conditions."],
       ["C", "Not better explained by another medical or mental disorder."],
       ["D", "Distress or impairment, or warrants medical evaluation."]
     ],
     specifiers: ["Acute episode (<6 months) or persistent (≥6 months)", "With psychological stressor (specify) or without psychological stressor"],
-    epi: [["Incidence", "4–12 per 100,000 a year (persistent)"], ["Neurology clinics", "5%–15%"], ["Sex", "Women 2–3 times more"], ["Onset", "Attacks 20–29; motor 30–39"]],
+    epi: [["Incidence", "4–12 per 100,000 a year (persistent; US, northern Europe)"], ["Neurology clinics", "5%–15% (Scotland, Australia)"], ["Sex", "Women 2–3 times more"], ["Onset", "Attacks 20–29; motor 30–39"]],
     risk: ["Maladaptive personality traits, especially emotional instability.", "Childhood abuse and neglect; stressful events including physical injury.", "Neurological disease: about 1 in 5 with functional seizures also have epilepsy."],
     differential: [
       { name: "Neurological disease", how: "Main differential; rarely missed at follow-up but reassess progression; can coexist." },
@@ -91,7 +91,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "mdd", how: "General limb heaviness, not focal weakness." }
     ],
     pearls: ["Hoover’s sign, entrainment, eye closure in attacks.", "La belle indifférence and secondary gain are nonspecific.", "Stressor absent in up to half.", "Good prognosis: short duration, agreeing with diagnosis."],
-    cmp: { symptoms: "Motor or sensory loss with incompatible signs", exclusions: "Better explained by another medical or mental disorder", prevalence: "5%–15% of neurology outpatients", course: "Transient or persistent" },
+    cmp: { symptoms: "Motor or sensory loss with incompatible signs", exclusions: "Better explained by another medical or mental disorder", prevalence: "5%–15% of neurology outpatients (Scotland, Australia)", course: "Transient or persistent" },
     clues: [["Core picture", "A worker with a weak leg after a minor fall, positive Hoover’s sign and normal MRI"], ["Codes", "F44.4 motor · F44.5 seizures · F44.6 sensory · F44.7 mixed"]]
   },
   {
@@ -102,7 +102,7 @@ SP.disorders = (SP.disorders || []).concat([
     functioning: "Ranges from increased risk to life-threatening",
     mood: "Distress, coping styles, denial, depressive or anxiety symptoms below disorder thresholds",
     criteria: [
-      ["A", "A medical symptom or condition (other than a mental disorder) is present."],
+      ["A", "A medical symptom or condition is present (not a mental disorder)."],
       ["B", "Psychological or behavioral factors adversely affect it: course, treatment, health risks or pathophysiology."],
       ["C", "Not better explained by another mental disorder."]
     ],
@@ -185,7 +185,7 @@ SP.disorders = (SP.disorders || []).concat([
     epi: [["Prevalence", "Not established"]],
     risk: ["Not applicable."],
     differential: [{ id: "other-specified-somatic", how: "Use when the reason can be stated." }],
-    pearls: ["Stricter wording than in most chapters."],
+    pearls: ["Stricter wording than in most chapters (app comparison)."],
     cmp: { symptoms: "Insufficient information", exclusions: "Specific diagnoses", prevalence: "Unknown", course: "Unknown" },
     clues: [["Code", "F45.9"]]
   }
