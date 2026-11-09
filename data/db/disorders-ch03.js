@@ -183,7 +183,8 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     pearls: ["Hypomania alone (no depression) is F31.89, not bipolar II.", "Manic episodes within schizoaffective disorder do not get this extra diagnosis."],
     cmp: { symptoms: "Subthreshold or atypical bipolar presentation", exclusions: "Full criteria for a specific disorder", prevalence: "—", course: "—" },
-    clues: [["Core picture", "Repeated depressions with several 2-day highs that meet every symptom criterion"], ["Example", "A hypomanic episode in someone never depressed"], ["Code", "F31.89"]]
+    clues: [["Core picture", "Repeated depressions with several 2-day highs that meet every symptom criterion"], ["Example", "A hypomanic episode in someone never depressed"], ["Code", "F31.89"]],
+      updates: [{ kind: "post", year: "2025", title: "“-like” wording for the examples (September 2025)", source: "APA DSM-5-TR Update, September 2025", text: "The September 2025 APA update rewords the other specified examples with “-like” names, including a cyclothymic-like presentation (p. 168). The code (F31.89) is not described as changed. The app keeps the printed names." }]
   },
   {
     id: "unspecified-bipolar", ch: "ch03", sec: "s3-other", pages: "169", critPages: "169",

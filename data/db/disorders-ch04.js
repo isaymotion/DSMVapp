@@ -218,7 +218,8 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     pearls: ["Recurrent brief and short-duration depression both need five symptoms; they differ only in time.", "An MDE on schizophrenia is recorded here; an MDE within schizoaffective disorder is not."],
     cmp: { symptoms: "Subthreshold or atypical depression", exclusions: "Full criteria for a depressive disorder or adjustment disorder", prevalence: "—", course: "—" },
-    clues: [["Core picture", "Five depressive symptoms for 3–5 days every month for over a year, unrelated to the cycle"], ["Code", "F32.89 with the reason recorded"]]
+    clues: [["Core picture", "Five depressive symptoms for 3–5 days every month for over a year, unrelated to the cycle"], ["Code", "F32.89 with the reason recorded"]],
+      updates: [{ kind: "post", year: "2025", title: "“-like” wording for the examples (September 2025)", source: "APA DSM-5-TR Update, September 2025", text: "The September 2025 APA update rewords the other specified depressive examples (p. 209) with “-like” names (depressive-like episodes). The code (F32.89) is not described as changed. The app keeps the printed names." }]
   },
   {
     id: "unspecified-depressive", ch: "ch04", sec: "s4-other", pages: "210", critPages: "210",

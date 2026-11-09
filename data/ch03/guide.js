@@ -517,7 +517,8 @@ SP.add("ch03", "guide", {
               { title: "Unspecified mood disorder (F39)", color: "drug", points: ["Mood symptoms meeting no full criteria, when it is **hard to choose** between unspecified bipolar and unspecified depressive disorder (e.g., **acute agitation**)."] }
             ] },
             { type: "callout", kind: "exam", text: "Why does a hypomanic episode **without** any depression not count as bipolar II? Because bipolar II requires **both** a hypomanic and a major depressive episode. Hypomania alone is **other specified bipolar disorder (F31.89)**. Note too that the hypomanias in examples 1 and 2 must **not overlap** the depressions; if they did, the picture may instead meet a major depressive episode **with mixed features** (three or more symptoms on most days). (app guidance)" },
-            { type: "p", text: "Section III includes proposed criteria for a disorder with **short-duration hypomania** to encourage research (p. 139)." }
+            { type: "p", text: "Section III includes proposed criteria for a disorder with **short-duration hypomania** to encourage research (p. 139)." },
+            { type: "update", kind: "post", year: "2025", title: "“-like” wording for the other specified examples (September 2025)", source: "APA DSM-5-TR Update, September 2025 (psychiatry.org)", text: "This is outside the printed DSM-5-TR. APA’s September 2025 update reworded the other specified bipolar examples using “-like” names; the cyclothymic example (p. 168) is now a **cyclothymic-like** presentation. In DSM usage, “-like” marks a picture that resembles a disorder but lacks one requirement. The code (F31.89) is not described as changed. This app keeps the printed names; confirm the exact new wording against the APA update." }
           ]
         }
       ]
