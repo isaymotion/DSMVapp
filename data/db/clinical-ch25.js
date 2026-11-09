@@ -8,7 +8,7 @@
 (function () {
   var ASOF = "October 2026";
   var SEC3 = "Section III condition: the proposed criteria are meant for **research, not clinical use** (p. 903). Chart the **Section II category or Chapter 22 code** given on the library page and, if helpful, add that the picture matches the proposed set (app guidance).";
-  var CRISIS = "Philippine crisis lines: **NCMH Crisis Hotline (1553)** and **Hopeline (0917-558-4673)** (app guidance; confirm current numbers before giving them out).";
+  var CRISIS = "Philippine crisis line: **NCMH Crisis Hotline 1553** (toll-free from landlines) or **1800-1888-1553**; **0919-057-1553** (Smart/TNT); **0917-899-8727** and **0966-351-4518** (Globe/TM) (app guidance; confirm before giving out).";
   function care(first, points, stahl) {
     return { asOf: ASOF, first: "Outside the DSM / app guidance: " + first, points: [SEC3].concat(points), stahl: stahl || [] };
   }

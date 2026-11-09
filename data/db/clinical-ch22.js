@@ -16,7 +16,7 @@
   var SELFHARM_CARE = care("a full **suicide risk assessment** at every encounter (ideation, plan, intent, access to means, past attempts, protective factors), safety planning with the person and family, and treatment of the underlying disorder; the code documents the behavior, it does not manage the risk.", [
     "Establish **intent** directly and from circumstances; it decides between suicidal behavior and NSSI (p. 822), and it can change between episodes.",
     "Record **T14.91XA** (not the printed T14.91A) during active treatment and **T14.91XD** in follow-up; add **Z91.51** or **Z91.52** for history (p. 822; APA correction, September 2022).",
-    "In the Philippines, crisis lines include the **NCMH Crisis Hotline (1553)** and **Hopeline (0917-558-4673)** (app guidance; confirm current numbers)."
+    "In the Philippines: **NCMH Crisis Hotline 1553** (toll-free from landlines) or **1800-1888-1553**; **0919-057-1553** (Smart/TNT); **0917-899-8727** and **0966-351-4518** (Globe/TM) (app guidance; confirm before giving out)."
   ]);
   var ABUSE_CARE = care("safety first (is the person safe to go home? are children at risk?), a careful, nonleading history, documentation of injuries with consent, and the mandated referrals and reports; use the **suspected** (T76) codes until the event is confirmed (pp. 822–823).", [
     PRIVATE,
