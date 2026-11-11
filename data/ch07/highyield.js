@@ -86,6 +86,7 @@ SP.add("ch07", "highYield", [
     "With depressed mood: **F43.21**; with anxiety: **F43.22**.",
     "Mixed anxiety and depressed mood: **F43.23**; disturbance of conduct: **F43.24**.",
     "Mixed emotions and conduct: **F43.25**; unspecified: **F43.20**.",
+    "Since the APA update of September 2024, **disturbance of conduct** means behavior that **violates others’ rights** or major **age-appropriate norms and rules** (e.g., truancy, vandalism, fighting); codes unchanged (p. 319).",
     "Persistent (chronic) specifier: **6 months or more**, with a chronic stressor.",
     "Up to **50%** of hospital psychiatric consultations in the 1990s.",
     "A full PTSD picture after a non-Criterion A stressor is an **adjustment disorder**."

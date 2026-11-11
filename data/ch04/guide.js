@@ -117,6 +117,7 @@ SP.add("ch04", "guide", {
               ["ADHD, major depressive disorder, anxiety disorders", "Can be diagnosed **together** with DMDD. But irritability present **only** during a major depressive episode or persistent depressive disorder means the depressive diagnosis instead, and irritability only during an anxiety flare means the anxiety disorder instead."],
               ["Autism spectrum disorder", "Outbursts when routines are disturbed are **secondary to autism**; do not diagnose DMDD."]
             ] },
+            { type: "update", kind: "post", year: "2024", title: "A contradictory sentence removed (September 2024)", source: "APA DSM-5-TR Update, September 2024 (psychiatry.org)", text: "This is outside the printed DSM-5-TR. The printed entry for ADHD, major depressive disorder, anxiety disorders and autism (pp. 181–182) opens by grouping **ODD with bipolar disorder** as conditions in which DMDD cannot be given. That contradicts the note to Criterion J (p. 178): when criteria for both are met, **DMDD is diagnosed and ODD is not**. The APA deleted the clause. The rules themselves did not change: with bipolar disorder, keep bipolar; with ODD, keep DMDD." },
             { type: "table", caption: "What can coexist with DMDD? (p. 178 note to Criterion J)", head: ["Cannot coexist (diagnose one)", "Can coexist (diagnose both)"], rows: [
               ["**Bipolar disorder** → diagnose bipolar only", "**Major depressive disorder**"],
               ["**Oppositional defiant disorder** → diagnose DMDD only", "**ADHD**"],

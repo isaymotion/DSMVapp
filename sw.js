@@ -2,7 +2,7 @@
    Cache names MUST start with this app's PREFIX ("dsm-companion-"): all isaymotion apps share one origin and one
    cache storage, so activate deletes only this app's own old caches and the other study apps keep their offline copies. */
 const PREFIX = 'dsm-companion-';
-const VERSION = PREFIX + '57.0.0';
+const VERSION = PREFIX + '58.0.0';
 const CORE = [
   './', './index.html', './css/app.css', './js/app.js', './js/study.js', './js/practice.js', './js/assess.js', './js/case.js', './js/pdf.js', './js/pdf-fonts.js',
   './data/app-meta.js', './data/changelog.js', './data/hospital.js', './data/strings.js', './data/chapters.js',

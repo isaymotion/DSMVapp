@@ -51,7 +51,7 @@ SP.disorders = (SP.disorders || []).concat([
         { id: "psychosis-severity-dimensions", how: "The “specify current severity” line rates the five primary symptoms 0–4 for the worst in the past 7 days with the Clinician-Rated Dimensions of Psychosis Symptom Severity, an 8-item Section III measure; the diagnosis can be made without it (Ch 2; Chapter 23, pp. 851–853)." },
         { id: "maladi-dyab", how: "A Haitian sent-sickness explanation shared by the community; the manual warns it may lead to misdiagnosis of delusional disorder, persecutory type (Chapter 24, p. 877)." },
         { id: "taijin-kyofusho", how: "Consider delusional disorder only when the fear of offending others has a delusional quality that resists reassurance or counterexample (Chapter 24, p. 879)." },
-      { name: "OCD or body dysmorphic disorder", how: "Fully convinced OCD or BDD beliefs → that disorder **with absent insight/delusional beliefs**." },
+      { name: "OCD, body dysmorphic or hoarding disorder", how: "Fully convinced OCD, BDD or hoarding beliefs → that disorder **with absent insight/delusional beliefs** (hoarding added September 2023)." },
       { name: "Major neurocognitive disorder", how: "Simple persecutory delusions in dementia → major NCD **with behavioral disturbance**." },
       { id: "substance-induced-psychotic", how: "Same cross-sectional picture; timing of substance use decides." },
       { id: "schizophrenia", how: "Other active-phase symptoms; delusions more disorganized and less systematized." },
@@ -142,7 +142,7 @@ SP.disorders = (SP.disorders || []).concat([
       { id: "brief-psychotic-disorder", how: "Less than 1 month, full recovery." },
       { id: "delusional-disorder", how: "No other characteristic symptoms." },
       { id: "schizotypal-pd", how: "Subthreshold, trait-like symptoms." },
-      { name: "OCD or body dysmorphic disorder", how: "Prominent obsessions, compulsions or appearance preoccupations despite poor insight." },
+      { name: "OCD and related disorders (poor or absent insight)", how: "No other psychotic features; prominent obsessions or preoccupations with repetitive behaviors in response (wording revised September 2023)." },
       { name: "PTSD", how: "Trauma and reliving symptoms explain flashbacks and hypervigilance." },
       { name: "Autism spectrum or communication disorders", how: "Add schizophrenia only with ≥1 month of prominent delusions or hallucinations." },
       { id: "substance-induced-psychotic", how: "Timeline of substance use and remission without it." }

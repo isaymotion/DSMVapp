@@ -28,7 +28,8 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     pearls: ["Created to curb overdiagnosis of pediatric bipolar disorder.", "With ODD or IED, keep DMDD; with bipolar disorder, drop DMDD.", "Comorbidity is extremely high; DMDD alone is rare."],
     cmp: { symptoms: "Outbursts ≥3/week + irritable mood between", exclusions: "Bipolar disorder; ODD and IED not diagnosed with it; outbursts only in MDE, anxiety or autism contexts", prevalence: "2.5%–8.2% (community samples of children)", course: "Half persist at 1 year; later depression and anxiety" },
-    clues: [["Core picture", "A 9-year-old who explodes over small frustrations several times a week and is grumpy all day in between"], ["Age rules", "First diagnosed 6–18, onset before 10"], ["Exclusions", "Wins over ODD and IED, loses to bipolar disorder"], ["Code", "F34.81"]]
+    clues: [["Core picture", "A 9-year-old who explodes over small frustrations several times a week and is grumpy all day in between"], ["Age rules", "First diagnosed 6–18, onset before 10"], ["Exclusions", "Wins over ODD and IED, loses to bipolar disorder"], ["Code", "F34.81"]],
+      updates: [{ kind: "post", year: "2024", title: "Contradictory sentence removed", source: "APA DSM-5-TR Update, September 2024 (psychiatry.org)", text: "The differential text once grouped ODD with bipolar disorder as excluding DMDD; the APA deleted that clause. Per Criterion J, if both are met, diagnose **DMDD, not ODD**." }]
   },
   {
     id: "mdd", ch: "ch04", sec: "s4-mdd-criteria", pages: "183–192", critPages: "183–185",

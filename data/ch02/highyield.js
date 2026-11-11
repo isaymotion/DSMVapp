@@ -83,7 +83,7 @@ SP.add("ch02", "highYield", [
     "Lifetime prevalence: about **0.2%**.",
     "About **one-third** of cases lasting 1–3 months are later diagnosed with schizophrenia.",
     "There may be **factual insight** without true insight.",
-    "Fully convinced OCD or BDD beliefs are coded as OCD or BDD **with absent insight/delusional beliefs**."
+    "Fully convinced OCD, BDD or hoarding beliefs are coded as that disorder **with absent insight/delusional beliefs** (pp. 107–108; hoarding added by the APA update, September 2023)."
   ] },
   { id: "hy2-cause", topic: "Substance, medication or medical cause", items: [
     "Substance-induced psychotic disorder includes only **delusions and hallucinations**.",

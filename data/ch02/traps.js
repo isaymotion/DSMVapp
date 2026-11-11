@@ -27,7 +27,7 @@ SP.add("ch02", "traps", [
     truth: "Hallucinations may be present if they are **not prominent and are related to the delusional theme**, such as feeling insects crawling in a delusion of infestation." },
   { id: "t2-09", tag: "OCD and BDD", sec: "s2-delusional",
     trap: "A fixed, false belief about contamination or appearance is delusional disorder.",
-    truth: "If OCD or body dysmorphic disorder better explains it, diagnose that disorder **with absent insight/delusional beliefs**." },
+    truth: "If OCD, body dysmorphic disorder or hoarding disorder (added by the APA, September 2023) better explains it, diagnose that disorder **with absent insight/delusional beliefs**." },
   { id: "t2-10", tag: "Course specifiers", sec: "s2-specifiers",
     trap: "Course specifiers can be added at the first diagnosis of schizophrenia.",
     truth: "Course specifiers (first episode, multiple episodes, continuous) are used only **after 1 year** of the disorder." },

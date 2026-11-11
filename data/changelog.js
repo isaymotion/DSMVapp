@@ -9,6 +9,17 @@
    and "Latest version <Month YYYY>" in the footer (index.html), data/app-meta.js and README.md. */
 window.APP_CHANGELOG = [
   {
+    "version": "58.0.0",
+    "date": "2026-11-11",
+    "title": "APA text updates of September 2023 and September 2024",
+    "items": [
+      { "type": "update", "ch": "ch07", "href": "#/c/ch07/guide", "text": "Adjustment disorders: the subtype definitions follow the APA's September 2024 revision, which defines \u201cdisturbance of conduct\u201d for the first time (codes unchanged). Prolonged grief disorder: the normal-grief differential now asks for clinically significant distress or impairment." },
+      { "type": "update", "ch": "ch02", "href": "#/c/ch02/guide", "text": "Delusional disorder and schizophrenia differentials: the absent-insight rule now covers hoarding disorder as well as OCD and body dysmorphic disorder (APA, September 2023)." },
+      { "type": "update", "ch": "ch04", "href": "#/c/ch04/guide", "text": "DMDD differential: note on the contradictory sentence about ODD that the APA removed in September 2024." },
+      { "type": "update", "ch": "ch15", "href": "#/c/ch15/guide", "text": "Conduct disorder differential: note on the APA's September 2023 correction of the adjustment disorder entry (\u201cresolve\u201d within 6 months, not \u201cdo not resolve\u201d)." }
+    ]
+  },
+  {
     "version": "57.0.0",
     "date": "2026-11-09",
     "title": "Fact-check: Chapters 2–11 and 16–18",

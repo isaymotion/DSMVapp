@@ -116,7 +116,7 @@
       pearls: ["Staying out at night and truancy count only if they began before 13.", "Runaways that directly result from abuse usually do not count.", "Onset split at 10 decides F91.1 vs F91.2.", "F91.9 is also the unspecified residual code: write the full name.", "Get collateral history: youth tend to minimize."],
       cmp: { symptoms: "Aggression, property destruction, deceit or theft, serious rule violations (3 of 15)", exclusions: "ASPD criteria met at 18 or older", prevalence: "Median 4% (1-year)", course: "Rarely starts after 16; most remit; childhood onset persists more" },
       clues: [["Core picture", "A 15-year-old who shoplifts, cons her parents for money and has skipped school since age 12"], ["Duration rule", "3 in 12 months, 1 in last 6"], ["Code", "F91.1 (before 10), F91.2 (no symptom before 10), F91.9 (unknown)"]],
-      updates: upd("**F91.1**, **F91.2** and **F91.9** are unchanged in the October 2024, 2025 and 2026 ICD-10-CM updates.")
+      updates: [{ kind: "post", year: "2023", title: "Adjustment disorder differential corrected", source: "APA DSM-5-TR Update, September 2023 (psychiatry.org)", text: "The printed p. 537 entry said stressor-linked conduct problems that do **not** resolve within 6 months suggest adjustment disorder; the APA corrected it to **resolve**, matching adjustment disorder Criterion E." }].concat(upd("**F91.1**, **F91.2** and **F91.9** are unchanged in the October 2024, 2025 and 2026 ICD-10-CM updates."))
     },
     {
       id: "pyromania", ch: "ch15", sec: "s15-pyromania", pages: "537–539", critPages: "537",

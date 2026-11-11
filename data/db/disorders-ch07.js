@@ -116,7 +116,7 @@ SP.disorders = (SP.disorders || []).concat([
       ["F43.21", "With depressed mood", ""],
       ["F43.22", "With anxiety", ""],
       ["F43.23", "With mixed anxiety and depressed mood", ""],
-      ["F43.24", "With disturbance of conduct", ""],
+      ["F43.24", "With disturbance of conduct", "Violates others’ rights or major age-appropriate norms (definition added September 2024)"],
       ["F43.25", "With mixed disturbance of emotions and conduct", ""],
       ["F43.20", "Unspecified", ""]
     ],
@@ -143,7 +143,8 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     pearls: ["3 in, 6 out.", "Full PTSD picture after a non-Criterion A stressor = adjustment disorder.", "Linked with suicide attempts and suicide."],
     cmp: { symptoms: "Distress or impairment after any stressor", exclusions: "Any other disorder; bereavement; prolonged grief", prevalence: "5%–20% of outpatients", course: "Resolves within 6 months of stressor’s end" },
-    clues: [["Core picture", "Tearful and struggling at work 6 weeks after layoffs were announced, not meeting MDD"], ["Codes", "F43.20–F43.25"]]
+    clues: [["Core picture", "Tearful and struggling at work 6 weeks after layoffs were announced, not meeting MDD"], ["Codes", "F43.20–F43.25"]],
+    updates: [{ kind: "post", year: "2024", title: "Subtype definitions revised", source: "APA DSM-5-TR Update, September 2024 (psychiatry.org)", text: "The subtypes now name **depressive** or **anxiety symptoms**, and **disturbance of conduct** is defined as behavior that violates others’ rights or major age-appropriate norms and rules (e.g., truancy, vandalism, reckless driving, fighting). Codes F43.20–F43.25 unchanged." }]
   },
   {
     id: "pgd", ch: "ch07", sec: "s7-pgd-criteria", pages: "322–327", critPages: "322–323",
@@ -170,7 +171,8 @@ SP.disorders = (SP.disorders || []).concat([
     ],
     pearls: ["New in DSM-5-TR.", "Yearning separates it from PTSD.", "Hearing the deceased is common in normal grief.", "Suicidal ideation independent of MDD and PTSD."],
     cmp: { symptoms: "Yearning or preoccupation + 3 of 8", exclusions: "MDD, PTSD; within cultural norms", prevalence: "Unknown (≈10% with a 6-month definition)", course: "May be especially prolonged after a child’s death (preliminary)" },
-    clues: [["Core picture", "A widower 18 months on who aches for his wife daily, cannot believe she is gone and finds life meaningless"], ["Code", "F43.81 (printed F43.8)"]]
+    clues: [["Core picture", "A widower 18 months on who aches for his wife daily, cannot believe she is gone and finds life meaningless"], ["Code", "F43.81 (printed F43.8)"]],
+      updates: [{ kind: "post", year: "2024", title: "Normal grief: clinical significance", source: "APA DSM-5-TR Update, September 2024 (psychiatry.org)", text: "In the normal-grief differential, the requirement that grief **interfere with functioning** became **clinically significant distress or impairment**. Duration and the norms test unchanged." }]
   },
   {
     id: "other-specified-trauma", ch: "ch07", sec: "s7-other", pages: "327–328", critPages: "327–328",

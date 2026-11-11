@@ -375,6 +375,7 @@ SP.add("ch15", "guide", {
               ["[[dx:ied|IED]]", "IED aggression is **impulsive only**, not premeditated or for gain, and IED has no **nonaggressive** symptoms", "IED only if outbursts need **separate attention**"],
               ["[[dx:adjustment|Adjustment disorder]] (with disturbance of conduct)", "Conduct problems that start **in clear association with a stressor** and do not meet another disorder; by its own criteria (Chapter 7), adjustment disorder does not outlast the stressor and its consequences by **more than 6 months**. CD needs a **repetitive, persistent** pattern with impairment", "Choose one"]
             ] },
+            { type: "update", kind: "post", year: "2023", title: "Adjustment disorder entry corrected (September 2023)", source: "APA DSM-5-TR Update, September 2023 (psychiatry.org)", text: "This is outside the printed DSM-5-TR. The printed adjustment disorder entry here (p. 537) says to consider adjustment disorder when stressor-linked conduct problems do **not** resolve within 6 months of the stressor’s end, the reverse of adjustment disorder Criterion E (Ch 7). The APA corrected it to **resolve within 6 months**. The table above already follows the corrected rule." },
             { type: "defs", title: "Comorbidity (p. 537)", items: [
               ["ADHD and ODD", "Both common; this combination predicts **worse outcomes**."],
               ["Antisocial personality features", "People with antisocial personality traits often also meet criteria for conduct disorder."],

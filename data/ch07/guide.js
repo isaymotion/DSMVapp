@@ -353,14 +353,15 @@ SP.add("ch07", "guide", {
               ["D", "Not **normal bereavement**, and **prolonged grief disorder** does not explain it better."],
               ["E", "Once the stressor or its consequences end, symptoms do not persist **more than another 6 months**."]
             ], specifiers: [["Duration", "**Acute**: less than 6 months · **Persistent (chronic)**: 6 months or more, possible only with a **chronic stressor** or one with **enduring consequences**"]] },
-            { type: "table", caption: "Subtypes and codes (p. 319)", head: ["Code", "Subtype", "Predominant symptoms"], rows: [
-              ["**F43.21**", "With depressed mood", "Low mood, tearfulness, hopelessness"],
-              ["**F43.22**", "With anxiety", "Nervousness, worry, jitteriness, separation anxiety"],
-              ["**F43.23**", "With mixed anxiety and depressed mood", "Both"],
-              ["**F43.24**", "With disturbance of conduct", "Conduct problems"],
-              ["**F43.25**", "With mixed disturbance of emotions and conduct", "Emotional symptoms and conduct problems"],
-              ["**F43.20**", "Unspecified", "Not classifiable in the subtypes above"]
+            { type: "table", caption: "Subtypes and codes (p. 319; definitions as revised by the APA, September 2024)", head: ["Code", "Subtype", "Predominant symptoms"], rows: [
+              ["**F43.21**", "With depressed mood", "**Depressive symptoms** (e.g., low mood, tearfulness, hopelessness)"],
+              ["**F43.22**", "With anxiety", "**Anxiety symptoms** (e.g., nervousness, worry, jitteriness, separation anxiety)"],
+              ["**F43.23**", "With mixed anxiety and depressed mood", "Depressed mood and anxiety symptoms together"],
+              ["**F43.24**", "With disturbance of conduct", "Behavior that **violates others’ rights** or major **age-appropriate norms and rules** (e.g., truancy, vandalism, reckless driving, fighting, ignoring legal responsibilities)"],
+              ["**F43.25**", "With mixed disturbance of emotions and conduct", "Emotional symptoms (e.g., depressed mood, anxiety) **and** a disturbance of conduct"],
+              ["**F43.20**", "Unspecified", "Maladaptive reactions that fit none of the subtypes above (not changed)"]
             ] },
+            { type: "update", kind: "post", year: "2024", title: "Subtype definitions revised (September 2024)", source: "APA DSM-5-TR Update, September 2024 (psychiatry.org)", text: "This is outside the printed DSM-5-TR. The APA reworded the subtype definitions (p. 319) to make them more meaningful and, for the first time, **defined “disturbance of conduct”**: behavior that violates the rights of others or major age-appropriate norms and rules, with examples such as truancy, vandalism, reckless driving and fighting. The printing said only that a disturbance of conduct is predominant. The depressed, anxious and mixed subtypes now name depressive or anxiety **symptoms**, with the old descriptions kept as examples. **The codes did not change** (F43.20–F43.25), and the unspecified subtype was left as it was. The table above uses the revised definitions. The new conduct definition echoes the language of conduct disorder (Ch 15; app observation)." },
             { type: "list", title: "Features, prevalence and course (pp. 320–321)", items: [
               "Stressors can be single (a breakup), multiple, recurrent (seasonal business crises), continuous (chronic illness, a crime-ridden neighborhood), community-wide (disaster) or **developmental** (starting school, marriage, parenthood, retirement).",
               "Can follow a **death** when grief exceeds cultural, religious or age-appropriate norms and does not meet prolonged grief disorder.",
@@ -456,10 +457,11 @@ SP.add("ch07", "guide", {
               ["Yearning", "**Present**", "Not central", "**Absent**"]
             ] },
             { type: "defs", title: "Other distinctions (pp. 326–327)", items: [
-              ["Normal grief", "Severe grief for at least **12 months** (6 in youth) that impairs function and exceeds norms. **Anniversary** spikes alone are not the disorder."],
+              ["Normal grief", "Severe grief for at least **12 months** (6 in youth) that is **clinically significant** (distress or impairment) and exceeds norms. **Anniversary** spikes alone are not the disorder. Wording as revised in September 2024; see the update box."],
               ["Separation anxiety disorder", "Anxiety about separation from **living** attachment figures; prolonged grief concerns the **deceased**."],
               ["Psychotic disorders", "Sensing or seeing the deceased (often **hypnagogic**, sometimes comforting) is common in normal grief. Diagnose psychosis only with other symptoms such as delusions or disorganization."]
             ] },
+            { type: "update", kind: "post", year: "2024", title: "Normal grief vs prolonged grief: clinical significance (September 2024)", source: "APA DSM-5-TR Update, September 2024 (psychiatry.org)", text: "This is outside the printed DSM-5-TR. In the normal-grief entry of this differential (pp. 326–327), the printing asks that the severe grief **interfere with the capacity to function**. The APA replaced that with **clinical significance**: clinically significant **distress or impairment** in functioning, in line with the disorder’s own criteria. Marked distress can therefore count even without functional interference (app reading). The 12-month duration (6 months in children and adolescents) and the cultural, social or religious norms test did not change." },
             { type: "p", text: "**Comorbidity** (p. 327): most often **MDD**, **PTSD** (especially after violent or accidental deaths) and **substance use disorders**; separation anxiety about living attachment figures may co-occur. MDD can be diagnosed **alongside** prolonged grief disorder when its criteria are separately met." },
             { type: "callout", kind: "exam", text: "The bereavement ladder: **normal grief** (no disorder) → impairing, out-of-proportion grief before 12 months → **adjustment disorder** → severe grief beyond **12 months** (6 in youth) meeting criteria → **prolonged grief disorder** → beyond 12 months but subthreshold → **other specified**. A **major depressive episode** can be diagnosed at any point after a death (Ch 4). (app guidance)" }
           ]
