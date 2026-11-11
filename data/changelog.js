@@ -9,6 +9,15 @@
    and "Latest version <Month YYYY>" in the footer (index.html), data/app-meta.js and README.md. */
 window.APP_CHANGELOG = [
   {
+    "version": "59.0.0",
+    "date": "2026-11-11",
+    "title": "Chapter 16 treatment bridges sourced",
+    "items": [
+      { "type": "correction", "ch": "ch16", "href": "#/dx/alcohol-withdrawal", "link": "Alcohol withdrawal", "text": "Every treatment-bridge point for the Chapter 16 disorders was checked against current guidelines and labels (ASAM, APA, USPSTF, FDA, DEA, CDC, the 2025 benzodiazepine-tapering guideline). Corrected: thiamine can be given before, with or after glucose (never delay glucose); antipsychotics in alcohol withdrawal only for hallucinations or delirium not controlled by benzodiazepines; MDMA hyponatremia is treated by fluid restriction; smoke (not nicotine) induces CYP1A2; observe at least 4 hours after naloxone. Points that could not be confirmed are marked \u201capp guidance; not verified\u201d." },
+      { "type": "feature", "text": "Treatment bridges can now show a Sources line linking to the guidelines and labels behind them (Chapter 16 first)." }
+    ]
+  },
+  {
     "version": "58.0.0",
     "date": "2026-11-11",
     "title": "APA text updates of September 2023 and September 2024",

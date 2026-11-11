@@ -6,7 +6,7 @@
      SP.add(ch, 'dxline',   [{ id, tag, case, parts: [{ label, options, answer | answer: [..], multi }], line, why }])
      SP.add(ch, 'counting', [{ id, tag, case, ask, items: [[text, counts, why]], need, met, why }])
      SP.add(ch, 'traps',    [{ id, tag, trap, truth, sec }])
-     SP.dxExtra   = [...].concat([{ id: disorderId, ask: [[criterion, question, tip]], tx: { first, points, stahl: [[label, path]], asOf } }])
+     SP.dxExtra   = [...].concat([{ id: disorderId, ask: [[criterion, question, tip]], tx: { first, points, stahl: [[label, path]], sources: [[label, url]], asOf } }])
      SP.complaintData = [...].concat([{ id, title, intro, ask: [], mustNotMiss: [], items: [{ ch, dx, name, when }] }]) */
 (function () {
   'use strict';

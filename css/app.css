@@ -1809,6 +1809,9 @@ body.tabbar-hidden .lbar { bottom: calc(14px + env(safe-area-inset-bottom, 0px))
 .tx-box p, .tx-box li { font-size: .97rem; line-height: 1.55; }
 .tx-box__links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 10px 0 0; }
 .tx-box__links > span { font: 700 .78rem/1 var(--sans); color: var(--ink-3); margin-right: 2px; }
+.tx-box__src { margin: 10px 0 0; font: 500 .8rem/1.5 var(--sans); color: var(--ink-3); }
+.tx-box__src > span { font-weight: 700; margin-right: 4px; }
+.tx-box__src a { color: inherit; text-decoration: underline; text-underline-offset: 2px; overflow-wrap: anywhere; }
 .ref-chip--ext { color: var(--m-clin); border-color: color-mix(in srgb, var(--m-clin) 45%, var(--rule)); }
 
 /* practice page */

@@ -1,6 +1,7 @@
 /* Chapter 16 clinical extras, merged into the disorder library when the app loads (js/practice.js).
    ask: [criterion, plain-language question, optional tip]   — "How to ask it" on each disorder page
-   tx:  treatment bridge, clearly labeled as outside the DSM, linking to the Stahl Study Companion
+   tx:  treatment bridge, clearly labeled as outside the DSM, linking to the Stahl Study Companion;
+        optional sources: [[label, url]] lists the guidelines and labels behind it
         (paths are relative to https://isaymotion.github.io/Stahl/#/)
    Complaint hub entries (SP.complaintData) are shared across chapters: entries with the same id merge. */
 (function () {
@@ -21,15 +22,16 @@
         ["Withdrawal history", "“Have you ever had shakes, seizures or seen things after stopping?”", "Predicts complicated withdrawal."]
       ]),
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "**Naltrexone** (oral or monthly injection) or **acamprosate** for moderate to severe AUD, with psychosocial treatment (CBT, motivational enhancement, mutual-help groups).",
         points: [
-          "Naltrexone is contraindicated with current opioid use or acute hepatitis; acamprosate needs renal dose adjustment but is safe in liver disease.",
-          "**Disulfiram** works only with supervised adherence; **topiramate** and **gabapentin** are off-label alternatives.",
-          "Give **thiamine**; check liver function, GGT and CDT to monitor drinking.",
-          "Treat co-occurring depression and anxiety, but reassess after several weeks of abstinence."
+          "Naltrexone is contraindicated with current opioid use or acute hepatitis; acamprosate needs a lower dose in kidney impairment (avoid if creatinine clearance is under 30) but is safe in liver disease.",
+          "**Disulfiram** works best with supervised adherence; **topiramate** and **gabapentin** are off-label alternatives.",
+          "Give **thiamine** if malnourished or in withdrawal; liver tests, GGT and CDT can help monitor drinking (app guidance; not verified).",
+          "Treat co-occurring depression and anxiety, but reassess after several weeks of abstinence (app guidance; not verified)."
         ],
-        stahl: [["Alcohol", "c/ch13/guide/s13-alcohol"], ["Naltrexone", "drugs/naltrexone"], ["Acamprosate", "drugs/acamprosate"], ["Disulfiram", "drugs/disulfiram"], ["Topiramate", "drugs/topiramate"], ["Gabapentin", "drugs/gabapentin"]]
+        stahl: [["Alcohol", "c/ch13/guide/s13-alcohol"], ["Naltrexone", "drugs/naltrexone"], ["Acamprosate", "drugs/acamprosate"], ["Disulfiram", "drugs/disulfiram"], ["Topiramate", "drugs/topiramate"], ["Gabapentin", "drugs/gabapentin"]],
+        sources: [["APA guideline: alcohol use disorder (2018)", "https://psychiatryonline.org/doi/book/10.1176/appi.books.9781615371969"], ["Guideline summary (Psychiatric News)", "https://psychnews.psychiatryonline.org/doi/10.1176/appi.pn.2018.pp1b4"]]
       }
     },
     {
@@ -43,15 +45,16 @@
         ["Other drugs", "“Are you also taking sleeping pills or anxiety pills?”"]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "**Benzodiazepines** are first-line, symptom-triggered by CIWA-Ar when monitoring allows (e.g., [[stahl:drugs/diazepam|diazepam]]); **phenobarbital** is an alternative in monitored settings.",
         points: [
-          "Give **thiamine before glucose** to prevent Wernicke encephalopathy.",
-          "Admit for prior seizures or delirium tremens, severe symptoms, serious medical illness or no safe support; correct fluids and electrolytes.",
-          "Avoid antipsychotics alone (they lower the seizure threshold); use them only as adjuncts for hallucinations or agitation.",
+          "Give **thiamine** (parenteral if malnourished or severe) to prevent Wernicke encephalopathy; it can be given before, with or after glucose, so **never delay glucose** for hypoglycemia.",
+          "Admit for prior seizures or delirium tremens, severe symptoms, serious medical illness or no safe support; correct fluids and electrolytes (app guidance; not verified).",
+          "Do not use antipsychotics alone; add one only for hallucinations or delirium not controlled by benzodiazepines.",
           "Withdrawal management is not treatment: start relapse-prevention medicines and link to care."
         ],
-        stahl: [["Alcohol", "c/ch13/guide/s13-alcohol"], ["Diazepam", "drugs/diazepam"]]
+        stahl: [["Alcohol", "c/ch13/guide/s13-alcohol"], ["Diazepam", "drugs/diazepam"]],
+        sources: [["ASAM alcohol withdrawal guideline (2020)", "https://www.asam.org/quality-care/clinical-guidelines/alcohol-withdrawal-management"], ["Hospitalist summary (J Hosp Med)", "https://blogs.the-hospitalist.org/content/clinical-guideline-highlights-hospitalist-2020-american-society-addiction-medicine-clinical"]]
       }
     },
     {
@@ -60,15 +63,16 @@
         ["Overdose", "“Have you ever overdosed or needed naloxone? Do you have naloxone at home?”"]
       ]),
       tx: {
-        asOf: "October 2026",
-        first: "Offer **medication for OUD** promptly: **buprenorphine** or **methadone** (both cut overdose death), or **extended-release naltrexone** after detoxification.",
+        asOf: "November 2026",
+        first: "Offer **medication for OUD** promptly: **buprenorphine** or **methadone** (both linked to lower overdose death), or **extended-release naltrexone** after detoxification.",
         points: [
           "Since 2023 any clinician with a DEA registration that includes Schedule III can prescribe buprenorphine (no X-waiver); methadone for OUD is dispensed through opioid treatment programs.",
           "With fentanyl, buprenorphine can **precipitate withdrawal**; start when withdrawal is clear or use a low-dose or high-dose induction strategy.",
           "Prescribe **naloxone** to every patient (available over the counter since 2023); test for HIV, hepatitis B and C.",
           "Continue treatment long term; stopping raises overdose risk because tolerance falls."
         ],
-        stahl: [["Opioid use disorder treatment", "c/ch13/guide/s13-oud-tx"], ["Buprenorphine", "drugs/buprenorphine"], ["Methadone", "drugs/methadone"], ["Naltrexone", "drugs/naltrexone"], ["Naloxone", "drugs/naloxone"]]
+        stahl: [["Opioid use disorder treatment", "c/ch13/guide/s13-oud-tx"], ["Buprenorphine", "drugs/buprenorphine"], ["Methadone", "drugs/methadone"], ["Naltrexone", "drugs/naltrexone"], ["Naloxone", "drugs/naloxone"]],
+        sources: [["ASAM OUD guideline (2020)", "https://www.asam.org/docs/default-source/quality-science/2020-asam-npg-release-final-covid.pdf"], ["Sordo et al., BMJ 2017", "https://www.doi.org/10.1136/bmj.j1550"], ["DEA letter on the X-waiver (2023)", "https://www.deadiversion.usdoj.gov/pubs/docs/A-23-0020-Dear-Registrant-Letter-Signed.pdf"], ["FDA: OTC naloxone (2023)", "https://www.fda.gov/news-events/press-announcements/fda-approves-first-over-counter-naloxone-nasal-spray"], ["PCSS: buprenorphine with fentanyl", "https://pcssnow.org/wp-content/uploads/2023/04/Initiating-Buprenorphine-for-Patients-Using-Fentanyl.pdf"]]
       }
     },
     {
@@ -79,14 +83,15 @@
         ["Co-ingestants", "Ask about alcohol, benzodiazepines, xylazine and stimulants."]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "Support breathing and give **naloxone**, titrated to breathing rather than full arousal to avoid severe precipitated withdrawal.",
         points: [
-          "Observe after reversal: naloxone wears off before long-acting opioids and some fentanyl analogs.",
-          "Naloxone does not reverse xylazine or benzodiazepines.",
-          "After an overdose, offer buprenorphine or methadone and a naloxone kit before discharge."
+          "Observe for at least 4 hours after the last dose: naloxone wears off before long-acting or very potent opioids, so repeat doses or an infusion may be needed.",
+          "Naloxone does not reverse xylazine (still give it for the opioid) or benzodiazepines.",
+          "After an overdose, give a naloxone kit and offer to start buprenorphine or methadone before discharge (app guidance; not verified)."
         ],
-        stahl: [["Opioids", "c/ch13/guide/s13-opioids"], ["Naloxone", "drugs/naloxone"]]
+        stahl: [["Opioids", "c/ch13/guide/s13-opioids"], ["Naloxone", "drugs/naloxone"]],
+        sources: [["NHS SPS: naloxone for adult overdose", "https://www.sps.nhs.uk/articles/reversing-an-adult-opioid-overdose-with-naloxone-in-the-medical-setting/"], ["CDC: xylazine", "https://www.cdc.gov/overdose-prevention/about/what-you-should-know-about-xylazine.html"]]
       }
     },
     {
@@ -97,13 +102,14 @@
         ["Precipitated", "“Did you take naltrexone, buprenorphine or naloxone just before this started?”"]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "Treat with an opioid agonist: **buprenorphine** (once withdrawal is objective) or **methadone**, ideally continued as maintenance.",
         points: [
           "**Lofexidine** or clonidine reduce autonomic symptoms when agonists are not used; add symptomatic medicines for diarrhea, nausea and aches.",
           "Detoxification alone has high relapse and overdose risk."
         ],
-        stahl: [["Opioid use disorder treatment", "c/ch13/guide/s13-oud-tx"], ["Buprenorphine", "drugs/buprenorphine"], ["Lofexidine", "drugs/lofexidine"]]
+        stahl: [["Opioid use disorder treatment", "c/ch13/guide/s13-oud-tx"], ["Buprenorphine", "drugs/buprenorphine"], ["Lofexidine", "drugs/lofexidine"]],
+        sources: [["ASAM OUD guideline (2020)", "https://www.asam.org/docs/default-source/quality-science/2020-asam-npg-release-final-covid.pdf"], ["Lofexidine FDA approval (2018)", "https://www.pharmacytimes.com/view/fda-approves-first-nonopioid-treatment-for-management-of-opioid-withdrawal-symptoms-in-adults"]]
       }
     },
     {
@@ -112,14 +118,15 @@
         ["Other depressants", "“Do you drink or take opioids too?”", "Combinations cause fatal overdoses."]
       ]),
       tx: {
-        asOf: "October 2026",
-        first: "A **gradual, individualized taper**, often 5–10% every 2–4 weeks with slower steps at the end, combined with CBT for insomnia or anxiety.",
+        asOf: "November 2026",
+        first: "A **gradual, individualized taper**, often 5–10% every 2–4 weeks and no more than 25% every 2 weeks, combined with CBT for insomnia or anxiety.",
         points: [
-          "Switching to a longer-acting benzodiazepine (e.g., [[stahl:drugs/diazepam|diazepam]]) can smooth the taper.",
-          "No medicine is approved for sedative use disorder; treat the underlying anxiety or insomnia with non-benzodiazepine options.",
-          "Prescribe naloxone if opioids are also used."
+          "Switching to a longer-acting benzodiazepine (e.g., [[stahl:drugs/diazepam|diazepam]]) is an option for some patients but is not required.",
+          "No medicine is approved for sedative use disorder; treat the underlying anxiety or insomnia with CBT and options that do not act on GABA (avoid adding Z-drugs or gabapentin).",
+          "Prescribe naloxone if opioids are also used (app guidance; not verified)."
         ],
-        stahl: [["Sedatives", "c/ch13/guide/s13-sedatives"], ["Diazepam", "drugs/diazepam"]]
+        stahl: [["Sedatives", "c/ch13/guide/s13-sedatives"], ["Diazepam", "drugs/diazepam"]],
+        sources: [["Joint guideline on benzodiazepine tapering (2025)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12463801/"], ["ACP summary", "https://immattersacp.org/weekly/archives/2025/06/24/2.htm"]]
       }
     },
     {
@@ -130,10 +137,11 @@
         ["Alcohol", "“How much do you drink?”", "Cross-tolerant; withdrawal can combine."]
       ],
       tx: {
-        asOf: "October 2026",
-        first: "Restart a benzodiazepine at a stabilizing dose, then **taper slowly**; severe withdrawal needs inpatient care.",
-        points: ["Withdrawal from short-acting drugs starts sooner and can cause **seizures and delirium**.", "Never stop a long-term benzodiazepine abruptly."],
-        stahl: [["Sedatives", "c/ch13/guide/s13-sedatives"]]
+        asOf: "November 2026",
+        first: "Stabilize on a benzodiazepine dose, then **taper slowly**; severe or high-risk withdrawal needs inpatient or medically managed care.",
+        points: ["Withdrawal from short-acting drugs starts sooner and can cause **seizures and delirium**.", "Do not stop a long-term benzodiazepine abruptly."],
+        stahl: [["Sedatives", "c/ch13/guide/s13-sedatives"]],
+        sources: [["Joint guideline on benzodiazepine tapering (2025)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12463801/"]]
       }
     },
     {
@@ -142,14 +150,15 @@
         ["Complications", "“Any chest pain, paranoia, or hearing things while using?”"]
       ]),
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "**Contingency management** has the strongest evidence, with CBT and community reinforcement.",
         points: [
           "No medication is FDA-approved for stimulant use disorder; **bupropion plus extended-release naltrexone** showed benefit for methamphetamine use disorder (off-label).",
           "Fentanyl contamination is common: prescribe **naloxone** and test strips.",
           "For agitation or psychosis during intoxication, use benzodiazepines first, then an antipsychotic if needed."
         ],
-        stahl: [["Stimulants", "c/ch13/guide/s13-stimulants"], ["Bupropion", "drugs/bupropion"], ["Naltrexone", "drugs/naltrexone"]]
+        stahl: [["Stimulants", "c/ch13/guide/s13-stimulants"], ["Bupropion", "drugs/bupropion"], ["Naltrexone", "drugs/naltrexone"]],
+        sources: [["ASAM/AAAP stimulant use disorder guideline (2023)", "https://www.aaap.org/wp-content/uploads/2023/11/stud_guideline_document_final.pdf"], ["NIDA: ADAPT-2 trial", "https://archives.nida.nih.gov/news-events/noras-blog/2021/01/adapt-2-trial-results-deliver-breakthrough-in-long-search-methamphetamine-use-disorder-medication"]]
       }
     },
     {
@@ -159,10 +168,11 @@
         ["Vomiting", "“Any bouts of vomiting relieved by hot showers?”", "Cannabinoid hyperemesis syndrome."]
       ]),
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "**Motivational enhancement, CBT and contingency management**; no medication is FDA-approved.",
-        points: ["Withdrawal is usually managed with support and sleep hygiene.", "Advise stopping in psychosis, pregnancy and cannabinoid hyperemesis syndrome."],
-        stahl: [["Cannabis", "c/ch13/guide/s13-cannabis"]]
+        points: ["Withdrawal is usually mild and managed with support and symptom relief.", "Stopping is the treatment for cannabinoid hyperemesis syndrome; advise stopping in psychosis and pregnancy (app guidance; not verified)."],
+        stahl: [["Cannabis", "c/ch13/guide/s13-cannabis"]],
+        sources: [["Psychiatric Times review", "https://www.psychiatrictimes.com/view/current-treatments-for-cannabis-use-disorder"], ["AGA update on cannabinoid hyperemesis (2024)", "https://pubmed.ncbi.nlm.nih.gov/38456869/"]]
       }
     },
     {
@@ -174,14 +184,15 @@
         ["Readiness", "“Would you like help to quit in the next month?”"]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "**Varenicline** or **combination nicotine replacement** (patch plus a short-acting form) with counseling; **bupropion** is an alternative.",
         points: [
           "In the EAGLES trial varenicline did not significantly raise neuropsychiatric events, including in psychiatric patients; the FDA removed its boxed warning in 2016.",
-          "Cytisinicline received an FDA complete response letter in June 2026; it is not yet approved in the United States.",
-          "Stopping smoking raises levels of clozapine and olanzapine (CYP1A2 induction ends): monitor and adjust."
+          "Cytisinicline received an FDA complete response letter on June 20, 2026, for manufacturing and labeling issues, not safety or efficacy; it is not yet approved in the United States.",
+          "Stopping smoking raises levels of clozapine and olanzapine: smoke (not nicotine) induces CYP1A2, and the effect fades within days, so check levels and adjust the dose. Nicotine replacement does not change this."
         ],
-        stahl: [["Nicotine", "c/ch13/guide/s13-nicotine"], ["Varenicline", "drugs/varenicline"], ["Bupropion", "drugs/bupropion"], ["Nicotine replacement", "drugs/nicotine"]]
+        stahl: [["Nicotine", "c/ch13/guide/s13-nicotine"], ["Varenicline", "drugs/varenicline"], ["Bupropion", "drugs/bupropion"], ["Nicotine replacement", "drugs/nicotine"]],
+        sources: [["USPSTF tobacco recommendation (2021)", "https://www.uspreventiveservicestaskforce.org/uspstf/document/RecommendationStatementFinal/tobacco-use-in-adults-and-pregnant-women-counseling-and-interventions"], ["EAGLES trial (Lancet 2016)", "https://pubmed.ncbi.nlm.nih.gov/27116918/"], ["Achieve 8-K: cytisinicline CRL (2026)", "https://www.sec.gov/Archives/edgar/data/0000949858/000119312526344571/achv-ex99_1.htm"], ["NSW Health: smoking, clozapine and olanzapine", "https://www.health.nsw.gov.au/tobacco/Factsheets/tool-8-clozapine-olazapine.pdf"]]
       }
     },
     {
@@ -192,10 +203,11 @@
         ["Danger", "Check temperature, heart rate and agitation.", "Hyperthermia and serotonin syndrome with MDMA; violence and nystagmus with PCP."]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "A **calm, low-stimulation setting** with reassurance (“talking down”); **benzodiazepines** for severe anxiety or agitation.",
-        points: ["Cool and hydrate for hyperthermia; check sodium after MDMA.", "Avoid restraints if possible with PCP; watch for rhabdomyolysis."],
-        stahl: [["Hallucinogens", "c/ch13/guide/s13-hallucinogens"]]
+        points: ["Cool rapidly for hyperthermia; check sodium after MDMA and avoid excess water (fluid restriction treats its hyponatremia).", "Avoid restraints if possible with PCP; watch for rhabdomyolysis."],
+        stahl: [["Hallucinogens", "c/ch13/guide/s13-hallucinogens"]],
+        sources: [["MSD Manual: hallucinogens", "https://www.msdmanuals.com/professional/special-subjects/illicit-drugs-and-intoxicants/hallucinogens"], ["Ecstasy toxicity review (Crit Care 2007)", "https://link.springer.com/content/pdf/10.1186/cc6166.pdf"]]
       }
     },
     {
@@ -210,10 +222,11 @@
         ["Suicide", "“Have money troubles ever made you think of ending your life?”", "Suicide risk is high."]
       ],
       tx: {
-        asOf: "October 2026",
-        first: "**CBT** and motivational interviewing, with Gamblers Anonymous, self-exclusion and financial controls.",
-        points: ["No medication is FDA-approved; opioid antagonists such as [[stahl:drugs/naltrexone|naltrexone]] have the most evidence (off-label).", "Screen for depression, substance use and suicide; involve family when possible."],
-        stahl: [["Impulsive and compulsive disorders", "c/ch13/guide/s13-impulse"], ["Naltrexone", "drugs/naltrexone"]]
+        asOf: "November 2026",
+        first: "**CBT** and motivational interviewing; Gamblers Anonymous, self-exclusion and financial controls can help (app guidance; not verified).",
+        points: ["No medication is FDA-approved; opioid antagonists such as [[stahl:drugs/naltrexone|naltrexone]] have the best, though low-certainty, evidence (off-label).", "Screen for depression, substance use and suicide; involve family when possible (app guidance; not verified)."],
+        stahl: [["Impulsive and compulsive disorders", "c/ch13/guide/s13-impulse"], ["Naltrexone", "drugs/naltrexone"]],
+        sources: [["Division on Addiction: treating gambling disorder", "https://www.divisiononaddiction.org/outreach-resources/gdsd/toolkit/treating-gambling-disorder/"], ["Cochrane: medicines for problem gambling", "https://dx.doi.org/10.1002/14651858.CD008936.pub2"]]
       }
     }
   ]);
