@@ -1,9 +1,9 @@
 # Handoff: DSM-5-TR Study Companion, chapter-by-chapter build
-Updated Nov 9, 2026 (after the **global fact-check of Chapters 2–11 and 16–18**; every chapter has now had the two-checker fact-check). Owner: Ma. Isabella P. Navarro, MD (psychiatry resident). This covers the **study-guide chapters**; the case-presentation work is in `claude/handoff.md`.
+Updated Nov 11, 2026 (after the **APA September 2023 and September 2024 text updates**, release 58.0.0; every chapter has had the two-checker fact-check, done Nov 9). Owner: Ma. Isabella P. Navarro, MD (psychiatry resident). This covers the **study-guide chapters**; the case-presentation work is in `claude/handoff.md`.
 
 ## 1. Project
 - Static PWA for psychiatry residents, built from DSM-5-TR (2022), one chapter at a time. **All 22 Section II chapters and the four Section III chapters are built and fact-checked**: 23 Assessment Measures (pp. 841–857, 858 blank), 24 Culture and Psychiatric Diagnosis (pp. 859–879), 25 Conditions for Further Study (pp. 903–927), 26 Alternative DSM-5 Model for Personality Disorders (pp. 881–901, 902 blank). The app's numbering 23–26 is its own; the manual does not number Section III.
-- Repo `isaymotion/DSMVapp`, branch `main` (last commit **f0d5902**, release 57.0.0). The user's own commits since Ch 26: the design refresh (55.0.0, Nov 5) and the DSM-V-TR icon (56.0.0, 6e73306, Nov 6). Live at https://isaymotion.github.io/DSMVapp/. No build step.
+- Repo `isaymotion/DSMVapp`, branch `main` (last commit **a088012**, release 58.0.0). The user's own commits since Ch 26: the design refresh (55.0.0, Nov 5) and the DSM-V-TR icon (56.0.0, 6e73306, Nov 6). Live at https://isaymotion.github.io/DSMVapp/. No build step.
 - The test and helper scripts are on branch **`dev-tools`** (adds `chapter-tools/factcheck_brief.md`, `research/codes-2026-11.md` = the Nov 9 APA/ICD-10-CM code-change report for Ch 2–11 and 16–18, and `HANDOFF.md` = a copy of this doc), which is not published: folders `chapter-tools/` and `tests/`. The scripts still work after the design refresh.
 - Sibling app linked from treatment bridges: Stahl Study Companion. Repo `isaymotion/Stahl`, live at https://isaymotion.github.io/Stahl/.
 
@@ -19,7 +19,7 @@ Updated Nov 9, 2026 (after the **global fact-check of Chapters 2–11 and 16–1
 - Self-harm wording: clinical, at the manual's level of generality; never lethality, dose, technique, location beyond "forearm and thighs", or severity markers such as "needed emergency care". Prefer "began a self-poisoning attempt" to naming the agent in vignettes. (An **unintentional** substance overdose may name the agents, never quantities: v16-03.) For measures, say "the suicidal ideation item" / "the suicide attempt item"; for Ch 26, "self-harming behavior under emotional distress" and "thoughts of suicide and suicidal behavior".
 - Philippine crisis line (verified Sept 2026, SunStar; Jan 2026 Tribune and findahelpline confirm 1553 and the mobile numbers): NCMH Crisis Hotline **1553** (toll-free from landlines) or 1800-1888-1553; 0919-057-1553 (Smart/TNT); 0917-899-8727 and 0966-351-4518 (Globe/TM); always "confirm before giving out". **Use the one full string everywhere.** Hopeline was removed from `clinical-ch22.js` and `clinical-ch25.js` (Nov 9); grep shows no Hopeline left.
 - Commit trailers: `Co-Authored-By: Claude <model> <noreply@anthropic.com>` plus the session line. Push to `main` directly. The stop hook requires `git config user.name Claude` and `user.email noreply@anthropic.com` and a clean tree at the end of every turn (commit and push before replying; if a subagent is mid-edit, commit the finished files with a targeted `git add`).
-- **Releases (since the design refresh):** every release adds an entry at the top of `data/changelog.js` with a semver `version` "n.0.0" (next **58.0.0**), then bumps `version` in `data/app-meta.js`, `VERSION` in `sw.js` (both now `'57.0.0'`), and "Latest version <Month YYYY>" in the footer (`index.html`), `data/app-meta.js` and `README.md` (currently November 2026). Item types: chapter, feature, correction, update, content; optional `ch`, `href`, `link`.
+- **Releases (since the design refresh):** every release adds an entry at the top of `data/changelog.js` with a semver `version` "n.0.0" (next **59.0.0**), then bumps `version` in `data/app-meta.js`, `VERSION` in `sw.js` (both now `'58.0.0'`), and "Latest version <Month YYYY>" in the footer (`index.html`), `data/app-meta.js` and `README.md` (currently November 2026). Item types: chapter, feature, correction, update, content; optional `ch`, `href`, `link`.
 - After each build, give the user the full updated handoff text in one copy-pastable code block in the final reply, and re-upload this doc to the project.
 - **Vignette and board-question style:** the keyed choice must not be systematically the longest option, answer positions must not follow a fixed cycle (many older chapters had an exact 1,3,0,4,2 cycle; now broken everywhere checked), and no choice carries an "(app guidance)" tag; put the detail in `why`. When reordering choices, move `answer` and `whyNot` in step.
 
@@ -84,16 +84,18 @@ The container can restart between turns: re-check `git log` and the working tree
 |---|---|---|
 | 1, 12–15, 19–22 (Section II) | — | Built and fact-checked (earlier sessions) |
 | **2–11, 16–18 (Section II)** | 101–405, 543–778 | **Fact-checked Nov 9** (two-checker routine, all files); commits d00bd9d, 629757f, c9e70a1, 5552807, f564181, c84eecc, 936d457, f0d5902 |
+| **2, 4, 7, 15: APA text updates** | 107–108, 120, 181–182, 319, 326–327, 537 | **Done Nov 11** (a088012, release 58.0.0): see below |
 | 23 Assessment Measures | 841–857 | Done (Oct 30) |
 | 24 Culture and Psychiatric Diagnosis | 859–879 | Done (Oct 28–29) |
 | 25 Conditions for Further Study | 903–927 | Done (Oct 28) |
 | 26 Alternative DSM-5 Model for PDs | 881–901 | Done (Nov 2) |
 
+Release 58.0.0 (Nov 11), from the user-attached APA PDFs: **Ch 7** adjustment subtype table uses the Sept 2024 definitions ("disturbance of conduct" = violating others' rights or major age-appropriate norms and rules; codes unchanged) and the PGD normal-grief row says clinically significant distress or impairment (Sept 2024); **Ch 2** absent-insight rule now includes hoarding disorder in the delusional disorder (pp. 107–108) and schizophrenia (p. 120) differentials (Sept 2023); **Ch 4** box on the ODD clause removed from the DMDD differential (Sept 2024); **Ch 15** box on the corrected "resolve within 6 months" adjustment entry (p. 537, Sept 2023; the table already followed it). Each has a guide `update` box and a library `updates` entry; Ch 2 high yield, trap t2-09, card d2-27 and library differentials, and a Ch 7 high-yield item, were aligned. Checks Nov 11: parse OK; ngram against the APA PDF text 0 hits; links bad 0, Stahl bad 0 and practice_walk ERR [] for Ch 2, 4, 7, 15; routes_smoke ERRORS 0 at 1400 and 390 px. **The APA update PDFs (Sept 2022, 2023, 2024, 2025) are now fully reflected in the app**: the 2024 Alzheimer's criteria, substance NCD coding note and eating-disorder codes were already in (Ch 17, Ch 10); the 2024 Section I subtypes/specifiers rewording and the online-measure changes (ASRM 0–4, military CFI) are not shown because the app has no Section I page and describes measures only by purpose.
+
 Release 57.0.0 (Nov 9): changelog entry "Fact-check: Chapters 2–11 and 16–18"; also 2b6fd0f (crisis line in Ch 22 and 25). All checks on Nov 9: links bad 0 and Stahl bad 0 for all 13 chapters, practice_walk ERR [] for all 13, routes_smoke ERRORS 0 at 1400 and 390 px.
 
 ## 7. Next steps (suggestions; the user decides)
-- **APA September 2024 adjustment disorder subtype rewording** (Ch 7): not in the app; the APA PDF could not be read (403). Add a labeled `update` box once the wording is read from the PDF (the user can attach it).
-- **APA September 2023 text change** in the Ch 2 delusional disorder / schizophrenia differentials (OCD, BDD, hoarding with absent insight / delusional beliefs): not in the app for the same reason.
+- Optional: the Ch 24 CFI section could mention the APA's online military version of the core CFI (Sept 2024 update, IV.B), labeled outside the DSM; the Ch 23 mania Level 2 note could say the ASRM scale was corrected to 0–4 online (IV.A).
 - The APA September 2025 "-like" rewording now has labeled boxes in Ch 3, 4, 9, 10 and 17; it also touches **Ch 12** (insomnia examples): check Ch 12.
 - Treatment points in `clinical-ch16.js` not individually web-checked (thiamine timing, antipsychotic caution, lofexidine/clonidine, CYP1A2, hallucinogen care steps) keep their outside-DSM label; a later pass could source them.
 - Finishing touches: the README intro could say the app is complete; consider removing `renderSoon` and the `is-soon` nav styling if unused.
@@ -111,5 +113,5 @@ Release 57.0.0 (Nov 9): changelog entry "Fact-check: Chapters 2–11 and 16–18
 ## 9. Files to re-attach
 - Not kept (one-off, already applied): the per-chapter apply scripts and findings files from the Nov 9 scratchpad; the extracted DSM text (copyrighted; re-extract from the PDF).
 - **The DSM-5-TR PDF** (~8.9 MB as uploaded Nov 9, 1,376 pages) only if a chapter is to be re-checked.
-- **The APA September 2024 and September 2023 update PDFs** if the §7 update boxes are to be written (they could not be downloaded here).
+- The APA update PDFs are no longer needed (applied Nov 11). If a new APA update appears (e.g., September 2026), the user can download it from psychiatry.org (Updates to DSM-5-TR Criteria and Text page) and attach it; direct fetches from psychiatry.org returned 403 on Nov 9.
 - **Use the project copy of this handoff** (`claude/handoff-dsm-chapters.md`).
