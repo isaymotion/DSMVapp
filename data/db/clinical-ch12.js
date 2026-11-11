@@ -1,11 +1,12 @@
 /* Chapter 12 clinical extras, merged into the disorder library when the app loads (js/practice.js).
    ask: [criterion, plain-language question, optional tip]   — "How to ask it" on each disorder page
-   tx:  treatment bridge, clearly labeled as outside the DSM, linking to the Stahl Study Companion
+   tx:  treatment bridge, clearly labeled as outside the DSM, linking to the Stahl Study Companion;
+        optional sources: [[label, url]] lists the guidelines and labels behind it
         (paths are relative to https://isaymotion.github.io/Stahl/#/)
    Complaint hub entries (SP.complaintData) are shared across chapters: entries with the same id merge.
-   Treatment status checked October 2026. */
+   Treatment status checked November 2026 (sources listed per entry). */
 (function () {
-  var SAFETY = "Ask about **drowsy driving**, near misses and safety-critical work; know your local rules on reporting sleepy drivers.";
+  var SAFETY = "Ask about **drowsy driving**, near misses and safety-critical work; know your local rules on reporting sleepy drivers (app guidance).";
   var SED = "Review **sedatives, opioids and alcohol**, which worsen sleep-disordered breathing.";
   SP.dxExtra = (SP.dxExtra || []).concat([
     {
@@ -22,8 +23,8 @@
         ["Safety", "“Has it ever felt so bad you thought life wasn’t worth living?”", "Insomnia raises suicide risk independently of depression."]
       ],
       tx: {
-        asOf: "October 2026",
-        first: "**CBT-I** is first line for chronic insomnia (AASM 2017/2021; ACP 2016): stimulus control, **sleep restriction**, cognitive therapy, relaxation and sleep hygiene, in person or digital. An April 2026 AASM guideline favors CBT-I plus medication over medication alone, and **CBT-I alone** when it is used.",
+        asOf: "November 2026",
+        first: "**CBT-I** is first line for chronic insomnia (AASM 2021; ACP 2016): stimulus control, **sleep restriction**, cognitive therapy, relaxation and sleep hygiene, in person or digital. An April 2026 AASM guideline suggests CBT-I plus medication over medication alone, but suggests **against adding medication to CBT-I** (conditional, low certainty).",
         points: [
           "Medication when CBT-I is unavailable, insufficient or as a bridge: **orexin antagonists** ([[stahl:drugs/suvorexant|suvorexant]], [[stahl:drugs/lemborexant|lemborexant]], [[stahl:drugs/daridorexant|daridorexant]]), **Z-drugs** ([[stahl:drugs/zolpidem|zolpidem]], [[stahl:drugs/eszopiclone|eszopiclone]], [[stahl:drugs/zaleplon|zaleplon]]), low-dose [[stahl:drugs/doxepin|doxepin]] (maintenance) or [[stahl:drugs/ramelteon|ramelteon]] (onset).",
           "Z-drugs carry a boxed warning for **complex sleep behaviors** (sleepwalking, sleep driving); use the lowest dose, and lower doses in women and older adults.",
@@ -32,7 +33,8 @@
           "Treat the comorbid condition too; CBT-I helps insomnia with depression, PTSD and chronic pain.",
           "In August 2026 the US DEA proposed moving orexin antagonists from Schedule IV to Schedule V; check whether it is final."
         ],
-        stahl: [["Insomnia", "c/ch10/guide/s10-insomnia"], ["GABA-A hypnotics", "c/ch10/guide/s10-gaba-hypnotics"], ["Orexin antagonists", "c/ch10/guide/s10-dora"], ["Behavioral treatment", "c/ch10/guide/s10-behavioral"]]
+        stahl: [["Insomnia", "c/ch10/guide/s10-insomnia"], ["GABA-A hypnotics", "c/ch10/guide/s10-gaba-hypnotics"], ["Orexin antagonists", "c/ch10/guide/s10-dora"], ["Behavioral treatment", "c/ch10/guide/s10-behavioral"]],
+        sources: [["AASM behavioral treatment guideline (2021)", "https://aasm.org/new-guideline-supports-behavioral-psychological-treatments-for-insomnia/"], ["AASM combination treatment guideline (2026)", "https://aasm.org/combination-treatment-chronic-insomnia-guideline/"], ["FDA boxed warning for Z-drugs (2019)", "https://www.fda.gov/drugs/drug-safety-and-availability/fda-adds-boxed-warning-risk-serious-injuries-caused-sleepwalking-certain-prescription-insomnia"], ["DEA proposed rule on orexin antagonists (2026)", "https://public-inspection.federalregister.gov/2026-16375.pdf"]]
       }
     },
     {
@@ -49,15 +51,16 @@
         ["Safety", "“Have you fallen asleep while driving?”"]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "Confirm with **PSG and MSLT** after excluding insufficient sleep (diary, actigraphy, sleep extension), OSA, drugs and depression. Then wake-promoting medication with scheduled sleep.",
         points: [
           "[[stahl:drugs/modafinil|Modafinil]] or [[stahl:drugs/armodafinil|armodafinil]] are commonly first choice; [[stahl:drugs/solriamfetol|solriamfetol]], [[stahl:drugs/pitolisant|pitolisant]] and stimulants are alternatives (some off label).",
-          "Low-sodium mixed-salt oxybate is FDA-approved for **idiopathic hypersomnia** in adults (the ICSD-3 counterpart of hypersomnolence disorder).",
+          "Low-sodium mixed-salt oxybate is FDA-approved for **idiopathic hypersomnia** in adults (the closest ICSD-3 match to hypersomnolence disorder, though the criteria differ).",
           "Naps help less than in narcolepsy; keep a regular schedule.",
           SAFETY
         ],
-        stahl: [["Excessive sleepiness", "c/ch10/guide/s10-sleepiness"], ["Modafinil and armodafinil", "c/ch10/guide/s10-modafinil"], ["Newer wake-promoting agents", "c/ch10/guide/s10-newer"]]
+        stahl: [["Excessive sleepiness", "c/ch10/guide/s10-sleepiness"], ["Modafinil and armodafinil", "c/ch10/guide/s10-modafinil"], ["Newer wake-promoting agents", "c/ch10/guide/s10-newer"]],
+        sources: [["AASM hypersomnolence treatment guideline (2021)", "https://aasm.org/wp-content/uploads/2022/03/Treatment_Central_Disorders_Hypersomnolence_Guideline_at_a_Glance.pdf"], ["Xywav approval for idiopathic hypersomnia (2021)", "https://aasm.org/fda-approves-new-indication-for-xywav-for-idiopathic-hypersomnia/"]]
       }
     },
     {
@@ -74,17 +77,18 @@
         ["Safety", "“Do you drive or work with machinery?”"]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "Confirm with **PSG and MSLT** (off REM-suppressing drugs, after 2 weeks of regular sleep) or CSF hypocretin; then scheduled naps, regular sleep and medication for sleepiness and cataplexy.",
         points: [
           "Sleepiness: [[stahl:drugs/modafinil|modafinil]]/[[stahl:drugs/armodafinil|armodafinil]], [[stahl:drugs/pitolisant|pitolisant]] (approved from **age 6** for sleepiness since June 2024), [[stahl:drugs/solriamfetol|solriamfetol]], stimulants ([[stahl:drugs/methylphenidate|methylphenidate]], [[stahl:drugs/amphetamine|amphetamine]]).",
           "Cataplexy, sleepiness and broken sleep: **oxybates** ([[stahl:drugs/sodium-oxybate|sodium oxybate]]; a low-sodium mixed-salt form; once-nightly sodium oxybate, approved from **age 7** in October 2024); pitolisant also reduces cataplexy.",
-          "REM-suppressing antidepressants ([[stahl:drugs/venlafaxine|venlafaxine]], [[stahl:drugs/clomipramine|clomipramine]], SSRIs) for cataplexy, off label; stopping them abruptly causes **rebound cataplexy**.",
-          "**Oveporexton** (Orzeyful), the first oral orexin 2 receptor agonist, was FDA-approved in August 2026 for **narcolepsy type 1** in adults; common effects include insomnia and urinary urgency or frequency; scheduling pending at approval. See [[stahl:drugs/oveporexton|oveporexton]].",
-          "Watch for stimulant-induced **psychosis** at high doses, and for new OSA if symptoms worsen.",
+          "REM-suppressing antidepressants ([[stahl:drugs/venlafaxine|venlafaxine]], [[stahl:drugs/clomipramine|clomipramine]], SSRIs) are used for cataplexy, off label, with limited evidence; stopping them abruptly can cause **rebound cataplexy** (case reports).",
+          "**Oveporexton** (Orzeyful), an oral orexin 2 receptor agonist and the first approved orexin-targeting therapy, was FDA-approved in August 2026 for **narcolepsy type 1** in adults; common effects include insomnia, urinary urgency or frequency and excess saliva; DEA scheduling was pending at approval. See [[stahl:drugs/oveporexton|oveporexton]].",
+          "Watch for stimulant-induced **psychotic or manic symptoms** (possible even at usual doses; screen for psychosis and bipolar disorder), and for coexisting OSA if sleepiness worsens.",
           SAFETY
         ],
-        stahl: [["Orexin and wakefulness", "c/ch10/guide/s10-orexin"], ["Sodium oxybate", "c/ch10/guide/s10-oxybate"], ["Newer agents", "c/ch10/guide/s10-newer"], ["Pitolisant", "drugs/pitolisant"], ["Oveporexton", "drugs/oveporexton"]]
+        stahl: [["Orexin and wakefulness", "c/ch10/guide/s10-orexin"], ["Sodium oxybate", "c/ch10/guide/s10-oxybate"], ["Newer agents", "c/ch10/guide/s10-newer"], ["Pitolisant", "drugs/pitolisant"], ["Oveporexton", "drugs/oveporexton"]],
+        sources: [["AASM hypersomnolence treatment guideline (2021)", "https://aasm.org/wp-content/uploads/2022/03/Treatment_Central_Disorders_Hypersomnolence_Guideline_at_a_Glance.pdf"], ["MSD Manual: narcolepsy", "https://www.msdmanuals.com/professional/neurologic-disorders/sleep-and-wakefulness-disorders/narcolepsy"], ["Pitolisant pediatric approval (2024)", "https://aasm.org/fda-approves-wakix-for-narcolepsy-in-pediatric-patients/"], ["Oveporexton approval (2026)", "https://www.healio.com/news/neurology/20260807/fda-approves-orzeyful-for-type-1-narcolepsy-in-adults"]]
       }
     },
     {
@@ -99,7 +103,7 @@
         ["Safety", "“Have you fallen asleep at the wheel or nearly crashed?”", "Commercial drivers: check reporting rules."]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "Diagnose with PSG or home sleep testing; **positive airway pressure (CPAP)** is standard for moderate to severe OSA, plus weight loss, positional therapy and limiting alcohol and sedatives.",
         points: [
           "Alternatives: **mandibular advancement** devices, upper-airway surgery (adenotonsillectomy is first line in children), **hypoglossal nerve stimulation** for selected PAP-intolerant adults.",
@@ -107,10 +111,11 @@
           "AD109 (aroxybutynin plus atomoxetine) was under FDA review in 2026, with a decision expected in early 2027.",
           "Residual sleepiness on effective PAP: [[stahl:drugs/solriamfetol|solriamfetol]], [[stahl:drugs/modafinil|modafinil]] or [[stahl:drugs/armodafinil|armodafinil]].",
           SED,
-          "Antipsychotic- and mood-stabilizer-related **weight gain** raises OSA risk in psychiatric patients.",
+          "Psychotropic-related **weight gain** (notably with antipsychotics) may raise OSA risk; consider screening overweight patients on long-term antipsychotics.",
           SAFETY
         ],
-        stahl: [["Excessive sleepiness", "c/ch10/guide/s10-sleepiness"], ["Solriamfetol", "drugs/solriamfetol"]]
+        stahl: [["Excessive sleepiness", "c/ch10/guide/s10-sleepiness"], ["Solriamfetol", "drugs/solriamfetol"]],
+        sources: [["MSD Manual: obstructive sleep apnea", "https://www.msdmanuals.com/professional/pulmonary-disorders/sleep-apnea/obstructive-sleep-apnea"], ["VA/DoD insomnia and OSA guideline (2025), summary", "https://dha.mil/News/2026/01/22/14/39/New-clinical-practice-guideline-recognizes-insomnia-and-sleep-apnea-can-occur-together"], ["Tirzepatide OSA approval (2024)", "https://investor.lilly.com/node/51756"], ["AD109 FDA target date", "https://practicalneurology.com/news/fda-sets-target-action-date-for-oral-obstructive-sleep-apnea-therapy/2487857/"]]
       }
     },
     {
@@ -123,14 +128,15 @@
         ["Symptoms", "“Are you sleepy, confused or low in the daytime?”"]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "Treat the cause: optimize **heart failure** treatment, review and if possible reduce **opioid** dose, avoid adding benzodiazepines.",
         points: [
-          "PAP or adaptive and noninvasive ventilation under a sleep or pulmonary specialist; avoid adaptive servo-ventilation in heart failure with reduced ejection fraction.",
+          "PAP or adaptive and noninvasive ventilation under a sleep or pulmonary specialist; in heart failure with reduced ejection fraction, **adaptive servo-ventilation** was linked to higher mortality in the SERVE-HF trial, and the 2025 AASM guideline limits it to experienced centers with close monitoring.",
           "In methadone or buprenorphine maintenance, coordinate with the addiction team rather than stopping treatment.",
           SED
         ],
-        stahl: []
+        stahl: [],
+        sources: [["AASM central sleep apnea guideline (2025), summary", "https://aasm.org/a-look-at-the-new-guideline-for-treating-central-sleep-apnea-in-adults/"], ["MSD Manual: central sleep apnea", "https://www.msdmanuals.com/professional/pulmonary-disorders/sleep-apnea/central-sleep-apnea"]]
       }
     },
     {
@@ -142,10 +148,11 @@
         ["Weight", "BMI and awake blood gases or bicarbonate.", "Obesity hypoventilation: BMI >30 and awake pCO₂ >45."]
       ],
       tx: {
-        asOf: "October 2026",
-        first: "Treat the underlying disease and use **noninvasive ventilation** (e.g., bilevel PAP) for nocturnal hypoventilation; weight loss in obesity hypoventilation.",
+        asOf: "November 2026",
+        first: "Treat the underlying disease and use **positive airway pressure during sleep**: in obesity hypoventilation with severe OSA start with CPAP and move to **noninvasive ventilation** (bilevel PAP) if it is not enough; noninvasive ventilation first when there is no severe OSA. Large, sustained weight loss (often needing bariatric surgery) can resolve obesity hypoventilation (ATS 2019).",
         points: ["Avoid or minimize **sedatives and opioids**.", "Watch for pulmonary hypertension, cor pulmonale and polycythemia."],
-        stahl: []
+        stahl: [],
+        sources: [["ATS obesity hypoventilation guideline (2019)", "https://pmc.ncbi.nlm.nih.gov/articles/PMC6680300"]]
       }
     },
     {
@@ -158,10 +165,11 @@
         ["Diary", "Ask for a sleep diary or actigraphy for at least 7 days including weekends."]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "Fixed wake time, **bright light** on waking and dim evenings, plus low-dose **melatonin** taken several hours before the desired bedtime.",
-        points: ["Advance the schedule gradually; avoid catch-up sleep that lets the clock drift.", "Treat comorbid depression, ADHD or anxiety; avoid relying on hypnotics."],
-        stahl: [["Circadian rhythms", "c/ch10/guide/s10-circadian"], ["Ramelteon", "drugs/ramelteon"]]
+        points: ["Advance the schedule gradually; avoid catch-up sleep that lets the clock drift.", "Avoid relying on hypnotics; treat comorbid depression, ADHD or anxiety (app guidance; not verified)."],
+        stahl: [["Circadian rhythms", "c/ch10/guide/s10-circadian"], ["Ramelteon", "drugs/ramelteon"]],
+        sources: [["AASM circadian rhythm guideline (2015)", "https://pubmed.ncbi.nlm.nih.gov/26414986/"], ["Merck Manual: circadian rhythm sleep disorders", "https://www.merckmanuals.com/professional/neurologic-disorders/sleep-and-wakefulness-disorders/circadian-rhythm-sleep-disorders"]]
       }
     },
     {
@@ -173,10 +181,11 @@
         ["Substances", "“Do you use sleeping pills or alcohol to sleep later, or caffeine to stay up?”"]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "**Evening bright light** to delay the clock, and limiting early-morning light.",
-        points: ["Avoid hypnotics for early waking.", "Accept an earlier schedule where life allows."],
-        stahl: [["Circadian rhythms", "c/ch10/guide/s10-circadian"]]
+        points: ["Avoid hypnotics for early waking (app guidance; not verified).", "Accept an earlier schedule where life allows (app guidance; not verified)."],
+        stahl: [["Circadian rhythms", "c/ch10/guide/s10-circadian"]],
+        sources: [["AASM circadian rhythm guideline (2015)", "https://pubmed.ncbi.nlm.nih.gov/26414986/"], ["Merck Manual: circadian rhythm sleep disorders", "https://www.merckmanuals.com/professional/neurologic-disorders/sleep-and-wakefulness-disorders/circadian-rhythm-sleep-disorders"]]
       }
     },
     {
@@ -187,10 +196,11 @@
         ["Caregiver", "“How is your own sleep?”"]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "**Daytime bright light**, structured activity and social contact, a dark quiet night environment.",
-        points: ["Avoid sedative-hypnotics in dementia (falls, confusion); melatonin has mixed evidence.", "Support the caregiver."],
-        stahl: [["Circadian rhythms", "c/ch10/guide/s10-circadian"]]
+        points: ["Avoid sedative-hypnotics in dementia (falls, confusion); the AASM (2015) suggests **against melatonin** for older adults with dementia, though it can help children with neurological disorders.", "Support the caregiver."],
+        stahl: [["Circadian rhythms", "c/ch10/guide/s10-circadian"]],
+        sources: [["AASM circadian rhythm guideline (2015)", "https://pubmed.ncbi.nlm.nih.gov/26414986/"]]
       }
     },
     {
@@ -201,10 +211,11 @@
         ["Diary", "Ask for a sleep diary or actigraphy over several weeks."]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "Timed **melatonin**; [[stahl:drugs/tasimelteon|tasimelteon]] is FDA-approved for non-24-hour sleep-wake disorder in adults (studied in totally blind people).",
         points: ["Sighted people: timed morning light, regular schedule and social cues."],
-        stahl: [["Tasimelteon", "drugs/tasimelteon"], ["Circadian rhythms", "c/ch10/guide/s10-circadian"]]
+        stahl: [["Tasimelteon", "drugs/tasimelteon"], ["Circadian rhythms", "c/ch10/guide/s10-circadian"]],
+        sources: [["Tasimelteon (Hetlioz) FDA label", "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/205677Orig1s013lbl.pdf"], ["AASM circadian rhythm guideline (2015)", "https://pubmed.ncbi.nlm.nih.gov/26414986/"]]
       }
     },
     {
@@ -217,10 +228,11 @@
         ["Mood", "“Any history of bipolar disorder?”", "Missed nights can trigger mania."]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "Protect daytime sleep (dark, quiet, consistent), **planned naps** before shifts, bright light during the night shift and dark glasses on the way home.",
-        points: ["[[stahl:drugs/modafinil|Modafinil]] or [[stahl:drugs/armodafinil|armodafinil]] are FDA-approved for sleepiness in shift work disorder.", "Melatonin before daytime sleep; avoid long-term hypnotics.", "Consider a change of schedule in bipolar disorder."],
-        stahl: [["Modafinil and armodafinil", "c/ch10/guide/s10-modafinil"], ["Circadian rhythms", "c/ch10/guide/s10-circadian"]]
+        points: ["[[stahl:drugs/modafinil|Modafinil]] or [[stahl:drugs/armodafinil|armodafinil]] are FDA-approved for sleepiness in shift work disorder.", "For daytime sleep the AASM (2025) suggests melatonin, ramelteon or an orexin antagonist, and CBT-I; it suggests against benzodiazepines.", "Consider a change of schedule in bipolar disorder (app guidance; not verified)."],
+        stahl: [["Modafinil and armodafinil", "c/ch10/guide/s10-modafinil"], ["Circadian rhythms", "c/ch10/guide/s10-circadian"]],
+        sources: [["AASM shift work disorder guideline (2025)", "https://aasm.org/wp-content/uploads/2025/08/Extrinsic-CRSWD-CPG_SWD_May2025.pdf"], ["Modafinil (Provigil) label", "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e16c26ad-7bc2-d155-3a5d-da83ad6492c8"]]
       }
     },
     {
@@ -235,10 +247,11 @@
         ["Safety", "“Any injuries, leaving the house, driving?”"]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "Safety (locked doors and windows, alarms, ground-floor bedroom), regular sufficient sleep, and avoiding triggers such as **sleep deprivation, alcohol and Z-drugs**.",
         points: ["Treat OSA or other triggers; scheduled awakenings in children with predictable episodes.", "Medication (e.g., a benzodiazepine) is reserved for frequent dangerous episodes under specialist care.", "Stop [[stahl:drugs/zolpidem|zolpidem]] if it causes complex sleep behaviors."],
-        stahl: [["GABA-A hypnotics", "c/ch10/guide/s10-gaba-hypnotics"]]
+        stahl: [["GABA-A hypnotics", "c/ch10/guide/s10-gaba-hypnotics"]],
+        sources: [["StatPearls: sleepwalking", "https://www.ncbi.nlm.nih.gov/books/NBK559001/"], ["FDA boxed warning for Z-drugs (2019)", "https://www.fda.gov/drugs/drug-safety-and-availability/fda-adds-boxed-warning-risk-serious-injuries-caused-sleepwalking-certain-prescription-insomnia"]]
       }
     },
     {
@@ -251,10 +264,11 @@
         ["Triggers", "“Fever, missed sleep, stress?”"]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "**Reassurance and education**: do not try to wake or restrain the child; keep them safe; ensure enough sleep.",
         points: ["Scheduled awakenings before the usual time can help frequent episodes.", "Most children outgrow it; refer if episodes are frequent, injurious, or start in adulthood."],
-        stahl: []
+        stahl: [],
+        sources: [["AASM Sleep Education: sleep terrors", "https://sleepeducation.org/sleep-disorders/sleep-terrors/"], ["NI Direct: night terrors", "https://www.nidirect.gov.uk/conditions/night-terrors"]]
       }
     },
     {
@@ -269,10 +283,11 @@
         ["Safety", "“Do the nightmares make you feel hopeless or think about dying?”", "Frequent nightmares raise suicide risk."]
       ],
       tx: {
-        asOf: "October 2026",
-        first: "**Imagery rehearsal therapy** (rewriting the nightmare and rehearsing the new version) and CBT for nightmares are first line.",
+        asOf: "November 2026",
+        first: "**Imagery rehearsal therapy** (rewriting the nightmare and rehearsing the new version) is the recommended first-line treatment (AASM 2018); other CBT-based therapies may also be used.",
         points: ["Treat underlying PTSD with trauma-focused psychotherapy.", "[[stahl:drugs/prazosin|Prazosin]] is used for trauma-related nightmares; trial evidence is mixed.", "Review drugs that cause nightmares."],
-        stahl: [["Prazosin", "drugs/prazosin"]]
+        stahl: [["Prazosin", "drugs/prazosin"]],
+        sources: [["AASM nightmare disorder position paper (2018)", "https://aasm.org/resources/clinicalguidelines/nightmaredisorder.pdf"]]
       }
     },
     {
@@ -287,10 +302,11 @@
         ["Prodrome", "“Any loss of smell, constipation, dizziness on standing, slowness or memory change?”", "Synucleinopathy markers."]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "**Make the bedroom safe** (remove sharp objects, pad the floor, partner sleeps apart), then melatonin or clonazepam.",
-        points: ["Review serotonergic antidepressants.", "Discuss the long-term **neurodegeneration risk** honestly and arrange neurological follow-up; offer research participation where available.", "Clonazepam caution: falls, confusion and OSA in older adults."],
-        stahl: []
+        points: ["Review serotonergic antidepressants.", "Discuss the long-term **neurodegeneration risk** honestly and arrange neurological follow-up; offer research participation where available (app guidance; not verified).", "Clonazepam caution: falls, confusion and OSA in older adults."],
+        stahl: [],
+        sources: [["AASM RBD guideline (2023), summary", "https://aasm.org/new-guideline-provides-treatment-recommendations-for-people-who-act-out-their-dreams-while-asleep/"], ["StatPearls: REM sleep behavior disorder", "https://www.statpearls.com/point-of-care/42334"]]
       }
     },
     {
@@ -305,10 +321,11 @@
         ["Causes", "Check ferritin and transferrin saturation; ask about pregnancy and kidney disease."]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "Check **iron studies** and replace iron when low; **alpha-2-delta ligands** ([[stahl:drugs/gabapentin|gabapentin]], gabapentin enacarbil, [[stahl:drugs/pregabalin|pregabalin]]) are first-line drugs (AASM 2024).",
         points: ["The AASM 2024 guideline advises **against standard use** of dopamine agonists (pramipexole, ropinirole, rotigotine) because of **augmentation**.", "Review serotonergic antidepressants, sedating antihistamines and dopamine antagonists, which worsen RLS; [[stahl:drugs/bupropion|bupropion]] is less likely to.", "Low-dose opioids for refractory RLS under specialist care.", "Pregnancy-related RLS usually resolves after delivery; iron first."],
-        stahl: [["Gabapentin", "drugs/gabapentin"], ["Pregabalin", "drugs/pregabalin"]]
+        stahl: [["Gabapentin", "drugs/gabapentin"], ["Pregabalin", "drugs/pregabalin"]],
+        sources: [["AASM RLS guideline (2024), summary", "https://aasm.org/summary-of-new-clinical-practice-guideline-for-rls-and-plmd/"], ["RLS Foundation: augmentation", "https://www.rls.org/file/member-publications/handouts/RLS-AUGMENTATION-9-29-25.pdf"]]
       }
     },
     {
@@ -322,10 +339,11 @@
         ["Use disorder", "Screen for a use disorder: it changes the code (1, 2 or 9)."]
       ],
       tx: {
-        asOf: "October 2026",
+        asOf: "November 2026",
         first: "Remove, reduce or retime the culprit (e.g., caffeine after noon, a morning dose of bupropion or an SSRI) and treat any use disorder.",
-        points: ["Alcohol: sleep may stay broken for months after withdrawal and predicts relapse; CBT-I helps; avoid benzodiazepines beyond detoxification.", "Stop Z-drugs that cause complex sleep behaviors.", "Stimulant withdrawal hypersomnia usually settles within weeks."],
-        stahl: [["Caffeine and stimulants", "c/ch10/guide/s10-caffeine-stimulants"]]
+        points: ["Alcohol: sleep may stay broken for months after withdrawal and predicts relapse; CBT-I helps; use benzodiazepines beyond detoxification only cautiously, after other options.", "Stop Z-drugs that cause complex sleep behaviors.", "Stimulant withdrawal hypersomnia typically eases over days to a few weeks."],
+        stahl: [["Caffeine and stimulants", "c/ch10/guide/s10-caffeine-stimulants"]],
+        sources: [["FDA boxed warning for Z-drugs (2019)", "https://www.fda.gov/drugs/drug-safety-and-availability/fda-adds-boxed-warning-risk-serious-injuries-caused-sleepwalking-certain-prescription-insomnia"], ["Carlat Report: insomnia and substance use disorders", "https://www.thecarlatreport.com/articles/2883-insomnia-and-substance-use-disorders"]]
       }
     }
   ]);

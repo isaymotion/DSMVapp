@@ -9,6 +9,15 @@
    and "Latest version <Month YYYY>" in the footer (index.html), data/app-meta.js and README.md. */
 window.APP_CHANGELOG = [
   {
+    "version": "60.0.0",
+    "date": "2026-11-11",
+    "title": "Chapter 12 treatment bridges sourced; September 2025 wording note",
+    "items": [
+      { "type": "correction", "ch": "ch12", "href": "#/dx/narcolepsy", "link": "Narcolepsy", "text": "Every treatment-bridge point for the Chapter 12 sleep-wake disorders was checked against current guidelines and labels (AASM, ATS, VA/DoD, FDA, MSD Manual) and now shows a Sources line. Corrected: adaptive servo-ventilation in heart failure with reduced ejection fraction is limited to experienced centers (AASM 2025) instead of simply avoided; obesity hypoventilation with severe OSA starts with CPAP; the AASM suggests against melatonin for irregular sleep-wake rhythm in dementia; for shift work, melatonin, ramelteon or an orexin antagonist can help daytime sleep; imagery rehearsal therapy is the one recommended first-line treatment for nightmares; stimulants can cause psychotic or manic symptoms even at usual doses. Points that could not be confirmed are marked \u201capp guidance; not verified\u201d." },
+      { "type": "update", "ch": "ch12", "href": "#/dx/other-specified-insomnia", "link": "Other specified insomnia disorder", "text": "APA\u2019s September 2025 update shortens the first other specified insomnia example from \u201cshort-term insomnia disorder\u201d to \u201cshort-term insomnia\u201d; a labeled box in the guide and the library entry now say so. The code G47.09 is not described as changed." }
+    ]
+  },
+  {
     "version": "59.0.0",
     "date": "2026-11-11",
     "title": "Chapter 16 treatment bridges sourced",

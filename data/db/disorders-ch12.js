@@ -583,7 +583,7 @@
       pearls: ["A 6-week insomnia with all other criteria = G47.09 (short-term).", "Corresponds to ICSD-3 short-term insomnia disorder.", "The manual is inconsistent about isolated nonrestorative sleep (pp. 411, 475)."],
       cmp: { symptoms: "Subthreshold or short insomnia", exclusions: "Full insomnia disorder or another sleep-wake disorder", prevalence: "Not given", course: "Often resolves when the stressor passes" },
       clues: [["Core picture", "A 30-year-old with nightly trouble falling asleep for 6 weeks since a job loss, with daytime impairment"], ["Code", "G47.09"]],
-      updates: upd("**G47.09** is unchanged in the October 2024, 2025 and 2026 ICD-10-CM updates.")
+      updates: upd("**G47.09** is unchanged in the October 2024, 2025 and 2026 ICD-10-CM updates.").concat([{ kind: "post", year: "2025", title: "Example 1 is now “short-term insomnia” (September 2025)", source: "APA DSM-5-TR Update, September 2025 (psychiatry.org)", text: "This is outside the printed DSM-5-TR. The printed manual (p. 475) names the first example **short-term insomnia disorder**. APA’s September 2025 update shortens it to **short-term insomnia**, to match the note under the insomnia disorder criteria (p. 410), which speaks of acute and short-term insomnia. The meaning (under 3 months, other criteria met) and the code **G47.09** are not described as changed. This app keeps the printed name; confirm the exact wording against the APA update." }])
     },
     {
       id: "unspecified-insomnia", ch: "ch12", sec: "s12-residual", pages: "475", critPages: "475",
